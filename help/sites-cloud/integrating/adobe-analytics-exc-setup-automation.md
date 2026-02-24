@@ -3,12 +3,13 @@ title: Adobe Analytics と Experience Cloud 設定自動化を統合する
 description: Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。ご利用のサイトで自動設定を使用する方法を説明します。
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 solution: Experience Manager Sites
-source-git-commit: 4a3e65ef6a8aa08c8bc78db31f94272334994ac5
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 98%
+source-wordcount: '733'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Experience Cloud設定の自動化機能は廃止されました。
+>Experience Cloud 設定の自動化機能は廃止されました。
 
 Experience Cloud 設定自動化を使用すると、シンプルな UI ウィザードインターフェイスを介して、わかりやすく自動化された方法で、Experience Manager Sites を Experience Platform タグおよび Adobe Analytics と統合してツール化することができます。
 

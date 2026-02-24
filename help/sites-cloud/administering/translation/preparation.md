@@ -3,12 +3,13 @@ title: 翻訳するコンテンツの準備
 description: 多言語 web サイトを開発するときに翻訳するコンテンツを準備する方法を説明します。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '756'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +58,7 @@ ht-degree: 100%
 
 翻訳するサイトを準備するには、次の手順を使用します。
 
-1. 言語マスターの言語ルートを作成します。例えば、英語 WKND Demo Site の言語ルートは `/content/wknd/language-masters/en` です。[言語ルートの作成](preparation.md#creating-a-language-root)に記載の情報に従って言語ルートが正しく設定されていることを確認してください。
+1. 言語マスターの言語ルートを作成します。例えば、英語 WKND デモサイトの言語ルートは `/content/wknd/language-masters/en` です。[言語ルートの作成](preparation.md#creating-a-language-root)に記載の情報に従って言語ルートが正しく設定されていることを確認してください。
 1. 言語マスターのコンテンツをオーサリングします。
 1. サイトの各言語コピーの言語ルートを作成します。例えば、WKND のサンプルサイトのフランス語の言語コピーは `/content/wknd/language-masters/fr` です。
 

@@ -1,14 +1,15 @@
 ---
 title: Sites コンソールのサイドパネル
 description: AEM Sites コンソールのサイドパネルを使用して、コンテンツをより深く理解し、移動する方法について説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
-workflow-type: ht
-source-wordcount: '828'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 99%
 
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: 'ページの差分 '
 description: ページの差分機能を使用すると、2 つのページを並べて比較し、違いを強調表示するのに便利です。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
-workflow-type: ht
-source-wordcount: '635'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 

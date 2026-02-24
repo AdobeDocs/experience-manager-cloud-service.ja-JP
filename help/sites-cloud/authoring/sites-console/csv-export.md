@@ -1,14 +1,15 @@
 ---
 title: CSV ファイルへの書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出す
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 98%
 
 ---
 

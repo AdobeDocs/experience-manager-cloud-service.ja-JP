@@ -1,14 +1,15 @@
 ---
 title: ページエディターで編集可能なページを作成するテンプレート
 description: テンプレートエディターを使用すると、コンテンツ作成者がページエディターで編集可能なページを作成するために使用できるテンプレートを作成できます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '4415'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '4421'
+ht-degree: 99%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**テンプレートエディター**&#x200B;は、テンプレートレベルで直接ターゲット設定をサポートしません。編集可能テンプレートに基づいて作成されたページは、ターゲット設定できますが、テンプレート自体はできません。
+>**テンプレートエディター**&#x200B;は、テンプレートレベルで直接ターゲティングをサポートしません。編集可能テンプレートに基づいて作成されたページは、ターゲット設定できますが、テンプレート自体はできません。
 
 ## 始める前に {#before-you-start}
 

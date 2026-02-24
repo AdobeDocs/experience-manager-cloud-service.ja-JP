@@ -3,12 +3,13 @@ title: 新しいサイトの作成
 description: 管理者が AEM を使用して、サイトのスタイルや構造を定義するサイトテンプレートからサイトを作成する方法を説明します。
 feature: Administering, Authoring
 role: Admin, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 solution: Experience Manager Sites
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
-workflow-type: ht
-source-wordcount: '125'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 96%
 
 ---
 

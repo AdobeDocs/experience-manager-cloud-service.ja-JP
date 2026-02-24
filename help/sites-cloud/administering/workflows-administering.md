@@ -3,11 +3,12 @@ title: ワークフローインスタンスの管理
 description: ワークフローコンソールを使用したワークフローインスタンスの管理方法について説明します
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1288'
 ht-degree: 92%
 
 ---
@@ -112,7 +113,7 @@ ht-degree: 92%
 ワークフローが失敗した場合、AEM の&#x200B;**エラー**&#x200B;コンソールを使用してエラーの原因を調べ、特定された原因に応じて適切なアクションを取ることができます。
 
 * **エラーの詳細**
-ウィンドウが開き、**エラーメッセージ**、**ステップ、**&#x200B;エラースタック**&#x200B;が表示されます。
+ウィンドウが開き、**エラーメッセージ**、**ステップ、**エラースタック**&#x200B;が表示されます。
 
 * **履歴を開く**&#x200B;ワークフローの履歴の詳細を表示します。
 

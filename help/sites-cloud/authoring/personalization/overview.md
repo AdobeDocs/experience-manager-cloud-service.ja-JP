@@ -1,14 +1,15 @@
 ---
 title: パーソナライゼーションとコンテンツのターゲティング
 description: パーソナライズされたターゲットコンテンツを AEM で作成する方法について説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 100%
 
 顧客に提供する web コンテンツのパーソナライゼーションとは、顧客の関心やニーズに合わせてエクスペリエンスを調整することです。これは、買い物の概要、年齢、性別、地域など、顧客に関する情報に基づいて行うことができます。
 
-Adobe Experience Manager as a Cloud Service（AEM）では、様々なコンテンツを作成して、個々のエクスペリエンスを提供するオーディエンス（エンドユーザーのグループ）を指定することができます。つまり、パーソナライズしたエクスペリエンスのターゲットを特定のオーディエンスに設定しています。
+Adobe Experience Manager as a Cloud Service（AEM）では、様々なコンテンツを作成して、個々のエクスペリエンスを提供するオーディエンス（エンドユーザーのグループ）を指定することができます。つまり、特定のオーディエンスをターゲットにしてパーソナライズしたエクスペリエンスを提供することになります。
 
 読者がオンラインになると、ターゲティングエンジンは、エンドユーザーに関する入手可能な情報を精査して、エクスペリエンスの定義と比較します。次に、エンジンは、パーソナライズされたどのエクスペリエンスを表示するかを「*決定*」します。
 
@@ -114,7 +115,7 @@ AEM のターゲティングモードを使用して、[ターゲットコンテ
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM には、ページリクエストの処理や表示するコンテンツの決定を行う組み込みのターゲティングエンジン [ContextHub](/help/implementing/developing/personalization/contexthub.md) が用意されています。AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には、AEM で作成されるセグメントのみを使用できます。
+AEM には、ページリクエストの処理や表示するコンテンツの決定を行うビルトインのターゲティングエンジン [ContextHub](/help/implementing/developing/personalization/contexthub.md) が用意されています。AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義には、AEM で作成されるセグメントのみを使用できます。
 
 ### Adobe Target {#adobe-target}
 

@@ -3,12 +3,13 @@ title: 翻訳プロジェクトの管理
 description: AEM で機械翻訳と人間による翻訳の両方のプロジェクトを作成および管理する方法について説明します。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
-workflow-type: ht
-source-wordcount: '4129'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '4135'
+ht-degree: 99%
 
 ---
 

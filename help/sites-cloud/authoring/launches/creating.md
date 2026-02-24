@@ -1,14 +1,15 @@
 ---
 title: ローンチの作成
 description: 今後のアクティベーションのために既存の web ページの新しいバージョンを更新できるように、ローンチを作成できます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 95%
+source-wordcount: '1106'
+ht-degree: 99%
 
 ---
 
@@ -153,14 +154,14 @@ ht-degree: 95%
 
 「**完了**」を選択すると、**Sites** コンソールの&#x200B;**参照**&#x200B;レールに戻ります。適切なページを選択すると、新しいローンチが表示されます。
 
-### ローンチのクローン {#cloning-a-launch}
+### ローンチのクローンの作成 {#cloning-a-launch}
 
-ローンチのクローンは、[&#x200B; ローンチコンソール &#x200B;](/help/sites-cloud/authoring/launches/overview.md#the-launches-console) から作成できます。
+ローンチは、[ローンチコンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)からクローンを作成できます。
 
 * サムネールをタップまたはクリックして、ローンチを選択します。
 * ツールバーが表示されます。「クローン」を選択します。
    * クローンが作成され、コンソールに表示されます。
-   * **ローンチタイトル** は、クローンであることを示しています。 [&#x200B; ローンチ設定 &#x200B;](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**プロパティ**）を編集してタイトルを更新できます。
+   * **ローンチタイトル**&#x200B;は、クローンであることを示しています。[ローンチ設定](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)（**プロパティ**）を編集してタイトルを更新できます。
 
 ## ローンチの削除 {#deleting-a-launch}
 

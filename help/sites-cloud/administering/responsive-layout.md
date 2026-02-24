@@ -1,14 +1,15 @@
 ---
 title: レイアウトコンテナおよびレイアウトモードの設定
 description: コンテンツ作成者がレスポンシブレイアウトを使用できるように、レイアウトコンテナとレイアウトモードを設定する方法について説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
-workflow-type: ht
-source-wordcount: '1377'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 99%
 
 ---
 

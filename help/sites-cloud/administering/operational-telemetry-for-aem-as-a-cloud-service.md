@@ -1,13 +1,14 @@
 ---
 title: AEM as a Cloud Service の運用テレメトリ
 description: クライアントサイドのデータ収集を監視できる自動化サービスである運用テレメトリについて説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 99%
+source-wordcount: '1140'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +43,7 @@ ht-degree: 99%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。

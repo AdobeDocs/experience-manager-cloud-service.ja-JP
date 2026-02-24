@@ -4,11 +4,12 @@ description: ユニバーサルエディターで編集可能なページを作�
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 99%
 
 ---
 

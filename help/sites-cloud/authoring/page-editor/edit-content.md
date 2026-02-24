@@ -1,14 +1,15 @@
 ---
 title: AEM ページエディターを使用したページコンテンツの編集
 description: AEM ページエディターは、コンテンツをオーサリングするための強力なツールです。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
-workflow-type: ht
-source-wordcount: '1628'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 99%
 
 ---
 

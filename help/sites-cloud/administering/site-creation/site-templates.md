@@ -3,12 +3,13 @@ title: サイトテンプレート
 description: AEM サイトテンプレートを使用して、サイト構造と初期コンテンツを事前に定義し、サイトをすばやく作成する方法を説明します。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 99%
 
 ---
 

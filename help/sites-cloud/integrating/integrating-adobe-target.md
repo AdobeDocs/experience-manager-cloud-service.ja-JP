@@ -3,12 +3,13 @@ title: Adobe Target との統合
 description: タッチ UI と Adobe Launch を使用して、Adobe Target を AEM as a Cloud Service と統合する方法について説明します。
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 solution: Experience Manager Sites
-source-git-commit: e5c529ced09a557585681ebf82f40daafc2c4402
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 98%
+source-wordcount: '1086'
+ht-degree: 99%
 
 ---
 
@@ -29,11 +30,11 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 >[!NOTE]
 >
->Adobe Targetのドキュメント [Target とAdobe Experience Managerの統合（AEM） &#x200B;](https://experienceleague.adobe.com/ja/docs/target/using/integrate/aem/aem-target-integration) も参照してください。
+>Adobe Target のドキュメント [Target と Adobe Experience Manager（AEM）の統合](https://experienceleague.adobe.com/ja/docs/target/using/integrate/aem/aem-target-integration)も参照してください。
 
 ## Adobe Target 設定の作成 {#create-configuration}
 
-1. **ツール**／**クラウドサービス**&#x200B;に移動します。
+1. **ツール**／**クラウドサービス**に移動します。
    ![ナビゲーション](assets/cloudservice1.png "ナビゲーション")
 2. 「**Adobe Target**」を選択します。
 3. 「**作成**」ボタンを選択します。
@@ -126,11 +127,11 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションを選択します。
-   ![Target 検索 &#x200B;](assets/search_ext1.png "Target 検索")
+   ![Target 検索 ](assets/search_ext1.png "Target 検索")
 3. 「**設定**」ボタンを選択します。設定ウィンドウに、読み込まれた Target アカウントの資格情報と、この拡張機能の at.js バージョンが表示されます。
 4. 「**保存**」を選択して、Target 拡張機能を Launch プロパティに追加します。「**インストール済みの拡張機能**」リストの下に Target 拡張機能が表示されます。
    ![拡張機能の保存](assets/configure_extension1.png "拡張機能の保存")
-5. 上記の手順を繰り返して、**Adobe ContextHub** 拡張機能を検索してインストールします（これは、どのターゲットが設定されるかに基づいて contexthub パラメーターとの統合に必要です）。
+5. 上記の手順を繰り返して、**Adobe ContextHub** 拡張機能を検索してインストールします（これは、どのターゲティングが行われるかに基づいて contexthub パラメーターとの統合に必要です）。
 
 ### データ要素の作成 {#data-element}
 

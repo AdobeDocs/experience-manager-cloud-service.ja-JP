@@ -1,14 +1,15 @@
 ---
 title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 99%
 
 ---
 
@@ -19,11 +20,11 @@ ht-degree: 100%
 * オーディエンスの追加 - Adobe Target オーディエンスまたは ContextHub セグメント。
 * オーディエンスの管理 
 
-オーディエンス（ContextHub では「*セグメント*」と呼ぶ）とは、特定の条件によって定義される訪問者のクラスで、ターゲットアクティビティが表示される対象を決定します。アクティビティにターゲットを設定すると、ターゲット設定プロセスで直接オーディエンスを選択したり、オーディエンスコンソールで新しいオーディエンスを作成したりできます。
+オーディエンス（ContextHub では「*セグメント*」と呼ぶ）とは、特定の条件によって定義される訪問者のクラスで、ターゲットアクティビティが表示される対象を決定します。アクティビティにターゲットを設定すると、ターゲティングプロセスで直接オーディエンスを選択したり、オーディエンスコンソールで新しいオーディエンスを作成したりできます。
 
 オーディエンスコンソールでは、オーディエンスはブランド別に整理されます。
 
-オーディエンスは、ターゲット設定モードで[ターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)に使用できます。その際、オーディエンスを作成することもできます（ただし、オーディエンスコンソールで Adobe Target オーディエンスを作成する必要があります）。ターゲティングモードで作成したオーディエンスは、オーディエンスコンソールに表示されます。
+オーディエンスは、ターゲティングモードで[ターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)に使用できます。その際、オーディエンスを作成することもできます（ただし、オーディエンスコンソールで Adobe Target オーディエンスを作成する必要があります）。ターゲティングモードで作成したオーディエンスは、オーディエンスコンソールに表示されます。
 
 オーディエンスは、定義されているオーディエンスの種類を示すラベルと共に表示されます。
 
@@ -32,7 +33,7 @@ ht-degree: 100%
 
 ## オーディエンスコンソールでの ContextHub セグメントの作成 {#creating-a-contexthub-segment-in-the-audiences-console}
 
-ContextHub セグメントは、オーディエンスコンソールまたはターゲット設定プロセスで作成できます。
+ContextHub セグメントは、オーディエンスコンソールまたはターゲティングプロセスで作成できます。
 
 オーディエンスコンソールで ContextHub セグメントを作成するには：
 

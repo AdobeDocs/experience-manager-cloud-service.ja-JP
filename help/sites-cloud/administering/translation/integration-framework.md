@@ -3,12 +3,13 @@ title: 翻訳統合フレームワークの設定
 description: サードパーティの翻訳サービスと統合するための Translation Integration Framework の設定方法を説明します。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1447'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1453'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +31,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 AEM をお使いの翻訳サービスプロバイダーに接続するためのクラウド設定を作成します。
 
-AEM には、[Microsoft® Translator に接続](connect-ms-translator.md)する機能がデフォルトで含まれています。Adobe Exchange パートナープログラムに参加している、AEM コネクタを持つその他の翻訳テクノロジーベンダーについては、[ こちら](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE)を参照してください。
+AEM には、[Microsoft® Translator に接続](connect-ms-translator.md)する機能がデフォルトで含まれています。Adobe Exchange パートナープログラムに参加している、AEM コネクタを持つその他の翻訳テクノロジーベンダーについては、[ こちら](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)を参照してください。
 
 コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft® Translator との統合](connect-ms-translator.md)を参照してください。
 

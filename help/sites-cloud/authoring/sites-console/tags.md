@@ -1,14 +1,15 @@
 ---
-title: タグの使用
+title: 'タグの使用 '
 description: タグを使用すると、web サイト内のコンテンツを素早く簡単に分類できます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +31,7 @@ ht-degree: 100%
 1. **SEO の有効化** - ページのプロパティとして適用されたタグはページのメタタグに自動的に表示され、検索エンジンで確認できるようになります。
 1. **簡単操作** - タグはボタンのタッチにより単語から簡単に作成できます。その後、タイトルや説明のほか、ラベルを制限なく追加してタグにセマンティクスをさらに追加できます。
 1. **一貫したコア** - タグ付けシステムは AEM のコアコンポーネントであり、AEM のすべての機能でコンテンツの分類に使用されます。さらに、開発者はタグ付け API を使用して、同じ分類にアクセス可能な、タグ付けが有効化されたアプリケーションを作成できます。
-1. **構造化と柔軟性の結合** - AEM はページやパスをネストできるので、構造化された情報の処理に最適です。フルテキスト検索機能が組み込まれているので、非構造化の情報の処理にも力を発揮します。タグ付けは構造化と柔軟性の両方の利点を結び付けます。
+1. **構造化と柔軟性の結合** - AEM はページやパスをネストできるので、構造化された情報の処理に最適です。ビルトインのフルテキスト検索機能があるので、非構造化の情報の処理にも力を発揮します。タグ付けは構造化と柔軟性の両方の利点を結び付けます。
 
 サイトのコンテンツ構造やアセットのメタデータスキーマを設計する際には、タグ付け機能が提供する軽量でアクセス可能なアプローチを検討してください。
 
@@ -38,7 +39,7 @@ ht-degree: 100%
 
 オーサー環境では、作成者はページのプロパティにアクセスし、「**タグ／キーワード**」フィールドに 1 つ以上のタグを入力することでタグを適用できます。
 
-定義済みのタグを適用するには、**ページのプロパティ**&#x200B;ウィンドウで、「**タグ**」フィールドと&#x200B;**タグの選択**&#x200B;ウィンドウを使用します。「**標準タグ**」タブがデフォルトの名前空間です。これは、分類にプレフィックスされている `namespace-string:` がないことを意味します。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+定義済みのタグを適用するには、**ページのプロパティ**&#x200B;ウィンドウで、「**タグ**」フィールドと&#x200B;**タグの選択**&#x200B;ウィンドウを使用します。「**標準タグ**」タブがデフォルトの名前空間です。これは、分類に接頭辞されている `namespace-string:` がないことを意味します。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![複数タグの選択](/help/sites-cloud/authoring/assets/tags-select.png)
 

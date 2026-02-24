@@ -1,14 +1,15 @@
 ---
-title: プロジェクトワークフローの操作
+title: 'プロジェクトワークフローの操作 '
 description: すぐに使用できる様々なプロジェクトワークフローが用意されています。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '455'
+ht-degree: 99%
 
 ---
 

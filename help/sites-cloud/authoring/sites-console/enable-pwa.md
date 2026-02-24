@@ -1,15 +1,16 @@
 ---
 title: プログレッシブ web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ web アプリケーション機能を有効にすることができます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
-workflow-type: ht
-source-wordcount: '1896'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1902'
+ht-degree: 99%
 
 ---
 
@@ -152,7 +153,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 これらの設定を使用すると、訪問者のホーム画面にサイトをインストールしてオフラインで使用できるようにすることで、サイトをネイティブアプリのように動作させることができます。
 
-* **PWA を有効にする** - これは、サイトの PWA を有効にするためのメイントグルです。
+* **PWA を有効にする** - これは、サイトの PWA を有効に切り替えるためのメイン切替スイッチです。
 * **起動 URL** - これは、ユーザーがローカルにインストールしたアプリを読み込むときに開く、[優先的な起動 URL](https://developer.mozilla.org/ja-JP/docs/Web/Manifest/start_url) です。
    * これは、コンテンツ構造内の任意のパスにすることができます。
    * ルートにする必要はなく、多くの場合アプリケーションの開始ページにします。
@@ -200,7 +201,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 >
 >デベロッパーチームは、オフライン設定の設定方法に関する貴重な情報を得られる可能性が高くなります。
 
-## 制限と Recommendations {#limitations-recommendations}
+## 制限とレコメンデーション {#limitations-recommendations}
 
 AEM Sites では PWA 機能の一部が利用できます。これらには、いくつかの顕著な制限があります。
 

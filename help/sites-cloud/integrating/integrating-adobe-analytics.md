@@ -3,12 +3,13 @@ title: Adobe Analytics との統合
 description: タッチ UI と Adobe Launch を使用して、Adobe Analytics を AEM as a Cloud Service と統合する方法について説明します。
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: ht
-source-wordcount: '593'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 99%
 
 ---
 

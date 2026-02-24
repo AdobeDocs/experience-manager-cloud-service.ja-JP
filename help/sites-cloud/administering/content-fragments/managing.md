@@ -3,11 +3,12 @@ title: コンテンツフラグメントの管理
 description: コンソールやエディターから AEM コンテンツフラグメントを管理し、ヘッドレスコンテンツの基礎として、またはページオーサリング用のコンテンツを作成する方法について説明します。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2943'
 ht-degree: 98%
 
 ---
@@ -64,8 +65,8 @@ ht-degree: 98%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
-      * [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
+      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) または [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md) を表示します。パネルへのリンクを圧縮または展開することもできます
+      * [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md) を作成および管理
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -388,7 +389,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [&#x200B; プレビュー &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** – 完全に使用可能になる前にコンテンツを [ プレビュー ](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) します
 
   >[!CAUTION]
   >
@@ -406,7 +407,7 @@ FolderC
 
 >[!TIP]
 >
->コンテンツフラグメントは [Edge Delivery Servicesに公開 &#x200B;](https://www.aem.live/developer/content-fragment-overlay) できます。
+>コンテンツフラグメントは [Edge Delivery Servicesに公開 ](https://www.aem.live/developer/content-fragment-overlay) できます。
 
 ### 公開 {#publishing}
 

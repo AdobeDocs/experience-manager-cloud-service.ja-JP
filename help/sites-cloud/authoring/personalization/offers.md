@@ -1,14 +1,15 @@
 ---
 title: オファーの作成と管理（オファーコンソール）
 description: アクティビティエクスペリエンスで使用するオファーを作成するには、オファーコンソールを使用します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 100%
+source-wordcount: '1357'
+ht-degree: 99%
 
 ---
 

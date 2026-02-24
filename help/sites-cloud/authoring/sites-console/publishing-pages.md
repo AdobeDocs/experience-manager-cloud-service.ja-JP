@@ -1,14 +1,15 @@
 ---
 title: Sites コンソールからのページの公開
 description: Sites コンソールを使用して、ページを公開および非公開にする方法について説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
-workflow-type: ht
-source-wordcount: '1635'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 99%
 
 ---
 

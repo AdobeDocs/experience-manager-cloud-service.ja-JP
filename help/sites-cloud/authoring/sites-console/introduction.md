@@ -1,14 +1,15 @@
 ---
 title: Sites コンソール
 description: Sites コンソールを使用して AEM ページを管理および整理する方法について説明します。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
-workflow-type: ht
-source-wordcount: '1653'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 99%
 
 ---
 

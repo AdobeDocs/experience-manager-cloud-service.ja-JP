@@ -1,14 +1,15 @@
 ---
 title: アカウント環境の設定
 description: Adobe Experience Manager（AEM）では、アカウントとオーサー環境の特定項目を設定できます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '507'
+ht-degree: 99%
 
 ---
 

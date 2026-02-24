@@ -3,12 +3,13 @@ title: ライブコピーの作成と同期
 description: ライブコピーを作成および同期して、サイト全体でコンテンツを再利用する方法を説明します。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '4270'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '4276'
+ht-degree: 99%
 
 ---
 

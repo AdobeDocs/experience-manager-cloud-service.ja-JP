@@ -1,14 +1,15 @@
 ---
-title: ローンチの編集
+title: 'ローンチの編集 '
 description: ページ（またはページのセット）のローンチを作成した後で、ページのローンチコピーのコンテンツを編集できます。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 100%
+source-wordcount: '557'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +36,7 @@ ht-degree: 100%
 
 ローンチが[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づく場合は、次のようになります。
 
-* コンポーネント（コンテンツやプロパティ）を編集するときにロック記号（小さな鍵アイコン）が表示されます。
+* コンポーネント（コンテンツやプロパティ）を編集するときに鍵マークシンボル（小さな鍵アイコン）が表示されます。
 * 「**ライブコピー**」タブが&#x200B;**ページのプロパティ**&#x200B;に表示されます。
 
 ライブコピーは、コンテンツをソースブランチ&#x200B;*から*&#x200B;ローンチブランチ&#x200B;*に*&#x200B;同期するために使用します（ローンチを、ソースに加えられた変更を含む最新の状態に保ちます）。

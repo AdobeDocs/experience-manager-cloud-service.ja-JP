@@ -3,12 +3,13 @@ title: 翻訳のベストプラクティス
 description: アドビのエンジニアリングおよびコンサルティングチームがまとめたベストプラクティスを確認し、翻訳プロジェクトの導入および運用に役立ててください。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '872'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 99%
 
 ---
 

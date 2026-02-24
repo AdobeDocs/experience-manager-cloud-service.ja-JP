@@ -3,12 +3,13 @@ title: ライブコピーの同期の設定
 description: 使用できる強力なライブコピー同期オプションと、それらをプロジェクトのニーズに合わせて設定およびカスタマイズする方法について説明します。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2414'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '2420'
+ht-degree: 99%
 
 ---
 

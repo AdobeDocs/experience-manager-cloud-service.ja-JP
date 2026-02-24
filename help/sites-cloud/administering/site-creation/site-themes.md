@@ -3,12 +3,13 @@ title: サイトテーマ
 description: AEM サイトテーマを使用して、公開配信を使用した従来の AEM オーサリングプロジェクトのサイトのスタイルとデザインをカスタマイズする方法について説明します。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
-workflow-type: ht
-source-wordcount: '388'
-ht-degree: 100%
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 

@@ -3,12 +3,13 @@ title: AEM as a Cloud Service と Adobe Campaign の統合
 description: Adobe Campaign との統合に対する AEM as a Cloud Service のサポートについて説明します。
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 solution: Experience Manager Sites
-source-git-commit: d62ac2e60062d3559d6a877dc830b8106f4bd0f6
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 99%
+source-wordcount: '154'
+ht-degree: 97%
 
 ---
 
