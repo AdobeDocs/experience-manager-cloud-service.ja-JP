@@ -31,7 +31,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 
 AEM をお使いの翻訳サービスプロバイダーに接続するためのクラウド設定を作成します。
 
-AEM には、[Microsoft® Translator に接続](connect-ms-translator.md)する機能がデフォルトで含まれています。Adobe Exchange パートナープログラムに参加している、AEM コネクタを持つその他の翻訳テクノロジーベンダーについては、[ こちら](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)を参照してください。
+AEM には、[Microsoft® Translator に接続](connect-ms-translator.md)する機能がデフォルトで含まれています。Adobe Exchange パートナープログラムに参加している、AEM コネクタを持つその他の翻訳テクノロジーベンダーについては、[&#x200B; こちら](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)を参照してください。
 
 コネクタパッケージをインストールしたら、コネクタ用のクラウド設定を作成できます。通常は、翻訳サービスで認証を行うための資格情報を指定する必要があります。Microsft Translator コネクタ用のクラウド設定の追加については、[Microsoft® Translator との統合](connect-ms-translator.md)を参照してください。
 

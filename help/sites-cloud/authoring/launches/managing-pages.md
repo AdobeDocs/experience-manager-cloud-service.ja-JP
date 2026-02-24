@@ -37,7 +37,7 @@ ht-degree: 98%
      >
      >* ローンチの&#x200B;**終了**&#x200B;後、ソースページの編集に戻る
 
-* **ローンチ**コンソール：
+* **ローンチ**&#x200B;コンソール：
 特定のローンチを選択すると、「**コンテンツを管理**」を選択できます。
   ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
@@ -56,7 +56,7 @@ ht-degree: 98%
 * 新しいページを&#x200B;**作成**&#x200B;する
 * 既存のページを選択し、処理（例：「**編集**」、「**プロパティ**」、「**ロック**」、「**コピー**」、「**ペースト**」、「**削除**」）を実行します
   ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* **参照**&#x200B;パネルを使用して、**ローンチソース**ページに戻る
+* **参照**&#x200B;パネルを使用して、**ローンチソース**&#x200B;ページに戻る
   ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## ローンチへのページの追加 {#add-pages-to-launch}

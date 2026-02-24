@@ -74,7 +74,7 @@ ht-degree: 99%
 
 ## プロパティ {#properties}
 
-[テンプレートのプロパティ](/help/sites-cloud/authoring/page-editor/templates.md)は、ページプロパティの編集と同じ方法で編集できます。[](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)テンプレートのプロパティには次のようなものがあります。
+[テンプレートのプロパティ](/help/sites-cloud/authoring/page-editor/templates.md)は、ページプロパティの編集と同じ方法で編集できます。[&#128279;](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)テンプレートのプロパティには次のようなものがあります。
 
 * テンプレートのタイトル
 * 説明

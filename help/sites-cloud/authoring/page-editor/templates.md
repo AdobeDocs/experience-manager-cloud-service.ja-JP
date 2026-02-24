@@ -398,7 +398,7 @@ ht-degree: 99%
 
 例えば、画像コンポーネントでは、切り抜き比率、許容される画像の方向、アップロードを許可するかどうかを定義できます。
 
-![「機能」タブ ](/help/sites-cloud/authoring/assets/templates-features-tab.png)
+![「機能」タブ &#x200B;](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
 >[!CAUTION]
 >
@@ -442,7 +442,7 @@ ht-degree: 99%
 * 名前でコンポーネントをフィルターするために、検索を使用できます。
 * コンポーネントグループ名の右側にリストされるカウントは、フィルターにかかわらずそれらのグループの中の選択されたコンポーネントの合計数を示します。
 
-![「許可されるコンポーネント」タブ ](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
+![「許可されるコンポーネント」タブ &#x200B;](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
 ###### デフォルトのコンポーネント {#default-components}
 
@@ -452,7 +452,7 @@ ht-degree: 99%
 
 リストの中のコンポーネントを選択し、「**タイプの追加**」を選択して、既にマッピングされているコンポーネントに追加の MIME タイプを追加します。「**削除**」アイコンをクリックして、MIME タイプを削除します。
 
-![「デフォルトコンポーネント」タブ ](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
+![「デフォルトコンポーネント」タブ &#x200B;](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
 ###### レスポンシブ設定 {#responsive-settings}
 

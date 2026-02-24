@@ -31,12 +31,12 @@ ht-degree: 99%
 | ローンチをリクエスト | x |  |
 | ランディングページをリクエスト | x |  |
 | メールをリクエスト | x | |
-| DAM 言語コピーを作成&amp;ast; |  | x |
-| DAM 言語コピー作成／翻訳&amp;ast; |   | x |
+| DAM 言語コピーを作成&ast; |  | x |
+| DAM 言語コピー作成／翻訳&ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。「[アセットの言語コピーの作成](/help/sites-cloud/administering/translation/managing-projects.md)」を参照してください。
+>&ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。「[アセットの言語コピーの作成](/help/sites-cloud/administering/translation/managing-projects.md)」を参照してください。
 
 ワークフローを開始および完了する手順は、どのワークフローを選択した場合も同じです。手順が異なるだけです。
 
@@ -45,7 +45,7 @@ ht-degree: 99%
 AEM でのワークフローの操作について詳しくは、以下を参照してください。
 
 * [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
-* [ページへのワークフローの適用 ](/help/sites-cloud/authoring/workflows/applying.md)
+* [ページへのワークフローの適用 &#x200B;](/help/sites-cloud/authoring/workflows/applying.md)
 * [ワークフローの設定](/help/sites-cloud/administering/workflows-administering.md)
 
 この節では、プロジェクトに使用可能なワークフローについて説明します。

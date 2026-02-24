@@ -30,7 +30,7 @@ ht-degree: 99%
 
 次の追加トピックを参照してください。
 
-* [プロジェクトの管理 ](/help/sites-cloud/authoring/projects/managing.md)
+* [プロジェクトの管理 &#x200B;](/help/sites-cloud/authoring/projects/managing.md)
 * [タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
 * [プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md)
 
