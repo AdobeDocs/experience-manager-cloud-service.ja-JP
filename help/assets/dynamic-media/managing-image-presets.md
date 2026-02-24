@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 5bccf61158c40f9c6dd84ea91d005da370686781
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 100%
+source-wordcount: '2596'
+ht-degree: 92%
 
 ---
 
@@ -54,113 +54,142 @@ Experience Manager で画像プリセットを管理するには、Experience Ma
 >
 >アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、様々なレンディションが表示されます。表示される画像プリセットの数を増減させることができます。[表示される画像プリセットの数の増減](#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
 
-### Adobe Illustrator（AI）、PostScript®（EPS）、PDF の各ファイル形式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+## 画像プリセットとレンディションとの関係 {#how-image-presets-relate-to-renditions}
 
-AI ファイル、EPS ファイル、PDF ファイルの取り込みをサポートして、これらのファイル形式の動的レンディションを生成できるようにする場合は、画像プリセットを作成する前に次の情報を確認します。
+画像プリセットは、サイズ設定、書式設定、圧縮、その他の表示パラメーターなど、Dynamic Media が画像を配信する方法を定義します。 プリセットは、レンディション自体を生成しません。 代わりに、アセットの処理時に作成されるレンディションに依存します。
 
-Adobe Illustrator&#39;s file format is a variant of PDF. Adobe Illustrator のファイル形式は PDF のバリアントです。Adobe Experience Manager Assets における主な違いは、次のとおりです。
+### AEM as a Cloud Serviceでのレンディションの生成{#rendition-generation-in-aemaacs}
 
-* Adobe Illustrator のドキュメントは複数のレイヤーを持つ単一のページで構成されます。各レイヤーはメインの Illustrator アセットの下に PNG サブアセットとして抽出されます。
-* PDF のドキュメントは 1 つ以上のページで構成されます。各ページはメインの複数ページの PDF ドキュメントの下に単一ページの PDF サブアセットとして抽出されます。
+AEM as a Cloud Serviceでは、レンディションは **アセットマイクロサービス** を使用して生成されます。 DAM アセットの更新ワークフローは、Cloud Serviceではカスタマイズできません。
 
-`Create Sub Asset process` コンポーネントは、全体的な `DAM Update Asset` ワークフロー内にサブアセットを作成します。ワークフローにこのプロセスコンポーネントを表示するには、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**／**[!UICONTROL DAM アセットの更新]**／**[!UICONTROL 編集]**&#x200B;に移動します。
+重要な考慮事項を次に示します。
 
-<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
+* レンディションはアップロード時に生成されます。
+* 処理プロファイルを変更すると、新しくアップロードされたアセットに影響します。 新しいレンディションが必要な場合、既存のアセットを再処理する必要があります。
+* ワークフローモデルのカスタマイズは、レンディションの生成用のAEM as a Cloud Serviceではサポートされていません。
 
-サブアセットまたはページは、アセットを開き、コンテキストメニューを選択し、「**[!UICONTROL サブアセット]**」または「**[!UICONTROL ページ]**」を選択して表示できます。サブアセットは実在のアセットです。`Create Sub Asset` ワークフローコンポーネントは、PDF ページを抽出します。その後それらは `page1.pdf` や `page2.pdf` などとして、メインアセットの下に保存されます。保存後、それらは `DAM Update Asset` ワークフローで処理されます。
+画像プリセットは、配信時に使用可能なレンディションを参照します。 画像プリセットを設定または使用する前に、必要なレンディションが存在することを確認します。
 
-Dynamic Media を使用して AI、EPS または PDF ファイルの動的レンディションを表示および生成するには、次の処理ステップが必要です。
+**生成するレンディションを制御するには：**
 
-1. `DAM Update Asset` ワークフローでは、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントが、設定された解像度を使用して、元のアセットの最初のページを `cqdam.preview.png` レンディションにラスタライズします。
+1. [ 処理プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) を作成または編集します。
+2. 必要なレンディション定義を設定します。
+3. 適切なフォルダーに処理プロファイルを適用します。
 
-1. ワークフロー内の `Dynamic Media Process Image Assets` プロセスコンポーネントは、`cqdam.preview.png` レンディションを PTIFF に最適化します。
+処理プロファイルが適用されているフォルダーにアセットがアップロードされると、アセットマイクロサービスは、定義されたレンディションを自動的に生成します。
+
+<!--
+### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
+
+Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of Experience Manager Assets, are the following:
+
+* Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
+* PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
+
+The `Create Sub Asset process` component creates the subassets within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+
+See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
+
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. The `Create Sub Asset` workflow component extracts the PDF pages. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+
+To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
+
+1. In the `DAM Update Asset` workflow, the `Rasterize PDF/AI Image Preview Rendition` process component rasterizes the first page of the original asset &ndash; using the configured resolution &ndash; into a `cqdam.preview.png` rendition.
+
+1. The `Dynamic Media Process Image Assets` process component within the workflow optimizes the `cqdam.preview.png` rendition into a PTIFF.
 
 >[!NOTE]
 >
->DAM アセットの更新ワークフローでは、**[!UICONTROL EPS サムネール]**&#x200B;のステップで EPS ファイルのサムネールが生成されます。
+>In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
-#### PDF/AI/EPS アセットのメタデータプロパティ {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
-| **メタデータプロパティ** | **説明** |
+| **Metadata property** |**Description** |
 |---|---|
-| `dam:Physicalwidthininches` | ドキュメントの幅（インチ単位） |
-| `dam:Physicalheightininches` | ドキュメントの高さ（インチ単位） |
+| `dam:Physicalwidthininches` |Document width in inches. |
+| `dam:Physicalheightininches` |Document height in inches. |
 
-`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントのオプションには、`DAM Update Asset` ワークフローを通じてアクセスします。
+You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-左上の Adobe Experience Manager を選択し、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**&#x200B;をクリックします。ワークフローモデルページで「**[!UICONTROL DAM アセットの更新]**」を選択し、ツールバーの「**[!UICONTROL 編集]**」を選択します。DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルクリックして、ステッププロパティダイアログボックスを開きます。
+Select Adobe Experience Manager in the upper left, the click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-select the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
-#### PDF/AI 画像プレビューレンディションをラスタライズのオプション {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![PDF または AI ワークフローのラスタライズの引数](assets/rasterize_pdf_ai_image_preview.png)
+![Arguments to rasterize PDF or AI workflow](assets/rasterize_pdf_ai_image_preview.png)
 
-PDF または AI ワークフローのラスタライズの引数
+Arguments to rasterize PDF or AI workflow
 
-| プロセス引数 | デフォルト設定 | 説明 |
+|Process Argument | Default setting | Description |
 |---|---|---|
-| MIME タイプ | application/pdf<br>application/postscript<br>application/illustrator | PDF または Illustrator のドキュメントと見なされるドキュメントの MIME タイプのリスト。 |
-| 最大の幅 | 2048 | 生成されたプレビューレンディションの最大の幅（ピクセル単位）。 |
-| 最大の高さ | 2048 | 生成されたプレビューレンディションの最大の高さ（ピクセル単位）。 |
-| 解決策 | 72 | 最初のページをラスタライズする解像度（ppi（インチあたりピクセル数）単位） |
+| Mime Types | application/pdf<br>application/postscript<br>application/illustrator| List of document mime-types that are considered to be PDF or Illustrator documents. |
+| Max Width | 2048 | Maximum width of the generated preview rendition, in pixels.|
+| Max Height | 2048| Maximum height of the generated preview rendition, in pixels. |
+| Resolution | 72 | Resolution to rasterize the first page, in ppi (pixels per inch). |
 
-デフォルトのプロセス引数を使用して、PDF/AI ドキュメントの最初のページが 72 ppi でラスタライズされ、生成されたプレビュー画像のサイズは 2048 x 2048 ピクセルになります。通常のデプロイメントでは、解像度を 150 ppi 以上に増やす必要が生じる可能性があります。例えば、300 ppi の US Letter サイズのドキュメントの幅と高さにはそれぞれ最大で 2550 x 3300 ピクセルが必要です。
+Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you can increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
 
-ラスタライズする解像度を制限する最大の幅と最大の高さ。例えば、最大値が変更されず、解像度が 300 ppi に設定された場合、US Letter のドキュメントは 186 ppi でラスタライズされます。つまり、ドキュメントは 1581 x 2046 ピクセルになります。
+Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントには、メモリに過度に大きな画像が作成されないように、最大値が定義されています。このようなサイズの大きな画像の場合は、JVM（Java™ 仮想マシン）に提供されているメモリがオーバーフローするおそれがあります。それぞれ設定された最大サイズで画像を作成可能なワークフローを、設定した数だけ並行して管理するのに十分なメモリを JVM に提供する必要があります。
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
 
-### InDesign（INDD）ファイル形式 {#indesign-indd-file-format}
+<!--
+### InDesign (INDD) file format {#indesign-indd-file-format}
 
-このファイル形式の動的レンディションを生成できるよう INDD 形式の取り込みをサポートする場合は、画像プリセットを作成する前に次の情報を確認してください。
+If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create Image Presets.
 
-InDesign ファイルについては、Adobe InDesign Server が AEM Experience Manager に統合されている場合にのみサブアセットが抽出されます。参照元のアセットは、メタデータに基づいてリンクされます。リンク設定に InDesign Server は不要です。ただし、リンクが InDesign ファイルと参照元のアセットの間に作成されるには、InDesign ファイルが処理される前に参照元のアセットが Adobe Experience Manager 内に存在する必要があります。
+For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
-`DAM Update Asset` ワークフローのメディア抽出プロセスコンポーネントでは、事前設定された「スクリプトを拡張」をいくつか実行して InDesign ファイルを処理します。
+The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
-![メディア抽出プロセスの引数で使用される ExtendScript のパス](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![The ExtendScript paths in the arguments of Media Extraction process](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-DAM アセットの更新ワークフローのメディア抽出プロセスコンポーネントの引数で使用される ExtendScript のパス。
+The ExtendScript paths in the arguments of the Media Extraction process component in the DAM Update Asset workflow.
 
-Dynamic Media 統合では、以下のスクリプトが使用されます。
+The following scripts are used by Dynamic Media integration:
 
 
-| ExtendScript 名 | デフォルト | 説明 |
+|ExtendScript name | Default | Description |
 |---|---|---|
-| ThumbnailExport.jsx | はい | `Dynamic Media Process Image Assets` プロセスコンポーネントによって最適化され PTIFF レンディションに変換される 300 ppi の `thumbnail.jpg` レンディションを生成します。 |
-| JPEGPagesExport.jsx | はい | ページごとに 300 ppi の JPEG サブアセットを生成します。JPEG サブアセットは実在のアセットで、InDesign アセットの下に保存されます。`DAM Update Asset` ワークフローは、これを最適化し、PTIFF に変換します。 |
-| PDFPagesExport.jsx | いいえ | ページごとに PDF サブアセットを生成します。PDF サブアセットは前述のように処理されます。PDF には 1 つのページのみ含まれているので、サブアセットは生成されません。 |
+| ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. The `DAM Update Asset` workflow optimizes and converts it into a PTIFF. |
+| PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
+-->
 
-### 画像のサムネールサイズの設定 {#configuring-image-thumbnail-size}
+<!--
+### Configure the image thumbnail size {#configuring-image-thumbnail-size}
 
-**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローで設定することにより、サムネールのサイズを設定できます。画像アセットのサムネールサイズの設定にはワークフローで 2 つのステップがあります。一方（**[!UICONTROL ダイナミックメディアプロセスの画像アセット]**）は、動的な画像アセットに使用されます。もう一方（**[!UICONTROL サムネールを処理]**）は、静的なサムネールの生成に使用されるか、その他のすべてのプロセスでサムネールを生成できなかった場合に使用されます。いずれにせよ、*両方*&#x200B;とも同じ設定にする必要があります。
+You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
 
-**[!UICONTROL Dynamic Media プロセスの画像アセット]**&#x200B;ステップでは、**[!UICONTROL サムネールを処理]**&#x200B;のステップに適用された設定とは関係なく、画像サーバーを使用してサムネールを生成します。**[!UICONTROL サムネールを処理]**&#x200B;のステップで行うサムネールの生成は、サムネール生成で最も遅く、最もメモリを使う方法です。
+The **[!UICONTROL Dynamic Media Process Image Assets]** step uses the image server to generate thumbnails, independently of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-サムネールのサイズは **[!UICONTROL width:height:center]** の形式で定義されます（例：`80:80:false`）。width と height はサムネールのサイズをピクセル単位で指定します。center の値は false または true で、true に設定した場合は、サムネール画像のサイズが設定で指定されたサイズとまったく同じであることを示します。画像が指定よりも小さいサイズに変更された場合は、サムネール内で中央揃えされます。
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example, `80:80:false`. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
 
 >[!NOTE]
 >
->* EPS ファイルのサムネールサイズは 「サムネール」の下の「**[!UICONTROL 引数]**」タブにある **[!UICONTROL EPS サムネール]**&#x200B;のステップで設定します。
+>* Thumbnail sizes for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
+>* Thumbnail sizes for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**画像のサムネールサイズを設定するには：**
+**To configure the image thumbnail size:**
 
-1. **[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**／**[!UICONTROL DAM アセットの更新]**／**[!UICONTROL 編集]**&#x200B;に移動します。
-1. **[!UICONTROL Dynamic Media プロセスの画像アセット]**&#x200B;のステップを選択し、「**[!UICONTROL サムネール]**」タブを選択します。必要に応じてサムネールのサイズを変更し、「**[!UICONTROL OK]**」を選択します。
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. **[!UICONTROL サムネールを処理]**&#x200B;のステップを選択し、「**[!UICONTROL サムネール]**」タブを選択します。必要に応じてサムネールのサイズを変更し、「**[!UICONTROL OK]**」を選択します。
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >**[!UICONTROL サムネールを処理]**&#x200B;ステップのサムネール引数の値が、**[!UICONTROL Dynamic Media プロセスの画像アセット]**&#x200B;ステップのサムネール引数と一致する必要があります。
+   >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. 「**[!UICONTROL 保存]**」を選択して、ワークフローに対する変更を保存します。
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
+-->
 
 ### 表示される画像プリセットの数の増減 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -296,7 +325,7 @@ AI ファイル、PDF ファイル、EPS ファイルの取り込みをサポー
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ja">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
+      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
     </div> </td>
   </tr>
   <tr>
