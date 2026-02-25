@@ -33,9 +33,9 @@ ht-degree: 2%
 
 AI アシスタントを使用して、AEMのジョブにアクセスできます。
 
-[`experience.adobe.com` から AI アシスタントを開き ](https://experience.adobe.com)`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
+[`experience.adobe.com` から AI アシスタントを開き &#x200B;](https://experience.adobe.com)`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、操作を開始します。
 
-![ コンテンツ更新ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![&#x200B; コンテンツ更新ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
 ### サンプルプロンプト {#sample-prompts}
 
@@ -105,7 +105,7 @@ Jira でコンテンツ更新ジョブを使用すると、編集を自動化す
 
 * 次の画像は、コンテンツ更新ジョブ用の `process` コマンドをトリガーする Jira の例を示しています。
 
-  ![ エクスペリエンス実稼働エージェントのコンテンツ更新ジョブを使用した Jira の例 ](assets/content-update-jira-example.png)
+  ![&#x200B; エクスペリエンス実稼働エージェントのコンテンツ更新ジョブを使用した Jira の例 &#x200B;](assets/content-update-jira-example.png)
 
 ## アクティベーション {#activation}
 
@@ -142,4 +142,4 @@ Jira でコンテンツ更新ジョブを使用すると、編集を自動化す
 
 次の制限事項に注意してください。
 
-* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント ](#ai-assistant) を操作する際にはサポートされません。
+* ファイルのアップロードは、[Jira](#jira) を操作する際に使用できますが、[AI アシスタント &#x200B;](#ai-assistant) を操作する際にはサポートされません。

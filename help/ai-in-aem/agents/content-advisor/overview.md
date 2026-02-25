@@ -28,15 +28,15 @@ Content Advisor Agent は、大量のジョブを自動的に処理します。
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### コンテンツ検出ジョブ {#discovery}
 
-[ コンテンツ検出ジョブ ](/help/ai-in-aem/agents/content-advisor/discovery.md) は、ユーザーの意図を解釈し、AEM全体で最も関連性が高く承認済みのコンテンツを検索し、再利用のために表示して、適切なアセットを適切なタイミングで結び付けます。
+[&#x200B; コンテンツ検出ジョブ &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) は、ユーザーの意図を解釈し、AEM全体で最も関連性が高く承認済みのコンテンツを検索し、再利用のために表示して、適切なアセットを適切なタイミングで結び付けます。
 
 ### コンテンツ最適化ジョブ {#optimization}
 
-[ コンテンツ最適化ジョブ ](/help/ai-in-aem/agents/content-advisor/content-optimization.md) は、ビジュアル、画像およびビデオを様々なチャネルに合わせてパーソナライズおよび適応させ、エクスペリエンスのライフサイクル全体でエンゲージメントとコンバージョンを向上させます。
+[&#x200B; コンテンツ最適化ジョブ &#x200B;](/help/ai-in-aem/agents/content-advisor/content-optimization.md) は、ビジュアル、画像およびビデオを様々なチャネルに合わせてパーソナライズおよび適応させ、エクスペリエンスのライフサイクル全体でエンゲージメントとコンバージョンを向上させます。
 
 ## 他のエージェントとの併用 {#other-agents}
 
