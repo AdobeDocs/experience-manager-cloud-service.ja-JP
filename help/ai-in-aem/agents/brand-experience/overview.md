@@ -30,27 +30,27 @@ Brand Experience Agent を使用すると、チームは、数週間にわたる
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### コンテンツ更新ジョブ {#content-update}
 
-[ コンテンツ更新ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) は、コンテンツフラグメント、ページ、フォームなどの既存のコンテンツを更新できます。
+[&#x200B; コンテンツ更新ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) は、コンテンツフラグメント、ページ、フォームなどの既存のコンテンツを更新できます。
 アセット – 簡単に。 この機能エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
 
 ### フォーム作成ジョブ {#form-creation}
 
-[ フォーム作成ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) を使用すると、開発チームや IT チームに依存することなく、自然言語プロンプトを使用してアダプティブフォームを作成できます。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
+[&#x200B; フォーム作成ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) を使用すると、開発チームや IT チームに依存することなく、自然言語プロンプトを使用してアダプティブフォームを作成できます。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
 
 ### コミュニケーション作成ジョブ {#communications-creation}
 
-[ コミュニケーション作成ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) ビジネスユーザーがパーソナライズされたデータを作成できるようになる – 
+[&#x200B; コミュニケーション作成ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) ビジネスユーザーがパーソナライズされたデータを作成できるようになる – 
 大規模な対応関係の推進 勘定明細書および契約書類から請求および
 ウェルカムキット、エージェントはプロに自然言語要件を変換します
 通信。
 
 ### 開発支援業務 {#development-support}
 
-[ 開発サポートジョブ ](/help/ai-in-aem/agents/brand-experience/development/development.md) は、問題を診断し修正をガイドすることで、エクスペリエンスの配信をブロックする技術的な問題の解決を促進します。 価値の高い開発作業に集中することなく、チームが信頼性と勢いを維持するのに役立ちます。
+[&#x200B; 開発サポートジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md) は、問題を診断し修正をガイドすることで、エクスペリエンスの配信をブロックする技術的な問題の解決を促進します。 価値の高い開発作業に集中することなく、チームが信頼性と勢いを維持するのに役立ちます。
 
 ## 他のエージェントとの併用 {#other-agents}
 
@@ -60,5 +60,5 @@ Brand Experience Agent を使用すると、チームは、数週間にわたる
 
 ## アクティベーション {#activation}
 
-[ プレイグラウンド ](https://www.aem.live/developer/aem-playground) を通じてAEM エージェントを参照したり、CSM や TAM と連携して Agentic SKU 経由でのアクセスについて話し合ったりできます。
+[&#x200B; プレイグラウンド &#x200B;](https://www.aem.live/developer/aem-playground) を通じてAEM エージェントを参照したり、CSM や TAM と連携して Agentic SKU 経由でのアクセスについて話し合ったりできます。
 
