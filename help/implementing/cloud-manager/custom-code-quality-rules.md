@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[`Sling` のドキュメントで説明しているように ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) パスによってサーブレットをバインドすることは推奨されていません。 パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[`Sling` のドキュメントで説明しているように &#x200B;](https://sling.apache.org/documentation/the-sling-engine/servlets.html) パスによってサーブレットをバインドすることは推奨されていません。 パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 非準拠コード {#non-compliant-code-5}
 
@@ -510,7 +510,7 @@ public void doThis(Resource resource) {
 
 確実な実行を必要とするタスクには、`Sling` スケジューラーを使用しないでください。 Sling スケジュールジョブは実行を保証し、クラスター化環境と非クラスター化環境の両方に適しています。
 
-Sling ジョブがクラスター環境で処理される方法について詳しくは [`Apache Sling` イベントとジョブの取り扱いに ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) いてを参照してください。
+Sling ジョブがクラスター環境で処理される方法について詳しくは [`Apache Sling` イベントとジョブの取り扱いに &#x200B;](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) いてを参照してください。
 
 ### Experience Manager の非推奨 API は使用しない {#sonarqube-aem-api-deprecated}
 
@@ -523,7 +523,7 @@ Experience Manager API サーフェスは、使用を停止する必要がある
 
 削除日が近いほど、このルールに違反する重大度が高くなります。 このような API を使用する場合は、安全な代替手段を使用する必要があります。
 
-非推奨（廃止予定）の API の使用を削除する方法のガイダンスについては、[ この記事 ](/help/release-notes/deprecated-removed-features.md#aem-apis) を参照してください。
+非推奨（廃止予定）の API の使用を削除する方法のガイダンスについては、[&#x200B; この記事 &#x200B;](/help/release-notes/deprecated-removed-features.md#aem-apis) を参照してください。
 
 ### Experience Manager の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
