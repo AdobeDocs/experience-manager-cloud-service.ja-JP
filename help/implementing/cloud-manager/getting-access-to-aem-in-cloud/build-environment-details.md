@@ -19,7 +19,7 @@ Cloud Manager のビルド環境と、コードを作成およびテストする
 
 >[!TIP]
 >
->このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md) を参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[&#x200B; サポートされているクライアントプラットフォーム &#x200B;](/help/overview/supported-platforms.md) を参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 
