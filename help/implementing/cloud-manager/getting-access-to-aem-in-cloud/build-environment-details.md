@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: 5cdfdd401293873d13a85d5eb42c18ab2d0b3be3
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 98%
@@ -19,7 +19,7 @@ Cloud Manager のビルド環境と、コードを作成およびテストする
 
 >[!TIP]
 >
->このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[&#x200B; サポートされているクライアントプラットフォーム &#x200B;](/help/overview/supported-platforms.md) を参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md) を参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 
@@ -139,7 +139,7 @@ Java 21 および Java 17 を使用してプロジェクトをビルドできる
   バージョン 7 以降は、Java 11 以下と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
 
 * **`aemanalyser-maven-plugin` の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、`aemanalyser-maven-plugin` の使用をバージョン 1.6.6 以降に更新します。
+新しい JVM ランタイムのサポートを確保するには、`aemanalyser-maven-plugin` の使用をバージョン 1.6.16 以降に更新します。
 
 * **`maven-bundle-plugin` の最小バージョン：**
 新しい JVM ランタイムのサポートを確保するには、`maven-bundle-plugin` の使用をバージョン 5.1.5 以降に更新します。
