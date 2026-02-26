@@ -374,7 +374,7 @@ ht-degree: 79%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[&#x200B; このチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
+コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[&#x200B; このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
 
 すべての非推奨 API は時間の経過と共に修正される必要がありますが、非推奨 API の表にリストされている API を 2026 年 2 月 26 日（またはそれ以前）に削除する目標を設定して優先順位を付けてください。 AEM アナライザーレポートでは、これらの API は、2025 年 8 月 31 日（PT）に削除対象として表示される場合があります。
 
