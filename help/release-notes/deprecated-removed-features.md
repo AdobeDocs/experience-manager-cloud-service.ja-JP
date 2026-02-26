@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
+source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3918'
 ht-degree: 79%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->一部の [&#x200B; 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
+>一部の [ 非推奨の API](#aem-apis) については、**2026 年 2 月 26 日** に削除する予定です。 これらの主な日付と影響を確認してください。
 >
 >* **2026 年 1 月 26 日以降**：これらの API の使用を削除するためのリマインダーとして、アクションセンターの通知メールが **環境ごとに毎週** 送信されます。
 >* **2026 年 2 月 26 日（PT）**：これらの API を使用したコードを含むCloud Manager パイプラインは、**コード品質** ステップ中に **一時停止** されます。 デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドしてパイプラインを続行できます。
@@ -198,90 +198,90 @@ ht-degree: 79%
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>この API は内部でのみ使用されます。</td>
     <td>2024/9/23</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/10/31</td>
-    <td>未定</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>未定</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
-    <td>2021/4/30</td>
-    <td>未定</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>2021/4/30</td>
-    <td>未定</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>2021/4/30</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>この API は非推奨（廃止予定）です。 代わりに、Apache Sling のビルダーを使用します。</td>
     <td>2022/10/31</td>
-    <td>未定</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service は、この API をサポートしていません。</td>
-    <td>2023/5/15</td>
-    <td>未定</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>代わりに、org.apache.sling.xss を使用します。</td>
-    <td>2023年12月12日（PT）</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>代わりに、org.apache.sling.xss を使用します。</td>
     <td>2023年12月12日（PT）</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>この API は非推奨（廃止予定）です。</td>
     <td>07/10/2024</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>この API は、commons-lang （2021 年から非推奨）に依存しているため、非推奨（廃止予定）になっています。</td>
     <td>11/30/2025</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>この API は、サポートされなくなりました。</td>
     <td>01/01/2026</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2/13/2026</td>
-    <td>未定</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>代わりに、org.apache.sling.xss を使用します。</td>
+    <td>2023年12月12日（PT）</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>2021/4/30</td>
+    <td>3/31/2027 （予定）</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>2021/4/30</td>
+    <td>3/31/2027 （予定）</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
+    <td>2021/4/30</td>
+    <td>3/31/2027 （予定）</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>2027/12/31 （予定）</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service は、この API をサポートしていません。</td>
+    <td>2023/5/15</td>
+    <td>2027/12/31 （予定）</td>
   </tr>
   <tr>
     <td>org.osgi.service.http</td>
     <td>OSGi Service HTTP API は非推奨です。代わりに OSGi Servlet Whiteboard を使用してください。</td>
     <td>5/1/2024</td>
-    <td>未定</td>
+    <td>2027/12/31 （予定）</td>
   </tr>
   </tbody>
 </table>
@@ -374,7 +374,7 @@ ht-degree: 79%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[&#x200B; このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
+コードで使用している非推奨の Java API を特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven プラグイン ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) を Maven プロジェクトに組み込み、ローカルで実行します。 このレポートには、検出されたすべての非推奨（廃止予定）の API の使用状況と、各 API を参照している OSGi バンドルが示されます。 Maven プラグインの使用方法については、[ このチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) を参照してください。
 
 すべての非推奨 API は時間の経過と共に修正される必要がありますが、非推奨 API の表にリストされている API を 2026 年 2 月 26 日（またはそれ以前）に削除する目標を設定して優先順位を付けてください。 AEM アナライザーレポートでは、これらの API は、2025 年 8 月 31 日（PT）に削除対象として表示される場合があります。
 
@@ -384,7 +384,7 @@ ht-degree: 79%
 
 現在非推奨の API が必要なサードパーティライブラリを使用している場合は、そのサードパーティライブラリの新しいバージョンに更新してみてください。
 
-ACS AEM Commons を使用している場合は、少なくともバージョン 6.11.0 を使用してください（最新バージョンをお勧めします）。また、コンテンツパッケージの分類子 [&#x200B; を指定して、](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Serviceのバージョンを含める `cloud` ことを確認してください。
+ACS AEM Commons を使用している場合は、少なくともバージョン 6.11.0 を使用してください（最新バージョンをお勧めします）。また、コンテンツパッケージの分類子 [ を指定して、](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)Cloud Serviceのバージョンを含める `cloud` ことを確認してください。
 
 非推奨 API のインポートが `optional` とマークされている場合でも、これを削除する必要があります。 ただし、このようなオプションの使用方法では、デプロイメントはブロックされません。 ただし、オプションの読み込みが満たされなくなると、デプロイメントに影響が及ぶ可能性があります。
 
