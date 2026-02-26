@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.02.19 リリースノート
-description: ユニバーサルエディターの 2026.02.19 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.02.26 リリースノート
+description: ユニバーサルエディターの 2026.02.26 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 28%
+source-wordcount: '221'
+ht-degree: 32%
 
 ---
 
 
-# ユニバーサルエディター 2026.02.19 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.02.26 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 2 月 19 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 2 月 26 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ ht-degree: 28%
 
 ## 新機能 {#what-is-new}
 
-* RTE が改善されました。
-   * [&#x200B; コンテキスト RTE でのツールバー項目の非表示 &#x200B;](/help/implementing/universal-editor/configure-rte.md#common-action-options) がサポートされるようになりました。
-   * [&#x200B; テーブル内のテキストを段落で折り返す &#x200B;](/help/implementing/universal-editor/configure-rte.md#table-actions) がサポートされるようになりました。
-   * [&#x200B; サポートされていないHTML タグ &#x200B;](/help/implementing/universal-editor/configure-rte.md#unsupported-html) タグが RTE で保持できるようになりました。
-   * RTE ロジックが別のファイルから提供されるようになりました。
-   * [&#x200B; テーブルを作成し &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)RTE を使用して編集できるようになりました。
-* ラベルを設定しない場合は、コンポーネント定義のコンポーネントタイトルが使用されるようになります。
-* 拡張機能から `setEditorMode` を使用できるようになりました。
+* 開発者がモデル/フィルター/コンポーネント定義ファイルを生成するのに役立つように、すべてのスキーマフィールドに説明が追加されました。
+* コンテキスト内編集で、コンテンツフラグメントに対する複数フィールドの更新がサポートされるようになりました。
+
 
 ## 早期導入機能 {#early-adopter}
 
@@ -43,7 +38,7 @@ ht-degree: 28%
 
 ## その他の改善点 {#other-improvements}
 
-* RTE エンドポイントがインプレースエディターで提供されるようになりました。
-* ネストされたフィールドを編集しても、これらの構造からピアエントリが上書きされなくなりました。
-* 必須の RTE フィールドを空として保存できなくなりました。
-* 書式設定後にリンクを追加した際に、インプレース書式設定が誤って適用されなくなりました。
+* エディターでコンテンツが到着する前にコンテンツを `{}` にデフォルト設定しなくなり、特定の状況でのデータ損失を防ぐことができるようになりました。
+* フィールドがフォーカスされたときのデータの永続性がより堅牢になりました。
+* 左側のパネルで編集してから、エディターウィンドウで別の項目を選択すると、特定の状況で変更が失われなくなりました。
+* OpenAPI エンドポイントを使用する場合の、コンテンツフラグメントの RTE フィールドの永続性の問題を修正しました。
