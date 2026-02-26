@@ -27,11 +27,11 @@ ht-degree: 0%
 
 エージェントにアクセスする方法は 3 つあります。
 
-1. 段階的に展開されている [&#x200B; 購入前に試す &#x200B;](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) プログラムを通じて、AEM Agents にアクセスするオプションがある場合があります。 CSM または TAM が、組織の可用性の確認を支援します。
+1. 段階的に展開されている [&#x200B; 購入前に試す &#x200B;](http://experienceleague.adobe.com/ja/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) プログラムを通じて、AEM Agents にアクセスするオプションがある場合があります。 CSM または TAM が、組織の可用性の確認を支援します。
 1. AEM エージェントを [&#x200B; 体験版を通じて &#x200B;](https://www.aem.live/developer/aem-playground) 検索
 1. ロードマップや評価計画に沿っている場合は、CSM または TAM に問い合わせて、Agentic SKU を介したアクセスについて話し合ってください。
 
-早期リリースで新しいスキルが利用可能になった際には、さらに参加する機会を提供し、フィードバックを共有します。 最新の情報については、[&#x200B; このページ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) をご覧ください。
+早期リリースで新しいスキルが利用可能になった際には、さらに参加する機会を提供し、フィードバックを共有します。 最新の情報については、[&#x200B; このページ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) をご覧ください。
 
 ## Brand Experience エージェント {#brand-experience-agent}
 
