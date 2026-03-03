@@ -3,11 +3,10 @@ title: 非表示時間と自由期間の更新
 description: 処理の少ない時間帯と更新のない時間を使用して、AEM as a Cloud Service自動更新の運用上の影響を最小限に抑える方法を説明します。
 feature: Deploying
 role: Admin
-badge: label="限定提供（LA）" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
+source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -15,12 +14,9 @@ ht-degree: 0%
 # 非表示時間と自由期間の更新 {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->この機能は、9 月 25 日（PT）以降、**限定提供** 機能として使用できるようになります。 プログラムで機能をアクティブにするには、[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) にメールを送信します。
+>「停止時間」機能と「自由期間の更新」機能は、[ 自動メンテナンス更新 ](/help/implementing/deploying/aem-version-updates.md) にオンボーディングされた後でのみ使用できます。
 
->[!WARNING]
->「停止時間」機能と「自由期間の更新」機能は、[&#x200B; 自動メンテナンス更新 &#x200B;](/help/implementing/deploying/aem-version-updates.md) にオンボーディングされた後でのみ使用できます。
-
-AEM as a Cloud Service[&#x200B; 自動メンテナンスアップデート &#x200B;](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
+AEM as a Cloud Service[ 自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md) は、インスタンスのセキュリティを確保し、最新のメンテナンスリリースを最新の状態に保ちます。 ただし、運用開始イベントなどの場合には、潜在的な中断から重要な営業時間を「保護」する必要が生じる可能性があります。 そのため、AEM as a Cloud Serviceでは、進行中のプログラムに自動更新が行われない時間枠を設定できます。
 
 次の 2 つのスケジュール・オプションを使用して、これらのタイム・フレームを構成できます。
 
@@ -29,7 +25,7 @@ AEM as a Cloud Service[&#x200B; 自動メンテナンスアップデート &#x20
 
 更新自由期間と非表示時間機能は、「プログラム単位」で設定されます。 これらの機能を表示および使用できるのは、**ビジネスオーナー** と **デプロイメントマネージャー** の「ユーザーの役割」を持つユーザーのみです。
 
-また、AEM as a Cloud Serviceの自動メンテナンススケジュールについては、[Experience Manager リリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) のページを参照してください。
+また、AEM as a Cloud Serviceの自動メンテナンススケジュールについては、[Experience Manager リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) のページを参照してください。
 
 ## 通知のない時間 {#quiet-hours}
 
@@ -49,7 +45,7 @@ AEM as a Cloud Service[&#x200B; 自動メンテナンスアップデート &#x20
 2. 「**編集**」をクリックします。
 3. 設定ウィンドウでクワイエット時間間隔を設定します。
 
-![&#x200B; クワイエットアワー設定 &#x200B;](assets/quiet-hours.png)
+![ クワイエットアワー設定 ](assets/quiet-hours.png)
 
 設定した開始時間と終了時間は、今後、すべてのカレンダー日に適用されます。 必要に応じて、クワイエットアワー時間の値を無効にするか、再設定できます。
 
@@ -73,16 +69,16 @@ AEM as a Cloud Service[&#x200B; 自動メンテナンスアップデート &#x20
 2. **無料期間を追加/更新** をクリックします。
 3. カレンダーから 1 週間の更新自由期間を選択します。
 
-![&#x200B; 空き期間構成の更新 &#x200B;](assets/update-free-periods.png)
+![ 空き期間構成の更新 ](assets/update-free-periods.png)
 
 **アクティブ** アイコンは現在アクティブな更新空き期間の近くに表示され、**完了** アイコンは完了した更新空き期間の近くに表示されます。
 
 ## 計画されたメンテナンス除外期間 {#planned-maintenance}
 
-Adobeには、計画されたメンテナンス除外期間が多数あります。 これらの期間は、重要なイベントに関するリスクを最小限に抑えるためにAdobeによって定義されており、通常は年に 2～3 回発生します。 メンテナンスの除外期間の正確なスケジュールは、[&#x200B; メンテナンスリリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
+Adobeには、計画されたメンテナンス除外期間が多数あります。 これらの期間は、重要なイベントに関するリスクを最小限に抑えるためにAdobeによって定義されており、通常は年に 2～3 回発生します。 メンテナンスの除外期間の正確なスケジュールは、[ メンテナンスリリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
 
 更新の不要な期間を正確に設定できるように、メンテナンスの除外期間も非表示時間および更新の自由な期間ユーザーインターフェイスに表示されます。
 
-![&#x200B; 計画されたメンテナンスの除外期間 &#x200B;](assets/planned-maintenance.png)
+![ 計画されたメンテナンスの除外期間 ](assets/planned-maintenance.png)
 
 除外期間中は、更新の無料期間を作成できないことに注意してください。
