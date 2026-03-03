@@ -20,7 +20,7 @@ ht-degree: 2%
 
 コンテンツ更新ジョブは、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを更新します。 ジョブでは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
 
-コンテンツ更新ジョブは、提供した詳細を、自然言語またはビジュアルで、ページ上のコンテンツの更新に変換します。 更新が必要なページの URL と更新が必要な内容の詳細を指定します。エージェントのスキルがタスクを完了します。 Adobe Experience Manager（AEM）as a Cloud Serviceと共に使用すると、ジョブによって新しい [&#x200B; ローンチ &#x200B;](/help/sites-cloud/authoring/launches/overview.md) が作成されるので、適用前に更新内容を確認できます。 ドキュメントのオーサリングで使用する場合、ジョブは新しい [&#x200B; バージョン &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#) を作成します。
+コンテンツ更新ジョブは、提供した詳細を、自然言語またはビジュアルで、ページ上のコンテンツの更新に変換します。 更新が必要なページの URL と更新が必要な内容の詳細を指定します。エージェントのスキルがタスクを完了します。 Adobe Experience Manager（AEM）as a Cloud Serviceと共に使用すると、ジョブによって新しい [&#x200B; ローンチ &#x200B;](/help/sites-cloud/authoring/launches/overview.md) が作成されるので、適用前に更新内容を確認できます。 ドキュメントのオーサリングで使用する場合、ジョブは新しい [&#x200B; バージョン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#) を作成します。
 
 ## 機能 {#capabilities}
 
