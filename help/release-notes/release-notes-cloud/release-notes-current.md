@@ -38,7 +38,7 @@ ht-degree: 35%
 
 2026.2.0 リリースで追加された機能の概要については、2026年2月リリースの概要ビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480400/?captions=jpn&quality=12)
 
 
 ## AEM Beta プログラム {#aem-beta-programs}
@@ -188,7 +188,7 @@ AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery
 
 #### Cloud Manager MCP サーバー（Beta プログラム） {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480343/?captions=jpn&quality=12)
 
 最新の IDE では、Model Context Protocol （MCP）を使用して、大規模な言語モデル（LLM）が MCP サーバーによって公開されたツールを呼び出せるようにします。 開発者は、低レベルの API 仕様に直接統合するのではなく、自然言語で意図を簡単に説明できます。
 
