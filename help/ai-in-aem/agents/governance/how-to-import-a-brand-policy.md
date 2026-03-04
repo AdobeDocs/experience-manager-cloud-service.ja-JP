@@ -48,19 +48,19 @@ ht-degree: 0%
 
 1. 名前とメインドメインを指定して、ブランドを作成します。 これを行うには、Experience Manager ホームの左側のナビゲーションにある「**ガバナンスコンテキスト**」ボタンをクリックし、「**+ ブランドを追加**」ボタンをクリックします（下図を参照）。
 
-   ![ 新しいブランドの追加 ](/help/ai-in-aem/agents/governance/assets/add_brand.png){width="70%"}
+   ![&#x200B; 新しいブランドの追加 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_brand.png){width="70%"}
 
 1. 次のウィンドウで、ブランドの名前と説明を設定します
 
-   ![ ブランドの命名 ](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png){width="60%"}
+   ![&#x200B; ブランドの命名 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png){width="60%"}
 
 1. 新しいブランドはドラフトステータスで作成されます。 ブランドのカードをクリックし、画面の右上隅にある編集（鉛筆）を押し、次のウィンドウで **ステータス** を **アクティブ** に設定し、「変更を保存 **をクリックして、新しく作成したブランドをアクティブなステータスに変更してください**。 使用するには、ブランドをアクティブに設定して有効にする必要があります。
 
-   ![ ブランドのステータスをアクティブに設定 ](/help/ai-in-aem/agents/governance/assets/set_brand_active.png){width="60%"}
+   ![&#x200B; ブランドのステータスをアクティブに設定 &#x200B;](/help/ai-in-aem/agents/governance/assets/set_brand_active.png){width="60%"}
 
 1. ブランドを作成したら、左側の **ドメイン** リンクをクリックして、次のウィンドウにメインドメインを作成します。
 
-   ![ ブランドのドメインの設定 ](/help/ai-in-aem/agents/governance/assets/add_domain.png)
+   ![&#x200B; ブランドのドメインの設定 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_domain.png)
 
    >[!IMPORTANT]
    >
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 1. メインドメインを設定したら、ウィンドウの左上隅にある **ポリシー** に移動して「**+ ポリシーを追加**」ボタンをクリックすると、ブランドポリシードキュメントをアップロードできます。
 
-   ![ ブランドカードからのポリシーの追加 ](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
+   ![&#x200B; ブランドカードからのポリシーの追加 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
 
    >[!NOTE]
    >
@@ -76,33 +76,33 @@ ht-degree: 0%
 
 1. 次のウィンドウで、**PDF をアップロード** を押して、PDF形式のブランドポリシードキュメントを選択します
 
-   ![ ブランドポリシードキュメントのアップロード ](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png){width="70%"}
+   ![&#x200B; ブランドポリシードキュメントのアップロード &#x200B;](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png){width="70%"}
 
    ガバナンスエージェントは、自然言語を使用してブランドポリシーガイドラインを解析し、ドキュメントから取得したチェックを抽出して、実際のタスクに変換します。 ドキュメントが処理されると、次に示すように、チェック数やポリシーのステータスなど、読み込みの概要を表示できます。
 
-   ![ ブランドポリシーのステータスの概要ウィンドウ ](/help/ai-in-aem/agents/governance/assets/policy_status.png)
+   ![&#x200B; ブランドポリシーのステータスの概要ウィンドウ &#x200B;](/help/ai-in-aem/agents/governance/assets/policy_status.png)
 
 1. ブランドを作成し、ポリシードキュメントをアップロードしたら、「**ブランド**」タブに移動してブランドのカードをクリックすると、ブランドごとの詳細な表示を取得できます。 これは、以下のスクリーンショットに示すように、既存のカテゴリの横にある 3 つのドットを押して「**+ カテゴリを追加**」を選択することで、チェックのカテゴリを作成するために使用するビューです。
 
-   ![ カテゴリを追加 ](/help/ai-in-aem/agents/governance/assets/add_category.png)
+   ![&#x200B; カテゴリを追加 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_category.png)
 
    また、このビューを使用して、チェックの作成、編集および削除を行うこともできます。詳しくは、次の手順を参照してください。
 
 1. 個々のチェックをより詳細に表示するには、「**チェック**」タブに切り替えて、ガイドラインドキュメントから抽出された個々のチェックのリストを表示します。 ブランドやステータスに基づいてチェックをフィルタリングできます。
 
-   ![ 個々のブランドチェックを参照 ](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
+   ![&#x200B; 個々のブランドチェックを参照 &#x200B;](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
 
    さらに、チェックの左側の 3 つのドット（**..**）をクリックし、「詳細を表示 **を押すと、個々のチェックの追加の詳細を表示でき** す。 これにより、チェックに関する詳細を含む新しいウィンドウが開きます。
 
-   ![ 個々の小切手の詳細の表示 ](/help/ai-in-aem/agents/governance/assets/view_check_details.png)
+   ![&#x200B; 個々の小切手の詳細の表示 &#x200B;](/help/ai-in-aem/agents/governance/assets/view_check_details.png)
 
    同じメニュー位置から **Delete** キーを押してチェックを削除したり、**Edit** キーを押してチェックを編集したりすることもできます。
 
-   ![ チェックの編集 ](/help/ai-in-aem/agents/governance/assets/edit_check.png)
+   ![&#x200B; チェックの編集 &#x200B;](/help/ai-in-aem/agents/governance/assets/edit_check.png)
 
 1. 小切手を手動で追加するには、「小切手」ウィンドウの左上隅にある **小切手の追加** をクリックします。
 
-   ![ チェックの追加 ](/help/ai-in-aem/agents/governance/assets/add_check.png)
+   ![&#x200B; チェックの追加 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_check.png)
 
    次の画面では、次のような詳細を設定できます。
 
@@ -111,7 +111,7 @@ ht-degree: 0%
    * カテゴリ
    * 適用対象の範囲
 
-   ![ 小切手の詳細の構成 ](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
+   ![&#x200B; 小切手の詳細の構成 &#x200B;](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. 最後に、関連付けられているドメインとブランドのリストについては、「**ドメイン**」タブをクリックします。 このセクションでは、リストにドメインを追加、削除、変更できます。
 
