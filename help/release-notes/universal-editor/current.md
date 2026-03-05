@@ -26,8 +26,8 @@ ht-degree: 39%
 
 ## 新機能 {#what-is-new}
 
-* [ コンポーネントピッカー ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) には新しいデザインがあります。
-* RTE の [ カラーピッカー ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) が使用できるようになりました。
+* [&#x200B; コンポーネントピッカー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) には新しいデザインがあります。
+* RTE の [&#x200B; カラーピッカー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) が使用できるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -37,5 +37,5 @@ ht-degree: 39%
 
 ## その他の改善点 {#other-improvements}
 
-* 整列、テキスト方向、インデントのオプションがバックエンドでサポートされている限り、[RTE ではデフォルトで有効 ](/help/implementing/universal-editor/configure-rte.md) になりました。
+* 整列、テキスト方向、インデントのオプションがバックエンドでサポートされている限り、[RTE ではデフォルトで有効 &#x200B;](/help/implementing/universal-editor/configure-rte.md) になりました。
 * Open API および UI スキーマでコンテンツフラグメントを使用する際に、タブがレンダリングされるようになりました。
