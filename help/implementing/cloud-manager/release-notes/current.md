@@ -28,11 +28,11 @@ AEM as a Cloud Service の Cloud Manager 2026.3.0 のリリース日は 2026年3
 
 ## 新機能 – Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Managerでは、{ コンテンツのコピー** 読み込みに対して **ワイプ** オプションをサポートするよう **なりました**
+* **Cloud Managerでは、&lbrace; コンテンツのコピー** 読み込みに対して **ワイプ** オプションをサポートするよう **なりました**
 
   **ワイプ** を有効にすると、Cloud Managerは、読み込みを開始する前に宛先にある既存のコンテンツを削除するので、新しい状態から開始して、既存のコンテンツとの競合を避けることができます。 **ワイプ** を無効にしたままにすると、Cloud Managerでは、既存のコピー先コンテンツの上に新しいコンテンツがインポートされます。 ワイプが開始される前に確認プロンプトが表示され、Cloud Managerはトレーサビリティのためにワイプ操作と読み込みの詳細をログに記録します。
 
-  [ コンテンツをコピー ](/help/implementing/developing/tools/content-copy.md#copy-content) も参照してください。
+  [&#x200B; コンテンツをコピー &#x200B;](/help/implementing/developing/tools/content-copy.md#copy-content) も参照してください。
 
 * **AEM Experience Hubでの UI 拡張機能のサポート**
 [AEM Experience Hub](https://experience.adobe.com/experiencemanager) で UI 拡張機能がサポートされるようになり、開発者はAdobe App Builderを使用して作成されたカスタム機能やウィジェットを使用してインターフェイスを拡張できるようになりました。
@@ -52,7 +52,7 @@ Cloud Manager の Beta プログラムに参加すると、一般リリース前
 >
 >Beta リリースには不具合が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースの保守、修正、更新、変更、またはその他のサポート（Adobe サポートサービスを通じてまたはその他の方法で）を行う義務を負いません。 Adobeでは、お客様に対して、ベータ版リリースが正しく機能するか、パフォーマンスが向上するか、あるいはこれらに付随するドキュメントや資料を使用しないよう、注意して助言しています。 ベータ版の機能と API は、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行います。
 
-[AEM Beta プログラム ](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) も参照してください。
+[AEM Beta プログラム &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) も参照してください。
 
 現在、次の機能が利用できます。
 <!--
@@ -64,11 +64,11 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Cloud Manager Public API を AI 対応 IDE のツール（Cursor など）として公開する MCP （Model Context Protocol）サーバーを試すことができるようになりました。 接続すると、対話型プロンプトを使用してプログラム、パイプライン、環境、リポジトリを一覧表示および管理できるようになり、エディターを離れることなく迅速に移動できます。
 
-[AEM as a Cloud Serviceでの MCP の使用 ](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) のドキュメントを参照してください。
+[AEM as a Cloud Serviceでの MCP の使用 &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) のドキュメントを参照してください。
 
 チュートリアル [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#) を参照してください。
 
-ベータ版にご興味がありますか？Adobeの OrgID とプログラム ID を記載したメール [0}GRP-AEM-CM-MCP-FEEDBACK@adobe.com} を送信します。](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
+ベータ版にご興味がありますか？Adobeの OrgID とプログラム ID を記載したメール [0&rbrace;GRP-AEM-CM-MCP-FEEDBACK@adobe.com&rbrace; を送信します。](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
 
 
 <!--
@@ -87,7 +87,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。これは、コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![ フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス ](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
 
 **パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。

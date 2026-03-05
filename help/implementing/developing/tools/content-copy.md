@@ -108,7 +108,7 @@ ht-degree: 75%
 コンテンツセットを作成した後、それを使用してコンテンツをコピーできます。
 
 >[!NOTE]
-> [ コンテンツ転送 ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作を実行している環境では、その環境でコンテンツのコピーを使用しないでください。
+> [&#x200B; コンテンツ転送 &#x200B;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作を実行している環境では、その環境でコンテンツのコピーを使用しないでください。
 
 **コンテンツをコピーするには：**
 
