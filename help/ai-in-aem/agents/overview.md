@@ -27,11 +27,11 @@ ht-degree: 0%
 
 エージェントにアクセスする方法は 3 つあります。
 
-1. 段階的に展開されている [ 購入前に試す ](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) プログラムを通じて、AEM Agents にアクセスするオプションがある場合があります。 CSM または TAM が、組織の可用性の確認を支援します。
-1. AEM エージェントを [ 体験版を通じて ](https://www.aem.live/developer/aem-playground) 検索
+1. 段階的に展開されている [&#x200B; 購入前に試す &#x200B;](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) プログラムを通じて、AEM Agents にアクセスするオプションがある場合があります。 CSM または TAM が、組織の可用性の確認を支援します。
+1. AEM エージェントを [&#x200B; 体験版を通じて &#x200B;](https://www.aem.live/developer/aem-playground) 検索
 1. ロードマップや評価計画に沿っている場合は、CSM または TAM に問い合わせて、Agentic SKU を介したアクセスについて話し合ってください。
 
-早期リリースで新しいスキルが利用可能になった際には、さらに参加する機会を提供し、フィードバックを共有します。 最新の情報については、[ このページ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) をご覧ください。
+早期リリースで新しいスキルが利用可能になった際には、さらに参加する機会を提供し、フィードバックを共有します。 最新の情報については、[&#x200B; このページ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) をご覧ください。
 
 ## Brand Experience エージェント {#brand-experience-agent}
 
@@ -45,7 +45,7 @@ Brand Experience Agent を使用すると、チームは、数週間にわたる
 
 ## コンテンツ アドバイザーエージェント {#content-advisor-agent}
 
-[ コンテンツアドバイザーエージェント ](/help/ai-in-aem/agents/content-advisor/overview.md) は、自然言語の命令を適用してチャネル対応のバリエーションを作成し、次のジョブを簡素化することで、ユーザーによるアセットの検出、調整、適応の方法を変換します。
+[&#x200B; コンテンツアドバイザーエージェント &#x200B;](/help/ai-in-aem/agents/content-advisor/overview.md) は、自然言語の命令を適用してチャネル対応のバリエーションを作成し、次のジョブを簡素化することで、ユーザーによるアセットの検出、調整、適応の方法を変換します。
 
 * **検出** - AEM コンテンツを配信して、クリックのない効率的な検出エクスペリエンスを実現します。 Assets、コンテンツフラグメント、アダプティブFormsをまたいでインテリジェントに検索し、関連する資料（画像、ビデオ、PDF ドキュメント、記事、フォームテンプレートなど）を提供します。
 * **コンテンツの最適化** – 自然言語の命令を適用してチャネルに対応するバリエーションを作成することで、ユーザーがアセットを調整および適応する方法を変換します。 ユーザーインテントを解釈し、複雑な編集タスクを自動的に実行して、新しいレンディションの生成、視覚的プロパティの調整、背景の変更、特定のデジタルチャネル用のアセットの準備などのタスクを実行します。
@@ -54,7 +54,7 @@ Brand Experience Agent を使用すると、チームは、数週間にわたる
 
 ## ガバナンスエージェント {#governance-agent}
 
-[ ガバナンスエージェント ](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは必要なジョブを実行して、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを確認します。
+[&#x200B; ガバナンスエージェント &#x200B;](/help/ai-in-aem/agents/governance/overview.md) は、AEM全体でブランドの整合性とコンプライアンスを保護します。 セキュリティ、規制、ブランドポリシーを適用することにより、エージェントは必要なジョブを実行して、すべてのインタラクションとアクティベーションが確立された標準に準拠していることを確認します。
 
 ## 制限事項 {#limitations}
 

@@ -22,7 +22,7 @@ Brand Experience Agent は、特定のジョブ一式を専門とする以下の
 
 * [Experience Modernization Agent](#experience-modernization) - web サイトをクラウド対応の形式に移行します。
 * [Experience Production Agent](#experience-production) - コンテンツの更新、フォームの作成、コミュニケーションを通じて、市場投入までの時間を短縮します。
-* [ 開発エージェント ](#development) - AI を利用したトラブルシューティングとビルドの自動化を提供します。
+* [&#x200B; 開発エージェント &#x200B;](#development) - AI を利用したトラブルシューティングとビルドの自動化を提供します。
 
 これらのエージェントを通じて、Brand Experience Agent は、更新や最新化の背後にある重い運用作業を吸収し、チームが今日の AI 時代に対してより迅速かつ自信を持って変更を提供するのを支援します。
 
@@ -30,7 +30,7 @@ Brand Experience Agent は、特定のジョブ一式を専門とする以下の
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ## Experience Modernization エージェント {#experience-modernization}
 
@@ -46,15 +46,15 @@ Brand Experience Agent は、特定のジョブ一式を専門とする以下の
 
 ### コンテンツ更新ジョブ {#content-update}
 
-[ コンテンツ更新ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) は、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
+[&#x200B; コンテンツ更新ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) は、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
 
 ### Forms作成ジョブ {#forms-creation}
 
-[Formsの作成ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) は、自然言語の要件を完全に構造化されたブランド化された出力に変換し、ビジネスユーザーが開発チームや IT チームに依存せずにスケーラブルでデータ駆動型のエクスペリエンスを作成できるようにすることで、アダプティブフォームやパーソナライズされた通信を作成する際の手間を省きます。
+[Formsの作成ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) は、自然言語の要件を完全に構造化されたブランド化された出力に変換し、ビジネスユーザーが開発チームや IT チームに依存せずにスケーラブルでデータ駆動型のエクスペリエンスを作成できるようにすることで、アダプティブフォームやパーソナライズされた通信を作成する際の手間を省きます。
 
 ### コミュニケーション作成ジョブ {#communication-creation}
 
-[ コミュニケーション作成ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) は、自然言語プロンプトを使用してインタラクティブコミュニケーションを作成し、印刷用にパーソナライズされたデータ駆動型通信を自動的に生成します（PDF形式）。 AI アシスタントを使用してジョブを表示します。
+[&#x200B; コミュニケーション作成ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) は、自然言語プロンプトを使用してインタラクティブコミュニケーションを作成し、印刷用にパーソナライズされたデータ駆動型通信を自動的に生成します（PDF形式）。 AI アシスタントを使用してジョブを表示します。
 
 ## エクスペリエンス開発エージェント {#experience-development}
 
@@ -72,4 +72,4 @@ Brand Experience Agent は、特定のジョブ一式を専門とする以下の
 
 ## アクティベーション {#activation}
 
-[ プレイグラウンド ](https://www.aem.live/developer/aem-playground) を通じてAEM エージェントを参照したり、CSM や TAM と連携して Agentic SKU 経由でのアクセスについて話し合ったりできます。
+[&#x200B; プレイグラウンド &#x200B;](https://www.aem.live/developer/aem-playground) を通じてAEM エージェントを参照したり、CSM や TAM と連携して Agentic SKU 経由でのアクセスについて話し合ったりできます。
