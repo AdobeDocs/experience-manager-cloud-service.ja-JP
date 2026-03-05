@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.02.26 リリースノート
-description: ユニバーサルエディターの 2026.02.26 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.03.05 リリースノート
+description: ユニバーサルエディターの 2026.03.05 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 32%
+source-wordcount: '178'
+ht-degree: 39%
 
 ---
 
 
-# ユニバーサルエディター 2026.02.26 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.03.05 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 2 月 26 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 3 月 5 日（PT）リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ ht-degree: 32%
 
 ## 新機能 {#what-is-new}
 
-* 開発者がモデル/フィルター/コンポーネント定義ファイルを生成するのに役立つように、すべてのスキーマフィールドに説明が追加されました。
-* コンテキスト内編集で、コンテンツフラグメントに対する複数フィールドの更新がサポートされるようになりました。
-
+* [ コンポーネントピッカー ](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) には新しいデザインがあります。
+* RTE の [ カラーピッカー ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) が使用できるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -38,7 +37,5 @@ ht-degree: 32%
 
 ## その他の改善点 {#other-improvements}
 
-* エディターでコンテンツが到着する前にコンテンツを `{}` にデフォルト設定しなくなり、特定の状況でのデータ損失を防ぐことができるようになりました。
-* フィールドがフォーカスされたときのデータの永続性がより堅牢になりました。
-* 左側のパネルで編集してから、エディターウィンドウで別の項目を選択すると、特定の状況で変更が失われなくなりました。
-* OpenAPI エンドポイントを使用する場合の、コンテンツフラグメントの RTE フィールドの永続性の問題を修正しました。
+* 整列、テキスト方向、インデントのオプションがバックエンドでサポートされている限り、[RTE ではデフォルトで有効 ](/help/implementing/universal-editor/configure-rte.md) になりました。
+* Open API および UI スキーマでコンテンツフラグメントを使用する際に、タブがレンダリングされるようになりました。
