@@ -51,7 +51,7 @@ ht-degree: 44%
 アセットをプレビューしながら共有するには、次の手順を実行します。
 
 1. [!DNL Content Hub] ホームページに移動し、アセットのサムネールをクリックしてアセットをプレビューし、ダイアログボックスの右側のパネルにメニューオプションを表示します。
-1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**パネルを表示します。
+1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**&#x200B;パネルを表示します。
    ![プレビュー中にアセットを共有](/help/assets/assets/share-link-asset-preview.png)
 1. [アセットの共有](#share-assets)の節の手順 3～5 に従って、この&#x200B;**[!UICONTROL 共有]**&#x200B;パネルからアセットリンク（プライベートまたはパブリック）を生成して共有します。
 
@@ -62,7 +62,7 @@ ht-degree: 44%
 * 1 つ以上のアセットを選択し、「![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**」をクリックして、利用可能なダウンロードオプションから **[!UICONTROL オリジナル]**、**[!UICONTROL 静的]** または両方のレンディションを選択します。
   ![](/help/assets/assets/download-shared-assets.png)
 * アセットのサムネールをクリックして、アセットのメタデータを表示します。
-* 共有アセットページ（[プライベートリンクを使用してアクセス](#share-assets)）でアセットのサムネールをクリックし、![ダウンロード](/help/assets/assets/download-icon.svg)を選択して、アセットの使用可能な動的レンディションを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]**パネルでそれらのレンディションを選択して表示します。
+* 共有アセットページ（[プライベートリンクを使用してアクセス](#share-assets)）でアセットのサムネールをクリックし、![ダウンロード](/help/assets/assets/download-icon.svg)を選択して、アセットの使用可能な動的レンディションを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]**&#x200B;パネルでそれらのレンディションを選択して表示します。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 ## よくある質問 {#faqs-share-assets-content-hub}
