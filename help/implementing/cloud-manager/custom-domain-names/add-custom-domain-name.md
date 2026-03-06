@@ -39,7 +39,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 ## カスタムドメイン名の追加 {#adding-custom-domain-name-settings}
 
-[Edge Delivery Servicesの ](https://www.aem.live/docs/byo-cdn-adobe-managed)Adobe管理の CDN *も参照してください*。
+[Edge Delivery Servicesの &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed)Adobe管理の CDN *も参照してください*。
 
 **カスタムドメイン名を追加するには：**
 
@@ -63,7 +63,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 1. 「**作成**」をクリックします。
 
-1. **ドメイン設定** ページで、ドメイン名の右側にある ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**確認**」をクリックします。
+1. **ドメイン設定** ページで、ドメイン名の右側にある ![&#x200B; 省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**確認**」をクリックします。
 
 1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか？**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
 
