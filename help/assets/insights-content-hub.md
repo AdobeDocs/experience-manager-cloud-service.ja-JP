@@ -3,10 +3,10 @@ title: コンテンツハブのアセットインサイトの表示
 description: ' [!DNL Content Hub] でアセットインサイトを表示する方法について説明します'
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '278'
-ht-degree: 100%
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 60%
 
 ---
 
@@ -50,3 +50,25 @@ Data for the selected time frame is displayed, including the upload count for th
 * **[!UICONTROL キャンペーン別アセット数]**：キャンペーンに基づくアセット数とそれぞれの割合。
 * **[!UICONTROL チャネル別アセット数]**：使用されているチャネルに基づくアセット数とそれぞれの割合。
 * **[!UICONTROL 地域別アセット数]**：アセットの使用状況の地域に基づくアセット数とそれぞれの割合。
+
+## よくある質問 {#faqs-assets-insights-content-hub}
+
+### AEM Assets Content Hubには、何が必要ですか？Assets Insights
+
+AEM Assets Content HubのAssets Insights は、キャンペーン、チャネル、リージョンをまたいだアセットの使用状況に関する貴重なデータを提供します。これにより、マーケティングの関係者はアセットのパフォーマンスと人気度を理解し、ユーザーエクスペリエンスを向上させることができます。
+
+### Assets Insights に記載されている機能にアクセスできるのは誰ですか。
+
+Content Hub ユーザーは、Assets Insights セクションで説明するアクションを実行し機能にアクセスすることができます。
+
+### 「インサイト」タブでは、どのようなアセットインサイトを利用できますか？
+
+リポジトリ内のアセット数、コレクション数、Assetsのアップロード（年、月、日ごと）、アクティブユーザー（日または月ごと）、アセットのファイル形式に基づく分類を表示できます。
+
+### AEM Assets Content Hubにアップロードされたアセットの統計情報を表示するにはどうすればよいですか？
+
+アップロードされたアセットおよびコレクションの統計を表示するには、「インサイト」タブに移動します。このタブで、年、月、日ごとのアップロード履歴を追跡できます。
+
+### Content Hubのユーザーアクティビティに関して分析できる指標は何ですか？
+
+アクティブユーザーの数を日または月ごとに分析できます。この分析は、折れ線グラフで視覚的に表されます。

@@ -3,10 +3,10 @@ title: コンテンツハブでアセットを検索する
 description: ' [!DNL Content Hub] でのアセットの検索方法について学ぶ'
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 81%
 
 ---
 
@@ -167,5 +167,20 @@ ht-degree: 100%
 [!DNL The Content Hub] は検索だけでなく、検索またはプレビューインターフェイスから直接、[ダウンロード](download-assets-content-hub.md)、[共有](share-assets-content-hub.md)、[コレクションへのアセットの追加](collections-content-hub.md)などの追加アクションを実行できます。これらのオプションを表示するには、検索結果ページでアセットを選択します。
 
 詳しくは、[ [!DNL Content Hub]](configure-content-hub-ui-options.md) でのアセットの設定を参照してください。
+
+## よくある質問 {#faqs-deploy-content-hub}
+
+### AEM Assets Content Hubで検索結果を絞り込むにはどうすればよいですか？
+
+Content Hubでは、テキストベースの検索、様々なフィルター（ファイルフォーマット、承認ステータス、変更日など）の適用、タグまたはスマートタグによる検索、フィルターパネルの使用により、検索結果を絞り込むことができます。 複数の述語またはフィルターオプションを組み合わせると、必要なアセットを正確にターゲットにすることができます。
+
+### AEM Assets Content Hubで複数のアセットの一括検索を一度に実行できますか？
+
+はい。指定した区切り文字で区切られた複数の値（名前、ファイル形式、タグなど）を入力して、Content Hubで一括検索を実行できます。 一括検索機能を使用すると、1 つのクエリで複数のアセットをすばやく検索できるので、アセットを 1 つずつ検索するよりも効率的です。
+
+
+### 管理者は、AEM Assets Content Hubの検索で使用できるフィルターをカスタマイズできますか？
+
+はい。管理者は、AEM Assets Content Hub Configuration ユーザーインターフェイスを使用して、検索インターフェイスで使用できるフィルターを設定できます。 デフォルトのフィルターには、ファイル形式、承認ステータス、有効期限などが含まれますが、管理者は、組織のニーズに合わせてこれらのオプションを調整できます。
 
 

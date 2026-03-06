@@ -3,10 +3,10 @@ title: ' [!DNL the Content Hub] でのアセットとそのプロパティのプ
 description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法について説明します。'
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 93%
+source-wordcount: '971'
+ht-degree: 61%
 
 ---
 
@@ -38,10 +38,10 @@ ht-degree: 93%
 * **D：**&#x200B;前または次のアセットに進む
 * **E：**&#x200B;アセットの数
 * **F：**&#x200B;アセットのダウンロード
-* **G：**&#x200B;[!DNL Adobe Express] を使用したアセットを編集
+* **G：**[!DNL Adobe Express] を使用したアセットを編集
 * **H：**&#x200B;アセットの情報を折りたたむまたはプレビュー
 * **I：**&#x200B;アセットを共有
-* **J：**&#x200B;[!DNL Collection] にアセットを追加
+* **J：**[!DNL Collection] にアセットを追加
 * **K：**&#x200B;プレビュー画面を閉じる
 * **L：**&#x200B;タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含むアセットの情報。
 
@@ -109,9 +109,9 @@ ht-degree: 93%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **スマートタグ：** [!DNL The Content Hub] は、Adobe AI のスマートコンテンツサービスを使用して、タグベースの構造に対して認識アルゴリズムを使用してアセットのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
+* **スマートタグ：** [!DNL The Content Hub] は、Adobe AIのスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
 
-* **カラータグ：**&#x200B;[&#x200B; カラータグ &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja) は、Adobeの AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
+* **カラータグ：**[ カラータグ ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) は、Adobeの AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
 
 * アップロード日
 
@@ -135,3 +135,27 @@ ht-degree: 93%
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## よくある質問 {#faqs-asset-properties-content-hub}
+
+### AEM Assets Content Hubでアセットとそのプロパティをプレビューする理由
+
+Content Hubでアセットとそのプロパティをプレビューすると、アセットの詳細を詳細に表示できます。これは、アセットの配布と管理を効率的に行うために不可欠です。 デジタル情報が拡大するにつれて、ファイル名やサムネールに頼るだけでは拡張性が失われます。 詳細なプロパティを表示すると、アセットを分類し、アクセスしやすく、操作が容易になり、すべてのユーザーに情報が完全に表示されます。
+
+### AEM Assets Content Hubでアセットのプロパティを表示して操作するにはどうすればよいですか？
+
+Content Hubでアセットのプロパティを表示するには、アセットに移動するかアセットを検索してから、アセットをクリックしてプロパティページを開きます。 ここでは、プレビューのズームイン/ズームアウト、ズームの取り消し、前または次のアセットへの移動、アセットのダウンロード、Adobe Expressでの編集、コレクションへの追加、プレビューの終了を行うことができます。 プロパティページには、タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグなどの詳細情報が表示されます。
+
+### AEM Assets Content Hubの派生プロパティとは何ですか？また、派生プロパティはどのように生成されますか？
+
+Content Hubの派生プロパティは、アセットがアップロードおよび承認されると、自動的に生成されます。 例としては、アセットのサイズ、スマートタグ、カラータグなどがあります。 スマートタグでは、Adobe AIのスマートコンテンツサービスを使用して、関連するタグを自動的に認識して適用し、アセットの検出性を高めます。 また、カラータグは AI を使用して自動的に識別されるので、ユーザーがアセットを目立つ色で認識できるようになります。
+
+### 管理者は、Content Hubに表示するアセットプロパティをカスタマイズできますか？
+
+はい。管理者は、Content Hubで各アセットに表示されるプロパティを設定することができます。 これはアセットプレビューのユーザーインターフェイスと、検索結果またはコレクション内のアセットカードの両方で実行でき、要件に基づいて最も関連性の高い情報をユーザーに表示できます。
+
+### アセットのプレビューでサポートされているファイル形式は何ですか？
+
+サポートされるファイル形式には、画像の場合はJPEGと PNG、ビデオの場合は Quicktime、MP4 と MPEG、ドキュメントの場合は TXT、DOC/DOCX、XML、印刷メディアの場合はPDFなどがあります。
+
+

@@ -2,10 +2,10 @@
 title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
+source-git-commit: 0ad1fd40a108893333b9aa9beae1767f6b59c02b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 68%
 
 ---
 
@@ -82,6 +82,36 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 1. [コンテンツハブポータルにアクセスします](#access-content-hub)。
 
 1. [コンテンツハブに関するフィードバックを提供します](#provide-content-hub-feedback)。
+
+## よくある質問 {#faqs-content-hub-overview}
+
+### コンテンツハブとは何ですか？ {#what-is-content-hub}
+
+Content Hubは、より広範なチームが直感的なポータルを通じて関連性の高い承認済みアセットを簡単に見つけ、ニーズに合わせてすばやく調整できるAdobe Experience Manager as a Cloud Service機能です。 これにより、アセットを大規模に配布でき、オンブランドのコンテンツバリアントの作成が容易になり、マーケティングの俊敏性が向上します。
+
+### Content Hubにアクセスするための前提条件は何ですか？ {#prerequisites-for-content-hub}
+
+Content Hubには、Experience Manager as a Cloud Service、特に 2024.6 リリース以降（最小バージョン 2024.6.16799）の実稼動オーサー環境が必要です。
+
+### Content Hubでブランド承認済みアセットの検索エクスペリエンスを向上させる方法 {#content-hub-improves-search-experience}
+
+Content Hubでは、すべての承認済みアセットがフラットな階層で表示されるので、直感的なポータルを通じて、ブランドで承認済みのアセットを簡単に見つけて共有できます。 この設定により、検索プロセスが合理化され、ユーザーが必要なアセットを効率的に見つけられるようになります。
+
+### Content Hubのユーザーインターフェイスを設定できるユーザーと、設定できる要素は何ですか？ {#content-hub-configuration}
+
+管理者は、検索用のフィルター、アセットの追加や読み込みをおこなうフィールド、アセットのプロパティ、ブランディング用のバナーコンテンツなど、Content Hubのユーザーインターフェイスを設定できます。 これにより、組織の要件に基づいてカスタマイズできます。
+
+### Content Hubを使用して、クリエイティブ以外のユーザーがコンテンツを編集およびリミックスできるようにする方法を教えてください。 {#content-hub-edit-remix-content}
+
+Content Hubを使用すると、使いやすいツール、テンプレート、ブランド要素を使用して、クリエイティブ以外のユーザーが既存のコンテンツを編集し、新しいオンブランドのバリエーションを作成できます。 Adobe Expressの使用権限があるユーザーは、Adobe Firefly GenAI 機能を活用して高度なコンテンツを作成することもできます。
+
+### ユーザーはどのようにContent Hubにアクセスできますか？ {#content-hub-access}
+
+ユーザーは、直接リンク（https://experience.adobe.com/#/assets/contenthub）を使用してContent Hubにアクセスするか、experience.adobe.comにログインして「クイックアクセス」セクションからExperience Manager Assets Content Hubを選択します。
+
+### Content Hub Limited のユーザーは何人くらいAEM Assetsに含まれていますか？ {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) およびAssets as a Cloud Serviceはそれぞれ 250 人のContent Hub Limited ユーザーを含み、[Assets Prime](/help/assets/assets-prime.md) は 50 人のContent Hub Limited ユーザーを含みます。
 
 
 ## 主な機能の詳細 {#key-capabilities-content-module}
