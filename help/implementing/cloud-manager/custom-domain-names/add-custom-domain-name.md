@@ -5,17 +5,17 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 100%
+source-wordcount: '1123'
+ht-degree: 94%
 
 ---
 
 
 # カスタムドメイン名の追加 {#adding-custom-domain-name}
 
-Cloud Manager で&#x200B;**ドメイン設定**&#x200B;を使用してカスタムドメイン名を追加する方法について説明します。
+Cloud Managerで **ドメイン設定** を使用して、カスタムドメイン名を追加できます。
 
 ## 要件 {#requirements}
 
@@ -35,9 +35,13 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
-このドキュメントで説明するどちらの方法の手順も、Fastly に基づいています。別の CDN（コンテンツ配信ネットワーク）を使用した場合は、使用するように選択した CDN をドメインに設定します。
+この記事で説明するどちらの方法でも、手順は Fastly に基づいています。 別の CDN（コンテンツ配信ネットワーク）を使用した場合は、使用するように選択した CDN をドメインに設定します。
 
 ## カスタムドメイン名の追加 {#adding-custom-domain-name-settings}
+
+[Edge Delivery Servicesの ](https://www.aem.live/docs/byo-cdn-adobe-managed)Adobe管理の CDN *も参照してください*。
+
+**カスタムドメイン名を追加するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -59,9 +63,11 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 1. 「**作成**」をクリックします。
 
+1. **ドメイン設定** ページで、ドメイン名の右側にある ![ 省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**確認**」をクリックします。
+
 1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか？**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
 
-   | 証明書タイプオプション | 説明 |
+   | 証明書タイプ | 説明 |
    | --- | --- |
    | アドビが管理する（DV）SSL 証明書 | DV（ドメイン検証）証明書を使用する場合は、この証明書タイプを選択します。このオプションは、ほとんどの場合に最適で、基本的なドメイン検証を提供します。証明書は、アドビによって管理され、自動的に更新されます。 |
    | 顧客が管理する（OV/EV）SSL 証明書 | EV/OV SSL 証明書を使用してドメインを保護する場合は、この証明書タイプを選択します。このオプションでは、OV（組織検証）または EV（拡張検証）でセキュリティが強化されます。より厳しい検証、より高い信頼レベル、証明書に対するカスタム管理のいずれかが必要な場合に使用します。 |
