@@ -19,12 +19,12 @@ ht-degree: 0%
 * 必要に応じて、ツール名をクリックして個々のツールを有効または無効にします。 デフォルトでは、すべてのツールが有効になっています。
 * Cursor のエディターまたはチャットを使用して、開発ワークフローまたはコンテンツワークフローの一部としてAEM ツールを呼び出します。
 
-![ カーソル設定ダイアログ ](assets/cursor-1.png)
+![&#x200B; カーソル設定ダイアログ &#x200B;](assets/cursor-1.png)
 
-![ カスタム MCP サーバを追加するオプションを備えたツールと MCP パネル ](assets/cursor-2.png)
+![&#x200B; カスタム MCP サーバを追加するオプションを備えたツールと MCP パネル &#x200B;](assets/cursor-2.png)
 
-![Cursor のカスタム MCP サーバー設定フォーム ](assets/cursor-3.png)
+![Cursor のカスタム MCP サーバー設定フォーム &#x200B;](assets/cursor-3.png)
 
-![Cursor 内の新しい MCP サーバの接続ダイアログ ](assets/cursor-4.png)
+![Cursor 内の新しい MCP サーバの接続ダイアログ &#x200B;](assets/cursor-4.png)
 
-![ 新しいAEM MCP サービスを使用するようカーソルに促す ](assets/cursor-5.png)
+![&#x200B; 新しいAEM MCP サービスを使用するようカーソルに促す &#x200B;](assets/cursor-5.png)

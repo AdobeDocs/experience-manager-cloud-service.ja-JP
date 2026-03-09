@@ -20,16 +20,16 @@ ht-degree: 0%
 * 会話を開始する前に、MCP サーバーが選択されていることを確認します。
 * AEM関連のタスクを実行するように Claude に依頼します。 Claude は、プロンプトに基づいて、MCP サーバーによって公開されるAEM ツールを選択します。
 
-![ クラウド設定ダイアログ ](assets/claude-1.png)
+![&#x200B; クラウド設定ダイアログ &#x200B;](assets/claude-1.png)
 
-![ クラウドのコネクタパネル ](assets/claude-2.png)
+![&#x200B; クラウドのコネクタパネル &#x200B;](assets/claude-2.png)
 
-![ クラウドへのカスタムコネクタの追加 ](assets/claude-3.png)
+![&#x200B; クラウドへのカスタムコネクタの追加 &#x200B;](assets/claude-3.png)
 
-![Claude のカスタムコネクタの接続 ](assets/claude-4.png)
+![Claude のカスタムコネクタの接続 &#x200B;](assets/claude-4.png)
 
-![Claude のカスタムコネクタ設定フォーム ](assets/claude-5.png)
+![Claude のカスタムコネクタ設定フォーム &#x200B;](assets/claude-5.png)
 
-![ カスタムコネクタのツール権限ダイアログ ](assets/claude-6.png)
+![&#x200B; カスタムコネクタのツール権限ダイアログ &#x200B;](assets/claude-6.png)
 
-![AEM コンテンツ MCP サービスを使用するようクラウドに促すメッセージ ](assets/claude-7.png)
+![AEM コンテンツ MCP サービスを使用するようクラウドに促すメッセージ &#x200B;](assets/claude-7.png)

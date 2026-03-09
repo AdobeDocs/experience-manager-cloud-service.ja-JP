@@ -23,22 +23,22 @@ ht-degree: 0%
 * 必要に応じて、自動確認モードを有効にするか、すべてのツールインタラクションについてエンドユーザーの確認を要求します。
 * エージェントをテストするときは、接続マネージャーを開いてセッションに接続を割り当ててから、**再試行** キーを押します。
 
-![Microsoft Copilot Studio のエージェント・パネル ](assets/copilot-1.png)
+![Microsoft Copilot Studio のエージェント・パネル &#x200B;](assets/copilot-1.png)
 
-![Microsoft Copilot Studio のツールを追加ダイアログ ](assets/copilot-2.png)
+![Microsoft Copilot Studio のツールを追加ダイアログ &#x200B;](assets/copilot-2.png)
 
-![ ツールタイプとして「モデルコンテキストプロトコル」を選択 ](assets/copilot-3.png)
+![&#x200B; ツールタイプとして「モデルコンテキストプロトコル」を選択 &#x200B;](assets/copilot-3.png)
 
-![ プレビューモードでのモデル コンテキスト プロトコル サーバーの追加 ](assets/copilot-4.png)
+![&#x200B; プレビューモードでのモデル コンテキスト プロトコル サーバーの追加 &#x200B;](assets/copilot-4.png)
 
-![ 新しい接続を作成するためのダイアログ。](assets/copilot-5.png)
+![&#x200B; 新しい接続を作成するためのダイアログ。](assets/copilot-5.png)
 
-![MCP ツールの追加と設定パネル ](assets/copilot-6.png)
+![MCP ツールの追加と設定パネル &#x200B;](assets/copilot-6.png)
 
-![MCP ツール設定フォーム ](assets/copilot-7.png)
+![MCP ツール設定フォーム &#x200B;](assets/copilot-7.png)
 
-![AEM MCP サーバーへの接続をテストしています ](assets/copilot-8.png)。
+![AEM MCP サーバーへの接続をテストしています &#x200B;](assets/copilot-8.png)。
 
-![ 使用可能な接続が表示されている接続を管理パネル。](assets/copilot-9.png)
+![&#x200B; 使用可能な接続が表示されている接続を管理パネル。](assets/copilot-9.png)
 
-![AEM MCP 接続を使用したエージェントのテスト ](assets/copilot-10.png)
+![AEM MCP 接続を使用したエージェントのテスト &#x200B;](assets/copilot-10.png)

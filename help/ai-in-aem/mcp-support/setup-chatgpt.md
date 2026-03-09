@@ -22,16 +22,16 @@ OpenAI ChatGPT をAEMの MCP サーバーに接続するには、次の手順に
   "Using the configured AEM MCP tools, list all sites in the author environment."
   ```
 
-![ChatGPT 設定ダイアログ ](assets/chatgpt-1.png)
+![ChatGPT 設定ダイアログ &#x200B;](assets/chatgpt-1.png)
 
 ![ChatGPT のアプリとコネクタの詳細設定パネル。](assets/chatgpt-2.png)
 
-![ アプリとコネクタ セクションで開発者モードを有効にする ](assets/chatgpt-3.png)
+![&#x200B; アプリとコネクタ セクションで開発者モードを有効にする &#x200B;](assets/chatgpt-3.png)
 
-![ChatGPT で新しいアプリを作成するためのダイアログ ](assets/chatgpt-4.png)
+![ChatGPT で新しいアプリを作成するためのダイアログ &#x200B;](assets/chatgpt-4.png)
 
-![ChatGPT の新しいアプリ設定フォーム ](assets/chatgpt-5.png)
+![ChatGPT の新しいアプリ設定フォーム &#x200B;](assets/chatgpt-5.png)
 
-![ アプリとコネクタにAEM Content MCP サービスのリストが表示されます。](assets/chatgpt-6.png)
+![&#x200B; アプリとコネクタにAEM Content MCP サービスのリストが表示されます。](assets/chatgpt-6.png)
 
-![AEM Content MCP Service を使用するよう ChatGPT に促す ](assets/chatgpt-7.png)
+![AEM Content MCP Service を使用するよう ChatGPT に促す &#x200B;](assets/chatgpt-7.png)
