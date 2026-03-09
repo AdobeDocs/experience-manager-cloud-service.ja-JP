@@ -52,15 +52,15 @@ ht-degree: 99%
 
 | 機能またはユースケース | [!DNL Experience Manager] as a [!DNL Cloud Service] のステータス | コメント |
 |-----|-----|-----|
-| [重複アセットの検出](/help/assets/detect-duplicate-assets.md) | 動作が異なる | [ [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/duplicate-detection)を参照してください。 |
+| [重複アセットの検出](/help/assets/detect-duplicate-assets.md) | 動作が異なる | [&#x200B; [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/duplicate-detection)を参照してください。 |
 | [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用して FPO レンディションを生成します。Experience Manager 6.5 では、[!DNL ImageMagick] などのサードパーティソリューションをレンディションの生成に使用できました。 |
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。アセットマイクロサービスが書き戻しを処理します。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika)を参照してください。 |
 | 複合アセットのサブアセットの生成 | 非対応 | 注釈などの従属ユースケースが実行されない可能性があります。[Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets)を参照してください。[2021.7.0 リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプの PDF プレビューが使用可能になりました。 |
 | 画像の編集 | サポート対象外 | アセットの編集は、Experience Manager as a Cloud Service ではサポートされていません。詳しくは、 [Experience Manager 6.5 での仕組み](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images) を参照してください。 |
-| ホームページ | サポート対象外 |  [!DNL Experience Manager]  6.5 ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-home-page) の [[!DNL Assets]  ホームページエクスペリエンスを参照 |
-| ZIP アーカイブからのアセットの抽出 | サポート対象外 | [ [!DNL Experience Manager]  6.5 の ZIP 抽出](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip) を参照してください。 |
+| ホームページ | サポート対象外 |  [!DNL Experience Manager]  6.5 [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/using/assets-home-page) の [!DNL Assets]  ホームページエクスペリエンスを参照 |
+| ZIP アーカイブからのアセットの抽出 | サポート対象外 | [&#x200B; [!DNL Experience Manager]  6.5 の ZIP 抽出](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip) を参照してください。 |
 | アセット評価 | サポート対象外 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | Content Disposition フィルター | サポート対象外 | `ContentDispositionFilter` の一般的なユースケースは、管理者が HTML ファイルを提供し、PDF ファイルをダウンロードする代わりにインラインで開くように [!DNL Experience Manager] を設定できるようにすることです。パブリッシュインスタンスでは、Dispatcher 設定を使用して配置を管理できます。オーサーインスタンスでは、アドビは Content Disposition ヘッダーの変更をお勧めしません。[Content Disposition フィルター： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/security/content-disposition-filter) を参照してください。 |
 | 製品撮影テンプレート | サポート対象外 | [製品撮影テンプレート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information) を参照してください。 |

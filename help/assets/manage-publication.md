@@ -165,7 +165,7 @@ Only the selected folder content and references are published.
 公開プロセスは、「**[!UICONTROL 即時]**」および「**[!UICONTROL アクティベーション時]**」モードの場合は一致していますが、「**[!UICONTROL 選択的公開]**」の場合は異なります。詳しくは、[Dynamic Media のフォルダーレベルでの選択的公開の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja)を参照してください。フォルダーで選択的公開を設定した後、次の操作を行うことができます。
 
 * [「公開を管理」を使用した、Dynamic Media または Experience Manager へのアセットの選択的公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja#selective-publish-manage-publication)
-* [「公開を管理」を使用した、Dynamic Media または Experience Manager からのアセットの選択的非公開 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja#selective-unpublish-manage-publication)
+* [「公開を管理」を使用した、Dynamic Media または Experience Manager からのアセットの選択的非公開 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja#selective-unpublish-manage-publication)
 * [「クイック公開」を使用した、Dynamic Media または Experience Manager へのアセットの公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja#quick-publish-aem-dm)
 * [検索結果を使用して、アセットを選択的に公開または非公開にする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=ja#selective-publish-unpublish-search-results)
 
@@ -183,7 +183,7 @@ Only the selected folder content and references are published.
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
 
-* **投稿者：**[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
+* **投稿者：**&#x200B;[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。「`Manage publication`」ボタンが非表示になっています。投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
 
 * **ワークフローユーザー：**&#x200B;このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。ワークフローユーザーは、次の操作を実行できます。
    * 公開をリクエスト

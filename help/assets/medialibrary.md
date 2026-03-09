@@ -117,5 +117,5 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja)
+>* [&#x200B; [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja)
 >* [[!DNL Experience Manager]  as a  [!DNL Cloud Service]  製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

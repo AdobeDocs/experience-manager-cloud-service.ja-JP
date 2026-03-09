@@ -16,7 +16,7 @@ ht-degree: 99%
 
 ![AEM Assets とユニバーサルエディターの統合](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) は、web サイト上のコンテンツの柔軟なオーサリングおよび配信を実現する、合成可能なサービスセットです。[AEM コンテンツ管理](/help/sites-cloud/authoring/author-publish.md)と [ [!DNL Universal Editor]  を使用した WYSIWYG オーサリングとドキュメントベースのオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)の両方を使用できます。
+[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/overview) は、web サイト上のコンテンツの柔軟なオーサリングおよび配信を実現する、合成可能なサービスセットです。[AEM コンテンツ管理](/help/sites-cloud/authoring/author-publish.md)と [&#x200B; [!DNL Universal Editor]  を使用した WYSIWYG オーサリングとドキュメントベースのオーサリング](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)の両方を使用できます。
 
 次のツールでコンテンツを編集できます。
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 ## [!DNL AEM Assets] と [!DNL Edge Delivery Services] のドキュメントベースのオーサリングフローの統合 {#integrate-dynamic-media-with-edge-delivery-services}
 
 [!DNL AEM Assets] を [!DNL Microsoft Word] や [!DNL Google Docs] などのドキュメントベースのオーサリングツールと統合すると、オーサリングツールにアセットセレクターが提供されます。このアセットセレクターを使用して [!DNL AEM Assets] にアクセスし、承認済みのアセットをコンテンツに挿入します。
-既に [!DNL Edge Delivery Services] web サイトを使用している場合は、[[!DNL AEM Assets]  プラグイン](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)のドキュメントを参照して、[!DNL AEM Assets] を既存の [!DNL AEM] プロジェクトに統合する方法を確認してください。ドキュメントベースのオーサリングツールで作成した [!DNL AEM Assets] を含むコンテンツを公開するための [!DNL Edge Delivery Services] web サイトがない場合は、次の[前提条件](#integrate-aem-assets-with-microsoft-word-and-google-docs)および[ [!DNL AEM Assets]  とドキュメントベースのオーサリング環境の統合](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)の節に従ってください。
+既に [!DNL Edge Delivery Services] web サイトを使用している場合は、[[!DNL AEM Assets]  プラグイン](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)のドキュメントを参照して、[!DNL AEM Assets] を既存の [!DNL AEM] プロジェクトに統合する方法を確認してください。ドキュメントベースのオーサリングツールで作成した [!DNL AEM Assets] を含むコンテンツを公開するための [!DNL Edge Delivery Services] web サイトがない場合は、次の[前提条件](#integrate-aem-assets-with-microsoft-word-and-google-docs)および[&#x200B; [!DNL AEM Assets]  とドキュメントベースのオーサリング環境の統合](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)の節に従ってください。
 
 ### 前提条件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
@@ -41,7 +41,7 @@ ht-degree: 99%
 [!DNL Microsoft Word] または [!DNL Google Docs] でコンテンツを作成する際にアセットを使用するように [!DNL AEM Assets] Sidekick プラグインを設定します。
 
 * Microsoft Word または Google Docs で AEM Assets にアクセスして使用する方法について詳しくは、[[!DNL Adobe Experience Manager Assets Sidekick Plugin]](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors) を参照してください。
-* 設定について詳しくは、[ [!DNL Adobe Experience Manager Assets Sidekick Plugin] の設定](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin)を参照してください。
+* 設定について詳しくは、[&#x200B; [!DNL Adobe Experience Manager Assets Sidekick Plugin] の設定](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin)を参照してください。
   ![MS Word および Google Docs で OpenAPI 機能を備えた Dynamic Mediaを使用](/help/assets/assets/my-assets-sidebar.png)
 
 ## [!DNL Dynamic Media with OpenAPI capabilities] を使用したアセットの配信 {#integrate-Dynamic-Media-with-OpenAPI-capabilities-with-Microsoft-Word-Google-Docs-and-universal-editor}
@@ -89,5 +89,5 @@ OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内のア
 
 [!DNL Universal Editor] を設定して、[!DNL AEM Assets] と統合します。この統合により、[!DNL Dynamic Media with OpenAPI capabilities] を使用してアセットを配信できます。
 
-* [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[ [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
+* [!DNL Universal Editor] にカスタムアセットピッカー機能を追加する方法について詳しくは、[&#x200B; [!DNL Edge Delivery]  サイトの設定](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)を参照してください。カスタムアセットピッカーを使用すると、[!DNL Universal Editor] コンテンツにアセットを直接挿入できます。
 * [!DNL Universal Editor] でオーサリング中に [!DNL AEM Assets] にアクセスしてアセットを挿入する方法について詳しくは、[拡張機能の概要](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)を参照してください。

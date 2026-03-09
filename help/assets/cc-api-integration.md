@@ -123,5 +123,5 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 >[!MORELIKETHIS]
 >
 >* [処理プロファイルを介したアセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)
->* [ [!DNL Experience Manager] との統合： [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
+>* [&#x200B; [!DNL Experience Manager] との統合： [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
 >* [アセットマイクロサービスを使用したアセットの取り込みと処理：概要](/help/assets/asset-microservices-overview.md)
