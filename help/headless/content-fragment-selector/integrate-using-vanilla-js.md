@@ -21,5 +21,5 @@ ht-degree: 10%
 
 次の場合は、一部の IMS プロパティを定義せずに認証を実行できます。
 
-* [&#x200B; 統合シェル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell) でAdobe アプリケーションを統合している
+* [&#x200B; 統合シェル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell) でAdobe アプリケーションを統合している
 * 認証用に既に IMS トークンが生成されている
