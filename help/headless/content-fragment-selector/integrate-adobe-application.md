@@ -29,7 +29,7 @@ ht-degree: 20%
 以下の例に示すように、`script` タグを使用して、コンテンツフラグメントセレクターパッケージをコードに含めます。
 
 * スクリプトが読み込まれると、`PureJSContentFragmentSelectors` グローバル変数を使用できるようになります。
-* コンテンツフラグメントセレクターを定義します [ プロパティ ](/help/headless/content-fragment-selector/properties.md)。
+* コンテンツフラグメントセレクターを定義します [&#x200B; プロパティ &#x200B;](/help/headless/content-fragment-selector/properties.md)。
 
    * `imsOrg` プロパティと `imsToken` プロパティは、どちらもAdobe アプリケーションでの認証に必要です
    * `handleSelection` プロパティは、選択したフラグメントを処理するために使用されます。
@@ -72,13 +72,13 @@ ht-degree: 20%
 
 `ImsAuthProps` プロパティは、コンテンツフラグメントセレクターが `imsToken` を取得するのに使用する認証情報とフローを定義します。これらのプロパティを設定すると、認証フローの動作を制御し、様々な認証イベントのリスナーを登録できます。
 
-プロパティの詳細については、「[ImsAuthProps プロパティ ](/help/headless/content-fragment-selector/properties.md#imsauthprops-properties)」を参照してください。
+プロパティの詳細については、「[ImsAuthProps プロパティ &#x200B;](/help/headless/content-fragment-selector/properties.md#imsauthprops-properties)」を参照してください。
 
 ### ImsAuthService {#imsauthservice}
 
 クラス `ImsAuthService`、フラグメントセレクターの認証フローを処理します。 これは、Adobe IMS 認証サービスから `imsToken` を取得する役割を果たします。`imsToken` を使用して、ユーザーを認証し、AEM as a Cloud Service リポジトリへのアクセスを認証します。 `ImsAuthService` は `ImsAuthProps` のプロパティを使用して認証フローを制御し、様々な認証イベントのリスナーを登録します。 `registerFragmentsSelectorsAuthService` 関数を使用してフラグメントセレクターで `ImsAuthService` インスタンスを登録できます。 `ImsAuthService` クラスでは、次の関数を使用できます。ただし、`registerFragmentsSelectorsAuthService` 関数を使用している場合は、これらの関数を直接呼び出す必要はありません。
 
-プロパティの詳細については、「[ImsAuthService プロパティ ](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)」を参照してください。
+プロパティの詳細については、「[ImsAuthService プロパティ &#x200B;](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)」を参照してください。
 
 ### 提供された IMS トークンによる検証 {#validation-with-provided-ims-token}
 
