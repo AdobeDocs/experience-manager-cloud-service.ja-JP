@@ -2,10 +2,11 @@
 title: ' [!DNL Content Hub] へのブランド承認済みアセットのアップロード'
 description: コンテンツハブへのブランド承認済みアセットのアップロード方法について説明します。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1129'
 ht-degree: 66%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 66%
 
 [アセットを追加する権限を持つコンテンツハブユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)は、ローカルファイルシステムからコンテンツハブにアセットを追加することや、OneDrive または Dropbox データソースからアセットを読み込むことができます。検索機能を強化するのに、ローカルファイルシステムまたは OneDrive および Dropbox データソースで使用可能なフォルダー構造に関係なく、すべてのアセットがコンテンツハブの上位レベルに表示されます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445376/?captions=jpn&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Assets as a Cloud Service で `Approved` としてマークされたアセットは、コンテンツハブで自動的に使用できます。詳しくは、[コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)を参照してください。
 

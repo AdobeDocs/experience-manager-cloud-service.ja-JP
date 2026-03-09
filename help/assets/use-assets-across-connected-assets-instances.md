@@ -5,11 +5,12 @@ contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 100%
+source-wordcount: '3875'
+ht-degree: 99%
 
 ---
 
@@ -366,7 +367,7 @@ Connected Assets の設定後、[!DNL Dynamic Media] アセットは、[!DNL Sit
 
 * リモート参照が取得されず、エラーメッセージが表示される場合は、[!DNL Sites] のデプロイメントが使用可能かどうか、また、ネットワーク接続の問題がないかどうかを確認します。確認のために後で再試行します。[!DNL Assets] デプロイメントは、 [!DNL Sites] デプロイメントとの接続の確立を 2 回試み、失敗を報告します。
 
-  ![アセットのリモート参照の再試行に失敗](assets/reference-report-failure.png)
+  ![アセットのリモート参照の再取得に失敗](assets/reference-report-failure.png)
 
 **関連情報**
 

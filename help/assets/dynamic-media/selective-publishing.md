@@ -7,11 +7,12 @@ content-type: reference
 docset: aem65
 feature: Publishing,Dynamic Media
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2946'
-ht-degree: 100%
+source-wordcount: '2952'
+ht-degree: 99%
 
 ---
 

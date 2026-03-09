@@ -1,14 +1,15 @@
 ---
 title: MSM およびライブコピーを使用したコンテンツフラグメントの再利用
 description: MSM のライブコピー機能を使用して、ソースコンテンツと同期しながら、同じまたは類似のコンテンツフラグメントコンテンツを複数の場所で使用する方法について説明します。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '438'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +30,7 @@ MSM の概念の詳細な概要については、[コンテンツの再利用：
 >
 >Adobe Experience Manager の[マルチサイトマネージャー（MSM）](/help/sites-cloud/administering/msm/overview.md)機能を使用すると、一度作成したコンテンツを複数の Web サイトで再利用できます。
 
-MSM for Content Fragments を使用すると、次のことができます。
+コンテンツフラグメント用 MSM を使用すると、次のことができます。
 
 * コンテンツフラグメントを 1 回作成してから、これらのフラグメントの（リンクされた）コピーを作成して、サイトまたはアプリケーションの他の領域で再利用する。
 * ソースコピーを 1 回更新してから、変更を（ライブ）コピーにプッシュして、複数のコピーの同期を維持する。
@@ -45,9 +46,9 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 
 ## 方法 {#how-to}
 
-MSM for Content Fragments の使用方法について詳しくは、次のドキュメントを参照してください（Assets にも適用可能）。
+コンテンツフラグメント用 MSMの使用方法について詳しくは、次のドキュメントを参照してください（Assets にも適用可能）。
 
-* [MSM for Content Fragments（および Assets）](/help/assets/reuse-assets-using-msm.md)の使用方法
+* [コンテンツフラグメント用 MSM（および Assets）](/help/assets/reuse-assets-using-msm.md)の使用方法
 
 * [ライブコピーの作成](/help/assets/reuse-assets-using-msm.md)
 
@@ -62,7 +63,7 @@ MSM for Content Fragments の使用方法について詳しくは、次のドキ
    * [関連アセットのメタデータ](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [関係の休止と再開](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [ライブ関係の削除](/help/assets/reuse-assets-using-msm.md#detach)
-* [MSM for Content Fragments（および Assets）と MSM for Sites の比較](/help/assets/reuse-assets-using-msm.md#comparison)
+* [コンテンツフラグメント用 MSM（および Assets）と Sites 用 MSMの比較](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## 制限事項 {#limitations}
 

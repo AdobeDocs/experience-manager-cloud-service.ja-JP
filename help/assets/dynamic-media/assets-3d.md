@@ -7,11 +7,12 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 100%
+source-wordcount: '2258'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +96,7 @@ Dynamic Media で 3D アセットを使用する前に、[!DNL Experience Manage
 
 >[!TIP]
 >
->ディメンショナルビューアプリセットをビューアプリセットエディターで開いて、3D ファイルをアップロードせずに 3D アセット内を移動する練習ができます。ディメンショナルビューアプリセットには、操作できる組み込みの 3D アセットがあります。
+>ディメンショナルビューアプリセットをビューアプリセットエディターで開いて、3D ファイルをアップロードせずに 3D アセット内を移動する練習ができます。ディメンショナルビューアプリセットには、操作できるビルトインの 3D アセットがあります。
 >
 >詳しくは、[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 

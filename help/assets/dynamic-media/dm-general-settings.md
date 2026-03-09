@@ -8,11 +8,12 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2512'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +29,7 @@ hidefromtoc: yes -->
 * Adobe Experience Manager as a Cloud Service の *既存* の **[!UICONTROL Dynamic Media 設定]**（**[!UICONTROL Cloud Services]** 内）を使用している。[Cloud Services での Dynamic Media 設定の作成](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を参照してください。
 * 自身が管理者権限を持つ Experience Manager システム管理者である。
 
-Dynamic Media の一般設定については、経験豊富な web サイト開発者やプログラマーを対象としています。Adobe Dynamic Media では、公開設定の変更は、Adobe Experience Manager 上の Dynamic Media と基本的な画像技術に精通しているユーザーが行うことをお勧めします。
+Dynamic Media の一般設定については、経験豊富な web サイト開発者やプログラマーを対象オーディエンスとしています。Adobe Dynamic Media では、公開設定の変更は、Adobe Experience Manager 上の Dynamic Media と基本的な画像技術に精通しているユーザーが行うことをお勧めします。
 
 アカウントの作成時に、会社に割り当てられているサーバーが Adobe Dynamic Media によって自動的に提供されます。これらのサーバーは、web サイトとアプリケーションの URL 文字列を生成するのに使用されます。これらの URL 呼び出しは、アカウントに固有です。
 
@@ -134,7 +135,7 @@ Adobe® Photoshop® ファイルからのテンプレート作成、レイヤー
 | **[!UICONTROL テキストを抽出]** | テキストを抽出して、ユーザーがビューア内でテキストを検索できるようにします。 |
 | **[!UICONTROL レイヤーを背景サイズに拡大]** | 切り離した画像レイヤーのサイズを、背景レイヤーのサイズに拡大します。 |
 | **[!UICONTROL レイヤーの名前]** | 切り離した画像レイヤーのサイズを、背景レイヤーのサイズに拡大します。<br>• **[!UICONTROL レイヤー名]** - PSD ファイル内のレイヤー名に従って画像に名前を付けます。例えば、元の PSD ファイルに Price Tag という名前のレイヤーがある場合、Price Tag という名前の画像になります。ただし、PSD ファイル内のレイヤー名がデフォルトの Photoshop レイヤー名（背景、レイヤー 1、レイヤー 2 など）である場合、画像の名前は PSD ファイル内のレイヤー番号に従って付けられます。<br>• **[!UICONTROL Photoshop とレイヤー番号]** - PSD ファイル内のレイヤー番号に従って画像の名前を付け、元のレイヤー名は無視します。Photoshop ファイル名の後にレイヤー番号を付けたものが画像の名前になります。例えば、`Spring Ad.psd` というファイルの 2 番目のレイヤーは、Photoshop でデフォルト以外の名前が付いていたとしても `Spring Ad_2` という名前になります。<br>• **[!UICONTROL Photoshop とレイヤー名]** - 画像は PSD ファイルの後にレイヤー名またはレイヤー番号を付けた名前になります。PSD ファイル内のレイヤー名がデフォルトの Photoshop レイヤー名である場合、レイヤー番号が使用されます。例えば、`SpringAd` という名前の PSD ファイルに `Price Tag` という名前のレイヤーがある場合、`Spring Ad_Price Tag` という名前になります。レイヤー 2 というデフォルト名のレイヤーは `Spring Ad_2` となります。 |
-| **[!UICONTROL アンカー]** | PSD ファイルから生成されたレイヤーコンポジションを使用して作成されるテンプレートにおいて、画像がどのようにアンカーされるのかを指定します。デフォルトでは、アンカーは中央です。中央のアンカーを使用すると、置換画像の縦横比に関係なく、置換画像で同じ領域をより適切に埋めることができます。テンプレートを参照してパラメータ置換を使用する場合、この画像を置換する縦横比が異なる画像は、実質的に同じスペースを占有します。アプリケーションでテンプレート内の割り当てられた領域を置換画像で埋める必要がある場合は、別の設定に変更してください。 |
+| **[!UICONTROL アンカー]** | PSD ファイルから生成されたレイヤー構成を使用して作成されるテンプレートにおいて、画像がどのようにアンカーされるのかを指定します。デフォルトでは、アンカーは中央です。中央のアンカーを使用すると、置換画像の縦横比に関係なく、置換画像で同じ領域をより適切に埋めることができます。テンプレートを参照してパラメータ置換を使用する場合、この画像を置換する縦横比が異なる画像は、実質的に同じスペースを占有します。アプリケーションでテンプレート内の割り当てられた領域を置換画像で埋める必要がある場合は、別の設定に変更してください。 |
 
 ### 「PDF」タブ {#pdf-tab}
 
@@ -155,7 +156,7 @@ Adobe Illustrator® ファイルのラスタライズ、透明背景の維持、
 
 Adobe Dynamic Media で Adobe® Illustrator®（AI）ファイルを使用できます。Adobe Dynamic Media には、アップロード時にこれらのファイルを設定するためのコマンドが用意されています。
 
-Illustrator（AI）画像ファイルのアップロード時に、様々な方法でファイルをフォーマットできます。ファイルのラスタライズ、透明背景の維持、解像度の選択、カラースペースの選択ができます。PostScript ファイルと Illustrator ファイルをフォーマットするためのオプションは、「PostScript」オプションおよび「Illustrator」オプションの下のアップロード画面で利用できます。
+Illustrator（AI）画像ファイルのアップロード時に、様々な方法でファイルをフォーマットできます。ファイルのラスタライズ、透明背景の維持、解像度の選択、カラースペースの選択ができます。PostScript ファイルと Illustrator ファイルをフォーマットするためのオプションは、アップロードジョブのオプションボックスの「PostScript」オプションおよび「Illustrator」オプションの下のアップロード画面で利用できます。
 
 
 | 「Illustrator」オプション | 説明 |

@@ -4,11 +4,12 @@ description: Adobe Experience Manager Assets as a  [!DNL Cloud Service] のア�
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 96%
 
 ---
 

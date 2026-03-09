@@ -2,11 +2,12 @@
 title: アセット API の検索
 description: 検索アセット API を使用する方法について説明します。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 99%
 
 ---
 

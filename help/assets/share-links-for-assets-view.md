@@ -1,13 +1,14 @@
 ---
 title: アセットへのリンクの共有方法
 description: リンクを生成し、 [!DNL Assets view]  アプリケーションへのアクセス権を持たない他のユーザーとアセットを共有します。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 99%
 
 ---
 
@@ -51,4 +52,4 @@ ht-degree: 100%
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる

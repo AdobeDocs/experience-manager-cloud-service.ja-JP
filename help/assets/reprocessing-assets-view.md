@@ -2,11 +2,12 @@
 title: デジタルアセットの再処理
 description: デジタルアセットの再処理の様々な方法について説明します。
 role: User, Leader, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '682'
+ht-degree: 99%
 
 ---
 

@@ -2,11 +2,12 @@
 title: Content Credentials の統合
 description: AEM Assets に統合され、アセットビュー内に表示される Content Credentials を使用すると、アセットの作成方法や作成に関わったユーザーなど、アセットの履歴に関するコンテキストを提供できます。デジタルコンテンツの栄養ラベルと同様に、Content Credentials は透明性を高め、オーディエンスとの信頼関係を構築するのに役立ちます。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '462'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 99%
 
 ---
 

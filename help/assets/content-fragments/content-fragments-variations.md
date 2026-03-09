@@ -1,14 +1,15 @@
 ---
 title: バリエーション - フラグメントコンテンツのオーサリング（アセット - コンテンツフラグメント）
 description: コンテンツフラグメントのバリエーションを理解すると、そのフラグメントにコンテンツをオーサリングし、目的に応じてそのコンテンツのバリエーションを作成できるようになり、柔軟性が向上します。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 100%
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 

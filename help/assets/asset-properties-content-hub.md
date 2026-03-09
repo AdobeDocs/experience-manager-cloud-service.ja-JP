@@ -2,10 +2,11 @@
 title: ' [!DNL the Content Hub] でのアセットとそのプロパティのプレビュー'
 description: ' [!DNL Content Hub] でアセットとプロパティをプレビューする方法について説明します。'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '977'
 ht-degree: 61%
 
 ---
@@ -38,10 +39,10 @@ ht-degree: 61%
 * **D：**&#x200B;前または次のアセットに進む
 * **E：**&#x200B;アセットの数
 * **F：**&#x200B;アセットのダウンロード
-* **G：**&#x200B;[!DNL Adobe Express] を使用したアセットを編集
+* **G：**[!DNL Adobe Express] を使用したアセットを編集
 * **H：**&#x200B;アセットの情報を折りたたむまたはプレビュー
 * **I：**&#x200B;アセットを共有
-* **J：**&#x200B;[!DNL Collection] にアセットを追加
+* **J：**[!DNL Collection] にアセットを追加
 * **K：**&#x200B;プレビュー画面を閉じる
 * **L：**&#x200B;タイトル、形式、サイズ、解像度、タグ、カラータグ、スマートタグを含むアセットの情報。
 
@@ -111,7 +112,7 @@ ht-degree: 61%
 
 * **スマートタグ：** [!DNL The Content Hub] は、Adobe AIのスマートコンテンツサービスを使用して、タグベースの構造の認識アルゴリズムを使用してアセットのトレーニングを行います。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないアセット情報の例です。デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
 
-* **カラータグ：**&#x200B;[&#x200B; カラータグ &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja) は、Adobeの AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
+* **カラータグ：**[ カラータグ ](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) は、Adobeの AI 機能を使用してアセット内で自動的に識別されるカラーを使用して、アセットを認識するのに役立ちます。
 
 * アップロード日
 

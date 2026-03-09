@@ -2,12 +2,13 @@
 title: ' [!DNL Assets View] の基本'
 description: ' [!DNL Assets View] のアクセス方法、ログイン操作、サポートされているユースケース、既知の問題について説明します。'
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '358'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +67,7 @@ ht-degree: 100%
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 <!--TBD: Merge the below rows in the table when the use cases are documented/available.

@@ -1,13 +1,14 @@
 ---
 title: Assets ビューを使用したアセットの一括読み込み
 description: 新しい Assets UI（Assets ビュー）を使用してアセットを一括で読み込む方法について説明します。これにより、管理者はデータソースから AEM Assets に大量のアセットを読み込むことができます。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +28,7 @@ AEM Assets ビューの一括読み込みを使用すると、管理者はデー
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451955/?captions=jpn&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 

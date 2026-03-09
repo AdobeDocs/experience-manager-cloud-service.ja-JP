@@ -4,11 +4,12 @@ description: 埋め込みビデオや画像を使用したり、Web アプリケ
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '345'
+ht-degree: 98%
 
 ---
 

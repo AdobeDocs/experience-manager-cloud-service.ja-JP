@@ -1,12 +1,13 @@
 ---
 title: コレクションを管理
 description: コレクションとは、Experience Manager Assets ビュー内の一連のアセットのことです。コレクションを使用して、ユーザー間でアセットを共有します。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1090'
 ht-degree: 85%
 
 ---
@@ -114,13 +115,13 @@ You can share collections with various users that are assigned different levels 
 
    * **[!DNL All]:** 標準コレクションとスマートコレクションの両方を表示します。
    * **[!DNL Collection]:** 手動で作成したコレクションを表示します。このコレクションでは、アセットが個別に追加されます。
-   * **[!DNL Smart Collection]:** [&#x200B; スマートコレクション &#x200B;](#manage-smart-collection) に保存されたアセットを自動的に含んだコレクションを表示します。
+   * **[!DNL Smart Collection]:** [ スマートコレクション ](#manage-smart-collection) に保存されたアセットを自動的に含んだコレクションを表示します。
 
 * **[!DNL Created Date]** ドロップダウンを使用すると、コレクションを作成日時に基づいてフィルタリングできます。 日付範囲を指定して、最近作成されたコレクションや古いコレクションを検索できます。
 
-  ![&#x200B; コレクションを検索 &#x200B;](assets/search-collection.png)
+  ![ コレクションを検索 ](assets/search-collection.png)
 
-詳しくは、[&#x200B; アセットの検索 &#x200B;](search-assets-view.md)、[&#x200B; 検索結果のフィルター &#x200B;](search-assets-view.md#refine-search-results)、または [&#x200B; 保存済みの検索結果の管理 &#x200B;](search-assets-view.md##saved-search) を参照してください。
+詳しくは、[ アセットの検索 ](search-assets-view.md)、[ 検索結果のフィルター ](search-assets-view.md#refine-search-results)、または [ 保存済みの検索結果の管理 ](search-assets-view.md##saved-search) を参照してください。
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 

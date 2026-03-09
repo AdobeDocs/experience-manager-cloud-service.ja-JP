@@ -5,11 +5,12 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2398'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '2404'
+ht-degree: 99%
 
 ---
 

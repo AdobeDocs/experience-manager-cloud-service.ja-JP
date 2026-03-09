@@ -2,11 +2,12 @@
 title: AEM Sites ページで使用する前にアセットをプレビュー
 description: OpenAPI 機能を備えた Dynamic Media を使用すると、Adobe Experience Manager（AEM）Sites プレビューページでアセットをプレビューできます。このアセットプレビューを使用すると、オーサーページ（更新されたアセットを含む）を公開して一般公開する前に、ユーザーと関係者がアセットの更新内容を確認および検証できます。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: 3f3e091d09b94418fc2cda0bd3b3ce950555b7a9
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 99%
 
 ---
 

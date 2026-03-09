@@ -2,13 +2,14 @@
 title: ' [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のベストプラクティスを検索'
 description: アプリケーション内でアセットのメタデータを検索および取得するためのベストプラクティス。
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '2527'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '2533'
+ht-degree: 99%
 
 ---
 

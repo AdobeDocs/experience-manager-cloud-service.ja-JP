@@ -2,11 +2,12 @@
 title: ' [!DNL Edge Delivery Services] のコンテンツ作成時の  [!DNL AEM Assets]  の統合'
 description: ' [!DNL AEM Assets]  と  [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets]  と  [!DNL Microsoft Word]  を統合し、 [!DNL Google Docs], integrate [!DNL AEM Assets]  と  [!DNL Universal Editor], integrate [!DNL Dynamic Media]  と  [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities]  と  [!DNL Universal Editor]  を統合し、 [!DNL Dynamic Media with OpenAPI capabilities]  と  [!DNL Microsoft Word]  と  [!DNL Google Docs] を統合する方法について説明します。'
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 99%
 
 ---
 

@@ -8,11 +8,12 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1668'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1674'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +66,7 @@ ht-degree: 100%
 
 「**[!UICONTROL コンテンツ AI]**」タブで「**[!UICONTROL 新規追加]**」ボタンをクリックして、トランスクリプションを設定します。ここでは、ドロップダウンリストからファイルタイプを選択して、トランスクリプトを生成するためのファイル形式（MIME タイプ）を含めたり除外したりすることができます。次の図では、サポートされているオーディオおよびビデオファイルがすべて含まれ、テキストファイルは除外されています。
 
-「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、トランスクリプトレンディション（.vtt ファイル）がオリジナルアセットが存在するフォルダーに作成、保存されるようにします。他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
+「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」切替スイッチを有効にして、トランスクリプトレンディション（.vtt ファイル）がオリジナルアセットが存在するフォルダーに作成、保存されるようにします。他のレンディションも、この設定に関係なく、デフォルトの DAM アセット処理ワークフローで生成されます。
 
 ![configure-transcription-service](assets/configure-transcription-profile.png)
 
@@ -77,7 +78,7 @@ ht-degree: 100%
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-それでは、このビデオプロファイルのトランスクリプションを設定しましょう。「**[!UICONTROL コンテンツ AI]**」タブに移動し、「**[!UICONTROL 新規追加]**」ボタンをクリックします。すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」トグルを有効にして、設定を保存します。
+それでは、このビデオプロファイルのトランスクリプションを設定しましょう。「**[!UICONTROL コンテンツ AI]**」タブに移動し、「**[!UICONTROL 新規追加]**」ボタンをクリックします。すべてのオーディオおよびビデオファイルを含め、画像およびアプリケーションファイルを除外します。「**[!UICONTROL 同じディレクトリに VTT トランスクリプトを作成]**」切替スイッチを有効にして、設定を保存します。
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 
@@ -124,7 +125,7 @@ ht-degree: 100%
 
 関連トピック：
 
-* [Dynamic Media ビデオに CC クローズドキャプションを追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=ja#add-cc-closed-captioning-to-dynamic-media-video)
+* [Dynamic Media ビデオに CC クローズドキャプションを追加する方法に関するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [YouTube への Dynamic Media ビデオの公開](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 次の図の URL は、トランスクリプト（.vtt ファイル）を参照するキャプション部分を表しています。このビデオでは、ビデオ内の指定されたタイムスタンプにおける音声言語（トランスクリプトテキスト）を&#x200B;**[!UICONTROL クローズドキャプション]**&#x200B;として表示しています。ユーザーは、「**[!UICONTROL CC]**」ボタンを使用して、キャプションを有効または無効にすることができます。

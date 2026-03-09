@@ -3,11 +3,12 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 role: Admin
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1767'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1772'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +63,7 @@ ht-degree: 100%
 
 1. クラウドサービスの「プロジェクトにリンクされたフォルダー」タブに移動します。
 1. リンクされたフォルダーの親パス：DAM 内で、リンクされたフォルダーを作成するフォルダーを選択します。空のままにすると、デフォルトで /content/dam に設定されます。Workfront ツールのメタデータスキーマと Workfront リンクフォルダーのメタデータスキーマが、選択したフォルダーに適用されていることを確認します。
-1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE:プロジェクトの種類、名前に設定されています。
+1. リンクされたフォルダー構造：コンマ区切り値を入力します。各値は `DE:<some-project-custom-form-field>`、Portfolio、プログラム、年、名前または「リテラル文字列値」（最後の 1 つには引用符がいります）のいずれかです。現在は、Portfolio、プログラム、年、DE、タイプ :Project 名前に設定されています。
 1. 権限の設定：`wf-workfront-users` グループに、`/conf/workfront-tools/settings/cloudconfigs` に対する `jcr:all permissions` 権限を追加します。
 1. Workfront のフォルダーのタイトルに構造内のすべてのフォルダーを含める必要がある場合は、「フォルダー構造名を使用して Workfront でリンクされたフォルダーのタイトルを作成」チェックボックスをオンにする必要があります。それ以外の場合は、最後のフォルダーのタイトルになります。
 1. サブフォルダーのマルチフィールドでは、リンクされたフォルダーの子フォルダーとして作成するフォルダーのリストを指定できます。

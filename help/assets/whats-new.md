@@ -2,10 +2,11 @@
 title: コンテンツハブの新機能
 description: 最近ローンチされたコンテンツハブの機能の一部について詳しく説明します
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '889'
 ht-degree: 82%
 
 ---
@@ -44,7 +45,7 @@ Content Hubでコレクションをお気に入りに登録して、整理と取
 
 Content Hub管理者は、クイックアクセス用にContent Hubでコレクションをピン留めできるようになりました。 ピン留めされたコレクションは、コレクションホームページの専用の **[!UICONTROL ピン留め]** セクションに表示されるので、重要なコレクションを手の届くところに簡単に保持できます。
 
-[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >

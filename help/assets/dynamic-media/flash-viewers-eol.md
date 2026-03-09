@@ -4,11 +4,12 @@ description: 2017 年 1 月 31 日をもって、Flash ビューア Platform の
 contentOwner: Rick Brough
 feature: FAQ,Dynamic Media,Troubleshooting
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 100%
+source-wordcount: '48'
+ht-degree: 91%
 
 ---
 

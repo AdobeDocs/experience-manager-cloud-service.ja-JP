@@ -2,11 +2,12 @@
 title: アセットセレクターコレクション
 description: アセットセレクターコレクションの使用。
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 99%
 
 ---
 

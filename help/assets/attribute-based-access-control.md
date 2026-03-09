@@ -2,11 +2,12 @@
 title: 属性ベースのアクセス制御
 description: 属性ベースのアクセス制御を有効にして、メタデータベースのルールを定義し、コンテンツハブで使用可能なアセットへのアクセスレベルを定義する方法について説明します。
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 68%
+source-wordcount: '1397'
+ht-degree: 67%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 68%
 
 * 重複の数を減らす – アセットの整合性を向上させます。同じアセットが異なるグループと共有される場合は、フォルダーベースの権限で重複が必要になります。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475415/?captions=jpn&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 属性ベースのアクセス制御を有効にする方法 {#enable-attribute-based-access-control}
 

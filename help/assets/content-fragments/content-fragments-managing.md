@@ -1,14 +1,15 @@
 ---
 title: コンテンツフラグメントの管理（Assets - コンテンツフラグメント）
 description: ヘッドレスコンテンツの基礎として、またはページオーサリング用として AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 99%
+source-wordcount: '1947'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[&#x200B; ベストプラクティス &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
+>コンテンツフラグメントモデルとコンテンツフラグメントを使用する場合は、[ ベストプラクティス ](/help/assets/content-fragments/content-fragments.md#best-practices) に注意してください。
 
 >[!NOTE]
 >
@@ -139,7 +140,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=ja)に対する標準的なアクションです。
+>これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 

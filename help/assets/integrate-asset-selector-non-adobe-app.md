@@ -2,11 +2,12 @@
 title: アセットセレクターと、アドビ以外のアプリケーションまたはサードパーティアプリケーションとの統合
 description: アセットセレクターを様々なアドビ、アドビ以外、サードパーティのアプリケーションと統合します。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
-workflow-type: ht
-source-wordcount: '428'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 99%
 
 ---
 

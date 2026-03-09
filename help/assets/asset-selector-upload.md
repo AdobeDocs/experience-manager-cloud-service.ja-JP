@@ -2,11 +2,12 @@
 title: アセットセレクターでアセットをアップロードする
 description: アップロード機能を使用したアセットセレクター MFE へのアセットのアップロード
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 99%
 
 ---
 

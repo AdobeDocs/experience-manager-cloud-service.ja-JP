@@ -1,13 +1,14 @@
 ---
 title: アセットビューでタグを管理する方法？
 description: アセットビューでタグを管理する方法を説明します。タグを使用すると、アセットを分類して参照や検索をより効率的に行えるようになります。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1745'
+ht-degree: 99%
 
 ---
 
@@ -174,7 +175,7 @@ Assets Essentials で変更したタグは、Assets as a Cloud Service にも適
 
 * **タグを削除：** ブロックリストからタグを削除することもできます。これを行うには、削除するタグを 1 つ以上選択します。「**[!UICONTROL 削除]**」をクリックします。一度に最大 25 個のタグをリストから削除できます。
 * **すべてを選択**：「**タグ名**」の横にあるチェックボックスをオンにして、ブロックリスト内のすべてのタグを選択します。
-* **ソート：** ブロックリストは昇順または降順で並べ替えることができます。これを行うには、「**タグ名**」の横にある矢印をクリックします。
+* **並べ替え：**&#x200B;ブロックリストは昇順または降順で並べ替えることができます。これを行うには、「**タグ名**」の横にある矢印をクリックします。
 
   ![ブロックタグ](assets/blocklist.gif)
 

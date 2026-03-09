@@ -5,11 +5,12 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3438'
-ht-degree: 100%
+source-wordcount: '3444'
+ht-degree: 99%
 
 ---
 

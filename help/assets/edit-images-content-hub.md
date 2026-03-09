@@ -1,10 +1,11 @@
 ---
 title: Adobe Express を使用したコンテンツハブでの画像の編集
 description: Adobe Express を使用したコンテンツハブでの画像の編集
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '716'
 ht-degree: 54%
 
 ---

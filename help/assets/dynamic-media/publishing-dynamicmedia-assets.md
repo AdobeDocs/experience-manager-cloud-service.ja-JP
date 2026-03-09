@@ -4,11 +4,12 @@ description: Dynamic Mediaビデオおよび画像アセットを公開し、URL
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 99%
 
 ---
 

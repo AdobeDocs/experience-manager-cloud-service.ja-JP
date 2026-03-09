@@ -4,11 +4,12 @@ description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service] でサ
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 100%
+source-wordcount: '1088'
+ht-degree: 99%
 
 ---
 

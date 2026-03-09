@@ -2,12 +2,13 @@
 title: '[!DNL Assets view] ユーザーインターフェイス'
 description: ' [!DNL Assets view] のユーザーインターフェイスとナビゲーションについて説明します。'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '986'
+ht-degree: 99%
 
 ---
 

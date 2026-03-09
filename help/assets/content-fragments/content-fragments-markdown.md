@@ -3,11 +3,12 @@ title: マークダウン（アセット - コンテンツフラグメント）
 description: コンテンツフラグメントエディターでマークダウン構文を使用してヘッドレスコンテンツを簡単に作成する方法を説明します。
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '601'
 ht-degree: 89%
 
 ---
@@ -132,7 +133,7 @@ ht-degree: 89%
 
 順序付きと順序なし両方のリストを作成できます。
 
-順序なしリストを作成するには、&ast;（アスタリスク）記号をリストの項目の前に付けます。 例：
+順序なしリストを作成するには、&amp;ast;（アスタリスク）記号をリストの項目の前に付けます。 例：
 
     `* item in list`
 

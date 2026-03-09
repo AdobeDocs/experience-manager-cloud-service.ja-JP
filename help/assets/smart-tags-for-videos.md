@@ -3,11 +3,12 @@ title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe AI] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 

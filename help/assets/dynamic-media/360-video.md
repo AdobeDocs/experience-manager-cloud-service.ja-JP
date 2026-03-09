@@ -4,17 +4,18 @@ description: Dynamic Media で 360 ビデオとバーチャルリアリティ（
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1013'
+ht-degree: 99%
 
 ---
 
 # 360/VR ビデオ {#vr-video}
 
-360 度ビデオでは、すべての方向のビューが同時に記録されます。このタイプのビデオは、全方位カメラやカメラのコレクションを使用して撮影されます。フラットディスプレイでの再生時に、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を適用します。
+360 度ビデオでは、すべての方向のビューが同時に記録されます。このタイプのビデオは、全方位カメラやカメラのコレクションを使用して撮影されます。フラットディスプレイでの再生時に、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイスビルトインのジャイロスコープ制御を適用します。
 
 Dynamic Media には、360 ビデオアセット配信のネイティブサポートが含まれています。デフォルトでは、表示や再生のために追加の設定は必要ありません。360 ビデオは、.mp4、.mkv、.mov などの標準のビデオ拡張子を使用して配信します。最も一般的なコーデックは H.264 です。
 

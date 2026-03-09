@@ -6,11 +6,12 @@ feature: Asset Management
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 98%
 
 ---
 

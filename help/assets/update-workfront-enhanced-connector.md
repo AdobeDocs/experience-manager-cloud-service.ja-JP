@@ -1,13 +1,14 @@
 ---
 title: 更新 [!DNL Workfront for Experience Manager enhanced connector]
 description: 更新 [!DNL Workfront for Experience Manager enhanced connector]
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '226'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->[!DNL Workfront for Experience Manager enhanced connector] の AEM 6.5 向けドキュメントをお探しですか？[ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ja##update-enhanced-connector-for-workfront)してください。
+>[!DNL Workfront for Experience Manager enhanced connector] の AEM 6.5 向け更新ドキュメントをお探しですか？[ここをクリック](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=ja##update-enhanced-connector-for-workfront)してください。
 
 
 [!DNL Workfront for Experience Manager enhanced connector] を最新バージョンにアップデートするには：

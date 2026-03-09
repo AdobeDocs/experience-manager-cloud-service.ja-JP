@@ -4,11 +4,12 @@ description: ' [!DNL Experience Manager Assets] の HTTP API を使用した、�
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 100%
+source-wordcount: '1697'
+ht-degree: 99%
 
 ---
 

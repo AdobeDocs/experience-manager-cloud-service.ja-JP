@@ -5,10 +5,11 @@ mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: bd43f86c9d3ad017a5e963800938e3ead98b7441
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '290'
 ht-degree: 60%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 60%
 
 {{work-with-dynamic-media}}
 
-[Dynamic Media &#x200B;](https://business.adobe.com/jp/products/experience-manager/assets/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
+[Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -60,6 +61,6 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 
 これは 1 回限りの変更です。
 
-DNS プロバイダーツールまたは [CAA ルックアップ ユーティリティ &#x200B;](https://caatest.co.uk/) を使用して、CAA レコードが存在するかどうかを確認できます。
+DNS プロバイダーツールまたは [CAA ルックアップ ユーティリティ ](https://caatest.co.uk/) を使用して、CAA レコードが存在するかどうかを確認できます。
 
 CAA レコードが存在し、DigiCert が承認されていない場合、現在の証明書の有効期限が切れると証明書の更新が失敗し、画像およびビデオ配信のダウンタイムが発生する可能性があります。 ドメインに CAA レコードが存在しない場合は、アクションは必要ありません。

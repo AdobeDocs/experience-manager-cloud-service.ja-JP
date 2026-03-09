@@ -3,12 +3,13 @@ title: サポートされているファイル形式
 description: ' [!DNL Assets view] の様々なユースケースでサポートされているファイル形式'
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '372'
+ht-degree: 98%
 
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: アセットビューのマイワークスペース
 description: マイワークスペースは、カスタマイズ可能なビジュアルモジュールを提供するページで、Assets ユーザーインターフェイスの主要な領域と、ユーザーに最も関連性の高い情報に簡単にアクセスできます。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '745'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 99%
 
 ---
 

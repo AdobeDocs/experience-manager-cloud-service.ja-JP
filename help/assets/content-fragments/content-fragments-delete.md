@@ -1,14 +1,15 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項（アセット - コンテンツフラグメント）
 description: AEM でコンテンツフラグメント削除ポリシーを定義する前に、以下の重要な考慮事項を確認してください。コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールです。削除する際は、影響を慎重に考慮する必要があります。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '476'
+ht-degree: 99%
 
 ---
 

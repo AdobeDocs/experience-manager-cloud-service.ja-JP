@@ -2,10 +2,11 @@
 title: コンテンツハブでアセットを検索する
 description: ' [!DNL Content Hub] でのアセットの検索方法について学ぶ'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1016'
 ht-degree: 81%
 
 ---
@@ -22,11 +23,11 @@ ht-degree: 81%
 
 [!DNL Content Hub] 検索では、以下に基づいて結果が提供されます。
 
-* **一致するテキスト：**&#x200B;[!DNL Content Hub] 検索では、名前または説明を使用してアセットを検索できます。キーワードベースの検索を実行して、キーワードをアセットのプロパティで使用可能なテキストと比較することができます。
+* **一致するテキスト：**[!DNL Content Hub] 検索では、名前または説明を使用してアセットを検索できます。キーワードベースの検索を実行して、キーワードをアセットのプロパティで使用可能なテキストと比較することができます。
 
-* **一致するコンテキスト：**&#x200B;[!DNL Content Hub] の検索結果リストには、一致するコンテキストに基づいて取得されたアセットの近似結果が含まれます。例えば、検索バーに「`cool`」と入力すると、`winter`、`snow`、`cold surroundings` に関連するアセットが検索リストに表示されます。
+* **一致するコンテキスト：**[!DNL Content Hub] の検索結果リストには、一致するコンテキストに基づいて取得されたアセットの近似結果が含まれます。例えば、検索バーに「`cool`」と入力すると、`winter`、`snow`、`cold surroundings` に関連するアセットが検索リストに表示されます。
 
-* **アセット情報（タイトル、タグ、スマートタグ）：**&#x200B;[!DNL Content Hub] は、スマート検索アルゴリズムを使用して、検索結果を正確かつ可能な限り関連性に基づいてランク付けします。[メタデータ](#asset-properties.md)は、アセットに使用可能なすべてのデータのコレクションですが、必ずしもそのアセットに含まれているとは限りません。[アセットをより細かく分類するのに役立ち、デジタル情報量が多くなるにつれて有用になります。](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub)
+* **アセット情報（タイトル、タグ、スマートタグ）：**[!DNL Content Hub] は、スマート検索アルゴリズムを使用して、検索結果を正確かつ可能な限り関連性に基づいてランク付けします。[メタデータ](#asset-properties.md)は、アセットに使用可能なすべてのデータのコレクションですが、必ずしもそのアセットに含まれているとは限りません。[アセットをより細かく分類するのに役立ち、デジタル情報量が多くなるにつれて有用になります。](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub)
 
 * **最終変更日：**&#x200B;最近変更したアセットが検索結果リストの上部に表示されます。また、要件に応じて、日付範囲をフィルタリングすることもできます。
 
@@ -34,7 +35,7 @@ ht-degree: 81%
 
 * **検索履歴：**&#x200B;検索履歴を取得するには、文字を入力せずに検索ボックス内をクリックします。また、履歴から特定のキーワードを削除することもできます。検索履歴は web ブラウザーのキャッシュメモリに保存されるので、別のブラウザーで [!DNL Content Hub] の検索にアクセスしたり、ブラウザーのキャッシュメモリをクリアしたりすると、検索履歴を表示できなくなります。
 
-* **入力中に検索：**&#x200B;[!DNL Content Hub] 検索では、入力を開始するとオートコンプリートの候補が表示されるので、検索エクスペリエンスが向上します。
+* **入力中に検索：**[!DNL Content Hub] 検索では、入力を開始するとオートコンプリートの候補が表示されるので、検索エクスペリエンスが向上します。
 
 ## 基本検索 {#basic-search}
 
@@ -166,7 +167,7 @@ ht-degree: 81%
 
 [!DNL The Content Hub] は検索だけでなく、検索またはプレビューインターフェイスから直接、[ダウンロード](download-assets-content-hub.md)、[共有](share-assets-content-hub.md)、[コレクションへのアセットの追加](collections-content-hub.md)などの追加アクションを実行できます。これらのオプションを表示するには、検索結果ページでアセットを選択します。
 
-詳しくは、[&#x200B; [!DNL Content Hub]](configure-content-hub-ui-options.md) でのアセットの設定を参照してください。
+詳しくは、[ [!DNL Content Hub]](configure-content-hub-ui-options.md) でのアセットの設定を参照してください。
 
 ## よくある質問 {#faqs-deploy-content-hub}
 

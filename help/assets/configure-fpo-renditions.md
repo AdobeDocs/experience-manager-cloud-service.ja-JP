@@ -4,11 +4,12 @@ description: Experience Manager Assets ワークフローと ImageMagick を使�
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 99%
 
 ---
 

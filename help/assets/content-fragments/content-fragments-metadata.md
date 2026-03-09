@@ -1,14 +1,15 @@
 ---
 title: メタデータ - フラグメントのプロパティ（アセット - コンテンツフラグメント）
-description: コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。
+description: ' コンテンツフラグメントのメタデータプロパティの表示と編集の方法について説明します。'
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 93%
+source-wordcount: '291'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 93%
 >
 >コンテンツフラグメントは Sites 機能ですが、**Assets** として保存されます。
 >
->コンテンツフラグメントのオーサリングには 2 つのエディターがあります。基本機能は同じですが、いくつかの違いがあります。 この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
+>コンテンツフラグメントをオーサリングするエディターは 2 つあります。基本機能は同じですが、いくつか違いがあります。この節では、**Assets** コンソールから主にアクセスされるエディターを説明します。（主に&#x200B;**コンテンツフラグメント**&#x200B;コンソールからアクセスされる）新しいエディターについて詳しくは、Sites のドキュメントの[コンテンツフラグメント - オーサリング](/help/sites-cloud/administering/content-fragments/authoring.md)を参照してください。
 
 ## プロパティ／メタデータの編集 {#editing-properties-meta-data}
 
@@ -50,5 +51,5 @@ ht-degree: 93%
 
    * **作成日時**（表示のみ）
 
-   次に例を示します。
+   例：
    ![メタデータの例](assets/cfm-metadata-02.png)

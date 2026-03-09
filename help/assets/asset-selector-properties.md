@@ -2,11 +2,12 @@
 title: カスタマイズ用のアセットセレクターのプロパティ
 description: アセットセレクターを使用して、アプリケーション内のアセットのメタデータとレンディションを検索および取得します。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 100%
+source-wordcount: '1426'
+ht-degree: 99%
 
 ---
 

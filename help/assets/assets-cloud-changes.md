@@ -3,11 +3,12 @@ title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主
 description: ' [!DNL Adobe Experience Manager]  6.5 と比較した、  [!DNL Experience Manager] as a [!DNL Cloud Service] の [!DNL Adobe Experience Manager Assets]  の主な変更点。'
 feature: Release Information
 role: User, Leader, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 100%
+source-wordcount: '1012'
+ht-degree: 99%
 
 ---
 

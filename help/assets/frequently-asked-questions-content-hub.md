@@ -1,10 +1,11 @@
 ---
 title: コンテンツハブに関するよくある質問（FAQ）
 description: コンテンツハブに関するよくある質問（FAQ）への回答を参照してください。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 99%
 
 ---
@@ -82,7 +83,7 @@ AEM as a Cloud Service 環境でコンテンツハブを使用してアップロ
    >
    >2 つの Admin Console で Express および Assets の製品プロファイルに割り当てられたユーザーは、同一のメールアドレスと、**個人**&#x200B;アカウントではなく、ビジネス&#x200B;**エンタープライズまたはスクール**&#x200B;アカウントを使用する必要があります。理想的な設定は、両方の Admin Console を **Federated ID** として設定し、コンソール間の信頼関係を確立し、シームレスなシングルサインオンエクスペリエンスを実現することです。一部の Express プラン（Express Teams など）では、Federated ID／シングルサインオンはサポートされていません。
 
-コンテンツハブの Adobe Express 統合では、適切な製品の使用権限に加えて、割り当てられたユーザーが、コンテンツハブを動作させる Assets オーサー環境（少なくとも **[!UICONTROL # /content/dam/hydrated-assets/]** フォルダー階層）で[!UICONTROL 編集可能]の権限を持っている必要があります。このフォルダー階層では、コンテンツハブユーザーは Express を使用して作成したコンテンツを保存できます。詳しくは、管理ビュー（タッチ UI）の [権限管理](/help/security/touch-ui-principal-view.md)または簡易版の [アセットビューの権限管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
+コンテンツハブの Adobe Express 統合では、適切な製品の使用権限に加えて、割り当てられたユーザーが、コンテンツハブを動作させる Assets オーサー環境（少なくとも **[#UICONTROL /content/dam/hydrated-assets/]** フォルダー階層）で[!UICONTROL 編集可能]の権限を持っている必要があります。このフォルダー階層では、コンテンツハブユーザーは Express を使用して作成したコンテンツを保存できます。詳しくは、管理ビュー（タッチ UI）の [権限管理](/help/security/touch-ui-principal-view.md)または簡易版の [アセットビューの権限管理](https://experienceleague.adobe.com/ja/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)を参照してください。
 
 ## 組織のブランドガイドラインがホームページのリンクとして表示されるようにコンテンツハブを設定できますか？ {#content-hub-setup-brand-guidelines}
 

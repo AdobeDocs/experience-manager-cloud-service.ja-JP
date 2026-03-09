@@ -2,11 +2,12 @@
 title: Experience Manager でのアセットの承認
 description: ' [!DNL Experience Manager] でアセットを承認する方法について説明します。'
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
-workflow-type: ht
-source-wordcount: '1063'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +34,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
-   1. 「**[!UICONTROL プロパティにマッピング]**」を _./jcr:content/metadata/dam:activationTarget_ に更新します。
+   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :activationTarget_。
    1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]
@@ -73,13 +74,13 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから **[!UICONTROL 1 行のテキストフィールド]**&#x200B;をフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認済みアセット_」に変更します。
-   1. **[!UICONTROL マッピング先のプロパティ]**&#x200B;を _.jcr:content/metadata/dam:status_ に更新します。
+   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :status_。
    1. デフォルト値を「_承認済み_」に変更します。
 
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
-   1. 「**[!UICONTROL プロパティにマッピング]**」を _./jcr:content/metadata/dam:activationTarget_ に更新します。
+   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :activationTarget_。
    1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]

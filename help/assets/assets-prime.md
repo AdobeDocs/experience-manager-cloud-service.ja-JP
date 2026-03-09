@@ -3,11 +3,12 @@ title: Assets Prime
 description: 主なメリット、ユーザータイプ、権限など、Assets Prime の主要な側面について説明します。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 99%
 
 ---
 

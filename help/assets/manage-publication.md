@@ -4,11 +4,12 @@ description: Experience Manager Assets、Dynamic Media および Brand Portal �
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 100%
+source-wordcount: '1542'
+ht-degree: 99%
 
 ---
 

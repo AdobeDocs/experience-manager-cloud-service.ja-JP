@@ -4,10 +4,11 @@ description: Experience Manager を使用して、デジタルアセット、画
 contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 93%
 
 ---
@@ -79,9 +80,9 @@ Date24/08/2021
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
 
-アセットにタグを追加すると、検索時にアセットを取得しやすくしたり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出にAdobe AI の AI アルゴリズムを適用したりできます。
+アセットにタグを追加すると、検索時にアセットを取得しやすくしたり、検索結果を使用してコレクションを作成したり、一部のアセットの検索ランキングを上げたり、アセット検出にAdobe AIの AI アルゴリズムを適用したりできます。
 
-[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe AI、人工知能および機械学習フレームワークを使用します。これらは、標準タグと業務固有のタグの両方を認識して画像に適用するようにトレーニングできます。 スマートタグでは、コンテンツや個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
+[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe AI、人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。 スマートタグでは、コンテンツや個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
 
 アセットにタグを追加する手順は次のとおりです。
 

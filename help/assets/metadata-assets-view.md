@@ -3,12 +3,13 @@ title: アセットビューでメタデータを管理する方法
 description: アセットビューでメタデータを管理する方法を説明します。メタデータ管理が改善され、アセットへのアクセス性が向上し、アセットを完全かつ容易に管理できるようになりました。
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 96%
+source-wordcount: '2274'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +101,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   [&#x200B; メタデータフォームのユーザーインターフェイス &#x200B;](cascading-metadata-assets-view.md#build-metadata-forms) について
+   [ メタデータフォームのユーザーインターフェイス ](cascading-metadata-assets-view.md#build-metadata-forms) について
 
    <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 

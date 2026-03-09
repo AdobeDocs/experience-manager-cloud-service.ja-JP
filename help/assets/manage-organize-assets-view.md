@@ -3,12 +3,13 @@ title: デジタルアセットの管理
 description: ' [!DNL Assets view] 内のアセットを移動、削除、コピー、名前変更、更新、バージョン管理について説明します。'
 role: User, Leader
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1654'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 99%
 
 ---
 
@@ -225,9 +226,9 @@ You can also create versions from the versions timeline. Select the latest versi
 
 アセットステータスメタデータフィールドをフォームに追加するには、左側のパネルから、**[!UICONTROL アセットステータス]**&#x200B;コンポーネントをドラッグします。 マッピングプロパティは自動的に事前入力されます。 フォームを保存して、変更を確定します。
 
-**アセットステータスメタデータフィールドのフォームへの追加**
+**有効期限の日付メタデータフィールドのフォームへの追加**
 
-アセットステータスメタデータフィールドをフォームに追加するには、左側のパネルから、**[!UICONTROL 日付]**&#x200B;コンポーネントをフォームにドラッグします。 **有効期限**&#x200B;をラベル、`pur:expirationDate` をマッピングプロパティとして指定します。 フォームを保存して、変更を確定します。
+有効期限の日付メタデータフィールドをフォームに追加するには、左側のパネルから、**[!UICONTROL 日付]**&#x200B;コンポーネントをフォームにドラッグします。**有効期限**&#x200B;をラベル、`pur:expirationDate` をマッピングプロパティとして指定します。 フォームを保存して、変更を確定します。
 
 ## 次の手順 {#next-steps}
 

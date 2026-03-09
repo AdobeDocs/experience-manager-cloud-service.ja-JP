@@ -3,10 +3,11 @@ title: ' [!DNL AEM Assets]  と  [!DNL Figma] を統合します。'
 description: ' [!DNL AEM Assets]  を  [!DNL Figma]  と統合して、 [!DNL Figma]  デザインワークフロー内で組織のアセットにアクセスして使用する方法について説明します。'
 hide: false
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a9c1f5472092b3b9fa7a5e5570feb92f32e9ef6c
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '552'
 ht-degree: 72%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 72%
 [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]にアクセスするには、次の手順を実行します。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの「**[!UICONTROL アクション]**」をクリックし、ダイアログボックスの検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
-1. [!DNL Adobe Experience Manager (AEM) Assets Connector] を選択して、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。このパネルを使用して、[&#x200B; [!DNL AEM]  アセットを  [!DNL Figma]  キャンバス](#import-aem-assets-into-figma-workflow)に読み込みます。
+1. [!DNL Adobe Experience Manager (AEM) Assets Connector] を選択して、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。このパネルを使用して、[ [!DNL AEM]  アセットを  [!DNL Figma]  キャンバス](#import-aem-assets-into-figma-workflow)に読み込みます。
    ![アクション](/help/assets/assets/actions-on-figma.png)
 または、[!DNL Figma] コミュニティで利用可能な [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) にアクセスし、「**[!UICONTROL 開く...]**」をクリックし、最近使用したファイルを選択するか、新しいファイルを作成して「**[!UICONTROL 実行]** 」をクリックし、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルにアクセスします。
    ![Figma コミュニティのプラグインページ](/help/assets/assets/plugin-page-on-figma-community.png)

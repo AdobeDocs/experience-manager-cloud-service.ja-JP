@@ -4,11 +4,12 @@ description: このニュースレターは、Dynamic Media および Dynamic Me
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '947'
+ht-degree: 99%
 
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: 画像のカラータグ
 description: Adobe Experience Manager Assets を使用すると、画像内のカラーを識別し、自動的にタグとして適用できます。その後、これらのタグを使用して、画像を検索およびフィルタリングできます。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 98%
+source-wordcount: '1249'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 98%
 
 ![カラータグ付けバナー](assets/banner-image.png)
 
-Adobe Experience Manager（AEM）Assetsは、Adobe AI 機能を使用して、画像内のカラーを識別し、取り込み時に自動的にタグとして適用します。 これらのタグを使用すると、画像のカラー構成に基づいて検索エクスペリエンスを強化できます。
+Adobe Experience Manager（AEM）Assetsは、Adobe AI機能を使用して、画像内のカラーを識別し、取り込み時に自動的にタグとして適用します。 これらのタグを使用すると、画像のカラー構成に基づいて検索エクスペリエンスを強化できます。
 
 画像にタグ付けされるカラーの数を 1～40 の範囲内で設定し、後でそれらのカラーに基づいて画像を検索できます。Experience Manager Assets は、画像のカラーカバレッジに基づいてタグを適用します。また、カラータグの表示形式も設定できます。
 

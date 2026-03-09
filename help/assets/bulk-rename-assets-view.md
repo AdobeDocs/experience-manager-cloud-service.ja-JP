@@ -2,11 +2,12 @@
 title: ' [!DNL Assets view] での名前変更とアセット名の一括変更'
 description: 新しい Assets UI（Assets ビュー）を使用してアセット名を一括変更する方法について説明します。複数のアセット名を一度に変更できます。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e041811b-0246-408f-9246-248da55f66a1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '440'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 99%
 
 ---
 

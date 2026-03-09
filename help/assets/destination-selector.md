@@ -3,12 +3,13 @@ title: AEM as a Cloud Service の宛先セレクター
 description: AEM の宛先セレクターを使用して、元のアセットのコピーとして使用できるアセットを表示および選択します。
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
-source-wordcount: '1887'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '1880'
+ht-degree: 99%
 
 ---
 

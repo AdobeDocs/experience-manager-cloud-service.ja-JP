@@ -4,11 +4,12 @@ description: Dynamic Media を含む Adobe Experience Manager as a Cloud Service
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 98%
 
 ---
 

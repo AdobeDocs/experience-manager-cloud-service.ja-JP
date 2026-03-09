@@ -8,10 +8,11 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 151320e5de3e33ab31ed5ed55826d856d02a8f92
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3353'
+source-wordcount: '3359'
 ht-degree: 99%
 
 ---

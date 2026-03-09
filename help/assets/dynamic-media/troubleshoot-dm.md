@@ -4,10 +4,11 @@ description: Dynamic Mediaで画像、セット、ビューアを操作する際
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1150'
 ht-degree: 96%
 
 ---
@@ -37,7 +38,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 
 ### 同期のログ {#synchronization-logging}
 
-同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて &#x200B;](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
+同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて ](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
 ### バージョン管理 {#version-control}
 

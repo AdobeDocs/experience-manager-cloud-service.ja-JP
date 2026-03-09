@@ -4,11 +4,12 @@ description: Dynamic Media の概要と、Dynamic Media を使用して、web、
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
-source-wordcount: '655'
-ht-degree: 100%
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 99%
 
 ---
 
