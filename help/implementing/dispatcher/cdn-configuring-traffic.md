@@ -4,10 +4,10 @@ description: 設定ファイルでルールとフィルターを宣言し、Clou
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 92%
+source-wordcount: '1932'
+ht-degree: 81%
 
 ---
 
@@ -437,9 +437,13 @@ data:
 | **forwardAuthorization**（オプション、デフォルトは false） | true に設定した場合、クライアントリクエストの「Authorization」ヘッダーがバックエンドに渡されます。それ以外の場合は、Authorization ヘッダーが削除されます。 |
 | **timeout**（オプション、秒単位、デフォルトは 60） | バックエンドサーバーが HTTP 応答本文の最初のバイトを配信することを CDN が待機する秒数。また、この値は、バックエンドサーバーに対するバイトのタイムアウト間隔としても使用されます。 |
 
+>[!IMPORTANT]
+>
+>**domain** 値に `.adobeaemcloud.com` を含めることはできません。 adobeaemcloud.com ドメインに直接プロキシすることはできません。 この制限により、不要なリクエストループから保護されます。 AEM as a Cloud Service環境へのトラフィックをプロキシするには、代わりに、AEMaaCS 環境にインストールされた [ カスタムドメイン ](#proxying-to-aemaacs) をオリジンバックエンドとして使用します。
+
 ### カスタムドメインのAEM静的層へのプロキシ化 {#proxy-custom-domain-static}
 
-オリジンセレクターを使用すると、[&#x200B; フロントエンドパイプライン &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
+オリジンセレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) を使用してデプロイされたAEM静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 使用例には、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）での静的リソースの提供が含まれます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >アドビが管理する CDN が使用されているので、Edge Delivery Service の[プッシュ無効化の設定ドキュメント](https://www.aem.live/docs/byo-dns#setup-push-invalidation)に従って、**管理対象**&#x200B;モードでプッシュ無効化を設定する必要があります。
+
+
+### Aemaacs 環境へのプロキシ {#proxying-to-aemaacs}
+
+`adobeaemcloud.com` ドメインを CDN 設定のオリジンとして直接使用することはできません。 不要なリクエストループから保護するために、これを拒否します（ドメインに `.adobeaemcloud.com` を含めることはできません）。 これは、Edge Delivery サイトにインストールされているドメインからのルーティングの場合も当てはまります。
+
+カスタムドメイン（`www.example.com`）が既に AEMaaCS 環境にインストールされている場合、デフォルトのルーティングは、CDN ルールなしでAEM バックエンドにルーティングされます。 環境を横断する必要がある場合（例えば `pXXXX-eYYYY` から `pXXXX-eZZZZ` へ）、またはEdge Delivery サイトから AEMaaCS 環境へルーティングする必要がある場合、オリジンセレクターを使用します。
+
+このような場合にAEM as a Cloud Service環境にトラフィックをプロキシするには（例えば、`/graphql` などの特定のパスをバックエンドにルーティングする場合）、AEMaaCS 環境にカスタムドメインをインストールし、そのカスタムドメインを CDN 設定のオリジンとして使用します。
+
+**例：** AEM パブリッシュ層が `publish-pXXXXX-eYYYYY.adobeaemcloud.com` で到達可能な場合、`originSelectors` でそのドメインを使用しないでください。 代わりに：
+
+1. AEMaaCS 環境（`aem-publish-origin.example.com` など）に、パブリッシュサービスを指すカスタムドメインをインストールします。
+2. CDN 設定で、そのカスタムドメインを持つオリジンを定義し、目的のパス（例：`/graphql`）をそのカスタムドメインにルーティングします。
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## サーバーサイドのリダイレクト {#server-side-redirectors}
