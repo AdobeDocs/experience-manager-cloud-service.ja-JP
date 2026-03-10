@@ -3,10 +3,10 @@ title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 67%
+source-wordcount: '962'
+ht-degree: 64%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 67%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
-## コンテンツハブを使用する理由
+## AEM AssetsContent Hubを選択する理由
 
-コンテンツハブには、次のような主なメリットがあります。
+AEM Assets Content Hubには、次のような主なメリットがあります。
 
 **直感的なポータルで使用可能なすべてのブランド承認済みアセットを検索して共有**
 
@@ -42,7 +42,7 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 コンテンツハブには、Experience Manager as a Cloud Service の 2024.6 リリース以降（最小バージョンは 2024.6.16799）の実稼動オーサー環境が必要です。
 
-## コンテンツハブへのアクセス方法 {#access-content-hub}
+## AEM Assets Content Hubへのアクセス方法 {#access-content-hub}
 
 [コンテンツハブを設定](/help/assets/deploy-content-hub.md)し、[コンテンツハブ製品プロファイル](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)にユーザーを追加した後、次の方法でコンテンツハブにアクセスできます。
 
@@ -50,10 +50,10 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* [experience.adobe com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) にログオンし、「**[!UICONTROL クイックアクセス]**」セクションで使用可能な **[!UICONTROL Experience Manager Assets コンテンツハブ]**&#x200B;をクリックします。
+* [experience.adobe com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) にログオンし、「**[!UICONTROL クイックアクセス]**」セクションで使用可能な **[!UICONTROL Experience Manager Assets コンテンツハブ]**をクリックします。
   ![コンテンツハブへのアクセス](assets/access-content-hub.png)
 
-* [experience.adobe com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) にログオンし、製品スイッチャーで使用可能な **[!UICONTROL Experience Manager Assets コンテンツハブ]**&#x200B;をクリックします。
+* [experience.adobe com](https://auth.services.adobe.com/en_GB/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fexc_app%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fexperience.adobe.com%252F%2523old_hash%253Dold_hash%253D%252523%25252F%2526from_ims%253Dtrue%253Fclient_id%253Dexc_app%2526api%253Dauthorize%2526scope%253Dab.manage%252Caccount_cluster.read%252Cadditional_info%252Cadditional_info.job_function%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%252CAdobeID%252Cadobeio.appregistry.read%252Cadobeio_api%252Caudiencemanager_api%252Ccreative_cloud%252Cmps%252Copenid%252Corg.read%252Cpps.read%252Cread_organizations%252Cread_pc%252Cread_pc.acp%252Cread_pc.dma_tartan%252Csession%26state%3D%257B%2522jslibver%2522%253A%2522v2-v0.31.0-2-g1e8a8a8%2522%252C%2522nonce%2522%253A%25222316022399331147%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=exc_app&scope=ab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&state=%7B%22jslibver%22%3A%22v2-v0.31.0-2-g1e8a8a8%22%2C%22nonce%22%3A%222316022399331147%22%7D&relay=64da7fa8-cd9e-47cf-9892-7f3ef3092f8c&locale=en_GB&flow_type=token&dctx_id=v%3A2%2Cs%2Cf%2Cb8e64530-b013-11ee-a6c1-e721bdec0171&idp_flow_type=login&response_type=token&profile_filter=%7B%22findFirst%22%3Atrue%2C+%22fallbackToAA%22%3Atrue%2C+%22preferForwardProfile%22%3Atrue%2C+%22searchEntireCluster%22%3Atrue%7D%3B+isOwnedByOrg%28%2776B329395DF155D60A495E2C%40AdobeOrg%27%29&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fexperience.adobe.com%2F%23old_hash%3Dold_hash%3D%2523%252F%26from_ims%3Dtrue%3Fclient_id%3Dexc_app%26api%3Dauthorize%26scope%3Dab.manage%2Caccount_cluster.read%2Cadditional_info%2Cadditional_info.job_function%2Cadditional_info.projectedProductContext%2Cadditional_info.roles%2CAdobeID%2Cadobeio.appregistry.read%2Cadobeio_api%2Caudiencemanager_api%2Ccreative_cloud%2Cmps%2Copenid%2Corg.read%2Cpps.read%2Cread_organizations%2Cread_pc%2Cread_pc.acp%2Cread_pc.dma_tartan%2Csession&use_ms_for_expiry=true#/) にログオンし、製品スイッチャーで使用可能な **[!UICONTROL Experience Manager Assets コンテンツハブ]**をクリックします。
   ![コンテンツハブへのアクセス方法 3](assets/access-content-hub-alternate.png)
 
 ## コンテンツハブに関するフィードバックの提供 {#provide-content-hub-feedback}
@@ -86,29 +86,29 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 ## よくある質問 {#faqs-content-hub-overview}
 
-### コンテンツハブとは何ですか？ {#what-is-content-hub}
+### AEM Assets Content Hubとは {#what-is-content-hub}
 
-Content Hubは、より広範なチームが直感的なポータルを通じて関連性の高い承認済みアセットを簡単に見つけ、ニーズに合わせてすばやく調整できるAdobe Experience Manager as a Cloud Service機能です。 これにより、アセットを大規模に配布でき、オンブランドのコンテンツバリアントの作成が容易になり、マーケティングの俊敏性が向上します。
+AEM Assets Content Hubは、Adobe Experience Manager as a Cloud Serviceの機能であり、直感的なポータルを通じて、関連性の高い承認済みアセットを幅広いチームが簡単に見つけ、必要に応じてすばやく適応させることができます。 これにより、アセットを大規模に配布でき、オンブランドのコンテンツバリアントの作成が容易になり、マーケティングの俊敏性が向上します。
 
-### Content Hubにアクセスするための前提条件は何ですか？ {#prerequisites-for-content-hub}
+### AEM Assets Content Hubにアクセスするための前提条件は何ですか？ {#prerequisites-for-content-hub}
 
 Content Hubには、Experience Manager as a Cloud Service、特に 2024.6 リリース以降（最小バージョン 2024.6.16799）の実稼動オーサー環境が必要です。
 
-### Content Hubでブランド承認済みアセットの検索エクスペリエンスを向上させる方法 {#content-hub-improves-search-experience}
+### AEM Assets Content Hubでは、ブランド承認済みアセットの検索エクスペリエンスをどのように向上させますか？ {#content-hub-improves-search-experience}
 
-Content Hubでは、すべての承認済みアセットがフラットな階層で表示されるので、直感的なポータルを通じて、ブランドで承認済みのアセットを簡単に見つけて共有できます。 この設定により、検索プロセスが合理化され、ユーザーが必要なアセットを効率的に見つけられるようになります。
+AEM Assets Content Hubでは、すべての承認済みアセットがフラットな階層で表示されるので、直感的なポータルを通じて、ブランドで承認済みのアセットを簡単に見つけて共有できます。 この設定により、検索プロセスが合理化され、ユーザーが必要なアセットを効率的に見つけられるようになります。
 
-### Content Hubのユーザーインターフェイスを設定できるユーザーと、設定できる要素は何ですか？ {#content-hub-configuration}
+### AEM Assets Content Hubのユーザーインターフェイスを設定できるユーザーと、どのような要素を設定できますか？ {#content-hub-configuration}
 
-管理者は、検索用のフィルター、アセットの追加や読み込みをおこなうフィールド、アセットのプロパティ、ブランディング用のバナーコンテンツなど、Content Hubのユーザーインターフェイスを設定できます。 これにより、組織の要件に基づいてカスタマイズできます。
+管理者は、検索用のフィルター、アセットの追加や読み込みをおこなうフィールド、アセットのプロパティ、ブランディング用のバナーコンテンツなど、AEM Assets Content Hubのユーザーインターフェイスを設定できます。 これにより、組織の要件に基づいてカスタマイズできます。
 
-### Content Hubを使用して、クリエイティブ以外のユーザーがコンテンツを編集およびリミックスできるようにする方法を教えてください。 {#content-hub-edit-remix-content}
+### AEM Assets Content Hubを使用して、クリエイティブではないユーザーがコンテンツを編集およびリミックスできるようにする方法を教えてください。 {#content-hub-edit-remix-content}
 
 Content Hubを使用すると、使いやすいツール、テンプレート、ブランド要素を使用して、クリエイティブ以外のユーザーが既存のコンテンツを編集し、新しいオンブランドのバリエーションを作成できます。 Adobe Expressの使用権限があるユーザーは、Adobe Firefly GenAI 機能を活用して高度なコンテンツを作成することもできます。
 
-### ユーザーはどのようにContent Hubにアクセスできますか？ {#content-hub-access}
+### ユーザーはAEM Assets Content Hubにどのようにアクセスできますか？ {#content-hub-access}
 
-ユーザーは、直接リンク（https://experience.adobe.com/#/assets/contenthub）を使用してContent Hubにアクセスするか、experience.adobe.comにログインして「クイックアクセス」セクションからExperience Manager Assets Content Hubを選択します。
+AEM Assets Content Hubにアクセスするには、ダイレクトリンク （https://experience.adobe.com/#/assets/contenthub）を使用するか、experience.adobe.comにログインして「クイックアクセス」セクションからExperience Manager Assets Content Hubを選択します。
 
 ### Content Hub Limited のユーザーは何人くらいAEM Assetsに含まれていますか？ {#content-hub-limited-users-with-aem-assets}
 
