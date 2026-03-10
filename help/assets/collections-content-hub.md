@@ -31,7 +31,7 @@ ht-degree: 54%
 
 これにより、ユーザーは [!DNL Content Hub] 内で使用可能な様々なアセットに簡単にアクセスして管理できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445301/?captions=jpn&learn=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 
