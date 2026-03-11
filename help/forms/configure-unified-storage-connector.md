@@ -3,11 +3,12 @@ title: AEM Forms 用の統合ストレージコネクタ（USC）の設定方法
 description: AEM Forms 用の統合ストレージコネクタ（USC）の管理方法を説明します。統合ストレージコネクタ（USC）を使用して、AEM Forms を外部データストレージに接続します。
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
-workflow-type: ht
-source-wordcount: '637'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 99%
 
 ---
 

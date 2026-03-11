@@ -3,11 +3,12 @@ title: AFP 出力同期 API の使い方
 description: AFP Output Sync API を使用して出力レンディションを取得し、同期する方法を説明します。
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 13%
+source-wordcount: '259'
+ht-degree: 14%
 
 ---
 
@@ -97,8 +98,8 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 .yaml ファイルをダウンロードし、Postmanにアップロードして API の機能を確認できます。
 
-![AFPPostman画像 &#x200B;](/help/forms/assets/afp-postman.png)
+![AFPPostman画像 ](/help/forms/assets/afp-postman.png)
 
 AFP リーダーで応答を保存し、保存したファイルを開いて確認できます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/introimg.png)

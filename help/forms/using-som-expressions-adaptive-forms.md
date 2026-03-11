@@ -3,11 +3,12 @@ title: アダプティブフォームでの SOM 式の使用方法
 description: アダプティブフォームでパネルの SOM 式を抽出する方法について説明します。
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 100%
 
 DOM ツリー
 
-アダプティブフォーム内のすべての要素の SOM 式には、`guide[0].guide1[0]` というプレフィックスが付けられます。ノード構造階層のコンポーネントの場所は SOM 式の派生に使用されます。
+アダプティブフォーム内のすべての要素の SOM 式には、`guide[0].guide1[0]` という接頭辞が付けられます。ノード構造階層のコンポーネントの場所は SOM 式の派生に使用されます。
 
 ![2 つのラジオボタンを持つ DOM ツリー](assets/hierarchy_radio_button.png)
 

@@ -8,11 +8,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1328'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 99%
 
 ---
 
@@ -195,6 +196,6 @@ ht-degree: 100%
 1. ブラウザーで、パブリッシュインスタンスの configMgr を開きます。\
    URL：`https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. Adobe Experience Manager Web Console Configuration で、「**Apache Sling Authentication Service**」をクリックして設定します。
+1. Adobe Experience Manager web コンソール設定で、「**Apache Sling Authentication Service**」をクリックして設定します。
 1. 表示された Apache Sling Authentication Service ダイアログで、「**+**」ボタンを使用してパスを追加します。\
    パスを追加すると、そのパスのフォームに対して認証サービスが有効になります。

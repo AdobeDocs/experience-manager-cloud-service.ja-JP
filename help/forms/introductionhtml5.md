@@ -3,13 +3,14 @@ title: HTML5 フォームの概要
 description: HTML5 forms は、Adobe Experience Manager ソフトウェアの新しい機能で、HTML5 形式の XFA フォームテンプレートをレンダリングできます。
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 85%
+source-wordcount: '422'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 85%
 
 HTML5 forms は、Adobe Experience Manager ソフトウェアの新しい機能で、HTML5 形式の XFA フォームテンプレートをレンダリングできます。 この機能により、XFA ベースの PDF がサポートされていないモバイルデバイスおよびデスクトップブラウザー上のフォームのレンダリングが可能です。HTML5 フォームは、XFA フォームテンプレートの既存の機能をサポートしているだけでなく、モバイルデバイス用に手書き署名などの新しい機能もあります。
 
-HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザー用の追加のブラウザープラグインをインストールする必要はありません。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63_jp).-->
+HTML5 フォームは、標準の HTML5 構造に基づいてドキュメントを生成します。HTML5 フォームは、HTML5 をサポートする現時点のすべてのブラウザーで表示できます。ブラウザー用の追加のブラウザープラグインをインストールする必要はありません。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5 フォームプレビュー](assets/mobile_form_on_an_ipad_date_14.png)
 

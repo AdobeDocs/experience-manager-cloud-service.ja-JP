@@ -4,11 +4,12 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: アダプティブフォームでSharePoint リストを接続する方法、SharePointに送信する方法、SharePoint リスト設定を作成する方法、アダプティブフォームで「SharePointに送信」送信アクションを使用する方法、アダプティブフォームをMicrosoft&reg; SharePoint リストに接続する方法を説明します。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 84%
+source-wordcount: '466'
+ht-degree: 83%
 
 ---
 

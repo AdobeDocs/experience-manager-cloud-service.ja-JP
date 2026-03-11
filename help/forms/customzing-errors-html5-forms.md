@@ -3,13 +3,14 @@ title: HTML5 フォームのエラーメッセージのカスタマイズ
 description: HTML5 フォームのエラーメッセージの表示をカスタマイズする方法（メッセージの位置や表示方法の変更を含む）について説明します。
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +85,7 @@ ht-degree: 100%
 
 すべてのフィールドのエラーメッセージを同時に表示するには、添付されているパッケージを使用します。エラーメッセージを単独で表示するには、デフォルトのプロファイルを使用します。
 
-### エラーメッセージの表示方法のカスタマイズ {#customizing-the-appearance-of-error-messages-nbsp}
+### エラーメッセージの表示方法のカスタマイズ  {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css フォルダーに移動します。
 
@@ -118,7 +119,7 @@ ht-degree: 100%
 1. CustomErrorManager-1.0-SNAPSHOT フォルダーに移動し、jcr_root および META-INF フォルダーのアーカイブを作成します。アーカイブの名前を CustomErrorManager-1.0-SNAPSHOT.zip に変更します。
 1. パッケージマネージャーを使用し、パッケージをアップロードしてインストールします。
 
-## 新しいプロファイルでフォームをレンダリングします。 {#render-the-form-with-the-new-profile-nbsp}
+## 新しいプロファイルでフォームをレンダリングします。  {#render-the-form-with-the-new-profile-nbsp}
 
 出荷時の設定では、HTML5 フォームはデフォルトのプロファイル `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;` を使用します。
 

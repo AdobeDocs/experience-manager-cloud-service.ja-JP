@@ -2,12 +2,13 @@
 title: カスタム実装のトランザクションの記録
 description: トランザクションとして自動的に計上されないアクションを記録するには、TransactionRecorder API を使用します
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 97%
 
 ---
 

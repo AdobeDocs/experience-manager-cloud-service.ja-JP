@@ -4,10 +4,11 @@ description: AEM Forms を検出して、ビジネスに対応するフォーム
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1375'
 ht-degree: 87%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 87%
 <div class="version-selector">
   <p><strong>別のバージョンのドキュメントをお探しですか？</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=ja">AEM 6.5 Forms ドキュメント</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">AEM 6.5 Forms ドキュメント</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong>（現在）</li>
   </ul>
 </div>
@@ -92,7 +93,7 @@ AEM Forms as a Cloud Service には、次のカテゴリに分類された包括
 
 | 機能 | 説明 |
 |---|---|
-| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブかつ動的で、モバイルデバイスでも使いやすく、データ駆動型のレスポンシブフォームを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=ja">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
+| アダプティブフォーム | Web サイト、アプリ、その他のデジタルチャネルや印刷チャネル向けの、インタラクティブかつ動的で、モバイルデバイスでも使いやすく、データ駆動型のレスポンシブフォームを作成および管理します。 <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=ja">アダプティブフォームの作成 </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html">アダプティブフォームのスタイル設定</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ja"> AEM Sites ページへのアダプティブフォームの追加</a></li></ul> |
 | Forms 向け Edge Delivery Services | 優れたユーザーエクスペリエンスを備えた高性能フォームを作成および配信します。 <ul><li><a href="/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md">ユニバーサルエディターを使用する WYSIWYG オーサリング</a> - フォームを作成する強力なビジュアルインターフェイス</li><li><a href="/help/edge/docs/forms/create-forms.md">ドキュメントベースのオーサリング</a> - Microsoft Excel やGoogle Sheets などの使い慣れたツールを使用してフォームを作成</li><li>複雑なフォームロジックを作成する高度なルールエディター</li><li>最適化されたフォーム読み込みにより、ほぼ完璧な Google Lighthouse スコアを達成</li><li>最小限の開発時間でより迅速にフォームをデプロイ</li></ul> |
 | 自動フォーム変換サービス | 従来の PDF ベースのフォームを、オンラインで容易に管理および配布できるアダプティブフォームに変換します。 <ul><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=ja">フォームの自動変換サービスの設定</a></li><li><a href="https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja">PDF forms をアダプティブフォームに変換</a></li></ul> |
 

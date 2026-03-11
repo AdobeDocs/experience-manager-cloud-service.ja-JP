@@ -7,10 +7,11 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
@@ -41,7 +42,7 @@ ht-degree: 3%
 
 ## インタラクティブ通信のコピー
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/copy-in-ic.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/copy-in-ic.png)
 
 インタラクティブ通信をコピーするには、次の手順に従います。
 
@@ -61,7 +62,7 @@ ht-degree: 3%
 
 ## コピーしたインタラクティブ通信を編集して再利用します
 
-![IC 文書の検索 &#x200B;](/help/forms/interactive-communication/assets/paste-in-ic.png)
+![IC 文書の検索 ](/help/forms/interactive-communication/assets/paste-in-ic.png)
 
 インタラクティブ通信を貼り付けた後：
 

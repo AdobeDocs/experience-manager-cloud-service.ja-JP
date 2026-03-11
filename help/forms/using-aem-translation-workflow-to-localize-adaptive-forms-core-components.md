@@ -2,18 +2,19 @@
 title: コアコンポーネントベースのアダプティブフォームを翻訳するにはどうすればよいですか？
 description: AEM Forms でフォームデータモデル（FDM）を作成し、サンプルデータとサービスを使用してモデルをテストし、モデルの様々なオプションを設定する方法を説明します。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 99%
 
 ---
 
 # 機械翻訳または人間による翻訳を使用した、コアコンポーネントベースのアダプティブフォームの翻訳 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-フォームのローカライズにより、様々な地域の幅広い対象者に向けてフォームを提供できるようになります。アダプティブフォームおよびレコードのドキュメントをローカライズするには、Adobe Experience Manager 翻訳ワークフローが役立ちます。アダプティブフォームのローカライズには、**機械翻訳**&#x200B;または&#x200B;**人による翻訳**&#x200B;を使用できます。
+フォームのローカライズにより、様々な地域の幅広いオーディエンスに向けてフォームを提供できるようになります。アダプティブフォームおよびレコードのドキュメントをローカライズするには、Adobe Experience Manager 翻訳ワークフローが役立ちます。アダプティブフォームのローカライズには、**機械翻訳**&#x200B;または&#x200B;**人による翻訳**&#x200B;を使用できます。
 
 ## 機械翻訳によるアダプティブフォームおよびレコードのドキュメントの翻訳 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 

@@ -1,13 +1,14 @@
 ---
 title: AEM Forms の考慮事項、既知の問題およびベストプラクティスについて教えてください。
 description: AEM Forms Communication API に関する既知の問題とベストプラクティスの考慮事項。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 100%
+source-wordcount: '1739'
+ht-degree: 99%
 
 ---
 
@@ -155,7 +156,7 @@ XCI オプションを次の表に示します。
 | config/present/script/exclude | どのイベントを無視するかを AEM Forms サーバーまたは通信 API に指示します。 |
 | config/present/pdf/linearized | 出力 PDF ドキュメントを線形化するかどうかを制御します。 |
 | config/present/script/runScripts | AEM Forms で実行されるスクリプトのセットを制御します。 |
-| config/present/pdf/tagged | 出力 PDF ドキュメントへのタグの組み込みを制御します。タグは、PDF のコンテキストでは、ドキュメントの論理構造を公開するためにドキュメントに組み込まれる追加情報です。タグは、アクセシビリティの支援や書式の再設定に役立ちます。例えば、スクリーンリーダーがテキストの途中でページ番号を読み上げてしまわないように、ページ番号を装飾としてタグ付けすることができます。タグを使用すると、ドキュメントの有用性が高まる反面、ドキュメントのサイズが大きくなり、作成にかかる処理時間も長くなります。 |
+| config/present/pdf/tagged | 出力 PDF ドキュメントへのタグの組み込みを制御します。タグは、PDF のコンテキストでは、ドキュメントの論理構造を公開するためにドキュメントに組み込まれる追加情報です。タグは、アクセシビリティの支援や書式の再設定に役立ちます。例えば、スクリーンリーダーがテキストの途中でページ番号を読み上げてしまわないように、ページ番号をアーティファクトとしてタグ付けすることができます。タグを使用すると、ドキュメントの有用性が高まる反面、ドキュメントのサイズが大きくなり、作成にかかる処理時間も長くなります。 |
 | config/present/pdf/version | 生成する PDF ドキュメントのバージョンを指定します。 |
 
 

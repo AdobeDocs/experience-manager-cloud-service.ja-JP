@@ -1,19 +1,20 @@
 ---
 title: フォーム作成の失敗のトラブルシューティング方法
-description: AEM Formsas a Cloud Service環境でのフォーム作成の失敗のトラブルシューティング。
+description: AEM Forms as a Cloud Service環境でのフォーム作成の失敗のトラブルシューティング。
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 5%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
 # フォームの公開中の問題{#form-creation-fails}
 
-ユーザーがAEM Formsのas a Cloud Service版 `2024.5.16461` に更新した後：
+ユーザーがAEM Forms as a Cloud Serviceのバージョン `2024.5.16461` に更新した後：
 
 **一部のユーザー** フォームの作成中に問題が発生する場合がありますが、この問題は、ユーザーがフォームを作成すると、作成ダイアログボックスに次のエラーメッセージがポップアップ表示されるというものです。
 
@@ -27,10 +28,10 @@ ht-degree: 5%
 
 問題を解決するには、次の手順に従います。
 
-1. フォームで使用するテンプレートのパス `<template-path>/initial/jcr:content node` に、`jcr:uuid` およびその他のシステム生成された保護されたプロパティがないことを確認します。
-1. テンプレートコンソールを使用して、テンプレートを明示的にPublishします。
+1. フォームで使用するテンプレートのパス `jcr:uuid` に、`<template-path>/initial/jcr:content node` およびその他のシステム生成された保護されたプロパティがないことを確認します。
+1. テンプレートコンソールを使用して、テンプレートを明示的に公開します。
 1. 次に、テンプレートが公開されたら、テンプレートを使用して新しいフォームを作成してみてください。
-1. 使用したテンプレートが今後のリリースで更新される場合は、（手順 2 で指定したように）テンプレートを再度Publishして、フォーム作成の失敗の問題を防ぎます。
+1. 使用したテンプレートが今後のリリースで更新される場合は、（手順 2 で指定したように）テンプレートを再度公開して、フォーム作成の失敗の問題を防ぎます。
 
 
 <!--

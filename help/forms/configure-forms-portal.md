@@ -2,12 +2,13 @@
 title: Experience Manager Sites ページでフォームポータルを作成する方法
 description: フォームポータルを作成し、標準搭載のコアコンポーネントを AEM Sites ページで使用する方法について説明します。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '365'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=ja) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service（コアコンポーネント） | この記事 |
 
 フォームポータルは、AEM Sites ページでアダプティブフォームを効率的に表示および一覧表示する方法を提供します。これは、様々なフォームを体系的にユーザーに示すプラットフォームを必要とする組織に役立ちます。

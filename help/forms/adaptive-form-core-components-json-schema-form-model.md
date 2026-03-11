@@ -4,11 +4,12 @@ description: アダプティブフォームのコアコンポーネントの JSO
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 185b12bc-cea9-45c8-9b57-dc313bd0cfaa
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
-workflow-type: ht
-source-wordcount: '1347'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1353'
+ht-degree: 99%
 
 ---
 
@@ -867,7 +868,7 @@ JSON スキーマの要素に次の制限を追加して、アダプティブフ
 1. **[!UICONTROL スキーマ準拠データを生成]**&#x200B;チェックボックスをオンにします。
 1. 設定を保存します。
 
-![アダプティブフォームおよびインタラクティブ通信 web チャネルの設定](/help/forms/assets/af-ic-web-channel-configuration.png)
+![アダプティブフォームおよびインタラクティブなコミュニケーション web チャネルの設定](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## サポート対象外の構成  {#non-supported-constructs}

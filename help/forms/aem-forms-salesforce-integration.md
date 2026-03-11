@@ -4,11 +4,12 @@ description: OAuth 2.0 クライアント資格情報フローを使用した Sa
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration, AEM Forms Salesforce integration
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 9eb15dda5f56938d686d0b863cb1ffa841f8228b
-workflow-type: ht
-source-wordcount: '552'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 99%
 
 ---
 

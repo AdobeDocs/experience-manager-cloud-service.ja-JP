@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '1742'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 99%
 
 ---
 
@@ -336,7 +337,7 @@ public interface GuideCaptchaValidator {
 
 reCAPTCHA サービスは、`https://www.recaptcha.net/` をデフォルトドメインとして使用します。設定を変更して `https://www.google.com/` を設定したり、reCAPTCHA サービスの読み込み、レンダリング、検証を行うカスタムドメイン名を設定したりできます。
 
-**[!UICONTROL アダプティブフォームおよびインタラクティブ通信 Web チャネル設定]**&#x200B;の **[!UICONTROL af.cloudservices.recaptcha.domain]** プロパティを設定して、`https://www.google.com/` または他のカスタムドメイン名を指定します。以下の JSON ファイルにサンプルが表示されています。
+**[!UICONTROL アダプティブフォームおよびインタラクティブなコミュニケーション Web チャネル設定]**&#x200B;の **[!UICONTROL af.cloudservices.recaptcha.domain]** プロパティを設定して、`https://www.google.com/` または他のカスタムドメイン名を指定します。以下の JSON ファイルにサンプルが表示されています。
 
 ```json
 {

@@ -1,13 +1,14 @@
 ---
 title: AEM Forms で不在設定を指定する方法
 description: 休暇中または不在中にタスクを委任して、シームレスなワークフロー実行を実現します。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 

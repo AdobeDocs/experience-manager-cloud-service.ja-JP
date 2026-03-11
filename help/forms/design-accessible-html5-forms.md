@@ -4,13 +4,14 @@ description: HTML5 フォームは ARIA HTML5 アクセシビリティ標準を�
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 95%
+source-wordcount: '374'
+ht-degree: 94%
 
 ---
 

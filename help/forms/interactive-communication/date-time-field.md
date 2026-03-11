@@ -4,11 +4,12 @@ description: AEM Formsのインタラクティブ通信エディターの日付/
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 2%
+source-wordcount: '682'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 2%
 
 このフィールドは、様々な書式設定オプション（DD/MM/YYYY、24 時間、12 時間の形式など）、検証の制約、コミュニケーションデザインに合わせた外観のカスタマイズをサポートしています。 手動入力エラーを減らし、データ収集の一貫性を向上させることで、ユーザーエクスペリエンスを向上させます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/datetime.png)
+![IC Docu の検索 ](/help/forms/interactive-communication/assets/datetime.png)
 
 ## &#x200B;2. プロパティ
 

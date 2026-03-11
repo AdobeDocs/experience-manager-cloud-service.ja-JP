@@ -2,12 +2,13 @@
 title: AEM Forms のメタデータはどのように管理できますか？
 description: メタデータを使用すると、アセットの分類および編成を容易に行うことができ、特定のアセットを検索しやすくなります。
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '1735'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1738'
+ht-degree: 98%
 
 ---
 
@@ -293,12 +294,12 @@ ht-degree: 100%
 
 1. ドラッグしたコンポーネントをクリックします。右のパネルに開いた「設定」タブで、次のフィールドに情報を入力します。
 
-   1. スキーマに配置されるフィールドの上に表示される名前に使用するフィールドラベルを指定します（例えば、部門など）
-   1. プロパティにマッピングフィールドの下に、事前入力された値 **「./jcr:content/metadata/default」**&#x200B;が表示されます。「**default**」を、必要なプロパティ名に変更します。これは、crx リポジトリにプロパティを保存するために使用されます（例えば、「./jcr:content/metadata/department&#39;）。
+   1. スキーマに配置されるフィールドの上に表示名として使用するフィールドラベルを指定します（例えば、部門など）
+   1. プロパティにマッピングフィールドの下に、事前入力された値 **「./jcr:content/metadata/default&#39;** です。 「**default**」を、必要なプロパティ名に変更します。これは、crx リポジトリにプロパティを保存するために使用されます（例えば、「./jcr:content/metadata/department&#39;）
 
       >[!NOTE]
       >
-      >プレフィックス「./jcr:content/metadata/」は、プロパティが保存されるパスを定義しているので、変更しないでください。
+      >接頭辞「./jcr:content/metadata/&#39;：プロパティの保存場所のパスを定義します。
       >
       >また、リポジトリーの同じ場所に 2 つ以上のプロパティの値が書き込まれるのを防ぐため、プロパティ名は一意にする必要があります。そのため、「default」の値は変更することをお勧めします。
 

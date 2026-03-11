@@ -3,13 +3,14 @@ title: Forms Manager でフォームのバージョンを管理する
 description: Forms Manager UI で、アダプティブForms、フォームフラグメント、テーマ、その他のアセットのバージョンを作成および管理する方法について説明します。
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-source-git-commit: 52d6e8163ef24d362287cbedf54c2977fff9c87b
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 6%
+source-wordcount: '433'
+ht-degree: 7%
 
 ---
-
 
 # Forms Manager UI での Form Assets バージョンの管理
 
@@ -38,10 +39,10 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 1. フォームまたはアセットを選択します。
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
 1. タイムラインツールバーの **[!UICONTROL バージョンとして保存]** をクリックします。
-   ![&#x200B; バージョンとして保存 &#x200B;](/help/forms/assets/create-version.png)
+   ![ バージョンとして保存 ](/help/forms/assets/create-version.png)
 1. 変更を説明する **[!UICONTROL ラベル]** とオプションの **[!UICONTROL コメント]** を入力します。
 1. 「**[!UICONTROL 作成]**」をクリックします。
-   ![&#x200B; バージョン 2 として保存 &#x200B;](/help/forms/assets/create-version1.png)
+   ![ バージョン 2 として保存 ](/help/forms/assets/create-version1.png)
 
 タイムラインパネルに、バージョンが、ラベル、コメント、タイムスタンプと共に表示されます。
 
@@ -51,7 +52,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 
 同じ名前のアセットが既に存在する場合は、既存のアセットがアップロードに置き換えられ、新しいバージョンが自動的に作成されます。 作成したバージョンはタイムラインで表示できます。
 
-![&#x200B; バージョン付きアップロードを示すファイルアップロードダイアログ &#x200B;](/help/forms/assets/version-upload.png)
+![ バージョン付きアップロードを示すファイルアップロードダイアログ ](/help/forms/assets/version-upload.png)
 
 ## バージョン履歴の表示 {#view-version-history}
 
@@ -59,7 +60,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 
 1. Forms Manager でアセットを選択します。
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
-   ![&#x200B; バージョン履歴 &#x200B;](/help/forms/assets/version-history.png)
+   ![ バージョン履歴 ](/help/forms/assets/version-history.png)
 
 タイムラインには、すべてのバージョンエントリとアクティビティイベントが表示されます。 各エントリには、ラベル、コメント、作成者およびタイムスタンプが表示されます。
 
@@ -71,7 +72,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
 1. 復元するバージョンを選択します。
 1. 「**[!UICONTROL このバージョンに戻る]**」をクリックします。
-   ![&#x200B; バージョンを復帰 &#x200B;](/help/forms/assets/revert-version.png)
+   ![ バージョンを復帰 ](/help/forms/assets/revert-version.png)
 
 >[!NOTE]
 >

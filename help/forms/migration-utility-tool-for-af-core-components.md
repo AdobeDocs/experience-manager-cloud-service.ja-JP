@@ -6,12 +6,13 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 8%
+source-wordcount: '1074'
+ht-degree: 10%
 
 ---
 
@@ -53,15 +54,15 @@ Forms変換ユーティリティは、古い基盤コンポーネントに基づ
 
 ## AEM Modernize Tools を使用するための前提条件
 
-* [AEM Formsのローカル開発環境を設定します &#x200B;](/help/forms/setup-local-development-environment.md)。
-* お使いの AEM Cloud Service 環境でアダプティブForms コアコンポーネントを有効にするには、最新のツールをインストールします。
+* [AEM Formsのローカル開発環境を設定します ](/help/forms/setup-local-development-environment.md)。
+* お使いの AEM Cloud Service 環境でアダプティブフォームコアコンポーネントを有効にするには、最新版をインストールします。
 * [!DNL forms-users] グループへのユーザーの追加。[!DNL forms-users] グループのメンバーには、アダプティブフォームを作成する権限があります。
 * 次の役割を持つユーザーは、AEM環境内にAEM Modernize Tools をインストールする権限を持っています。
 
    * 開発者の役割
    * 管理者の役割
 
-フォーム専用のユーザーグループの詳細なリストについては、[&#x200B; グループと権限 &#x200B;](forms-groups-privileges-tasks.md) を参照してください。
+フォーム専用のユーザーグループの詳細なリストについては、[ グループと権限 ](forms-groups-privileges-tasks.md) を参照してください。
 
 ## AEM Modernize Tools のインストールと設定
 
@@ -94,11 +95,11 @@ AEM Modernize Tools をインストールして設定するには：
        mvn clean install 
    ```
 
-![&#x200B; インストールイメージの成功 &#x200B;](/help/forms/assets/aem-modernize-install-steps.png)
+![ インストールイメージの成功 ](/help/forms/assets/aem-modernize-install-steps.png)
 
 インストールが完了すると、AEM Modernize Tools を使用できるようになります。
 
-![AEM移行ユーティリティツールを有効にする &#x200B;](/help/forms/assets/enable-aem-modernizer-tools.png)
+![AEM移行ユーティリティツールを有効にする ](/help/forms/assets/enable-aem-modernizer-tools.png)
 
 
 ### ローカルのAEM Forms環境に対してAEM Modernize Tools を有効にする{#enable-aem-modernize-Tools}
@@ -111,17 +112,17 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 1. `Component Rule Paths` のように `/apps/forms-modernizer/rules` を追加します。
 1. 「**保存**」をクリックして、変更を保存します。
 
-![AEMのコンポーネントのルールを最新化 &#x200B;](/help/forms/assets/aem-modernize-tools-component-rule.png)
+![AEMのコンポーネントのルールを最新化 ](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
 ## フォーム変換ユーティリティを実行して、基盤コンポーネントベースのフォームをコアコンポーネントベースのフォームに変換します
 
 1. **[!UICONTROL ツール/AEM Modernize Tools/Forms変換]** に移動します。
 
-   ![AEM Modernize Tools を選択してください &#x200B;](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![AEM Modernize Tools を選択してください ](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. 「**[!UICONTROL Formsコンバージョン]**」オプションを選択します。
 
-   ![&#x200B; 「Forms変換」オプションを選択 &#x200B;](/help/forms/assets/aem-modernize-forms-conversion.png)
+   ![ 「Forms変換」オプションを選択 ](/help/forms/assets/aem-modernize-forms-conversion.png)
 
 1. **作成** をクリックして、新しいジョブを作成します。
 
@@ -136,7 +137,7 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
    ここでは、「**ターゲットにコピー** オプションが選択されています。 「**ターゲットにコピー**」オプションが選択されている場合、「**[!UICONTROL Sourceのパス]**」および「**[!UICONTROL ターゲットパス]**」オプションが表示されます。
 
-1. `source folder`1&rbrace;Source Path&rbrace; に **[!UICONTROL 名」を入力します。]**
+1. `source folder`1}Source Path} に **[!UICONTROL 名」を入力します。]**
 1. `target folder` ターゲットパス **[!UICONTROL で]** 名を指定します。
 1. 「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL Formsを追加]** をクリックします。 `source folder` 内のすべてのフォームが画面に表示されます。
@@ -156,14 +157,14 @@ AEM環境でAEM Modernize Tools を有効にして使用するには、基盤コ
 
 1. アダプティブフォームを選択し、/ **[!UICONTROL プロパティ]** を選択します。 フォームプロパティページが開きます。
 
-   ![AEM Modernize Tools の保存先フォルダー &#x200B;](/help/forms/assets/aem-modernize-tools-destination-folder.png)
+   ![AEM Modernize Tools の保存先フォルダー ](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. **[!UICONTROL 保存して閉じる]** を選択して、変換されたフォームのプロパティを再度保存します。
-   ![AEM Modernize Tools アダプティブフォームのプロパティ &#x200B;](/help/forms/assets/aem-modernize-tools-af-properties.png)
+   ![AEM Modernize Tools アダプティブフォームのプロパティ ](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 これで、基盤コンポーネント上に構築されたアダプティブフォームが、コアコンポーネント上に構築されたアダプティブフォームに変換されることを確認できます。
 
 ## ベストプラクティス {#best-practices}
 
-* 基盤コンポーネントベースのフォームは、同等の [&#x200B; コアコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
+* 基盤コンポーネントベースのフォームは、同等の [ コアコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) を使用できるコンポーネントのみを使用します。 同等のコアコンポーネントを持たない基盤コンポーネントを使用する場合、基盤コンポーネントは変換されません。 その結果、フォームのオーサリング中に正しく機能しません
 * 基盤コンポーネントをコアコンポーネントに変換するルールは、XML 形式で指定してください。

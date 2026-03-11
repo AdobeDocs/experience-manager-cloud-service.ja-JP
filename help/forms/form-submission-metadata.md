@@ -6,11 +6,12 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '693'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +48,7 @@ ht-degree: 100%
 
 メタデータフィールドとして選択された要素にユーザーがデータを入力すると、計算された情報がメタデータに記録されます。メタデータは、メタデータを保存するように設定したリポジトリーで表示できます。
 
-## フォーム送信メタデータの表示：  {#seeing-updated-form-nbsp-submission-metadata}
+## 更新されたフォーム送信メタデータの表示：  {#seeing-updated-form-nbsp-submission-metadata}
 
 上記の例では、メタデータは CRX リポジトリーに保存されます。メタデータは次のようになります。
 

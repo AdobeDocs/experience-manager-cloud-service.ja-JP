@@ -6,11 +6,12 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 1%
 
 ---
 
@@ -141,12 +142,12 @@ Forms Experience Builder は、フォームを外部システム、API および
 
 ### 手順 4：クラウドストレージの設定
 
-**Azure Blob Storage のセットアップ：**
+**Azure Blob ストレージのセットアップ：**
 
-     フォーム送信を Azure に保存：
+     フォーム送信をAzureに保存：
     - コンテナ：form-submissions
     - フォルダー：/{year}/{month}/{day}/
-    - ファイル形式：添付ファイル付き JSON
+    - ファイル形式：添付ファイルを含む JSON
     - アクセスレベル：プライベート 
 
 ## 統合の例
@@ -179,8 +180,8 @@ Forms Experience Builder は、フォームを外部システム、API および
 **実装：**
 従業員のオンボーディングを処理する：
 1.従業員の詳細を記載した E メール <hr@company.com>
-&#x200B;2. SharePoint社員フォルダーへのドキュメントのアップロード
-&#x200B;3. Power Automate でオンボーディングワークフローを開始する
+2. SharePoint社員フォルダーへのドキュメントのアップロード
+3. Power Automate でオンボーディングワークフローを開始する
 4.人事システム、電子メール、その他のツールでのアカウントの作成
 
 ### リードジェネレーションフォーム
@@ -311,8 +312,8 @@ Forms Experience Builder は、フォームを外部システム、API および
 
 統合の問題の場合：
 
-- [Forms Experience Builder の FAQ を確認してください &#x200B;](forms-experience-builder-frequently-asked-questions.md)
-- [&#x200B; はじめる前に &#x200B;](forms-experience-builder-getting-started.md) を確認してください
+- [Forms Experience Builder の FAQ を確認してください ](forms-experience-builder-frequently-asked-questions.md)
+- [ はじめる前に ](forms-experience-builder-getting-started.md) を確認してください
 - 技術的なサポートについては、システム管理者にお問い合わせください
 - 外部サービスについては、API ドキュメントを参照してください
 

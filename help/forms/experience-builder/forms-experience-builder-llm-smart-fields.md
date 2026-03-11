@@ -5,10 +5,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1480'
 ht-degree: 24%
 
 ---
@@ -265,7 +266,6 @@ LLM の知識と組織のデータを組み合わせる：
      業界標準のカテゴリを製品カタログと組み合わせる製品フィールドを作成します 
      地理データを自社のオフィスの場所と結合する場所フィールドを含め 
  す。
-
 ## スマートフィールドのトラブルシューティング {#troubleshooting-smart-fields}
 
 ### よくある問題と解決策

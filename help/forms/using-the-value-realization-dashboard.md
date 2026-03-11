@@ -6,11 +6,12 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
-source-git-commit: 3bc967bc2b6584abbd73e3456e123ed76a8959b6
-workflow-type: ht
-source-wordcount: '873'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 99%
 
 ---
 

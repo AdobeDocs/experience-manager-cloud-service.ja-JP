@@ -1,13 +1,14 @@
 ---
 title: アダプティブフォームと Microsoft® Power Automate はどのように統合されますか？
 description: アダプティブフォームを Microsoft® Power Automate と統合します。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: AEM forms を Power Automate に接続、Power Automate による AEM Forms の自動処理、Power Automate を AEM Forms に統合、アダプティブフォームから Power Automate にデータを送信
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 94%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 94%
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
-| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | この記事 |
 
 <span class="preview">GovCloud を使用中に GCC （Government Cloud Computing）テナントに接続する必要がある場合は、公式アドレスから aem-forms-ea@adobe.com にメールを送信して、早期導入プログラムを介したアクセスをリクエストします。</span>
@@ -145,9 +146,9 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 >
 >Microsoft® Power Automate 接続に使用するトークンは、90 日後に有効期限が切れます。
 >
-> 統合を引き続き機能させるには、トークンの有効期限が切れる前または切れた時点で、Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service のクラウド設定の両方を再認証して再公開します。[Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service クラウド設定の両方を公開する &#x200B;](#publish-microsoft-power-automate-dataverse-cloud-configuration) に記載されている手順を使用します。
+> 統合を引き続き機能させるには、トークンの有効期限が切れる前または切れた時点で、Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service のクラウド設定の両方を再認証して再公開します。[Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service クラウド設定の両方を公開する ](#publish-microsoft-power-automate-dataverse-cloud-configuration) に記載されている手順を使用します。
 >
-> トークン有効期間ポリシーについて詳しくは、[&#x200B; 設定可能なトークン有効期間に関するMicrosoft Entra のドキュメント &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens) を参照してください。 トークンが更新されない場合、Power Automate へのフォーム送信が失敗する可能性があります。
+> トークン有効期間ポリシーについて詳しくは、[ 設定可能なトークン有効期間に関するMicrosoft Entra のドキュメント ](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens) を参照してください。 トークンが更新されない場合、Power Automate へのフォーム送信が失敗する可能性があります。
 
 ## 「Microsoft® Power Automate フローの呼び出し」送信アクションを使用して、Power Automate フローにデータを送信する {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
@@ -310,7 +311,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. オーサーインスタンスにログインし、アダプティブフォームを選択します。
 1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

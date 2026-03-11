@@ -3,11 +3,12 @@ title: Azure ストレージの設定方法
 description: フォームを Azure ストレージサーバーと統合する方法について説明します。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '597'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +96,7 @@ ht-degree: 100%
 データモデルオブジェクトプロパティを検索キーとして定義するには：
 
 1. 「**[!UICONTROL モデル]**」タブで、データモデルオブジェクトプロパティを選択して「**[!UICONTROL プロパティを編集]**」を選択します。
-1. 「**[!UICONTROL 検索キー]**」切り替えオプションをオン状態に切り替えます。このオプションは、プライマリデータ型にのみ使用できます。
+1. 「**[!UICONTROL 検索キー]**」切り替えオプションをオン状態に切り替えます。このオプションは、プライマリデータタイプにのみ使用できます。
 1. 「**[!UICONTROL 完了]**」を選択し、「**[!UICONTROL 保存]**」を選択してフォームデータモデル（FDM）を保存します。
 
 データモデルオブジェクトのプロパティを検索キーとして定義した後、ハッシュ値は Azure インデックスタグに格納され、Base64 でエンコードされた値は Azure メタデータに格納されます。

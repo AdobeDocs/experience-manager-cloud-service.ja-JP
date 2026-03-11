@@ -4,11 +4,12 @@ description: AEM Forms as a Cloud Service のキャッシュ関連の問題を�
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 98%
 
 ---
 

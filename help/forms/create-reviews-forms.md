@@ -3,12 +3,13 @@ title: フォームでレビューを作成および管理する方法は？
 description: レビューメカニズムを使用して、レビュー担当者を追加し、レビュー担当者がフォームにコメントすることを許可します。
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '704'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 99%
 
 ---
 

@@ -4,11 +4,12 @@ description: アダプティブフォームで、送信および処理データ�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
-workflow-type: ht
-source-wordcount: '1697'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1703'
+ht-degree: 99%
 
 ---
 

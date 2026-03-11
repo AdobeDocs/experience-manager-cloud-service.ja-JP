@@ -9,11 +9,12 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 93%
+source-wordcount: '401'
+ht-degree: 92%
 
 ---
 

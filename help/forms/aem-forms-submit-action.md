@@ -3,11 +3,12 @@ title: アダプティブフォームの送信アクションの設定方法
 description: アダプティブフォームには、複数の送信アクションが用意されています。送信アクションは、送信後のアダプティブフォームの処理方法を定義します。ビルトインの送信アクションを使用するか、独自のアクションを作成できます。
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
-source-git-commit: 558e26c6ad1c825498442ef3915fdcdd89ee9039
-workflow-type: ht
-source-wordcount: '667'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 99%
 
 ---
 

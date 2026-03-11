@@ -4,11 +4,12 @@ description: ' [!DNL Experience Manager Forms] を使用すると、アダプテ
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
-workflow-type: ht
-source-wordcount: '537'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 100%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-フォーム作成者は、アダプティブフォームを使用すると非常に簡単に複数ステップのデータ取得エクスペリエンスを作成できます。複数パネルの作成や、各パネルと別の移動パターンとの関連付けに対する組み込みサポートが付属しています。フォーム作成者は、フォームフィールドを論理セクションでグループ化し、グループをパネルとして表示できます。パネル間の移動はすべてパネルレイアウトを使用して制御されます。作成者は、様々なレイアウトでパネルをアレンジできます。例えば、ウィザードレイアウトで順番に配置することも、タブ付きレイアウトを使って即興で配置することもできます。パネルレイアウトについては、「[アダプティブフォームのレイアウトの機能](layout-capabilities-adaptive-forms.md)」を参照してください。
+フォーム作成者は、アダプティブフォームを使用すると非常に簡単に複数ステップのデータ取得エクスペリエンスを作成できます。複数パネルの作成や、各パネルと別の移動パターンとの関連付けに対するビルトインのサポートが付属しています。フォーム作成者は、フォームフィールドを論理セクションでグループ化し、グループをパネルとして表示できます。パネル間の移動はすべてパネルレイアウトを使用して制御されます。作成者は、様々なレイアウトでパネルをアレンジできます。例えば、ウィザードレイアウトで順番に配置することも、タブ付きレイアウトを使って即興で配置することもできます。パネルレイアウトについては、「[アダプティブフォームのレイアウトの機能](layout-capabilities-adaptive-forms.md)」を参照してください。
 
 一般的なフォームの記入では、データを取得する以上に、関連する多くのステップがあります。完全なフォーム送信ステップには、フォームへの電子署名、フォームに入力した情報の検証、支払い処理など、その他のステップが含まれる場合があります。これは、場合によって異なります。
 

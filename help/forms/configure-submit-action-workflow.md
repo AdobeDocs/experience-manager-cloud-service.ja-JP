@@ -3,12 +3,13 @@ title: AEM ワークフローをアダプティブフォームに統合する方
 description: AEM Forms の送信アクションを使用したワークフローでの自動処理の開始のプロセスについて説明します。
 keywords: AEM ワークフロー、アダプティブフォームと AEM ワークフローの統合、「AEM ワークフローの起動」送信アクション
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
-workflow-type: ht
-source-wordcount: '1434'
-ht-degree: 100%
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+workflow-type: tm+mt
+source-wordcount: '1440'
+ht-degree: 99%
 
 ---
 

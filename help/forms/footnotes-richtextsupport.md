@@ -2,12 +2,13 @@
 title: アダプティブフォームに脚注を追加する方法
 description: リッチテキストエディター（RTE）を使用して、アダプティブフォーム内に脚注を追加します。
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 90%
+source-wordcount: '456'
+ht-degree: 89%
 
 ---
 
