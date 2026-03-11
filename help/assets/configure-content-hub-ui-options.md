@@ -129,7 +129,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL フィルター]**」をクリックします。
 
-1. 使用可能な各フィルターの横にある ![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックします。
+1. 使用可能な各フィルターの横にある ![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックします。
 
 1. **[!UICONTROL 一括検索]**&#x200B;切り替えスイッチを有効にします。デフォルトの区切り文字（`[ , | \t | \r\n | \r | \n ]`）は自動的に表示されます。さらに、追加の区切り文字を設定することもできます。これを行うには、入力ボックスに区切り文字を `pipe symbol (|)` で区切って指定します。
 
@@ -223,11 +223,11 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 #### プライマリカラーとセカンダリカラーの変更{#Change-the-primary-and-secondary-color}
 
-![ ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
+![&#x200B; ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
 ![プライマリおよびセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリカラー]：** プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定ページ]を含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
@@ -319,7 +319,7 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 -->
 
-詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+詳しくは、[&#x200B; [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
 
 ## よくある質問 {#faqs-content-hub-upload-assets}
 
