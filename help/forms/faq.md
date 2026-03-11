@@ -40,7 +40,7 @@ Java™ API リファレンスドキュメントは、[!DNL Maven Central Reposi
    1. index.html ファイルを開き、API リファレンスドキュメントを表示します。
 
 * **アダプティブフォームの [!DNL JavaScript™] API リファレンスはどこで入手できますか？**
-[!DNL JavaScript™] API リファレンスドキュメントは、[!DNL  Maven Central Repository] からダウンロードできます。ダウンロードするには、以下の手順を実行します。
+[!DNL JavaScript™] API リファレンスドキュメントは、[!DNL &#x200B; Maven Central Repository] からダウンロードできます。ダウンロードするには、以下の手順を実行します。
    1. [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api) を開きます。
    1. [!DNL Experience Manager Forms] SDK の最新バージョンを含むページを探して開きます。
    1. 「すべて表示」オプションをクリックして、すべてのファイルを表示します。

@@ -14,7 +14,7 @@ ht-degree: 99%
 
 # AEM Forms 用のローカル開発環境を設定 {#overview}
 
-[!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および本番環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
+[!DNL &#x200B; Adobe Experience Manager Forms] as a [!DNL &#x200B; Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および本番環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 
 ローカル開発環境を使用すると、クラウド開発環境にログインせずに次の操作を実行できます。
 
@@ -308,7 +308,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    コマンドの完全なリストについては、 [構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing) を参照してください
 
-1. [ [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)。
+1. [&#x200B; [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)。
 
 ## ローカル Dispatcher ツールの設定 {#setup-local-dispatcher-tools}
 

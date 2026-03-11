@@ -39,10 +39,10 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 1. フォームまたはアセットを選択します。
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
 1. タイムラインツールバーの **[!UICONTROL バージョンとして保存]** をクリックします。
-   ![ バージョンとして保存 ](/help/forms/assets/create-version.png)
+   ![&#x200B; バージョンとして保存 &#x200B;](/help/forms/assets/create-version.png)
 1. 変更を説明する **[!UICONTROL ラベル]** とオプションの **[!UICONTROL コメント]** を入力します。
 1. 「**[!UICONTROL 作成]**」をクリックします。
-   ![ バージョン 2 として保存 ](/help/forms/assets/create-version1.png)
+   ![&#x200B; バージョン 2 として保存 &#x200B;](/help/forms/assets/create-version1.png)
 
 タイムラインパネルに、バージョンが、ラベル、コメント、タイムスタンプと共に表示されます。
 
@@ -52,7 +52,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 
 同じ名前のアセットが既に存在する場合は、既存のアセットがアップロードに置き換えられ、新しいバージョンが自動的に作成されます。 作成したバージョンはタイムラインで表示できます。
 
-![ バージョン付きアップロードを示すファイルアップロードダイアログ ](/help/forms/assets/version-upload.png)
+![&#x200B; バージョン付きアップロードを示すファイルアップロードダイアログ &#x200B;](/help/forms/assets/version-upload.png)
 
 ## バージョン履歴の表示 {#view-version-history}
 
@@ -60,7 +60,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 
 1. Forms Manager でアセットを選択します。
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
-   ![ バージョン履歴 ](/help/forms/assets/version-history.png)
+   ![&#x200B; バージョン履歴 &#x200B;](/help/forms/assets/version-history.png)
 
 タイムラインには、すべてのバージョンエントリとアクティビティイベントが表示されます。 各エントリには、ラベル、コメント、作成者およびタイムスタンプが表示されます。
 
@@ -72,7 +72,7 @@ Forms Manager で、フォームアセットのバージョン管理がサポー
 1. 左側のパネルで「**[!UICONTROL タイムライン]**」を選択します。
 1. 復元するバージョンを選択します。
 1. 「**[!UICONTROL このバージョンに戻る]**」をクリックします。
-   ![ バージョンを復帰 ](/help/forms/assets/revert-version.png)
+   ![&#x200B; バージョンを復帰 &#x200B;](/help/forms/assets/revert-version.png)
 
 >[!NOTE]
 >

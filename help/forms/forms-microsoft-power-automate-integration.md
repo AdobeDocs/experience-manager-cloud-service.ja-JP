@@ -146,9 +146,9 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 >
 >Microsoft® Power Automate 接続に使用するトークンは、90 日後に有効期限が切れます。
 >
-> 統合を引き続き機能させるには、トークンの有効期限が切れる前または切れた時点で、Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service のクラウド設定の両方を再認証して再公開します。[Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service クラウド設定の両方を公開する ](#publish-microsoft-power-automate-dataverse-cloud-configuration) に記載されている手順を使用します。
+> 統合を引き続き機能させるには、トークンの有効期限が切れる前または切れた時点で、Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service のクラウド設定の両方を再認証して再公開します。[Microsoft® Power Automate Dataverse とMicrosoft® Power Automate Flow Service クラウド設定の両方を公開する &#x200B;](#publish-microsoft-power-automate-dataverse-cloud-configuration) に記載されている手順を使用します。
 >
-> トークン有効期間ポリシーについて詳しくは、[ 設定可能なトークン有効期間に関するMicrosoft Entra のドキュメント ](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens) を参照してください。 トークンが更新されない場合、Power Automate へのフォーム送信が失敗する可能性があります。
+> トークン有効期間ポリシーについて詳しくは、[&#x200B; 設定可能なトークン有効期間に関するMicrosoft Entra のドキュメント &#x200B;](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens) を参照してください。 トークンが更新されない場合、Power Automate へのフォーム送信が失敗する可能性があります。
 
 ## 「Microsoft® Power Automate フローの呼び出し」送信アクションを使用して、Power Automate フローにデータを送信する {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
@@ -311,7 +311,7 @@ Forms as a Cloud Service インスタンスを Microsoft® Power Automate に接
 1. オーサーインスタンスにログインし、アダプティブフォームを選択します。
 1. 設定コンテナで、[Microsoft® Power Automate Dataverse クラウド設定を作成](#microsoft-power-automate-dataverse-cloud-configuration)セクションで作成したコンテナを参照して選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]

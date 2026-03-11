@@ -23,7 +23,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
-> カスタム関数の作成および使用方法について詳しくは、[ アダプティブForms（コアコンポーネント）のカスタム関数 ](/help/forms/create-and-use-custom-functions.md) を参照してください。
+> カスタム関数の作成および使用方法について詳しくは、[&#x200B; アダプティブForms（コアコンポーネント）のカスタム関数 &#x200B;](/help/forms/create-and-use-custom-functions.md) を参照してください。
 
 
 ## 関連トピック

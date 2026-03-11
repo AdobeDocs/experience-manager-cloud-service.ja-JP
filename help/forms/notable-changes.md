@@ -67,7 +67,7 @@ Adobe Experience Manager Forms as a Cloud Service では、Adobe Experience Mana
 
 * **コンポーネント**：このサービスはフォーム内の署名エクスペリエンスをサポートしておらず、アダプティブフォームの概要コンポーネントと検証コンポーネントは含まれていません。
 
-* **ウィザードインターフェイス：**[ウィザードインターフェイス](/help/forms/creating-adaptive-form-core-components.md)を使うと、共通のオプションをすばやく設定し、アダプティブフォームを簡単に作成できます。
+* **ウィザードインターフェイス：**&#x200B;[ウィザードインターフェイス](/help/forms/creating-adaptive-form-core-components.md)を使うと、共通のオプションをすばやく設定し、アダプティブフォームを簡単に作成できます。
 
 ## フォームポータル
 

@@ -37,7 +37,7 @@ ht-degree: 99%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
 
 AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    * [!DNL Microsoft Dynamics] 365 オンプレミス
    * [!DNL Microsoft Dynamics] 2016 オンプレミス
 
-* [ [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
+* [&#x200B; [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [&#x200B; [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
 
 ## 登録された [!DNL Microsoft Dynamics] アプリケーションの応答 URL を設定 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -78,7 +78,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 >
 > この手順は、[!DNL Experience Manager Forms] をオンプレミスの [!DNL Microsoft Dynamics] サーバーと統合する場合にのみ使用してください。
 
-1. 「[ [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
+1. 「[&#x200B; [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
 1. Windows PowerShell を使用して以下のコマンドを実行し、IFD が有効になっている [!DNL Microsoft Dynamics] でクレームを設定します。
 
    ```shell
@@ -139,7 +139,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    1. 認証のタイプとして「**[!UICONTROL OAuth 2.0]**」を選択します。
 
-   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics][!DNL Microsoft Dynamics] をフォームデータモデル（FDM）で設定するには、「**[!UICONTROL リソース]**」フィールドで Dynamics インスタンスの URL を指定する必要があります。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
+   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics]&#x200B;[!DNL Microsoft Dynamics] をフォームデータモデル（FDM）で設定するには、「**[!UICONTROL リソース]**」フィールドで Dynamics インスタンスの URL を指定する必要があります。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
 
    1. [!DNL Microsoft Dynamics] の認証プロセス用の「**[!UICONTROL 認証範囲]**」フィールドで、「**[!UICONTROL openid]**」を指定します。
 

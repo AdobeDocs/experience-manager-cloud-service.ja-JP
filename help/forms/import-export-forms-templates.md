@@ -171,7 +171,7 @@ ht-degree: 99%
 アセットを検索するには、以下の手順を実行します。
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
-1. ![検索アイコン ](assets/folder-search-icon.svg) 検索アイコンをクリックします。
+1. ![検索アイコン &#x200B;](assets/folder-search-icon.svg) 検索アイコンをクリックします。
 
    ![検索フォーム](/help/forms/assets/search-form.png)
 
