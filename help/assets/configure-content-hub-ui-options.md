@@ -2,10 +2,10 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
+source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 80%
+source-wordcount: '2962'
+ht-degree: 74%
 
 ---
 
@@ -35,7 +35,7 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 
 * アセット、コレクション、インサイトに加えて、コンテンツハブに含める必要があるカスタムリンク。
 
->[!VIDEO](https://video.tv.adobe.com/v/3472947/?captions=jpn&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## 前提条件 {#prerequisites-configuration-ui}
 
@@ -84,7 +84,7 @@ Experience Manager Assets を使用すると、管理者はコンテンツハブ
 
 1. 「**[!UICONTROL メタデータを追加]**」をクリックします。
 
-1. プロパティのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいアセットメタデータの入力タイプを選択します。
+1. プロパティのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいアセットメタデータに適した入力タイプを選択します。 入力タイプのラベルが更新され、Adobe Experience Manager（AEM）に合わせられます。 使用可能な入力タイプには、テキスト、タグ、日付、数値、ドロップダウン、複数値テキスト、スマートタグ、スマートカラータグなどがあります。 特定のメタデータフィールド（xcm:colorDistribution、xcm:machineKeywords）では、入力タイプが自動的に割り当てられ、変更できません。
 
 1. **[!UICONTROL 必須フィールド]**&#x200B;切替スイッチをクリックすると、新しいアセットのアップロード中にユーザーが新しいメタデータフィールドを指定することが必須になります。
 
@@ -98,7 +98,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
-![コンテンツハブの設定 UI のアップロードの詳細](/help/assets/assets/import-content-hub1.png)
+![コンテンツハブの設定 UI のアップロードの詳細](assets/filter-new.png)
 
 設定ユーザーインターフェイスで有効になっているメタデータはアセットアップロードページに表示されます。
 ![コンテンツハブにメタデータをアップロード](assets/add-assets-for-approval1.png)
@@ -108,12 +108,9 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 コンテンツハブを使用すると、管理者はアセットの検索中に表示されるフィルターを設定できます。新しいフィルターを追加するには、次の手順を実行します。
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL フィルター]**」をクリックします。
-
 1. 「**[!UICONTROL フィルターを追加]**」をクリックします。
-
-1. フィルターのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいフィルターの入力タイプを選択します。
+1. フィルターのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいフィルターに適した入力タイプを選択します。 入力タイプのラベルが更新され、Adobe Experience Manager（AEM）に合わせられます。 使用可能な入力タイプには、テキスト、タグ、日付、数値、ドロップダウン、複数値テキスト、スマートタグ、スマートカラータグなどがあります。 特定のメタデータフィールド（xcm:colorDistribution、xcm:machineKeywords）では、入力タイプが自動的に割り当てられ、変更できません。
 1. 「**[!UICONTROL 確認]**」をクリックします。新しいフィルターが、既存のフィルターのリストに表示されます。
-
 1. 「**[!UICONTROL 保存]**」をクリックして変更を適用し、アセットのフィルタリング中に新しいフィルターが検索ページに表示されるようにします。
 
    >[!NOTE]
@@ -121,7 +118,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
    >新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
 
 同様に、使用可能な各フィルターの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のフィルターを削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
-![コンテンツハブの設定 UI のフィルター](assets/configuration-filter1.png)
+![コンテンツハブの設定 UI のフィルター](assets/add-filters.png)
 
 設定ユーザーインターフェイスで有効になっているフィルターは、検索ページに表示されます。
 ![コンテンツハブで検索](assets/content-hub-filters1.png)
@@ -132,11 +129,11 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL フィルター]**」をクリックします。
 
-1. 使用可能な各フィルターの横にある ![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックします。
+1. 使用可能な各フィルターの横にある ![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックします。
 
 1. **[!UICONTROL 一括検索]**&#x200B;切り替えスイッチを有効にします。デフォルトの区切り文字（`[ , | \t | \r\n | \r | \n ]`）は自動的に表示されます。さらに、追加の区切り文字を設定することもできます。これを行うには、入力ボックスに区切り文字を `pipe symbol (|)` で区切って指定します。
 
-   ![一括読み込み設定](assets/bulk-search-configuration.png)
+   ![一括読み込み設定](assets/edit-filter-new.png)
 
 1. 「**[!UICONTROL 確認]**」をクリックして、変更を保存します。[Content Hubでの一括検索](search-assets-content-hub.md#bulk-search)の動作を参照してください。
 
@@ -147,15 +144,14 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL アセットの詳細]**」をクリックします。
 
 1. 「**[!UICONTROL メタデータを追加]**」をクリックします。
-
-1. プロパティのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいアセットメタデータの入力タイプを選択します。
+1. プロパティのラベルを指定し、「**[!UICONTROL メタデータ]**」フィールドを使用してプロパティにマッピングし、新しいアセットメタデータに適した入力タイプを選択します。 入力タイプのラベルが更新され、Adobe Experience Manager（AEM）に合わせられます。 使用可能な入力タイプには、テキスト、タグ、日付、数値、ドロップダウン、複数値テキスト、スマートタグ、スマートカラータグなどがあります。 特定のメタデータフィールド（xcm:colorDistribution、xcm:machineKeywords）では、入力タイプが自動的に割り当てられ、変更できません。
 1. 「**[!UICONTROL 確認]**」をクリックします。新しいメタデータが、既存のアセットプロパティのリストに表示されます。
 
 1. 「**[!UICONTROL 保存]**」をクリックして変更を適用し、新しいプロパティがアセットの詳細ページに表示されるようにします。
 
 同様に、使用可能な各プロパティの横にある ![編集アイコン](assets/do-not-localize/edit_icon.svg) をクリックしてラベルを編集したり、削除アイコンをクリックして既存のアセットの詳細を削除したりできます。すべての変更を行ったら、「**[!UICONTROL 保存]**」をクリックして、変更を適用します。
 
-![コンテンツハブの設定 UI のアセットの詳細](assets/configuration-asset-details.png)
+![コンテンツハブの設定 UI のアセットの詳細](assets/asset-detailsn.png)
 
 設定ユーザーインターフェイスで有効になっているプロパティは、アセットの詳細ページに表示されます。
 
@@ -227,11 +223,11 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 #### プライマリカラーとセカンダリカラーの変更{#Change-the-primary-and-secondary-color}
 
-![&#x200B; ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
+![ ブランディング](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページでは、「**[!UICONTROL カラー]**」セクションを使用して、カラーピッカーを使用して選択するか、カラーの 16 進数コードを定義することによって、プライマリカラーとセカンダリカラーを設定します。これらのカラーは、UI 要素の背景、テキスト、アイコンのカラーを設定して、[!DNL Content Hub] UI をブランドのテーマに合わせます。
 ![プライマリおよびセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリカラー]：** プライマリカラースキームは、[!DNL Content Hub] ホーム ページや[!UICONTROL 設定ページ]を含む [!DNL Content Hub] 全体の選択アクション、チェックボックスなどのインタラクティブ要素、検索バー、切り替えスイッチに適用されます。また、**[!UICONTROL すべてのアセット]**&#x200B;ページや&#x200B;**[!UICONTROL コレクション]**&#x200B;ページで使用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで使用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
@@ -323,7 +319,7 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 -->
 
-詳しくは、[&#x200B; [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
 
 ## よくある質問 {#faqs-content-hub-upload-assets}
 
@@ -380,4 +376,4 @@ Content Hubのユーザーインターフェイス設定にアクセスして設
 
 ### 管理者は、組織のブランディング要件に合わせてAEM Assets Content Hub ポータルをカスタマイズできますか？
 
-はい。管理者は、メインバナーのタイトルと本文テキストの編集、カラーピッカーまたは 16 進コードによるテキストカラーの選択、背景、テキスト、アイコンのセカンダリカラーとプライマリカラーの設定を行うことで、AEM Assets Content Hubのルックアンドフィールをパーソナライズできます。
+はい。 管理者は、メインバナーのタイトルと本文テキストの編集、カラーピッカーまたは 16 進コードによるテキストカラーの選択、背景、テキスト、アイコンのセカンダリカラーとプライマリカラーの設定を行うことで、AEM Assets Content Hubのルックアンドフィールをパーソナライズできます。
