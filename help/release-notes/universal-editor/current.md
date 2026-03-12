@@ -26,7 +26,7 @@ ht-degree: 47%
 
 ## 新機能 {#what-is-new}
 
-* コンテナの [ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) を使用してコンポーネントを追加できるようになりました。
+* コンテナの [&#x200B; コンテキストメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) を使用してコンポーネントを追加できるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
