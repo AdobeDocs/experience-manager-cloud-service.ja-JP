@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.03.05 リリースノート
-description: ユニバーサルエディターの 2026.03.05 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.03.12 リリースノート
+description: ユニバーサルエディターの 2026.03.12 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 39%
+source-wordcount: '151'
+ht-degree: 47%
 
 ---
 
 
-# ユニバーサルエディター 2026.03.05 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.03.12 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 3 月 5 日（PT）リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 3 月 12 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ ht-degree: 39%
 
 ## 新機能 {#what-is-new}
 
-* [&#x200B; コンポーネントピッカー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) には新しいデザインがあります。
-* RTE の [&#x200B; カラーピッカー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) が使用できるようになりました。
+* コンテナの [ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) を使用してコンポーネントを追加できるようになりました。
 
 ## 早期導入機能 {#early-adopter}
 
@@ -37,5 +36,4 @@ ht-degree: 39%
 
 ## その他の改善点 {#other-improvements}
 
-* 整列、テキスト方向、インデントのオプションがバックエンドでサポートされている限り、[RTE ではデフォルトで有効 &#x200B;](/help/implementing/universal-editor/configure-rte.md) になりました。
-* Open API および UI スキーマでコンテンツフラグメントを使用する際に、タブがレンダリングされるようになりました。
+* ドキュメントオーサリングのサブ要素が nChild ルールに従わない問題が修正されました。
