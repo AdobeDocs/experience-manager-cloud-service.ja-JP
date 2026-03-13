@@ -30,7 +30,7 @@ Dynamic Media の既存のビデオビューアでは、コア再生の要件を
 
 > **注**
 >
-> 新しいビデオビューアは限定提供（LA）機能です。 [ サポートチケット ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) を作成することで、有効にすることができます。
+> 新しいビデオビューアは限定提供（LA）機能です。 [&#x200B; サポートチケット &#x200B;](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) を作成することで、有効にすることができます。
 
 
 ## 新しいビデオビューアの仕組み {#how-it-works}
@@ -91,7 +91,7 @@ Dynamic Media コンポーネントを使用してビデオを追加するには
 4. コンポーネントをクリックして、アセットセレクターを開きます。
 5. ビデオアセットを選択します
 
-![Dynamic Media コンポーネントをドラッグ ](assets/drag-component.jpeg)
+![Dynamic Media コンポーネントをドラッグ &#x200B;](assets/drag-component.jpeg)
 
 ### ビューアの設定
 
@@ -99,13 +99,13 @@ Dynamic Media コンポーネントを使用してビデオを追加するには
 
 1. ページ上で **Dynamic Media** コンポーネントを選択します。
 2. コンポーネントツールバーで **設定** をクリックします。
-   ![Dynamic Media 設定を開く ](assets/configure-asset.png)
+   ![Dynamic Media 設定を開く &#x200B;](assets/configure-asset.png)
 
 3. **Dynamic Media 設定ダイアログ** で、「**ビューアプリセット**」ドロップダウンリストから「**ビデオ （新規）**」を選択します。
-   ![ ビデオ（新規）ビューアプリセットを選択 ](assets/viewer-preset.jpeg)
+   ![&#x200B; ビデオ（新規）ビューアプリセットを選択 &#x200B;](assets/viewer-preset.jpeg)
 
 4. 必要な修飾子を「**ビューア修飾子**」フィールドに入力します（例：`autoplay=true&muted=true`）。
-   ![ ビューア修飾子 ](assets/additional-modifiers.jpeg)
+   ![&#x200B; ビューア修飾子 &#x200B;](assets/additional-modifiers.jpeg)
 
 5. 変更を保存します。
 
@@ -175,7 +175,7 @@ Adobeでは、メッセージオリジンを検証して、イベントが信頼
 
 ビデオエンゲージメントレポートは、Dynamic Media の新しいビデオビューアで再生されたビデオの分析指標を示します。 レポートは、指定した月の集計パフォーマンスデータを配信し、月次レポートをサポートします。
 
-レポートは要求に応じて生成されます。 レポートをリクエストするには、[ サポートチケット ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) を作成し、次の詳細を入力します。
+レポートは要求に応じて生成されます。 レポートをリクエストするには、[&#x200B; サポートチケット &#x200B;](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) を作成し、次の詳細を入力します。
 
 * レポートの月 – レポートが必要な月を指定します（例：2026 年 1 月）。
 * 配信メールアドレス – レポートを配信するグループ（推奨）または個人のメールアドレス
