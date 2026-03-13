@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 2b8dc10dd3fbf3f38985f8cba376d8aa19184880
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 99%
+source-wordcount: '2211'
+ht-degree: 96%
 
 ---
 
@@ -161,11 +161,17 @@ ht-degree: 99%
 
 * **有効にする** - ページにアクセスするための認証の使用を有効にします。
 
->[!NOTE]
->
->ページにアクセスできるユーザーグループは、「**[権限](#permissions)**」タブで定義します。
+  >[!NOTE]
+  >
+  >ページにアクセスできるユーザーグループは、「**[権限](#permissions)**」タブで定義します。
 
 * **ログインページ** - ログインに使用されるページです
+
+  >[!WARNING]
+  >
+  >指定されたログインページは **認証要件** によって保護されているページを指していません ****。 ログインページが保護されていない公開ページであることを確認する必要があります。 例えば、`/content/<mysite>/en/login` 認証要件 **が有効になっていない** などの専用ページです。
+  >
+  >設定済みのログインページで「**有効**」がオンになっている場合、そのページの認証要件が起動時にサイレントに削除され、公開でアクセスできるようになる場合があります。
 
 ### 書き出し {#export}
 
