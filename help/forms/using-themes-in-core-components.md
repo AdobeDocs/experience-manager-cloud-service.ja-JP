@@ -6,14 +6,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: d1e7f305c91f65ffe0bb043944310867e5947a02
 workflow-type: tm+mt
-source-wordcount: '3017'
-ht-degree: 91%
+source-wordcount: '3033'
+ht-degree: 90%
 
 ---
 
-# テーマを使用したコアコンポーネントベースのアダプティブフォームのスタイル設定{#themes-for-af-using-core-components}
+# テーマを使用したコアコンポーネントベースのアダプティブフォームのスタイル設定
 
 | バージョン | 記事リンク |
 | -------- | ---------------------------- |
@@ -54,22 +54,22 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 * [WKND テーマ](https://github.com/adobe/aem-forms-theme-wknd)
 * [イーゼルテーマ](https://github.com/adobe/aem-forms-theme-easel)
 
-[これらのテーマをカスタマイズしてテーマを作成](#customize-a-theme-core-components)することができます。
+[これらのテーマをカスタマイズしてテーマを作成](#customize-a-theme)することができます。
 
 >[!NOTE]
 >
->アダプティブFormsがAEM Sites ページに埋め込まれている場合、サイトテーマにアダプティブForms テーマを埋め込むことで、サイトとフォームの両方に単一のテーマを使用できます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み &#x200B;](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
+>アダプティブFormsがAEM Sites ページに埋め込まれている場合、サイトテーマにアダプティブForms テーマを埋め込むことで、サイトとフォームの両方に単一のテーマを使用できます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み ](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
 
 ![テーマのカスタマイズのワークフロー](/help/forms/assets/workflow-of-customization-of-theme.png)
 
-## テーマのカスタマイズ {#customize-a-theme-core-components}
+## テーマのカスタマイズ
 
 テーマのカスタマイズとは、テーマのアピアランスを変更し、スタイル設定し、パーソナライズするプロセスを指します。テーマをカスタマイズすると、デザイン要素、レイアウト、色、テキスト編集、基になるコードに変更を加えることができます。それにより、テーマで提供される基本的な構造と機能を維持しながら、web サイトやアプリケーションに独自のカスタマイズされたアピアランスを作成できます。
 
-### 前提条件 {#prerequisites-to-customize}
+### 前提条件
 
-* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
-* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=ja)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
+* [Cloud Manager でのパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)に慣れてください。また、パイプラインの設定方法に関する基本的な知識を持つことで、テーマのカスタマイズを効率的に管理およびデプロイできます。
+* [投稿者の役割を持つユーザーを設定する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)方法を説明します。投稿者の役割を持つユーザーを設定する方法を理解すると、テーマのカスタマイズに必要な権限を付与できます。
 * [Apache Maven](https://maven.apache.org/download.cgi) の最新リリースのインストール。Apache Maven は、主に Java™ プロジェクトで使用されるビルド自動化ツールです。最新のリリースをインストールすると、テーマのカスタマイズに必要な依存関係が確保されます。
 * プレーンテキストエディターをインストールします。例えば Microsoft® Visual Studio Code などです。Microsoft® Visual Studio Code などのプレーンテキストエディターを使用すると、テーマファイルの編集と変更を行う際に使いやすい環境を利用できます。
 
@@ -86,21 +86,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 前提条件を把握し、開発環境を設定したら、具体的な要件に従ってテーマをカスタマイズまたはスタイル設定する準備が整います。
 
-### テーマのカスタマイズ {#steps-to-customize-a-theme-core-components}
+### テーマのカスタマイズ
 
 テーマのカスタマイズは複数の手順で行います。テーマをカスタマイズするには、次の手順を順に実行します。
 
-1. [テーマの複製](#download-a-theme-core-components)
-1. [テーマの名前の設定](#set-name-of-theme)
-1. [テーマのカスタマイズ](#customize-the-theme)
-1. [テーマのテスト](#test-the-theme)
-1. [テーマのデプロイ](#deploy-the-theme)
+1. [テーマの複製](#1-clone-a-theme)
+1. [テーマの名前の設定](#2-set-name-of-a-theme)
+1. [テーマのカスタマイズ](#3-customize-a-theme)
+1. [テーマのテスト](#4-test-a-customized-theme)
+1. [テーマのデプロイ](#5-deploy-a-theme)
 
 このドキュメントで示す例は、**カンバス**&#x200B;テーマに基づいていますが、同じ手順を使用して任意のテーマを複製し、カスタマイズできることに注意してください。これらの手順はどのテーマにも適用でき、特定のニーズに応じてテーマを変更できます。
 
 まず、テーマを使用して、コアコンポーネントベースのアダプティブフォームのブランドエクスペリエンスを作成するプロセスから始めましょう。
 
-#### &#x200B;1. テーマの複製 {#download-a-theme-core-components}
+#### &#x200B;1. テーマの複製
 
 コアコンポーネントベースのアダプティブフォームのテーマを複製するには、次のいずれかのテーマを選択します。
 
@@ -129,11 +129,11 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    コマンドを正常に実行すると、マシンの `aem-forms-theme-canvas` フォルダーにテーマのローカルコピーが作成されます。
 
 
-#### &#x200B;2. テーマの名前の設定 {#set-name-of-theme}
+#### &#x200B;2. テーマの名前の設定
 
 >[!NOTE]
 >
->この手順は、フロントエンドパイプライン（専用のForms テーマリポジトリなど）を介してテーマを **スタンドアロン** パッケージとしてデプロイする場合に適用されます。 Forms テーマをAEM Sites テーマに **埋め込み** する場合は、フォームテーマに個別のテーマ名やバージョンを設定する必要はありません。サイトテーマ名が使用されます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み &#x200B;](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
+>この手順は、フロントエンドパイプライン（専用のForms テーマリポジトリなど）を介してテーマを **スタンドアロン** パッケージとしてデプロイする場合に適用されます。 Forms テーマをAEM Sites テーマに **埋め込み** する場合は、フォームテーマに個別のテーマ名やバージョンを設定する必要はありません。サイトテーマ名が使用されます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み ](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
 
 1. IDE でテーマフォルダーを開きます。例えば、Visual Studio Code Editor の `aem-forms-theme-canvas` フォルダーを開きます。
 
@@ -177,15 +177,15 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * テーマに対する時間の経過に伴う変更や機能強化が正確に反映されるよう、`Package.json` ファイルと `Package-lock.json` ファイルのテーマ `version` を更新することをお勧めします。
 * 使用方法、インストール手順、その他の関連する詳細についての重要な情報は、`ReadMe` ファイルでテーマ名を更新することをお勧めします。
 
-#### &#x200B;3. テーマのカスタマイズ {#customize-the-theme}
+#### &#x200B;3. テーマのカスタマイズ
 
 個々のコンポーネントをカスタマイズしたり、テーマのグローバル変数を使用してテーマのレベルを変更したりすることができます。グローバル変数に対して行った変更は、すべての個々のコンポーネントに影響を与えます。例えば、グローバル変数を使用してアダプティブフォームのすべてのコンポーネントの境界線の色を変更したり、明るい塗りつぶしの色とボタンコンポーネントを使用して CTA（コールトゥアクション）を設定したりできます。
 
-* [テーマレベルのスタイルの設定](#theme-customization-global-level)
+* [テーマレベルのスタイルの設定](#set-theme-level-styles)
 
-* [コンポーネントレベルのスタイルの設定](#component-based-customization)
+* [コンポーネントレベルのスタイルの設定](#set-component-level-styles)
 
-##### テーマレベルのスタイルの設定{#theme-customization-global-level}
+##### テーマレベルのスタイルの設定
 
 `variable.scss` ファイルには、テーマのグローバル変数が含まれます。これらの変数を更新すると、テーマレベルでスタイル関連の変更を行うことができます。テーマレベルのスタイルを適用するには、次の手順に従います。
 
@@ -197,7 +197,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 同様に `variable.scss` ファイルを使って、複数のアダプティブフォームコンポーネントに影響を与えるフォントのファミリーと種類、テーマとフォントの色、フォントのサイズ、テーマの間隔、エラーアイコン、テーマの境界線のスタイル、その他の変数を設定します。
 
-##### コンポーネントレベルのスタイルの設定 {#component-based-customization}
+##### コンポーネントレベルのスタイルの設定
 
 また、アダプティブフォームの特定のコアコンポーネントのフォント、色、サイズ、およびその他の CSS プロパティを変更することもできます（ボタン、チェックボックス、コンテナ、フッターなど）。組織のスタイルに合わせて特定のコンポーネントの CSS ファイルを編集して、ボタンやチェックボックスのスタイルを設定できます。コンポーネントのスタイルをカスタマイズするには：
 
@@ -219,14 +219,14 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >
    > テーマレベルとコンポーネントレベルの両方でスタイルを定義する場合は、コンポーネントレベルで定義されたスタイルが優先されます。
 
-#### &#x200B;4. カスタマイズされたテーマのテスト {#test-the-theme}
+#### &#x200B;4. カスタマイズされたテーマのテスト
 
 ローカル環境で変更をプレビューおよびテストし、様々な AEM コンポーネントの要件に応じてテーマをカスタマイズするには、次の手順を実行します。
 
-* 4.1 [テスト用のローカル環境の設定](#rename-env-file-theme-folder)
-* 4.2 [ローカル環境を使用してテーマをテストする](#start-a-local-proxy-server)
+* 4.1 [テスト用のローカル環境の設定](#41-configure-a-local-environment-for-testing)
+* 4.2 [ローカル環境を使用してテーマをテストする](#42-test-the-theme-using-a-local-environment)
 
-##### 4.1. テスト用のローカル環境の設定 {#rename-env-file-theme-folder}
+##### 4.1. テスト用のローカル環境の設定
 
 1. IDE でテーマフォルダーを開きます。例えば、Visual Studio Code エディターの `aem-forms-theme-canvas` フォルダーを開きます。
 1. テーマフォルダーで `env_template` ファイルの名前を `.env` ファイルに変更し、次のパラメーターを追加します。
@@ -251,7 +251,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![キャンバステーマの構造](/help/forms/assets/env-file-canvas-theme.png)
 
-##### 4.2 ローカル環境を使用したテーマのテスト {#start-a-local-proxy-server}
+##### 4.2 ローカル環境を使用したテーマのテスト
 
 1. テーマフォルダーのルートに移動します。この場合、テーマのフォルダー名は `aem-forms-theme-canvas` です。
 1. コマンドプロンプトまたはターミナルを開きます。
@@ -260,7 +260,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > `npm run live` コマンドの実行中にエラーが発生した場合、`npm run live` コマンドの前に次のコマンドを実行します。
+   > `npm run live` コマンドの実行中にエラーが発生した場合は、コマンドの前に次のコマンド `npm run live` 実行します。
    >
    > * `npm install parcel --save-dev`
    > * `npm i @parcel/transformer-sass`
@@ -319,16 +319,17 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 最新の変更を含むアダプティブフォームをプレビューできます。テーマフォルダーでの変更内容が完了したら、フロントエンドパイプラインを使用して、AEM Cloud Service 環境にテーマをデプロイします。
 
-#### &#x200B;5. テーマのデプロイ {#deploy-the-theme}
+#### &#x200B;5. テーマのデプロイ
 
 フロントエンドパイプラインを使用して Cloud Service 環境にテーマをデプロイするには、以下を行います。
 
-* 5.1 [テーマのリポジトリを作成](#create-a-new-theme-repo)
-* 5.2 [リポジトリへの変更のプッシュ](#committing-the-changes)
-* 5.3[Node.js のバージョンを 20 に設定する &#x200B;](#53-set-the-nodejs-version-to-20-set-node)
-* 5.4. [フロントエンドパイプラインの実行](#run-a-frontend-pipeline)
+* 5.1 [テーマのリポジトリを作成](#51-create-a-repository-for-theme)
+* 5.2 [リポジトリへの変更のプッシュ](#52-push-the-changes-to-the-repository)
+* 5.3 [ フロントエンドパイプラインの追加 ](#53-add-the-frontend-pipeline)
+* 5.4[Node.js のバージョンを 20 に設定する ](#54-set-the-nodejs-version-to-20)
+* 5.5. [フロントエンドパイプラインの実行](#55-run-the-frontend-pipeline)
 
-##### 5.1 テーマのリポジトリを作成{#create-a-new-theme-repo}
+##### 5.1 テーマのリポジトリを作成
 
 テーマをデプロイするには、リポジトリが必要です。[AEM Cloud Manager のリポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)にログインして、テーマの新しいリポジトリを追加します。
 
@@ -352,7 +353,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    >* 異なるテーマをデプロイするには、別々のフロントエンドパイプラインを作成する必要があります。
    >* 例えば、キャンバステーマ、WKND テーマ、イーゼルテーマ用に `custom-canvas-theme-repo` という同じレポジトリを使用できます。ただし、テーマをデプロイするには、別々のフロントエンドパイプラインを作成する必要があります。特定のテーマに対する今後のカスタマイズは、対応するフロントエンドパイプラインを使用してデプロイされます。
 
-##### 5.2. リポジトリへの変更のプッシュ {#committing-the-changes}
+##### 5.2. リポジトリへの変更のプッシュ
 
 次に、変更を AEM Forms Cloud Service のテーマリポジトリにプッシュします。
 
@@ -378,7 +379,29 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![コミット済みの変更](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Node.js のバージョンを 20 に設定する {#set-node}
+##### 5.3 フロントエンドパイプラインの追加
+
+テーマは、[フロントエンドパイプライン](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja)を使用してデプロイします。テーマをデプロイするには、次の手順を実行します。
+
+1. AEM Cloud Manager リポジトリにログインします。
+1. 「**[!UICONTROL パイプライン]**」セクションの「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
+1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
+1. 「**[!UICONTROL 続行]**」をクリックします。
+1. **[!UICONTROL ソースコード]**の手順で、
+**[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
+1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
+1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
+1. 「**[!UICONTROL 保存]**」をクリックします。
+   ![フロントエンドパイプラインを作成](/help/forms/assets/canvas-theme-frontendpipeline.gif)
+
+   パイプラインの設定が完了したら、コールトゥアクションカードが更新されます。
+
+   >[!NOTE]
+   >
+   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 ](#54-set-the-nodejs-version-to-20) します。
+
+##### 5.4 Node.js のバージョンを 20 に設定する
 
 パイプライン設定を使用して Node.js のバージョンを 20 に設定するには：
 
@@ -391,35 +414,15 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    * **タイプ** – 変数
 4. 「**保存**」をクリックして、設定を適用します。
 
-![&#x200B; パイプライン設定 &#x200B;](/help/forms/assets/pipeline-config.png)
+![ パイプライン設定 ](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.4. フロントエンドパイプラインの実行 {#run-a-frontend-pipeline}
+##### 5.5. フロントエンドパイプラインの実行
 
-テーマは、[フロントエンドパイプライン](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=ja)を使用してデプロイします。テーマをデプロイするには、次の手順を実行します。
-
-1. AEM Cloud Manager リポジトリにログインします。
-1. 「**[!UICONTROL パイプライン]**」セクションの「**[!UICONTROL 追加]**」ボタンをクリックします。
-1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
-1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
-1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
-**[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
-1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
-1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
-1. 「**[!UICONTROL 保存]**」をクリックします。
-   ![フロントエンドパイプラインを作成](/help/forms/assets/canvas-theme-frontendpipeline.gif)
-
-   パイプラインの設定が完了したら、コールトゥアクションカードが更新されます。
-
-   >[!NOTE]
-   >
-   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 &#x200B;](#set-the-nodejs-vesrion-to-20) します。
-
-1. 作成したパイプラインを右クリックします。
+1. **パイプライン** セクションに移動し、フロントエンドパイプラインを見つけます。
 1. 「**[!UICONTROL 実行]**」をクリックします。
 
-   ![run-a-pipleine](/help/forms/assets/canvas-theme-run-pipeline.png)
+   ![ パイプラインを実行 ](/help/forms/assets/canvas-theme-run-pipeline.png)
 
 作成が完了すると、オーサーインスタンスでテーマを使用できるようになります。これは、アダプティブフォームの作成中に作成ウィザードの「**[!UICONTROL スタイル]**」タブに表示されます。
 
@@ -427,7 +430,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 カスタマイズされたテーマは、コアコンポーネントベースのアダプティブフォームでブランドエクスペリエンスを作成する際に役立ちます。
 
-## アダプティブフォームにテーマを適用 {#using-theme-in-adaptive-form}
+## アダプティブフォームにテーマを適用
 
 アダプティブフォームにテーマを適用するには、次の手順を実行します。
 
@@ -443,7 +446,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 アダプティブフォームのテーマは、アダプティブフォームの作成時にスタイルを定義する、アダプティブフォームテンプレートの一部として使用されます。
 
-## ベストプラクティス {#best-practices}
+## ベストプラクティス
 
 * **別のテーマに属するアセットの回避**
 
@@ -455,7 +458,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
   コンテナパネルのレイアウト幅の変更はお勧めしません。コンテナパネルの幅を指定すると、幅が静的になり、様々なディスプレイに合わせて調整されません。
 
-## よくある質問 {#faq}
+## よくある質問
 
 **Q**：テーマフォルダーのカスタマイズをグローバルレベルとコンポーネントレベルの両方で行う場合、どちらのカスタマイズが優先されますか？
 
@@ -463,7 +466,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 
 
-## 関連トピック {#see-also}
+## 関連トピック
 
 {{see-also}}
 
