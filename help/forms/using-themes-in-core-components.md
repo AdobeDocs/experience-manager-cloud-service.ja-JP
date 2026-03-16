@@ -58,7 +58,7 @@ Forms as Cloud Service が提供する、コアコンポーネントベースの
 
 >[!NOTE]
 >
->アダプティブFormsがAEM Sites ページに埋め込まれている場合、サイトテーマにアダプティブForms テーマを埋め込むことで、サイトとフォームの両方に単一のテーマを使用できます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み ](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
+>アダプティブFormsがAEM Sites ページに埋め込まれている場合、サイトテーマにアダプティブForms テーマを埋め込むことで、サイトとフォームの両方に単一のテーマを使用できます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み &#x200B;](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
 
 ![テーマのカスタマイズのワークフロー](/help/forms/assets/workflow-of-customization-of-theme.png)
 
@@ -133,7 +133,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 >[!NOTE]
 >
->この手順は、フロントエンドパイプライン（専用のForms テーマリポジトリなど）を介してテーマを **スタンドアロン** パッケージとしてデプロイする場合に適用されます。 Forms テーマをAEM Sites テーマに **埋め込み** する場合は、フォームテーマに個別のテーマ名やバージョンを設定する必要はありません。サイトテーマ名が使用されます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み ](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
+>この手順は、フロントエンドパイプライン（専用のForms テーマリポジトリなど）を介してテーマを **スタンドアロン** パッケージとしてデプロイする場合に適用されます。 Forms テーマをAEM Sites テーマに **埋め込み** する場合は、フォームテーマに個別のテーマ名やバージョンを設定する必要はありません。サイトテーマ名が使用されます。 [AEM Sites テーマへのアダプティブ Forms テーマの埋め込み &#x200B;](/help/forms/embed-adaptive-forms-theme-in-site-theme.md) を参照してください。
 
 1. IDE でテーマフォルダーを開きます。例えば、Visual Studio Code Editor の `aem-forms-theme-canvas` フォルダーを開きます。
 
@@ -325,8 +325,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 * 5.1 [テーマのリポジトリを作成](#51-create-a-repository-for-theme)
 * 5.2 [リポジトリへの変更のプッシュ](#52-push-the-changes-to-the-repository)
-* 5.3 [ フロントエンドパイプラインの追加 ](#53-add-the-frontend-pipeline)
-* 5.4[Node.js のバージョンを 20 に設定する ](#54-set-the-nodejs-version-to-20)
+* 5.3 [&#x200B; フロントエンドパイプラインの追加 &#x200B;](#53-add-the-frontend-pipeline)
+* 5.4[Node.js のバージョンを 20 に設定する &#x200B;](#54-set-the-nodejs-version-to-20)
 * 5.5. [フロントエンドパイプラインの実行](#55-run-the-frontend-pipeline)
 
 ##### 5.1 テーマのリポジトリを作成
@@ -388,7 +388,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. Cloud Service 環境に応じて、「**[!UICONTROL 実稼動以外のパイプラインを追加]**」または「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。ここでは「**[!UICONTROL 実稼動パイプラインを追加]**」を選択します。
 1. **[!UICONTROL 設定]**&#x200B;手順に含まれる「**[!UICONTROL 実稼動パイプラインを追加]**」ダイアログで、パイプラインの名前を指定します。例えば、`customcanvastheme` という名前にします。
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL ソースコード]**の手順で、
+1. **[!UICONTROL ソースコード]**&#x200B;の手順で、
 **[!UICONTROL ターゲットデプロイメント]**／**[!UICONTROL フロントエンドコード]**&#x200B;オプションを選択します。
 1. 最新の変更を含む&#x200B;**[!UICONTROL リポジトリ]**&#x200B;と **[!UICONTROL Git ブランチ]**&#x200B;の値を選択します。ここで選択したリポジトリ名は `custom-canvas-theme-repo` で、Git ブランチは `main` です。
 1. 変更がルートフォルダーにある場合は、`/` として「**[!UICONTROL コードの場所]**」を選択します。
@@ -399,7 +399,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 ](#54-set-the-nodejs-version-to-20) します。
+   > Cloud Managerでフロントエンドパイプラインが失敗しないようにするには、[Node.js のバージョンを 20 に設定 &#x200B;](#54-set-the-nodejs-version-to-20) します。
 
 ##### 5.4 Node.js のバージョンを 20 に設定する
 
@@ -414,7 +414,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    * **タイプ** – 変数
 4. 「**保存**」をクリックして、設定を適用します。
 
-![ パイプライン設定 ](/help/forms/assets/pipeline-config.png)
+![&#x200B; パイプライン設定 &#x200B;](/help/forms/assets/pipeline-config.png)
 
 
 ##### 5.5. フロントエンドパイプラインの実行
@@ -422,7 +422,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. **パイプライン** セクションに移動し、フロントエンドパイプラインを見つけます。
 1. 「**[!UICONTROL 実行]**」をクリックします。
 
-   ![ パイプラインを実行 ](/help/forms/assets/canvas-theme-run-pipeline.png)
+   ![&#x200B; パイプラインを実行 &#x200B;](/help/forms/assets/canvas-theme-run-pipeline.png)
 
 作成が完了すると、オーサーインスタンスでテーマを使用できるようになります。これは、アダプティブフォームの作成中に作成ウィザードの「**[!UICONTROL スタイル]**」タブに表示されます。
 
