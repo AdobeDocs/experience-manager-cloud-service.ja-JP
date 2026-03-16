@@ -3,21 +3,21 @@ title: コンテンツ アドバイザーエージェント
 description: コンテンツの検出と最適化の背後にある大量の運用作業を吸収することでコンテンツの進化の摩擦を取り除き、今日の AI 時代に合わせてより迅速かつ確実に変更を提供できるようチームを支援する方法について説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
+exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
+source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '223'
 ht-degree: 1%
 
 ---
-
 
 # コンテンツ アドバイザーエージェント {#content-advisor}
 
 コンテンツアドバイザーエージェントは、コンテンツの検出と最適化の背後にある重い運用作業を吸収することで、コンテンツの進化の摩擦をなくし、チームが今日の AI 時代に対してより迅速かつ確実に変更を提供できるようにします。
 
-## ジョブ {#jobs}
+## 代理店 {#agents}
 
-Content Advisor Agent は、大量のジョブを自動的に処理します。
+コンテンツ・アドバイザ・エージェントは、それぞれ特定のジョブ・セットに特化した次のエージェントを使用して成果を提供します。
 
 * [コンテンツ検出](#discovery)
 * [コンテンツの最適化](#optimization)
@@ -28,15 +28,15 @@ Content Advisor Agent は、大量のジョブを自動的に処理します。
 >
 >AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
-### コンテンツ検出ジョブ {#discovery}
+### コンテンツ検出エージェント {#discovery}
 
-[&#x200B; コンテンツ検出ジョブ &#x200B;](/help/ai-in-aem/agents/content-advisor/discovery.md) は、ユーザーの意図を解釈し、AEM全体で最も関連性が高く承認済みのコンテンツを検索し、再利用のために表示して、適切なアセットを適切なタイミングで結び付けます。
+[ コンテンツ検出エージェント ](/help/ai-in-aem/agents/content-advisor/discovery.md) は、ユーザーの意図を解釈し、AEM全体で最も関連性が高く承認済みのコンテンツを検索し、再利用用に表示して、適切なアセットを適切なタイミングで結び付けます。
 
-### コンテンツ最適化ジョブ {#optimization}
+### コンテンツ最適化エージェント {#optimization}
 
-[&#x200B; コンテンツ最適化ジョブ &#x200B;](/help/ai-in-aem/agents/content-advisor/content-optimization.md) は、ビジュアル、画像およびビデオを様々なチャネルに合わせてパーソナライズおよび適応させ、エクスペリエンスのライフサイクル全体でエンゲージメントとコンバージョンを向上させます。
+[ コンテンツ最適化エージェント ](/help/ai-in-aem/agents/content-advisor/content-optimization.md) は、ビジュアル、画像およびビデオを様々なチャネルに合わせてパーソナライズおよび適応させ、エクスペリエンスのライフサイクル全体でエンゲージメントとコンバージョンを向上させます。
 
 ## 他のエージェントとの併用 {#other-agents}
 
