@@ -33,7 +33,7 @@ ht-degree: 74%
 
 Content Hubでは、AEM Governance Agent により、適切な人だけが適切なアセットに適切なタイミングでアクセスできるようになります。 きめ細かい属性ベースの制御と使用権限を適用することで、機密性の高いコンテンツを保護し、安全なコラボレーションを可能にします。 つまり、コンプライアンスリスクの軽減、ブランドの整合性の強化、迅速なワークフローにより、チームは、不正なアクセスや誤用を心配することなく、自信を持ってアセットを共有および再利用できます。 このセキュリティと柔軟性のバランスにより、組織全体の運用効率と信頼が向上します。
 
-![ 権限管理の概要 ](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+![&#x200B; 権限管理の概要 &#x200B;](/help/ai-in-aem/agents/governance/assets/permission-management.png)
 
 [!BADGE この機能の詳細情報]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
 
