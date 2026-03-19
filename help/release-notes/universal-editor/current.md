@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.03.12 リリースノート
-description: ユニバーサルエディターの 2026.03.12 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.03.19 リリースノート
+description: ユニバーサルエディターの 2026.03.19 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
+source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 47%
+source-wordcount: '197'
+ht-degree: 34%
 
 ---
 
 
-# ユニバーサルエディター 2026.03.12 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.03.19 リリースノート {#release-notes}
 
-ユニバーサルエディターの 2026 年 3 月 12 日リリースのリリースノートです。
+ユニバーサルエディターの 2026 年 3 月 19 日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,14 +26,17 @@ ht-degree: 47%
 
 ## 新機能 {#what-is-new}
 
-* コンテナの [&#x200B; コンテキストメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) を使用してコンポーネントを追加できるようになりました。
-
-## 早期導入機能 {#early-adopter}
-
-以下に示す今後の機能のテストおよびフィードバックの提供に興味がある場合は、Adobe IDに関連付けられたメールアドレスからAdobe カスタマーサクセスマネージャーにメールを送信してください。
-
-* シャローコピーがコンテンツフラグメントに実装されました。
+* [ ホーム画面 ](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button) に戻ったときにプロパティの項目が折りたたまれるようになりました。
+* [ アセットセレクター ](/help/implementing/universal-editor/configure-assets-selector.md) で [ フィルター定義がサポートされるようになりました ](/help/implementing/universal-editor/filtering.md)。
+* 選択した項目に使用可能なアクションがない場合、[ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) には、アクションにアクセスするための山形が表示されなくなります。
 
 ## その他の改善点 {#other-improvements}
 
-* ドキュメントオーサリングのサブ要素が nChild ルールに従わない問題が修正されました。
+* モデル/フィルター/コンポーネント定義がある場合、エディターでアプリを別のアプリに切り替えると、再取得されます。
+* DA をバックエンドとして使用する場合、画像を削除しても空の画像タグが残なくなりました。
+* DA をバックエンドとして使用する場合、ブロック内のクラスが適切に処理されるようになりました。
+* Open API でリモートアセットをオブジェクトとして適切に保存できるようになりました。
+
+## 重大な変更 {#breaking-change}
+
+* 安定性を向上させるには、すべての拡張機能を `@adobe/uix-guest` >= `1.1.7` に更新する必要があります。
