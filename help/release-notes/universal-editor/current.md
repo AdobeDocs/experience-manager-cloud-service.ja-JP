@@ -26,9 +26,9 @@ ht-degree: 34%
 
 ## 新機能 {#what-is-new}
 
-* [ ホーム画面 ](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button) に戻ったときにプロパティの項目が折りたたまれるようになりました。
-* [ アセットセレクター ](/help/implementing/universal-editor/configure-assets-selector.md) で [ フィルター定義がサポートされるようになりました ](/help/implementing/universal-editor/filtering.md)。
-* 選択した項目に使用可能なアクションがない場合、[ コンテキストメニュー ](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) には、アクションにアクセスするための山形が表示されなくなります。
+* [&#x200B; ホーム画面 &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button) に戻ったときにプロパティの項目が折りたたまれるようになりました。
+* [&#x200B; アセットセレクター &#x200B;](/help/implementing/universal-editor/configure-assets-selector.md) で [&#x200B; フィルター定義がサポートされるようになりました &#x200B;](/help/implementing/universal-editor/filtering.md)。
+* 選択した項目に使用可能なアクションがない場合、[&#x200B; コンテキストメニュー &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) には、アクションにアクセスするための山形が表示されなくなります。
 
 ## その他の改善点 {#other-improvements}
 

@@ -18,7 +18,7 @@ ht-degree: 15%
 
 ## フィルターの設定 {#configuring-filters}
 
-ユニバーサルエディターを使用する場合、フィルターを定義することで、特定の機能に許可されるオプションを制限できます。 フィルターとは、特定のコンテキストで使用できる項目またはアクションのリストです。 例えば、コンテナに挿入できるコンポーネントをフィルタリングしたり、RTE で使用可能なオプションを [ フィルタリングしたり ](/help/implementing/universal-editor/configure-rte.md) アセットセレクターで [ 使用可能なアセットを ](/help/implementing/universal-editor/configure-assets-selector.md) フィルタリングしたりできます。
+ユニバーサルエディターを使用する場合、フィルターを定義することで、特定の機能に許可されるオプションを制限できます。 フィルターとは、特定のコンテキストで使用できる項目またはアクションのリストです。 例えば、コンテナに挿入できるコンポーネントをフィルタリングしたり、RTE で使用可能なオプションを [&#x200B; フィルタリングしたり &#x200B;](/help/implementing/universal-editor/configure-rte.md) アセットセレクターで [&#x200B; 使用可能なアセットを &#x200B;](/help/implementing/universal-editor/configure-assets-selector.md) フィルタリングしたりできます。
 
 フィルターはすべて同様に定義する必要があります。
 
@@ -74,7 +74,7 @@ ht-degree: 15%
   data-aue-filter="container-filter"
   ```
 
-* [ コンポーネント定義 ](/help/implementing/universal-editor/component-definition.md) からフィルターを参照し、フィルターの ID を渡します。
+* [&#x200B; コンポーネント定義 &#x200B;](/help/implementing/universal-editor/component-definition.md) からフィルターを参照し、フィルターの ID を渡します。
 
   ```json
   {

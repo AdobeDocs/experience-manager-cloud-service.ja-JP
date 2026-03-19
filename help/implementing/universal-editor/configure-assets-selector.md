@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## 概要 {#overview}
 
-ユニバーサルエディターでは [ アセットセレクター ](/help/assets/overview-asset-selector.md#using-asset-selector) を使用して、作成者がコンテンツに挿入するアセットを参照して選択できるようにします。
+ユニバーサルエディターでは [&#x200B; アセットセレクター &#x200B;](/help/assets/overview-asset-selector.md#using-asset-selector) を使用して、作成者がコンテンツに挿入するアセットを参照して選択できるようにします。
 
-アセットセレクターは、ユニバーサルエディター内で [ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションについて説明します。
+アセットセレクターは、ユニバーサルエディター内で [&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションについて説明します。
 
 >[!NOTE]
 >
@@ -95,4 +95,4 @@ ht-degree: 1%
 
 ## その他のリソース {#additional-resources}
 
-アセットセレクターについて詳しくは、アセットドキュメントの [ マイクロフロントエンドアセットセレクター ](/help/assets/overview-asset-selector.md#using-asset-selector) のドキュメントを参照してください。
+アセットセレクターについて詳しくは、アセットドキュメントの [&#x200B; マイクロフロントエンドアセットセレクター &#x200B;](/help/assets/overview-asset-selector.md#using-asset-selector) のドキュメントを参照してください。
