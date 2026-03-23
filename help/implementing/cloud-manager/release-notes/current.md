@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service の Cloud Manager 2026.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 23%
+source-wordcount: '731'
+ht-degree: 22%
 
 ---
 
@@ -28,20 +28,20 @@ AEM as a Cloud Service の Cloud Manager 2026.3.0 のリリース日は 2026年3
 
 ## 新機能 – Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Managerでは、&lbrace; コンテンツのコピー** 読み込みに対して **ワイプ** オプションをサポートするよう **なりました**
+* **Cloud Managerは、** コンテンツのコピー&#x200B;**のインポート**&#x200B;に対して&#x200B;**ワイプ** オプションをサポートするようになりました
 
-  **ワイプ** を有効にすると、Cloud Managerは、読み込みを開始する前に宛先にある既存のコンテンツを削除するので、新しい状態から開始して、既存のコンテンツとの競合を避けることができます。 **ワイプ** を無効にしたままにすると、Cloud Managerでは、既存のコピー先コンテンツの上に新しいコンテンツがインポートされます。 ワイプが開始される前に確認プロンプトが表示され、Cloud Managerはトレーサビリティのためにワイプ操作と読み込みの詳細をログに記録します。
+  **ワイプ**&#x200B;を有効にすると、Cloud Managerは読み込みを開始する前に読み込み先の既存のコンテンツを削除するので、クリーンスレートから開始して、既存のコンテンツとの競合を避けることができます。 **ワイプ**&#x200B;を無効のままにすると、Cloud Managerは既存の宛先コンテンツの上に新しいコンテンツを読み込みます。 ワイプを開始する前に確認プロンプトが表示され、Cloud Managerはワイプアクションと読み込みの詳細を記録してトレーサビリティを確保します。
 
-  [&#x200B; コンテンツをコピー &#x200B;](/help/implementing/developing/tools/content-copy.md#copy-content) も参照してください。
+  [ コンテンツをコピー](/help/implementing/developing/tools/content-copy.md#copy-content)も参照してください。
 
-* **AEM Experience Hubでの UI 拡張機能のサポート**
-[AEM Experience Hub](https://experience.adobe.com/experiencemanager) で UI 拡張機能がサポートされるようになり、開発者はAdobe App Builderを使用して作成されたカスタム機能やウィジェットを使用してインターフェイスを拡張できるようになりました。
+* **AEM Experience HubでのUI拡張機能のサポート**
+[AEM Experience Hub](https://experience.adobe.com/experiencemanager)のUI拡張機能のサポートが有効になり、開発者はAdobe App Builderを使用して構築されたカスタム機能とウィジェットでインターフェイスを拡張できるようになりました。
 
-  詳しくは、[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/) を参照してください。
+  詳しくは、[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)を参照してください。
 
 * **安定性、パフォーマンス、信頼性の向上**
 
-  このリリースには、Cloud Managerの安定性、パフォーマンス、信頼性を向上させる最適化およびメンテナンスの更新が含まれています。
+  このリリースには、Cloud Managerの安定性、パフォーマンス、信頼性を向上させる最適化とメンテナンスのアップデートが含まれています。
 
 
 ## Beta プログラム {#private-beta-program}
@@ -50,9 +50,9 @@ Cloud Manager の Beta プログラムに参加すると、一般リリース前
 
 >[!IMPORTANT]
 >
->Beta リリースには不具合が含まれている場合があり、いかなる保証もなく「現状のまま」提供されます。 Adobeは、ベータ版リリースの保守、修正、更新、変更、またはその他のサポート（Adobe サポートサービスを通じてまたはその他の方法で）を行う義務を負いません。 Adobeでは、お客様に対して、ベータ版リリースが正しく機能するか、パフォーマンスが向上するか、あるいはこれらに付随するドキュメントや資料を使用しないよう、注意して助言しています。 ベータ版の機能と API は、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様自身の責任で行います。
+>Beta リリースには欠陥が含まれている場合があり、いかなる保証もなしに「現状のまま」提供されます。 Adobeは、ベータ版のリリースを（Adobe サポートサービスまたはその他の方法により）維持、修正、更新、変更、またはその他の方法でサポートする義務を負いません。 Adobeでは、ベータ版リリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないように注意することをお勧めします。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 したがって、ベータ版リリースの使用は、完全にお客様の責任で行います。
 
-[AEM Beta プログラム &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) も参照してください。
+[AEM Beta プログラム ](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)も参照
 
 現在、次の機能が利用できます。
 <!--
@@ -60,15 +60,15 @@ Cloud Manager の Beta プログラムに参加すると、一般リリース前
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
-### AI を利用した IDE 向けCloud Manager MCP サーバー{#mcp-server-for-cm}
+### AI搭載IDE用Cloud Manager MCP サーバー{#mcp-server-for-cm}
 
-Cloud Manager Public API を AI 対応 IDE のツール（Cursor など）として公開する MCP （Model Context Protocol）サーバーを試すことができるようになりました。 接続すると、対話型プロンプトを使用してプログラム、パイプライン、環境、リポジトリを一覧表示および管理できるようになり、エディターを離れることなく迅速に移動できます。
+Cloud Manager パブリック APIをAI対応IDE （Cursorなど）のツールとして公開するMCP （Model Context Protocol）サーバーを試すことができます。 接続したら、対話型プロンプトを使用してプログラム、パイプライン、環境、リポジトリを一覧表示および管理し、エディターから離れることなく迅速に移動できます。
 
-[AEM as a Cloud Serviceでの MCP の使用 &#x200B;](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) のドキュメントを参照してください。
+ドキュメント [AEM as a Cloud ServiceでのMCPの使用](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)を参照してください。
 
-チュートリアル [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#) を参照してください。
+チュートリアル [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#)を参照してください。
 
-ベータ版にご興味がありますか？Adobeの OrgID とプログラム ID を記載したメール [0&rbrace;GRP-AEM-CM-MCP-FEEDBACK@adobe.com&rbrace; を送信します。](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)
+ベータ版にご興味がありますか？Adobeの組織IDとプログラム IDを[GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com)に電子メールで送信します。
 
 
 <!--
@@ -85,28 +85,30 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### モジュールのキャッシュによるビルドの高速化 {#quick-build-cm-pipelines}
 
-新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。これは、コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
+新しいビルドモデルでは、（リポジトリ全体ではなく）変更されたモジュールのみを、モジュールレベルのキャッシュを使用してコンパイルし、ビルド時間を短縮します。 これは、コード品質、フルスタック、ステージ専用のパイプラインに適用されます。
 
-![&#x200B; フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス &#x200B;](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
-*フルビルドとスマートビルドの 2 つのビルド戦略オプションが表示されている実稼動以外のパイプラインを編集ダイアログボックス。*
+![実稼動以外のパイプラインを編集ダイアログボックスに、フルビルドとスマートビルドの2つのビルド戦略オプションが表示されている](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+*実稼動以外のパイプラインを編集ダイアログボックスに、フルビルドとスマートビルドの2つのビルド戦略オプションが表示されている*。
 
-**パイプラインを追加/編集** ダイアログボックスの「**Sourceコード**」タブにある新しい **ビルド方法** セクションで、次のいずれかのビルドオプションを選択できます。
+**パイプラインの追加/編集** ダイアログボックスの「**Source コード**」タブで、新しい&#x200B;**ビルド戦略** セクションを使用して、次のいずれかのビルドオプションを選択できます。
 
-* **フルビルド** – 実行ごとにリポジトリ内のすべてのモジュールをビルドします。
+* **完全ビルド** – 実行ごとにリポジトリ内のすべてのモジュールをビルドします。
 * **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドし、全体的なビルド時間を短縮します。
 
-使用するパイプラインを制御できます **スマートビルド**。 ベータ版では、このオプションは **コード品質** パイプラインと **開発デプロイメント** パイプラインにのみ表示されます。
+**スマートビルド**&#x200B;を使用するパイプラインを制御します。 ベータ版では、このオプションは&#x200B;**コード品質**&#x200B;および&#x200B;**開発フルスタック展開** パイプラインにのみ表示されます。
 
-ご興味がある場合Adobe OrgID とプログラム ID を記載して [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) にメールでお問い合わせください。
+[実稼動以外のパイプラインでのスマートビルドの使用](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)および[実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)を参照してください
+
+ご興味がある場合 Adobe OrgID とプログラム ID を記載して [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) にメールでお問い合わせください。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
 ## バグ修正 {#bug-fixes}
 
-* 復元ポイントを取得する際に、Restore Points API が 500 エラーを返す可能性がある問題を修正しました。 エンドポイントで null 値が正しく処理されるようになり、一貫性と信頼性の高い応答が保証されるようになりました。 （CMGR-72963）
-* Cloud Managerは、`.git` サフィックスの付いた GitHub リポジトリ URL または付いていない GitHub リポジトリ URL を受け入れるようになり、API の動作を UI に合わせ、リポジトリのオンボーディングをより柔軟にします。 （CMGR-73296）
-* 製品プロファイル名の検証で大文字と小文字が区別されなくなり、大文字とのみ異なる名前のプロファイルを作成する際のエラーを防ぐようになりました。 （CMGR-74075）
-* 同じパイプライン実行から複数の復元操作を実行できるようになりました。これにより、新しいパイプラインの実行を必要とせずに、ステージング環境や実稼動環境などの環境を順次復元できます。 （CMGR-73538）
+* 復元ポイントを取得する際に復元ポイント APIで500 エラーが返される問題を解決しました。 エンドポイントがnull値を正しく処理し、一貫性のある信頼性の高い応答を保証するようになりました。 （CMGR-72963）
+* Cloud Managerは、`.git`接尾辞の有無にかかわらずGitHub リポジトリ URLを受け入れるようになり、APIの動作とUIを調整し、リポジトリオンボーディングをより柔軟にしました。 （CMGR-73296）
+* 製品プロファイル名の検証では、大文字と小文字が区別されなくなりました。大文字と小文字しか区別されない名前のプロファイルを作成する際にエラーが発生するのを防ぎます。 （CMGR-74075）
+* 同じパイプライン実行から複数のリストア操作を実行できるようになり、新しいパイプライン実行を必要とせずに、ステージや実稼動などの環境のシーケンシャルリストアを有効にできるようになりました。 （CMGR-73538）
 
 
 <!-- ## Known issues {#known-issues} -->
