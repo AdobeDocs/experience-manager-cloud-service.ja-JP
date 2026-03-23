@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
+source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 98%
 
 追加の地域を指定しない場合は、[環境を作成した後でも指定できます。](#edit-regions)
 
-プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager API を使用して追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[ アドバンストネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager APIを使用してパブリッシュリージョンを追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ### 複数の公開地域の編集 {#edit-regions}
 
@@ -131,7 +131,7 @@ ht-degree: 98%
 
 本番環境に対する変更は、本番環境とステージング環境の両方に適用されます。 複数の公開地域に対する変更を編集できるのは、本番環境のみです。
 
-プログラムの[高度なネットワーク](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、追加の公開地域を環境に追加する前に、このプロビジョニングを行うことをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[高度なネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、環境にパブリッシュ領域を追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ## 環境の詳細の表示 {#viewing-environment}
 
@@ -155,7 +155,7 @@ ht-degree: 98%
 
 1. 環境ページで、次のいずれかの操作を行います。
 
-   * リストで環境をクリックすると、その環境の詳細が表示されます。
+   * リスト内の環境をクリックして、その詳細を表示します。
 
    ![環境の詳細](assets/environ-preview1.png)
 
@@ -305,7 +305,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 1. **環境**&#x200B;カードから、![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**Developer Console**」をクリックします。
 
-ブラウザーに新しいタブが開き、**Developer Console** へのログオンページが表示されます。
+ブラウザーで新しいタブが開き、**Developer Console**&#x200B;へのログインページが表示されます。
 
 ![Developer Console へのログイン](assets/environ-devconsole.png)
 
@@ -343,7 +343,7 @@ IP 許可リストを管理するには、プログラムの&#x200B;**概要**&#
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
-IP許可リストを適用すると、定義されたすべての IP 範囲が環境内のオーサーサービスまたはパブリッシュサービスにリンクされます。
+IP許可リストを適用すると、定義されたすべてのIP範囲が、環境内のオーサーサービスまたはパブリッシングサービスにリンクされます。
 
 >[!TIP]
 >
