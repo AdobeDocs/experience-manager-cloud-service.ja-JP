@@ -92,7 +92,7 @@ ht-degree: 33%
    * **Git ブランチ** - ドロップダウンリストから、選択したリポジトリ内のどのブランチからパイプラインを構築するかを選択します。 デフォルトは、`main` です。 パイプラインは、選択したブランチをビルドとデプロイメントのソースとして使用します。 必要に応じて、**更新**&#x200B;をクリックして、選択したリポジトリで使用可能なブランチのリストを更新します。 最近作成したブランチがリストに表示されない場合は、このオプションを使用します。
    * **戦略の構築**
       * **完全ビルド** - リポジトリ内のすべてのモジュールを毎回作成します
-      * BETA **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[ スマートビルドを使用する方法について詳しく見る](#about-smart-build)。
+      * BETA **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[&#x200B; スマートビルドを使用する方法について詳しく見る](#about-smart-build)。
 
         >[!IMPORTANT]
         >
@@ -102,10 +102,10 @@ ht-degree: 33%
 
 1. 「**パイプライン**」セクションでは、パイプラインがデプロイメントパイプラインの場合、テストフェーズを実行することを選択できます。 このフェーズで有効にするオプションを選択します。どのオプションも選択していない場合、テストフェーズはパイプラインの実行中に表示されません。
 
-   * **製品機能テスト** - [製品機能テスト ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を開発環境に対して実行します。
-   * **カスタム機能テスト** - [ カスタム機能テスト ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を開発環境に対して実行します。
-   * **カスタム UI テスト** - カスタムアプリケーションの[ カスタム UI テスト ](/help/implementing/cloud-manager/ui-testing.md)を実行します。
-   * **エクスペリエンス監査** - [ エクスペリエンス監査](/help/implementing/cloud-manager/reports/report-experience-audit.md)を実行
+   * **製品機能テスト** - [製品機能テスト &#x200B;](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を開発環境に対して実行します。
+   * **カスタム機能テスト** - [&#x200B; カスタム機能テスト &#x200B;](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を開発環境に対して実行します。
+   * **カスタム UI テスト** - カスタムアプリケーションの[&#x200B; カスタム UI テスト &#x200B;](/help/implementing/cloud-manager/ui-testing.md)を実行します。
+   * **エクスペリエンス監査** - [&#x200B; エクスペリエンス監査](/help/implementing/cloud-manager/reports/report-experience-audit.md)を実行
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
