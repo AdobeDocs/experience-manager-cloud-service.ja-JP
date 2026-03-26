@@ -4,7 +4,7 @@ description: ヘッドレスコンテンツ配信の Adobe Experience Manager as
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8e962dc399f12277432243bda401f16eddad7087
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 99%
@@ -313,7 +313,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
 Content-Type: application/json
-Authorization: Basic YWRtaW46YWRtaW4=
+Authorization: Basic yourauthorizationcode
 Accept: application/json
  
 {
