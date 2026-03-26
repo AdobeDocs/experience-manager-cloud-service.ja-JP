@@ -150,7 +150,7 @@ Model Context Protocol （MCP）は、AI コーディングツールを外部の
 
 ### コンテンツパッケージのインストール {#install-the-content-package}
 
-[ ソフトウェア配布ポータル ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)からコンテンツ パッケージをダウンロードし、`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`のパッケージ マネージャーを使用して`/crx/packmgr`をローカル クイックスタートにインストールします。
+[&#x200B; ソフトウェア配布ポータル &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)からコンテンツ パッケージをダウンロードし、`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`のパッケージ マネージャーを使用して`/crx/packmgr`をローカル クイックスタートにインストールします。
 
 **互換性：** AEM SDK `2026.2.24678.20260226T154829Z-260200`以降で検証されました。
 
