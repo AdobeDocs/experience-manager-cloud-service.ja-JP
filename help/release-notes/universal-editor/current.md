@@ -27,7 +27,7 @@ ht-degree: 46%
 ## 新機能 {#what-is-new}
 
 * [Document Authoring アセット設定](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)が設定エンドポイントを通じて公開されるようになりました。
-* [拡張ポイント ](/help/implementing/universal-editor/extending.md#extending-ui)がコンテキストメニューに追加されました。
+* [拡張ポイント &#x200B;](/help/implementing/universal-editor/extending.md#extending-ui)がコンテキストメニューに追加されました。
 * 新しいカスタムワークフローアイコンがExtensibility DynamicIcon システムに追加され、UIにディープ/シャローのキャンセル状態が表示されるようになりました。
 
 ## その他の改善点 {#other-improvements}
