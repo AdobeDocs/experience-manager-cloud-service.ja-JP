@@ -83,11 +83,11 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
 ![&#x200B; インタラクティブ通信設定 – アソシエイト UI](/help/forms/assets/associate-ui-configure-workflow.png)のワークフロー設定
 
-**Externalize workflow data storage**&#x200B;が有効になっている場合は、Workflow dataが外部ストレージ（Azureなど）に保存されるようにexternaliserを設定します。 [&#x200B; ワークフローのデータの外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)を参照してください。
+**Externalize workflow data storage**&#x200B;が有効になっている場合は、Workflow dataが外部ストレージ（Azureなど）に保存されるようにexternaliserを設定します。 [&#x200B; ワークフローのデータの外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ja)を参照してください。
 
 ## 関連トピック
 
 - [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [&#x200B; ワークフローのデータを外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [&#x200B; ワークフローのデータを外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ja)
