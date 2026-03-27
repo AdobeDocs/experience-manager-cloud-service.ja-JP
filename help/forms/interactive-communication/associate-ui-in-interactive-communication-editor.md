@@ -101,7 +101,7 @@ ht-degree: 4%
 3. **編集可能なフィールドを設定** – 関係者が編集および検証を設定できるフィールドを有効にします。
 4. **公開して共有** — ICを公開し、関連付けを共有します。
 
-スクリーンショットと送信/ワークフローの動作（作成者は作成者、公開時はアソシエート）に関する手順については、[ インタラクティブ通信のアソシエート UIを有効にして設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)を参照してください。 IC送信からPDFを生成するワークフローを構築するには、[ アソシエイト UIの送信ワークフロー – IC PDF出力の生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)を参照してください。
+スクリーンショットと送信/ワークフローの動作（作成者は作成者、公開時はアソシエート）に関する手順については、[&#x200B; インタラクティブ通信のアソシエート UIを有効にして設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)を参照してください。 IC送信からPDFを生成するワークフローを構築するには、[&#x200B; アソシエイト UIの送信ワークフロー – IC PDF出力の生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)を参照してください。
 
 **アソシエイト UI**&#x200B;は、構造化されたコンテンツ オーサリングとリアルタイムの顧客エンゲージメントのギャップを埋めます。\
 直感的なデザイン、堅牢なバックエンド設定、厳格なコンプライアンス管理を組み合わせることで、企業は&#x200B;**迅速かつ正確でパーソナライズされたコミュニケーション**&#x200B;を大規模に提供できます。
