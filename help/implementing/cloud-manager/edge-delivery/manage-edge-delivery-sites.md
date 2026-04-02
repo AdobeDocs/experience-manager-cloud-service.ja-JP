@@ -4,10 +4,10 @@ description: Edge Delivery サイトに CDN 設定を追加する方法や、Edg
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
+source-wordcount: '1103'
+ht-degree: 64%
 
 ---
 
@@ -39,8 +39,53 @@ Adobe Cloud Manager では、次のようないくつかの理由で Edge Delive
 Edge Delivery サイトテーブルで、名前を変更するサイトの行の末尾にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。「**名前を変更**」をクリックします。
 
 1. **Edge Delivery サイトを編集**&#x200B;ダイアログボックスの「**サイト名**」テキストフィールドに、サイトの新しい名前を入力します。
-
 1. 「**編集**」をクリックします。
+
+
+## Edge Delivery サイトのパブリッシュ層をアクティブ化する（Beta） {#activate-publish-tier-for-eds}
+
+>[!NOTE]
+>
+>ここで説明する公開機能はBetaにあります。 Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
+
+この機能は、柔軟なパブリッシュ階層機能が有効になっているプログラムの&#x200B;**AEM オーサリング** オプションで作成されたEdge Delivery サイトにのみ適用されます。
+
+Edge Delivery サイトでAEM オーサリングを使用している場合、Edge Deliveryがコンテンツ配信を処理するため、パブリッシュ層はデフォルトでプロビジョニングされません。 ただし、サイトで必要な場合は、いつでもパブリッシュ層をアクティブ化できます。 たとえば、Edge Deliveryと並行して従来のAEM公開をサポートする必要がある場合。
+
+Edge Delivery サイトを作成し、そのステータスがCloud Managerで&#x200B;**検証済み**&#x200B;と表示されたら、AEM ユニバーサルエディターを使用してコンテンツをオーサリングおよび公開できます。
+
+**Cloud Managerからユニバーサルエディターにアクセスするには：**
+
+1. 「Edge Delivery」タブの「Edge Delivery サイト」リストで、サイトを見つけます。
+
+   ![AEM オーサーからEdge Deliveryへのコンテンツの公開。](/help/implementing/cloud-manager/edge-delivery/assets/eds-content-source-link.png)
+
+1. サイトの行にある&#x200B;**コンテンツSource** リンクをクリックします。 このリンクをクリックすると、AEM ユニバーサルエディターページが開き、サイトのコンテンツを作成および編集できます。—>
+
+**Edge Delivery サイトのパブリッシュ層をアクティブ化するには：**
+
+1. **プログラムの概要** ページの&#x200B;**配信を公開** タブの&#x200B;**環境** カードで、情報アイコンをクリックします。
+
+1. 情報ポップアップの「**公開URL**」で「**クリックしてアクティブ化**」を選択し、Cloud Manager ユーザーインターフェイスでパブリッシュ層のプロビジョニングを有効にします。
+
+   ![ クリックしてパブリッシュ層プロビジョニングをアクティブ化](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+
+1. パブリッシュ層をアクティブ化ダイアログボックスで、**アクティブ化**&#x200B;をクリックします。
+
+   ![ パブリッシュ層をアクティブ化ダイアログボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+
+   アクティブ化すると、パブリッシュ層が自動的にプロビジョニングされます。 または、作成者がAEM ユーザーインターフェイスからコンテンツを直接公開しようとすると、パブリッシュ層を自動的にプロビジョニングできます。
+
+   パブリッシュ層がアクティブ化され、正常にプロビジョニングされると、**クリックしてアクティブ化** リンクがグレー表示または使用できなくなります。
+
+* **AEM オーサー**&#x200B;から – AEM オーサリングインターフェイスで、**クイック公開**&#x200B;をクリックして、コンテンツをEdge Delivery サイトに直接公開します。 Edge Deliveryで配信を処理する場合、この操作に公開層は必要ありません。
+
+公開後、サイトの`.page` URLでコンテンツをプレビューするか、`.live` URLでライブ表示します。—>
+
+>[!NOTE]
+>
+>パブリッシュ層をアクティブ化すると、パブリッシュインフラストラクチャが環境に追加されます。 この機能は、プログラムのリソース消費に影響を与える可能性があります。 パブリッシュ層がプログラムレベルで必要かどうかを設定するには、[柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+
 
 ## Edge Delivery サイトの削除 {#delete-edge-delivery-site}
 
