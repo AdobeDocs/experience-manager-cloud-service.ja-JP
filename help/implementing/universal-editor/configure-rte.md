@@ -1,42 +1,42 @@
 ---
-title: ユニバーサルエディター用の RTE の設定
-description: ユニバーサルエディターでリッチテキストエディター（RTE）を設定する方法を説明します。
+title: ユニバーサルエディターのRTEの設定
+description: ユニバーサルエディターでのリッチテキストエディター（RTE）の設定方法について説明します。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
 
 
-# ユニバーサルエディター用の RTE の設定 {#configure-rte}
+# ユニバーサルエディターのRTEの設定 {#configure-rte}
 
-ユニバーサルエディターでリッチテキストエディター（RTE）を設定する方法を説明します。
+ユニバーサルエディターでのリッチテキストエディター（RTE）の設定方法について説明します。
 
 ## 概要 {#overview}
 
-ユニバーサルエディターには、作成者がテキストの編集時に書式設定の変更を適用できるリッチテキストエディター（RTE）がインプレースおよびプロパティパネルで用意されています。
+ユニバーサルエディターは、リッチテキストエディター（RTE）を配置してプロパティパネルに表示し、作成者がテキストを編集する際に書式変更を適用できるようにします。
 
-この RTE は、[&#x200B; コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md) このドキュメントでは、使用可能な設定オプションと例について説明します。
+このRTEは、[ コンポーネントフィルターを使用して設定できます。](/help/implementing/universal-editor/filtering.md)このドキュメントでは、使用可能な設定オプションと例について説明します。
 
 >[!NOTE]
 >
->ユニバーサルエディタープロジェクトを開始すると、バックエンドがサポートするすべてのリッチテキスト機能（Edge Deliveryを使用したAEMまたはヘッドレス実装）が自動的にアクティブになります。
+>ユニバーサルエディタープロジェクトを開始すると、バックエンドがサポートするすべてのリッチテキスト機能（Edge Deliveryまたはヘッドレス実装を備えたAEM）が自動的にアクティブになり、RTEのモーダルエディターウィンドウ [で利用できます。](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
->* 不要なオプションは無効にすることができます。
->* 使用しているプロジェクトタイプと互換性のないオプションのアクティブ化はサポートされていません。
+>* 不要なオプションを無効にすることができます。
+>* プロジェクトの種類と互換性のないオプションのアクティブ化はサポートされていません。
 
-## 設定の構造 {#structure}
+## 構成構造 {#structure}
 
-RTE 設定は、次の 2 つの部分で構成されます。
+RTE設定は、次の2つの部分で構成されています。
 
-* [`toolbar`](#toolbar): ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。
+* [`toolbar`](#toolbar): ツールバーの設定では、UIで使用できる編集オプションとその構成方法を制御します。
 * [`actions`](#actions): アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。
 
-これらの設定は、プロパティ [&#x200B; を使用して、](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター `rte` の一部として定義できます。
+これらの設定は、プロパティ [を持つ](/help/implementing/universal-editor/filtering.md) コンポーネントフィルター`rte`の一部として定義できます。
 
 ```json
 [
@@ -59,7 +59,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 ## ツールバー設定 {#toolbar}
 
-ツールバー設定は、UI で使用できる編集オプションとその編成方法を制御します。 使用可能なセクションは次のとおりです
+ツールバー設定では、UIで使用できる編集オプションとその構成方法を制御します。 これらのセクションは
 
 ```json
 {
@@ -77,7 +77,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -92,13 +92,13 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 アクション設定を使用すると、個々の編集アクションの動作と外観をカスタマイズできます。 使用可能なセクションを以下に示します。
 
-### 一般的なアクションオプション {#common-action-options}
+### 共通のアクションオプション {#common-action-options}
 
-ほとんどのアクションは、次の共通オプションをサポートしています。
+ほとんどのアクションは、次の一般的なオプションをサポートしています。
 
-* `shortcut?`: string - アクションのデフォルトのキーボードショートカット（存在する場合）をオーバーライドします
-* `label?`: string - UI のアクションに使用されるラベルを上書きします
-* `hideInline?`:boolean -`true` 定すると、コンテキスト内（インライン） RTE エディターツールバーからこのアクションを非表示にします
+* `shortcut?`：文字列 – アクションのデフォルトのキーボードショートカットを上書きします（存在する場合）
+* `label?`：文字列 – UIのアクションに使用されるラベルを上書きします
+* `hideInline?`: ブール値 – `true`の場合、インコンテクスト （インライン） RTE エディターツールバーからこのアクションを非表示にします
 
 ```json
 {
@@ -114,7 +114,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 ### アクションの書式設定 {#format}
 
-フォーマットアクションは、書式設定を適用するために使用され、セマンティックバリアントを選択するためのHTML タグの切り替えをサポートします。 以下の節を使用できます。
+書式設定アクションを使用して書式設定を適用し、HTMLのタグ切り替えをサポートしてセマンティックバリアントを選択します。 次のセクションを使用できます。
 
 ```json
 {
@@ -136,9 +136,9 @@ RTE 設定は、次の 2 つの部分で構成されます。
 }
 ```
 
-### リストアクション {#list}
+### アクションのリスト {#list}
 
-リストアクションは、HTML構造を制御するためのコンテンツラッピングをサポートしています。 以下の節を使用できます。
+リストアクションは、HTML構造を制御するコンテンツラッピングをサポートしています。 次のセクションを使用できます。
 
 ```json
 {
@@ -156,9 +156,9 @@ RTE 設定は、次の 2 つの部分で構成されます。
 }
 ```
 
-### テーブルアクション {#table-actions}
+### テーブルのアクション {#table-actions}
 
-テーブルアクションは、テーブルセルのHTML構造を制御するコンテンツラッピングをサポートしています。
+テーブルアクションは、テーブルセル内のHTML構造を制御するためのコンテンツラッピングをサポートしています。
 
 ```json
 {
@@ -172,14 +172,14 @@ RTE 設定は、次の 2 つの部分で構成されます。
 }
 ```
 
-#### テーブル構成オプション  {#table-configuration-options}
+#### テーブル設定オプション  {#table-configuration-options}
 
-* `wrapInParagraphs`: `false` （デフォルト） – テーブルのセルに、ラップされていないテキストコンテンツが含まれている
-* `wrapInParagraphs`:`true` - テーブルのセルでコンテンツが段落タグで折り返される
+* `wrapInParagraphs`: `false` （既定値） – テーブル セルにラップされていないテキスト コンテンツが含まれています
+* `wrapInParagraphs`: `true` – 表セルは段落タグでコンテンツをラップします
 
 サンプル：
 
-`wrapInParagraphs` の場合：`false`:
+`wrapInParagraphs`の場合：`false`
 
 ```html
 <!-- Single line -->
@@ -189,7 +189,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 <td>Line 1<br />Line 2</td>
 ```
 
-`wrapInParagraphs` の場合：`true`:
+`wrapInParagraphs`の場合：`true`
 
 ```html
 <!-- Single paragraph -->
@@ -204,11 +204,11 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 >[!NOTE]
 >
->段落を展開すると（`wrapInParagraphs`:`false`）、サニタイザーは自動的に複数の段落間に `<br>` のタグを挿入し、改行を保持します。 これは、HTMLの標準と、主要なリッチテキストエディターに共通するプラクティスに従います。
+>段落（`wrapInParagraphs`: `false`）をラップ解除すると、サニタイザーは複数の段落間に`<br>` タグを自動的に挿入して、視覚的な改行を保持します。 これは、主要なリッチテキストエディターでHTMLの標準と一般的な方法に従っています。
 
-### リンクアクション {#link}
+### アクションをリンク {#link}
 
-リンクアクションは、リンクの動作を管理するためのターゲット属性コントロールをサポートしています。 以下の節を使用できます。
+リンクアクションは、リンク動作を管理するためのターゲット属性コントロールをサポートします。 次のセクションを使用できます。
 
 ```json
 {
@@ -228,14 +228,14 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 #### リンク設定オプション {#link-options}
 
-* `hideTarget`:`false` （デフォルト） – リンクにターゲット属性を含め、`_self`、`_blank` などを許可します。
-* `hideTarget`: `true` - リンクからターゲット属性全体を除外します
+* `hideTarget`: `false` （既定値） – リンクにターゲット属性を含め、`_self`、`_blank`などを許可します。
+* `hideTarget`: `true` - リンクからターゲット属性を完全に除外
 
 `unlink` アクションは、カーソルが既存のリンク内に配置されている場合にのみ表示されます。 テキストコンテンツを保持しながら、リンクの書式設定を削除します。
 
-### 画像アクション {#image}
+### 画像のアクション {#image}
 
-画像アクションは、レスポンシブな画像マークアップを生成するための画像要素のラッピングをサポートしています。 以下の節を使用できます。
+画像アクションは、画像要素のラッピングをサポートして、レスポンシブ画像マークアップを生成します。 次のセクションを使用できます。
 
 ```json
 {
@@ -251,12 +251,12 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 #### 画像設定オプション {#image-options}
 
-* `wrapInPicture`: `false` （デフォルト） – 単純な `<img>` 要素を生成します
-* `wrapInPicture`:`true` - レスポンシブデザイン用に画像を `<picture>` 要素に含める
+* `wrapInPicture`: `false` （デフォルト） – 単純な`<img>`要素を生成します
+* `wrapInPicture`: `true` - レスポンシブデザイン用に`<picture>`要素で画像をラップ
 
-### インデントの設定 {#indentation}
+### インデント設定 {#indentation}
 
-インデントには、インデント動作の範囲を制御する機能レベルの設定に加えて、ショートカットとラベル用の個々のアクション設定があります。
+インデントには、インデント動作の範囲を制御する機能レベルの設定に加えて、ショートカットとラベルの個々のアクション設定があります。
 
 ```json
 {
@@ -281,23 +281,99 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 #### インデント範囲オプション {#indentation-options}
 
-* `scope`: `all` （デフォルト） – インデント/インデント解除はすべてのコンテンツに適用されます。
-   * リスト：リスト項目をネスト/ネスト解除
+* `scope`: `all` （デフォルト） – インデント/アウトデントはすべてのコンテンツに適用されます：
+   * リスト：リスト項目のネスト/ネスト解除
    * 段落と見出し：一般的なインデントレベルの増減
-* `scope`: `lists` - インデント/インデント解除はリスト項目にのみ適用されます：
-   * リスト：リスト項目をネスト/ネスト解除
-   * 段落と見出し：インデントなし（ボタンが無効になっている場合）
+* `scope`: `lists` - インデント/アウトデントはリスト項目にのみ適用されます：
+   * リスト：リスト項目のネスト/ネスト解除
+   * 段落と見出し：インデントなし（これらのボタンは無効）
 
 >[!NOTE]
 >
->Tab/Shift+Tab キーを使用したリストネストは、一般的なインデント設定とは無関係に機能します。
+>Tab/Shift+Tab キーによるリストのネストは、一般的なインデント設定とは独立して機能します。
+
+### 特殊文字 {#special-characters}
+
+`special_characters`挿入アクションは、カーソル位置に特殊文字（記号、数式演算子、通貨記号、句読点、矢印など）を挿入するための文字選択ポップオーバーを開きます。
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+44の一般的に使用される文字のデフォルトのセットが標準で含まれています。 文字リストは、次の2つの設定オプションでカスタマイズできます。
+
+* `appendCharacters` - デフォルトセットに文字を追加
+* `characters` – 既定のセットを完全に置き換えます
+
+各文字エントリには、`character` （Unicode文字）と`title` （ツールチップ/アクセス可能な名前）があります。
+
+#### デフォルトへの文字の追加 {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### デフォルトの特殊文字を置換 {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### 両方のオプションを同時に {#both-special-character-options}
+
+この例では、`characters`をベースとして使用し、`appendCharacters`を使用して追加の文字を追加します。
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
 
 ### テキストとして貼り付け {#paste-as-text}
 
-`paste_text` エディターアクションを使用すると、プレーンテキストとして貼り付けという標準的なワークフローが可能になります。
+`paste_text` エディターアクションを使用すると、標準のプレーンテキストとして貼り付けワークフローが有効になります。
 
-* **デフォルトショートカット：** Mod-Shift-v （macOSの場合は Cmd+Shift+V、Windows/Linux の場合は Ctrl+Shift+V）
-* **動作：** テキスト/プレーンから貼り付け（ソースの書式設定は無視されます）
+* **既定のショートカット：** Mod-Shift-v （macOSではCmd+Shift+V、Windows/LinuxではCtrl+Shift+V）
+* **ビヘイビアー：** テキスト/プレーンからのペースト （ソースの書式設定は無視されます）
    * リストでは、改行によって新しいリスト項目が作成されます。
 
 ```json
@@ -316,7 +392,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 ### その他のアクション {#other}
 
-その他のアクションはすべて、基本のカスタマイズをサポートしています。 以下の節を使用できます。
+他のすべてのアクションは、基本的なカスタマイズをサポートしています。 次のセクションを使用できます。
 
 ```json
 {
@@ -364,7 +440,9 @@ RTE 設定は、次の 2 つの部分で構成されます。
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -402,6 +480,17 @@ RTE 設定は、次の 2 つの部分で構成されます。
         "unlink": {
           "label": "Remove Link"
         },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
+        },
         // Other actions with basic customization
         "h1": {
           "shortcut": "Mod-Alt-1",
@@ -415,11 +504,11 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 ## アクションオプションの詳細 {#action-details}
 
-いくつかのオプションには、注意が必要な追加の詳細があります。
+いくつかのオプションでは、重要な詳細情報を提供しています。
 
 ### `wrapInParagraphs` {#wrapInParagraphs}
 
-リストの `wrapInParagraphs` のオプションは、HTMLの構造を制御します。
+リストの`wrapInParagraphs` オプションは、HTML構造を制御します。
 
 #### `wrapInParagraphs: false`（デフォルト） {#wrapInParagraphs-false}
 
@@ -439,15 +528,15 @@ RTE 設定は、次の 2 つの部分で構成されます。
 </ul>
 ```
 
-必要に応じて、`wrapInParagraphs: true` を使用します。
+必要な場合は`wrapInParagraphs: true`を使用してください：
 
-* リスト項目内の豊富な書式
+* リスト項目内の豊富な書式設定
 * リスト項目ごとに複数の段落
-* 一貫したブロックレベルのスタイル設定
+* 一貫性のあるブロックレベルのスタイル設定
 
 ### `wrapInPicture`{#wrapinpicture}
 
-画像の `wrapInPicture` オプションは、画像コンテンツ用に生成されるHTML構造を制御します。
+画像の`wrapInPicture` オプションは、画像コンテンツ用に生成されるHTML構造を制御します。
 
 #### wrapInPicture: false （デフォルト） {#wrapinpicture-false}
 
@@ -463,20 +552,20 @@ RTE 設定は、次の 2 つの部分で構成されます。
 </picture>
 ```
 
-必要に応じて、`wrapInPicture: true` を使用します。
+必要な場合は`wrapInPicture: true`を使用してください：
 
-* `<source>` 要素によるレスポンシブ画像のサポート。
-* アートディレクション機能。
-* 高度な画像処理機能で将来のニーズにも対応。
-* 一貫した画像要素構造。
+* `<source>`要素によるレスポンシブ画像のサポート。
+* アートディレクション機能：
+* 将来性のある高度な画像機能。
+* 一貫した画像要素の構造：
 
 >[!NOTE]
 >
->`wrapInPicture: true` を有効にすると、様々なメディアクエリや形式に対応した追加の `<source>` 要素で画像を強化でき、レスポンシブデザインの柔軟性が高まります。
+>`wrapInPicture: true`が有効になっている場合、異なるメディアクエリと形式に対して追加の`<source>`要素を使用して画像を強化できるため、レスポンシブデザインに対してより柔軟に対応できます。
 
-### リンクターゲットオプション {#link-target}
+### ターゲットオプションのリンク {#link-target}
 
-リンクの `hideTarget` オプションは、生成されるリンクに `target` 属性を含めるかどうか、およびリンク作成用ダイアログにターゲット選択用のフィールドを含めるかどうかを制御します。
+リンクの`hideTarget` オプションは、生成されたリンクに`target`属性を含めるか、リンク作成用のダイアログにターゲット選択用のフィールドを含めるかを制御します。
 
 #### `hideTarget: false`（デフォルト） {#hideTarget-false}
 
@@ -493,11 +582,11 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 ### 画像上のリンクの無効化 {#disableforimages}
 
-リンクの `disableForImages` オプションは、ユーザーが画像および画像要素にリンクを作成できるかどうかを制御します。 これは、インライン `<img>` 要素とブロックレベル `<picture>` 要素の両方に適用されます。
+リンクの`disableForImages` オプションは、ユーザーが画像および画像要素にリンクを作成できるかどうかを制御します。 これは、インライン `<img>`要素とブロックレベル `<picture>`要素の両方に適用されます。
 
 #### `disableForImages: false`（デフォルト） {#disableforimages-false}
 
-ユーザーは画像を選択してリンクに含めることができます。
+ユーザーは画像を選択し、リンクに折り返すことができます。
 
 ```html
 <!-- Inline image with link -->
@@ -515,7 +604,7 @@ RTE 設定は、次の 2 つの部分で構成されます。
 
 #### disableForImages: true {#disableforimages-true}
 
-画像または画像を選択すると、リンク ボタンが無効になります。 ユーザーは、テキストコンテンツにのみリンクを作成できます。
+画像または画像が選択されている場合、リンクボタンは無効になります。 ユーザーが作成できるのは、テキストコンテンツ上のリンクのみです。
 
 ```html
 <!-- Images remain standalone without links -->
@@ -529,39 +618,39 @@ RTE 設定は、次の 2 つの部分で構成されます。
 <a href="https://example.com">Link text</a>
 ```
 
-`disableForImages: true` を使用すると、次のことが可能です。
+`disableForImages: true`は、次の場合に使用します。
 
-* リンクされた画像を防いで、視覚的な一貫性を維持します。
-* 画像をナビゲーションから分離することでコンテンツ構造を簡素化します。
-* 画像のリンクを制限するコンテンツポリシーの適用
-* コンテンツのアクセシビリティの複雑さを軽減する。
+* リンクされた画像を防ぎ、視覚的な一貫性を維持します。
+* 画像をナビゲーションから分離して、コンテンツ構造を簡素化する。
+* 画像のリンクを制限するコンテンツポリシーを適用できます。
+* コンテンツ内のアクセシビリティの複雑さを軽減。
 
 >[!NOTE]
 >
->この設定は、画像上に新しいリンクを作成する機能にのみ影響します。 コンテンツ内の画像から既存のリンクが削除されるわけではありません。
+>この設定は、画像に新しいリンクを作成する機能にのみ影響します。 コンテンツ内の画像から既存のリンクは削除されません。
 
 ### タグオプション {#tag}
 
-フォーマットアクションを使用すると、HTMLのバリアントを切り替えることができます。
+書式設定アクションを使用すると、HTMLのバリエーションを切り替えることができます。
 
-| アクション | 既定のタグ | 代替タグ | ユースケース |
+| アクション | デフォルトタグ | 代替タグ | ユースケース |
 |---|---|---|---|
-| `bold` | `<strong>` | `<b>` | 意味論的強調と視覚的強調 |
-| `italic` | `<em>` | `<i>` | セマンティックとビジュアルのスタイル設定 |
-| `strike` | `<del>` | `<s>` | 視覚的削除と意味的削除 |
+| `bold` | `<strong>` | `<b>` | セマンティックと視覚的強調 |
+| `italic` | `<em>` | `<i>` | セマンティックとビジュアルスタイルの違い |
+| `strike` | `<del>` | `<s>` | ビジュアル削除とセマンティック削除 |
 
-アクセシビリティと SEO を向上させるには、セマンティックタグ（`<strong>`、`<em>`、`<del>`）を選択します。
+アクセシビリティとSEOを向上させるために、セマンティックタグ （`<strong>`、`<em>`、`<del>`）を選択してください。
 
 ### キーボードショートカット {#keyboard-shortcuts}
 
-ショートカットでは、次の場合に `Mod-Key` の形式が使用されます。
+ショートカットでは、次の形式`Mod-Key`を使用します。
 
-* `Mod` = Macでは `Cmd`、Windows/Linux では `Ctrl`
+* `Mod` = Macの`Cmd`、Windows/Linuxの`Ctrl`
 * 例：`Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
 
 ## サポートされていないHTML {#unsupported-html}
 
-デフォルトでは、不明なHTML タグは、エディターで解析される際に削除されます。 これらを保持するには、`unsupportedHtml` の設定オプションを使用してオプトインします。
+デフォルトでは、未知のHTML タグは、エディターによって解析されると削除されます。 これらを保持するには、`unsupportedHtml`設定オプションを使用してオプトインします。
 
 ```javascript
 const rteConfig = {
@@ -571,7 +660,7 @@ const rteConfig = {
 
 | 値 | 動作 |
 |---|---|
-| `false`（デフォルト） | 解析中に不明なHTML タグが削除される。 |
-| `true` | 不明なHTML タグは、カスタムのサポートされていないブロックノードにラップされるので、コンテンツは安全にラウンドトリップできます。 |
+| `false`（デフォルト） | 不明なHTML タグは、解析中にドロップされます。 |
+| `true` | 不明なHTML タグは、サポートされていないカスタムブロックノードでラップされるため、コンテンツを安全にラウンドトリップできます。 |
 
-有効にすると、エディターはサポートされていないノードを `rte-unsupported-block` クラスでレンダリングします。 消費者アプリは、このクラスのスタイル設定（境界線、パディング、背景など）を提供する必要があります。 ブロック内のタグラベルは `rte-unsupported-label` を使用します。このラベルもカスタマイズできます。
+有効にすると、エディターはサポートされていないノードを`rte-unsupported-block` クラスでレンダリングします。 コンシューマーアプリでは、このクラスのスタイル設定（例：境界線、パディング、背景）を指定する必要があります。 ブロック内のタグラベルは`rte-unsupported-label`を使用しており、これもカスタマイズできます。

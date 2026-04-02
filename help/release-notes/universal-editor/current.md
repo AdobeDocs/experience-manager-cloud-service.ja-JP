@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.03.26 リリースノート
-description: ユニバーサルエディターの 2026.03.26 リリースのリリースノートです。
+title: ユニバーサルエディター 2026.04.02 リリースノート
+description: ユニバーサルエディターの 2026.04.02 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 46%
+source-wordcount: '113'
+ht-degree: 60%
 
 ---
 
 
-# ユニバーサルエディター 2026.03.26 リリースノート {#release-notes}
+# ユニバーサルエディター 2026.04.02 リリースノート {#release-notes}
 
-ユニバーサルエディターの2026年3月26日リリースのリリースノートです。
+ユニバーサルエディターの2026年4月2日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ ht-degree: 46%
 
 ## 新機能 {#what-is-new}
 
-* [Document Authoring アセット設定](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)が設定エンドポイントを通じて公開されるようになりました。
-* [拡張ポイント &#x200B;](/help/implementing/universal-editor/extending.md#extending-ui)がコンテキストメニューに追加されました。
-* 新しいカスタムワークフローアイコンがExtensibility DynamicIcon システムに追加され、UIにディープ/シャローのキャンセル状態が表示されるようになりました。
+* [設定可能なオプション ](/help/implementing/universal-editor/configure-rte.md#special-characters)から[特殊文字を追加](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)がリッチテキストエディター（RTE）ツールバーに追加されました。
 
 ## その他の改善点 {#other-improvements}
 
-* ドキュメントオーサリングクラスが文字列を期待するため、マルチフィールドで機能しない問題が修正されました。
+* OpenAPI アダプタがタグフィールドをマルチフィールドとして誤って返すことがなくなりました。
