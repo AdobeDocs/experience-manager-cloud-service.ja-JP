@@ -45,7 +45,7 @@ ht-degree: 67%
 
 1. 「**続行**」をクリックします。
 
-1. 「**セキュリティ**」タブで、使用するセキュリティオプションを選択します。 [ セキュリティ ](#security)を参照してください。
+1. 「**セキュリティ**」タブで、使用するセキュリティオプションを選択します。 [&#x200B; セキュリティ &#x200B;](#security)を参照してください。
 
    実稼動用に設定ウィザード ![の「](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png) セキュリティ」タブ
 
@@ -70,7 +70,7 @@ ht-degree: 67%
 
 1. 「**配信タイプ**」タブでは、前の手順で選択したソリューションとアドオンに基づいて事前入力されていることに注意してください。 **AEM パブリッシュ**&#x200B;を選択した場合は、後でオンデマンドでプロビジョニングできます。
 
-   ![配信タイプ タブ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+   ![配信タイプ タブ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
@@ -123,11 +123,11 @@ ht-degree: 67%
 >
 >ここで説明する柔軟なパブリッシュ層はBetaにあります。 Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
 
-組織で柔軟なパブリッシュ層機能が有効になっている場合は、プログラムの環境にパブリッシュ層が必要かどうかを設定できます。 このオプションは、**実稼動用に設定** ダイアログボックスの「**配信タイプ**」タブ（[ プログラム作成中](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)）に表示されます。
+組織で柔軟なパブリッシュ層機能が有効になっている場合は、プログラムの環境にパブリッシュ層が必要かどうかを設定できます。 このオプションは、**実稼動用に設定** ダイアログボックスの「**配信タイプ**」タブ（[&#x200B; プログラム作成中](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)）に表示されます。
 
-実稼動用に設定ウィザードの「![配信タイプ」タブ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+実稼動用に設定ウィザードの「![配信タイプ」タブ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
-**プログラムを編集** ダイアログボックスにも表示されます（[ プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)する場合）。
+**プログラムを編集** ダイアログボックスにも表示されます（[&#x200B; プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)する場合）。
 
 ![配信タイプのオプションが表示されたプログラムダイアログボックスを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
 

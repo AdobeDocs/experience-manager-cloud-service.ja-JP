@@ -68,11 +68,11 @@ Edge Delivery サイトを作成し、そのステータスがCloud Managerで&#
 
 1. 情報ポップアップの「**公開URL**」で「**クリックしてアクティブ化**」を選択し、Cloud Manager ユーザーインターフェイスでパブリッシュ層のプロビジョニングを有効にします。
 
-   ![ クリックしてパブリッシュ層プロビジョニングをアクティブ化](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+   ![&#x200B; クリックしてパブリッシュ層プロビジョニングをアクティブ化](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
 
 1. パブリッシュ層をアクティブ化ダイアログボックスで、**アクティブ化**&#x200B;をクリックします。
 
-   ![ パブリッシュ層をアクティブ化ダイアログボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+   ![&#x200B; パブリッシュ層をアクティブ化ダイアログボックス &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
 
    アクティブ化すると、パブリッシュ層が自動的にプロビジョニングされます。 または、作成者がAEM ユーザーインターフェイスからコンテンツを直接公開しようとすると、パブリッシュ層を自動的にプロビジョニングできます。
 
@@ -84,7 +84,7 @@ Edge Delivery サイトを作成し、そのステータスがCloud Managerで&#
 
 >[!NOTE]
 >
->パブリッシュ層をアクティブ化すると、パブリッシュインフラストラクチャが環境に追加されます。 この機能は、プログラムのリソース消費に影響を与える可能性があります。 パブリッシュ層がプログラムレベルで必要かどうかを設定するには、[柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+>パブリッシュ層をアクティブ化すると、パブリッシュインフラストラクチャが環境に追加されます。 この機能は、プログラムのリソース消費に影響を与える可能性があります。 パブリッシュ層がプログラムレベルで必要かどうかを設定するには、[柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
 
 
 ## Edge Delivery サイトの削除 {#delete-edge-delivery-site}
