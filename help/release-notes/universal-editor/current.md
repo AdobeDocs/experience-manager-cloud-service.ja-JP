@@ -26,7 +26,7 @@ ht-degree: 60%
 
 ## 新機能 {#what-is-new}
 
-* [設定可能なオプション ](/help/implementing/universal-editor/configure-rte.md#special-characters)から[特殊文字を追加](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)がリッチテキストエディター（RTE）ツールバーに追加されました。
+* [設定可能なオプション &#x200B;](/help/implementing/universal-editor/configure-rte.md#special-characters)から[特殊文字を追加](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)がリッチテキストエディター（RTE）ツールバーに追加されました。
 
 ## その他の改善点 {#other-improvements}
 
