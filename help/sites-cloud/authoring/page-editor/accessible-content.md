@@ -240,7 +240,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [達成基準 1.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)。
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/jp/products/encore.html) - a DVD authoring software tool
 -->
 
 ### キャプション（ライブ）（1.2.4）  {#captions-live}
