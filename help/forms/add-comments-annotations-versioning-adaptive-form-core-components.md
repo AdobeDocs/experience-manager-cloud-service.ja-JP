@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 99%
@@ -15,8 +15,10 @@ ht-degree: 99%
 
 # アダプティブフォームのバージョン管理、レビューおよびコメント
 
-<!--Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
-https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
+<!--
+Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
+-->
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
@@ -73,10 +75,10 @@ https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/cont
 
 1. **[!UICONTROL 編集]**&#x200B;モードでフォームを開きます。
 
-1. 画像に示すように、右上のパネルにある&#x200B;**追加アイコン**&#x200B;をクリックします。
+1. 画像に示すように、右上のパネルにある&#x200B;**追加アイコン**をクリックします。
    ![注釈](annotation.png)
 
-1. 画像に示すように、左上のパネルにある&#x200B;**追加アイコン**&#x200B;をクリックして、注釈を追加します。
+1. 画像に示すように、左上のパネルにある&#x200B;**追加アイコン**をクリックして、注釈を追加します。
    ![注釈の追加](add-annotation.png)
 
 1. これで、コメントを追加したり、複数のカラーでスケッチを描画してフォームコンポーネントを作成したりできます。

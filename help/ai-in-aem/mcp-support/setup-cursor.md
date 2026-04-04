@@ -1,30 +1,31 @@
 ---
-title: AEM MCP でのカーソルの設定
-description: AEM MCP サーバーに接続するように Cursor を設定する方法を説明します
+title: AEM MCPでのカーソルの設定
+description: AEM MCP サーバーに接続するようにCursorを設定する方法を説明します
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+role: User, Admin, Developer
+exl-id: f0897898-cb1d-4af6-859c-f5a1c0ec6168
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# AEM MCP でのカーソルの設定 {#setup-cursor}
+# AEM MCPでのカーソルの設定 {#setup-cursor}
 
-次の手順に従って、Cursor をAEMの MCP サーバーに接続します。
+AEMのMCP サーバーにCursorを接続するには、次の手順に従います。
 
-* Cursor の MCP settings で、1 つ以上のAEM MCP URL を持つ新しい MCP server エントリを作成します。
-* プロンプトが表示されたら、Adobe IDで認証を行います。
-* 必要に応じて、ツール名をクリックして個々のツールを有効または無効にします。 デフォルトでは、すべてのツールが有効になっています。
-* Cursor のエディターまたはチャットを使用して、開発ワークフローまたはコンテンツワークフローの一部としてAEM ツールを呼び出します。
+* カーソルのMCP設定で、1つ以上のAEM MCP URLを使用して新しいMCP サーバーエントリを作成します。
+* プロンプトが表示されたら、Adobe IDで認証します。
+* オプションで、ツール名をクリックして、個々のツールを有効または無効にします。 すべてのツールはデフォルトで有効になっています。
+* Cursorのエディターまたはチャットを使用して、開発またはコンテンツワークフローの一部としてAEM ツールを呼び出します。
 
-![&#x200B; カーソル設定ダイアログ &#x200B;](assets/cursor-1.png)
+![ カーソル設定ダイアログ。](assets/cursor-1.png)
 
-![&#x200B; カスタム MCP サーバを追加するオプションを備えたツールと MCP パネル &#x200B;](assets/cursor-2.png)
+![ カスタム MCP サーバーを追加するオプションを含むツールとMCP パネル。](assets/cursor-2.png)
 
-![Cursor のカスタム MCP サーバー設定フォーム &#x200B;](assets/cursor-3.png)
+![ カーソルのカスタム MCP サーバー設定フォーム。](assets/cursor-3.png)
 
-![Cursor 内の新しい MCP サーバの接続ダイアログ &#x200B;](assets/cursor-4.png)
+![ カーソル内の新しいMCP サーバーの接続ダイアログ。](assets/cursor-4.png)
 
-![&#x200B; 新しいAEM MCP サービスを使用するようカーソルに促す &#x200B;](assets/cursor-5.png)
+![新しいAEM MCP サービスを使用するようにカーソルを促しています。](assets/cursor-5.png)

@@ -5,14 +5,15 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 99%
 
 ---
 
-<!-- # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
+<!--
+ # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
 
 Adobe Experience Manager Forms as a Cloud Service offers a cloud-native, Platform as a Service (PaaS) solution for businesses to create, manage, publish, and update complex digital forms while integrating submitted data with back-end processes, business rules, and saving data in an external data store. The service is always current, always available, and always learning.
 
@@ -20,7 +21,8 @@ You can use the service to create and rollout  interactive and engaging digital 
 
 The organization can use [!DNL AEM Forms] as a Cloud Service to create digital forms, connect forms to existing data sources, integrate forms with [!DNL Adobe Sign] to add e-signatures to forms, and generate Document of Record (DoR) to archive filled forms as PDF files. The organization can also use the service to convert their existing PDF forms to digital forms. 
 
-An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
+An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.
+-->
 
 
 # トップ Adobe Experience Manager Forms イノベーション {#latest-innovations}

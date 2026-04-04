@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -25,8 +25,8 @@ ht-degree: 2%
 
 - インタラクティブ通信の作成と公開
 - ポップアップのサポートが有効になっているブラウザー
-- アソシエイト [&#x200B; ユーザーはforms-associates グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)に属している必要があります
-- AEM[でサポートされている任意の](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/authentication)認証メカニズム（SAML 2.0、OAuth、カスタム認証ハンドラーなど）を使用して設定された認証
+- アソシエイト [ ユーザーはforms-associates グループ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)に属している必要があります
+- AEM[でサポートされている任意の](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)認証メカニズム（SAML 2.0、OAuth、カスタム認証ハンドラーなど）を使用して設定された認証
 
 >[!NOTE]
 >
@@ -456,13 +456,15 @@ const data = {
 > ウィンドウが開かない場合は、このサイトのポップアップがブラウザーで許可されているか確認してください。
 
 
-<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+<!--
+  **Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.
+  -->
 
 ## トラブルシューティング
 
@@ -503,7 +505,8 @@ const data = {
 - 実稼動用：アプリケーションのオリジン URLを正確に指定します
 - パブリッシュインスタンス CORS設定でアプリケーションドメインが許可されていることを確認します
 
-<!--## Best Practices
+<!--
+## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -512,7 +515,8 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+-->
 
 ## 関連トピック
 

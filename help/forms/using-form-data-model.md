@@ -6,10 +6,10 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -43,17 +43,17 @@ JSON スキーマの拡張機能であるフォームデータモデル（FDM）
 
 ### 保険
 
-## AEM Formsは保険コアシステムと統合できますか？
+## AEM Formsは、基幹システムと連携できますか？
 
-はい。AEM Formsは、REST API およびSOAP API を使用した統合をサポートしており、ポリシー管理システム、クレーム管理システム、CRM と連携できます。
+はい。AEM Formsは、RESTおよびSOAP APIを使用した統合をサポートしており、ポリシー管理システム、請求管理システム、CRMと接続できます。
 
-## AEM Formsでフォームデータを保険システムに書き戻すことはできますか？
+## AEM Formsは、フォームデータを保険機関に書き戻すことができますか？
 
-はい。AEM Formsでは、フォームの送信とワークフローの実行の一環として、バックエンドシステムへのデータの書き戻しをサポートしています。
+はい。AEM Formsは、フォームの送信およびワークフローの実行の一環として、バックエンドシステムへのデータの書き戻しをサポートしています。
 
-## お客様は、AEM Formsを使用して請求ドキュメントを安全にアップロードできますか？
+## お客様は、AEM Formsを使用して請求書類を安全にアップロードできますか？
 
-はい。AEM Formsでは、企業のセキュリティ要件に合わせたアクセス制御と安全なデータ処理を使用して、フォーム送信の一部として安全なドキュメントアップロードをサポートしています。
+はい。AEM Formsは、フォーム送信の一部として安全なドキュメントのアップロードをサポートしています。エンタープライズのセキュリティ要件に合わせて、アクセス制御と安全なデータ処理を行うことができます。
 
 ## アダプティブフォームとアダプティブフォームフラグメントの作成 {#create-af}
 
@@ -73,7 +73,7 @@ JSON スキーマの拡張機能であるフォームデータモデル（FDM）
 
    ![create-af-3](assets/create-af-3.png)
 
-   フォームデータモデル（FDM）に基づいてアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、アダプティブフォームビルダーのコンテンツブラウザーの **[!UICONTROL データソース]** タブにフォームデータモデルオブジェクトが表示されます。
+   フォームデータモデル（FDM）に基づくアダプティブフォームまたはアダプティブフォームフラグメントを作成すると、フォームデータモデルオブジェクトは、アダプティブフォームビルダーのコンテンツブラウザーの「**[!UICONTROL データソース]**」タブに表示されます。
 
    >[!NOTE]
    >
@@ -83,7 +83,8 @@ JSON スキーマの拡張機能であるフォームデータモデル（FDM）
 
    データモデルオブジェクトをアダプティブフォームまたはアダプティブフォームフラグメントにドラッグ＆ドロップすると、フォームフィールドを追加できます。追加されたフォームフィールドには、メタデータのプロパティとデータモデルオブジェクトのプロパティとの連結が保持されます。この連結により、フォームの送信時に対応するデータソース内のフィールド値が更新され、フォームのレンダリング時に対応するデータソース内のフィールドに値が取り込まれます。
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## サンプルデータを使用したプレビュー {#preview-ic}
 
 フォームデータモデルエディターでは、フォームデータモデル（FDM）内のデータモデルオブジェクト用のサンプルデータを生成して編集できます。このデータを使用して、<!--interactive communications and-->アダプティブフォームをプレビューおよびテストできます。プレビュー表示を行う前に、「[フォームデータモデルの操作](work-with-form-data-model.md#sample)」の説明に従って、サンプルデータを生成する必要があります。
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ For more information, see:
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 サンプルデータが取り込まれた状態のアダプティブフォームをプレビューするには、オーサーモードでアダプティブフォームを開いて「**[!UICONTROL プレビュー]**」を選択します。
 
 ## フォームデータモデルサービスを使用したデータの事前入力 {#prefill}
 
-[!DNL Experience Manager Forms] には、標準のフォームデータモデル事前入力サービスが用意されています。フォームデータモデル（FDM）に基づいて、このサービスをアダプティブフォーム<!--and interactive communications-->で使用することができます。この事前入力サービスは、アダプティブフォーム<!--and interactive communication-->内のデータモデルオブジェクトに対してデータソースのクエリを実行し、フォームまたは通信のレンダリング時にデータを事前入力します。
+[!DNL Experience Manager Forms] には、標準のフォームデータモデル事前入力サービスが用意されています。フォームデータモデル（FDM）に基づいて、このサービスをアダプティブフォーム<!--and interactive communications-->で使用することができます。事前入力サービスは、アダプティブフォーム内のデータモデルオブジェクトのデータソースをクエリし、フォームまたは通信のレンダリング中にデータを事前入力します。
 
 アダプティブフォームに対してフォームデータモデル事前入力サービスを有効にするには、アダプティブフォームコンテナのプロパティを開き、基本アコーディオンの **[!UICONTROL 事前入力サービス]** ドロップダウンで「**[!UICONTROL フォームデータモデル事前入力サービス]**」を選択します。次に、各プロパティを保存します。
 
 ![prefill-service](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## 送信されたアダプティブフォームデータのデータソースへの書き込み {#write-af}
 
@@ -184,7 +190,7 @@ Edit Properties dialog for an interactive communication-->
 
 1. `https://server:host/system/console/configMgr` で Experience Manager web コンソールに移動します。
 1. 「**[!UICONTROL サービス呼び出し用のフォームデータモデルのアダプティブフォームレベルの許可リスト登録 - 設定ファクトリ]**」を見つけます。
-1. ![プラスアイコン &#x200B;](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
+1. ![プラスアイコン ](/help/forms/assets/Smock_Add_18_N.svg) をクリックして設定を追加します。
 1. **[!UICONTROL コンテンツパスパターン]**&#x200B;を追加して、アダプティブフォームの場所を指定します。デフォルトでは、値は `/content/forms/af/(.*)` で、すべてのアダプティブフォームが含まれています。特定のアダプティブフォームのパスを指定することもできます。
 1. **[!UICONTROL フォームデータモデルのパスパターン]**&#x200B;を追加して、フォームデータモデル（FDM）の場所を指定します。デフォルトでは、値は `/content/dams/formsanddocuments-fdm/(.*)` で、すべてのフォームデータモデル（FDM）が含まれています。また、特定のフォームデータモデル（FDM）のパスを指定することもできます。
 1. 設定を保存します。

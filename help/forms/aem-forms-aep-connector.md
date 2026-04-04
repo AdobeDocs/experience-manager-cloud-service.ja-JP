@@ -7,7 +7,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 99%
@@ -255,7 +255,8 @@ A：フォームの送信は、AEP ストリーミング取り込み[クォー�
 <!-- 
 >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+-->
 
 ### 実装に関する質問 {#implementation-questions}
 

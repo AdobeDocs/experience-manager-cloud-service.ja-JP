@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 98%
@@ -168,8 +168,10 @@ ht-degree: 98%
     <ul> 
       <li>フォームデータモデル（FDM）</li>
       <li>スキーマ：JSON スキーマの XML</li>
-     <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
-     <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
+     <!--
+      <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
+     <li>XML schema: An XSD file is uploaded. This value can be updated.</li>
+     -->
      <li>なし</li> 
     </ul> 
     <div>
@@ -198,10 +200,12 @@ ht-degree: 98%
 
 1. プロパティページが開き、いくつかの値を保持するメタデータのプロパティのみを含むスキーマが表示されます。
 
-   <!-- The properties page has a toolbar containing two action icons:
+   <!--
+    The properties page has a toolbar containing two action icons:
 
     * Edit: ![Edit](assets/Smock_Edit_18_N.svg) Edit the metadata property values
-    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode. -->
+    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+    -->
 
    コンテンツ部分は 2 つのパートに分かれています。
 
@@ -212,7 +216,8 @@ ht-degree: 98%
 
 既存のメタデータプロパティの値を編集したり、既存のメタデータプロパティのフィールドに新しい値を追加する（例えば、メタデータフィールドが空白の場合など）ことができます。
 
-<!-- ### Update metadata property values {#update-metadata-property-values}
+<!--
+ ### Update metadata property values {#update-metadata-property-values}
 
 1. Follow the steps mentioned in the previous section to open the properties page where existing metadata of the selected form can be viewed.  
 
@@ -229,7 +234,8 @@ ht-degree: 98%
     * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
     * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
 
-   Both these actions direct the user back to read-only mode of the properties page containing the updated values.-->
+   Both these actions direct the user back to read-only mode of the properties page containing the updated values.
+   -->
 
 ### フォームサムネールの更新 {#update-the-form-thumbnail}
 
@@ -295,11 +301,11 @@ ht-degree: 98%
 1. ドラッグしたコンポーネントをクリックします。右のパネルに開いた「設定」タブで、次のフィールドに情報を入力します。
 
    1. スキーマに配置されるフィールドの上に表示名として使用するフィールドラベルを指定します（例えば、部門など）
-   1. プロパティにマッピングフィールドの下に、事前入力された値 **「./jcr:content/metadata/default&#39;** です。 「**default**」を、必要なプロパティ名に変更します。これは、crx リポジトリにプロパティを保存するために使用されます（例えば、「./jcr:content/metadata/department&#39;）
+   1. プロパティにマッピングフィールドの下に、事前入力された値 **「./jcr:content/metadata/default&#39;**。 「**default**」を、必要なプロパティ名に変更します。これは、crx リポジトリにプロパティを保存するために使用されます（例えば、「./jcr:content/metadata/department&#39;）
 
       >[!NOTE]
       >
-      >接頭辞「./jcr:content/metadata/&#39;：プロパティの保存場所のパスを定義します。
+      >接頭辞「./jcr:content/metadata/&#39;は、プロパティが格納されるパスを定義します。
       >
       >また、リポジトリーの同じ場所に 2 つ以上のプロパティの値が書き込まれるのを防ぐため、プロパティ名は一意にする必要があります。そのため、「default」の値は変更することをお勧めします。
 

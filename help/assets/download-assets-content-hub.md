@@ -1,10 +1,10 @@
 ---
 title: Content Hub からのアセットのダウンロード
-description: 1 つ以上のアセットとそのレンディションをContent Hub ポータルからダウンロードする方法について説明します。
+description: Content Hub ポータルから1つ以上のアセットとそのレンディションをダウンロードする方法について説明します。
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 44%
@@ -25,28 +25,28 @@ ht-degree: 44%
 
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
-* 1 つのアセットとそのレンディションをダウンロードするには：
-   1. アセットカードで使用可能な ![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) を選択して、アセットとその使用可能なレンディションをプレビューします。
-   1. 使用可能なレンディションを選択し、ダイアログボックスの **[!UICONTROL ダウンロード]** オプションをクリックして、選択したレンディションを ZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
-      ![&#x200B; アセットのダウンロード &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-または、アセットのサムネールをクリックして ![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) をクリックし、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードすることもできます。
+* 単一のアセットとそのレンディションをダウンロードするには：
+   1. アセットカードで利用可能な![ ダウンロード ](/help/assets/assets/download-icon.svg)を選択して、アセットとその利用可能なレンディションをプレビューします。
+   1. 使用可能なレンディションを選択し、ダイアログボックスの「**[!UICONTROL ダウンロード]**」オプションをクリックして、選択したレンディションをZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
+      ![ アセットのダウンロード ](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+または、アセットのサムネールをクリックし、![ ダウンロード ](/help/assets/assets/download-icon.svg)をクリックして、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードします。
 
 * 複数のアセットとそのレンディションをダウンロードするには：
-   1. アセットを選択し、![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg)**[!UICONTROL ダウンロード]** をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
-   1. 1 つ以上のレンディションを選択し、ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
-   1. オプション：「**[!UICONTROL アセットごとに個別のフォルダーを作成]**」の選択を解除して、選択したアセットとそのレンディションを zip ファイルのフォルダー内のフラット階層としてダウンロードします。 デフォルトでは、[!DNL Content Hub] は選択したアセットとそのレンディションを zip ファイル内の別々のフォルダーにダウンロードします。
+   1. アセットを選択し、![ ダウンロード ](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**&#x200B;をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
+   1. 1つ以上のレンディションを選択して、ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
+   1. オプション：「**[!UICONTROL アセットごとに個別のフォルダーを作成する]**」の選択を解除して、選択したアセットとそのレンディションをzip ファイル内のフォルダー内のフラット階層としてダウンロードします。 デフォルトでは、[!DNL Content Hub]は選択したアセットとそのレンディションをzip ファイル内の個別のフォルダーにダウンロードします。
 
       >[!NOTE]
       >
-      > * Content Hubでは、選択内容（**[!UICONTROL アセットごとに個別のフォルダーを作成]**）を環境設定として保存し、今後のダウンロード用に保持します。
-      > * **[!UICONTROL アセットごとに個別のフォルダーを作成]** オプションは、認証済みの [!DNL Content Hub] ユーザーのみが使用できます。 [!DNL Content Hub] を使用すると、公開ユーザーはアセットを個々のアセットとしてダウンロードできます。
+      > * Content Hubは、選択範囲（**[!UICONTROL 各アセットに個別のフォルダーを作成]**）を環境設定として保存し、今後のダウンロード用に保持します。
+      > * **[!UICONTROL アセットごとに個別のフォルダーを作成する]** オプションは、認証済みの[!DNL Content Hub] ユーザーのみが利用できます。 [!DNL Content Hub]を使用すると、パブリック ユーザーはアセットを個別のアセットとしてダウンロードできます。
 
-   1. **[!UICONTROL ダウンロード]** をクリックして、選択したアセットとそのレンディションをダウンロードします。
+   1. 「**[!UICONTROL ダウンロード]**」をクリックして、選択したアセットとそのレンディションをダウンロードします。
       ![複数のアセットのダウンロード](/help/assets/assets/bulk-asset-download-content-hub.png)
 
-ダウンロードの進行中も [!DNL Content Hub] を引き続き使用できます。 Content Hubは、ダウンロードプロセス中にワークフローを中断しません。
+ダウンロードの処理中に[!DNL Content Hub]を引き続き使用できます。 ダウンロードプロセス中にContent Hubがワークフローを中断することはありません。
 ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。各ライセンスを確認したら、レンディションを選択し、「**[!UICONTROL 上記の利用条件を読んで同意しました]**」をクリックし、「**[!UICONTROL ダウンロード]**」を選択してダウンロードします。
+**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。各ライセンスを確認した後、レンディションを選択し、**[!UICONTROL 上記の利用条件を読んで同意しました]**、および&#x200B;**[!UICONTROL ダウンロード]**を選択してダウンロードします。
 ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -102,15 +102,19 @@ To download multiple assets and their renditions, execute the following steps:
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+-->
 
-<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+<!--
+1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
-1. Click **Download** to download the selected assets.-->
+1. Click **Download** to download the selected assets.
+-->
 
-<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+<!--
+-This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
 
 The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
@@ -128,19 +132,22 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
-1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
+-->
 <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
-<!---
+<!--
+-
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
- To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
+-->
 
 ## レンディションのタイプ {#types-of-renditions}
 
-アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらのレンディションには、サムネール、web またはモバイル用に最適化されたバージョン、透かし入りまたは DRM で保護されたファイル、さらにはスマート切り抜きなどの動的要素を含めることができます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
+アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらのレンディションには、サムネール、webまたはモバイル用に最適化されたバージョン、透かし、DRMで保護されたファイル、スマート切り抜きなどの動的要素が含まれます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
-詳しくは、[&#x200B; [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
+詳しくは、[ [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
@@ -148,7 +155,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズおよび最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
 
-* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Media のスマート切り抜きは、Adobe AIを活用した人工知能を活用して目標地点を追跡し、あらゆる画面サイズでアセットが最適に表示されるようにします。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
+* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Mediaのスマート切り抜きは、Adobe AIによる人工知能を活用して、注目すべきポイントを追跡し、アセットをあらゆる画面サイズで最適に表示します。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
   スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
@@ -182,39 +189,39 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## よくある質問 {#faqs-download-assets-content-hub}
 
-### AEM Assets Content Hubから 1 つまたは複数のアセットをダウンロードするにはどうすればよいですか？
+### AEM Assets Content Hubから1つまたは複数のアセットをダウンロードするにはどうすればよいですか？
 
-AEM Assets Content Hubで 1 つのアセットをダウンロードするには、アセットカードのダウンロードアイコンをクリックします。 複数のアセットの場合は、アセットを選択し、アクションバーの「ダウンロード」をクリックします。 管理者がダウンロードを有効にすると、Content Hubが元のレンディションのアセットのダウンロードを開始します。 アセットのレンディションが使用可能な場合、ダウンロードする前に特定のレンディションを選択できます。
+AEM Assets Content Hubで1つのアセットをダウンロードするには、アセットカードのダウンロードアイコンをクリックします。 複数のアセットの場合は、それらを選択し、アクションバーの「ダウンロード」をクリックします。 管理者がダウンロードを有効にしている場合、Content Hubは元のレンディションでアセットのダウンロードを開始します。 アセットのレンディションが利用可能な場合は、ダウンロードする前に特定のレンディションを選択できます。
 
-### AEM Assets Content Hubで管理者が管理し、ユーザーが元のアセットをダウンロードできるようにしたり、レンディションを使用できるようにしたりできる設定はありますか？
+### AEM Assets Content Hubの管理者が管理する設定で、ユーザーが元のアセットをダウンロードしたり、レンディションの利用を有効にしたりできるようにするものはありますか？
 
-はい。管理者は、設定 UI の **レンディション** タブにある **元のアセットのダウンロードを許可** 切替スイッチを有効または無効にして、元のアセットのダウンロードを管理したり、AEM Assets Content Hubでレンディションの利用を有効にしたりできます。**レンディション**
+はい。管理者は、Configuration UIの&#x200B;**レンディション** タブで利用可能な&#x200B;**レンディションの利用を許可**&#x200B;および&#x200B;**元のアセットのダウンロードを許可** トグルを有効または無効にして、元のアセットのダウンロードを管理するか、AEM Assets Content Hubでレンディションの利用を有効にすることができます。
 
-### アセットレンディションとは何ですか？また、AEM Assets Content Hubで使用できるアセットレンディションのタイプは何ですか？
+### AEM Assets Content Hubにはどのようなアセットのレンディションと種類がありますか？
 
-AEM Assets Content Hubのアセットレンディションは、様々なユースケースに合わせて調整された元のアセットファイルの異なる表示域です。 タイプには、静的レンディション（サムネール、web またはモバイルに最適化されたバージョン、印刷用の高解像度ファイルなど）、カスタム静的レンディション、動的レンディション（スマート切り抜きのバージョンなど）が含まれます。 静的レンディションは事前に生成され、動的レンディションはリクエストに基づいてリアルタイムで作成されます。
+AEM Assets Content Hubのアセットレンディションは、様々なユースケースに合わせてカスタマイズされた、元のアセットファイルのさまざまな表現です。 種類には、静的レンディション（サムネール、webまたはモバイルに最適化されたバージョン、印刷用の高解像度ファイルなど）、カスタム静的レンディション、動的レンディション（スマート切り抜きバージョンを含む）などがあります。 静的レンディションは事前に生成されますが、動的レンディションはリクエストに基づいてリアルタイムで作成されます。
 
-### スマート切り抜きはAEM Assets Content Hubのアセットでどのように機能しますか？
+### AEM Assets Content Hubのアセットのスマート切り抜きはどのように機能しますか？
 
-AEM Assets Content Hubのスマート切り抜きは、AI を活用した機能であり、画像の最も重要な部分を特定し、その周囲をインテリジェントに切り抜きます。 これにより、様々な画面や形式でビジュアルを美しく表示できます。 組織が Dynamic Media 機能をサポートしている場合、画像アセットでスマート切り抜きレンディションを使用できます。
+AEM Assets Content Hubのスマート切り抜きは、画像の最も重要な部分を特定し、その周囲をインテリジェントに切り抜くAIを活用した機能です。 これにより、様々な画面やフォーマットで見栄えのいいビジュアルを作成できます。 スマート切り抜きレンディションは、組織がダイナミックメディア機能をサポートしている場合に画像アセットで使用できます。
 
-### AEM Assets Content Hubで動的レンディションを有効にするにはどうすればよいですか。
+### AEM Assets Content Hubでダイナミックレンディションを有効にするにはどうすればよいですか？
 
-AEM Assets Content Hubで動的レンディションを有効にする手順は次のとおりです。
+AEM Assets Content Hubでダイナミックレンディションを有効にするには：
 
-* OpenAPI 機能を持つ Dynamic Media が有効になっていることを確認します。 承認されたアセットは公開されます。
+* OpenAPI機能を備えたDynamic Mediaが有効になっていることを確認します。 承認されたアセットは、一般公開されます。
 
-* アセットの承認ターゲットをContent Hubに設定します。
+* Asset approval targetをContent Hubに設定します。
 
-* 設定 UI で、「レンディション」タブに移動し、「レンディションの可用性を有効にする」を有効にします。
+* 設定UIで、「レンディション」タブに移動し、「レンディションの可用性を有効にする」を有効にします。
 
-* OpenAPI を使用して Dynamic Media に新たにオンボードした場合は、管理ビュー/ ツール / Assets /画像プリセット （編集/保存）から既存の画像プリセットを再保存します。
+* OpenAPIを使用してDynamic Mediaに新しくオンボーディングした場合は、管理者表示/ツール/Assets/画像プリセット（編集/保存）から既存の画像プリセットを再保存します。
 
-動的レンディションは、画像アセットに対してのみサポートされます。
+ダイナミックレンディションは、画像アセットに対してのみサポートされています。
 
 ### AEM Assets Content Hubでアセットレンディションをダウンロードするにはどうすればよいですか？
 
-AEM Assets Content Hubでレンディションをダウンロードするには、アセットを選択し、ダウンロード アクションをクリックします。 管理者がレンディションを有効にすると、ダウンロードするレンディションを選択できるダイアログが表示されます。 ライセンス済みアセットの場合、ダウンロードする前にライセンス条件に同意します。 複数のアセットの場合、アセットを選択し、レンディションを選択して、ZIP ファイルとしてダウンロードします。 使用可能なすべてのレンディションか、静的レンディションや動的レンディションなどの特定のレンディションを選択できます。
+AEM Assets Content Hubでレンディションをダウンロードするには、アセットを選択し、ダウンロードアクションをクリックします。 管理者がレンディションを有効にしている場合、ダウンロードするレンディションを選択できるダイアログが表示されます。 ライセンスされたアセットの場合は、ダウンロードする前にライセンス条件に同意してください。 複数のアセットの場合は、アセットを選択し、レンディションを選択してZIP ファイルとしてダウンロードします。 利用可能なすべてのレンディション、または静的レンディションや動的レンディションなどの特定のレンディションを選択できます。
 
 
 

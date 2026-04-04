@@ -1,35 +1,35 @@
 ---
-title: Open API を使用した Dynamic Media のキャッシュ管理
-description: Open API を使用した Dynamic Media のキャッシュ管理
+title: オープン APIを使用したDynamic Mediaのキャッシュ管理
+description: オープン APIを使用したDynamic Mediaのキャッシュ管理
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
 
 ---
 
-# Open API を使用した Dynamic Media のキャッシュ管理 {#cache-management-dynamic-media-open-apis}
+# オープン APIを使用したDynamic Mediaのキャッシュ管理 {#cache-management-dynamic-media-open-apis}
 
-パフォーマンスと拡張性に優れた最新のデジタルアセットを実現するには、効果的なキャッシュ管理が不可欠です。 オープン API を使用した Dynamic Media では、キャッシュ管理により、配信パイプラインの様々なレイヤーでコンテンツを保存、更新および配信する方法が定義されます。 アセット配信応答は、最適なパフォーマンスと高速なコンテンツ配信を確保するために、複数のレイヤーでキャッシュされます。
+効果的なキャッシュ管理は、高性能で拡張性が高く、最新のデジタルアセットを提供するために不可欠です。 オープン APIを備えたDynamic Mediaでは、キャッシュ管理により、配信パイプラインのさまざまなレイヤーをまたいでコンテンツを保存、更新、配信する方法が定義されます。 アセット配信の応答は、最適なパフォーマンスと迅速なコンテンツ配信を実現するために、複数のレイヤーでキャッシュされます。
 
-Open API を使用した Dynamic Media の長期キャッシュは、[CDN レイヤーキャッシュ &#x200B;](#cdn-layer-caching) および [&#x200B; 外部キャッシュ制御（BYOCDN およびブラウザーキャッシュ） &#x200B;](#byocdn-browser-caching) で構成されています。
+オープン APIを使用したDynamic Mediaでの長時間キャッシュは、[CDN レイヤーキャッシュ ](#cdn-layer-caching)と[外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） ](#byocdn-browser-caching)で構成されます。
 
 ## CDN レイヤーキャッシュ {#cdn-layer-caching}
 
-アセット配信応答は、パフォーマンスを最大化しオリジンの負荷を最小限に抑えるために、長期間 [0&rbrace;Adobeの管理による CDN&rbrace; にキャッシュされます。 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)このキャッシングは、エンドユーザーに一貫して高品質のエクスペリエンスを提供するために、Adobeによって完全に管理されます。 キャッシュ時間は、パフォーマンスのために意図的に最適化されており、すべての顧客に対して信頼性と効率的なコンテンツ配信を維持するためにユーザーがカスタマイズすることはできません。
+アセット配信の応答は、[Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)で長期間キャッシュされ、パフォーマンスを最大化し、オリジンへの負荷を最小限に抑えます。 このキャッシュは、エンドユーザーに一貫して高品質なエクスペリエンスを提供するために、Adobeによって完全に管理されます。 キャッシュ時間は、パフォーマンスのために意図的に最適化されており、すべての顧客にわたって信頼性と効率的なコンテンツ配信を維持するためにユーザーがカスタマイズすることはできません。
 
-最適なパフォーマンスを確保するために、すべての配信 URL が長期間エッジ（Fastly）にキャッシュされます。 キャッシュされた配信オブジェクトには、静的レンディション、ビデオ、元の画像のバイナリおよび動的に変換された画像（URL パラメーターを使用して生成されたサイズ変更や再フォーマットのアセットなど）が含まれます。<!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
+最適なパフォーマンスを確保するために、あらゆる配信URLはエッジ（Fastly）で長時間キャッシュされます。 キャッシュされた配信オブジェクトには、静的レンディション、ビデオ、元の画像バイナリ、および動的に変換された画像（URL パラメーターを通じて生成されたサイズ変更または再フォーマットされたアセットなど）が含まれます。<!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
-## 外部キャッシュ制御（BYOCDN およびブラウザーキャッシュ） {#byocdn-browser-caching}
+## 外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） {#byocdn-browser-caching}
 
-アセット配信応答には、ダウンストリームキャッシュレイヤーのデフォルト `Cache-Control` が `max-age`10 分 **の** ヘッダーが含まれています。 これは、カスタム *Bring-Your-Own-CDN （BYOCDN）設定*、*エンドユーザーブラウザー* およびその他 *中間キャッシュプロキシ* に適用され、配信パス全体で一貫したキャッシュ制御を確保します。
+アセット配信の応答には、`Cache-Control` ヘッダーが含まれ、ダウンストリームのキャッシングレイヤーに対して`max-age`10分&#x200B;**の**&#x200B;がデフォルトです。 これは、カスタム *Bring-Your-Own-CDN （BYOCDN）設定*、*エンドユーザーブラウザー*、および&#x200B;*中間キャッシュプロキシ*&#x200B;に適用され、配信パス全体で一貫したキャッシュ制御を確保します。
 
 ### キャッシュ制御ヘッダーのカスタマイズ {#customizing-cache-control-headers}
 
-デフォルト設定を超えてキャッシュの有効期限の値を長くすると、古いコンテンツが提供される可能性が高くなり、エンドユーザーエクスペリエンスでのコンテンツ更新の表示が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御動作を変更する必要がある場合、カスタム CDN ルールを設定して、応答ヘッダーを調整できます。 これにより、要件に応じて異なるキャッシュ時間を設定できます。 応答ヘッダーについては、[AEMのカスタム CDN ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic) を参照してください。
+デフォルトの設定を超えてキャッシュが有効になるまでの時間を長くすると、古いコンテンツを配信する可能性が高くなり、エンドユーザーエクスペリエンスにおけるコンテンツ更新の可視性が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御の動作を変更する必要がある場合は、カスタム CDN ルールを設定して応答ヘッダーを調整できます。 これにより、必要に応じて異なるキャッシュ期間を設定できます。 応答ヘッダー[については、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)AEM カスタム CDN ルールを参照してください。
 
 ```
 responseTransformations:
@@ -47,32 +47,34 @@ responseTransformations:
             value: max-age=300
 ```
 
-キャッシュ管理に関するその他のサポートや質問については、[Adobe サポート &#x200B;](https://helpx.adobe.com/jp/contact.html) にお問い合わせください。
+キャッシュ管理に関する詳細なサポートや質問については、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)にお問い合わせください。
 
-## アクティブなキャッシュの無効化 {#active-cache-invalidation}
+## アクティブキャッシュの無効化 {#active-cache-invalidation}
 
-アセットが更新、削除、変更（メタデータの変更）されるたびに、Dynamic Media と Open API は、Adobeの管理による CDN の関連するすべての配信 URL を自動的に無効にします。 これは、バニティ ID またはエイリアスを使用する URL と、幅、形式、品質などの変換パラメーターを含むすべての URL に適用されます。 このイベント駆動型の無効化により、手動の介入なしで、ユーザーがアセットの最新バージョンを常に受け取れるようになります。
+アセットが更新、削除、または変更（メタデータの変更）されると、Open APIを使用したDynamic Mediaは、Adobe Managed CDN上の関連するすべての配信URLを自動的に無効にします。 これは、バニティ IDまたはエイリアスを使用するURLと、幅、形式、品質などの変換パラメーターを含むURLに適用されます。 このイベント駆動型の無効化により、ユーザーは手作業なしで常に最新バージョンのアセットを受け取ることができます。
 
-### 手動でのキャッシュのパージ {#manual-cache-purging}
+### 手動キャッシュの消去 {#manual-cache-purging}
 
-キャッシュされたコンテンツを手動でパージする必要がある場合は、AEMのキャッシュ無効化機能を使用してパージできます。 特定のキャッシュ URL のパージ方法について詳しくは、[AEM CDN キャッシュの無効化 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge) を参照してください。
+キャッシュされたコンテンツを手動でパージする必要がある場合は、AEMのキャッシュ無効化を使用してパージできます。 特定のキャッシュ URLをパージする方法について詳しくは、[AEM CDN キャッシュ無効化](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)を参照してください。
 
 ## よくある質問{#faq-cache-management}
 
-+++**キャッシュ管理は既存の統合にどのような影響を与えますか？**
++++**キャッシュ管理は既存の統合にどのように影響しますか？**
 
-アセット URL は変更されず、Adobe管理 CDN からブラウザー（およびその他のダウンストリーム仲介者）に送信されるキャッシュ制御ヘッダーは [`stale-while-revalidate directive`](https://web.dev/articles/stale-while-revalidate#whats_it_mean) で 10 分に維持され、ダウンストリームシステムがキャッシュを最適に活用し続けることを保証します。
+アセット URLは変更されず、Adobe Managed CDNからブラウザー（およびその他のダウンストリームの仲介者）に送信されるキャッシュ制御ヘッダーは、[`stale-while-revalidate directive`](https://web.dev/articles/stale-while-revalidate#whats_it_mean)で10分が継続されます。これにより、ダウンストリームシステムが引き続きキャッシュを最適に活用できます。
 
 +++
 
-+++**キャッシュパージにはどのようなトリガーがありますか？**
++++**どのようなトリガーでキャッシュをパージしますか？**
 
-トリガーが更新、変更、アーカイブまたは削除されると、キャッシュのアセットが自動的にパージされます。
+アセットが更新、変更、アーカイブ、または削除されると、キャッシュのパージトリガーは自動的に実行されます。
 
-<!--The cache purge triggers automatically in the following circumstances:
+<!--
+The cache purge triggers automatically in the following circumstances:
  
  - when an asset is updated, modified, or archived.
- - when an asset reaches `ready_for_delivery` state after approval.-->
+ - when an asset reaches `ready_for_delivery` state after approval.
+ -->
 
 +++
 
@@ -95,15 +97,15 @@ The following mechanisms can be followed:
 +++
 -->
 
-+++ **長期間有効なキャッシュでサポートされているアセットタイプは何ですか？**
++++ **長期間有効なキャッシュでは、すべてのアセットタイプがサポートされますか？**
 
-イベント駆動型のアクティブキャッシュの無効化を含む長時間のキャッシュは、アセットのタイプや形式に関係なく、Open API を使用して Dynamic Media 内のすべてのタイプのアセットに適用できます。
+イベント駆動型アクティブキャッシュ無効化による長期キャッシュは、アセットのタイプや形式に関係なく、オープン APIを使用したDynamic Mediaのすべてのタイプのアセットに適用されます。
 
 +++
 
-+++ **リポジトリの長期間有効なキャッシュをオプトアウトできますか？**
++++ **自分のリポジトリの永続キャッシュをオプトアウトできますか？**
 
-長期にわたるキャッシングをオプトアウトするには、[Adobe サポートに連絡し &#x200B;](https://helpx.adobe.com/jp/contact.html) リクエストの根拠を示してください。
+長時間キャッシュをオプトアウトするには、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)に連絡し、リクエストの根拠を提供してください。
 
 +++
 
@@ -111,4 +113,4 @@ The following mechanisms can be followed:
 >[!MORELIKETHIS]
 >
 >- [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
->- [&#x200B; バニティ URL](/help/assets/vanity-urls.md)
+>- [ バニティ URL](/help/assets/vanity-urls.md)

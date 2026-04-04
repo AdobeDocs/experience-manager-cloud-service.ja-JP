@@ -6,9 +6,9 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1012'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="モデルコンソールを起動"
 >abstract="Adobe Experience Manager as a Cloud Service のコンテンツに対して、コンテンツフラグメントモデルと呼ばれる再利用可能なスキーマを作成する方法について説明します。 この手順が重要な理由を理解できるよう、ビデオをご覧ください。 <br><br>この学習モジュールでは、旅行サイトを例として使用し、旅行を表すモデルの作成について順を追って説明します。<br><br>下のボタンをクリックし、このガイドに従って、新しいタブでこのモジュールを起動します。"
->additional-url="https://video.tv.adobe.com/v/3436541/?captions=jpn" text="コンテンツ構造の概要ビデオ"
+>additional-url="https://video.tv.adobe.com/v/3413261" text="コンテンツ構造の概要ビデオ"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"

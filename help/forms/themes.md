@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-アダプティブフォーム<!-- or an interactive communication-->のスタイル設定にテーマを作成して適用できます。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。テーマは、アダプティブフォーム<!-- or interactive communication -->を参照せずに、独立して管理されます。
+アダプティブフォーム<!-- or an interactive communication-->のスタイル設定にテーマを作成して適用できます。テーマには、コンポーネントとパネルのスタイルを設定するための詳細情報が含まれています。スタイルには、背景カラー、ステートカラー、透明度、配置、サイズなどのプロパティが含まれます。テーマを適用すると、指定したスタイルが対応するコンポーネントに反映されます。 テーマは、アダプティブフォームを参照せずに、独立して管理されます。
 
 [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルから [!DNL AEM Forms] リファレンスコンテンツパッケージをダウンロードしてインストールし、参照テーマとテンプレートを環境に読み込むことができます。
 
@@ -164,7 +164,8 @@ Cloud Service インスタンスで作成されたテーマ：
    <td>はい</td>
    <td>検索の向上のために使用される、識別用にテーマに付加されるラベルです。</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -197,19 +198,21 @@ Cloud Service インスタンスで作成されたテーマ：
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## テーマエディターについて {#about-the-theme-editor}
 
-テーマエディターは、ビジネスユーザーや web デザイナー／開発者に使いやすいインターフェイスで、様々なアダプティブフォームの要素のスタイル設定に必要な機能を簡単に使用できます。<!-- and interactive communication -->テーマを作成すると、フォーム<!--  , interactive communications, letters, document fragments, and data dictionaries-->のような独立したエンティティとして保存されます。
+テーマエディターは、ビジネスユーザーや web デザイナー／開発者に使いやすいインターフェイスで、様々なアダプティブフォームの要素のスタイル設定に必要な機能を簡単に使用できます。<!-- and interactive communication -->テーマを作成する場合、テーマはフォームのような別のエンティティとして保存されます。
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 テーマエディターでは、テーマでスタイル設定されたコンポーネントのスタイルをカスタマイズできます。デバイス上でのフォーム<!-- or interactive communication -->の外観をカスタマイズできます。
 
 テーマエディターは次の 2 つのパネルに分けられます。
 
-* **キャンバス** - 右側に表示されます。ここには、すべてのスタイル設定の変更が即時に反映されるアダプティブフォーム<!--  or interactive communication -->のサンプルが表示されます。また、キャンバスから直接オブジェクトを選択して、オブジェクトに関連するスタイルを検索したり、そのスタイルを編集したりすることもできます。上部にあるデバイスの解像度のルーラーにより、キャンバスが制御されます。解像度のブレークポイントをルーラーから選択すると、その解像度でサンプルフォーム<!--  or interactive communication -->のプレビューが表示されます。キャンバスについては、[下記](themes.md#using-canvas)で説明されています。
+* **キャンバス** - 右側に表示されます。ここには、すべてのスタイル設定の変更が即時に反映されるアダプティブフォーム<!--  or interactive communication -->のサンプルが表示されます。また、キャンバスから直接オブジェクトを選択して、オブジェクトに関連するスタイルを検索したり、そのスタイルを編集したりすることもできます。上部にあるデバイスの解像度のルーラーにより、キャンバスが制御されます。ルーラーから解像度ブレークポイントを選択すると、各解像度のサンプルフォームのプレビューが表示されます。 キャンバスについては、[下記](themes.md#using-canvas)で説明されています。
 
 * **サイドバー*** 左側に表示されます。以下の項目があります。
 
@@ -278,7 +281,9 @@ Cloud Service インスタンスで作成されたテーマ：
 
 >[!NOTE]
 >
->テーマは、まずフォーム<!-- or interactive communication-->を使用して作成され、それから異なるフォーム<!-- or interactive communications-->に適用されます。テーマの作成に使用されるブレークポイントは、そのテーマが適用されるフォーム<!-- or interactive communication -->とは異なる場合があります。CSS メディアクエリーは、テーマを適用するフォーム<!-- or interactive communication -->ではなく、テーマの作成に使用されているフォーム<!-- or interactive communication -->に基づきます。
+>テーマはまずフォームを使用して作成され、次に別のフォームに適用されます。 テーマの作成で使用されるブレークポイントは、テーマが適用されるフォームとは異なる場合があります。 CSS メディアクエリは、テーマの作成で使用されるフォームに基づいています。テーマが適用されるフォームには基づいていません。
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### 選択したオブジェクトのサイドバーにおける、スタイル設定プロパティのコンテキストの変更 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -296,7 +301,7 @@ Cloud Service インスタンスで作成されたテーマ：
 
 この例ではフィールドラベルのスタイルが変更されています。レスポンシブパネル説明がスタイルとして選択されている場合、リストエントリがアセットライブラリ内に追加されます。アセットライブラリのエントリを使用すると、レスポンシブパネル説明のスタイルを変更できます。
 
-スタイルをアセットライブラリに追加すると、他のテーマに使用できて、フォームビルダー UI の [&#x200B; スタイルモード &#x200B;](inline-style-adaptive-forms.md) で利用できます。 同様に、フォームビルダー <!-- or interactive communication editor --> UI のスタイルモードを使用してコンポーネントのスタイル設定を行うと、スタイルはキャッシュされ、テーマ内で使用可能になります。
+アセットライブラリでスタイルを追加すると、そのスタイルは他のテーマでも、フォームビルダーUIの[ スタイルモード ](inline-style-adaptive-forms.md)でも使用できます。 同様に、フォームビルダー<!-- or interactive communication editor --> UIのスタイルモードを使用してコンポーネントのスタイルを設定すると、そのスタイルはキャッシュされ、テーマで使用できます。
 
 アセットライブラリでプラスボタンを使用すると、スタイルに名前を付けて永続的に保存できます。サイドバーにある「保存」ボタンをクリックしなくても、プラスボタンを使用すると、スタイルを保存してコンポーネントに適用できます。後で使用するためにスタイルを保存するプラスボタンは、スタイルモードでは使用できません。
 
@@ -345,7 +350,7 @@ Cloud Service インスタンスで作成されたテーマ：
 
 ### キャンバスの使用 {#using-canvas}
 
-テーマは、そのまま使用できるフォーム<!-- or interactive communication -->または選択したフォームのいずれかを使用して作成します。キャンバスは、テーマでカスタマイズの指定を行った、テーマの作成に使用されるフォーム<!-- interactive communication -->のプレビューを表示します。フォーム上部にあるルーラーは、デバイスの表示サイズに応じてレイアウトを決定するために使用します。
+テーマは、そのまま使用できるフォーム<!-- or interactive communication -->または選択したフォームのいずれかを使用して作成します。キャンバスには、フォームのプレビューが表示されるか、テーマで指定されたカスタマイズを使用してテーマを作成するために使用されます。 フォーム上部にあるルーラーは、デバイスの表示サイズに応じてレイアウトを決定するために使用します。
 
 キャンバスツールバーには、以下が表示されます。
 
@@ -479,7 +484,7 @@ Cloud Service インスタンスで作成されたテーマ：
 1. サイドバーを使用して、選択したディスプレイサイズのテーマのフォーム<!-- or interactive communication -->コンポーネントのスタイル設定をカスタマイズします。
 1. カスタマイズ内容を保存します。
 
-複数のデバイスでフォーム<!-- or interactive communication -->のコンポーネントのスタイルを設定することができます。デスクトップおよびモバイルデバイスのフォーム<!-- and interactive communication -->コンポーネントは、全面的に異なるスタイルになります。
+複数のデバイスでフォーム<!-- or interactive communication -->のコンポーネントのスタイルを設定することができます。デスクトップとモバイルデバイスのフォームコンポーネントのスタイルは、まったく異なります。
 
 ### テーマで web フォントを使用 {#using-web-fonts-in-a-theme}
 
@@ -559,14 +564,16 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 アダプティブフォームの作成時に、アダプティブフォームのテーマを定義することもできます。
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### 実行時にフォームのテーマを変更 {#change-theme-of-a-form-at-runtime}
 
@@ -633,7 +640,8 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
 
 * アセットを別のテーマから追加し、そのテーマが移動または削除されると、現在のテーマに問題が生じる場合があります。他のテーマからアセットを参照して追加しないようにすることをお勧めします。
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -645,7 +653,8 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     テーマを作成して、それをコピーし、コピーしたテーマのスタイル設定を変更して同じような用途に使用することもできます。
     詳しくは、「テーマを使用した外観の設定」を参照してください (#specific-af-appearance)
     
@@ -657,18 +666,20 @@ themeOverride パラメーターを使用して、実行時にテーマを適用
     
     フォームで作業を行う際に、スタイルモードになっているフォーム&lt;！--またはインタラクティブなコミュニケーション-->のマルチチャネルエディターを使用して、コンポーネントのスタイルを設定できます。スタイルモードを使用してフォームコンポーネントのスタイル設定を変更すると、テーマで指定したスタイル設定は上書きされます。特定のフォームの特定のコンポーネントのスタイル設定を変更する方法については、「コンポーネントのインラインスタイル設定 (inline-style-adaptive-forms.md)
 」を参照してください。
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **コンテナパネルのレイアウト幅の変更**
 
   コンテナパネルのレイアウト幅の変更はお勧めしません。コンテナパネルの幅を指定すると、幅が静的になり、様々なディスプレイに合わせて調整されません。
 
-* **ヘッダーとフッターを操作する際にフォームビルダーまたはテーマエディターを使用する場合**
+* **ヘッダーとフッターの操作にフォームビルダーまたはテーマエディターを使用する場合**
 
   テーマエディターは、フォントスタイル、背景、透明度などのスタイル設定オプションを使用してヘッダーとフッターのスタイルを設定する場合に使用します。
-ヘッダーにロゴ画像や会社名などの情報を表示し、フッターに著作権情報を表示する場合は、フォームビルダーオプションを使用します。
+ロゴ画像、ヘッダーの会社名、フッターの著作権情報などの情報を提供する場合は、フォームビルダーオプションを使用します。
 
 
 ## 関連トピック {#see-also}

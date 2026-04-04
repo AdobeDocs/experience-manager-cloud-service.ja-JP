@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 89%
@@ -17,8 +17,10 @@ ht-degree: 89%
 
 # ステージ専用パイプラインと実稼動専用パイプラインの分割 {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 専用パイプラインを使用してステージングデプロイメントと実稼動デプロイメントを分割できます。
 
@@ -84,11 +86,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
    ![実稼動以外のパイプラインを追加ダイアログボックスの「ソースコード」タブ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. 「**エクスペリエンス監査**」タブで指定されたサイト URL は、Cloud Managerがページ品質を監査する公開済み URL です。
+1. 「**エクスペリエンス監査**」タブで、指定されたサイト URLは、Cloud Managerがページ品質を監査する公開URLです。
 
 1. 「**ページパス**」フィールドで監査するページを指定し、**![追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)ページを追加** をクリックします。
 
-   エクスペリエンス監査は、追加した各パスを分析して、パフォーマンス、アクセシビリティ、プログレッシブ Web アプリ、ベストプラクティス、SEO、その他の品質チェックを行います。 ![クロスサイズ 400 アイコン](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg) をクリックすると、複数のパスを追加および削除できます。
+   エクスペリエンス監査は、パフォーマンス、アクセシビリティ、プログレッシブ web アプリ、ベストプラクティス、SEO、その他の品質チェックのために追加した各パスを分析します。 ![クロスサイズ 400 アイコン](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg) をクリックすると、複数のパスを追加および削除できます。
 
    ![実稼動以外のパイプラインを追加ダイアログボックスの「エクスペリエンス監査」タブ](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -97,13 +99,13 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ### 実稼動専用パイプラインの作成 {#prod-only}
 
-1. **実稼動のみのパイプラインを追加** ダイアログボックスで、「**パイプライン名**」テキストフィールドにパイプラインのフリーテキスト名を入力します。
+1. ダイアログボックス **実稼動専用パイプラインを追加**、**パイプライン名** テキストフィールドに、パイプラインのフリーテキスト名を入力します。
 1. 「**パイプライン名**」フィールドに、目的の名前を入力します。
 1. **実稼動デプロイメントオプション**&#x200B;で、「**実稼動へのデプロイ前に一時停止**」を選択します。
 
    このオプションを選択すると、実稼動手順の直前に手動承認ゲートが挿入されます。パイプラインは停止し、承認者（デプロイメントマネージャーやビジネスオーナーなど）が実稼動デプロイを承認またはキャンセルするまで待機します。
 
-   変更制御または直前のチェックに使用します。
+   変更管理または直前の確認に使用します。
 
 1. 「**保存**」をクリックして、これらのオプションを含む実稼動専用パイプラインを作成します。
 
@@ -113,7 +115,8 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 新しいパイプラインは、[他のパイプラインと同様に](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)開始できます。また、ステージ専用パイプラインの実行詳細から実稼動専用パイプラインを直接トリガーすることもできます。
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### ステージ専用パイプラインの実行 {#stage-only-run}
 
@@ -132,7 +136,7 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 ![ステージング専用パイプラインの実行](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-**ビルドを昇格** をクリックすると、関連する実稼動専用パイプラインの実行を確認するダイアログボックスが開きます。 「**実行**」をクリックして開始します。
+「**ビルドを昇格**」をクリックすると、関連する実稼動専用パイプラインの実行を確認するためのダイアログボックスが開きます。 「**実行**」をクリックして開始します。
 
 ![ビルドを昇格 - パイプラインを実行ダイアログボックス](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 

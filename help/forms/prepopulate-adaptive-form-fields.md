@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 98%
@@ -32,9 +32,9 @@ ht-degree: 98%
 
 ### 保険
 
-## AEM Formsは保険申込書のデータを事前入力できますか？
+## AEM Formsは保険申し込み情報を事前入力できますか？
 
-はい。AEM Formsは、バックエンドデータソースを使用したフォームフィールドの事前入力をサポートしており、保険会社は既存の顧客データやポリシーデータを再利用し、手動入力を減らすことができます。
+はい。AEM Formsは、バックエンドのデータソースを使用したフォームフィールドの事前入力をサポートしています。これにより、保険会社は既存の顧客データやポリシーデータを再利用し、手作業を削減できます。
 
 ## 事前入力データの構造 {#the-prefill-structure}
 
@@ -355,12 +355,12 @@ prefill-page component.zip
 
 事前入力サービスは OSGi サービスで、OSGi バンドルを使用してパッケージ化します。OSGi バンドルを作成し、アップロードし、[!DNL AEM Forms] バンドルにインストールします。バンドルの作成を開始する前に、以下を行います。
 
-- [&#x200B; [!DNL AEM Forms]  Client SDK をダウンロードします](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)
+- [ [!DNL AEM Forms]  Client SDK をダウンロードします](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html)
 - ボイラープレートパッケージをダウンロードします
 
 - データ（事前入力データ）ファイルを crx-repository に配置します。ファイルは crx-repository の \contents フォルダー内の任意の場所に配置できます。
 
-[ファイルを入手](assets/prefill-sumbit-xmlsandcontentpackage.zip)
+[ファイルの取得](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 #### 事前入力サービスの作成 {#create-a-prefill-service}
 
@@ -384,7 +384,8 @@ prefill-page component.zip
 1. プロパティコンソールで、[!DNL AEM Forms] コンテナ／基本／事前入力サービスに移動します。
 1. Default Prefill Service を選択し、「**[!UICONTROL 保存]**」をクリックします。サービスはフォームに関連付けられます。
 
-<!-- ## Prepopulate data at client {#prefill-at-client}
+<!--
+ ## Prepopulate data at client {#prefill-at-client}
 
 When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
@@ -401,4 +402,5 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+   -->

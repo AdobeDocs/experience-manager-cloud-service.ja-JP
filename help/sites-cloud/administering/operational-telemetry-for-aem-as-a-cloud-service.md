@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 98%
@@ -43,7 +43,7 @@ ht-degree: 98%
 * 訪問しているサイトのホスト名（例：`experienceleague.adobe.com`）
 * `desktop:windows` や `mobile:ios` など、ページの表示に使用される幅広いユーザーエージェントタイプとオペレーティングシステム
 * `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)` など、データ収集の時間
-* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs?lang=ja`）
+* 訪問しているページの URL（例：`https://experienceleague.adobe.com/docs`）
 * リファラー URL（ユーザーがリンクをたどった場合、現在のページにリンクしているページの URL）
 * `2Ac6` のような形式で、ランダムに生成されたページビューの ID
 * `100` など、サンプリングレートの重み付けまたはその逆つまり、100 ページビューのうち 1 つしか記録されません。
@@ -56,9 +56,11 @@ ht-degree: 98%
 
 運用テレメトリは、クライアントサイドトラフィックを自動的に監視します。 アドビのお客様の場合、このサービスは既存の設定にシームレスに統合されるので、追加の手順を実行する必要はありません。運用テレメトリサービスが一般提供されると、この新しい機能のメリットが自動的に得られます。運用テレメトリサービスでは、現在、監視対象となるお客様向けの指標は公開されていません。アドビでは、この機能をできる限り早くお客様に提供できるように取り組んでいます。
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## アドビでの運用テレメトリの使用方法 {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## よくある質問 {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.
@@ -106,7 +109,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    オプトアウトすると、web サイトのトラフィックエンゲージメントを向上させる機会を逃す可能性があります。ただし、問題が発生した場合は、値 `true` に `AEM_OPTEL_DISABLED` という[環境変数を Cloud Manager で設定](/help/implementing/cloud-manager/environment-variables.md#add-variables)することで、運用テレメトリを無効にすることができます。後で運用テレメトリを再度有効にする場合は、その環境変数を再度削除するだけです。
 
-1. **コンテンツセキュリティポリシーを Nonce で使用できますか？**
+1. **Nonceでコンテンツセキュリティポリシーを使用できますか？**
 
    運用テレメトリのサポートには、nonce を使用したコンテンツセキュリティポリシーをサポートする実験的な機能が含まれています。この機能を有効にするには、値 `true` に `AEM_OPTEL_NONCE` という[環境変数を Cloud Manager で設定](/help/implementing/cloud-manager/environment-variables.md#add-variables)します。後で再度無効にする場合は、その環境変数を再度削除するだけです。
 

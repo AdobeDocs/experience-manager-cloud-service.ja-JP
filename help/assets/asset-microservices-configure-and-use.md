@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2899'
 ht-degree: 99%
@@ -21,7 +21,8 @@ ht-degree: 99%
 
 アセットの処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に応じて異なります。Experience Manager には基本的な初期設定が用意されており、管理者は特定のアセット処理設定を追加できます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズを使用すると、デベロッパーはデフォルトのオファーを拡張できます。
 
-<!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -42,7 +43,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 | [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。デフォルトのオプションを拡張すると、レンディションの生成に関するさらなるオプションが提供されます。標準搭載のオプションを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPO（プレースメント専用）レンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
 | [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、[アセット計算サービス](https://experienceleague.adobe.com/ja/docs/asset-compute/using/introduction)を呼び出すように、ユーザーインターフェイスを介して管理者が設定します。クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 「[可能な使用例](#custom-config)」を参照してください。 |
 
-<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+<!--
+ To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## サポートされているファイル形式 {#supported-file-formats}
@@ -55,12 +57,13 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 デフォルト設定では、最も基本的な処理プロファイルのみが設定されています。このような処理プロファイルはユーザーインターフェイスに表示されず、変更することはできません。アップロードされたアセットは常に処理されます。このようなデフォルトの処理プロファイルを使用すると、[!DNL Experience Manager] で必要なあらゆる基本処理をすべてのアセットに対して実行できます。
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!--
+ ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
 ## 標準設定 {#standard-config}
 
-[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。[&#x200B; このビデオでは、[!UICONTROL &#x200B; 処理プロファイル &#x200B;] の作成方法と適用方法、作成したレンディションにアクセスする方法を説明します &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/content-automation/creative-operations)。
+[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。[このビデオでは、[!UICONTROL 処理プロファイル ]を作成および適用する方法、および作成したレンディション ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations)にアクセスする方法について説明します。
 
 * **レンディションの幅と高さ**：レンディションの幅と高さの仕様により、生成される出力画像の最大サイズが指定されます。アセットマイクロサービスでは、レンディションの幅と高さがそれぞれ指定の幅と高さを超えない範囲で、可能な限り大きなレンディションを生成しようとします。縦横比は維持され、元の縦横比と同じになります。値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
 
@@ -87,14 +90,16 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+<!--
+ TBD: Update the video link when a new video is available from Tech Marketing.
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/34689?captions=jpn&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
-<!-- This image was removed per cqdoc-15624, as requested by engineering.
+<!--
+ This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -229,7 +234,7 @@ Asset Compute Service の統合により、Experience Manager は、「[!UICONTR
 * パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。単純なリポジトリーパスがサポートされています。これらを `/var` パスのワークフローモデルにマッピングします。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。コロンを使用して表現とモデルを区切ります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すように指定します。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
-OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
+OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
 
 #### ワークフローの後処理の実行を無効にする
 
@@ -286,7 +291,8 @@ OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Man
 >* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/ja/docs/asset-compute/using/extend/develop-custom-application)。
 >* [様々な使用例でサポートされる MIME タイプ](/help/assets/file-format-support.md)。
 
-<!-- TBD: 
+<!--
+ TBD: 
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->

@@ -1,35 +1,36 @@
 ---
-title: AEM MCP を使用した人類間衝突の設定
-description: AEM MCP サーバーに接続するように Anthropic Cloud を設定する方法を説明します
+title: AEM MCPでのAnthropic Claudeの設定
+description: AEM MCP サーバーに接続するようにAnthropic Cloudを設定する方法を説明します
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+role: User, Admin, Developer
+exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
 
-# AEM MCP を使用した人類間衝突の設定 {#setup-claude}
+# AEM MCPでのAnthropic Claudeの設定 {#setup-claude}
 
-次の手順に従って、Anthropic Cloud をAEMの MCP サーバーに接続します。
+Anthropic CloudをAEMのMCP サーバーに接続するには、次の手順に従います。
 
-* Claude の MCP 設定で、1 つ以上のAEM MCP サーバー URL を登録します。
-* Adobeのログインフローを完了します。
-* オプションで、設定領域で特定のツールの自動確認を有効にします。 検索または読み取り専用操作には、このオプションをお勧めします。
+* ClaudeのMCP設定で、1つ以上のAEM MCP サーバーURLを登録します。
+* Adobe ログインフローを実行します。
+* オプションで、設定領域の特定のツールに対して自動確認を有効にします。 このオプションは、検索操作または読み取り専用操作に使用することをお勧めします。
 * 会話を開始する前に、MCP サーバーが選択されていることを確認します。
-* AEM関連のタスクを実行するように Claude に依頼します。 Claude は、プロンプトに基づいて、MCP サーバーによって公開されるAEM ツールを選択します。
+* ClaudeにAEM関連のタスクを実行するように依頼します。 Claudeは、プロンプトに基づいて、MCP サーバーが公開するAEM ツールを選択します。
 
-![&#x200B; クラウド設定ダイアログ &#x200B;](assets/claude-1.png)
+![ クラウド設定ダイアログ。](assets/claude-1.png)
 
-![&#x200B; クラウドのコネクタパネル &#x200B;](assets/claude-2.png)
+![Claudeのコネクタ パネル。](assets/claude-2.png)
 
-![&#x200B; クラウドへのカスタムコネクタの追加 &#x200B;](assets/claude-3.png)
+![Claudeでカスタムコネクタを追加しています。](assets/claude-3.png)
 
-![Claude のカスタムコネクタの接続 &#x200B;](assets/claude-4.png)
+![Claudeでカスタムコネクタを接続しています。](assets/claude-4.png)
 
-![Claude のカスタムコネクタ設定フォーム &#x200B;](assets/claude-5.png)
+![Claudeのカスタムコネクタ設定フォーム。](assets/claude-5.png)
 
-![&#x200B; カスタムコネクタのツール権限ダイアログ &#x200B;](assets/claude-6.png)
+![ カスタムコネクタのツール権限ダイアログ。](assets/claude-6.png)
 
-![AEM コンテンツ MCP サービスを使用するようクラウドに促すメッセージ &#x200B;](assets/claude-7.png)
+![AEM Content MCP サービスを使用するようにClaudeに促します。](assets/claude-7.png)

@@ -12,7 +12,7 @@ thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 94%
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用すると、コンテンツ作成者は、追加のカテゴリページや製品ページを作成できます。これらのページは、追加のマーケティングコンテンツで強化し、特定のカテゴリや製品をターゲットするように設定できます。次のビデオでは、この機能の設定について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/34058/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 特定の製品ページは、SKU または製品のカテゴリで選択できます。後者は、カテゴリ情報を製品 URL にエンコードする必要があるので、使用可能なデフォルトの製品ページ URL 形式の一部でのみサポートされます。
 
@@ -39,4 +39,4 @@ ht-degree: 94%
 
 ## 関連リソース {#related}
 
-また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。[&#x200B; 製品データを関連するAEM コンテンツとエンリッチメントする &#x200B;](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md) 方法を説明します。
+また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。関連するAEM コンテンツで商品データを[拡充する方法について説明します。](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)

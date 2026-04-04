@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,8 @@ ht-degree: 99%
 
 * **事前設定済みデータソースを使用する場合**：[データソースの設定](configure-data-sources.md)の説明に従ってデータソースが既に設定されている場合は、フォームデータモデル（FDM）を作成する際に、それらの事前設定済みデータソースを選択できます。この方法の場合、選択したデータソースのすべてのデータモデルオブジェクト、プロパティ、およびサービスを、フォームデータモデル（FDM）内で使用できます。
 
-* **データソースが設定されていない場合**：フォームデータモデル用のデータソースが設定されていない場合であっても、データソースなしでフォームデータモデル（FDM）を作成できます。フォームデータモデル（FDM）を使用して、アダプティブフォーム <!--and interactive communication--> を作成し、サンプルデータを使用してそれらをテストできます。データソースが使用可能な状態になっている場合は、フォームデータモデル（FDM）をそのデータソースに連結すると、関連するアダプティブフォーム <!--and interactive communications--> 内でその内容が自動的に反映されます。
+* **データソースが設定されていない場合**：フォームデータモデル用のデータソースが設定されていない場合であっても、データソースなしでフォームデータモデル（FDM）を作成できます。フォームデータモデル（FDM）を使用して、アダプティブフォーム <!--and interactive communication--> を作成し、サンプルデータを使用してそれらをテストできます。データソースが使用可能な場合、フォームデータモデル（FDM）をデータソースにバインドすると、関連するアダプティブFormsに自動的に反映されます。
+  <!--and interactive communications-->
 
 >[!NOTE]
 >
@@ -115,7 +116,7 @@ ht-degree: 99%
 
 1. Apache Sling のコンテキスト対応設定を作成します。OSGI 設定の作成手順は次のとおりです。
    1. アーキタイププロジェクトの **OSGi 設定ファイルをセットアップ[!DNL Experience Manager]します。**
-PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` を使用して OSGi ファクトリー設定ファイルを作成します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。詳しくは、[&#x200B; [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations) の OSGi の設定を参照してください。
+PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` を使用して OSGi ファクトリー設定ファイルを作成します。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。詳しくは、[ [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations) の OSGi の設定を参照してください。
 
    1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider の使用手順は次のとおりです。
       1. ローカル開発インスタンス `/system/console/configMgr` で、**[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: SGi configuration]** という名前のファクトリー OSGi 設定を選択します。

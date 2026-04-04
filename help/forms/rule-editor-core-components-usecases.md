@@ -1,87 +1,87 @@
 ---
 title: この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの様々な使用例について説明します。
-description: この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの様々な使用例について説明します。
+description: この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの様々なユースケースについて説明します。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 42%
 
 ---
 
-# ルールエディターの様々なユースケース
+# ルールエディターのさまざまなユースケース
 
-この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの詳細な例を示し、様々なシナリオで適切に実装されているかについてインサイトを提供します。 ルールエディターを使用すると、開発者は、フォームの動作を制御するロジックを定義および管理できます。
-次に、ルールエディターの様々な実装について説明します。
+この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターの詳細な例を提供し、様々なシナリオに対する適切な実装に関するインサイトを提供します。 ルールエディターを使用すると、開発者はフォームの動作を制御するロジックを定義および管理できます。
+次に、ルールエディターのさまざまな実装について説明します。
 
-## 最初のパネルが有効な場合は、ボタンをクリックしたときに別のパネルにフォーカスを設定します
+## 最初のパネルが有効な場合は、ボタンのクリック時に別のパネルにフォーカスを設定します
 
 <span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 
-ルールエディターを使用すると、水平タブ、垂直タブ、アコーディオン、またはボタンクリック時のウィザードなどのパネルレイアウトを検証し、別のパネル内のフォームオブジェクトにフォーカスを設定できます。 この機能を使用すると、フォームのナビゲーションとユーザーエクスペリエンスを向上させることができます。
+ルールエディターを使用すると、ボタンをクリックしてフォーカスを別のパネルのフォームオブジェクトに設定する際に、水平タブ、垂直タブ、アコーディオン、ウィザードなどのパネルレイアウトを検証できます。 この機能を使用して、フォームのナビゲーションとユーザーエクスペリエンスを向上させることができます。
 
-ウィザードのレイアウトを使用して複数の手順を持つアプリケーションフォームを想像します。 `Personal Information` に移動する前に、`Employment Details` のパネルを完了する必要があります。 「`Next`」ボタンをクリックすると、ルールエディターによって `Personal Information` ールパネルが検証されます。 すべての必須フィールドが正しく入力されている場合、フォームは自動的に `Employment Details` ントロールパネルにフォーカスを移動します。 それ以外の場合は、ユーザーに不足しているフィールドに入力するよう促すエラーメッセージが表示されます。
+ウィザードレイアウトを使用して、マルチステップのアプリケーションフォームを想像します。 `Personal Information`に移動する前に、`Employment Details` パネルを完了する必要があります。 `Next` ボタンをクリックすると、ルールエディターは`Personal Information` パネルを検証します。 すべての必須フィールドが正しく入力されると、フォームは自動的に`Employment Details` パネルにフォーカスを移動します。 それ以外の場合は、見つからないフィールドを完了するようユーザーに促すエラーメッセージが表示されます。
 
-`Next` ボタンでルールを作成して、最初のパネルを検証できます。
+`Next` ボタンにルールを作成して、最初のパネルを検証できます。
 
-![&#x200B; 「次へ」ボタンのルール &#x200B;](/help/forms/assets/next-rule.png){width=50%}
+![次のボタンのルール ](/help/forms/assets/next-rule.png){width=50%}
 
-「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力した詳細が正しい場合は、フォーカスが **アカウントセキュリティ** パネルに移動します。正しくない場合は、見つからない詳細の入力を求めるエラーメッセージが表示されます。
+「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力された詳細が正しい場合、フォーカスは&#x200B;**アカウントセキュリティ** パネルに移動します。そうでない場合は、不足している詳細を入力するよう求めるエラーメッセージが表示されます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457767)
 
 
 ## ボタンを使用したパネル間の移動
 
-ルールエディターでは、水平タブ、垂直タブ、アコーディオン、ウィザードなどのナビゲーションボタンをパネルレイアウトに追加できます。 これらのボタンを使用すると、フォーム内の様々なパネル間のトランジションを簡素化し、選択したパネルにフォーカスを移動することで、ユーザーエクスペリエンスを強化できます。
+ルールエディターでは、水平タブ、垂直タブ、アコーディオン、ウィザードなど、パネルレイアウトにナビゲーションボタンを追加できます。 これらのボタンは、フォーム内の異なるパネル間のトランジションを簡素化し、選択したパネルにフォーカスを移動することで、ユーザーエクスペリエンスを向上させます。
 
-アプリケーションのプロファイル設定セクションを操作していて、タブではなくボタンを使用してナビゲーションを容易にしていると仮定します。 メインダッシュボードからプロファイル設定を入力すると、プロファイルのさまざまな側面に特化した一連のパネルが表示されます。**個人情報**、**アカウントセキュリティ**、および **通知環境設定** です。
+アプリケーションのプロファイル設定セクションを操作しているとします。このセクションでは、タブではなくボタンがナビゲーションを容易にします。 メインダッシュボードからプロファイル設定を入力すると、プロファイルのさまざまな側面に特化した一連のパネル（**個人情報**、**アカウントセキュリティ**、**通知設定**）が表示されます。
 
-各パネルには、特定の情報を更新するための関連フィールドとオプションが含まれています。 `Next` や `Back` などのナビゲーションボタンが目立つように配置されているので、これらのパネル間を移動できます。 `Next` をクリックしてユーザーを **アカウントセキュリティ** パネルに進め、`Back` をクリックして **個人情報** パネルに戻ります。 このナビゲーション方法は、コンテキストを失うことなくセクション間をシームレスに切り替え、スムーズで直感的なユーザーエクスペリエンスを提供します。 ナビゲーションボタンを使用すると、プロファイル設定を管理するプロセスが簡単になり、インタラクションがより整理され、使いやすくなります。
+各パネルには、特定の情報を更新するための関連するフィールドとオプションが含まれています。 `Next`や`Back`などのナビゲーションボタンが目立つように配置されているため、これらのパネル間を移動できます。 `Next`をクリックして&#x200B;**アカウントセキュリティ** パネルに移動し、`Back`をクリックして&#x200B;**個人情報** パネルに戻ります。 このナビゲーション方法は、コンテキストを失うことなくセクション間をシームレスに移行し、スムーズで直感的なユーザーエクスペリエンスを提供します。 ナビゲーションボタンを使用すると、プロファイル設定を管理するプロセスが簡素化され、より整理されたユーザーフレンドリーなインタラクションを実現できます。
 
-`Navigate among the panels` ルールを使用して、異なるパネル間での切り替えを可能にするボタンのナビゲーションルールを作成できます。  `Shift focus to the next item` 属性を選択して、レイアウト内の次のパネルにフォーカスを移動します。
+`Navigate among the panels` ルールを使用して、異なるパネルを切り替えることができるボタンのナビゲーションルールを作成できます。  `Shift focus to the next item`属性を選択して、レイアウトの次のパネルにフォーカスを移動します。
 
-![&#x200B; 次のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![次のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
-`Next` ボタンをクリックすると、フォーカスがレイアウト内の次のパネルに移動します。
+`Next` ボタンをクリックすると、フォーカスはレイアウトの後続のパネルに移動します。
 
-![&#x200B; 「次へ」ボタンを使用してパネル内を移動する &#x200B;](/help/forms/assets/navigate-in-panel.gif)
+![次のボタンを使用してパネル内を移動](/help/forms/assets/navigate-in-panel.gif)
 
-同様に、「`Previous`」ボタンのルールを作成して、前のパネルにフォーカスを移動できます。
+同様に、`Previous` ボタンのルールを作成して、前のパネルにフォーカスを移動することもできます。
 
-![&#x200B; 前のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![前のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
-## 関数を使用した繰り返し可能なパネルでの複雑な計算の合理化
+## 関数を使用して、繰り返し可能なパネルで複雑な計算を合理化します
 
-ルールエディターでは、繰り返し可能なパネル内のフィールドに対して直接関数（合計、最小、最大、結合など）を使用できます。 また、数値配列、文字列配列、ブール配列などを受け入れる関数に、繰り返し可能なパネルフィールド値を渡すこともできます。 これにより、強力な自動処理が可能になり、カスタムコードを使用しなくても複雑なビジネスロジックを実装できます。
+ルールエディターを使用すると、繰り返し可能なパネル内のフィールドに、合計、最小、最大、結合などの標準の関数を直接使用できます。 繰り返し可能なパネルフィールドの値を、数値配列、文字列配列、ブール配列などを受け入れる関数に渡すこともできます。 これにより、強力な自動化が可能になり、カスタムコードを使用せずに複雑なビジネスロジックを実装できます。
 
-繰り返し可能なパネルを持つフォームについて考えてみます。このパネルでは、各パネルインスタンスが、アセットの宣言済み値に関する情報を収集します。
+繰り返し可能なパネルを持つフォームを想像してみてください。各パネルインスタンスは、アセットの宣言された値に関する情報を収集します。
 
-![&#x200B; 繰り返し可能なフォーム &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![繰り返し可能フォーム ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
-`Sum` 関数を使用して、すべてのパネルの合計アセット値を自動的に計算できるので、手動での計算が不要になり、エラーの可能性を減らすことができます。
+`Sum`関数を使用して、すべてのパネルのアセットの合計値を自動的に計算できるため、手作業による計算が不要になり、エラーの可能性が減ります。
 
-![OOTB 関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+![OOTB関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
 
-アセット値を宣言するインスタンスを追加してフォームに入力すると、「`Calculate Asset Value`」ボタンは、宣言されたすべてのアセット値の合計を計算し、その結果をテキストボックスに表示 `assetvalue` ます。
+フォームに入力し、インスタンスを追加してアセット値を宣言すると、`Calculate Asset Value` ボタンはすべての宣言されたアセット値の合計値を計算し、その結果を合計として`assetvalue` テキストボックスに表示します。
 
-![OOTB 関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+![OOTB関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 >[!NOTE]
 >
 > 繰り返し可能なパネルフィールドの値が配列を受け入れない関数に渡された場合、繰り返し可能なパネルの最後のインスタンスのフィールド値が関数に渡されます。
 
-これは一例に過ぎません。 使用可能な [&#x200B; 関数 &#x200B;](#b-form-objects-and-functions-br) を探索して、ワークフローを簡素化し、フォーム内のデータの精度を高めます。
+例をいくつか紹介します。 ワークフローを簡素化し、フォーム内のデータ精度を向上させるために、利用可能な[関数](#b-form-objects-and-functions-br)を確認します。
 
 ## ネスト式 {#nestedexpressions}
 
-ルールエディターでは、複数の AND 演算子と OR 演算子を使用して、ネストされたルールを作成できます。複数の AND 演算子と OR 演算子をルールに混在させることができます。
+ルールエディターでは、複数の AND 演算子と OR 演算子を使用して、ネストされたルールを作成できます。ルールでは、複数のAND演算子とOR演算子を混在させることができます。
 
-以下の例では、ネストされたルールを紹介します。ここでは、必要な条件が満たされた際に、子供の親権適格性についてのメッセージをユーザーに表示します。
+次に、必要な条件が満たされたときに、子どもの親権の資格に関するメッセージをユーザーに表示するネストされたルールの例を示します。
 
 ![複雑な式](assets/complexexpression.png)
 
@@ -93,7 +93,7 @@ ht-degree: 42%
 
 ルールエディターでは、日付比較を使用して条件を作成できます。
 
-次に示す条件の例では、ユーザーが日付フィールドに入力することによって指定する家屋の住宅ローンが既に取得されている場合、静的テキストオブジェクトを表示します。
+次に、住宅ローンが既に実行されている場合に静的テキストオブジェクトを表示する条件の例を示します。これは、日付フィールドを入力することでユーザーが示します。
 
 ユーザーが入力した物件の住宅ローンの日付が過去のものである場合、アダプティブフォームは収入計算に関する注記を表示します。次のルールは、ユーザーが入力した日付を現在の日付と比較し、ユーザーが入力した日付が現在の日付より前の場合、フォームは（Income という名前の）テキストメッセージを表示します。
 
@@ -115,11 +115,13 @@ ht-degree: 42%
 
 ![その他の証明が要求されました](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ### フォームデータモデルサービスを起動 {#invoke}
 
@@ -135,7 +137,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### 「When」ルールを使用して複数のアクションをトリガーする  {#triggering-multiple-actions-using-the-when-rule}
 
-ローン申し込みフォームでは、ローンの申請者が既存の顧客であるかどうかを判断する必要があります。ユーザーが指定する情報に基づいて、顧客 ID フィールドは表示または非表示にする必要があります。 また、申請者が既存の顧客であれば、顧客 ID フィールドにフォーカスを置きます。ローン申し込みフォームの構成要素は次のとおりです。
+ローン申し込みフォームでは、ローンの申請者が既存の顧客であるかどうかを判断する必要があります。ユーザーが提供する情報に基づいて、顧客ID フィールドを表示または非表示にする必要があります。 また、申請者が既存の顧客であれば、顧客 ID フィールドにフォーカスを置きます。ローン申し込みフォームの構成要素は次のとおりです。
 
 * 「**[!UICONTROL Are you an existing Geometrixx customer?（Geometrixx に既に登録されていますか？）]**」のラジオボタンでは、「[!UICONTROL はい]」と「[!UICONTROL いいえ]」のオプションが設けられています。「はい」の値は **0**、「いいえ」の値は **1** です。
 
@@ -147,19 +149,21 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 上のルール例では、「When」セクション内の文は条件に当たります。これが True を返すと、「Then」セクションで指定されたアクションが実行されます。
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### ルール内で関数出力を使用する {#using-a-function-output-in-a-rule}
 
 発注フォームでは、次の表が表示されます。この中には、発注者が注文を入力します。このテーブルの内容：
 
 * 最初の行は反復可能なので、ユーザーは複数の製品を注文し、それぞれ異なる数量を指定することができます。この要素の名前は、「`Row1`」です。
-* 反復可能な行と「Product Quantity （製品数量）」の列が重なるセルでは、タイトルが「Quantity （数量）」になっています。 このセルの要素名は「`productquantity`」です。
-* 表の 2 行目は反復しません。また、この行と「Product Quantity （製品数量）」の列が重なるセルでは、タイトルが「Total Quantity （合計数量）」になっています。
+* 繰り返し可能な行の「製品数量」列のセルのタイトルは「数量」です。 このセルの要素名は「`productquantity`」です。
+* 表の2行目は繰り返し不可能で、この行の製品数量の列のセルのタイトルは合計数量です。
 
 ![Example-function-table](assets/example-function-table.png)
 
@@ -171,7 +175,7 @@ Rule in the code editor -->
 
 ### 式を使用してフィールド値を検証する {#validating-a-field-value-using-expression}
 
-前の例で説明した発注書フォームでは、価格が 10000 を超える商品については、ユーザーが複数個発注することを制限します。 この検証を行うには、以下に示すように検証ルールを記述します。
+前の例で説明した発注フォームでは、ユーザーが10000上の価格の商品を1つ以上発注することを制限します。 この検証を行うには、以下に示すように検証ルールを記述します。
 
 ![Example-validate](assets/example-validate.png)
 

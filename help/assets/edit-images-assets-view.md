@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 95%
@@ -32,7 +32,8 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
->abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
+>abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."
+-->
 
 ### Adobe Express を使用したアセットビューでの画像編集 {#edit-image-on-assets-view-using-adobe-express}
 
@@ -42,7 +43,7 @@ ht-degree: 95%
 
 画像を特定のサイズに変更するのが一般的なユースケースです。 アセットビューでは、特定の写真サイズに対応する新しい解像度を事前に計算し、一般的な写真サイズに合わせて画像サイズをすばやく変更できます。 アセットビューを使用して画像サイズを変更するには、次の手順に従います。
 
-1. 左側のパネルから「**画像サイズを変更**」をクリックします。ダイアログボックスに、Adobe Express を活用した画像のサイズ変更機能が表示されます。
+1. 左側のパネルから「**画像サイズを変更**」をクリックします。 ダイアログボックスに、Adobe Express を活用した画像のサイズ変更機能が表示されます。
 1. サイズ変更ドロップダウンリストから適切なソーシャルメディアプラットフォームを選択し、表示されるオプションから画像サイズを選択します。
 1. 必要に応じて、「**画像の拡大・縮小**」フィールドを使用して画像を拡大・縮小します。
 1. 「**[!UICONTROL 適用]**」をクリックし、変更を適用します。
@@ -115,7 +116,7 @@ Express の使用権限を持つユーザーは、アセットビュー内の Ex
 
 * サポートされているファイルタイプ：JPEG または PNG。
 * サポートされるファイルの最大サイズ：40 MB。
-* サポートされる幅と高さの範囲：65 MP （例：8K x 8K または 16K x 4K）。
+* サポートされる幅と高さの範囲：65MP （例：8K x 8Kまたは16K x 4K）。
 * ページをリロードすると、ソースフォルダーに最新の保存済みアセットが表示されます。
 
 ### Adobe Express を使用した新しいアセットの作成 {#create-new-embedded-editor}
@@ -130,8 +131,8 @@ Express の使用権限を持つユーザーは、アセットビュー内の Ex
 #### 制限事項 {#limitations}
 
 * 変更できるのは、`JPEG` および `PNG` 形式タイプの画像のみです。
-* アセットサイズは、デスクトップデバイスの場合は 80 MB 未満、モバイルデバイスの場合は 40 MB 未満にする必要があります。
-* サポートされる幅と高さの範囲は 65 MP です（例：8K x 8K または 16K x 4K）。
+* アセットサイズは、デスクトップデバイスの場合は80 MB未満、モバイルデバイスの場合は40 MB未満である必要があります。
+* サポートされる幅と高さの範囲は65MPです（例えば、8K x 8Kまたは16K x 4K）。
 * 画像は、`PDF`、`JPEG` または `PNG` 形式で保存できます。
 
 <!--
@@ -155,7 +156,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/jp/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -198,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 >[!MORELIKETHIS]
 >

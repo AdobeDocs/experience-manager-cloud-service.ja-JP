@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2390'
 ht-degree: 94%
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 [!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。
 
-* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL、Azure SQL および [!DNL Oracle RDBMS]
+* リレーショナルデータベース - MySQL、[!DNL Microsoft® SQL Server]、[!DNL IBM® DB2®]、postgreSQL、Azure SQL、[!DNL Oracle RDBMS]
 * RESTful Web サービス
 * SOAP ベースの web サービス
 * OData サービス（バージョン 4.0）
@@ -41,7 +41,7 @@ ht-degree: 94%
 
 [!DNL Experience Manager] web コンソール設定を使用してリレーショナルデータベースを設定する前に、次の操作が必須です。
 
-* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja)
+* ポートはデフォルトで無効になっているので、[Cloud Manager API から高度なネットワークを有効にします。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
 * [Maven に JDBC ドライバーの依存関係を追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=ja).
 
 
@@ -49,7 +49,7 @@ ht-degree: 94%
 
 [!DNL Experience Manager] web コンソールの設定を使用して、リレーショナルデータベースを設定することができます。次の手順を実行します。
 
-**手順 1:AEM as a Cloud Service Git リポジトリのクローン**
+**手順1: AEM as a Cloud Service Git リポジトリを複製**
 
 1. コマンドラインを開き、AEM as a Cloud Service リポジトリを保存するディレクトリ（例：`/cloud-service-repository/`）を選択します。
 
@@ -63,27 +63,27 @@ ht-degree: 94%
 
    これらの詳細を見つける手順について詳しくは、Adobe Experience League の記事「[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#accessing-git)」を参照してください。
 
-   コマンドが正常に完了すると、ローカルディレクトリに新しいフォルダーが作成されます。このフォルダーの名前は、アプリケーションに合わせて指定します。
+   コマンドが正常に完了すると、ローカルディレクトリに新しいフォルダーが作成されます。このフォルダーは、アプリケーションの名前にちなんで作成されます。
 
-**手順 2：設定フォルダーに移動する**
+**手順2：設定フォルダー**&#x200B;に移動します
 
 1. エディターでリポジトリフォルダーを開きます。
 
-1. `<application folder>` 内の次のディレクトリに移動します。このディレクトリには、JDBC プールの OSGi 設定を配置する必要があります。
+1. JDBC プールのOSGi設定を配置する`<application folder>`内の次のディレクトリに移動します。
 
    ```bash
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**手順 3:MySQL 接続設定ファイルを作成する**
+**手順3: MySQL接続設定ファイルの作成**
 
-1. 次のファイルを作成します。
+1. ファイルを作成します。
 
    ```bash
    com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
    ```
 
-1. 次のコード行を追加します。
+1. 以下のコード行を追加します。
 
 ```json
 {
@@ -96,11 +96,11 @@ ht-degree: 94%
 }
 ```
 
-> 
+>[!NOTE]
 >
-> `<application folder>`、`<hostname>`、`<database>`、`<your-db-username>`、`<your-db-password>` などのプレースホルダーを実際の値に置き換えます。
+> `<application folder>`、`<hostname>`、`<database>`、`<your-db-username>`、`<your-db-password>`などのプレースホルダーを実際の値に置き換えます。
 
-**手順 4：変更をコミットしてプッシュする**
+**手順4：変更をコミットしてプッシュ**
 
 ターミナルを開き、次のコマンドを実行します。
 
@@ -110,9 +110,9 @@ git commit -m "<commit message>"
 git push 
 ```
 
-**手順 5:Cloud Manager パイプラインを使用して変更をデプロイする**
+**手順5: Cloud Manager パイプラインを介した変更内容のデプロイ**
 
-1. **AEM Cloud Manager** にログインします。
+1. **AEM Cloud Manager**&#x200B;にログインします。
 1. プロジェクトに移動し、パイプラインを実行して変更をデプロイします。
 
 >[!NOTE]
@@ -149,7 +149,8 @@ git push
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
-<!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
+<!--
+ ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
@@ -168,7 +169,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Select **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration.
+-->
 
 ## クラウドサービス設定用フォルダーの構成 {#cloud-folder}
 
@@ -199,7 +201,7 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 >[!NOTE]
 > [!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムまたはファイルがホストされている URL に [!DNL Swagger] ファイル（[Swagger Version 2.0](https://swagger.io/specification/v2/)）[!DNL Swagger] ファイル（[Swagger Version 3.0](https://swagger.io/specification/v3/)）が存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
 
-### Open API 仕様バージョン 2.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
+### Open API Specification バージョン 2.0用RESTful サービスの設定 {#configure-restful-services-open-api-2.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
@@ -208,8 +210,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL &#x200B; Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL  Swagger] ソース入力に基づいて、次のフィールドに値が事前入力されます。
 
       * スキーム：REST API で使用される転送プロトコル。ドロップダウンリストに表示されるスキームの種類の数は、[!DNL Swagger] ソースで定義されているスキームによって異なります。
       * ホスト：REST API を提供するホストのドメイン名または IP アドレス。このフィールドは必須です。
@@ -224,7 +226,7 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 
 1. 「**[!UICONTROL 作成]**」を選択して、RESTful サービス用のクラウド設定を作成します。
 
-### Open API 仕様バージョン 3.0 用の RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
+### Open API Specification バージョン 3.0用RESTful サービスの設定 {#configure-restful-services-open-api-3.0}
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーを選択します。
 
@@ -233,8 +235,8 @@ RESTful web サービスは、[Swagger の仕様](https://swagger.io/specificati
 1. 「**[!UICONTROL 作成]**」を選択して、**[!UICONTROL データソース設定を作成]**&#x200B;ウィザードを開きます。設定の名前と、必要に応じて設定のタイトルを指定し、「**[!UICONTROL サービスタイプ]**」ドロップダウンで「**[!UICONTROL RESTful サービス]**」を選択します。必要な場合は、設定のサムネール画像を選択して「**[!UICONTROL 次へ]**」を選択します。
 1. RESTful サービスの次の詳細を指定します。
 
-   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL &#x200B; Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
-   * [!DNL &#x200B; Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
+   * 「[!UICONTROL Swagger ソース]」ドロップダウンで「URL」または「ファイル」を選択します。「URL」を選択した場合は、[!DNL  Swagger] 定義ファイルに対する [!DNL Swagger 3.0 URL] を指定し、「ファイル」を選択した場合は、ローカルのファイルシステムから [!DNL Swagger] ファイルをアップロードします。
+   * [!DNL  Swagger] ソース入力に基づいて、ターゲットサーバとの接続情報が表示されます。
    * RESTful サービスにアクセスするための認証タイプ（なし、OAuth2.0（[認証コード](https://oauth.net/2/grant-types/authorization-code/)、[クライアント資格情報](https://oauth.net/2/grant-types/client-credentials/)）、基本認証、API キー認証、カスタム認証）を選択し、その選択内容に応じて認証の詳細を指定します。
 
    認証タイプとして **[!UICONTROL API キー]**&#x200B;を選択した場合は、API キーの値を指定します。API キーは、リクエストヘッダーまたはクエリパラメーターとして送信できます。「**[!UICONTROL 場所]**」ドロップダウンリストから次のオプションの 1 つを選択し、それに応じて「**[!UICONTROL パラメーター名]**」フィールドにヘッダーまたはクエリパラメーターの名前を指定します。
@@ -391,7 +393,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
@@ -414,7 +416,8 @@ To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure
 
 -->
 
-<!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
+<!--
+## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
 When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
@@ -425,7 +428,8 @@ When you enable mutual authentication for form data model (FDM), both the data s
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
    1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
-1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
+1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
+-->
 
 ## 次の手順 {#next-steps}
 

@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1703'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -102,8 +102,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 * **post.POST.jsp**：送信サーブレットは、送信されたデータおよび前のセクションからの追加データで、このスクリプトを呼び出します。このページで言及されるアクションの実行は、post.POST.jsp スクリプトの実行を意味します。送信アクションをアダプティブフォームに登録し、アダプティブフォーム編集ダイアログに表示するには、次のプロパティを `sling:Folder` に追加します。
 
    * 文字列型の **guideComponentType** および値 **fd/af/components/guidesubmittype**
-   * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel**。<!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsdi** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP または XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、<!--XFA- and -->XSD ベースのアダプティブフォームでアクションを表示するには、値を <!--**xfa** and--> **xsd** に指定します。
-
+   * 送信アクションが適用されるアダプティブフォームのタイプを指定する文字列型の **guideDataModel**。**xsdi** は、XSD ベースのアダプティブフォームでサポートされています。**basic** は、XDP または XSD を使用しないアダプティブフォームでサポートされています。複数のタイプのアダプティブフォームでのアクションを表示するには、対応する文字列を追加します。各文字列はカンマで区切ります。例えば、XSD ベースのアダプティブ Formsでアクションを表示するには、値を&#x200B;**xsd**&#x200B;と指定します。
+  <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
    * **jcr:description**（タイプ - 文字列）。このプロパティの値は、アダプティブフォーム編集ダイアログの「送信アクション」タブにある送信アクションリストに表示されます。OOTB アクションは、**/libs/fd/af/components/guidesubmittype** の場所にある CRX リポジトリーに存在します。
 
    * **文字列**&#x200B;型の submitService。詳しくは、「[カスタムアクション用にアダプティブフォームの送信をスケジュール](#schedule-adaptive-form-submission)」を参照してください。

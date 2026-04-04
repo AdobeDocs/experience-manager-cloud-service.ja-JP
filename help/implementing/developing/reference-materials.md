@@ -4,7 +4,7 @@ description: AEM には、デジタルエクスペリエンスプロジェクト
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
@@ -25,9 +25,11 @@ AEM の中核を成す API は次のとおりです。
 | [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | 様々な必須コンポーネントを提供するアドビのオープン web スタック（6.5 Granite の資料が AEMaaCS に適用されます） |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | ユーザーエクスペリエンスの一貫性を保つように設計された、アドビのクラウド UI 用のビジュアルスタイル |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >

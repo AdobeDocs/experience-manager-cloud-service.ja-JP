@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 94%
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 # カスタムドメイン名の追加 {#adding-custom-domain-name}
 
-Cloud Managerで **ドメイン設定** を使用して、カスタムドメイン名を追加できます。
+Cloud Managerの&#x200B;**Domain Settings**&#x200B;を使用して、カスタムドメイン名を追加できます。
 
 ## 要件 {#requirements}
 
@@ -35,11 +35,11 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 カスタムドメイン名を追加する場合、最も具体的で有効な証明書を使用してドメインが提供されます。複数の証明書が同じドメインを持つ場合は、直近に更新されたものが選択されます。重複するドメインがないように証明書を管理することをお勧めします。
 
-この記事で説明するどちらの方法でも、手順は Fastly に基づいています。 別の CDN（コンテンツ配信ネットワーク）を使用した場合は、使用するように選択した CDN をドメインに設定します。
+この記事で説明したいずれかの方法の手順は、Fastlyに基づいています。 別の CDN（コンテンツ配信ネットワーク）を使用した場合は、使用するように選択した CDN をドメインに設定します。
 
 ## カスタムドメイン名の追加 {#adding-custom-domain-name-settings}
 
-[Edge Delivery Servicesの &#x200B;](https://www.aem.live/docs/byo-cdn-adobe-managed)Adobe管理の CDN *も参照してください*。
+[Edge Delivery Services](https://www.aem.live/docs/byo-cdn-adobe-managed)の&#x200B;*Adobe Managed CDN*&#x200B;も参照してください。
 
 **カスタムドメイン名を追加するには：**
 
@@ -63,7 +63,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 1. 「**作成**」をクリックします。
 
-1. **ドメイン設定** ページで、ドメイン名の右側にある ![&#x200B; 省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、「**確認**」をクリックします。
+1. **ドメイン設定** ページで、ドメイン名の右側にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**検証**&#x200B;をクリックします。
 
 1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか？**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
 
@@ -205,7 +205,8 @@ dig TXT _aemverification.example.com -t txt
 <!--
 ## Next Steps {#next-steps}
 
-Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
+Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name.
+-->
 
 
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->

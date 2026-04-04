@@ -7,7 +7,7 @@ feature: Adaptive Forms
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 99%
@@ -22,14 +22,16 @@ ht-degree: 99%
 * **Cloud Service インスタンスで XFA ベースのアダプティブフォームを作成できますか？**
 はい、XFA ベースのアダプティブフォームを Cloud Service インスタンス上に作成できます。ただし、AEM Forms as a Cloud Service SDK（ローカル開発環境）では、XFA ベースのアダプティブフォームのサポートは利用できません。XFA ベースのアダプティブフォームを AEM Forms as a Cloud Service SDK で使用する場合は、使用事例と具体的な要件の詳細をアドビサポートにお問い合わせください。
 
-<!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
+<!--
+ * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
-  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
+  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment).
+  -->
 
 * **コンテンツをオンプレミスや [!DNL Adobe-Managed Services] 環境から [!DNL Forms] as a Cloud Service 環境に移行できますか？**
 はい。カスタムコード、コンテンツ、アセットをオンプレミスまたは [!DNL Adobe-Managed Services] 環境から [!DNL Forms] as a Cloud Service 環境に移行できます。手順について詳しくは、[Forms as a Cloud Service への移行](migrate-to-forms-as-a-cloud-service.md)を参照してください。
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **AEM [!DNL Forms] as a Cloud Service [!DNL Java™] API リファレンスドキュメントはどこで入手できますか？**
 Java™ API リファレンスドキュメントは、[!DNL Maven Central Repository] からダウンロードできます。ダウンロードするには、以下の手順を実行します。
@@ -40,7 +42,7 @@ Java™ API リファレンスドキュメントは、[!DNL Maven Central Reposi
    1. index.html ファイルを開き、API リファレンスドキュメントを表示します。
 
 * **アダプティブフォームの [!DNL JavaScript™] API リファレンスはどこで入手できますか？**
-[!DNL JavaScript™] API リファレンスドキュメントは、[!DNL &#x200B; Maven Central Repository] からダウンロードできます。ダウンロードするには、以下の手順を実行します。
+[!DNL JavaScript™] API リファレンスドキュメントは、[!DNL  Maven Central Repository] からダウンロードできます。ダウンロードするには、以下の手順を実行します。
    1. [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api) を開きます。
    1. [!DNL Experience Manager Forms] SDK の最新バージョンを含むページを探して開きます。
    1. 「すべて表示」オプションをクリックして、すべてのファイルを表示します。
@@ -55,8 +57,10 @@ Java™ API リファレンスドキュメントは、[!DNL Maven Central Reposi
 * **スキーマに準拠したデータを作成できますか？**
 はい。アダプティブフォームを作成して、スキーマに準拠したデータを作成できます。
 
-<!-- * **Can I pass custom parameters to the prefill service?**
-Custom parameters are planned for an upcoming release. -->
+<!--
+ * **Can I pass custom parameters to the prefill service?**
+Custom parameters are planned for an upcoming release.
+-->
 
 * **セキュリティで保護されたコンテンツをキャッシュできますか？**
 セキュリティで保護されたコンテンツのキャッシュ機能は、デフォルトで無効になっています。この機能を有効にするには、[セキュリティで保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)に記載されている手順を実行します。
@@ -105,7 +109,7 @@ Experience Manager 6.5 Forms 環境で JSON スキーマに基づいたアダプ
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja&#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

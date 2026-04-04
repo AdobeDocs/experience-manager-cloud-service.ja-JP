@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 92%
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 # 参照用のアダプティブフォームフラグメント {#reference-adaptive-form-fragments}
 
-アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用してアダプティブフォームフラグメントをフォームにドラッグアンドドロップし、それをフォームビルダーで編集できます。
+アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用して、アダプティブフォームフラグメントをフォームにドラッグ&amp;ドロップし、フォームビルダーで編集できます。
 
 アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [!DNL AEM FORMS] REFERENCE FRAGMENTS で参照用のフラグメントが提供されています。次のフラグメントが含まれています。
 
@@ -45,9 +45,11 @@ ht-degree: 92%
 
 ![住所フラグメント](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## 連絡先情報 {#contact-information}
 
@@ -55,9 +57,11 @@ ht-degree: 92%
 
 ![連絡先情報フラグメント](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## クレジットカード情報 {#credit-card-information}
 
@@ -70,9 +74,11 @@ ht-degree: 92%
 
 ![現在の職業フラグメント](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## 扶養家族の情報 {#dependents-information}
 
@@ -80,9 +86,11 @@ ht-degree: 92%
 
 ![扶養家族の情報フラグメント](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## 職歴 {#employment-history}
 
@@ -90,9 +98,11 @@ ht-degree: 92%
 
 ![職歴フラグメント](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## 収入と支出 {#income-expenditure}
 
@@ -100,9 +110,11 @@ ht-degree: 92%
 
 ![収入と支出フラグメント](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## 名前 {#name}
 
@@ -110,9 +122,11 @@ ht-degree: 92%
 
 ![名前フラグメント](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## 利用条件 {#terms-conditions}
 
@@ -120,9 +134,11 @@ ht-degree: 92%
 
 ![利用条件フラグメント](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## 署名付き利用条件 {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ ht-degree: 92%
 
 ![署名付き利用条件](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

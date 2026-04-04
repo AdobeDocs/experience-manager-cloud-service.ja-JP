@@ -6,7 +6,7 @@ feature: Image Presets,Viewers,Renditions
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 92%
@@ -55,29 +55,29 @@ Experience Manager で画像プリセットを管理するには、Experience Ma
 >
 >アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、様々なレンディションが表示されます。表示される画像プリセットの数を増減させることができます。[表示される画像プリセットの数の増減](#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
 
-## 画像プリセットとレンディションとの関係 {#how-image-presets-relate-to-renditions}
+## 画像プリセットとレンディションの関連付け {#how-image-presets-relate-to-renditions}
 
-画像プリセットは、サイズ設定、書式設定、圧縮、その他の表示パラメーターなど、Dynamic Media が画像を配信する方法を定義します。 プリセットは、レンディション自体を生成しません。 代わりに、アセットの処理時に作成されるレンディションに依存します。
+画像プリセットは、サイズ、フォーマット、圧縮、その他の表示パラメーターなど、Dynamic Mediaが画像を配信する方法を定義します。 プリセットはレンディション自体を生成しません。 代わりに、アセットの処理時に作成されるレンディションに依存します。
 
-### AEM as a Cloud Serviceでのレンディションの生成{#rendition-generation-in-aemaacs}
+### AEM as a Cloud Serviceでのレンディション生成{#rendition-generation-in-aemaacs}
 
-AEM as a Cloud Serviceでは、レンディションは [&#x200B; アセットマイクロサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) を使用して生成されます。 DAM アセットの更新ワークフローは、Cloud Serviceではカスタマイズできません。
+AEM as a Cloud Serviceでは、[Asset Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を使用してレンディションが生成されます。 DAM アセットの更新ワークフローは、Cloud Serviceではカスタマイズできません。
 
-重要な考慮事項を次に示します。
+重要な検討事項には次のようなものがあります。
 
 * レンディションはアップロード時に生成されます。
-* 処理プロファイルを変更すると、新しくアップロードされたアセットに影響します。 新しいレンディションが必要な場合、既存のアセットを再処理する必要があります。
-* ワークフローモデルのカスタマイズは、レンディションの生成用のAEM as a Cloud Serviceではサポートされていません。
+* 処理プロファイルの変更は、新しくアップロードされたアセットに影響します。 新しいレンディションが必要な場合は、既存のアセットを再処理する必要があります。
+* AEM as a Cloud Serviceでは、ワークフローモデルのカスタマイズによるレンディション生成はサポートされていません。
 
 画像プリセットは、配信時に使用可能なレンディションを参照します。 画像プリセットを設定または使用する前に、必要なレンディションが存在することを確認します。
 
 **生成するレンディションを制御するには：**
 
-1. [&#x200B; 処理プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#) を作成または編集します。
+1. [処理プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を作成または編集します。
 2. 必要なレンディション定義を設定します。
-3. 適切なフォルダーに処理プロファイルを適用します。
+3. 処理プロファイルを適切なフォルダーに適用します。
 
-処理プロファイルが適用されているフォルダーにアセットがアップロードされると、アセットマイクロサービスは、定義されたレンディションを自動的に生成します。
+処理プロファイルが適用されたフォルダーにアセットがアップロードされると、アセットマイクロサービスは定義されたレンディションを自動的に生成します。
 
 <!--
 ### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
@@ -133,7 +133,8 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+-->
 
 <!--
 ### InDesign (INDD) file format {#indesign-indd-file-format}
@@ -198,7 +199,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 **表示される画像プリセットの数を増減させるには：**
 
-1. CRXDE Lite（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
+1. CRXDE Lite （[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
 1. 画像プリセットリストノード（`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`）に移動します。
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -244,7 +245,7 @@ AI ファイル、PDF ファイル、EPS ファイルの取り込みをサポー
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-## レスポンシブな画像プリセットの作成 {#creating-a-responsive-image-preset}
+## レスポンシブ画像プリセットの作成 {#creating-a-responsive-image-preset}
 
 レスポンシブな画像プリセットを作成するには、[画像プリセットの作成](#creating-image-presets)の手順を実行します。**[!UICONTROL 画像プリセットを編集]**&#x200B;ウィンドウで高さと幅を入力する際に、これらの値を消去して空のままにします。
 
@@ -326,7 +327,7 @@ AI ファイル、PDF ファイル、EPS ファイルの取り込みをサポー
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ja">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
+      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
     </div> </td>
   </tr>
   <tr>

@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 79%
@@ -39,7 +39,8 @@ ht-degree: 79%
      <li>テーマを作成</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
@@ -58,7 +59,8 @@ ht-degree: 79%
      <li>Review submissions</li> 
      <li>Approve or reject submissions</li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr>
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
@@ -73,28 +75,35 @@ ht-degree: 79%
      <li>フォームデータモデルを作成および変更する</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
-  </tr> --> 
-  <!-- <tr>
+  </tr>
+  -->
+  <!--
+   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
-    <ul> -->
+    <ul>
+    -->
     <!-- <li>Create an inbox application</li>  -->
-    <!-- <li>Create a workflow model</li> 
+    <!--
+     <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> -->
+     <li>Use AEM inbox applications<br />
+     -->
      <!-- 
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>  -->
+     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     -->
     </ul> </td> 
   </tr>
   <tr>
@@ -113,9 +122,9 @@ ht-degree: 79%
 
 ### 保険
 
-## AEM Formsは保険業務に対してエンタープライズグレードですか？
+## AEM Formsはエンタープライズ対応の保険業界向けツールですか？
 
-はい。AEM Formsは、大規模な保険業務に必要な、役割ベースのアクセス制御、監査証跡、ワークフローの調整、ドキュメントの作成、柔軟な導入などのエンタープライズ機能を提供します。
+はい。AEM Formsは、大規模な保険業務に必要な、ロールベースのアクセス制御、監査証跡、ワークフローのオーケストレーション、ドキュメントの作成、展開の柔軟性などのエンタープライズ機能を提供します。
 
 ## 関連トピック
 

@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 99%
@@ -59,7 +59,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+**[!UICONTROL REST エンドポイントへの送信]**送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -130,7 +130,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 ユニバーサルエディターでオーサリングされたアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで **フォームプロパティを編集** 拡張機能をクリックします。
+1. エディターの「**フォームプロパティを編集**」拡張機能をクリックします。
 
    **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
@@ -187,7 +187,8 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 >[!ENDTABS]
 
-<!-- ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
+<!--
+ ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
 
 
 
@@ -199,7 +200,8 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 6. Specify the REST endpoint URL.
 7. Select the Configuration you have created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
-8. Click Done. -->
+8. Click Done.
+-->
 
 
 

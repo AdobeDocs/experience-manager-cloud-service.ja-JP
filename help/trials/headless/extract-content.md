@@ -1,13 +1,13 @@
 ---
 title: GraphQL API を使用したコンテンツの抽出
-description: コンテンツ フラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用する方法について説明します。
+description: コンテンツフラグメントと GraphQL API をヘッドレスコンテンツ管理システムとして使用する方法について説明します。
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 

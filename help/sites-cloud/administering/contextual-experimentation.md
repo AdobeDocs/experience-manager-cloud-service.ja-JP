@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -15,109 +15,112 @@ ht-degree: 0%
 # AEM as a Cloud Serviceのコンテキスト実験 {#contextual-experimentation}
 
 >[!NOTE]
->現在、コンテキスト実験機能は、ベータ版プログラムでのみ使用できます。 ベータ版プログラムへのアクセスについては、Adobe サポートまたは担当のアカウントマネージャーにお問い合わせください。
+>現在、コンテキスト実験機能はベータプログラムを通じてのみ使用できます。 ベータプログラムへのアクセスについては、Adobe サポートまたはアカウントマネージャーにお問い合わせください。
 
-実験とは、パフォーマンスを向上させ、サイトをより効果的かつ合理化するために、サイトのデザイン、機能、コードをテストする手法です。 これを実現するには、コンテンツまたは機能を変更し、結果を以前のバージョンと比較し、測定可能な効果がある改善を選択します。
+テストとは、パフォーマンスを向上させ、サイトをより効果的かつ合理的にするために、サイトのデザイン、機能、コードをテストすることです。 これは、コンテンツや機能を変更し、結果を以前のバージョンと比較し、測定可能な効果をもたらす改善点を選ぶことで達成できます。
 
-正しく完了すると、コンバージョン、エンゲージメント、訪問者エクスペリエンスを向上させる強力なパターンになります。 一般的に、この手法の採用を検討する際に避けるべき問題がいくつかあります。
+正しく行われれば、コンバージョン、エンゲージメント、訪問者エクスペリエンスを向上させるための強力なパターンになります。 一般的に、この手法を採用する際には避けるべき問題がいくつかあります。
 
-* **少なすぎる**：ほとんどの企業は十分な実験を行っていませんが、行った場合、有意義な結果を得るには少なすぎるトラフィックを実験します。
-* **速度が遅すぎる**：多くの実験フレームワークでは、サイトの速度が非常に低下し、レンダリングが遅いため、失われたトラフィックとバウンスを新しいコンバージョンで補うことはできません。
-* **複雑すぎます**：新しい実験の設定に時間がかかりすぎる場合は、実行される実験の数が少なくなります。
+* **少なすぎます**：多くの企業は十分な実験を行っておらず、十分な実験を行うと、トラフィックが少なすぎて意味のある結果が得られません。
+* **速度が遅すぎます**：多くの実験フレームワークにより、サイトの速度が非常に遅くなるため、潜在的な新しいコンバージョンでは、レンダリング速度が遅いため、失われたトラフィックとバウンスを補うことができません。
+* **複雑すぎます**：新しい実験の設定に時間がかかりすぎると、実行される実験が少なくなります。
 
-Adobe Experience Managerで動作するサイトの場合は、開発者がサイトに実験機能を追加できる、「標準 **&#x200B;**&#x200B;実験プラグイン」があります。 このアプローチは、他の実験フレームワークとは次の 3 つの点で異なります。
+Adobe Experience Manager上で動作しているサイトの場合、開発者がサイトに実験機能を追加できる「すぐに使用できる」実験プラグイン **があります。**&#x200B;このアプローチは、他の実験フレームワークと異なり、3つのことが挙げられます。
 
-* 作成者が既に熟知しているツールを使用すると、テストを簡単に設定でき、別のログインは必要ありません。
-* これはAEM配信システムに深く統合されており、サイトの速度を低下させず、コードおよびコンテンツの変更に対して回復力があります。
-* シンプルなコンテンツ変更や、デザイン、機能、コードをカバーする実験をテストできます。
+* 作成者が使い慣れたツールを使用してテストを容易に設定できるため、個別のログインは必要ありません。
+* AEMの配信システムと深く統合されており、サイトの動作を遅らせることなく、コードやコンテンツの変更に対して柔軟に対応できます。
+* シンプルなコンテンツの変更だけでなく、デザイン、機能、コードなどのテストも可能です。
 
 ## 開始する前に {#before-start}
 
-実験プラグインは [Edge Delivery Servicesのコンテキスト内で使用されるので &#x200B;](/help/edge/overview.md)Github アカウント、SharePointやGoogle Drive などのコンテンツリポジトリおよび [2&rbrace;AEM Sidekick&rbrace; が必要です。 &#x200B;](https://www.aem.live/docs/sidekick) [&#x200B; はじめに – ユニバーサルエディター開発者チュートリアルページ &#x200B;](https://www.aem.live/developer/tutorial) および [&#x200B; はじめに – 開発者チュートリアル &#x200B;](https://www.aem.live/developer/tutorial) も参照してください。
+実験プラグインは[Edge Delivery Services](/help/edge/overview.md)のコンテキスト内で使用されるため、Github アカウント、SharePointやGoogle Driveなどのコンテンツリポジトリ、および[AEM Sidekick](https://www.aem.live/docs/sidekick)が必要になります。 [はじめに – ユニバーサルエディター開発者チュートリアルのページ ](https://www.aem.live/developer/tutorial)および[はじめに – 開発者チュートリアル ](https://www.aem.live/developer/tutorial)も参照してください。
 
-すべての設定が完了したら **このビデオをご覧ください**&#x200B;[&#x200B; インスタント実験 &#x200B;](https://business.adobe.com/jp/products/experience-manager/sites/testing-optimization.html) と題して、実験プラグインの仕組みを示す短いデモを行います。
+すべての設定が完了したら、**実験プラグインがどのように機能するかについての簡単なデモを、** インスタント実験[と題したこのビデオ ](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)をご覧ください。
 
-## よく使用される用語 {#frequently-used-terms}
+## よく使う用語 {#frequently-used-terms}
 
-ガイドの残りの部分に従って最初の実験を設定する前に、よく使用する用語をいくつか理解しておく必要があります。
+このガイドの残りの部分に従って最初の実験を設定する前に、よく使用される用語がいくつかあります。
 
-* **コントロール**：実験を実行する前のエクスペリエンス。 すべての実験は、制御エクスペリエンスの向上をテストし実証しようとします。
-* **チャレンジャー**：コントロールエクスペリエンスとは異なるエクスペリエンスで、それに対して、または同時に「テスト」されます。
-* **バリアント**：コントロールとチャレンジャーは、すべて実験のバリアントです。
-* **統計的有意性**：挑戦者がコントロールよりも本当に優れているかどうかを評価します。 統計的有意差を計算すると、運を除外し、実際の効果がある結果に集中することができます。
+* **Control**：実験を実行する前のエクスペリエンス。 あらゆる実験において、制御体験に対する改善を検証および実証しようとします。
+* **チャレンジャー**：コントロールのエクスペリエンスとは異なり、そのエクスペリエンスに対して、または一緒に「テスト」されるエクスペリエンス。
+* **バリアント**: コントロールとチャレンジャーはすべて実験のバリアントです。
+* **統計的有意性**：チャレンジャーがコントロールよりも優れているかどうかを評価します。 統計的有意性を計算することで、運を除外し、実際に効果がある結果に集中することができます。
 
 ## 実験のバリエーションと一般的なワークフロー {#experiment-variants-workflow}
 
-一般的に、実験を設定する場合、既存のページをコントロールページとして使用します。 次に、一部の訪問者のコントロールページを置き換えるチャレンジャーページを作成します。 挑戦者ページでは、コンテンツのバリエーション、ページレイアウト、call-to-action（CTA）など、様々なものをテストできます。 コントロールページにメタデータパラメーターを追加することで、これらの実験バリアントを設定できます（以下を参照）。
+一般的に、実験を設定する際には、既存のページをコントロールページとして使用します。 その後、チャレンジャーページを作成し、訪問者の一部を対象としたコントロールページに置き換えます。 チャレンジャーページでは、コンテンツのバリエーション、ページレイアウト、call-to-action（CTA）など、さまざまな要素をテストできます。 これらの実験バリエーションは、コントロールページでメタデータパラメーターを追加することで設定できます（以下を参照）。
 
-次に、[&#x200B; 運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) がデータを収集します。例えば、コントロールページとチャレンジャーページの訪問者数が収集されます。 その後、このデータを使用して、サイトに必要な改善点を選択します。 確立された web サイトのデザイン言語を使用し、既存のブロック機能を使用する限り、実験バリアントを設定して、数分で実稼動環境に送信できます。
+次に、[運用上のテレメトリ サービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)は、コントロール ページの訪問者数とチャレンジャーページの訪問者数などのデータを収集します。 そのデータを使用して、サイトに必要な改善を選択します。 web サイトの確立されたデザイン言語の範囲内で、既存のブロック機能を使用すれば、実験のバリエーションを設定し、わずか数分で本番環境に送信できます。
 
 >[!NOTE]
->プラグインは、エンドユーザーの識別につながる可能性のあるエンドユーザーのデータを使用せず、保持もしないことに注意してください。 AEM as a Cloud Serviceの [&#x200B; 運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) を使用するデフォルト設定を使用する場合、エンドユーザーのオプトインや Cookie の同意は必要ありません。
+>このプラグインは、特定につながる可能性のあるエンドユーザーデータを使用せず、保持していないことに注意してください。 AEM as a Cloud Service[の](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)Operational Telemetry サービスを使用するデフォルト設定を使用する場合、エンドユーザーのオプトインもCookieの同意も必要ありません。
 
-### 実験識別子 {#experiment-identifier}
+### 実験Id {#experiment-identifier}
 
-開始する前に、トラッキングと分析を目的とした独自の識別子をすべての実験に指定する必要があります。 良い出発点は、実験の優れた一意の ID を見つけることです。これは「実験 ID」になります。 実験は、多くの場合、イシュートラッカーまたは管理システムで、イシュー ID に対して線形番号または相関しています。 実験 ID には多くの場合、プロジェクトのプレフィックス（`OPT-0134`、`EXP0004`、`CCX0076` など）を使用します。
+開始する前に、トラッキングと分析の目的で、すべての実験に独自の識別子が必要です。 良い出発点は、「実験ID」となる、実験に適した一意の識別子を考え出すことです。 実験は、多くの場合、問題トラッカーまたは管理システムで問題IDに関連付けられ、線形的に番号が付けられます。 実験IDでは、プロジェクトの接頭辞が頻繁に使用されます（例：`OPT-0134`、`EXP0004`、または`CCX0076`）。
 
-### チャレンジャーページの作成 {#create-challenger-page}
+### チャレンジャーページの構築 {#create-challenger-page}
 
-慣例により、`/experiments/ folder` ールに小文字の実験 ID （例：/experiments/ccx0076/）を含むフォルダーを作成することをお勧めします。 チャレンジャーのバリエーションのページはすべて、このフォルダーにあります。 このフォルダーは、ローカルリポジトリ（SharePoint や Goggle Drive など）に作成します。
+慣例として、`/experiments/ folder`に小文字の実験IDを含むフォルダーを作成することをお勧めします（例：/experiments/ccx0076/）。 チャレンジャーのバリエーションのすべてのページは、このフォルダーにあります。 このフォルダーは、ローカルリポジトリー（SharepointやGoggle Driveなど）に作成します。
 
-実験フォルダーは次のようになります。
+A/B テスト用フォルダは次のようになります。
 
 ![experiments-folder](/help/sites-cloud/administering/assets/experiments-folder.png)
 
-フォルダーを作成したら、そのフォルダーにコントロールページのコピーを配置し、実験バリアントの一部としてテストするページに変更を適用します（上記のビデオを参照）。 例として、実験を実行する web サイトに次のページがあるとします。
+フォルダーを作成したら、コントロールページのコピーをそのフォルダーに入れ、テスト用のバリエーションの一部としてテストしたいページに変更を適用します（上記のビデオを参照）。 例として、実験を実行するweb サイトに次のページがあるとします。
 
 ![control-page](/help/sites-cloud/administering/assets/control-page.png)
 
-`experiments/<experiment-id>` フォルダーに配置された挑戦者のコピーは次のようになります。
+`experiments/<experiment-id>` フォルダーに配置されたチャレンジャーのコピーは、次のようになります。
 
-![challenger-page](/help/sites-cloud/administering/assets/challenger-page.png)
+![ チャレンジャーページ ](/help/sites-cloud/administering/assets/challenger-page.png)
 
-サイドキックを使用して、挑戦者ページのオーサリングが完了したら、挑戦者ページをプレビューして公開します。 公開されたチャレンジャーの URL は、次の節の実験の設定で使用されます。
+Sidekickを使用して、チャレンジャーページをプレビューし、公開します。また、チャレンジャーページのオーサリングが完了したら、公開します。 公開されたチャレンジャーのURLは、次のセクション（実験の設定）で使用されます。
 
 ### 実験の設定 {#configure-experiment}
 
-チャレンジャーページの準備が整ったら、すぐにコントロールページに戻り、ページがテストに含まれていることを示すメタデータを追加する必要があります。
+チャレンジャーページの準備が整ったら、コントロールページに戻り、ページがテストの一部であることを示すメタデータを追加する必要があります。
 
-実験バリアントには、追加する必要があるメタデータ行が 2 つあります。
+実験のバリエーションに追加する必要があるメタデータ行が2つあります。
 
-* **実験**：実験 ID を含みます。
+* **実験**：実験IDが含まれています。
 
-* **実験のバリアント**：このページのすべての挑戦者の URL を含みます。複数の挑戦者がいる場合は改行で区切ります。
+* **実験バリアント**：複数のチャレンジャーがある場合は、改行で区切ったこのページのすべてのチャレンジャーのURLを含みます。
 
-以下の例を参照してください。
+次の例を参照してください。
 
-![&#x200B; メタデータページ &#x200B;](/help/sites-cloud/administering/assets/metadata-page.png)
+![metadata-page](/help/sites-cloud/administering/assets/metadata-page.png)
 
-実験ごとに、トラフィックはすべてのバリアント（コントロールチャレンジャーとチャレンジャー）に分割され、自動的に偶数分布に設定されます。 したがって、1 人の挑戦者がいる場合、自動的に制御と挑戦者の間で 50/50 の均等な分割が行われます。 2 人の挑戦者がいる場合は、制御に割り当てられたトラフィックの 3 分の 1 が自動的に表示され、各挑戦者などが表示されます。
+各実験では、トラフィックはすべてのバリエーション（コントロールとチャレンジャー）に分割され、自動的に均等な分布に設定されます。 そのため、チャレンジャーが1人いる場合、コントロールとチャレンジャーの間には自動的に50/50の分割が行われます。 2人のチャレンジャーがいる場合、コントロールに割り当てられたトラフィックの3分の1と、各チャレンジャーなどが自動的に表示されます。
 
-メタデータを設定することで、トラフィックの分割を上書きできます。 実験で使用されるメタデータをカスタマイズする方法について詳しくは、次の [&#x200B; ページ &#x200B;](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring) を参照してください。
+メタデータを設定することで、分割されたトラフィックを上書きできます。 実験で使用するメタデータをカスタマイズする方法について詳しくは、次の[ ページ ](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)を参照してください。
 
-### 実験のバリアントのプレビューとステージング {#preview-stage-experiment}
+### 実験のバリエーションのプレビューとステージング {#preview-stage-experiment}
 
-実験をプレビューしてステージングする準備が整ったら、左上のサイドキックから「プレビュー」をクリックします。 実験が実行されているページをプレビューする場合は常に、`.aem.page` のプレビュー環境に実験のオーバーレイが表示されます。 実験オーバーレイを使用すると、実験のバリエーションを切り替えることができ、トラフィックデータも提供できます。
+テストのプレビューとステージングの準備ができたら、左上のサイドキックから「プレビュー」をクリックします。 実行中の実験を含むページをプレビューする場合は、常に`.aem.page` プレビュー環境に実験オーバーレイが表示されます。 実験オーバーレイでは、実験のバリエーションを切り替えることができ、トラフィックデータも提供されます。
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
-各バリアントの効果を測定するためのデータ収集は、[AEM as a Cloud Serviceでの運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) に基づいています。
+各バリエーションの有効性を測定するためのデータ収集は、AEM as a Cloud Serviceの[Operational Telemetry サービス ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)に基づいています。
 
-### 実験バリアントを実稼動環境に送信 {#production-experiment}
+### 実験バリアントを実稼動環境に送信する {#production-experiment}
 
-実験ページを選択し、サイドキックから「公開」をクリックして、コントロールと挑戦者バリアントの両方をライブにプッシュします。
+実験ページを選択し、サイドキックから「公開」をクリックして、コントロールとチャレンジャーバリアントの両方を公開します。
 
 ### ユースケースの例 {#use-case-examples}
 
-実験のバリアントのユースケースの例をいくつか以下に示します。 一般的に、基本的なワークフローは上記のワークフローと似ていますが、ユースケースごとに特定の変更（挑戦者ページの数やメタデータの変更など）が行われます。
+以下に、実験のバリエーションの使用例をいくつか示します。 一般的に、基本的なワークフローは上記のワークフローと類似しており、ユースケースごとに特定の変更（チャレンジャーページの数やメタデータの変更など）が行われます。
 
-#### 完全ページの実験 {#full-page}
+#### フルページ実験 {#full-page}
 
-完全なページ実験を使用して、同じページの 2 つのバリアントをテストします。 これは、コントロールと挑戦者ページを持つ a/b テストの完全なページバリアントです。 チャレンジャーバリアントの「オリジナル」コントロールページのコンテンツ全体を別のタイプのコンテンツに置き換えます。 デフォルトでは顧客トラフィックは均等に分割（50/50）されていますが、必要に応じてカスタム分割を作成できます。
+ページ全体の検証では、同じページの2つのバリエーションを比較します。 これは、a/b テストのフルページ版で、コントロールページとチャレンジャーページがあります。 チャレンジャーのバリエーションの「オリジナル」コントロールページのコンテンツ全体を別のタイプのコンテンツに置き換えます。 デフォルトでは、顧客トラフィックは均等に（50対50）分割されますが、必要に応じてカスタム分割を作成できます。
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## その他の注意点 {#other-considerations}
 
@@ -193,43 +197,43 @@ Please keep in mind that the names above are only for illustration purposes. You
 
 ### コンバージョン {#conversion}
 
-実験は、コンバージョンに対処するように設定されます（ページ上のクリック可能な要素を追跡します）。 すべての実験は、次の目的で定義する必要があります。
+実験は、コンバージョンに対応するように設定されています（ページ上のクリック可能な要素を追跡します）。 すべての実験は以下のために定義されなければならない：
 
 * 実験タイプ
 * 実験が適用されるエクスペリエンスブロック
-* 実験に含まれるバリアントの数
-* 各バリアントの構成
+* 実験に含まれるバリエーションの数
+* 各バリエーションの構成は
 
-### 実験バリアントのインデックスが作成されていないことを確認します {#experiment-not-indexed}
+### 実験のバリアントがインデックス付けされていないことを確認する {#experiment-not-indexed}
 
-実験を実行する場合、通常は、サイトマップからバリアントを除外し、検索エンジンでインデックスが作成されないようにします。 これは、バリアントページが重複したコンテンツと見なされ、SEO に悪影響を与える可能性があるためです。
+実験を行う場合は、通常、サイトマップからバリエーションを除外し、検索エンジンによってインデックス付けされないようにすることがベストプラクティスです。 これは、バリアントページが重複したコンテンツと見なされ、SEOに悪影響を与える可能性があるためです。
 
-これを行うには、次の 2 つの方法のいずれかを使用します。
+これは、次の2つの方法のいずれかを使用して行うことができます。
 
-* `/experiments` のように、すべての実験を専用フォルダーに一元化する場合は、一括 `metadata.xlsx` シートに `/experiments/**` をパスとする行と、`noindex`、`nofollow` という値を持つロボット列が含まれていることを確認します。
-* 実験のコントロールとバリアントの値を通常のコンテンツのままにする場合：各バリアントのページメタデータに、値 `noindex`、`nofollow` を指定してロボットのエントリを追加します。
+* `/experiments`のように、すべての実験を専用フォルダーに一元管理する場合は、バルク `metadata.xlsx` シートにパスとして`/experiments/**`を持つ行と、値が`noindex`、`nofollow`のロボット列が含まれていることを確認します。
+* 実験コントロールと通常のコンテンツのバリエーションを維持する場合：各バリエーションのページメタデータにrobots エントリを追加し、値を`noindex`、`nofollow`にします。
 
-## 開発者向けリソースとテクニカルリソース {#dev-resources}
+## 開発者および技術リソース {#dev-resources}
 
-Adobe Experience Managerは [ 運用上のテレメトリ ] （/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md
+Adobe Experience Managerは[運用上のテレメトリ ] （/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md）を使用しています
 
-）、Adobe Experience Managerを利用したサイトで機能とパフォーマンスの問題を検出および修正するために不可欠なオペレーションデータを収集します。 運用上のテレメトリデータを使用して、パフォーマンスの問題を診断できます。 運用テレメトリでは、サンプリングを通じて訪問者のプライバシーを保持します（すべてのページビューのごく一部のみが監視されます）。
+）を使用して、Adobe Experience Managerを搭載したサイトで機能とパフォーマンスの問題を発見して修正するために厳密に必要な操作データを収集します。 運用テレメトリデータは、パフォーマンスの問題を診断するために使用できます。 運用上のテレメトリは、サンプリングを通じて訪問者のプライバシーを保護します（すべてのページビューの一部のみが監視されます）。
 
 ### プライバシー {#privacy-experimentation}
 
-[AEM as a Cloud Serviceの運用上のテレメトリサービス &#x200B;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) は、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 つまり、Adobeは、お客様の個人情報や、お客様に遡って追跡できる情報の収集を試みません。 サイトオペレーターは、以下に収集したデータ項目を確認し、同意が必要かどうかを把握します。
-AEM Operational Telemetry では、使用状況指標を収集するために、cookie や `localStorage`、`sessionStorage` など、クライアントサイドのステートや ID を使用しません。 データは、ピクセルや同様の手法ではなく、`Navigator.sendBeacon` 呼び出しを通じて透過的に送信されます。 サンプリングされたデータを取得する目的で、IP アドレス、ユーザーエージェント文字列、その他のデータを介したデバイスや個人の「フィンガープリント」は行われません。
+AEM as a Cloud Service[の](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)Operational Telemetry サービスは、訪問者のプライバシーを保護し、データ収集を最小限に抑えるように設計されています。 Adobeは、お客様に関する個人情報やお客様に追跡可能な情報を収集しようとしません。 サイト運営者は、以下で収集したデータ項目を確認し、同意が必要かどうかを判断する必要があります。
+AEM Operational Telemetryは、使用状況の指標を収集するために、Cookieや`localStorage`、`sessionStorage`などのクライアントサイドの状態やIDを使用しません。 データは、ピクセルや類似の手法ではなく、`Navigator.sendBeacon`呼び出しを通じて透過的に送信されます。 IP アドレス、ユーザーエージェント文字列、またはサンプリングされたデータをキャプチャする目的で使用されるデバイスまたは個人の「フィンガープリント」はありません。
 
-運用上のテレメトリデータ収集に個人データを追加することは許可されておらず、また、運用上のテレメトリデータは、厳密に必要な範囲を超えるユースケースに使用することもできません。
+個人データを運用上のテレメトリデータ収集に追加することは許可されておらず、運用上のテレメトリデータを厳密に必要なユースケースを超えるユースケースに使用することはできません。
 
 ### よくある質問 {#faq}
 
 よくある質問のリストを以下に示します。
 
-Q：実験のバリエーション間の分割率（例えば、コントロールで 10%、挑戦者で 90%）を調整することはできますか？
+Q：自分の実験のバリエーションの分割率（例えば、コントロールで10%、チャレンジャーで90%）を調整できますか？
 
-はい、分割率は [&#x200B; メタデータ &#x200B;](#configure-experiment) で設定できます。
+はい。分割率は[ メタデータ ](#configure-experiment)を使用して設定できます。
 
-Q：テキストと画像の両方を試すことはできますか？
+Q: テキストと画像の両方をテストできますか？
 
-はい、バリアントは完全に異なるページになる可能性があるので、レイアウトの変更をテストすることもできます。
+はい、バリエーションはまったく異なるページになる可能性があるので、レイアウトの変更をテストすることもできます。

@@ -7,7 +7,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 99%

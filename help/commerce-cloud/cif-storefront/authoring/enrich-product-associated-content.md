@@ -12,7 +12,7 @@ thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 97%
@@ -26,19 +26,19 @@ ht-degree: 97%
 
 ## デジタルアセット {#digital-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/3447310/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
 デジタルアセットは、1 つ以上の製品 SKU に関連付けることができます。関連付けると、SKU に基づくキーワード検索でデジタルアセットを検出できます。また、関連製品を含むページを編集する際に、アセットが関連コンテンツとして自動的に表示されるので、次のデジタルエクスペリエンスをより簡単に作成できます。
 
 ## エクスペリエンスフラグメント {#experience-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/343339/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
 エクスペリエンスフラグメントは、マーケターが **非構造化** された再利用可能なコンテンツを作成できるようにする Adobe Experience Manager の機能です。エクスペリエンスフラグメントは、製品 SKU またはカタログ ID に関連付けることができます。関連付けると、マーケターはページに表示される製品に基づいて、関連するフラグメントを簡単に検出できます。エクスペリエンスフラグメントは、プレースホルダーと関連付けを使用して、製品カタログページに動的に含めることもできます。
 
 ## コンテンツフラグメント {#content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/3452158/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
 コンテンツフラグメントは、マーケターが **構造化** された再利用可能なコンテンツを作成できるようにする Adobe Experience Manager の機能です。コンテンツフラグメントは、製品 SKU またはカタログ ID に関連付けることができます。関連付けると、マーケターはページに表示される製品に基づいて、関連するフラグメントを簡単に検出できます。コンテンツフラグメントは、プレースホルダーと関連付けを使用して、製品カタログページに動的に含めることもできます。
 
@@ -49,4 +49,4 @@ ht-degree: 97%
 
 ## 関連リソース {#related}
 
-また、特定の製品セットやカテゴリセットに合わせてテンプレート全体をカスタマイズすることもできます。詳しくは、[&#x200B; 複数のカテゴリページと製品ページの作成 &#x200B;](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) を参照してください。
+また、特定の製品セットやカテゴリセットに合わせてテンプレート全体をカスタマイズすることもできます。[複数のカテゴリと製品ページを作成する方法について説明します。](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)

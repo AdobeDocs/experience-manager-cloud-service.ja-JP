@@ -5,7 +5,7 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 97%
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 たとえば、辞書のように単語がアルファベット順に並んでいれば、無作為に散らばっている場合よりも見つけやすくなります。タグ付けは同様の目的で使用されます。ビジネス上の分類に従ってアセットが整理され、最も関連性の高いアセットが検索結果に表示されます。たとえば、自動車メーカーは車の画像にモデル名のタグを付けることで、プロモーションキャンペーンを企画する際に関連する画像だけを表示できます。たとえ「ランナー」や「ランニングシューズ」といったタグ付けであっても、ユーザーは入力ミスやスペルの違い、別の検索語を使うことについて心配する必要はありません。スマートタグがそれらすべてを認識してくれます。
 
-そのバックグラウンドで、[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) の人工知能フレームワークが使用され、ビジネス上の分類に関連付けられたテキストと共に、アップロードされたアセットにスマートタグが自動的に（デフォルトで）適用されます。
+バックグラウンドでは、この機能は[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)の人工知能フレームワークを使用して、アップロードされたアセットにスマートタグをデフォルトで自動的に適用し、ビジネス分類法に沿ったテキストも適用します。
 
 ## 前提条件と設定 {#smart-tags-prereqs-config}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -101,7 +101,8 @@ To smart tag assets, or folders (including subfolders) of assets that exist in a
 
 1. Select the assets and click ![Reprocess assets icon](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocess Assets] icon and select the [!UICONTROL Full Process] option.
 
-![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)-->
+![Reprocess assets to add tags to videos existing DAM repository](assets/reprocess.gif)
+-->
 
 ## 信頼性スコア {#confidence-score}
 
@@ -232,7 +233,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**スマートタグを使用してアセットの検索エクスペリエンスを向上させるにはどうすればよいですか？**
 
-ア [!DNL Adobe] ットをアップロードすると、AI がアセットに自動的にタグ付けします。 自動プロセスはバックエンドで非常に高速に実行されるので、アップロードが完了してから数秒後には、アセットにタグが追加されているのが確認できます。
+アップロードすると、[!DNL Adobe]AIがアセットに自動的にタグ付けを行います。 自動プロセスはバックエンドで非常に高速に実行されるので、アップロードが完了してから数秒後には、アセットにタグが追加されているのが確認できます。
 
 +++
 

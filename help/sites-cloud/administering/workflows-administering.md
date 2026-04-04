@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 92%
@@ -113,7 +113,7 @@ ht-degree: 92%
 ワークフローが失敗した場合、AEM の&#x200B;**エラー**&#x200B;コンソールを使用してエラーの原因を調べ、特定された原因に応じて適切なアクションを取ることができます。
 
 * **エラーの詳細**
-ウィンドウが開き、**エラーメッセージ**、**ステップ、**&#x200B;エラースタック**&#x200B;が表示されます。
+ウィンドウが開き、**エラーメッセージ**、**ステップ、**エラースタック**&#x200B;が表示されます。
 
 * **履歴を開く**&#x200B;ワークフローの履歴の詳細を表示します。
 
@@ -149,10 +149,10 @@ ht-degree: 92%
 | プロパティ名（web コンソール） | OSGi のプロパティ名 | 説明 |
 |--- |--- |--- |
 | ジョブ名  | `scheduledpurge.name` | スケジュール設定されたパージのわかりやすい名前。 |
-| ワークフローのステータス | `scheduledpurge.workflowStatus` | パージするワークフローインスタンスのステータス。次の値が有効です。<br><br>- COMPLETED：完了したワークフローインスタンスはパージされます。<br> – 実行中：実行中のワークフローインスタンスはパージされます。 |
-| パージするモデル | `scheduledpurge.modelIds` | パージするワークフローモデルの ID。<br>ID は model ノードのパスで、例は次のようになります。<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> すべてのワークフローモデルのインスタンスをパージする値を指定しません。<br> 複数のモデルを指定するには、web コンソールの「`+`」ボタンをクリックします。 |
+| ワークフローのステータス | `scheduledpurge.workflowStatus` | パージするワークフローインスタンスのステータス。次の値は有効です：<br><br> – 完了：完了したワークフローインスタンスはパージされます。<br> – 実行中：実行中のワークフローインスタンスがパージされます。 |
+| パージするモデル | `scheduledpurge.modelIds` | パージするワークフローモデルのID。<br>IDはモデル ノードへのパスです。例：<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br>すべてのワークフローモデルのインスタンスをパージする値を指定しません。<br>複数のモデルを指定するには、Web コンソールの`+` ボタンをクリックします。 |
 | ワークフロー経過日数 | `scheduledpurge.daysold` | パージするワークフローインスタンスの有効期間（日数）。 |
-| ワークフローペイロードパッケージ | `scheduledpurge.purgePackagePayload` | ペイロードパッケージをパージする必要があるかどうかを示します（`true` または `false`）。 |
+| ワークフローペイロードパッケージ | `scheduledpurge.purgePackagePayload` | ペイロード パッケージをパージする必要があるかどうかを示します。`true`または`false`。 |
 
 
 ## インボックスの最大サイズの設定 {#setting-the-maximum-size-of-the-inbox}
@@ -161,7 +161,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >リポジトリーに設定を追加する場合のサービス PID は次のとおりです。
->`com.adobe.granite.workflow.core.WorkflowSessionFactory`。
+>`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | プロパティ名（web コンソール） | OSGi のプロパティ名 |
 |---|---|
@@ -175,7 +175,7 @@ ht-degree: 92%
 
 ワークフローモデルのレベルでは、モデル（およびそのランタイムインスタンス）にメタデータの外部ストレージが含まれていることを示すフラグが用意されています。外部ストレージ用にマークされたモデルのワークフローインスタンスに対するワークフロー変数は JCR に保持されません。
 
-プロパティ *userMetadataPersistenceEnabled* は、ワークフローモデルの *jcr:content ノード* に格納されます。 このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled* として保持されます。
+プロパティ *userMetadataPersistenceEnabled*&#x200B;は、ワークフローモデルの&#x200B;*jcr:content ノード*&#x200B;に保存されています。 このフラグは、*cq:userMetaDataCustomPersistenceEnabled*&#x200B;としてワークフローメタデータに保持されます。
 
 以下の図は、ワークフローにフラグを設定する方法を示しています。
 

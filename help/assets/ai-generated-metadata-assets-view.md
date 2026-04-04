@@ -1,16 +1,16 @@
 ---
-title: AI で生成されたメタデータを使用してコンテンツの検出を強化
-description: AI で生成されたメタデータを使用してコンテンツの検出を強化する方法を説明します
+title: AIが生成したメタデータでコンテンツの発見を強化
+description: AIが生成したメタデータを利用して、コンテンツの発見を強化する方法をご確認ください
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 93%
 
 ---
 
-# AI で生成されたメタデータを使用してコンテンツの検出を強化 {#ai-smart-tags}
+# AIが生成したメタデータでコンテンツの発見を強化 {#ai-smart-tags}
 
 AI は、手動の入力に依存するのではなく、デジタルアセットに説明的なタグを自動的に割り当てます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチでは、手動でのタグ付けが不要なために効率が向上するだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保できます。例えば、アセットが画像の場合、AI はアセット内のオブジェクト、シーン、感情、さらにはブランドロゴを識別し、「夕日」、「ビーチ」、「休暇」、「笑顔」など、関連するタグを生成できます。 AI が生成するコンテンツは、セマンティック検索とレキシカル検索の両方の技術を活用することで、アセットの検索精度を向上させることができます。詳しくは、[Assets の検索](search-assets-view.md)を参照してください。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
@@ -25,7 +25,8 @@ AI で生成されたメタデータを有効にするには：
 
 ## AI で生成されたメタデータの使用 {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

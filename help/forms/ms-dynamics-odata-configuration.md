@@ -8,7 +8,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 99%
@@ -32,12 +32,14 @@ ht-degree: 99%
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
-<!--When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
+<!--
+When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
 
-* MS Dynamics OData Cloud Service (OData Service)-->
+* MS Dynamics OData Cloud Service (OData Service)
+-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。[!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
 
 AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、 [アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
@@ -52,7 +54,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    * [!DNL Microsoft Dynamics] 365 オンプレミス
    * [!DNL Microsoft Dynamics] 2016 オンプレミス
 
-* [&#x200B; [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [&#x200B; [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
+* [ [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
 
 ## 登録された [!DNL Microsoft Dynamics] アプリケーションの応答 URL を設定 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -78,7 +80,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 >
 > この手順は、[!DNL Experience Manager Forms] をオンプレミスの [!DNL Microsoft Dynamics] サーバーと統合する場合にのみ使用してください。
 
-1. 「[&#x200B; [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
+1. 「[ [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
 1. Windows PowerShell を使用して以下のコマンドを実行し、IFD が有効になっている [!DNL Microsoft Dynamics] でクレームを設定します。
 
    ```shell
@@ -139,7 +141,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    1. 認証のタイプとして「**[!UICONTROL OAuth 2.0]**」を選択します。
 
-   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics]&#x200B;[!DNL Microsoft Dynamics] をフォームデータモデル（FDM）で設定するには、「**[!UICONTROL リソース]**」フィールドで Dynamics インスタンスの URL を指定する必要があります。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
+   1. 「**[!UICONTROL クライアント ID]**」（「**アプリケーション ID**」とも呼ばれます）、「**[!UICONTROL クライアントの秘密鍵]**」、「**[!UICONTROL OAuth URL]**」、「**[!UICONTROL 更新トークン URL]**」、「**[!UICONTROL トークン URL にアクセス]**」、「**[!UICONTROL リソース]**」の各フィールドのデフォルト値を、 サービス設定の値と置き換えます。[!DNL Microsoft Dynamics][!DNL Microsoft Dynamics] をフォームデータモデル（FDM）で設定するには、「**[!UICONTROL リソース]**」フィールドで Dynamics インスタンスの URL を指定する必要があります。サービスルート URL を使用して、Dynamics インスタンスの URL を取得します。例えば、[https://org.crm.dynamics.com](https://org.crm.dynamics.com/) です。
 
    1. [!DNL Microsoft Dynamics] の認証プロセス用の「**[!UICONTROL 認証範囲]**」フィールドで、「**[!UICONTROL openid]**」を指定します。
 
@@ -154,7 +156,8 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 ## フォームデータモデル（FDM）の作成 {#create-form-data-model}
 
-<!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
+<!--
+When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
 On opening the Form Data Model for the first time, it connects to the configured [!DNL Microsoft Dynamics] service and fetches entities from your [!DNL Microsoft Dynamics] instance. The "contact" and "lead" entities from [!DNL Microsoft Dynamics] are already added in the form data model.
 
@@ -162,7 +165,8 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
  Form Data Model 
-![default-fdm-1](assets/default-fdm-1.png)-->
+![default-fdm-1](assets/default-fdm-1.png)
+-->
 
 MS Dynamics OData クラウドサービスを設定した後、フォームデータモデル（FDM）の作成時にこのサービスを使用できます。詳しくは、[フォームデータモデル（FDM）の作成](create-form-data-models.md)を参照してください。
 

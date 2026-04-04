@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 97%
@@ -27,7 +27,7 @@ RTE の概念と設定に必要な手順を以下に示します。
 
 >[!NOTE]
 >
->このドキュメントで説明される RTE は、ページエディターで使用できる RTE を表しています。 最新のユニバーサルエディターを使用している場合、詳しくは、[&#x200B; ユニバーサルエディターの RTE の設定 &#x200B;](/help/implementing/universal-editor/configure-rte.md) ドキュメントを参照してください。
+>このドキュメントで説明するRTEは、ページエディターで使用可能なRTEを説明します。 最新のユニバーサルエディターを使用している場合は、ドキュメント [ ユニバーサルエディターのRTEの設定](/help/implementing/universal-editor/configure-rte.md)を参照してください。
 
 ## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 
@@ -142,7 +142,7 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 ダイアログ編集モードで適用する次のプロパティを設定します。
 
-* `useFixedInlineToolbar`：RTE ツールバーは、フローティングではなく固定することができます。sling:resourceType= `cq/gui/components/authoring/dialog/richtext` を `True` に設定して、RTE ノードで定義されたこのブール値プロパティを設定します。 このプロパティを `True` に設定すると、リッチテキストの編集が `foundation-contentloaded` イベントで開始されます。これを防ぐには、`customStart` プロパティを `True` に設定し、`rte-start` イベントを呼び出して RTE の編集を開始するようにします。このプロパティが `true` の場合、RTE はクリックで開始しなくなり、これがデフォルトの動作になります。
+* `useFixedInlineToolbar`：RTE ツールバーは、フローティングではなく固定することができます。Sling:resourceType= `cq/gui/components/authoring/dialog/richtext`から`True`までのRTE ノードで定義されたこのブール値プロパティを設定します。 このプロパティを `True` に設定すると、リッチテキストの編集が `foundation-contentloaded` イベントで開始されます。これを防ぐには、`customStart` プロパティを `True` に設定し、`rte-start` イベントを呼び出して RTE の編集を開始するようにします。このプロパティが `true` の場合、RTE はクリックで開始しなくなり、これがデフォルトの動作になります。
 
 * `customStart`：RTE を開始するタイミングを `True` イベントの呼び出しによって制御するには、RTE ノードに定義されているこのブール値プロパティを `rte-start` に設定します。
 
@@ -156,8 +156,10 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 
 RTE プラグインの設定について詳しくは、[RTE プラグインをアクティベートして設定する方法](configure-rich-text-editor-plug-ins.md)を参照してください。
 
-<!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
-**Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
+<!--
+ TBD ENGREVIEW: To confirm if the sample works in CS or not?
+**Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled.
+-->
 
 [コアコンポーネントのテキストコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を使用すると、テンプレートエディターのユーザーインターフェイスを使用して多数の RTE プラグインをコンテンツポリシーとして設定でき、技術的な設定が不要になります。コンテンツポリシーは、このドキュメントで説明するように RTE UI 設定と連携させることができます。詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/page-editor/templates.md)および[コアコンポーネント開発者向けドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 

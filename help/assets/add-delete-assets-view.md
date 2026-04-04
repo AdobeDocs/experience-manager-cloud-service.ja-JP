@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 99%
@@ -21,8 +21,10 @@ ht-degree: 99%
 * ユーザーインターフェイス上でアセットまたはフォルダーをドラッグし、画面の指示に従って操作します。
 * ツールバーの「**[!UICONTROL アセットを追加]**」オプションをクリックし、ファイルをいくつかアップロードダイアログに追加します。
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 上記の方法のいずれかを使用して、フォルダーの作成後にアセットをアップロードできます。空のフォルダーを作成するには、ツールバーの「**[!UICONTROL フォルダーを作成]**」をクリックします。[!DNL Assets view] は強力なフルテキスト検索機能を提供しますが、フォルダーを使用してアセットを適切に整理することもできます。
 
@@ -85,7 +87,8 @@ ht-degree: 99%
 >[!TIP]
 >
 >[!DNL Creative Cloud] デスクトップアプリケーション内から直接 DAM リポジトリにアセットをアップロードできます。
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -109,4 +112,4 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる

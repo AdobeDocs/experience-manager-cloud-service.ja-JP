@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 99%
@@ -79,7 +79,8 @@ ht-degree: 99%
 ## アセットのバージョン管理 {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 [!DNL Assets view] では、更新または編集されたアセットが再度アップロードされたとき、そのアセットのバージョンを管理します。 バージョン履歴や過去のバージョンを表示したり、必要に応じて過去のバージョンのアセットを最新のバージョンとして復元したりできます（後者の場合は、以前のバージョンに戻すことになります）。 アセットのバージョンは、次のシナリオで作成されます。
 
@@ -117,13 +118,15 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
    ![アセットのバージョンを比較](/help/assets/assets/version-compare2.png)
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 最新バージョンを選択し、「**[!UICONTROL 新しいバージョン]**」をクリックして、ローカルファイルシステムからアセットの新しいコピーをアップロードし、アセットバージョンを作成します。
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)
@@ -151,7 +154,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
 環境用に OpenAPI 機能を備えた Dynamic Media がプロビジョニングされている場合、アセットを `Approved` としてマークするとすぐに、Experience Manager Assets によって公開 URL が生成されます。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)

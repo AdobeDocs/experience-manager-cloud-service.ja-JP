@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リ
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 93%
@@ -46,11 +46,12 @@ ht-degree: 93%
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* 画像のスマート切り抜きとスウォッチ [!DNL Dynamic Media]、最新の AI サービスを活用するようになり、改善された切り抜きとスウォッチを生成します。 また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動編集は再処理時に保持されます。
+* [!DNL Dynamic Media]画像のスマート切り抜きとスウォッチは、最新のAI サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。 また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動編集は再処理時に保持されます。
 
 * スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
@@ -60,7 +61,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：ログイン済みの場合と未ログイン（匿名）の場合の行動をAdobe Analytics for Adaptive Formsで捉え追跡して、ユーザーインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、ユーザーエクスペリエンスを向上させることができます。
+* **Analytics for Adaptive Forms**: Adobe Analytics for Adaptive Formsを使用して、ログイン済みユーザーとログインしていないユーザー（匿名ユーザー）の両方の行動を取得および追跡し、ユーザーインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、ユーザーエクスペリエンスを向上させることができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
@@ -81,7 +82,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF アドオンでは、新しい GraphQL API とスキーマを備えた最新の Commerce v2.4.3 をサポートしています
 
-* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーにCIF アイコンが追加され、ピッカーを開いて、コンテキストを離れることなく商品やカテゴリをすばやく検索および選択できるようになりました。
+* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。ピッカーを開くRTE ツールバーにCIF アイコンが追加され、コンテキストから離れることなく、商品またはカテゴリをすばやく検索して選択できるようになりました。
 
 * 既存のポップアップ買い物かごとチェックアウトは、AEM 専用の買い物かごとチェックアウトページに置き換えられました。これらのページ上のコンポーネントは、Adobe Commerce の拡張可能な Peregrine コンポーネントを使用して構築されています
 

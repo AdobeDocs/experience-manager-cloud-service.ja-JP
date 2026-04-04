@@ -6,14 +6,14 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 66%
 
 ---
 
-# Edge Delivery Services Formsの送信アクション
+# Edge Delivery Services Formsのアクションの送信
 
 | バージョン | 記事リンク |
 |---------|-----------------------------|
@@ -22,9 +22,9 @@ ht-degree: 66%
 | AEM as a Cloud Service（コアコンポーネント） | [ここをクリックしてください](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service（Edge Delivery Services） | この記事 |
 
-送信アクションは、データの保存、ワークフローのトリガー、サードパーティシステムとの統合など、ユーザーがフォームを送信したときの動作を定義します。 設定できる送信アクションの種類は、Edge Delivery Services Formsの作成に使用したオーサリング方法によって異なります。
+送信アクションは、データの保存、ワークフローのトリガー、サードパーティシステムとの統合など、利用者がフォームを送信したときに何が起こるかを定義します。 設定できる送信アクションの種類は、Edge Delivery Services Formsの作成に使用するオーサリングメソッドによって異なります。
 
-Edge Delivery Services Formsは、[&#x200B; ユニバーサルエディター &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) または [&#x200B; ドキュメントベースのForms](/help/edge/docs/forms/overview.md) オーサリングを使用して作成し、それに応じて、異なる送信アクションを持つフォームを設定できます。
+[ ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)または[ ドキュメントベースのForms](/help/edge/docs/forms/overview.md)のオーサリングを使用してEdge Delivery Services Formsを作成し、様々な送信アクションを使用してフォームを設定できます。
 
 ## ユニバーサルエディターで作成されたフォームの送信アクション
 
@@ -43,28 +43,32 @@ Edge Delivery Services Formsは、[&#x200B; ユニバーサルエディター &#
 * [Adobe Experience Platform（AEP）に送信](/help/forms/aem-forms-aep-connector.md)
 * [スプレッドシートに送信](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 **フォームプロパティを編集**&#x200B;拡張機能の「**送信**」タブを使用して、ユニバーサルエディターで作成されたフォームの送信アクションを設定できます。
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >
 > * ユニバーサルエディターインターフェイスに **フォームプロパティを編集** アイコンが表示されない場合は、Extension Manager で&#x200B;**フォームプロパティを編集**&#x200B;拡張機能を有効にします。
 > * ユニバーサルエディターで拡張機能を有効または無効にする方法については、[Extension Manager 機能のハイライト](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)の記事を参照してください。
 
-## ドキュメントベースのFormsの送信アクション
+## ドキュメントベースのFormsのアクションの送信
 
-ドキュメントベースのFormsでは、スプレッドシートへの送信のみをサポートしています。 送信されたデータを受け取るスプレッドシートの設定方法については、[&#x200B; データの受け入れを開始するためのGoogle シートまたはMicrosoft Excel ファイルの設定 &#x200B;](/help/edge/docs/forms/submit-forms.md) 記事の手順を参照してください。
+ドキュメントベースのFormsでは、スプレッドシートへの送信のみをサポートしています。 送信されたデータを受け取るようにスプレッドシートを設定する方法については、「[Google シートまたはMicrosoft Excel ファイルを設定してデータの受け取りを開始する](/help/edge/docs/forms/submit-forms.md)」の手順を参照してください。
 
 ## 関連トピック {#see-also}
 

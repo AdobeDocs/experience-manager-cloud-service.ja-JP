@@ -1,12 +1,12 @@
 ---
 title: この記事では、コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイスについて説明します。
-description: アダプティブ Formsのルールエディターを使用すると、条件、ユーザー入力、インタラクションに基づいてアクションをトリガーにするルールを記述できます。
+description: アダプティブFormsのルールエディターは、条件、ユーザー入力、インタラクションに基づいてアクションをトリガーするルールを作成するのに役立ちます。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2459'
 ht-degree: 77%
@@ -15,8 +15,8 @@ ht-degree: 77%
 
 # コアコンポーネントに基づくアダプティブフォームのルールエディターのユーザーインターフェイス
 
-コアコンポーネントに基づくアダプティブFormsのルールエディターのユーザーインターフェイスにより、Adobe Experience Manager（AEM）内のフォーム作成プロセスが強化されます。 事前定義済みの条件、ユーザー入力、インタラクションに基づいてアクションのトリガーを決定するルールを記述することで、ビジネスユーザーと開発者の両方が、動的な動作と複雑なロジックをフォームに実装できるようになります。 この機能は、ES2022 までの最新のJavaScript機能をサポートし、ルール作成プロセスを簡素化する直感的なビジュアルエディターを提供します。
-ルールエディターは、フォーム入力のエクスペリエンスを効率化し、精度と効率の両方を確保するのに役立ちます。 パネルやフォームの検証やリセット、フォームオブジェクトの値を計算するためのカスタム関数の実行が可能です。 ネストされた条件のサポートとフォームデータモデルサービスの呼び出し機能により、ルールエディターのユーザーインターフェイスは、レスポンシブで使いやすいアダプティブフォームを作成するための中心的なコンポーネントになります。
+コアコンポーネントに基づくアダプティブFormsのルールエディターのユーザーインターフェイスは、Adobe Experience Manager（AEM）内のフォーム作成プロセスを強化します。 これにより、ビジネスユーザーとトリガー者の両方が、定義済みの条件、ユーザー入力、インタラクションにもとづいて、アクションを決定するルールを作成することで、動的なアクションや複雑なロジックをフォームに実装できます。 この機能は、ES2022までの最新のJavaScript機能をサポートしており、ルール作成プロセスを簡素化する直感的なビジュアルエディターを提供します。
+ルールエディターは、フォーム入力体験を合理化し、正確性と効率性を確保するのに役立ちます。 パネルやフォームの検証やリセット、およびフォームオブジェクトの値を計算するためのカスタム関数の実行が可能です。 ネストされた条件をサポートし、フォームデータモデルサービスを呼び出す機能を備えたルールエディターユーザーインターフェイスは、レスポンシブでユーザーフレンドリーなアダプティブフォームを作成するための重要なコンポーネントです。
 
 ## ルールエディターのユーザーインターフェイスを理解する {#understanding-the-rule-editor-user-interface}
 
@@ -57,7 +57,7 @@ ht-degree: 77%
 
 >[!NOTE]
 >
->「Formsのオブジェクト」タブと「関数」タブでは、オブジェクトや関数の名前およびタイトルに対してテキスト検索を実行できます。
+>Formsの「オブジェクト」タブおよび「関数」タブで、オブジェクトおよび関数の名前とタイトルに対してテキスト検索を実行できます。
 
 フォームオブジェクトの左側のツリーで、フォームオブジェクトを選択すると、各オブジェクトに適用されるルールが表示されます。様々なフォームオブジェクトのルール間を移動できるだけでなく、フォームオブジェクト間でルールをコピー＆ペーストすることもできます。詳しくは、[ルールをコピー＆ペースト](rule-editor.md#p-copy-paste-rules-p)を参照してください。
 
@@ -69,7 +69,7 @@ ht-degree: 77%
 
 ルールを記述するビジュアルエディターは、ルールエディターのユーザーインターフェイスをビジュアルエディターモードに切り替えると表示されます。ルールタイプを選択し、それに応じて条件とアクションを定義できます。ルールで条件やアクションを定義する場合、フォームオブジェクトと関数ペインからフォームオブジェクトと関数をドラッグ＆ドロップできます。
 
-ルールのビジュアルエディターの詳細については、「[&#x200B; ルールの作成 &#x200B;](rule-editor.md#p-write-rules-p)」を参照してください。
+ビジュアルルールエディターの使用について詳しくは、[ ルールの書き込み](rule-editor.md#p-write-rules-p)を参照してください。
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -88,17 +88,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ルールを保存するには、「**[!UICONTROL 完了]**」ボタンを押します。不完全なルールでも保存できます。ただし、不完全なルールは無効なため、実行されることはありません。フォームオブジェクトに保存されたルールは、同じフォームオブジェクトから次回ルールエディターを起動すると一覧表示されます。このビューでは、既存のルールを管理できます。詳しくは、[ルールを管理](rule-editor.md#p-manage-rules-p)を参照してください。
 
-**[!UICONTROL キャンセル]** ボタンをクリックすると、ルールに対する変更が破棄され、ルールエディターが閉じます。
+「**[!UICONTROL キャンセル]**」ボタンは、ルールに加えた変更をすべて破棄し、ルールエディターを閉じます。
 
 ## ルールを記述 {#write-rules}
 
 ビジュアルルールエディター <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. --> を使用して、ルールを記述します。
 
-まず、ビジュアルエディターを使用してルールを記述する方法を見てみましょう。
+まず、ビジュアルエディターを使用してルールを作成する方法を見てみましょう。
 
-+++ ビジュアルエディター {#using-visual-editor} の使用
++++ ビジュアルエディター{#using-visual-editor}を使用しています
 
-ここでは、次のフォーム例を使って、ビジュアルエディターでルールを作成する方法について説明します。
+次のサンプルフォームを使用して、ビジュアルエディターでルールを作成する方法について説明します。
 
 ![Create-rule-example](assets/create-rule-example.png)
 
@@ -109,7 +109,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ルールを記述するには、次のステップを実行します。
 
-1. まず、「Marital Status （配偶者の有無）」のラジオボタンの選択内容に応じて「Spouse Salary （配偶者の給与）」フィールドの表示・非表示を制御するためのルールを記述します。
+1. まず、「婚姻状況」ラジオボタンでユーザーが選択したオプションに基づいて、「配偶者の給与」フィールドの表示を制御するルールを作成します。
 
    融資申請フォームをオーサリングモードで開きます。「**[!UICONTROL 配偶者の有無]**」コンポーネントを選択し、「![edit-rules](assets/edit-rules-icon.svg)」を選択します。次に、「**[!UICONTROL 作成]**」を選択し、ルールエディターを起動します。
 
@@ -123,7 +123,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-1. ルールの **[!UICONTROL 文字列を入力]** フィールドで、ドロップダウンメニューから **既婚** を選択します。
+1. ルールの&#x200B;**[!UICONTROL Enter a String]** フィールドで、ドロップダウンメニューから&#x200B;**Married**&#x200B;を選択します。
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -158,7 +158,8 @@ Users in the forms-power-users group can access code editor. For other users, co
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
@@ -166,7 +167,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
-1. 次に、融資適格金額を算出するためのルールを記述します。ここでは、総給与の 50% として計算され、「Loan Eligibility（貸付資格）」フィールドに表示されます。この結果を得るには、「Loan Eligibility （貸付資格）」フィールド上に **[!UICONTROL 値を設定]** ルールを作成します。
+1. 次に、融資適格金額を算出するためのルールを記述します。ここでは、総給与の 50% として計算され、「Loan Eligibility（貸付資格）」フィールドに表示されます。この結果を得るには、「**[!UICONTROL ローンの適格性」フィールドに「]**&#x200B;の値を設定」ルールを作成します。
 
    「オーサリングモードで「**[!UICONTROL Loan Eligibility（貸付資格）]**」フィールドを選択し、「![edit-rules](assets/edit-rules-icon.svg)」を選択します。次に、「**[!UICONTROL 作成]**」を選択し、ルールエディターを起動します。
 
@@ -184,7 +185,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -232,29 +233,30 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 +++
 
-### 入力パラメーターでの関数および数式のサポート
+### 入力パラメーターでの関数と数式のサポート
 
-入力パラメーターでは、concat、trim、join などの関数出力と数式の両方がサポートされるようになりました。 この機能強化により、フォーム作成者は動的に計算された値を直接渡すことができ、ルール設定が効率化され、追加のフィールドが不要になり、フォームを複雑なロジックや計算駆動型のシナリオに適応させることができます。
+入力パラメーターは、数式だけでなく、concat、trim、joinなどの両方の関数出力をサポートするようになりました。 この機能強化により、フォーム作成者は、動的に計算された値を直接渡すことができるようになり、ルール設定を合理化し、追加のフィールドの必要性を減らし、複雑なロジックや計算主導のシナリオにフォームをより適応性のあるものにすることができます。
 
-![&#x200B; 関数呼び出しと数式のサポート &#x200B;](/help/forms/assets/mathematical-function-support.png)
+![関数呼び出しと数式のサポート ](/help/forms/assets/mathematical-function-support.png)
 
-### 破損したルールの処理
+### 壊れたルールの処理
 
-参照されているフィールドを移動または削除すると、ルールが機能しないことがあります。 この場合、ルールエディターは影響を受けるルールに赤いドットインジケーターを付けます。
+参照フィールドを移動または削除すると、ルールが壊れることがあります。 この場合、ルールエディターは、影響を受けるルールに赤いドットインジケーターを付けます。
 
-* フィールドを（あるパネルから別のパネルに）移動すると、関連するルールが壊れる場合があります。 この場合は、ルールを開いて再度保存します。 ルールが自動的に復元されます。
+* フィールドを移動すると（例えば、あるパネルから別のパネルへ）、関連するルールが壊れる可能性があります。 この場合は、ルールを開いてもう一度保存します。 ルールは自動的に復元されます。
 
-* フィールドを削除すると、ルールを修復できなくなります。
+* フィールドが削除されると、ルールを修復できません。
 
-  問題を理解するには、ルールエディターでルールステータスにポインタを合わせて、エラーメッセージを表示します。
+  問題を理解するには、ルールエディターのルールステータスにカーソルを合わせて、エラーメッセージを表示します。
 
-  ![&#x200B; 壊れたルール &#x200B;](/help/forms/assets/rule-editor-broken-rules.png)
+  ![壊れたルール ](/help/forms/assets/rule-editor-broken-rules.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -356,7 +358,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=ja#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -457,9 +459,9 @@ var c = {
 
 * **展開／折りたたみ**：ルールリスト内の「コンテンツ」の列には、ルールの内容が表示されます。デフォルトビューにルール内容の全体が表示されていない場合は、「![expand-rule-content](assets/Smock_ChevronDown.svg)」を選択してビューを展開します。
 
-* **並べ替え**：新しく作成したルールはすべて、ルールリストの一番下に追加されます。ルールは上から下に順に実行されます。一番上のルールが最初に実行され、続けて同じタイプの他のルールが実行されます。例えば、「When」、「Show」、「Enable」、および「When」の各ルールが、リストの 1～4 番目にある場合、一番上にある「When」ルールが最初に実行され、次に 4 番目の「When」ルールが実行されます。 そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
+* **並べ替え**：新しく作成したルールはすべて、ルールリストの一番下に追加されます。ルールは上から下に順に実行されます。一番上のルールが最初に実行され、続けて同じタイプの他のルールが実行されます。例えば、上部の最初、2番目、3番目、4番目の位置に「When」、「Show」、「Enable」、「When」の各ルールがある場合、上部の「When」ルールが最初に実行され、その後の4番目の位置に「When」ルールが実行されます。 そして、「Show」ルールおよび「Enable」ルールが実行されます。ルールの順序を変更するには、![sort-rules](assets/sort-rules.svg) をタップするか、リスト内の目的の位置にドラッグアンドドロップします。
 
-* **編集**：ルールを編集するには、ルールタイトルの横にあるチェックボックスを選択します。ルールを編集・削除するためのオプションが表示されます。「**[!UICONTROL 編集]**」を選択して、選択したルールをルールエディターで開きます。
+* **編集**：ルールを編集するには、ルールタイトルの横にあるチェックボックスを選択します。ルールを編集・削除するためのオプションが表示されます。選択したルールをルールエディターで開くには、**[!UICONTROL 編集]**&#x200B;を選択します。
 
 * **削除**：ルールを削除するには、ルールを選択してから「**[!UICONTROL 削除]**」をクリックします。
 
@@ -493,7 +495,7 @@ var c = {
 
 ## 次の手順
 
-アダプティブフォームのルールエディターでの様々な演算子のタイプとイベントについては、[&#x200B; アダプティブフォームのルールエディターで使用できる演算子のタイプとイベント &#x200B;](/help/forms/rule-editor-core-components-events-operators.md) を参照してください。
+アダプティブフォームのルールエディターの様々なオペレータータイプとイベントについて理解するには、「[ アダプティブフォームのルールエディターで使用可能なオペレータータイプとイベント」の記事](/help/forms/rule-editor-core-components-events-operators.md)を参照してください。
 
 
 ## 関連トピック

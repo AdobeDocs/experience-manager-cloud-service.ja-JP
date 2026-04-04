@@ -4,7 +4,7 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 62%
@@ -17,9 +17,11 @@ ht-degree: 62%
 
 この自動処理により、最初のサイトを設定するのに必要な手作業の労力が軽減されます。エッジでのコンテンツ管理に関して、シームレスなワークフローとスケーラビリティが確保され、チームのパフォーマンスが向上します。
 
-<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!--
+ Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+-->
 
 
 
@@ -67,7 +69,7 @@ Adobe Edge Delivery サイトをワンクリックで作成するには、組織
 
    ![AEM オーサリングを選択した状態でEdge Delivery サイトを作成ダイアログ ボックス。](/help/implementing/cloud-manager/edge-delivery/assets/eds-create-aem-authoring.png)
 
-1. 「**オーサリング環境**」ドロップダウンリストで、オーサリングに使用するAEM環境を選択します。 この環境は既にプログラムに存在している必要があります。 オーサー層のみが必要です。Edge Deliveryで配信を処理する場合、パブリッシュ層は必要ありません。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+1. 「**オーサリング環境**」ドロップダウンリストで、オーサリングに使用するAEM環境を選択します。 この環境は既にプログラムに存在している必要があります。 オーサー層のみが必要です。Edge Deliveryで配信を処理する場合、パブリッシュ層は必要ありません。 [柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
 
 1. 「**今すぐサイトを作成**」をクリックします。
 
@@ -90,7 +92,7 @@ Cloud Manager によるサイトのプロビジョニングと検証が完了す
    | サイトの GitHub リポジトリ | <ul><li>**Edge Delivery サイト**&#x200B;リストボックスの&#x200B;**リポジトリ**&#x200B;列見出しの下で、作成したサイトの URL をクリックします。<br>ユーザー名またはメールアドレスとパスワードを使用して GitHub にログインする必要がある場合があります。</li> |
    | サイトを公開 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューの ![公開チェックアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg)「**サイトを公開**」をクリックします。<br>サイトの公開が正常に開始されたことを知らせるトーストメッセージが表示されます。</li></ul> |
    | 公開済みサイトをプレビュー | <ul><li>**Edge Delivery サイト**&#x200B;リストボックスの&#x200B;**サイト名**&#x200B;列見出しの下で、作成および公開したサイトの URL をクリックします。<br>ブラウザーの URL アドレスバーで、サイトの URL が `.page` で終わっていることに注意してください。これは、サイトのプレビューが表示されていることを示します。</li><li>サイトをライブで表示するには、URL アドレスバーで `.page` を `.live` に手動で変更します。</li></ul> |
-   | ユーザーに Google Drive のコンテンツリポジトリへのアクセス権を付与 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ユーザー追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)「**コンテンツリポジトリへのアクセス権を取得**」をクリックします。</li><li>**`Add collaborators to your site`** ダイアログボックスで、コントリビューターの電子メールアドレスを入力し、![&#x200B; チェックマークアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)をクリックします。</li><li>必要に応じて、引き続きコントリビューターのメールを追加します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li><li>コンテンツの共同作業者とリンクを共有するには、**共同作業が正常に追加されました**&#x200B;ダイアログボックスで「**OK**」をクリックします。</li><li>共同作業が正常に追加されましたダイアログボックスで、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックしてリンクをコピーし、共同作業者と共有します。<br>リンクを共有する前に、共同作業者が IMS アカウントに関連付けられたメールアドレスを使用してログインしていることを確認します。IMS メールアカウントが使用できない場合は、共同作業者として追加されたメールアドレスを使用する必要があります。これにより、共同作業者はリンクにアクセスして、Google Drive で編集または更新するコンテンツを表示できます。</li><li>編集が完了したら、上記の説明に従って、Cloud Manager で「**サイトを公開**」をクリックします。<br>または、上記の説明に従って、変更をプレビューします。</li></ul> |
+   | ユーザーに Google Drive のコンテンツリポジトリへのアクセス権を付与 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ユーザー追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)「**コンテンツリポジトリへのアクセス権を取得**」をクリックします。</li><li>**`Add collaborators to your site`** ダイアログボックスで、コントリビューターの電子メールアドレスを入力し、![ チェックマークアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)をクリックします。</li><li>必要に応じて、引き続きコントリビューターのメールを追加します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li><li>コンテンツの共同作業者とリンクを共有するには、**共同作業が正常に追加されました**&#x200B;ダイアログボックスで「**OK**」をクリックします。</li><li>共同作業が正常に追加されましたダイアログボックスで、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックしてリンクをコピーし、共同作業者と共有します。<br>リンクを共有する前に、共同作業者が IMS アカウントに関連付けられたメールアドレスを使用してログインしていることを確認します。IMS メールアカウントが使用できない場合は、共同作業者として追加されたメールアドレスを使用する必要があります。これにより、共同作業者はリンクにアクセスして、Google Drive で編集または更新するコンテンツを表示できます。</li><li>編集が完了したら、上記の説明に従って、Cloud Manager で「**サイトを公開**」をクリックします。<br>または、上記の説明に従って、変更をプレビューします。</li></ul> |
    | ユーザーに GitHub のベースリポジトリへのアクセス権を付与 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![コードアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)「**ベースリポジトリへのアクセス権を取得**」をクリックします。</li><li>**サイトのベースリポジトリへのアクセス**&#x200B;ダイアログボックスで、共同作業者の GitHub ユーザー名を入力し、![チェックマークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、引き続き GitHub ユーザー名を追加します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li>ユーザーは、リポジトリを表示するのに独自の GitHub ユーザー名へのアクセス権を付与する必要があります。 |
 
 ## AEM オーサーからEdge Delivery（Beta）へのコンテンツの公開 {#publish-from-aem-author}
@@ -115,15 +117,15 @@ Edge Delivery サイトを作成し、Cloud Managerで&#x200B;**検証済み**&#
 
 * **Cloud Managerから** -
 
-   1. **概要** ページの&#x200B;**配信を公開** タブの&#x200B;**環境** カードで、強調表示された![情報または情報アイコン &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)をクリックします。
+   1. **概要** ページの&#x200B;**配信を公開** タブの&#x200B;**環境** カードで、強調表示された![情報または情報アイコン ](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg)をクリックします。
 
    1. 情報ポップアップで「**クリックしてアクティブ化**」を選択し、Cloud Manager ユーザーインターフェイスでパブリッシュ層のプロビジョニングを有効にします。
 
-      ![&#x200B; クリックしてパブリッシュ層プロビジョニングをアクティブ化](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+      ![ クリックしてパブリッシュ層プロビジョニングをアクティブ化](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
 
    1. パブリッシュ層をアクティブ化ダイアログボックスで、**アクティブ化**&#x200B;をクリックします。
 
-      ![&#x200B; パブリッシュ層をアクティブ化ダイアログボックス &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+      ![ パブリッシュ層をアクティブ化ダイアログボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
 
       アクティブ化すると、パブリッシュ層が自動的にプロビジョニングされます。 または、作成者がAEM ユーザーインターフェイスからコンテンツを直接公開しようとすると、パブリッシュ層を自動的にプロビジョニングできます。
 

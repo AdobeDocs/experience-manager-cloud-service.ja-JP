@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 98%
@@ -48,7 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 1. Click **[!UICONTROL New Profile]** in the Products tab.
 1. Specify Name, Display Name, and Description for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-If the profile exists and issues still persist, contact Adobe Support. -->
+If the profile exists and issues still persist, contact Adobe Support.
+-->
 
 ## パイプラインの構築失敗 {#build-pipeline-fails}
 

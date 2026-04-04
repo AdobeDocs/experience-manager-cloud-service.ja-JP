@@ -13,7 +13,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2381'
 ht-degree: 86%
@@ -23,7 +23,7 @@ ht-degree: 86%
 
 # AEM CIF コアコンポーネントのスタイル設定 {#style-aem-cif-core-components}
 
-[CIF Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components) このチュートリアルでは、Venia 参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用される CSS とJavaScriptがどのように整理されているかを理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
+[CIF Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components)このチュートリアルでは、Venia参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用されるCSSとJavaScriptの構成方法を理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ ht-degree: 86%
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発のセットアップ &#x200B;](/help/commerce-cloud/cif-storefront/develop.md) の要件と手順を確認します。
+このチュートリアルを完了するには、ローカルの開発環境が必要です。この環境には、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDKとのローカル開発の設定に関する要件と手順を確認します。](/help/commerce-cloud/cif-storefront/develop.md)
 
 ## Venia プロジェクトをクローン {#clone-venia-project}
 
-[Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia) を複製してから、デフォルトのスタイルを上書きします。
+[Venia プロジェクト、](https://github.com/adobe/aem-cif-guides-venia)を複製し、デフォルトのスタイルを上書きします。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 86%
 
 1. 必要な OSGi 設定を追加すると、AEM インスタンスを Adobe Commerce インスタンスに接続したり、作成したプロジェクトに設定を追加したりできます。
 
-1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`/`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
+1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US` > `Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。
 
    ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerce への接続が機能していることが示されます。
 
@@ -84,7 +84,7 @@ ht-degree: 86%
 
 ## ティーザースタイルのアップデート {#ui-frontend-module}
 
-次に、ティーザーのスタイルを少し変更して、`ui.frontend` モジュールとクライアントライブラリの動作を確認します。[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用されているスクリーンショットは、[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#microsoft-visual-studio-code) のものです。
+次に、ティーザーのスタイルを少し変更して、`ui.frontend` モジュールとクライアントライブラリの動作を確認します。[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用されているスクリーンショットは、[Visual Studio Code IDEのものです。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#microsoft-visual-studio-code)
 
 1. **ui.frontend** モジュールに移動して展開し、フォルダー階層を次のように展開します：`ui.frontend/src/main/styles/commerce`。
 
@@ -181,9 +181,9 @@ ht-degree: 86%
 
    これらのクライアントライブラリは、`ui.frontend` モジュールでは管理されません。代わりに、これらのクライアントライブラリには、アドビが提供する CSS と JavaScript の依存関係が含まれます。これらのクライアントライブラリの定義は、各フォルダー内の `.content.xml` ファイルにあります。
 
-   **clientlib-base** - [AEM コアコンポーネントから必要な依存関係を単に埋め込む、空のクライアントライブラリです。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) カテゴリは `venia.base` です。
+   **clientlib-base** - [AEM コアコンポーネントから必要な依存関係を簡単に埋め込む空のクライアントライブラリ。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) カテゴリは`venia.base`です。
 
-   **clientlib-cif** - [AEM CIF コアコンポーネントから必要な依存関係を簡単に組み込む、空のクライアントライブラリです。](https://github.com/adobe/aem-core-cif-components) カテゴリは `venia.cif` です。
+   **clientlib-cif** - [AEM CIF コアコンポーネントから必要な依存関係を単純に埋め込んだ空のクライアントライブラリ。](https://github.com/adobe/aem-core-cif-components) カテゴリは`venia.cif`です。
 
    **clientlib-grid** - AEM レスポンシブグリッド機能を有効にする CSS が含まれます。AEM グリッドを使用すると、AEM エディターで[レイアウトモード](/help/sites-cloud/authoring/page-editor/responsive-layout.md)が有効になり、コンテンツ作成者はコンポーネントのサイズを変更できます。カテゴリは `venia.grid` で、 `venia.base` ライブラリに埋め込まれます。
 
@@ -208,7 +208,7 @@ ht-degree: 86%
 
 コードのアップデートがデプロイされたので、AEM オーサリングツールを使用して、製品ティーザーコンポーネントのインスタンスをサイトのホームページに追加します。これにより、更新されたスタイルが表示されます。
 
-1. 新しいブラウザータブを開き、サイトの **ホームページ** に移動します。[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. 新しいブラウザータブを開き、サイト **http://localhost**/editor.html/content/venia/us/en.htmlの[ ホームページ :4502に移動します。](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. **編集**&#x200B;モードでアセットファインダー（サイドレール）を展開します。アセットフィルターを&#x200B;**製品**&#x200B;に切り替えます。
 
@@ -224,7 +224,7 @@ ht-degree: 86%
 
 次に、クライアントライブラリがページに含まれていることを確認します。
 
-1. サイトの **ホームページ** に移動します：[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. サイトの&#x200B;**ホームページ**&#x200B;に移動します：[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. **ページ情報**&#x200B;メニューを選択し、「**公開済みとして表示**」をクリックします。
 
@@ -258,9 +258,9 @@ ht-degree: 86%
 
 ## ページテンプレートによるクライアントライブラリの追加 {#client-library-inclusion-pagetemplates}
 
-クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、`clientlib-site` ページテンプレート [&#x200B; を使用して、生成されたプロジェクトに &#x200B;](/help/implementing/developing/components/templates.md) ライブラリがどのように含まれているかを調べます。
+クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、`clientlib-site` ページテンプレート [を使用して、生成されたプロジェクトに](/help/implementing/developing/components/templates.md) ライブラリがどのように含まれているかを確認します
 
-1. AEM Editor 内のサイトの **ホームページ** に移動します。[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. AEM エディター内のサイトの&#x200B;**ホームページ**&#x200B;に移動します：[http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. **ページ情報**&#x200B;メニューを選択し、「**テンプレートを編集**」をクリックします。
 
@@ -295,7 +295,7 @@ ht-degree: 86%
 
 webpack-dev-server は、AEM のローカルインスタンスから画像と一部の CSS/JavaScript をプロキシしますが、デベロッパーは、`ui.frontend` モジュール内のスタイルと JavaScript を変更できます。
 
-1. ブラウザーで **ホーム** ページに移動し、**公開済みとして表示**:[http://localhost:4502/content/venia/us/en.html?wcmmode=disabled.](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled) を表示します
+1. ブラウザーで、**ホーム** ページに移動し、**公開済みとして表示**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled.](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)
 
 1. ページのソースとページの生の HTML **コピー**&#x200B;を表示します。
 
@@ -329,13 +329,13 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
    $ npm start
    ```
 
-   このコマンドは、[http://localhost:8080/.](http://localhost:8080/) で webpack-dev-server を開始します
+   このコマンドは、[http://localhost:8080/.](http://localhost:8080/)にwebpack-dev-serverを開始します
 
    >[!CAUTION]
    >
    > Sass 関連のエラーが発生した場合は、サーバーを停止し、`npm rebuild node-sass` コマンドを実行して上記の手順を繰り返します。このエラーは、プロジェクト `aem-cif-guides-venia/pom.xml` で指定された `npm` と `node` のバージョンが異なる場合に発生する可能性があります。
 
-1. AEMのログインしたインスタンスと同じブラウザーを使用して、新しいタブで [http://localhost:8080/](http://localhost:8080/) に移動します。 Venia ホームページは webpack-dev-server で確認できます。
+1. AEMのログインインスタンスと同じブラウザーで、新しいタブの[http://localhost:8080/](http://localhost:8080/)に移動します。 Venia ホームページは webpack-dev-server で確認できます。
 
    ![ポート 80 の Webpack Dev サーバー](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -454,7 +454,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 プロジェクトのコードを AEM にデプロイした後は、製品ティーザーの変更を確認できるようになります。
 
-1. ブラウザーに戻り、次のホーム ページを更新します：[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 更新された製品ティーザースタイルが適用されているのが確認できます。
+1. ブラウザーに戻り、ホームページを更新します：[http://localhost:4502/editor.html/content/venia/us/en.html。](http://localhost:4502/editor.html/content/venia/us/en.html)更新された製品ティーザースタイルが適用されます。
 
    ![製品ティーザースタイルのアップデート](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -464,11 +464,11 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## トラブルシューティング {#troubleshooting}
 
-更新された CSS ファイルがデプロイされていることを [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) で確認できます：[http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+[CRXDE-Lite](http://localhost:4502/crx/de/index.jsp)で、更新されたCSS ファイルがデプロイされていることを確認できます：[http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 新しい CSS ファイル、JavaScript ファイル、またはその両方をデプロイする場合は、ブラウザーで古いファイルが提供されないようにすることも重要です。ブラウザーキャッシュをクリアするか、新しいブラウザーセッションを開始することで、この潜在的な問題を解消できます。
 
-また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[&#x200B; クライアントライブラリの再ビルド ツールを使用すると、AEMのクライアントライブラリキャッシュを手動で無効にすることができます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると思われる場合は、キャッシュを無効にする方法をお勧めします。 「ライブラリのリビルド」は非効率で時間がかかります。*
+また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[ クライアントライブラリの再構築ツールを使用して、AEMのクライアントライブラリキャッシュを手動で無効化できます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると疑われる場合は、キャッシュの無効化が推奨されます。 「ライブラリのリビルド」は非効率で時間がかかります。*
 
 ## これで完了です {#congratulations}
 

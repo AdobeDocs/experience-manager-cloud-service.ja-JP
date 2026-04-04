@@ -1,10 +1,10 @@
 ---
-title: Experience Modernization Agent の概要
-description: Experience Modernization Agent が AI を使用して、新しい web サイトをEdge Delivery Servicesにオンボードする方法を説明します。
+title: Experience Modernization Agentの概要
+description: Experience Modernization Agentが、AIを活用して新しいWeb サイトをEdge Delivery Servicesにオンボーディングする方法について説明します。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -12,101 +12,101 @@ ht-degree: 0%
 ---
 
 
-# Experience Modernization Agent の概要 {#experience-modernization-agent}
+# Experience Modernization Agentの概要 {#experience-modernization-agent}
 
-AI を利用して Experience Modernization Agent が web サイトをEdge Delivery Servicesにオンボードする方法を説明します。
+Experience Modernization Agentが、AIを活用してweb サイトをEdge Delivery Servicesにオンボーディングする方法をご紹介します。
 
 ## はじめに {#introduction}
 
-[Experience Modernization Agent は、Brand Experience Agentの一部として &#x200B;](/help/ai-in-aem/agents/brand-experience/overview.md)Web サイトの移行と基本的なサイト設定を自動化することで、Edge Delivery Servicesへのオンボーディングを促進します。
+[Brand Experience Agentの一部として、](/help/ai-in-aem/agents/brand-experience/overview.md)Experience Modernization Agentは、web サイトの移行と基本サイトの設定を自動化することで、Edge Delivery Servicesへのオンボーディングを高速化します。
 
-[&#x200B; サイト作成と移行のスキル &#x200B;](#creation-migration) を組み合わせて、最初の web サイトのオンボーディングと [&#x200B; ブロック開発機能 &#x200B;](#block-development) を行い、サイト作成と移行のワークフローをサポートします。 さらに、直接使用できる web ベースの AI 支援開発環境として [Experience Modernization Console](#console) を提供します。 ユーザーはこのコンソールを介してエージェントを直接操作できますが、開発者はどの船を完全に制御できるかについては、引き続き説明します。
+初期web サイトのオンボーディング用に[ サイトの作成と移行のスキル ](#creation-migration)を、サイトの作成と移行のワークフローをサポートするために[ ブロック開発機能](#block-development)を組み合わせています。 また、Web ベースのAI支援による開発環境として、[Experience Modernization Console](#console)を直接利用できます。 ユーザーはそのコンソールを通じて直接エージェントを操作できますが、開発者は出荷内容を完全に制御できます。
 
-複雑な移行や優先度の高い移行の場合、Adobeでは、Experience Modernization Agent を使用して実稼動対応のEdge Delivery サイトを配信するように設計されたエンジニアリング主導のサービスである [Agentic Outcome Engineer （AOE）配信モデル &#x200B;](#aoe-delivery) を提供します。
+複雑または優先度の高い移行の場合、Adobeでは、[Agentic Outcome Engineer （AOE）配信モデル、](#aoe-delivery)Experience Modernization Agentを使用して本番環境に対応したEdge Delivery サイトを配信するように設計されたエンジニアリング主導のサービスを提供します。
 
 ## メリット {#benefits}
 
-Experience Modernization Agent を使用すると、[Edge Delivery Services](/help/edge/overview.md) の導入の価値を生み出すまでの時間が短縮され、ブランドの web エクスペリエンスを柔軟に調整できるようになります。
+Experience Modernization Agentは、[Edge Delivery Services](/help/edge/overview.md)導入の価値実現までの時間を短縮し、ブランドのweb体験を適応させる俊敏性を提供します。
 
-* **高速**:AI 自動化は、繰り返しの移行作業（コンテンツの読み込み、ブロックマッピング、設計システムアプリケーション）を処理し、従来のアプローチと比較して移行タイムラインを圧縮します
-* **効率化を重視**：自動化によって反復作業が減り、チームはより価値の高い実装作業に集中できます
-* **誰でもアクセス可能**：自然言語リクエストでは、技術に詳しくないユーザーでも web サイトの変更にアクセスできるようになり、ライブプレビューで変更を即座に検証できます
-* **エンタープライズガバナンス**：デベロッパーは、GitHub と統合されたレビューワークフローを通じて、運用される内容に対する完全な権限を維持します
-* **移行後の柔軟性**：チームがEdge Delivery Services パターンを使用して、移行したサイトを拡張および調整できるようになります。
+* **高速**: AI オートメーションは、反復的な移行作業（コンテンツの読み込み、ブロックマッピング、デザインシステム アプリケーション）を処理し、従来のアプローチと比較して移行タイムラインを圧縮します
+* **効率性に重点を置く**：自動化によって反復的な作業が削減されるため、チームはより価値の高い実装作業に集中できるようになります
+* **誰でもアクセス可能**：自然言語のリクエストにより、技術的な知識を持たないユーザーでもweb サイトの変更にアクセスできるようになり、ライブプレビューで変更をすぐに検証できます
+* **エンタープライズガバナンス**：開発者は、GitHubと統合されたレビューワークフローを通じて、公開される内容に対する完全な権限を維持します
+* **移行後の柔軟性**:Edge Delivery Services パターンを使用して、移行されたサイトを拡張および改良できます
 
-## サイトの作成と移行スキル {#creation-migration}
+## サイトの作成と移行のスキル {#creation-migration}
 
-Experience Modernization Agent は、新しいEdge Delivery Services サイトを作成し、既存の web サイトを移行するためのスキルを備えています。 Edge Delivery Servicesの新しいサイトや移行では、これらのスキルを活用することをお勧めします。
+Experience Modernization Agentは、新しいEdge Delivery Services サイトを作成し、既存のweb サイトを移行するためのスキルを提供します。 新しいEdge Delivery Services サイトまたは移行では、これらのスキルを活用することをお勧めします。
 
-* 数か月から数週間または数日にわたって Web サイトの作成と移行を促進し、Edge Delivery Servicesの導入に要する時間を大幅に短縮
-* 様々なCMS プラットフォーム、従来のAEMまたはデザインシステム（Figma など）から実稼動対応のEdge Delivery Services プロジェクトへの移行をサポートします。
-* Edge Delivery Servicesのガイダンスに沿ったパフォーマンス、アクセシビリティ、レスポンシブデザインに関するベストプラクティスをサポート
+* Edge Delivery Servicesを導入することで、web サイトの構築と移行を数か月から数週間、数日に短縮し、価値実現までの時間を大幅に短縮できます
+* CMS プラットフォーム、レガシーAEM、デザインシステム（Figmaなど）の幅広い範囲からの実稼動対応のEdge Delivery Services プロジェクトへの移行をサポートします
+* Edge Delivery Services ガイダンスに沿ったパフォーマンス、アクセシビリティ、レスポンシブデザインのベストプラクティスをサポートしています
 
-詳細なスキルには、ページ移行、一括読み込み、デザイン抽出、ナビゲーション設定、web スクレーピングが含まれます。
+詳細なスキルには、ページの移行、一括読み込み、デザイン抽出、ナビゲーション設定、web スクレイピングなどがあります。
 
 ## ブロック開発機能 {#block-development}
 
-Experience Modernization Agent は、様々な開発タスクに対応する一般的なEdge Delivery Services開発機能を利用して、最初のサイトの作成や移行に留まらず、継続的な価値を提供します。
+Experience Modernization Agentは、様々な開発作業に対応する一般的なEdge Delivery Services開発機能を活用し、初期のサイト作成や移行にとどまらない継続的な価値を提供します。
 
-* 作成者にとって使いやすいコンテンツモデルを、コンテンツ駆動開発（CDD）手法に従う
-* [&#x200B; ブロックコレクション &#x200B;](https://www.aem.live/developer/block-collection) および [&#x200B; ブロックパーティ &#x200B;](https://www.aem.live/developer/block-party/) を活用して、参照実装とベストプラクティスを見つけます
-* デプロイメント前に変更を検証するためのテストワークフローとデバッグワークフローをサポート
+* 作成者にとって使いやすいコンテンツモデルのためのコンテンツ駆動開発（CDD）手法に従います
+* [ ブロックコレクション ](https://www.aem.live/developer/block-collection)および[ ブロックパーティ ](https://www.aem.live/developer/block-party/)を利用して、参照実装とベストプラクティスを見つけます
+* デプロイメント前に変更を検証するためのワークフローのテストとデバッグをサポート
 
-詳細な機能には、ブロック開発、コンテンツモデリング、参照ブロック検出、テスト、デバッグが含まれます。
+詳細な機能には、ブロック開発、コンテンツモデリング、参照ブロックの発見、テスト、デバッグなどがあります。
 
-## Experience Modernization コンソール {#console}
+## Experience Modernization Console {#console}
 
-Experience Modernization Agent は、[`aemcoder.adobe.io`.](https://aemcoder.adobe.io) で web インターフェイスとして公開される、Edge Delivery Servicesの web ベースの AI 支援開発環境を提供します
+Experience Modernization Agentは、Edge Delivery Servicesのweb ベースのAI支援による開発環境を提供し、[`aemcoder.adobe.io`にweb インターフェイスとして公開します。](https://aemcoder.adobe.io)
 
-* ユーザーが自然言語で変更を促すメッセージをすぐに開始できるように、コンソールをローカルに設定する必要はありません。
-* AEMのライブプレビューでプレビューしながら日々のエクスペリエンス開発タスクを迅速に実行し、コンテンツをAEMに同期します。
-* コンソールは、標準の GitHub レビューワークフローを通じてエンタープライズガバナンスをサポートしています。
+* コンソールでは、ユーザーが自然言語ですぐに変更を求めるプロンプトを開始するためのローカル設定は必要ありません。
+* AEMのライブプレビューを使用してエクスペリエンス開発タスクをプレビューし、コンテンツをAEMに同期しながら、日々の作業を迅速に完了。
+* コンソールは、標準のGitHub レビューワークフローによるエンタープライズガバナンスをサポートしています。
 
-セルフサービス Experience Modernization Console が一般入手可能になりました。 関心のあるユーザーは、スムーズなオンボーディングエクスペリエンスを確保するためにアクセスをリクエストできます。
+セルフサービスのExperience Modernization Consoleが一般に利用可能です。 興味のあるユーザーは、スムーズなオンボーディング体験を実現するために、利用申請できます。
 
-Experience Modernization Console の基本を学ぶ
+Experience Modernization Consoleの基本を学ぶ
 
-* ドキュメントのオーサリングをターゲットにしてサイトを最新化する場合は、[&#x200B; ここから開始 &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md) してください。
-* AEMのオーサリングをターゲットにしてサイトを最新化する場合は、[&#x200B; ここから開始 &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) してください。
+* ドキュメント作成をターゲットにしてサイトを最新化する場合は、[こちらから始めてください。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* AEM オーサリングをターゲットにしてサイトを最新化する場合は、[こちらから始めてください。](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Agentic Outcome Engineer （AOE）による配信 {#aoe-delivery}
 
-複雑な移行や迅速な結果を実現するために、Adobeでは Agentic Outcome Engineer （AOE）を提供しています。 これは、Adobeのエンジニアがお客様に代わって Experience Modernization Agent を操作するオプションのサービスで、AI の自動処理と専門的なガイダンスを組み合わせて、実稼動に対応した結果を大規模に提供します。 AOE 配信について詳しくは、ドキュメント [&#x200B; エクスペリエンス最新化エージェントの AOE 配信 &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md) を参照してください。
+複雑な移行や迅速な移行の場合、AdobeはAOE （エージェンティックアウトカムエンジニア）機能を提供します。 これは、AdobeのエンジニアがExperience Modernization Agentを担当し、AIによる自動化と専門家のガイダンスを組み合わせて、本番環境での使用に対応した結果を大規模に提供するオプションサービスです。 AOE配信について詳しくは、「[Experience Modernization AgentのAOE配信](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)」のドキュメントを参照してください。
 
-次の移行で AOE モデルに関心がある場合：
+次の移行のAOE モデルに興味がある場合：
 
-* スコーピングとスケジュールを開始するには、Adobeの担当者またはアカウントチームにお問い合わせください。
-* Adobeは、実施要件を確認し、エンゲージメントを推定し、エンゲージメントプランを提案します。
+* スコーピングとスケジュール設定については、Adobeの担当者またはアカウントチームにお問い合わせください。
+* Adobeが利用条件を確認し、エンゲージメントを見積もり、エンゲージメントプランを提案します。
 
 ## 制限事項 {#limitations}
 
-次のユースケースでは、Experience Modernization Agent のスキルに加えて、追加の実装作業が必要です。
+次のユースケースでは、Experience Modernization Agentのスキルに加えて、追加の実装の労力が必要です。
 
-掻き取りスキルは、次のソースをサポートしていません。
+スクレイピングスキルは、次のソースをサポートしていません。
 
-* イントラネットまたは保護されたソース （認証、VPN、アクセスできないファイアウォールの背後にあるコンテンツなど）
-* 複雑な動的コンテンツ（DOM に表示するために高度なユーザーインタラクションが必要なコンテンツなど）。
-   * 特定の URL からコンテンツにアクセスできる場合は、クライアントサイドでレンダリングされたコンテンツがサポートされます。
-   * CSS 経由で非表示になっているが、タブ、アコーディオン、カルーセルなど DOM に存在する要素もサポートされます。
+* 認証、VPN、ファイアウォールなどの背後にあるコンテンツにアクセスできない、イントラネットまたは保護されたソース
+* 複雑な動的コンテンツ（例えば、高度なユーザーインタラクションを必要とするコンテンツなど）がDOMに表示される。
+   * クライアント側でレンダリングされたコンテンツは、特定のURLを介してコンテンツにアクセスできる場合にサポートされます。
+   * CSSで非表示になっている要素も、タブ、アコーディオン、カルーセルなどDOMに存在する要素もサポートされています。
 
 エージェントは次のターゲットをサポートしていません。
 
-* サイトが HTL ベースの配信を使用するAEM公開環境
-   * このスキルはEdge Delivery Servicesのみを対象としています。
-* API のみの配信や SPA ベースの配信などのヘッドレス配信パターン（Next.js など）
+* サイトがHTL ベースの配信を使用するAEM パブリッシュ環境
+   * このスキルは、Edge Delivery Servicesのみを対象としています。
+* APIのみの配信やSPA ベースの配信（Next.jsなど）などのヘッドレス配信パターン
 
-以下の要件は、専用の自動化スキルの対象外であり、手動での作業が必要です。
+次の要件は、専用の自動化スキルではカバーされないため、手作業が必要です。
 
-* 厳格なピクセル完全性
-   * 実用的な設計忠実さのみが自動化されます
-* サーバーまたはクライアントサイドのサードパーティのデータやサービスの統合
-* コマースまたは検索機能の統合
-* MarTech データレイヤーまたはターゲティング/実験
+* 厳密なピクセルの完全性
+   * 実用的な設計忠実度のみが自動化されます
+* サーバーまたはクライアントサイドのサードパーティデータ/サービスの統合
+* コマースや検索機能の統合
+* マーテクのデータレイヤーまたはターゲティング/実験
 * コンテンツ/エクスペリエンスフラグメントの分離
 * マルチサイト継承（MSM）
-* カスタム機能（カリキュレータ、コンフィギュレータなど）
+* カスタム機能（例：計算機、コンフィギュレーター）
 * カスタムビジネスロジック
 
 ## 次の手順 {#next-steps}
 
-ドキュメント [Experience Modernization Agent 使用の手引き &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md) を使用してサイトを移行することから開始します。
+ドキュメント [Experience Modernization Agentの概要](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)を使用してサイトを移行することから始めます。

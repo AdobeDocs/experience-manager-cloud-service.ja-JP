@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 100%
@@ -43,7 +43,8 @@ Possible topics to cover in this article are below.
 
 準拠レベルの詳細を記載したレポートについては、[アクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html)（ACR）のページを参照してください。
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -70,7 +71,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 クリックやポインターを使用するユーザーインターフェイス要素の多くは、キーボードを使用して操作することもできます。キーボードを使用して UI 要素にフォーカスし、適切なアクションを実行できます。キーボードショートカットを使用して、UI 要素にフォーカスせずに、コマンドやアクションを直接トリガーすることもできます。例えば、左側でアセットのタイムラインを開くには、キーボードを使用してユーザーインターフェイスコントロールに移動し、`Return` キーを押し、`Alt + 2` キーボードショートカットを押すことができます。
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -113,7 +115,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 メニューからヘルプまたはユーザープロファイルのオプションを展開すると、スクリーンリーダーから適切なオプションまたはステータスが通知されます。ユーザープロファイルオプションを展開すると、キーボードを使用して使用可能なオプションを選択できるようになりす。例えば、管理者は別のユーザーを装うことができます。ユーザーが[!UICONTROL ヘルプ]オプションから文字列を検索した場合、ナレーターが「ヘルプの検索」を通知して、検索が進行中であることを示します。
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -124,7 +127,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 [!DNL Assets] ユーザーインターフェイスでは、キーボードを使用して DAM リポジトリー内の既存のデジタルアセットの一覧表示、プレビューまたはダウンロード、生成されたレンディションの表示、表示の切り替え、タイムラインとバージョンの履歴の表示、コメントと参照の表示、メタデータの管理を行うことができます。
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -150,7 +154,8 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * アセットに対するコメントは、アセットタイムラインで使用でき、キーボードまたはキーボードショートカットを使用して左側のパネルにアクセスすると、アクセスできます。
 * [!DNL Experience Manager] の[!UICONTROL 表示設定]には、キーボードを使用してアクセスできる。矢印キーを使用して使用可能なカードサイズ間を移動して選択できる。Tab キーで既存の表示設定表示内の他の要素間を移動し設定できる。
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -195,7 +200,8 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 
 ## アセットの共有 {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 アセットを共有する場合、次の機能によってアクセシビリティが向上します。

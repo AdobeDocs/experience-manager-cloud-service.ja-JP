@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
@@ -35,7 +35,8 @@ Self-Service CDN Management:
 Adobe-managed CDN within EDS enables self-service configuration and management tasks like SSL certificate setup. 
  
 Use Cases:
-EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability. -->
+EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability.
+-->
 
 ## Cloud Manager の Adobe が管理する CDN での Edge Delivery Services デプロイメントオプション {#deployment-options}
 

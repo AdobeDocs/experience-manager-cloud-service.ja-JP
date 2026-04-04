@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 99%
@@ -66,7 +66,7 @@ ht-degree: 99%
    }
    ```
 
-1. 詳しくは、[&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) 内で OSGi 設定を行う方法を参照してください。
+1. 詳しくは、[ [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) 内で OSGi 設定を行う方法を参照してください。
 
 以下のプロパティを使用して、スケジューラーを設定できます。
 
@@ -75,7 +75,8 @@ ht-degree: 99%
 * スケジューラーの 1 回の繰り返しで期限切れになるアセットの最大数は、`asset_expired_limit` プロパティの値です。
 * ジョブを定期的に実行するには、`cq.dam.expiry.notification.scheduler.istimebased` プロパティの値を `false` に設定し、`cq.dam.expiry.notification.scheduler.period.rule` プロパティの値を秒単位の時間で設定します。
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

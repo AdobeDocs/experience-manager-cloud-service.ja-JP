@@ -1,51 +1,51 @@
 ---
-title: アダプティブ Forms ブロックのフィールドプロパティのマスター
-description: スプレッドシートとアダプティブFormsのブロックフィールドプロパティを使用して、強力なフォームをより迅速に作成します。 このガイドでは、EDSFormsブロックがサポートするすべてのプロパティを示します。
+title: アダプティブForms ブロックフィールドのプロパティの習得
+description: スプレッドシートとアダプティブなFormsのブロックフィールド属性を使用して、強力なフォームをより迅速に作成できます。 このガイドでは、EDS Forms ブロックでサポートされているすべてのプロパティについて説明します。
 feature: Edge Delivery Services
-source-git-commit: ccc6439f68d8199154d4cd664b9cdb6428460a64
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 4%
 
 ---
 
+# アダプティブ Forms ブロックフィールドのプロパティ
 
-# アダプティブ Forms ブロックのフィールドプロパティ
+このドキュメントでは、フィールドが識別およびレンダリングされる方法、共通パターン、フィールド固有の違いに焦点を当てて、JSON スキーマが`blocks/form/form.js`のレンダリングされたHTMLにマッピングする方法について説明します。
 
-このドキュメントでは、フィールドの識別方法とレンダリング方法、共通のパターン、フィールド固有の違いに重点を置いて、JSON スキーマが `blocks/form/form.js` でレンダリングされたHTMLにどのようにマッピングされるかを要約します。
+## フィールド （`fieldType`）はどのように識別されますか？
 
-## フィールド（`fieldType`）の識別方法
-
-JSON スキーマの各フィールドには、レンダリング方法を決定する `fieldType` プロパティがあります。 `fieldType` は次になることができます。
+JSON スキーマの各フィールドには、レンダリング方法を決定する`fieldType` プロパティがあります。 `fieldType` は次になることができます。
 
 - **特殊タイプ**\
-  例：`drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading` など
+  例：`drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading`など
 - **有効なHTML入力タイプ**\
-  例：`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` など
-- **`-input` サフィックスを持つ型**\
-  例：`text-input`、`number-input` など （`text`、`number` などの基本型に正規化されます）。
+  例：`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`など
+- **接尾辞`-input`を持つ型**\
+  例：`text-input`、`number-input`など （`text`、`number`などの基本タイプに正規化されます）。
 
-`fieldType` が特殊な型と一致する場合、**カスタムレンダラー** が使用されます。 それ以外の場合は、**デフォルトの入力タイプ** として扱われます。
+`fieldType`が特殊タイプと一致する場合、**カスタムレンダラー**&#x200B;が使用されます。 それ以外は、**デフォルトの入力タイプ**&#x200B;として扱われます。
 
-各フィールドタイプの [&#x200B; 完全なHTML構造とプロパティ &#x200B;](#common-html-structure) については、以下の節を参照してください。
+各フィールドタイプの[完全なHTML構造とプロパティ ](#common-html-structure)については、以下の節を参照してください。
 
-## フィールドで使用される共通プロパティ
+## フィールドで使用される一般的なプロパティ
 
 ほとんどのフィールドで使用されるプロパティを以下に示します。
 
-- `id`：要素 ID を指定し、アクセシビリティをサポートします。
-- `name`:input、select、または fieldset 要素の `name` 属性を定義します。
-- `label.value`、`label.richText`、`label.visible`: ラベル/凡例のテキスト、HTMLのコンテンツ、表示/非表示を指定します。
+- `id`：要素IDを指定し、アクセシビリティをサポートします。
+- `name`：入力、選択、またはフィールドセット要素の`name`属性を定義します。
+- `label.value`、`label.richText`、`label.visible`: ラベル/凡例のテキスト、HTML コンテンツ、および表示を指定します。
 - `value`: フィールドの現在の値を表します。
-- `required`:`required` 属性または検証データを追加します。
-- `readOnly`、`enabled`: フィールドを編集可能と無効のどちらにするかを制御します。
+- `required`: `required`属性または検証データを追加します。
+- `readOnly`、`enabled`: フィールドが編集可能か無効かを制御します。
 - `description`: フィールドの下にヘルプテキストを表示します。
-- `tooltip`：入力の `title` 属性を設定します。
-- `constraintMessages`：カスタムのエラーメッセージをデータ属性として提供します。
+- `tooltip`：入力の`title`属性を設定します。
+- `constraintMessages`: カスタム エラーメッセージをデータ属性として提供します。
 
 ## 共通のHTML構造
 
-ほとんどのフィールドは、ラベルとオプションのヘルプテキストを含むラッパー内でレンダリングされます。 次のスニペットは、構造の例を示しています。
+ほとんどのフィールドは、ラベルとオプションのヘルプテキストを含むラッパー内でレンダリングされます。 次のスニペットは、構造を示しています。
 
 ```html
 <div class="<fieldType>-wrapper field-wrapper field-<name>" data-id="<id>">
@@ -56,42 +56,42 @@ message</div>
 </div>
 ```
 
-グループ（ラジオ/チェックボックス）およびパネルの場合、`<fieldset>` の代わりに、`<legend>` が付いた `<div>/<label>` が使用されます。 ヘルプテキスト <div> は、説明が設定されている場合にのみ存在します。
+グループ（ラジオ/チェックボックス）とパネルの場合は、`<fieldset>`の代わりに`<legend>`を持つ`<div>/<label>`が使用されます。 ヘルプテキスト <div> は、説明が設定されている場合にのみ存在します。
 
-## エラーメッセージの表示
+## エラーメッセージ表示
 
-エラーメッセージは、ヘルプテキストに使用されているのと同じ `.field-description` 要素に表示され、動的に更新されます。
+エラーメッセージは、ヘルプテキストに使用されるのと同じ`.field-description`要素に表示され、動的に更新されます。
 
 **フィールドが無効な場合**:
 
-- ラッパー（`.field-wrapper` など）には、クラス `.field-invalid` が割り当てられます。
-- `.field-description` のコンテンツは、対応するエラーメッセージに置き換えられます。
+- ラッパー（例：`.field-wrapper`）にクラス `.field-invalid`が割り当てられています。
+- `.field-description` コンテンツは、対応するエラーメッセージに置き換えられます。
 
 **フィールドが有効になると**:
 
-- `.field-invalid` クラスは削除されます。
-- `.field-description` は元のヘルプテキスト（使用可能な場合）に復元されるか、存在しない場合は削除されます。
+- `.field-invalid` クラスが削除されました。
+- `.field-description`は、元のヘルプテキスト（使用可能な場合）に復元されるか、存在しない場合は削除されます。
 
-カスタムエラーメッセージは、JSON の `constraintMessages` プロパティを使用して定義できます。\
-これらは、ラッパーの `data-<constraint>ErrorMessage` 属性として追加されます（例：`data-requiredErrorMessage`）。
+カスタムエラーメッセージは、JSONの`constraintMessages` プロパティを使用して定義できます。\
+これらは、ラッパーの`data-<constraint>ErrorMessage`属性として追加されます（例：`data-requiredErrorMessage`）。
 
-## デフォルトの入力タイプ（HTML入力または `*-input`）
+## 既定の入力タイプ （HTML入力または`*-input`）
 
-`fieldType` が特殊な型でない場合は、標準のHTML入力型または `<type>-input` として扱われます。例えば、`text`、`number`、`email`、`date`、`text-input`、`number-input` などです。
+`fieldType`が特殊な型でない場合は、標準のHTML入力型として、または`<type>-input`として扱われます（例：`text`、`number`、`email`、`date`、`text-input`、`number-input`）。
 
-- サフィックス `-input` は削除され、基本型が入力の `type` 属性として使用されます。
-- これらのタイプは、`renderField()` でデフォルトで処理されます。
-一般的なデフォルトの入力タイプは、`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` などです。  また、基本型に正規化された `text-input`、`number-input` なども受け入れます。
+- 接尾辞`-input`が削除され、ベース型が入力の`type`属性として使用されます。
+- これらの型は、`renderField()`ではデフォルトで処理されます。
+一般的なデフォルトの入力タイプは、`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`などです。  また、基本タイプに正規化された`text-input`、`number-input`などを受け入れます。
 
-## デフォルトの入力タイプの制約
+## デフォルト入力タイプの制約
 
 制約は、JSON プロパティに基づいて、入力要素の属性として追加されます。
 
 | JSON プロパティ | HTML属性 | 適用先 |
 |--------------|---------------|------------|
-| maxLength | maxlength | テキスト，メール，パスワード，tel |
-| minLength | minlength | テキスト，メール，パスワード，tel |
-| pattern | pattern | テキスト，メール，パスワード，tel |
+| maxLength | maxlength | テキスト、電子メール、パスワード、電話 |
+| minLength | minlength | テキスト、電子メール、パスワード、電話 |
+| pattern | pattern | テキスト、電子メール、パスワード、電話 |
 | maximum | 最大 | 数値、範囲、日付 |
 | minimum | 最小値 | 数値、範囲、日付 |
 | ステップ | ステップ | 数値、範囲、日付 |
@@ -102,9 +102,9 @@ message</div>
 
 >[!NOTE]
 >
-> `multiple` はブール値プロパティです。 true の場合、`multiple` 属性が追加されます。
+> `multiple`はブール型プロパティです。 trueの場合、`multiple`属性が追加されます。
 
-これらの属性は、フィールドの JSON 定義に基づいて、フォームレンダラーによって自動的に設定されます。
+これらの属性は、フィールドのJSON定義に基づいて、フォームレンダラーによって自動的に設定されます。
 
 ## 例：制約を含むHTML構造
 
@@ -125,17 +125,17 @@ placeholder="Enter your age" />
 </div>
 ```
 
-HTML構造の各部分は、データの連結、検証およびヘルプまたはエラーメッセージの表示に関与します。
+HTML構造の各部分は、データのバインディング、検証、ヘルプやエラーメッセージの表示などで役割を果たします。
 
-## フィールド固有のプロパティとそのHTML構造
+## フィールド固有のプロパティとHTML構造
 
 ### ドロップダウン
 
-**追加のプロパティ：**
+**追加プロパティ：**
 
 - `enum` / `enumNames`: ドロップダウンのオプション値とその表示ラベルを定義します。
-- `type`: `array` に設定されている場合、複数選択を有効にします。
-- `placeholder`：選択前にユーザーをガイドする、無効なプレースホルダーオプションを追加します。
+- `type`: `array`に設定されている場合、複数選択を有効にします。
+- `placeholder`：無効なプレースホルダーオプションを追加して、ユーザーを選択前にガイドします。
 
 例：
 
@@ -156,9 +156,9 @@ data-requiredErrorMessage="This field is required">
 
 ### プレーンテキスト
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `richText`:true の場合、HTMLを段落にレンダリングします。
+- `richText`:trueの場合、HTMLは段落内でレンダリングされます。
 
 例：
 
@@ -171,10 +171,10 @@ data-requiredErrorMessage="This field is required">
 
 ### チェックボックス
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `enum`：チェックボックスのオン/オフの状態に関する値を定義します。
-- `properties.variant / properties.alignment`: スイッチスタイルのチェックボックスの表示スタイルと配置を指定します。
+- `enum`: チェックボックスのチェック済み状態とチェックされていない状態の値を定義します。
+- `properties.variant / properties.alignment`: スイッチスタイルのチェックボックスの表示スタイルと整列を指定します。
 
 例：
 
@@ -195,9 +195,9 @@ data-unchecked-value="off" />
 
 ### ボタン
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `buttonType`：ボタンのタイプ（ボタン、送信、リセット）を設定して、ボタンの動作を指定します。
+- `buttonType`: ボタンの種類（ボタン、送信、またはリセット）を設定して、ボタンの動作を指定します。
 
 例：
 
@@ -208,14 +208,14 @@ data-unchecked-value="off" />
 </div>
 ```
 
-### マルチライン入力
+### 複数行入力
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `minLength`: テキストまたはテキスト領域入力で許可される最小文字数を指定します。
-- `maxLength`: テキストまたはテキスト領域入力で許可される最大文字数を指定します。
-- `pattern`：入力値が有効であると見なすために一致する必要がある正規表現を定義します。
-- `placeholder`：値が入力されるまで、入力またはテキスト領域内にプレースホルダーテキストを表示します。
+- `minLength`: テキストまたはテキストエリア入力で許可される最小文字数を指定します。
+- `maxLength`: テキストまたはテキストエリア入力で許可される最大文字数を指定します。
+- `pattern`：入力値が有効と見なされるために一致する必要がある正規表現を定義します。
+- `placeholder`：値が入力されるまで、入力領域またはテキスト領域内にプレースホルダーテキストを表示します。
 
 例：
 
@@ -236,14 +236,14 @@ placeholder="Type here..."></textarea>
 
 ### パネル
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
 - `repeatable`: パネルを動的に繰り返すことができるかどうかを指定します。
-- `minOccur`：必要なパネルインスタンスの最小数を設定します。   maxOccurd：許可されるパネルインスタンスの最大数を設定します。
-- `properties.variant`：パネルの表示スタイルまたはバリアントを定義します。
-- `properties.colspan`: パネルがグリッドレイアウト内に広がる列数を指定します。
+- `minOccur`：必要なパネルインスタンスの最小数を設定します。   maxOccur：許可されるパネルインスタンスの最大数を設定します。
+- `properties.variant`: パネルのビジュアルスタイルまたはバリアントを定義します。
+- `properties.colspan`: パネルがグリッド レイアウトに配置される列数を指定します。
 - `index`：親コンテナ内でのパネルの位置を示します。
-- `fieldset`：凡例またはラベル付きの `<fieldset>` 要素の下の関連フィールドをグループ化します。
+- `fieldset`：凡例またはラベルを持つ`<fieldset>`要素の下に関連するフィールドをグループ化します。
 
 例：
 
@@ -262,9 +262,9 @@ data-repeatable="true" data-index="0">
 
 ### ラジオ
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `enum`：各ラジオボタンオプションの値属性として使用される、ラジオフィールドに指定できる値のセットを定義します。
+- `enum`：各ラジオボタンオプションの値属性として使用される、ラジオフィールドで許可される値のセットを定義します。
 
 例：
 
@@ -280,7 +280,7 @@ data-required="true">
 
 ### ラジオグループ
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
 - `enum`：各ラジオボタンの値として使用される、ラジオグループのオプション値のリストを定義します。
 - `enumNames`：列挙の順序に一致するラジオボタンの表示ラベルを提供します。
@@ -306,12 +306,12 @@ data-required="true">
 
 ### **チェックボックスグループ**
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `enum`：各チェックボックスの値として使用される、チェックボックスグループのオプション値のリストを定義します。
-- `enumNames`：列挙の順序に一致する、チェックボックスの表示ラベルを提供します。
+- `enum`: チェックボックスグループのオプション値のリストを定義します。各チェックボックスの値として使用されます。
+- `enumNames`: チェックボックスの表示ラベルを列挙の順序と一致させて提供します。
 - `minItems`：有効にするために選択する必要があるチェックボックスの最小数を設定します。
-- `maxItems`: エラーをトリガーするまでに選択できるチェックボックスの最大数を設定します。
+- `maxItems`: エラーをトリガーする前に選択できるチェックボックスの最大数を設定します。
 
 例：
 
@@ -335,10 +335,10 @@ data-maxItems="3">
 
 ### 画像
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `value / properties['fd:repoPath']`：画像をレンダリングするための画像のソースパスまたはリポジトリーパスを定義します。
-- `altText`：アクセシビリティを向上させるために、画像（alt 属性）の代替テキストを提供します。
+- `value / properties['fd:repoPath']`：画像をレンダリングするための画像ソースパスまたはリポジトリパスを定義します。
+- `altText`：アクセシビリティを向上させるために、画像（alt属性）の代替テキストを提供します。
 
 例：
 
@@ -353,9 +353,9 @@ data-maxItems="3">
 
 ### 見出し
 
-**追加のプロパティ**:
+**追加プロパティ**:
 
-- `value`：見出し要素内に表示するテキストコンテンツ（例：`<h2>`）を指定します。
+- `value`：見出しエレメント内に表示するテキストコンテンツを指定します（例：`<h2>`）。
 
 例：
 
@@ -365,10 +365,11 @@ data-maxItems="3">
 </div>
 ```
 
-詳しくは、`blocks/form/form.js` および `blocks/form/util.js` の実装を参照してください。
+詳細については、`blocks/form/form.js`および`blocks/form/util.js`の実装を参照してください。
 
 
-<!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+<!--
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
@@ -393,5 +394,5 @@ This table details all the properties you can use to customize your Adaptive For
 | **Multiple** | Allow multiple file selections | `true`, `false` |
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
-| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+-->

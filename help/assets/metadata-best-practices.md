@@ -5,17 +5,19 @@ role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 95%
 
 ---
 
-<!-- Keywords to focus on:
+<!--
+ Keywords to focus on:
 metadata best practices
 aem metadata 
-experience manager metadata-->
+experience manager metadata
+-->
 
 # メタデータの管理とベストプラクティス {#metadata-best-practices}
 
@@ -110,13 +112,13 @@ experience manager metadata-->
 
 * **値の重複を避ける：**&#x200B;マーケティングキャンペーンから画像を集めた場合は、一貫した名前を使用し、重複を避けます。
 
-  例えば、*campaign_image_001* や *campaign_image_002* などの重複した名前を使用する代わりに、*event_promotion* や *product_launch* などの体系的な命名規則を実装し、明確で順序付けられた識別を確保します。
+  例えば、*campaign_image_001*&#x200B;や&#x200B;*campaign_image_002*&#x200B;のような重複した名前を使用する代わりに、*event_promotion*&#x200B;や&#x200B;*product_launch*&#x200B;などの体系的な命名規則を実装し、明確で順序の付いた識別を確実にします。
 
-* **統制語彙を効果的に使用する：**&#x200B;タグに標準化された用語を使用して、制御語彙を実装します。[AEM タグ付けフレームワーク &#x200B;](/help/implementing/developing/introduction/tagging-framework.md) を効果的に実装する方法について説明します。
+* **統制語彙を効果的に使用する：**&#x200B;タグに標準化された用語を使用して、制御語彙を実装します。[AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)を効果的に実装する方法について説明します。
 
-  例えば、テーマを使用して画像にタグ付けする場合は、「*product_launch*」や「*event_promotion*」などの用語を常に使用して、体系的なシーケンスを維持します。
+  例えば、体系的な順序を維持するために、画像にテーマをタグ付けする場合は、*product_launch*&#x200B;または&#x200B;*event_promotion*&#x200B;などの用語を一貫して使用します。
 
-* **正確性と完全性の維持：**&#x200B;メタデータの一貫性を保つためには、様々なソース間での正確性、完全性、アラインメントが重要です。
+* **正確性と完全性の維持：**メタデータの一貫性を保つためには、様々なソース間での正確性、完全性、アラインメントが重要です。
 例えば、PDF ドキュメントにメタデータを追加する場合は、作成者名やキーワードなどの詳細が正確で、完全であることを確認します。
 
 #### ビデオ：アセットへの一括メタデータの追加

@@ -1,10 +1,10 @@
 ---
-title: Experience Production Agent の概要
-description: AEMの Experience Production Agent を使用して、コンテンツの作成を高速化し、変更を自動的に調整する方法を説明します。
+title: Experience Production エージェントの概要
+description: AEMのExperience Production Agentが、コンテンツ制作を迅速化し、変更を自動的に調整するのにどのように役立つのかをご確認ください。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 2%
@@ -12,49 +12,49 @@ ht-degree: 2%
 ---
 
 
-# Experience Production Agent の概要 {#experience-production-agent}
+# Experience Production エージェントの概要 {#experience-production-agent}
 
-Experience Production Agent は、大量のタスクと手間を自動化します。 チームを強化し、数週間にわたる手動のプロセスを、迅速で AI を利用したワークフローに変え、あらゆるエクスペリエンスを最新かつ一貫性のある状態に保ち、ビジネスの目標達成を支援します。
+Experience Production Agentは、多くの労力と大量のタスクを自動化します。 また、手作業による数週間のプロセスを、AIを活用した高速なワークフローに変換し、あらゆるエクスペリエンスを最新の状態に保ち、一貫性を維持することで、ビジネス目標の達成を支援します。
 
 ## ジョブ {#jobs}
 
-エージェントは以下のジョブを提供します。
+エージェントは次のジョブを提供します。
 
 * [コンテンツ更新](#content-update)
 * [フォームの作成](#form-creation)
-* [通信の作成](#communications-creation)
+* [コミュニケーションの構築](#communications-creation)
 
 >[!IMPORTANT]
 >
->AI によって生成された応答は、不正確であったり、誤解を招く可能性があります。 推奨される修正および回答を再確認してください。
+>AIによる回答は、不正確または誤解を招く可能性があります。 修正案と回答案を再確認しましょう。
 >
->[Adobe Experience Cloud ジェネレーティブ AI ユーザーガイドラインも参照してください &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>[Adobe Experience Cloud生成AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)も参照してください
 
 ### コンテンツ更新ジョブ {#content-update}
 
-[&#x200B; コンテンツ更新 &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) ジョブを使用すると、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを簡単に更新できます。 エージェントは、コンテンツ要素の更新、削除、置換、追加などのアクションを実行して、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語による説明にすることができます。Jira PDF やスクリーンショットで使用する場合は、入力も指定できます。
+[ コンテンツ更新](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) ジョブは、コンテンツフラグメント、ページ、フォーム、アセットなど、既存のコンテンツを簡単に更新します。 担当者は、コンテンツ要素の更新、削除、置換、追加などのアクションを実行し、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語の説明にすることができ、Jira PDFやスクリーンショットを使用して使用する場合も入力を提供できます。
 
 ### フォーム作成ジョブ {#form-creation}
 
-[&#x200B; フォーム作成 &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) ジョブを使用すると、ユーザーは、開発チームや IT チームに依存することなく、自然言語プロンプトを使用してアダプティブフォームを作成できます。 この機能は、ブランドの一貫性を維持しながらフォームの開発を促進し、ビジネスユーザーが技術的な深い知識がなくてもフォームを作成できるようにします。
+[ フォーム作成](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) ジョブを使用すると、開発チームやIT チームに依存することなく、自然言語プロンプトを通じてアダプティブフォームを作成できます。 この機能により、ブランドの一貫性を維持しながらフォームの開発が加速し、ビジネスユーザーは技術的な知識がなくてもフォームを作成できます。
 
 ### コミュニケーション作成ジョブ {#communications-creation}
 
-[&#x200B; コミュニケーションの作成 &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) ジョブは、ビジネスユーザーがパーソナライズされたデータ駆動型の通信を大規模に作成できるようにします。 アカウント明細書や政策文書から請求書やウェルカムキットまで、エージェントは自然言語要件を専門的なコミュニケーションに変換します。
+[ コミュニケーション作成](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md) ジョブを使用すると、ビジネスユーザーはパーソナライズされたデータ主導のメッセージを大規模に作成できます。 口座の明細書や政策文書から請求書やウェルカムキットまで、担当者は自然言語の要件を専門的なコミュニケーションに変えます。
 
 >[!NOTE]
 >
-> コミュニケーション作成スキルは、現在アルファ版です。 参加をご希望の場合は、公式メールアドレスから [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com) までリクエストを送信してください。
+> コミュニケーション作成スキルは現在アルファ版です。 参加を希望される場合は、公式メールアドレスから[aem-forms-ea@adobe.comにリクエストを送信してください。](mailto:aem-forms-ea@adobe.com)
 
-## 他のエージェントとの併用 {#use-with-other-agents}
+## 他のエージェントとの使用 {#use-with-other-agents}
 
-エージェントは他のエージェントスキルと連携することができます。その例を以下に示します。
+エージェントは他のエージェントのスキルと連携できます。例としては次のようなものがあります。
 
-* Experience Advisory Agent からのソースアセットの取得
+* Experience Advisory Agentからソースアセットを取得します
 
 ## アクティベーション {#activation}
 
-Experience Production Agent をアクティブ化してアクセスできるようにするには、Adobeにお問い合わせください。 開始するには、以下にお問い合わせください。
+Experience Production Agentをアクティブ化してアクセスするには、Adobeに連絡する必要があります。 最初にお問い合わせいただくか、下記までお問い合わせください。
 
 * `experience-production-agent@adobe.com`
-* または、アカウントチームにお問い合わせください
+* アカウントチームに連絡してください

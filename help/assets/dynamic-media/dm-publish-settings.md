@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3359'
 ht-degree: 99%
@@ -19,8 +19,10 @@ ht-degree: 99%
 
 # Image Server 用の Dynamic Media の公開設定
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+ hide: yes
+hidefromtoc: yes
+-->
 
 {{work-with-dynamic-media}}
 
@@ -170,7 +172,7 @@ Dynamic Media ビューアリファレンスガイドの [IccRenderIntent](https
 
 ほとんどの企業は、ファイアウォールの内側でインターネットを実行します。インターネットへのアクセスは、特定のルートを通じて可能で、通常は限られた範囲のパブリック IP アドレスを通じて可能です。
 
-企業ネットワークから、様々な web サイトを使用してパブリック IP アドレスを検出したり、企業の IT 組織にこの情報をリクエストしたりできます。
+企業ネットワークから、さまざまなweb サイトを使用してパブリック IP アドレスを検索したり、企業のIT組織にこの情報を依頼したりできます。
 
 セキュアテストを使用すると、Adobe Dynamic Media は、ステージング環境または内部アプリケーション用に専用の Image Server を確立します。このサーバーへのリクエストはすべて、発信元 IP アドレスをチェックします。受信リクエストが IP アドレスの承認済みリストに含まれていない場合は、失敗のレスポンスが返されます。
 Adobe Dynamic Media の会社管理者が、自社のセキュアテスト環境で使用する承認済み IP アドレスリストを設定します。

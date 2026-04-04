@@ -6,7 +6,7 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 96%
@@ -76,9 +76,10 @@ AEM as a Cloud Service Developer Console にアクセスするには、[Develope
 
 パブリッシュ層の場合、デフォルトでは、リポジトリブラウザーには公開コンテンツのみが表示されます。したがって、`/conf` や `/home` などの特定のフォルダーは表示されません。
 
-これらの場所を表示するには、AEM管理者の公開製品プロファイルを使用してください。 詳しくは、[&#x200B; チームおよび製品プロファイルのドキュメント &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md) を参照してください。
+これらの場所を表示するには、AEM Administrators Publish Product Profileを使用してください。 詳しくは、[ チームプロファイルおよび製品プロファイルのドキュメント ](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
 
-<!-- Drafting because of CQDOC-23204
+<!--
+ Drafting because of CQDOC-23204
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 100%
@@ -79,7 +79,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
             <id>notCMBuild</id>
             <activation>
                   <property>
-                        <name>!env.CM_BUILD</name>
+                        <name>[!NOTE]nv.CM_BUILD</name>
                   </property>
             </activation>
             <build>

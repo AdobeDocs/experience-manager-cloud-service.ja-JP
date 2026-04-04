@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 role: Admin
 index: false
-source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 98%
@@ -61,7 +61,7 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 カテゴリピッカーは、製品ピッカーと同様の方法で、コンポーネントダイアログでも使用できます。
 
-次のスニペットを cq:dialog 設定で使用できます。
+次のスニペットは、cq:dialog設定で使用できます。
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 

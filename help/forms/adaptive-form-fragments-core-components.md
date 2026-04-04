@@ -7,10 +7,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -66,9 +66,10 @@ ht-degree: 97%
 
 1. 「**作成**」をクリックし、次に「**開く**」をクリックして、編集モードでデフォルトのテンプレートを使ってフラグメントを開きます。編集モードでは、任意のアダプティブフォームコンポーネントをフラグメントに追加できます。
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> また、フラグメントのフォームモデルとして XML スキーマを選択した場合は、フォームモデル階層を示す新しいタブがコンテンツファインダーに表示されます。これにより、フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> また、フラグメントのフォームモデルとして XML スキーマを選択した場合は、フォームモデル階層を示す新しいタブがコンテンツファインダーに表示されます。フォームモデルの要素をフラグメントにドラッグ&amp;ドロップできます。
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-スキーマまたはフォームデータモデル（FDM）に基づいてアダプティブフォームフラグメントを作成すると、アダプティブフォームビルダーのコンテンツブラウザーの「データソース」タブにフォームデータモデル（FDM）またはスキーマ要素が表示されます。 フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。追加されたフォームモデルの要素はフォームコンポーネントに変換されますが、関連したスキーマからの元のプロパティは保持されます。
+スキーマまたはフォームデータモデル（FDM）に基づくアダプティブフォームフラグメントを作成すると、フォームデータモデル（FDM）またはスキーマ要素がアダプティブフォームビルダーのコンテンツブラウザーの「データソース」タブに表示されます。 フォームモデルの要素をフラグメントにドラッグ＆ドロップできます。追加されたフォームモデルの要素はフォームコンポーネントに変換されますが、関連したスキーマからの元のプロパティは保持されます。
 
 
 ## アダプティブフォームにフラグメントを追加 {#insert-a-fragment-in-an-adaptive-form}
@@ -92,11 +93,13 @@ ht-degree: 97%
 
 アダプティブフォームフラグメントは、アダプティブフォーム内の参照により追加され、スタンドアロンのアダプティブフォームフラグメントと同期されたままとなります。つまり、アダプティブフォームフラグメントに加えた変更は、そのフラグメントがアダプティブフォームに組み込まれるすべてのインスタンスに反映されます。
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

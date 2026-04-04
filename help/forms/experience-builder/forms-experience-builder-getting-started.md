@@ -1,277 +1,277 @@
 ---
-title: Forms Experience Builder の概要
-description: Forms Experience Builder を使用して最初の AI を利用したフォームを作成する際の基本について説明します。 例とベストプラクティスを示したステップバイステップのチュートリアル。
+title: Forms Experience Builderの基本を学ぶ
+description: Forms Experience BuilderでAIを利用して、初めてフォームを作成する場合の基本について説明します。 例とベストプラクティスを紹介するステップバイステップチュートリアル。
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 4%
 
 ---
 
-# Forms Experience Builder の概要 {#getting-started-forms-experience-builder}
+# Forms Experience Builderの基本を学ぶ {#getting-started-forms-experience-builder}
 
-Forms Experience Builder は、AI を活用して、自然言語の説明を完全に機能するデジタルフォームに変換することにより、フォーム作成に革命をもたらします。 このガイドは、最初のフォームを作成し、Forms Experience Builder を強力にする中心概念を理解するのに役立ちます。
+Forms Experience Builderなら、AI （人工知能）を活用して、自然言語による記述を包括的なデジタルフォームに変換できます。これにより、フォーム作成に革命がもたらされます。 このガイドでは、最初のフォームを作成し、Forms Experience Builderを強力なものにするコアコンセプトについて説明します。
 
-## Forms Experience Builder とは {#what-is-forms-experience-builder}
+## Forms Experience Builderとは何ですか？ {#what-is-forms-experience-builder}
 
-Forms Experience Builder は、会話言語を使用して高度なデジタルフォームを作成できる、AI を利用したフォーム作成ツールです。 従来のドラッグ&amp;ドロップインターフェイスや複雑なコーディングの代わりに、必要なものを記述するだけで、AI がフォームを作成します。
+Forms Experience Builderは、AIを活用したフォーム作成ツールです。会話言語を使用して、洗練されたデジタルフォームを作成できます。 従来のドラッグ&amp;ドロップ操作によるインターフェイスや複雑なコーディングの代わりに、求めているものを記述するだけで、AIがフォームを作成します。
 
 **主な機能：**
 
-* **自然言語フォームの作成** - フォーム要件をプレーン英語で説明します
+* **自然言語フォーム作成** - フォームの要件を簡単な英語で説明します
 
-* **インテリジェントなインポートと変換** – 既存ドキュメントをインタラクティブなフォームに変換します
+* **インテリジェントなインポートと変換** – 既存のドキュメントをインタラクティブなフォームに変換します
 
-* **スマートフィールドの生成** - オプションが事前入力された、AI を利用したフィールド
+* **スマートフィールドの生成** – 事前入力オプションを備えたAIを活用したフィールド
 
-* **ビジネスロジックの自動化** – 会話を通じて、条件付きルールと検証を作成します
+* **ビジネスロジックの自動化** – 会話による条件付きルールと検証の作成
 
-* **システム統合** - フォームを既存のビジネスワークフローに接続します
+* **システム統合** - フォームを既存のビジネス ワークフローに接続します
 
 ## 前提条件 {#prerequisites-getting-started}
 
-開始する前に、次のことを確認します。
+始める前に、次の項目を確認してください。
 
-* **Forms Experience Builder へのアクセス** – 早期アクセスプログラムを通じて利用できます
-* **AEM Forms as a Cloud Service** - アダプティブ Forms コアコンポーネントを使用した実稼動オーサー環境
+* **Forms Experience Builder**&#x200B;へのアクセス – 早期アクセスプログラムを通じて利用可能
+* **AEM Forms as a Cloud Service** - アダプティブ Forms コアコンポーネントを使用した実稼動用オーサー環境
 * **基本的な理解** - フォームの概念とビジネス要件に関する知識
 
-技術的な設定要件と環境設定について詳しくは、[Forms Experience Builder のデプロイと設定 &#x200B;](deploy-forms-experience-builder.md) を参照してください。
+技術的なセットアップ要件と環境設定について詳しくは、[Forms Experience Builderのデプロイと設定](deploy-forms-experience-builder.md)を参照してください。
 
 ## フォームの作成方法 {#two-ways-to-create-forms}
 
-Forms ウィザードを使用して { コアコンポーネントテンプレート [&#x200B; または &#x200B;](/help/forms/creating-adaptive-form-core-components.md)2}Edge Delivery Services[&#x200B; のテンプレート、テーマおよびその他のオプションを選択した後、Forms Experience Builder では、主に次の 2 つの方法でフォームを作成できます。](/help/edge/docs/forms/universal-editor/create-forms.md)
+Forms ウィザードを使用して、[ コアコンポーネントテンプレート ](/help/forms/creating-adaptive-form-core-components.md)または[Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)のテンプレート、テーマ、およびその他のオプションを選択した後、Forms Experience Builderでは、フォーム作成に対する2つの主なアプローチが提供されます。
 
-### &#x200B;1. ゼロから作成する {#create-from-scratch}
+### &#x200B;1. ゼロから作成 {#create-from-scratch}
 
-要件を自然言語で記述したフォームの作成
+自然言語の要件説明を使用してフォームを作成します。
 
-**用途：**
+**使用するタイミング：**
 
-* 要件からの新しいフォームの構築
+* 要件から新しいフォームを作成する
 
-* 新しいビジネスプロセス用のフォームの作成
+* 新しいビジネスプロセスのためのフォームの作成
 
-* 明確な仕様があるものの、既存のドキュメントがない場合
+* 仕様は明確だが、既存のドキュメントがない場合
 
 **例：**
 
-     次の情報を含む顧客フィードバックフォームを作成：
-     – 製品評価（1～5 つ星） 
-     – 詳細なフィードバックのコメントフィールド 
+    次の内容を含む顧客フィードバックフォームを作成します。
+     – 製品の評価（1 ～ 5つ星） 
+     – 詳細なフィードバック用のコメントフィールド 
      – 顧客の電子メール（オプション） 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
 
 
-### 2.読み込みと変換 {#import-and-convert}
+### &#x200B;2. 読み込みと変換 {#import-and-convert}
 
-既存のドキュメントをインタラクティブなデジタルフォームに変換する。
+既存のドキュメントをインタラクティブなデジタルフォームに変換。
 
-このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroForm または XFA ベースのPDF フォームのいずれかです。 [&#x200B; その他のタイプのPDF forms](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents) の場合は、Adobe Acrobatの [&#x200B; フォームを準備 &#x200B;](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroForm に変換します
+このオプションを使用する前に、PDF ファイルまたはフォームの画像をアップロードします。 PDFは、AcroFormまたはXFA ベースのPDF フォームのいずれかです。 [その他の種類のPDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)については、Adobe Acrobatの[Prepare Form](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) オプションを使用して、AcroFormに変換します
 
-**用途：**
+**使用するタイミング：**
 
 * 既存のPDF formsの変換
 
-* 紙ベースのプロセスの最新化
+* 紙ベースのプロセスを最新化
 
-* 既存のフォームデザインを拡張する場合
+* 強化するために既存のフォームデザインが
 
 **例：**
 
-    /create-form 添付のPDF ファイルをアダプティブフォームに変換する 
+    /create-form添付されたPDF ファイルをアダプティブフォームに変換
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474042)
 
 
-## 最初のフォーム：ステップバイステップのチュートリアル {#first-form-tutorial}
+## 最初のフォーム：ステップバイステップチュートリアル {#first-form-tutorial}
 
-基本的なワークフローを理解するために、シンプルな連絡先フォームを作成しましょう。
+簡単な問い合わせフォームを作成して、基本的なワークフローを理解しましょう。
 
-### 手順 1：簡単な説明から始める {#step-1-simple-description}
+### ステップ 1：簡単な説明から始める {#step-1-simple-description}
 
-フォームの基本的な説明から始めます。
+最初に、基本的なフォームの説明を入力します。
 
     名前、メール、メッセージのフィールドを使用して基本的な連絡先フォームを作成します。
 
-これにより、3 つの必須フィールドを持つフォームが作成されます。
+これにより、3つの必須フィールドを含むフォームが作成されます。
 
-![3 つの必須フィールドを持つフォーム – 自然言語プロンプトを使用して作成 &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form.png)
+![3つの必須フィールドを含むフォーム – 自然言語プロンプトを使用して作成](/help/forms/assets/forms-experience-builder-contact-us-form.png)
 
-### 手順 2：検証と要件の追加 {#step-2-add-validation}
+### 手順2：検証と要件の追加 {#step-2-add-validation}
 
 検証ルールを使用してフォームを強化します。
 
     適切な検証を行って、@name と @email の必須フィールドを作成します。
 
-`@` 記号は、ターゲットを変更するための特定のフィールドを参照します。
+`@`記号は、ターゲット変更の特定のフィールドを参照しています。
 
-![&#x200B; 自然言語プロンプトを使用した form experience builder の検証を追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
+![自然言語プロンプトを使用して、フォームエクスペリエンスビルダーに検証を追加しました](/help/forms/assets/forms-experience-builder-contact-us-form-add-validation.png)
 
 
-### 手順 3：ユーザーエクスペリエンスの向上 {#step-3-improve-ux}
+### ステップ 3：ユーザーエクスペリエンスの向上 {#step-3-improve-ux}
 
-有用なプレースホルダーテキストとガイダンスを追加：
+役に立つプレースホルダーテキストとガイダンスを追加：
 
     プレースホルダーテキストを追加してください。@name &quot;生年月日&quot;, @email &quot;your.email@company.com&quot;, @message &quot;どのようにお手伝いできるかお聞かせください&quot;
 
-![forms experience builder で自然言語プロンプトを使用した検証を追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
+![Forms Experience Builderで自然言語プロンプトを使用して検証を追加しました](/help/forms/assets/forms-experience-builder-contact-us-form-add-placeholder.png)
 
-### 手順 4：高度な機能の追加 {#step-4-advanced-features}
+### 手順4：高度な機能の追加 {#step-4-advanced-features}
 
-追加機能を含める：
+追加の機能を含めます。
 
-    2 つのドロップダウンを追加 
+    2つのドロップダウンを追加
     
-    &#x200B;- 「一般質問」、「サポートリクエスト」、「セールス問い合わせ」、「パートナーシップ」 
+    - オプション付きの問い合わせタイプ：「一般質問」、「サポートリクエスト」、「営業担当者からの問い合わせ」、「パートナーシップ」 
     
-    &#x200B;- オプション付き緊急度レベル （低、Medium、高） 
+    - オプション付きの緊急性レベル（低、Medium、高） 
 
 
-![forms experience builder で自然言語プロンプトを使用するドロップダウンコンポーネントを追加しました &#x200B;](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
+![Forms Experience Builderで自然言語プロンプトを使用してドロップダウンコンポーネントを追加しました](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
 
 
-### 手順 5：条件付きロジックの実装 {#step-5-conditional-logic}
+### 手順5：条件付きロジックの実装 {#step-5-conditional-logic}
 
-次のようなルールを追加して、スマートでコンテキストに対応した動作を作成します。
+次のようなルールを追加することで、コンテキストに即したスマートなビヘイビアーを作成します。
 
-     フォームの読み込み時に@urgencyLevel ドロップダウンを非表示にする 
-    @urgencyLevel ドロップダウン（低、Medium、高）は、「サポートリクエスト」@inquiryType 等しい場合にのみ表示します 
+     フォームの読み込み時に@urgencyLevel ドロップダウンを非表示にする
+    @urgencyLevel 「サポートリクエスト」に等しい場合にのみドロップダウン（低、Medium、高）@inquiryType表示する
 
-これらは 2 つの異なるルールです。1 つはフォームの読み込み時に緊急度レベルのドロップダウンを非表示にするルールで、もう 1 つは問い合わせタイプが「サポートリクエスト」の場合にのみドロップダウンを表示するルールです。 個別のプロンプトで各ルールを作成する必要があります。一度に作成できるルールは 1 つだけです。
+これらは2つの異なるルールです。1つはフォームの読み込み時に緊急レベルのドロップダウンを非表示にし、もう1つは問い合わせタイプが「サポート依頼」の場合にのみ表示します。 個別のプロンプトで各ルールを作成する必要があります。一度に作成できるルールは1つだけです。
 
-## AI 会話アプローチについて {#ai-conversation-approach}
+## AI会話アプローチを理解する {#ai-conversation-approach}
 
-Forms Experience Builder では、次の操作が可能な対話型インターフェイスを使用します。
+Forms Experience Builderでは、会話型インターフェイスを使用して、次のことを実行できます。
 
 ### @記号を含む参照フィールド {#reference-fields}
 
-特定のフィールドを参照するには、`@fieldName` を使用します。
+`@fieldName`を使用して特定のフィールドを参照します：
 
-    @email を必須フィールドにする 
-     米国の形式の場合は@phoneNumber に検証を追加する 
-     テキスト@submitButton 「メッセージを送信」に変更する 
+    必須フィールドを@email成
+    米国の形式の@phoneNumberに検証を追加
+     テキストを「メッセージを送信」@submitButton変更
 
 >[!VIDEO](https://video.tv.adobe.com/v/3474043)
 
 
 ### 自然言語コマンドの使用 {#natural-language-commands}
 
-必要な内容を分かりやすい英語で説明します。
+目的を明確な英語で記述する：
 
-     – 会社情報のセクションを追加 
-     – 部門選択用のドロップダウンを作成 
-     – 再開用にファイルのアップロードを含める 
+     – 会社情報のセクションを追加
+     – 部門選択のドロップダウンを作成
+     – 履歴書のファイルアップロードを含める
 
-### 増分ビルド {#build-incrementally}
+### 段階的に構築 {#build-incrementally}
 
-シンプルなスタートから徐々に複雑さを増していきます。
+シンプルに始めて、徐々に複雑さを加えていきます。
 
 1. **基本構造** – 最初に必須フィールドを作成します
-2. **検証を追加** – 必須フィールドと形式検証を実装します
-3. **UX の強化** - プレースホルダー、ヘルプテキスト、スタイルを追加します
-4. **ロジックの実装** – 条件ルールとビジネスロジックを追加します
+2. **検証を追加** – 必須フィールドと形式の検証を実装します
+3. **UXの強化** - プレースホルダー、ヘルプテキスト、スタイル設定を追加
+4. **ロジックの実装** – 条件付きルールとビジネス ロジックの追加
 5. **送信の設定** - フォーム処理と通知の設定
 
 
-## 一般的なフォームパターン {#common-form-patterns}
+## 共通のフォームパターン {#common-form-patterns}
 
-### お問い合わせフォームとフィードバックフォーム {#contact-feedback-forms}
+### 問い合わせフォームとフィードバックフォーム {#contact-feedback-forms}
 
-**基本お問い合わせフォーム：**
+**基本問い合わせフォーム：**
 
-     次のフォームでお問い合わせフォームを作成：
+    次の連絡先フォームを作成します。
      – 名前（必須） 
-    &#x200B;- メール（必須、検証済み） 
+     – 電子メール（必須、検証済み） 
      – 件名ドロップダウン（一般、サポート、セールス、パートナーシップ） 
-    &#x200B;- メッセージ（必須、複数行） 
+     – メッセージ（必須、複数行） 
 
 **顧客フィードバックフォーム：**
 
-     次の情報を含む顧客フィードバックフォームを作成：
-     – 製品評価（1～5 つ星） 
-     – 詳細なフィードバックのコメントフィールド 
+    次の内容を含む顧客フィードバックフォームを作成します。
+     – 製品の評価（1 ～ 5つ星） 
+     – 詳細なフィードバック用のコメントフィールド 
      – 顧客の電子メール（オプション） 
 
-### 登録およびオンボーディングフォーム {#registration-onboarding-forms}
+### 登録フォームとオンボーディングフォーム {#registration-onboarding-forms}
 
 **ユーザー登録：**
 
-     次を使用してユーザー登録フォームを作成：
-     – 個人情報（名前、メール、電話） 
-    &#x200B;- アカウントの環境設定（ニュースレター、通知） 
-     – 利用条件の承諾 
-     – 有効性の検証を使用したパスワードの作成 
+    次のユーザー登録フォームを作成します。
+     – 個人情報（名前、電子メール、電話） 
+    - アカウント設定（ニュースレター、通知） 
+     – 利用条件の承諾
+     – 強度の検証を使用したパスワード作成
 
-**従業員のオンボーディング：**
+**従業員オンボーディング：**
 
-     次を使用して、従業員のオンボーディングフォームを作成します。
-     – 個人情報および連絡先情報 
-     – 雇用情報および開始日 
-    &#x200B;- ドキュメントアップロード（履歴書、ID、税金フォーム） 
-     – 特典の選択および環境設定 
+    次の情報を含む従業員オンボーディングフォームを作成します。
+     – 個人情報と連絡先情報
+     – 雇用情報と開始日
+     – 文書のアップロード（履歴書、ID、税務フォーム） 
+     – 特典の選択と設定
 
-### 調査および評価フォーム {#survey-assessment-forms}
+### 調査/評価フォーム {#survey-assessment-forms}
 
 **顧客満足度調査：**
 
-     顧客満足度調査の作成：
-     – 総合評価（1 ～ 10 件） 
-    &#x200B;- カテゴリ評価（製品、サービス、サポート） 
-    &#x200B;- オープンエンドのフィードバックセクション 
-     – 人口統計情報（オプション） 
+    次の機能を使用して顧客満足度アンケートを作成します。
+     – 総合評価（1 ～ 10尺度） 
+    - カテゴリ評価（製品、サービス、サポート） 
+    - オープンエンドのフィードバックセクション 
+    - デモグラフィック情報（オプション） 
 
 **スキル評価：**
 
-     次のスキル評価フォームを作成します：
-     – 習熟度レベルを持つスキルカテゴリ 
-     – 各スキルのエクスペリエンス期間 
-     – 認定およびトレーニング情報 
-     – 自己評価と目標 
+     スキル評価フォームの作成：
+     – 熟練度レベルを持つスキルカテゴリ 
+     – 各スキルの体験期間
+     – 資格認定とトレーニング情報
+     – 自己評価と目標
 
 ## テストと検証 {#testing-validation}
 
-### 常にフォームをテストする {#always-test-forms}
+### フォームを常にテストする {#always-test-forms}
 
-フォームをデプロイする前に、次の手順に従います。
+フォームをデプロイする前に：
 
-1. **すべてのフィールドをテスト** – 検証が正しく機能することを確認します
+1. **すべてのフィールドをテストする** – 検証が正しく機能することを確認します
 
-2. **条件付きロジックの検証** - ルールが正しくトリガーすることを確認します
+2. **条件付きロジックを検証** - ルールが適切にトリガーされていることを確認します
 
-3. **送信をテスト** - データが正しく処理されていることを確認します
+3. **テスト送信** - データが正しく処理されていることを確認します
 
-4. **様々なデバイスで検証** - モバイルの互換性を確保します
+4. **様々なデバイスで検証** - モバイルの互換性を確保
 
-5. **関係者とのレビュー** - エンドユーザーからフィードバックを得る
+5. **関係者とのレビュー** - エンドユーザーからのフィードバックを取得
 
 ### 一般的な検証パターン {#validation-patterns}
 
-**メールの検証：**
+**電子メール検証：**
 
-     フィールドにメールフォーマット検証@email 追加 
+    電子メール形式の検証をフィールド@email追加
 
 **電話番号の検証：**
 
-    @phoneNumber に米国の電話番号形式の検証を追加 
-
+    米国内の電話番号の形式の検証を@phoneNumber
+に追加します
 **年齢の検証：**
 
-     年齢の検証を追加：@dateOfBirth では 18 歳以上である必要があります 
+    年齢を追加の検証：@dateOfBirth
+の場合は18歳以上である必要があります
+**ファイルのアップロードの検証：**
 
-**ファイルアップロードの検証：**
-
-     ファイルタイプの検証を追加：@resume で許可されるのは、PDF、DOC、DOCX のみです 
-     ファイルサイズの制限を追加：@resume で最大 5 MB
-
+     ファイルの種類を追加の検証：PDF、DOC、DOCXのみ@resume許可
+     ファイルサイズの制限を追加：@resume
+の最大5 MB
 <!-- 
 
 ## Next steps {#next-steps}
@@ -288,7 +288,7 @@ Now that you understand the basics, explore these advanced topics:
 
 ## 関連記事
 
-* [Forms Experience Builder の概要](product-overview.md)
+* [Forms Experience Builderの概要](product-overview.md)
 
 <!-- 
 * [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)

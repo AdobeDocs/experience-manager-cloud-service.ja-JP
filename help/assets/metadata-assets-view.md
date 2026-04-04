@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2274'
 ht-degree: 95%
@@ -44,7 +44,7 @@ ht-degree: 95%
 
 ## スマートタグ {#smart-tags}
 
-[!DNL Experience Manager Assets] では、[Adobe AI](https://business.adobe.com/ai/adobe-genai.html) の人工知能機能を使用して、アップロードされたすべてのアセットに適切なタグを自動適用します。 スマートタグと呼ばれるこれらのタグは、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないメタデータの例です。
+[!DNL Experience Manager Assets]は、[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)が提供する人工知能を使用して、アップロードしたすべてのアセットに関連タグを自動的に適用します。 スマートタグと呼ばれるこれらのタグは、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。スマートタグは、画像に含まれないメタデータの例です。
 
 スマートタグは、ほぼリアルタイムで適用され、画像の内容に基づいて生成されます。アセットをアップロードすると、ユーザーインターフェイスでアセットのサムネールに[!UICONTROL 処理中]としばらく表示されます。処理が完了したら、スマートタグと[メタデータを表示](#view-metadata)できます。
 
@@ -56,7 +56,7 @@ ht-degree: 95%
 
 ## キーワードの追加または更新 {#manually-tag}
 
-[!DNL Adobe AI] スマートサービスを使用して自動的に追加されるスマートタグに加えて、アセットにさらにタグを追加できます。アセットをプレビュー用に開き、「[!UICONTROL タグ]」をクリックして、「[!UICONTROL キーワード]」フィールドに目的のキーワードを入力します。タグを追加するには、Return キーを押します。[!DNL Assets view] により、ほぼリアルタイムでキーワードのインデックスが作成されるので、チームは新しいキーワードを使用して更新済みのアセットをすぐに検索できます。
+[!DNL Adobe AI] スマートサービスを使用して自動的に追加されるスマートタグに加えて、アセットにさらにタグを追加できます。アセットをプレビュー用に開き、「[!UICONTROL タグ]」をクリックして、「[!UICONTROL キーワード]」フィールドに目的のキーワードを入力します。 タグを追加するには、Return キーを押します。[!DNL Assets view] により、ほぼリアルタイムでキーワードのインデックスが作成されるので、チームは新しいキーワードを使用して更新済みのアセットをすぐに検索できます。
 
 アップロードされたすべてのアセットに [!DNL Assets view] で自動的に追加されたタグを、「[!UICONTROL スマートタグ]」セクションから削除することもできます。
 
@@ -86,7 +86,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 >[!IMPORTANT]
 >
->特定のファイルタイプの新しいメタデータフォームは、[!DNL Assets view] に用意されているデフォルトのメタデータフォームを完全に置き換えます。メタデータフォームを削除または名前変更すると、新しいアセットに対して、デフォルトのメタデータフィールドが再び使用可能になります。
+>特定のファイルタイプの新しいメタデータフォームは、[!DNL Assets view] に用意されているデフォルトのメタデータフォームを完全に置き換えます。 メタデータフォームを削除または名前変更すると、新しいアセットに対して、デフォルトのメタデータフィールドが再び使用可能になります。
 
 メタデータフォームを作成するには、次の手順に従います。
 
@@ -101,7 +101,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   [&#x200B; メタデータフォームのユーザーインターフェイス &#x200B;](cascading-metadata-assets-view.md#build-metadata-forms) について
+   メタデータフォーム [の](cascading-metadata-assets-view.md#build-metadata-forms) ユーザーインターフェイスについて説明します。
 
    <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
@@ -121,7 +121,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 >[!IMPORTANT]
 >
->デフォルトのメタデータフォームには、「**[!UICONTROL キャンペーン]**」タブもあります。このタブは、**[!UICONTROL キャンペーン名]**、**[!UICONTROL チャネル]** および **[!UICONTROL 地域]** 複数値の読み取り専用フィールドで構成されます。 これは、限定可用性機能です。 サポートチケットを作成して、有効にすることができます。
+>デフォルトのメタデータフォームには、**[!UICONTROL キャンペーン]** タブもあります。このタブには、**[!UICONTROL キャンペーン名]**、**[!UICONTROL チャネル]**、**[!UICONTROL 地域]**&#x200B;の複数値の読み取り専用フィールドが含まれています。 これは、限定機能です。 サポートチケットを作成して、有効にすることができます。
 
 ### プロパティコンポーネント {#property-components}
 
@@ -144,8 +144,8 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 | キーワード | フリーフォームキーワードを追加します（dc:subject にマッピング）。 |
 | スマートタグ | メタデータタグを自動的に追加して、検索機能を強化します。 |
 | パブリッシュ | アセットの公開ステータスを追加します。 |
-| リンク | Web ページ、画像、外部参照など、オンラインリソースを指す web アドレスが格納されます。 |
-| レーティング | アセットの品質を示すカテゴリ値を追加します。 |
+| リンク | Web ページ、画像、外部参照などのオンラインリソースを指すweb アドレスを保存します。 |
+| レーティング | アセットの品質を示すカテゴリ値が追加されます。 |
 
 ### フォルダーにメタデータフォームの割り当て {#assign-metadata-form-folder}
 
@@ -245,7 +245,8 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 * [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
 
-<!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
+<!--
+ TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
@@ -253,7 +254,8 @@ To reuse an existing form to create a form, do one of these:
 * Click **[!UICONTROL Create]**, select **[!UICONTROL Use existing form structure as template]** option, and select an existing form. 
 -->
 
-<!-- TBD: Queries for PM and engg.
+<!--
+ TBD: Queries for PM and engg.
 
 Can we edit the existing metadata in any form?
 
@@ -268,7 +270,8 @@ Is there a detailed metadata tab. Where do the other details of an asset go?
 How can one search based strictly on the metadata. Similar to AEM Assets GQL queries.
 -->
 
-<!-- TBD: Link to related articles if any.
+<!--
+ TBD: Link to related articles if any.
 
 >[!MORELIKETHIS]
 >

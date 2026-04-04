@@ -1,11 +1,11 @@
 ---
-title: AFP 出力同期 API の使い方
-description: AFP Output Sync API を使用して出力レンディションを取得し、同期する方法を説明します。
+title: AFP出力の同期APIを使用する方法？
+description: AFP Output Sync APIを使用して、出力レンディションを取得および同期する方法を説明します。
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 14%
@@ -16,8 +16,8 @@ ht-degree: 14%
 
 <span class="preview">これはプレリリース機能で、[プレリリースチャネル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#new-features)を通してアクセスできます。</span>
 
-AFP （Advanced Function Presentation）は、主に印刷用に設計された高性能なドキュメント形式です。\
-このガイドでは、AEM Formsを使用して AFP 出力を生成するために必要なすべての手順と設定の概要を説明します。
+Advanced Function Presentation （AFP）は、主に印刷目的で設計された高性能なドキュメント形式です。\
+このガイドでは、AEM Formsを使用してAFP出力を生成するために必要なすべての手順と設定について説明します。
 
 <!--
 ## Prerequisites
@@ -32,15 +32,16 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+ -->
 
-## AFP 生成 API
+## AFP生成API
 
-XDP テンプレートと入力データを使用して、AFP （Advanced Function Presentation）ファイルを生成します
+XDP テンプレートと入力データを使用して、AFP （Advanced Function Presentation）ファイルを生成します。
 
 ### 認証
 
-ローカル環境の場合は **BasicAuth** （管理者資格情報）を、AEM Cloud インスタンスの場合は **OAuth サーバー間** 認証を使用できます。
+ローカル環境には&#x200B;**BasicAuth** （管理者資格情報）を使用するか、AEM Cloud インスタンスには&#x200B;**OAuth サーバー間**&#x200B;認証を使用できます。
 
 ### リクエスト
 
@@ -60,11 +61,11 @@ XDP テンプレートと入力データを使用して、AFP （Advanced Functi
 
 | キー | 型 | 必須 | 説明 |
 | ---------- | ---- | -------- | ------------------------------------------------------------------------- |
-| `template` | ファイル/テキスト | はい | AFP 生成のテンプレートとして使用される XDP ファイル（例：`demo.xdp`） |
-| `data` | ファイル/テキスト | いいえ | テンプレートと結合するデータファイル （XML または JSON） （例：`data.xml`） |
-| `options` | テキスト | いいえ | AFP 出力を制御するオプションを含む JSON 文字列（解像度、ロケールなど） |
+| `template` | ファイル/テキスト | はい | AFP生成用のテンプレートとして使用されるXDP ファイル （例：`demo.xdp`） |
+| `data` | ファイル/テキスト | いいえ | テンプレートと結合するデータファイル （XMLまたはJSON） （例：`data.xml`） |
+| `options` | テキスト | いいえ | AFP出力（解像度、ロケールなど）を制御するためのオプションを含むJSON文字列 |
 
-**例 `options` JSON （テキストフィールド）:**
+**例`options` JSON （テキストフィールド）:**
 
 ```json
 {
@@ -80,9 +81,9 @@ XDP テンプレートと入力データを使用して、AFP （Advanced Functi
 
 | コード | 説明 |
 | ----- | ------------------------------------------------------------------------- |
-| `200` | 操作に成功しました。 AFP ドキュメント ストリームを返します。 |
-| `400` | リクエストが正しくありません。 リクエストペイロードの形式が正しくないか、必須フィールドがありません。 |
-| `500` | 内部サーバーエラー。 しばらくしてからもう一度やり直してください。 |
+| `200` | 操作が成功しました。 AFP ドキュメントストリームを返します。 |
+| `400` | 不正なリクエスト。 リクエストペイロードの形式が正しくないか、必須フィールドが見つかりません。 |
+| `500` | 内部サーバーエラー。 しばらくしてからもう一度お試しください。 |
 
 ### Curl コマンド
 
@@ -94,12 +95,12 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 --form 'options=<JSON-options-string>'
 ```
 
-### API のテスト
+### APIのテスト
 
-.yaml ファイルをダウンロードし、Postmanにアップロードして API の機能を確認できます。
+.yaml ファイルをダウンロードしてPostmanにアップロードし、APIの機能を確認できます。
 
-![AFPPostman画像 &#x200B;](/help/forms/assets/afp-postman.png)
+![AFP Postman image](/help/forms/assets/afp-postman.png)
 
-AFP リーダーで応答を保存し、保存したファイルを開いて確認できます。
+応答を保存し、保存したファイルをAFP リーダーで開いて表示できます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/introimg.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/introimg.png)
