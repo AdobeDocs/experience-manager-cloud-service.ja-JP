@@ -23,7 +23,7 @@ Experience Manager as a Cloud Service の場合、Adobe Commerce およびサー
 
 CIF Adobeをデプロイするプロジェクトをサポートするには、[AEM CIF コアコンポーネントを提供します。](https://github.com/adobe/aem-core-cif-components)
 
-CIF アドオンは、AEM 6.5でも[ ソフトウェア配布ポータル経由で利用できます。](/help/implementing/developing/tools/package-manager.md)互換性があり、Experience Manager as a Cloud Service用のCIF アドオンと同じ機能を提供します。調整は必要ありません。
+CIF アドオンは、AEM 6.5でも[&#x200B; ソフトウェア配布ポータル経由で利用できます。](/help/implementing/developing/tools/package-manager.md)互換性があり、Experience Manager as a Cloud Service用のCIF アドオンと同じ機能を提供します。調整は必要ありません。
 
 依存関係を持つクラシック CIF は使用できなくなりました。`com.adobe.cq.commerce.api` Java API を使用しているこの CIF バージョンに依存するコードは、CIF アドオンとその原則に従って調整する必要があります。
 

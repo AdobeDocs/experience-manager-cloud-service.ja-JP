@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >AIによる回答は、不正確または誤解を招く可能性があります。 修正案と回答案を再確認しましょう。
 >
->[Adobe Experience Cloud生成AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)も参照してください。
+>[Adobe Experience Cloud生成AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)も参照してください。
 
 ## Skills in AEM Governance Agent {#skills-in-aem-governance-agent}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ガバナンスエージェントは、ブランドガイドラインに照らし合わせてコンテンツを検証し、あらゆるデジタルエクスペリエンスで一貫性を確保できます。 トーン、クレーム、ロゴの使用状況、タイポグラフィ、画像など、事前に取り込まれたブランドルールを使用します。 Experience Hubのチャットモード、エディターおよびバッチモードでリアルタイムに動作するので、AIによるコンテンツ生成、サイト移行、ブリーフベースのサイト作成に適しています。
 
-![ ブランドガバナンスの概要](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
+![&#x200B; ブランドガバナンスの概要](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
 
 **プロンプトの例：**
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ガバナンスエージェントには、AIを活用したブランドポリシーのインポート機能も搭載されています。この機能では、AIを活用して、顧客の既存のブランドガイドラインドキュメントを、構造化された強制的なポリシーチェックに変換し、コンプライアンスに準拠したコンテンツ制作を自動的に管理、検証、ガイドします。 詳しくは、[ ブランドポリシーの読み込み方法](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)を参照してください。
+>ガバナンスエージェントには、AIを活用したブランドポリシーのインポート機能も搭載されています。この機能では、AIを活用して、顧客の既存のブランドガイドラインドキュメントを、構造化された強制的なポリシーチェックに変換し、コンプライアンスに準拠したコンテンツ制作を自動的に管理、検証、ガイドします。 詳しくは、[&#x200B; ブランドポリシーの読み込み方法](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)を参照してください。
 
 ### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 

@@ -45,7 +45,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## AEMの担当者 {#agents-in-aem}
 
-AEMには、コンテンツ制作を迅速化し、変更を自動的に調整できる、さまざまなエージェントが用意されています。 詳しくは、[ エージェントの概要](/help/ai-in-aem/agents/overview.md)を参照してください。
+AEMには、コンテンツ制作を迅速化し、変更を自動的に調整できる、さまざまなエージェントが用意されています。 詳しくは、[&#x200B; エージェントの概要](/help/ai-in-aem/agents/overview.md)を参照してください。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,7 +150,7 @@ Adobeは、2025年10月14日に&#x200B;**ステージ**&#x200B;および&#x200B;
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語の機能強化を活用するには、Java 17またはJava 21 （推奨）で構築することをお勧めします。 Java 8およびJava 11を使用したビルドは現在サポートされていますが、今後のリリースで非推奨（廃止予定）になります。 非推奨化の前に、別のコミュニケーションが発行されます。 *この記事*&#x200B;の「[ ビルド時間の要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」セクションを参照してください。
+> 最新のパフォーマンス最適化と言語の機能強化を活用するには、Java 17またはJava 21 （推奨）で構築することをお勧めします。 Java 8およびJava 11を使用したビルドは現在サポートされていますが、今後のリリースで非推奨（廃止予定）になります。 非推奨化の前に、別のコミュニケーションが発行されます。 *この記事*&#x200B;の「[&#x200B; ビルド時間の要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」セクションを参照してください。
 >
 
 #### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}
@@ -168,7 +168,7 @@ Adobeは、2025年10月14日に&#x200B;**ステージ**&#x200B;および&#x200B;
 
 #### 自動メンテナンス更新を一時停止 {#pause-updates}
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。

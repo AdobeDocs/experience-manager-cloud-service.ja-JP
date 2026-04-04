@@ -47,7 +47,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites の新機能 {#new-sites}
 
-* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): コンテンツオーサーは、コンテンツフラグメントのローンチを使用して、構造化コンテンツの今後のバリエーションを作成およびスケジュールできるようになりました。 新しいコンテンツフラグメントコンソールでは、ソースブランチと同期できる将来のコンテンツのブランチとして、コンテンツフラグメントのローンチを作成、編集、管理、スケジュールできます。 新しい差分ビューでは、今後の公開のためにローンチを確定する前に、すべてのコンテンツの変更を明確に把握できます。
+* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): コンテンツオーサーは、コンテンツフラグメントのローンチを使用して、構造化コンテンツの今後のバリエーションを作成およびスケジュールできるようになりました。 新しいコンテンツフラグメントコンソールでは、ソースブランチと同期できる将来のコンテンツのブランチとして、コンテンツフラグメントのローンチを作成、編集、管理、スケジュールできます。 新しい差分ビューでは、今後の公開のためにローンチを確定する前に、すべてのコンテンツの変更を明確に把握できます。
 
 * AEM コンテンツフラグメント [の](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) コンテンツモデルエディターは、AEMの他のReact Spectrum ベースのインターフェイスと連携するように最新化されました。 ユーザーインターフェイスの実装と拡張モデルが、コンテンツフラグメントエディターおよびユニバーサルエディターと一貫性を保つようになりました。新しいコンテンツモデル管理 UI から開いた場合、新しいモデルエディターがデフォルトになりました。タッチ UI でコンテンツモデルを開くと、タッチ UI エディターが開き、新しいエディターを試すことができます。
 
@@ -87,7 +87,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ユニバーサルエディターは、カスタム送信アクション、Microsoft SharePointへの送信、Microsoft OneDriveへの送信、Azure Blob Storageへの送信、REST エンドポイントへの送信、AEM ワークフローの呼び出し、Power Automate フローの呼び出し、Marketo Engageへの送信、Adobe Experience Platform（AEP）への送信、スプレッドシートへの送信、フォームデータモデル（FDM）を使用した送信、Workfront Fusionへの送信、メール送信など、包括的な送信ワークフローをサポートします。
 
-詳しくは、[Forms用ユニバーサルエディターのドキュメント ](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)を参照してください。 送信アクションの設定について詳しくは、[ アダプティブフォーム送信アクション ](/help/edge/docs/forms/universal-editor/submit-action.md)を参照してください。
+詳しくは、[Forms用ユニバーサルエディターのドキュメント &#x200B;](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)を参照してください。 送信アクションの設定について詳しくは、[&#x200B; アダプティブフォーム送信アクション &#x200B;](/help/edge/docs/forms/universal-editor/submit-action.md)を参照してください。
 
 <!--
  ### Pre-Release features in AEM Forms 
@@ -152,7 +152,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。[&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。ローンチ、プロモーションまたは年次フリーズに使用します。
@@ -166,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 AEM ログを、Amazon S3、Sumo Logic、Dynatrace、および自分のNew Relic アカウント（Adobeが提供するアカウントではなく）に転送できるようになりました。 AEM ログ（Apache/Dispatcherを含む）は、これらのログ宛先でサポートされますが、CDN ログはサポートされません。
 
-サポートされている[ ログ転送先](/help/implementing/developing/introduction/log-forwarding.md)の完全なセットを参照してください。
+サポートされている[&#x200B; ログ転送先](/help/implementing/developing/introduction/log-forwarding.md)の完全なセットを参照してください。
 
 ### Edge Delivery ServicesのConfig Pipeline {#config-pipeline-eds}
 
@@ -216,7 +216,7 @@ Adobeは、2025年10月14日に&#x200B;**ステージ**&#x200B;および&#x200B;
 
 >[!NOTE]
 >
-> 最新のパフォーマンス最適化と言語の機能強化を活用するには、Java 17またはJava 21 （推奨）で構築することをお勧めします。 Java 8およびJava 11を使用したビルドは現在サポートされていますが、今後のリリースで非推奨（廃止予定）になります。 非推奨化の前に、別のコミュニケーションが発行されます。 *この記事*&#x200B;の「[ ビルド時間の要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」セクションを参照してください。
+> 最新のパフォーマンス最適化と言語の機能強化を活用するには、Java 17またはJava 21 （推奨）で構築することをお勧めします。 Java 8およびJava 11を使用したビルドは現在サポートされていますが、今後のリリースで非推奨（廃止予定）になります。 非推奨化の前に、別のコミュニケーションが発行されます。 *この記事*&#x200B;の「[&#x200B; ビルド時間の要件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」セクションを参照してください。
 >
 
 ### AEM Java ログ設定ポリシーの適用 {#logconfig-policy}

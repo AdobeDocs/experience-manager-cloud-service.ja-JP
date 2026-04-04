@@ -62,34 +62,34 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
 1. **基本：** ワークフローモデルを作成します（例：ワークフローを&#x200B;**pdfrenderworkflow**&#x200B;として追加します）。
 
-   ![ ワークフローモデルの「基本」タブ ](/help/forms/assets/associate-ui-add-workflow.png)
+   ![&#x200B; ワークフローモデルの「基本」タブ &#x200B;](/help/forms/assets/associate-ui-add-workflow.png)
 
 1. **変数：** ペイロードに一致する変数を追加し、手順：**communicationDom** （JSON）、**auditMetadata** （JSON）、**outputDocument** （Document）。
 
-   ![ ワークフロー変数](/help/forms/assets/associate-ui-add-variables.png)
+   ![&#x200B; ワークフロー変数](/help/forms/assets/associate-ui-add-variables.png)
 
 1. **手順：** 「**IC PDF出力をレンダリング**」手順を追加します。
-   ![ ワークフローの追加ステップ ](/help/forms/assets/associate-ui-add-step.png)
+   ![&#x200B; ワークフローの追加ステップ &#x200B;](/help/forms/assets/associate-ui-add-step.png)
 
 1. 「**Input**」タブで、**テンプレートを選択（JsonObject）**&#x200B;を&#x200B;**変数** → **communicationDom**&#x200B;に設定します。 ステップとモデルを保存します。
 
-   ![IC Render PDF Output – 入力タブ ](/help/forms/assets/associate-ui-input-variable.png)
+   ![IC Render PDF Output – 入力タブ &#x200B;](/help/forms/assets/associate-ui-input-variable.png)
 
 1. 「**出力**」タブで、**テンプレートを選択（JsonObject）**&#x200B;を&#x200B;**変数** → **communicationDom**&#x200B;に設定します。 ステップとモデルを保存します。
 
-   ![ ワークフロー変数とキャンバス ](/help/forms/assets/assocaite-ui-output-variable.png)
+   ![&#x200B; ワークフロー変数とキャンバス &#x200B;](/help/forms/assets/assocaite-ui-output-variable.png)
 
 ### ワークフローを接続してUIを関連付ける
 
-[ アソシエイト UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)を有効にして設定するには、アソシエイトビューを有効にし、**ワークフロー**&#x200B;で&#x200B;**アップデート用ワークフローの設定**&#x200B;をオンにして、このワークフローモデルを選択します。 ICを公開し、[ アソシエイト UIを統合](/help/forms/interactive-communication/invoke-associate-ui.md)して、このワークフローをトリガーに送信します。
+[&#x200B; アソシエイト UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)を有効にして設定するには、アソシエイトビューを有効にし、**ワークフロー**&#x200B;で&#x200B;**アップデート用ワークフローの設定**&#x200B;をオンにして、このワークフローモデルを選択します。 ICを公開し、[&#x200B; アソシエイト UIを統合](/help/forms/interactive-communication/invoke-associate-ui.md)して、このワークフローをトリガーに送信します。
 
-![ インタラクティブ通信設定 – アソシエイト UI](/help/forms/assets/associate-ui-configure-workflow.png)のワークフロー設定
+![&#x200B; インタラクティブ通信設定 – アソシエイト UI](/help/forms/assets/associate-ui-configure-workflow.png)のワークフロー設定
 
-**Externalize workflow data storage**&#x200B;が有効になっている場合は、Workflow dataが外部ストレージ（Azureなど）に保存されるようにexternaliserを設定します。 [ ワークフローのデータの外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)を参照してください。
+**Externalize workflow data storage**&#x200B;が有効になっている場合は、Workflow dataが外部ストレージ（Azureなど）に保存されるようにexternaliserを設定します。 [&#x200B; ワークフローのデータの外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)を参照してください。
 
 ## 関連トピック
 
 - [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [ ワークフローのデータを外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [&#x200B; ワークフローのデータを外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)

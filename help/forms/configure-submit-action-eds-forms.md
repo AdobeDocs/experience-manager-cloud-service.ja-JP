@@ -24,7 +24,7 @@ ht-degree: 66%
 
 送信アクションは、データの保存、ワークフローのトリガー、サードパーティシステムとの統合など、利用者がフォームを送信したときに何が起こるかを定義します。 設定できる送信アクションの種類は、Edge Delivery Services Formsの作成に使用するオーサリングメソッドによって異なります。
 
-[ ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)または[ ドキュメントベースのForms](/help/edge/docs/forms/overview.md)のオーサリングを使用してEdge Delivery Services Formsを作成し、様々な送信アクションを使用してフォームを設定できます。
+[&#x200B; ユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)または[&#x200B; ドキュメントベースのForms](/help/edge/docs/forms/overview.md)のオーサリングを使用してEdge Delivery Services Formsを作成し、様々な送信アクションを使用してフォームを設定できます。
 
 ## ユニバーサルエディターで作成されたフォームの送信アクション
 

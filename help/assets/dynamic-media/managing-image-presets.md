@@ -73,7 +73,7 @@ AEM as a Cloud Serviceでは、[Asset Microservices](https://experienceleague.ad
 
 **生成するレンディションを制御するには：**
 
-1. [処理プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を作成または編集します。
+1. [処理プロファイル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を作成または編集します。
 2. 必要なレンディション定義を設定します。
 3. 処理プロファイルを適切なフォルダーに適用します。
 

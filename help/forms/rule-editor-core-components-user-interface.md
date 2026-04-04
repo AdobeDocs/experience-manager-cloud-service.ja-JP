@@ -69,7 +69,7 @@ ht-degree: 77%
 
 ルールを記述するビジュアルエディターは、ルールエディターのユーザーインターフェイスをビジュアルエディターモードに切り替えると表示されます。ルールタイプを選択し、それに応じて条件とアクションを定義できます。ルールで条件やアクションを定義する場合、フォームオブジェクトと関数ペインからフォームオブジェクトと関数をドラッグ＆ドロップできます。
 
-ビジュアルルールエディターの使用について詳しくは、[ ルールの書き込み](rule-editor.md#p-write-rules-p)を参照してください。
+ビジュアルルールエディターの使用について詳しくは、[&#x200B; ルールの書き込み](rule-editor.md#p-write-rules-p)を参照してください。
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -185,7 +185,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 「**[!UICONTROL 演算子を選択]**」フィールドから「**[!UICONTROL プラス]**」を選択します。
 
-   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**[!UICONTROL  Spouse Salary （配偶者の給与）]**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
+   * 「フォームオブジェクト」タブから、他の&#x200B;**[!UICONTROL ドロップオブジェクトの「**&#x200B;[!UICONTROL &#x200B; Spouse Salary （配偶者の給与）]&#x200B;**」フィールドを選択またはドラッグ＆ドロップするか、「ここ」]**&#x200B;フィールドを選択します。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -237,7 +237,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 入力パラメーターは、数式だけでなく、concat、trim、joinなどの両方の関数出力をサポートするようになりました。 この機能強化により、フォーム作成者は、動的に計算された値を直接渡すことができるようになり、ルール設定を合理化し、追加のフィールドの必要性を減らし、複雑なロジックや計算主導のシナリオにフォームをより適応性のあるものにすることができます。
 
-![関数呼び出しと数式のサポート ](/help/forms/assets/mathematical-function-support.png)
+![関数呼び出しと数式のサポート &#x200B;](/help/forms/assets/mathematical-function-support.png)
 
 ### 壊れたルールの処理
 
@@ -249,7 +249,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
   問題を理解するには、ルールエディターのルールステータスにカーソルを合わせて、エラーメッセージを表示します。
 
-  ![壊れたルール ](/help/forms/assets/rule-editor-broken-rules.png)
+  ![壊れたルール &#x200B;](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!--
  ### Using code editor {#using-code-editor}
@@ -495,7 +495,7 @@ var c = {
 
 ## 次の手順
 
-アダプティブフォームのルールエディターの様々なオペレータータイプとイベントについて理解するには、「[ アダプティブフォームのルールエディターで使用可能なオペレータータイプとイベント」の記事](/help/forms/rule-editor-core-components-events-operators.md)を参照してください。
+アダプティブフォームのルールエディターの様々なオペレータータイプとイベントについて理解するには、「[&#x200B; アダプティブフォームのルールエディターで使用可能なオペレータータイプとイベント」の記事](/help/forms/rule-editor-core-components-events-operators.md)を参照してください。
 
 
 ## 関連トピック

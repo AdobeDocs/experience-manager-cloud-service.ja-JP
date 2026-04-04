@@ -30,7 +30,7 @@ ht-degree: 62%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、 ](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要[ ビデオをご覧ください。
+追加された機能の概要については、 [&#128279;](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要 ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -144,11 +144,11 @@ CQ-4328183 was not reported on CS so not documented here.
 * AEM as a Cloud Service で一意の IP アドレスからトラフィックを出力するための専用エグレス IP アドレスが、すべてのポートをサポートするようになりました。
 * お使いのインフラストラクチャと AEM as a Cloud Service の間でやり取りされるトラフィックのセキュリティを確保する VPN。
 
-Cloud Manager APIを使用して高度なネットワークをセルフサービスでプロビジョニングする方法など、詳細については、[ ドキュメント ](/help/security/configuring-advanced-networking.md)を参照してください。
+Cloud Manager APIを使用して高度なネットワークをセルフサービスでプロビジョニングする方法など、詳細については、[&#x200B; ドキュメント &#x200B;](/help/security/configuring-advanced-networking.md)を参照してください。
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するために、Adobeエンジニアリングはお客様と個別かつ積極的に協力して、Lucene フルテキストインデックスを穏やかで持続可能な方法で削除します。 詳しくは、[!DNL Adobe Experience Manager]as a [!DNL Cloud Service] [ ドキュメント ](/help/operations/indexing.md#index-optimizations)を参照し、ご不明な点がある場合は、Adobeのサポートに直接お問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するために、Adobeエンジニアリングはお客様と個別かつ積極的に協力して、Lucene フルテキストインデックスを穏やかで持続可能な方法で削除します。 詳しくは、[!DNL Adobe Experience Manager]as a [!DNL Cloud Service] [&#x200B; ドキュメント &#x200B;](/help/operations/indexing.md#index-optimizations)を参照し、ご不明な点がある場合は、Adobeのサポートに直接お問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -185,7 +185,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis)の手順6と7を参照してください。
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[&#x200B; ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis)の手順6と7を参照してください。
 
 ## コンテンツトランスファーツール {#content-transfer-tool}
 

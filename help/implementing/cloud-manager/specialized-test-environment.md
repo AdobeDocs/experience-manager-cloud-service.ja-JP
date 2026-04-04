@@ -56,7 +56,7 @@ Specialized Testing Environmentは、新しいタイプのCloud Manager環境で
 
 1. 次のいずれかの操作を行います。
 
-   * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールの&#x200B;**環境** カードで、**環境を追加**をクリックします。
+   * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールの&#x200B;**環境** カードで、**環境を追加**&#x200B;をクリックします。
 「**環境を追加**」オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンス済みリソースに依存している場合があります。
 
      ![環境カード](assets/no-environments.png)

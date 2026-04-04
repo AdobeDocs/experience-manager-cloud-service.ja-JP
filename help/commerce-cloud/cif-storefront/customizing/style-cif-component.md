@@ -23,7 +23,7 @@ ht-degree: 86%
 
 # AEM CIF コアコンポーネントのスタイル設定 {#style-aem-cif-core-components}
 
-[CIF Venia プロジェクト ](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components)このチュートリアルでは、Venia参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用されるCSSとJavaScriptの構成方法を理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
+[CIF Venia プロジェクト &#x200B;](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネントを使用するための参照コードベースです。](https://github.com/adobe/aem-core-cif-components)このチュートリアルでは、Venia参照プロジェクトを調べ、AEM CIF コアコンポーネントで使用されるCSSとJavaScriptの構成方法を理解します。 また、CSS を使用してスタイルを作成し、**製品ティーザー**&#x200B;コンポーネントのデフォルトのスタイルを更新します。
 
 >[!TIP]
 >
@@ -208,7 +208,7 @@ ht-degree: 86%
 
 コードのアップデートがデプロイされたので、AEM オーサリングツールを使用して、製品ティーザーコンポーネントのインスタンスをサイトのホームページに追加します。これにより、更新されたスタイルが表示されます。
 
-1. 新しいブラウザータブを開き、サイト **http://localhost**/editor.html/content/venia/us/en.htmlの[ ホームページ :4502に移動します。](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. 新しいブラウザータブを開き、サイト **http://localhost**/editor.html/content/venia/us/en.htmlの[&#x200B; ホームページ :4502に移動します。](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. **編集**&#x200B;モードでアセットファインダー（サイドレール）を展開します。アセットフィルターを&#x200B;**製品**&#x200B;に切り替えます。
 
@@ -468,7 +468,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 新しい CSS ファイル、JavaScript ファイル、またはその両方をデプロイする場合は、ブラウザーで古いファイルが提供されないようにすることも重要です。ブラウザーキャッシュをクリアするか、新しいブラウザーセッションを開始することで、この潜在的な問題を解消できます。
 
-また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[ クライアントライブラリの再構築ツールを使用して、AEMのクライアントライブラリキャッシュを手動で無効化できます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると疑われる場合は、キャッシュの無効化が推奨されます。 「ライブラリのリビルド」は非効率で時間がかかります。*
+また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[&#x200B; クライアントライブラリの再構築ツールを使用して、AEMのクライアントライブラリキャッシュを手動で無効化できます。](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *AEMが古いバージョンのクライアントライブラリをキャッシュしていると疑われる場合は、キャッシュの無効化が推奨されます。 「ライブラリのリビルド」は非効率で時間がかかります。*
 
 ## これで完了です {#congratulations}
 

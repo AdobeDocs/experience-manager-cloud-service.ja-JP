@@ -87,7 +87,7 @@ AEM as a Cloud Serviceでのコンテンツの復元[も参照してください
 
    ![アクティベーションの復元](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. ページの右上隅付近にある![ ベルアイコンまたは通知アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **通知**&#x200B;をクリックして、復元の開始時間と終了時間を確認します。
+1. ページの右上隅付近にある![&#x200B; ベルアイコンまたは通知アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **通知**&#x200B;をクリックして、復元の開始時間と終了時間を確認します。
 
    ![復元の開始時および復元の完了時に以前のコード通知を復元する](/help/operations/assets/restore-previous-code-notifications.png)
    *以前のコードの復元ジョブの通知。*

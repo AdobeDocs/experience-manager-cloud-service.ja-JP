@@ -15,9 +15,9 @@ ht-degree: 26%
 
 # アダプティブ Forms（コアコンポーネント）用のカスタム送信アクションの作成
 
-送信アクションを使用すると、ユーザーはフォームから取得したデータの宛先を選択し、フォーム送信時に実行する追加機能を定義できます。 AEM フォームでは、電子メールの送信やデータのSharePointやOneDriveへの保存など、複数の[送信アクションをすぐに実行できる（OOTB） ](/help/forms/configure-submit-actions-core-components.md)がサポートされています。
+送信アクションを使用すると、ユーザーはフォームから取得したデータの宛先を選択し、フォーム送信時に実行する追加機能を定義できます。 AEM フォームでは、電子メールの送信やデータのSharePointやOneDriveへの保存など、複数の[送信アクションをすぐに実行できる（OOTB） &#x200B;](/help/forms/configure-submit-actions-core-components.md)がサポートされています。
 
-カスタム送信アクションを作成して、[標準提供オプション ](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action)に含まれていない機能を追加することもできます。 たとえば、フォームデータをサードパーティのアプリケーションと統合したり、顧客の入力にもとづいてパーソナライズされたSMS通知をトリガーしたりできます。
+カスタム送信アクションを作成して、[標準提供オプション &#x200B;](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action)に含まれていない機能を追加することもできます。 たとえば、フォームデータをサードパーティのアプリケーションと統合したり、顧客の入力にもとづいてパーソナライズされたSMS通知をトリガーしたりできます。
 
 <!--
  ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
@@ -35,7 +35,7 @@ ht-degree: 26%
 
 次の図は、アダプティブフォームのカスタム送信アクションを作成する手順を示しています。
 
-![ カスタム送信アクションのワークフロー](/help/forms/assets/custom-submit-action-workflow.png){width=50%, height-50%}
+![&#x200B; カスタム送信アクションのワークフロー](/help/forms/assets/custom-submit-action-workflow.png){width=50%, height-50%}
 
 ### AEM as a Cloud Service Git リポジトリを複製します。
 
@@ -63,7 +63,7 @@ ht-degree: 26%
 
 1. エディターでリポジトリフォルダーを開きます。
 
-   ![ クローン済みリポジトリ ](/help/forms/assets/custom-submit-action-clone-repo.png)
+   ![&#x200B; クローン済みリポジトリ &#x200B;](/help/forms/assets/custom-submit-action-clone-repo.png)
 
 1. `[AEMaaCS project directory]`内の次のディレクトリに移動します。
 
@@ -75,7 +75,7 @@ ht-degree: 26%
 
 1. カスタム送信アクション用に新しいフォルダーを作成し、任意の名前を付けます。 例えば、フォルダーに`customsubmitaction`という名前を付けます。
 
-   ![ カスタム送信アクションフォルダーを作成](/help/forms/assets/custom-submit-action-create-folder.png)
+   ![&#x200B; カスタム送信アクションフォルダーを作成](/help/forms/assets/custom-submit-action-create-folder.png)
 
 1. 追加されたカスタム送信アクションディレクトリに移動します。
 
@@ -105,7 +105,7 @@ ht-degree: 26%
 
    例えば、`[customsubmitaction]`をカスタマイズした送信アクション名`Custom Submit Action`に置き換えます。
 
-   ![ カスタム送信アクション設定ファイルを作成](/help/forms/assets/custom-submit-action-config-file.png)
+   ![&#x200B; カスタム送信アクション設定ファイルを作成](/help/forms/assets/custom-submit-action-config-file.png)
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ ht-degree: 26%
    `Important`: `<app-id>`を実際のアプリケーション IDに置き換えます。
 1. 新しいJava ファイルを作成して、追加された送信アクションのサービスを実装します。 例えば、新しいJava ファイルを`CustomSubmitService.java`として追加します。
 
-   ![ カスタム送信アクション フォルダー](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
+   ![&#x200B; カスタム送信アクション フォルダー](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
 
 1. このファイルを開き、カスタム送信アクション実装用のコードを追加します。
 
@@ -184,7 +184,7 @@ ht-degree: 26%
        }
    ```
 
-   ![ カスタム送信アクションサービス ](/help/forms/assets/custom-submit-action-service.png)
+   ![&#x200B; カスタム送信アクションサービス &#x200B;](/help/forms/assets/custom-submit-action-service.png)
 
 1. 変更を保存します。
 
@@ -206,7 +206,7 @@ ht-degree: 26%
       mvn -PautoInstallPackage clean install
       ```
 
-      ![ ローカル展開](/help/forms/assets/custom-submit-action-local-deployment.png)
+      ![&#x200B; ローカル展開](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Cloud Service環境のコードをデプロイ**
 
@@ -222,13 +222,13 @@ ht-degree: 26%
 
       パイプラインをまだ設定していない場合は、[AEM Forms as a Cloud Service のパイプラインの設定方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=ja#setup-pipeline)のガイドを参照してください。
 
-      ![ クラウド展開](/help/forms/assets/custom-submit-action-cloud-deployment.png)
+      ![&#x200B; クラウド展開](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
       **インストールの確認方法を教えてください。**
 
       プロジェクトが正常に構築されると、フォームのオーサリング中にカスタム送信アクションが`Submit action` ドロップダウンリストに表示されます。
 
-      ![ カスタム送信アクション ドロップダウンリスト ](/help/forms/assets/custom-submit-action-drop-down-list.png)
+      ![&#x200B; カスタム送信アクション ドロップダウンリスト &#x200B;](/help/forms/assets/custom-submit-action-drop-down-list.png)
 
   これで、環境でフォームのオーサリング時に追加されたカスタム送信アクションを使用する準備が整いました。
 
@@ -237,24 +237,24 @@ ht-degree: 26%
 1. AEM Forms as a Cloud Service インスタンスにログインします。
 1. **Forms**／**フォームとドキュメント**&#x200B;に移動します。
 
-   ![Formsとドキュメント ](/help/forms/assets/custom-submit-action-fnd.png)
+   ![Formsとドキュメント &#x200B;](/help/forms/assets/custom-submit-action-fnd.png)
 
 1. アダプティブフォームを選択し、**編集**&#x200B;をクリックします。 フォームが編集モードで開きます。
 
-   ![ フォームを編集](/help/forms/assets/custom-submit-action-edit-af.png)
+   ![&#x200B; フォームを編集](/help/forms/assets/custom-submit-action-edit-af.png)
 
 1. コンテンツブラウザーを開き、アダプティブフォームの&#x200B;**[!UICONTROL ガイドコンテナ]**&#x200B;コンポーネントを選択します。
 1. ガイドコンテナプロパティ ![ガイドプロパティ](/help/forms/assets/configure-icon.svg) アイコンをクリックします。 アダプティブフォームコンテナダイアログボックスが開きます。
 1. 「**[!UICONTROL 送信]**」タブをクリックします。
 1. **[!UICONTROL 送信アクション]** ドロップダウンリストから、送信アクションを選択します。 例えば、送信アクションを`Custom Submit Action`として選択します。
 
-   ![ カスタム送信フォーム ](/help/forms/assets/custom-submit-action-select-submit-action.png)
+   ![&#x200B; カスタム送信フォーム &#x200B;](/help/forms/assets/custom-submit-action-select-submit-action.png)
 
 1. フォームに記入して送信してください。
 
-   ![ フォームを送信](/help/forms/assets/custom-submit-action-submit-form.png)
+   ![&#x200B; フォームを送信](/help/forms/assets/custom-submit-action-submit-form.png)
 
-   ![感謝メッセージ ](/help/forms/assets/custom-submit-action-thankyou-msg.png)
+   ![感謝メッセージ &#x200B;](/help/forms/assets/custom-submit-action-thankyou-msg.png)
 
    フォームが正常に送信されたら、**Adobe Experience Manager Web コンソール設定**&#x200B;を確認して、ローカル開発環境でのカスタム送信アクションの動作を確認できます。
 1. `http://<host>:<port>/system/console/configMgr` にアクセスします。
@@ -268,7 +268,7 @@ ht-degree: 26%
 
 1. `error.log` ファイルを開いて、データが追加されていることを確認します。
 
-   ![error.log ファイル ](/help/forms/assets/custom-submit-action-form-data-display.png)
+   ![error.log ファイル &#x200B;](/help/forms/assets/custom-submit-action-form-data-display.png)
 
    >[!NOTE]
    >

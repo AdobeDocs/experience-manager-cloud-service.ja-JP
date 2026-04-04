@@ -28,7 +28,7 @@ Content Advisor Agentは、手作業による長いプロセスを、AIを活用
 >
 >AIによる回答は、不正確または誤解を招く可能性があります。 修正案と回答案を再確認しましょう。
 >
->[Adobe Experience Cloud生成AI ユーザーガイドライン ](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)も参照してください
+>[Adobe Experience Cloud生成AI ユーザーガイドライン &#x200B;](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)も参照してください
 
 ### Content Discovery Agent {#discovery}
 

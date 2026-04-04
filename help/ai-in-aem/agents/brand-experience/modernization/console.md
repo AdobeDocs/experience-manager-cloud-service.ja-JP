@@ -26,7 +26,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 
 >[!TIP]
 >
->コンソールをすぐに使用する場合は、[Experience Modernization Agentの使用を開始するドキュメント ](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)を参照してください。
+>コンソールをすぐに使用する場合は、[Experience Modernization Agentの使用を開始するドキュメント &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)を参照してください。
 
 ## 機能 {#capabilities}
 
@@ -45,7 +45,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 
 [`aemcoder.adobe.io`,](https://aemcoder.adobe.io)でコンソールにログインすると、コンソールのホーム画面に表示されます。
 
-![ コンソールのホーム画面](assets/console-home.png)
+![&#x200B; コンソールのホーム画面](assets/console-home.png)
 
 ### メニューバー {#menu-bar}
 
@@ -67,7 +67,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 
 **ホーム** ビューは、コンソールを使用するための出発点です。
 
-* 上部には、コンソールのリクエストを行うための[ プロンプト入力](#prompt-input)があります。
+* 上部には、コンソールのリクエストを行うための[&#x200B; プロンプト入力](#prompt-input)があります。
 * プロンプトパネルの下には、プロジェクトの開始を促すプロンプトが表示されます。
 
 ### プロンプト入力 {#prompt-input}
@@ -87,11 +87,11 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 * コンテンツファイルの概要を表示するファイルブラウザー（このパネルに山形アイコンを表示するトグル）
 * ファイルブラウザーで選択したコンテンツを表示するためのプレビューパネル
 
-![ コンテンツ表示](assets/content-imported.png)
+![&#x200B; コンテンツ表示](assets/content-imported.png)
 
 ### チャットパネル {#chat-panel}
 
-チャットパネルを使用すると、Experience Modernization エージェントとの会話を表示して続行できます。 チャットパネルには、チャットメッセージの履歴と、コンソールの追加リクエストを行うための[ プロンプト入力](#prompt-input)が含まれています。
+チャットパネルを使用すると、Experience Modernization エージェントとの会話を表示して続行できます。 チャットパネルには、チャットメッセージの履歴と、コンソールの追加リクエストを行うための[&#x200B; プロンプト入力](#prompt-input)が含まれています。
 
 * **チャットアクション**
    * **チャットをクリア**：会話がリセットされ、AIのコンテキストウィンドウがクリアされます。 このオプションは、前の会話とは関係のない新しいタスクを開始する場合に使用します。
@@ -130,7 +130,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 * コードファイルまたは差分としての変更の概要を表示するファイルブラウザー
 * コードファイルまたはファイルブラウザーで選択した変更を表示するためのプレビューパネル
 
-![ コードビュー](assets/code-view.png)
+![&#x200B; コードビュー](assets/code-view.png)
 
 プレビューパネルには、次の2つのモードがあります。
 
@@ -153,7 +153,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 
 変更をプッシュする場合、プッシュに含めるには、最初にステージングされた変更が必要です。 プッシュ時に、新しいPRを作成するか、現在のブランチに直接プッシュするかを選択できます
 
-![変更をプッシュ ](assets/push-changes.png)
+![変更をプッシュ &#x200B;](assets/push-changes.png)
 
 ## 設定ビュー {#settings-view}
 
@@ -163,7 +163,7 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
 
 * **プロジェクト**&#x200B;を使用すると、ライブラリ URLのカスタマイズなど、プロジェクトの設定を表示および編集できます。
 * **サポート**&#x200B;では、AEM サポートチームにサポートを依頼できます。
-* **資格情報**&#x200B;を使用すると、Figmaの個人アクセストークンを指定して、[ コンソールがプロジェクトのデザインブロックにアクセスできるようにできます。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **資格情報**&#x200B;を使用すると、Figmaの個人アクセストークンを指定して、[&#x200B; コンソールがプロジェクトのデザインブロックにアクセスできるようにできます。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * トークンには、次の読み取り専用スコープが必要です。
       * `file_content:read`
       * `file_metadata:read`
@@ -172,5 +172,5 @@ Experience Modernization Consoleは、Edge Delivery ServicesのAI支援による
       * `team_library_content:read`
       * `file_dev_resources:read`
       * `projects:read`
-   * 個人アクセストークンの設定について詳しくは、[Figma ドキュメント ](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)を参照してください。
+   * 個人アクセストークンの設定について詳しくは、[Figma ドキュメント &#x200B;](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)を参照してください。
 * **ワークスペースをリセット**&#x200B;すると、コンソールが開始状態に戻り、プッシュ解除またはアップロード解除されたすべての変更が失われます。

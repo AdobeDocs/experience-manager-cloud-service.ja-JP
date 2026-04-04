@@ -27,7 +27,7 @@ RTE の概念と設定に必要な手順を以下に示します。
 
 >[!NOTE]
 >
->このドキュメントで説明するRTEは、ページエディターで使用可能なRTEを説明します。 最新のユニバーサルエディターを使用している場合は、ドキュメント [ ユニバーサルエディターのRTEの設定](/help/implementing/universal-editor/configure-rte.md)を参照してください。
+>このドキュメントで説明するRTEは、ページエディターで使用可能なRTEを説明します。 最新のユニバーサルエディターを使用している場合は、ドキュメント [&#x200B; ユニバーサルエディターのRTEの設定](/help/implementing/universal-editor/configure-rte.md)を参照してください。
 
 ## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 

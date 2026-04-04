@@ -15,7 +15,7 @@ ht-degree: 2%
 
 効果的なキャッシュ管理は、高性能で拡張性が高く、最新のデジタルアセットを提供するために不可欠です。 オープン APIを備えたDynamic Mediaでは、キャッシュ管理により、配信パイプラインのさまざまなレイヤーをまたいでコンテンツを保存、更新、配信する方法が定義されます。 アセット配信の応答は、最適なパフォーマンスと迅速なコンテンツ配信を実現するために、複数のレイヤーでキャッシュされます。
 
-オープン APIを使用したDynamic Mediaでの長時間キャッシュは、[CDN レイヤーキャッシュ ](#cdn-layer-caching)と[外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） ](#byocdn-browser-caching)で構成されます。
+オープン APIを使用したDynamic Mediaでの長時間キャッシュは、[CDN レイヤーキャッシュ &#x200B;](#cdn-layer-caching)と[外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） &#x200B;](#byocdn-browser-caching)で構成されます。
 
 ## CDN レイヤーキャッシュ {#cdn-layer-caching}
 
@@ -47,7 +47,7 @@ responseTransformations:
             value: max-age=300
 ```
 
-キャッシュ管理に関する詳細なサポートや質問については、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)にお問い合わせください。
+キャッシュ管理に関する詳細なサポートや質問については、[Adobe サポート &#x200B;](https://helpx.adobe.com/jp/contact.html)にお問い合わせください。
 
 ## アクティブキャッシュの無効化 {#active-cache-invalidation}
 
@@ -105,7 +105,7 @@ The following mechanisms can be followed:
 
 +++ **自分のリポジトリの永続キャッシュをオプトアウトできますか？**
 
-長時間キャッシュをオプトアウトするには、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)に連絡し、リクエストの根拠を提供してください。
+長時間キャッシュをオプトアウトするには、[Adobe サポート &#x200B;](https://helpx.adobe.com/jp/contact.html)に連絡し、リクエストの根拠を提供してください。
 
 +++
 
@@ -113,4 +113,4 @@ The following mechanisms can be followed:
 >[!MORELIKETHIS]
 >
 >- [アセットセレクターと様々なアプリケーションの統合](/help/assets/integrate-asset-selector.md)
->- [ バニティ URL](/help/assets/vanity-urls.md)
+>- [&#x200B; バニティ URL](/help/assets/vanity-urls.md)

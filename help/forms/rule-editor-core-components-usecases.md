@@ -28,7 +28,7 @@ ht-degree: 42%
 
 `Next` ボタンにルールを作成して、最初のパネルを検証できます。
 
-![次のボタンのルール ](/help/forms/assets/next-rule.png){width=50%}
+![次のボタンのルール &#x200B;](/help/forms/assets/next-rule.png){width=50%}
 
 「**次へ**」ボタンをクリックすると、**個人情報** パネルが検証されます。 入力された詳細が正しい場合、フォーカスは&#x200B;**アカウントセキュリティ** パネルに移動します。そうでない場合は、不足している詳細を入力するよう求めるエラーメッセージが表示されます。
 
@@ -45,7 +45,7 @@ ht-degree: 42%
 
 `Navigate among the panels` ルールを使用して、異なるパネルを切り替えることができるボタンのナビゲーションルールを作成できます。  `Shift focus to the next item`属性を選択して、レイアウトの次のパネルにフォーカスを移動します。
 
-![次のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+![次のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
 
 `Next` ボタンをクリックすると、フォーカスはレイアウトの後続のパネルに移動します。
 
@@ -53,7 +53,7 @@ ht-degree: 42%
 
 同様に、`Previous` ボタンのルールを作成して、前のパネルにフォーカスを移動することもできます。
 
-![前のパネルルール ](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![前のパネルルール &#x200B;](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## 関数を使用して、繰り返し可能なパネルで複雑な計算を合理化します
 
@@ -61,15 +61,15 @@ ht-degree: 42%
 
 繰り返し可能なパネルを持つフォームを想像してみてください。各パネルインスタンスは、アセットの宣言された値に関する情報を収集します。
 
-![繰り返し可能フォーム ](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+![繰り返し可能フォーム &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
 
 `Sum`関数を使用して、すべてのパネルのアセットの合計値を自動的に計算できるため、手作業による計算が不要になり、エラーの可能性が減ります。
 
-![OOTB関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+![OOTB関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel.png)
 
 フォームに入力し、インスタンスを追加してアセット値を宣言すると、`Calculate Asset Value` ボタンはすべての宣言されたアセット値の合計値を計算し、その結果を合計として`assetvalue` テキストボックスに表示します。
 
-![OOTB関数での繰り返し可能なパネルフィールドのサポート ](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+![OOTB関数での繰り返し可能なパネルフィールドのサポート &#x200B;](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 >[!NOTE]
 >
