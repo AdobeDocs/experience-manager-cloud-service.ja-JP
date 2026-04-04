@@ -61,7 +61,7 @@ Experience Manager で画像プリセットを管理するには、Experience Ma
 
 ### AEM as a Cloud Serviceでのレンディション生成{#rendition-generation-in-aemaacs}
 
-AEM as a Cloud Serviceでは、[Asset Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を使用してレンディションが生成されます。 DAM アセットの更新ワークフローは、Cloud Serviceではカスタマイズできません。
+AEM as a Cloud Serviceでは、[Asset Microservices](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を使用してレンディションが生成されます。 DAM アセットの更新ワークフローは、Cloud Serviceではカスタマイズできません。
 
 重要な検討事項には次のようなものがあります。
 
@@ -73,7 +73,7 @@ AEM as a Cloud Serviceでは、[Asset Microservices](https://experienceleague.ad
 
 **生成するレンディションを制御するには：**
 
-1. [処理プロファイル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を作成または編集します。
+1. [処理プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)を作成または編集します。
 2. 必要なレンディション定義を設定します。
 3. 処理プロファイルを適切なフォルダーに適用します。
 
@@ -327,7 +327,7 @@ AI ファイル、PDF ファイル、EPS ファイルの取り込みをサポー
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
+      シャープニングについては、<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Adobe Experience Manager Dynamic Media での画像シャープニングの使用</a>のビデオ、<a href="https://experienceleague.adobe.com/ja/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">画像のシャープニングに関するオンラインヘルプトピック</a>、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=ja">Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices</a> と題するダウンロード可能な PDF を参照してください。
     </div> </td>
   </tr>
   <tr>

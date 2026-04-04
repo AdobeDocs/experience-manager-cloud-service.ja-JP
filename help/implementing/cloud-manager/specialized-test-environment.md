@@ -80,6 +80,6 @@ Specialized Testing Environmentは、新しいタイプのCloud Manager環境で
 
 ## その他のリソース {#additional-resources}
 
-* ビデオ：[AEM Cloud Managerの環境タイプについて](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* ビデオ：[AEM Cloud Managerの環境タイプについて](https://experienceleague.adobe.com/ja/perspectives/cloud-manager-environment-types)
 * [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
 

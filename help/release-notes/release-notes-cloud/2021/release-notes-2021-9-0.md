@@ -67,11 +67,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-sep-2021}
 
-* **アダプティブフォームでAdobe Signの役割を使用する** - ビジネスおよびエンタープライズ向けAdobe Sign サービスレベルでは、署名者だけでなく、契約書の受信者の役割をオプションで拡張して、ワークフロー要件により適切に適合させることができます。 契約書の各受信者がアダプティブフォーム [で役割を設定できるように](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)有効にし、署名者をデフォルトの役割にすることができます。
+* **アダプティブフォームでAdobe Signの役割を使用する** - ビジネスおよびエンタープライズ向けAdobe Sign サービスレベルでは、署名者だけでなく、契約書の受信者の役割をオプションで拡張して、ワークフロー要件により適切に適合させることができます。 契約書の各受信者がアダプティブフォーム [で役割を設定できるように](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=ja#addsignerstoanadaptiveform)有効にし、署名者をデフォルトの役割にすることができます。
 
 * **Analytics for Adaptive Forms** - Adobe Analytics for Adaptive Formsを通じてエンドユーザーの行動を取得および追跡し、エンドユーザーのインサイトを収集できるようになりました。 データにもとづいた意思決定を促進し、エンドユーザーのエクスペリエンスを向上させることができます。
 
-* **Adobe Experience Manager（AEM）FormsをMicrosoft® DynamicsおよびSalesforce**&#x200B;と簡単に接続できます。このサービスは、Microsoft、DynamicsおよびSalesforce用にすぐに使用できるデータソース設定とデータモデル®提供します。 これにより、開発者は、アダプティブフォームのデータソースとしてMicrosoft® DynamicsおよびSalesforceを設定する速度と手順が[高速化され、簡単になります](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)。
+* **Adobe Experience Manager（AEM）FormsをMicrosoft® DynamicsおよびSalesforce**&#x200B;と簡単に接続できます。このサービスは、Microsoft、DynamicsおよびSalesforce用にすぐに使用できるデータソース設定とデータモデル®提供します。 これにより、開発者は、アダプティブフォームのデータソースとしてMicrosoft® DynamicsおよびSalesforceを設定する速度と手順が[高速化され、簡単になります](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=ja)。
 
 * **DocuSign**&#x200B;を使用してアダプティブフォームに電子サインする – DocuSignを使用してアダプティブフォームに電子サインを行うことができます。 このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。ソフトウェア配布ポータルで入手可能なパッケージをインストールして、送信アクションをインポートすることができます。
 
@@ -115,10 +115,10 @@ CQ-4328183 was not reported on CS so not documented here.
 ### 新機能 {#what-is-new-screens}
 
 * Screens as a Cloud Service で、基本的な再生モニタリングがサポートされるようになりました。プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになりました。指標に基づいて、さまざまなエッジケース（スタックしたエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。 この機能により、チームは、プレーヤーがコンテンツを適切に再生しているかどうかをリモートで監視できます。 これにより、フィールド内の空白の画面や壊れたエクスペリエンスに対する反応性が向上し、壊れたエクスペリエンスをユーザーに表示するリスクが軽減されます。
-詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html#playback-monitoring)を参照してください。
+詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=ja#playback-monitoring)を参照してください。
 
 * ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを担当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。その画像は、ビデオの再生に失敗した場合でも使用できます。
-詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)を参照してください。
+詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=ja)を参照してください。
 
 ### バグの修正 {#bug-fixes-screens}
 
@@ -195,7 +195,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html#using-user-mapping-tool)を参照してください。
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=ja#using-user-mapping-tool)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
    * アクセストークンの有効期限（24時間後）が切れると、ユーザーマッピングが失敗しなくなります。 最後に停止した位置からユーザーマッピングを再実行できます。

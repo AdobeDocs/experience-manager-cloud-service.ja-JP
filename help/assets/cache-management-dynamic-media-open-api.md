@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## CDN レイヤーキャッシュ {#cdn-layer-caching}
 
-アセット配信の応答は、[Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)で長期間キャッシュされ、パフォーマンスを最大化し、オリジンへの負荷を最小限に抑えます。 このキャッシュは、エンドユーザーに一貫して高品質なエクスペリエンスを提供するために、Adobeによって完全に管理されます。 キャッシュ時間は、パフォーマンスのために意図的に最適化されており、すべての顧客にわたって信頼性と効率的なコンテンツ配信を維持するためにユーザーがカスタマイズすることはできません。
+アセット配信の応答は、[Adobe Managed CDN](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)で長期間キャッシュされ、パフォーマンスを最大化し、オリジンへの負荷を最小限に抑えます。 このキャッシュは、エンドユーザーに一貫して高品質なエクスペリエンスを提供するために、Adobeによって完全に管理されます。 キャッシュ時間は、パフォーマンスのために意図的に最適化されており、すべての顧客にわたって信頼性と効率的なコンテンツ配信を維持するためにユーザーがカスタマイズすることはできません。
 
 最適なパフォーマンスを確保するために、あらゆる配信URLはエッジ（Fastly）で長時間キャッシュされます。 キャッシュされた配信オブジェクトには、静的レンディション、ビデオ、元の画像バイナリ、および動的に変換された画像（URL パラメーターを通じて生成されたサイズ変更または再フォーマットされたアセットなど）が含まれます。<!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 ### キャッシュ制御ヘッダーのカスタマイズ {#customizing-cache-control-headers}
 
-デフォルトの設定を超えてキャッシュが有効になるまでの時間を長くすると、古いコンテンツを配信する可能性が高くなり、エンドユーザーエクスペリエンスにおけるコンテンツ更新の可視性が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御の動作を変更する必要がある場合は、カスタム CDN ルールを設定して応答ヘッダーを調整できます。 これにより、必要に応じて異なるキャッシュ期間を設定できます。 応答ヘッダー[については、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)AEM カスタム CDN ルールを参照してください。
+デフォルトの設定を超えてキャッシュが有効になるまでの時間を長くすると、古いコンテンツを配信する可能性が高くなり、エンドユーザーエクスペリエンスにおけるコンテンツ更新の可視性が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御の動作を変更する必要がある場合は、カスタム CDN ルールを設定して応答ヘッダーを調整できます。 これにより、必要に応じて異なるキャッシュ期間を設定できます。 応答ヘッダー[については、](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)AEM カスタム CDN ルールを参照してください。
 
 ```
 responseTransformations:
@@ -55,7 +55,7 @@ responseTransformations:
 
 ### 手動キャッシュの消去 {#manual-cache-purging}
 
-キャッシュされたコンテンツを手動でパージする必要がある場合は、AEMのキャッシュ無効化を使用してパージできます。 特定のキャッシュ URLをパージする方法について詳しくは、[AEM CDN キャッシュ無効化](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)を参照してください。
+キャッシュされたコンテンツを手動でパージする必要がある場合は、AEMのキャッシュ無効化を使用してパージできます。 特定のキャッシュ URLをパージする方法について詳しくは、[AEM CDN キャッシュ無効化](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)を参照してください。
 
 ## よくある質問{#faq-cache-management}
 
