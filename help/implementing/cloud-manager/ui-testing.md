@@ -30,7 +30,7 @@ UI テストは、言語とフレームワーク（Cypress、Selenium、Java と
 
 アドビでは、リアルタイムの再読み込みと自動待機が利用でき、時間の節約やテスト中の生産性の向上に役立つ、Cypress の使用をお勧めします。また、Cypressはシンプルで直感的な構文を提供しており、テストを初めて行うユーザーでも簡単に学び、使用することができます。
 
-UI テストは、[**カスタム UI テスト**](/help/implementing/cloud-manager/deploy-code.md) ステップで品質ゲートとして実行されます。[実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)で必要です。[実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)ではオプションです。 回帰や新しい機能を含む UI テストでは、エラーが検出、報告されます。
+UI テストは、[**カスタム UI テスト**](/help/implementing/cloud-manager/deploy-code.md) ステップで品質ゲートとして実行されます。[実稼動パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)で必要です。[実稼動以外のパイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)ではオプションです。 回帰や新しい機能を含む UI テストでは、エラーが検出、報告されます。
 
 Javaで記述されたHTTP テストであるカスタム機能テストとは異なり、UI テストはDocker イメージにすることができます。 テストは、[UI テストの構築](#building-ui-tests)で定義されている規則に従う限り、任意の言語で記述できます。
 
@@ -487,7 +487,7 @@ Cloud Manager パイプラインでUI テストをアクティブ化する前に
 >
 >ログファイルは、リポジトリの `target/` フォルダーに保存されます。
 >
->詳しくは、[AEM テストサンプルリポジトリ ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)を参照してください。
+>詳しくは、[AEM テストサンプルリポジトリ &#x200B;](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)を参照してください。
 
 ### JavaScript WebdriverIO テストサンプル {#javascript-sample}
 
@@ -511,7 +511,7 @@ Cloud Manager パイプラインでUI テストをアクティブ化する前に
 >* ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
 >* テストでは ChromeDriver の最新リリースがテスト用に自動的にダウンロードされるので、最新バージョンの Chrome を使用していることを確認する必要があります。
 >
->詳しくは、[AEM テストサンプルリポジトリ ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)を参照してください。
+>詳しくは、[AEM テストサンプルリポジトリ &#x200B;](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio)を参照してください。
 
 ### Playwright テストサンプル {#playwright-sample}
 
@@ -539,7 +539,7 @@ Cloud Manager パイプラインでUI テストをアクティブ化する前に
 >
 >ログファイルは、リポジトリの `target/` フォルダーに保存されます。
 >
->詳しくは、[AEM テストサンプルリポジトリ ](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)を参照してください。
+>詳しくは、[AEM テストサンプルリポジトリ &#x200B;](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)を参照してください。
 
 
 ### Java Selenium WebDriver テストサンプル {#java-sample}
@@ -561,4 +561,4 @@ Cloud Manager パイプラインでUI テストをアクティブ化する前に
 >
 >ログファイルは、リポジトリの `target/reports` フォルダーに保存されます。
 >
->詳しくは、[AEM テストサンプルリポジトリ ](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)を参照してください。
+>詳しくは、[AEM テストサンプルリポジトリ &#x200B;](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)を参照してください。
