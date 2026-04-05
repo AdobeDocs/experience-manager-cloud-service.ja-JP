@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="機能テスト"
->abstract="AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。 テストにより、コードの品質と信頼性が確保されます。"
+>abstract="AEM as a Cloud Service デプロイメントプロセスに組み込まれている 3 種類の機能テストについて説明します。テストは、コードの品質と信頼性を確保するものです。"
 
 [AEM as a Cloud Service デプロイメントプロセス](/help/implementing/cloud-manager/deploy-code.md)で使用できる品質ゲートおよび様々なタイプのビルトインの機能テストについて説明します。包括的なテスト戦略のフレームワーク内で、どのように使用して、最適化できるかについて説明します。
 

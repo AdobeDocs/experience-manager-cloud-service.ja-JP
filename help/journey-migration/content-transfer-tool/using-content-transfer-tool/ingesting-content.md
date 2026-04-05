@@ -13,12 +13,12 @@ ht-degree: 98%
 
 # コンテンツの Cloud Service への取り込み {#ingesting-content}
 
-## Cloud Acceleration Manager での取得プロセス {#ingestion-process}
+## Cloud Acceleration Manager での取り込みプロセス {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="取得とは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取得することを指します。 コンテンツトランスファーツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>abstract="取り込みとは、移行セットから宛先の Cloud Service インスタンスにコンテンツを取り込むことを指します。コンテンツトランスファーツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="追加抽出"
 
 Cloud Acceleration Manager を使用して移行セットを取り込むには、次の手順に従います。
@@ -260,11 +260,11 @@ MongoDB に保存されるノードプロパティの値は、16 MB 未満にす
 * `Exhausted mongo restore retries` - 取り込まれた移行セットのコンテンツのローカルダンプをクラウドデータベースに復元する試みが失敗しました。これは、MongoDB の全体的なヘルス／ネットワークの問題を示し、多くの場合、数分後には修復されます。
 * `Mongo network error` - 場合によっては、MongoDB への接続の確立に失敗し、取り込みプロセスが早期に終了し、失敗として報告されることがあります。取り込みを単純に再試行する必要があります。
 * `Mongo server selection error` - これは Mongo クライアントサイドでまれに起こるタイムアウトエラーで、根本原因はいくつか考えられます。その後の再試行で、ほとんどの場合は問題が修正されます。
-* `Mongo took too long to start` – ごくまれに、取り込みワークフローで使用されるローカルの MongoDB を開始できない場合があります。 その後の再試行で、ほとんどの場合は問題が修正されます。
+* `Mongo took too long to start` – 非常にまれなケースでは、取り込みワークフローで使用されるローカル MongoDBが開始できない場合があります。 その後の再試行で、ほとんどの場合は問題が修正されます。
 
-#### AZCopy の問題 {#azcopy-issues}
+#### AZCopyの問題 {#azcopy-issues}
 
-* `AZCopy critical failure` – まれに、取り込みの事前コピー手順の実行に使用する AZCopy ツールが予期せず失敗することがあります。 この場合は、取り込みの再試行を試みる必要があります。
+* `AZCopy critical failure` – まれに、取り込みのコピー前ステップを実行するために使用されるAZCopy ツールが予期せず失敗する可能性があります。 この場合、取り込みを再試行する必要があります。
 
 ### 取り込みの取り消し {#ingestion-rescinded}
 

@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
 source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 ## デベロッパーコンソール {#developer-console}
 
-AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージング環境、実稼動環境の開発者コンソールで実行できます。
+AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージング環境、本番環境の開発者コンソールで実行できます。
 
 開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)を参照してください。
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 ユーザーは開発環境では CRXDE Lite にアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
 
 >[!IMPORTANT]
->実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と実稼動環境用の開発者ツールにもアクセスできません。
+>実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と本番環境用の開発者ツールにもアクセスできません。
 
 CRXDE Lite を使用して AEM アプリケーションを開発する方法について詳しくは、[CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md)を参照してください。
 
@@ -71,7 +71,7 @@ Cloud Service へのアクセスに関するご質問については、アドビ
 
 * 何がうまくいき、何がうまくいかなかったのか？
 * 主な問題点は何でしたか？
-* 推奨事項（今後の移行がある場合）。
+* レコメンデーション（今後の移行がある場合）。
 
 移行後に得られたこれらの気づきを組織内の関係者やチームと共有してください。
 

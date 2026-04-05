@@ -20,7 +20,7 @@ ht-degree: 64%
 
 [アセットを追加する権限を持つコンテンツハブユーザー](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)は、ローカルファイルシステムからコンテンツハブにアセットを追加することや、OneDrive または Dropbox データソースからアセットを読み込むことができます。検索機能を強化するのに、ローカルファイルシステムまたは OneDrive および Dropbox データソースで使用可能なフォルダー構造に関係なく、すべてのアセットがコンテンツハブの上位レベルに表示されます。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445376/?captions=jpn&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Assets as a Cloud Service で `Approved` としてマークされたアセットは、コンテンツハブで自動的に使用できます。詳しくは、[コンテンツハブ向けアセットの承認](/help/assets/approve-assets-content-hub.md)を参照してください。
 
@@ -30,7 +30,7 @@ Assets as a Cloud Service で `Approved` としてマークされたアセット
 
 * アップロードが成功すると、ファイルサイズ、形式、解像度、その他のプロパティなど、各アセットのその他のプロパティが自動的に生成されます。
 
-* [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) が提供する人工知能を使用して、アップロードされたすべてのアセットに適切なタグを自動的に適用します。 スマートタグという適切な名前が付けられたこれらのタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。
+* [Adobe AI](https://business.adobe.com/ai/adobe-genai.html)が提供する人工知能を使用して、アップロードしたすべてのアセットに関連するタグを自動的に適用します。 スマートタグという適切な名前が付けられたこれらのタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。
 
 [コンテンツハブにブランド承認済みアセット](/help/assets/approve-assets.md)のみをアップロードすることを確認します。
 
@@ -81,27 +81,27 @@ Assets as a Cloud Service で `Approved` としてマークされたアセット
 
 ## よくある質問 {#faqs-content-hub-upload-assets}
 
-### AEM Assets Content Hubには、どのような種類のアセットをどこからアップロードできますか？ {#asset-types-upload-to-content-hub}
+### AEM Assets Content Hubにアップロードできるアセットの種類と場所？ {#asset-types-upload-to-content-hub}
 
-アセットを追加する権限を持つAEM Assets Content Hub ユーザーは、ブランド承認済みアセットをローカルファイルシステムからアップロードできます。 アップロードされたすべてのアセットは、元のフォルダー構造に関係なく、Content Hubの最上位に表示され、検索機能が強化されます。
+AEM Assets Content Hubでアセットを追加する権限を持つユーザーは、ローカルのファイルシステムからブランド承認済みアセットをアップロードできます。 アップロードされたすべてのアセットは、元のフォルダー構造に関係なく、Content Hubのトップレベルに表示され、検索機能が強化されます。
 
-### AEM Assets Content Hubでは、アセットの検索と整理はどのように強化されますか？ {#search-content-hub}
+### AEM Assets Content Hubは、アセット検索と整理にどのように役立ちますか？ {#search-content-hub}
 
-AEM Assets Content Hubでは、キャンペーン名、キーワード、チャネル、期間、地域など、アップロードごとに主要な詳細を定義できるので、アセットの検索と整理が強化されます。 また、各アセットの追加のプロパティ（ファイルサイズ、形式、解像度など）が自動的に生成され、Adobe AIを使用してスマートタグが適用されるので、関連するアセットをより簡単かつ迅速に見つけることができます。
+AEM Assets Content Hubを使用すると、アップロードごとにキャンペーン名、キーワード、チャネル、期間、リージョンなどの主要な詳細情報を定義できるため、アセットの検索と整理が強化されます。 また、アセットごとに追加のプロパティ（ファイルサイズ、フォーマット、解像度など）が自動的に生成され、Adobe AIを使用してスマートタグを適用するため、関連するアセットを簡単かつ迅速に検索できます。
 
-### ローカルファイルシステムからAEM Assets Content Hubにアセットをアップロードする方法 {#upload-assets-content-hub}
+### ローカルファイルシステムからAEM Assets Content Hubにアセットをアップロードするにはどうすればよいですか？ {#upload-assets-content-hub}
 
-ローカルファイルシステムからAEM Assets Content Hubにアセットをアップロードするには、「**Assetsを追加**」をクリックしてアップロードダイアログを開きます。 ファイルまたはフォルダーをドラッグ&amp;ドロップするか、手動で参照して選択できます。 アセットはキャンペーン名の下にグループ化する必要があります。整理を改善するには、キーワード、チャネル、期間、地域など、他のフィールドに入力することをお勧めします。 準備が整ったら、「**アップロード** をクリックし、詳細を確認してアップロードを開始します。
+ローカルファイルシステムからAEM Assets Content Hubにアセットをアップロードするには、「**Assetsを追加**」をクリックしてアップロードダイアログを開きます。 ファイルやフォルダーをドラッグ&amp;ドロップすることも、手動で参照して選択することもできます。 キャンペーン名でアセットをグループ化する必要があります。より優れた整理をおこなうために、キーワード、チャネル、期間、地域などのフィールドに入力することをお勧めします。 準備ができたら、**アップロード**&#x200B;をクリックし、詳細を確認して、アップロードを開始することを確認します。
 
-### AEM Assets Content Hubでのアセット承認プロセスの仕組み {#asset-approval-content-hub}
+### AEM Assets Content Hubのアセット承認プロセスの仕組み？ {#asset-approval-content-hub}
 
-自動承認の切り替えが有効になっている場合、AEM Assets Content Hubを使用してアップロードされたアセットは自動的に使用可能になります。 無効にした場合、アップロードされたアセットはAssets as a Cloud Serviceの **hydrated-assets** フォルダーに配置されるので、Content Hubに表示するには、そのステータスを手動で **承認済み** に一括編集する必要があります。
+自動承認トグルが有効になっている場合は、AEM Assets Content Hubを使用してアップロードされたアセットが自動的に使用できるようになります。 無効にした場合、アップロードされたアセットはAssets as a Cloud Serviceの&#x200B;**hydrated-assets** フォルダーに配置され、ステータスを&#x200B;**Approved**&#x200B;に手動で一括編集してContent Hubに表示する必要があります。
 
-### アセットをAEM Assets Content Hubにアップロードする際に、必須フィールドまたはオプションフィールドを設定できますか？ {#available-fields-while-uploading-assets-to-content-hub}
+### AEM Assets Content Hubにアセットをアップロードする際に、必須またはオプションのフィールドを設定できますか？ {#available-fields-while-uploading-assets-to-content-hub}
 
-管理者は、設定ユーザーインターフェイスを使用して、アセットをAEM Assets Content Hubにアップロードする際に必須またはオプションとなるフィールドを定義できます。
+管理者は、設定ユーザーインターフェイスを使用して、アセットをAEM Assets Content Hubにアップロードする際に必須または任意のフィールドを定義できます。
 
-### アップロードしたアセットがAEM Assets Content Hubに自動的に表示されない場合は、どうすればよいですか？ {#assets-do-not-display-in-content-hub}
+### アップロードしたアセットがAEM Assets Content Hubに自動的に表示されない場合はどうすればよいですか？ {#assets-do-not-display-in-content-hub}
 
-AEM Assets Content Hubでアセットが自動的に表示されない場合は、自動承認の切り替えが無効になっています。 アセットは、Assets as a Cloud Service環境の **hydrated-assets** フォルダーに配置されます。 ユーザーのステータスを **承認済み** に一括編集して、Content Hubに表示できるようにする必要があります。
+AEM Assets Content Hubでアセットが自動的に表示されない場合は、自動承認トグルが無効になっています。 アセットは、Assets as a Cloud Service環境の&#x200B;**hydrated-assets** フォルダーにあります。 Content Hubに表示するには、ステータスを&#x200B;**Approved**&#x200B;に一括編集する必要があります。
 
