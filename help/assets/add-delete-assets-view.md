@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 99%
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 すべてのファイルがキューに入ったら、「**[!UICONTROL アップロード]**」をクリックします。
 
-![ファイルおよびフォルダーのアップロード](assets/upload-browse-files-folders.png)
+![ファイルおよびフォルダーのアップロード](assets/upload-files.png)
 
 *図：選択したアセットをアップロードする前にキューにアセットを追加またはキューからアセットを削除可能*
 
@@ -48,13 +48,13 @@ ht-degree: 99%
 
 アップロードの進行状況またはステータスに基づいてアセットのサブセットを表示するには、**[!UICONTROL アップロードの進行状況]**&#x200B;サイドバーのフィルターを使用します。様々なフィルターがあり、それぞれ、すべてのアセット、完了したアップロード、進行中のアップロード、キューに入れられたアップロード対象アセット、一時停止したアップロード、重複したアセット、アップロードに失敗したアセットの表示に使用されます。
 
-![アップロードのステータスに基づいたアップロード進行状況のフィルタリング](assets/filter-upload-progress.png)
+![アップロードのステータスに基づいたアップロード進行状況のフィルタリング](assets/filter-progress.png)
 
 *図：アップロードのステータスまたは進行状況に基づく、アップロードしようとしたアセットのフィルタリング*
 
 アセットがアップロードされると、[!DNL Assets view] はすぐにそれらのアセットを処理してサムネールを生成し、メタデータを処理します。アセットの数が多いと、処理に時間がかかります。サムネールが表示されず、プレースホルダーサムネールに処理メッセージが表示される場合は、数分後にフォルダーを再度確認してください。処理時に [!DNL Assets view] は特に、レンディションを生成し、スマートタグを追加して、検索用にアセット詳細のインデックスを作成します。
 
-![アセットはアップロード時に処理され、タイルに処理中ステータスが表示される](assets/upload-processing.png)
+![アセットはアップロード時に処理され、タイルに処理中ステータスが表示される](assets/upload-process.png)
 
 *図：アップロードされたアセットが処理されているタイルに表示される処理中ステータス*
 
@@ -70,17 +70,17 @@ ht-degree: 99%
 
 サポートされているアセットのアップロードが何らかの理由で失敗した場合は、[!UICONTROL アップロードの進行状況]ウィンドウの「**[!UICONTROL 再試行]**」をクリックします。
 
-![失敗したアップロードの再試行](assets/upload-retry.png)
+![失敗したアップロードの再試行](assets/upload-failed.png)
 
 *図：サポートされているファイルのアップロードが何らかの理由で失敗した場合の再試行*
 
 重複したアセットをアップロードしようとしても、アップロードを明示的に確認するまで、アセットはアップロードされません。最初、重複したアセットは、アップロードの失敗としてマークされます。これを解決するには、バージョンの作成、既存アセットの置き換えと削除、アセット名の変更による複製コピーの作成のいずれかを行うだけです。このようなエラーは、1 アセットずつ解決することも、失敗したすべての重複に対して一括で解決することもできます。
 
-![重複するアセットを 1 つずつ管理](assets/uploads-manage-duplicates.png)
+![重複するアセットを 1 つずつ管理](assets/duplicate-new.png)
 
 *図：デフォルトでアップロードに失敗した重複アセットについて、1 アセットずつ問題を解決*
 
-![失敗したすべてのアップロードを一括管理](assets/upload-progress-manage-failed-uploads.png)
+![失敗したすべてのアップロードを一括管理](assets/manage-duplicate.png)
 
 *図：デフォルトでアップロードに失敗した重複アセットについて、すべてのアセットの問題を一度に解決*
 
@@ -98,7 +98,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * アセットまたはフォルダーのサムネールで使用できるオプションを使用します。
 
-  ![アセットサムネールでのアセット管理用オプション](assets/options-on-thumbnail.png)
+  ![アセットサムネールでのアセット管理用オプション](assets/delete-new.png)
 
   *図：アセットタイルまたはフォルダータイルでファイルやフォルダーに使用できるアクション*
 
@@ -112,4 +112,4 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
