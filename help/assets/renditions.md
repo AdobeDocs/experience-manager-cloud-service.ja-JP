@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 99%
+source-wordcount: '707'
+ht-degree: 82%
 
 ---
 
@@ -71,25 +71,27 @@ Experience Manager Assets で画像の動的レンディションを表示また
 1. プレビューするレンディションを選択し、「**URL をコピー**」をクリックして、選択したレンディションの URL をコピーします。「**レンディションをダウンロード**」をクリックして、画像アセットのレンディションをダウンロードします。
 1. プレビューするスマート切り抜きレンディションを選択し、「**URL をコピー**」をクリックして、選択したレンディションの URL をコピーします。
 1. ![ダウンロードアイコン](assets/do-not-localize/download-icon.png) をクリックして、使用可能なすべてのスマート切り抜きレンディションを 1 つの zip ファイルとしてダウンロードします。
-   ![ダウンロードアイコン](/help/assets/assets/smartcrop-rendition.png)
+   ![ダウンロードアイコン](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
    >これらのレンディションは、画像アセットに対してのみ使用できます。
 
-## OpenAPI 機能搭載 Dynamic Media レンディション {#dm-with-openapi-renditions}
+## OpenAPI機能を備えたDynamic Mediaのレンディション {#dm-with-openapi-renditions}
 
 ### 始める前に {#prereqs-dm-with-openapi-renditions}
 
 * ライセンス済み AEM Dynamic Media ユーザーである必要があります。
-* OpenAPI 機能搭載 Dynamic Media レンディションを表示するには、アセットを承認する必要があります。詳しくは、[Experience Manager でのアセットの承認](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)を参照してください。
+* OpenAPI機能のレンディションを使用してDynamic Mediaを表示するには、Assetsをパブリック使用として承認する必要があります。 詳しくは、[Experience Manager でのアセットの承認](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)を参照してください。
 * OpenAPI 機能搭載 Dynamic Media は、AEM as a Cloud Service インスタンスで有効にする必要があります。
 
 ### OpenAPI 機能搭載 Dynamic Media レンディションの表示 {#view-download-dm-with-openapi-renditions}
 
 1. アセットを選択し、「**詳細**」をクリックします。
-1. 右側のパネルで使用可能な Dynamic Media アイコンをクリックします。Dynamic Media パネルには、すべてのアセットタイプ向けの OpenAPI 機能搭載 Dynamic Media レンディションが表示されます。
-   ![ダウンロードアイコン](/help/assets/assets/dm-with-open-api-copy-url.png)
-1. 「**OpenAPI 機能搭載 Dynamic Media**」オプションを選択し、「**URL をコピー**」をクリックして、アセットの配信 URL をコピーします。
+1. 右側のパネルにあるDynamic Media アイコンをクリックします。 ダイナミックメディアパネルには、サポートされているアセットタイプのベースレンディション、ダイナミックレンディション、スマート切り抜きレンディションが表示されます（該当する場合）。
+   ![ダウンロードアイコン](/help/assets/assets/new-new1.png)
+1. 「**ベースレンディション**」を選択し、**URLをコピー**&#x200B;してアセットの配信URLをコピーするか、**レンディションをダウンロード**&#x200B;してアセットをダウンロードします。
 
+リポジトリでScene7 （Dynamic Media）とOpenAPI機能を備えたDynamic Mediaの両方が有効になっている場合、ユーザーインターフェイスで切り替えオプションを使用して、2つを切り替えることができます。 表示されるレンディションと、生成されたURLは、選択した設定に基づいて更新されます。
 
+![ オプションの切り替え](/help/assets/assets/new-new2.png)
