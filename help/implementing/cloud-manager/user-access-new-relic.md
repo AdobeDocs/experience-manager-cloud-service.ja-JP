@@ -131,7 +131,7 @@ New Relic から確認メールが届かない場合は、[トラブルシュー
 
 **New Relic One に直接アクセスするには：**
 
-1. [New Relicのログインページ ](https://login.newrelic.com/login)に移動します。
+1. [New Relicのログインページ &#x200B;](https://login.newrelic.com/login)に移動します。
 
 1. New Relic One にログインします。
 
@@ -180,7 +180,7 @@ New Relic One へのログイン中に使用するメールを確認するよう
 
 1. テーブル内の任意の変更イベントをクリックして、詳細ビューを開きます。
 
-   ![DeepLink URLが強調表示されたデプロイメント属性パネル ](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>変更イベントの詳細ビュー</i>
+   ![DeepLink URLが強調表示されたデプロイメント属性パネル &#x200B;](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>変更イベントの詳細ビュー</i>
 
    右側の&#x200B;**詳細を変更** パネルには、特に、エンティティ、タイムスタンプ、エポック、カテゴリ、デプロイメント ID、API タイプが表示されます。
 
