@@ -40,7 +40,7 @@ ht-degree: 29%
 >
 >ドロップダウンフィールドのみに基づいてルールを作成できます。
 
-選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。 [定義済みのメタデータコンポーネント ](metadata-assets-view.md#property-components)と[ メタデータをフォルダー](metadata-assets-view.md#assign-metadata-form-folder)に割り当てることができます。
+選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。 [定義済みのメタデータコンポーネント &#x200B;](metadata-assets-view.md#property-components)と[&#x200B; メタデータをフォルダー](metadata-assets-view.md#assign-metadata-form-folder)に割り当てることができます。
 
 ### Build Metadata Forms {#build-metadata-schema-forms}
 
@@ -56,10 +56,10 @@ ht-degree: 29%
 
 1. 空白のメタデータフォームが表示されます。 新しいタブを追加します。
 
-   ![ メタデータフォーム UI](assets/metadata-form-ui.png)
+   ![&#x200B; メタデータフォーム UI](assets/metadata-form-ui.png)
 
-   * **A:** [!UICONTROL 編集]または[!UICONTROL  プレビュー]を切り替えます
-   * **B:** [ メタデータフォームのコンポーネント ](metadata-assets-view.md#property-components)
+   * **A:** [!UICONTROL 編集]または[!UICONTROL &#x200B; プレビュー]を切り替えます
+   * **B:** [&#x200B; メタデータフォームのコンポーネント &#x200B;](metadata-assets-view.md#property-components)
    * **C:**&#x200B;他のメタデータフォームへの切り替え
    * **D:**&#x200B;新しいタブを追加
    * **E:** キャンバス
@@ -67,13 +67,13 @@ ht-degree: 29%
    * **G:** ルール タブ
    * **H:** コンポーネントのプロパティ
 
-このビデオでは、一連の手順（[ メタデータ Formsの設定](https://video.tv.adobe.com/v/341275)）を確認できます。
+このビデオでは、一連の手順（[&#x200B; メタデータ Formsの設定](https://video.tv.adobe.com/v/341275)）を確認できます。
 
 ### 既存のメタデータフォームの変更 {#modify-existing-metadata-form}
 
 既存のメタデータフォームを変更するには、次の手順に従います。
 
-1. 既存のメタデータフォームを開き、フォームに追加する[事前定義済みコンポーネント ](metadata-assets-view.md#property-components)に移動し、キャンバスに要素をドロップします。
+1. 既存のメタデータフォームを開き、フォームに追加する[事前定義済みコンポーネント &#x200B;](metadata-assets-view.md#property-components)に移動し、キャンバスに要素をドロップします。
 
    **画像**&#x200B;の使用例に従って、画像アセットタイプを定義するドロップダウンフィールドを追加します。 **設定**&#x200B;で名前とプロパティのパスを指定し、オプションでフィールドを&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;または&#x200B;**[!UICONTROL 複数選択]**&#x200B;に設定します。
 
@@ -81,7 +81,7 @@ ht-degree: 29%
 
    * 値を手動で指定するには、**[!UICONTROL 選択肢]**&#x200B;の下の&#x200B;**[!UICONTROL 手動で追加]**&#x200B;を選択し、`Add`をクリックして、オプションのラベルと値を指定します。 例えば、ビデオ、PDF、画像のアセットタイプを指定します。
 
-     ![画像アセットタイプ ](assets/image-asset-type.png)
+     ![画像アセットタイプ &#x200B;](assets/image-asset-type.png)
 
    * JSON パスから値を取得するには、**[!UICONTROL JSON パスを使用して追加]**&#x200B;を選択し、JSON ファイルのパスを指定します。
 
@@ -105,15 +105,15 @@ ht-degree: 29%
 
    <!--![rule tab](assets/rule-tab.png)-->
 
-1. **[!UICONTROL 必須]**&#x200B;で、**[!UICONTROL 新しいルール]**&#x200B;に基づいて必須オプションを選択します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
+1. **[!UICONTROL 必須]**&#x200B;で、**[!UICONTROL 新しいルール]**&#x200B;に基づいて必須オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    ![ルール](assets/image-required-rule1.png)
 
-   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、GIF、TIFF、またはWEBPの場合、「アセットタイプ」フィールドが必要です。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
+   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、GIF、TIFF、またはWEBPの場合、「アセットタイプ」フィールドが必要です。 さらに、![編集アイコン &#x200B;](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン &#x200B;](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-required-rule2.png)
 
-1. **[!UICONTROL 表示]**&#x200B;で、新しいルール **[!UICONTROL に基づいて]**&#x200B;表示オプションを選択します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
+1. **[!UICONTROL 表示]**&#x200B;で、新しいルール **[!UICONTROL に基づいて]**&#x200B;表示オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    >[!NOTE]
    >
@@ -121,15 +121,15 @@ ht-degree: 29%
 
    ![ルール](assets/image-visible-rule1.png)
 
-   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、またはGIFの場合、「アセットの種類」フィールドが表示されます。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
+   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、またはGIFの場合、「アセットの種類」フィールドが表示されます。 さらに、![編集アイコン &#x200B;](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン &#x200B;](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-visible-rule2.png)
 
-1. **[!UICONTROL ルールに基づく選択肢]**&#x200B;を選択して、依存関係を作成し、ルールを定義します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
+1. **[!UICONTROL ルールに基づく選択肢]**&#x200B;を選択して、依存関係を作成し、ルールを定義します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    ![ルール](assets/image-choices-rule1.png)
 
-   アセットタイプ ドロップダウンのルールベースの選択肢を設定するには、ルールを作成し、依存フィールドとして「画像」を設定します。 次に、「JPG/JPEG、PNG、GIF、TIFFの画像」を選択し、「WEBPのビデオ」を選択して、各画像フォーマットの表示値を定義します。各フォーマットに対して目的の値のみがチェックされ、関連するオプションが動的に表示されるようにします。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
+   アセットタイプ ドロップダウンのルールベースの選択肢を設定するには、ルールを作成し、依存フィールドとして「画像」を設定します。 次に、「JPG/JPEG、PNG、GIF、TIFFの画像」を選択し、「WEBPのビデオ」を選択して、各画像フォーマットの表示値を定義します。各フォーマットに対して目的の値のみがチェックされ、関連するオプションが動的に表示されるようにします。 さらに、![編集アイコン &#x200B;](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン &#x200B;](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-choices-rule2.png)
 
@@ -139,7 +139,7 @@ ht-degree: 29%
 
 1. メタデータフォームを適用したフォルダーに移動し、アセットのプロパティページを開きます。 「アセットの種類」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
 
-   ![ メタデータ フォーム出力のカスケーディング ](assets/cascading-metadata-form-output.png)
+   ![&#x200B; メタデータ フォーム出力のカスケーディング &#x200B;](assets/cascading-metadata-form-output.png)
 
 
 ## 次の手順 {#next-steps}
