@@ -31,7 +31,7 @@ ht-degree: 86%
 
 ## コンテンツ更新イベント {#content-events}
 
-### aue&amp;colon;content-add {#content-add}
+### aue&colon;content-add {#content-add}
 
 `aue:content-add` イベントは、コンテナに新しいコンポーネントを追加した際にトリガーされます。
 
@@ -53,7 +53,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;content-details {#content-details}
+### aue&colon;content-details {#content-details}
 
 `aue:content-details` イベントは、プロパティパネルにコンポーネントを読み込んだ際にトリガーされます。
 
@@ -70,7 +70,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;content-move {#content-move}
+### aue&colon;content-move {#content-move}
 
 `aue:content-move` イベントは、コンポーネントを移動した際にトリガーされます。
 
@@ -89,7 +89,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;content-patch {#content-patch}
+### aue&colon;content-patch {#content-patch}
 
 `aue:content-patch` イベントは、プロパティパネルでコンポーネントのデータを更新した際にトリガーされます。
 
@@ -108,7 +108,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;content-remove {#content-remove}
+### aue&colon;content-remove {#content-remove}
 
 `aue:content-remove` イベントは、コンポーネントをコンテナから削除した際にトリガーされます。
 
@@ -124,7 +124,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;content-update {#content-update}
+### aue&colon;content-update {#content-update}
 
 `aue:content-update` イベントは、コンポーネントのプロパティをコンテキスト内で更新した際にトリガーされます。
 
@@ -204,7 +204,7 @@ ht-degree: 86%
 }
 ```
 
-### aue&amp;colon;ui-viewport-change {#ui-viewport-change}
+### aue&colon;ui-viewport-change {#ui-viewport-change}
 
 `aue:ui-viewport-change` イベントは、ビューポートのサイズを変更した際にトリガーされます。
 
@@ -247,7 +247,7 @@ ht-degree: 86%
 
 このイベントを使用すると、ページスクリプトで次のことが可能になります。
 
-* ****&#x200B;を変更して、ナビゲーション URLを`.html`変更します（例：`event.detail.href`拡張機能を追加）。
+* **&#x200B;**&#x200B;を変更して、ナビゲーション URLを`.html`変更します（例：`event.detail.href`拡張機能を追加）。
 * **キャンセル** ナビゲーションを`event.preventDefault()`経由で完全にキャンセルします。
 
 使用例：
