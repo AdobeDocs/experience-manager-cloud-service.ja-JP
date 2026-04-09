@@ -940,6 +940,6 @@ AEM コンテンツコンポーネントタイプでは、AEM コンテンツピ
 
 >[!TAB スクリーンショット]
 
-![textarea コンポーネントタイプ ](assets/component-types/textarea.png)のスクリーンショット
+![textarea コンポーネントタイプ &#x200B;](assets/component-types/textarea.png)のスクリーンショット
 
 >[!ENDTABS]

@@ -26,6 +26,6 @@ ht-degree: 48%
 
 ## 新機能 {#what-is-new}
 
-* [ リッチテキストエディター（RTE）ツールバー](/help/implementing/universal-editor/configure-rte.md#image)の「画像を追加」オプションが、AEM as a Cloud Serviceの[ プロジェクトのオーサリングとコンテンツの保持でサポートされるようになりました。](https://www.aem.live/docs/aem-authoring)
-* [ エディターからホーム画面](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)に戻る際に、プロパティパネル [が折りたたまれるようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+* [&#x200B; リッチテキストエディター（RTE）ツールバー](/help/implementing/universal-editor/configure-rte.md#image)の「画像を追加」オプションが、AEM as a Cloud Serviceの[&#x200B; プロジェクトのオーサリングとコンテンツの保持でサポートされるようになりました。](https://www.aem.live/docs/aem-authoring)
+* [&#x200B; エディターからホーム画面](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)に戻る際に、プロパティパネル [が折りたたまれるようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
    * この機能を使用したい場合は、Adobe カスタマーサポートにお問い合わせください。
