@@ -4,10 +4,10 @@ description: リモートアプリのコンテンツや UI の変更に対応す
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: 3e6487b6d37f698a91b07f1ca02aec140d14d1a2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 94%
+source-wordcount: '580'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 94%
 
 ## コンテンツ更新イベント {#content-events}
 
-### オーサリング&amp;amp；コロン；content-add {#content-add}
+### aue&amp;colon;content-add {#content-add}
 
 `aue:content-add` イベントは、コンテナに新しいコンポーネントを追加した際にトリガーされます。
 
@@ -53,7 +53,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサーマップ（&amp;A）；コロン；content-details {#content-details}
+### aue&amp;colon;content-details {#content-details}
 
 `aue:content-details` イベントは、プロパティパネルにコンポーネントを読み込んだ際にトリガーされます。
 
@@ -70,7 +70,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサリング（&colon;content-move） {#content-move}
+### aue&amp;colon;content-move {#content-move}
 
 `aue:content-move` イベントは、コンポーネントを移動した際にトリガーされます。
 
@@ -89,7 +89,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサー&amp;amp；コロン；content-patch {#content-patch}
+### aue&amp;colon;content-patch {#content-patch}
 
 `aue:content-patch` イベントは、プロパティパネルでコンポーネントのデータを更新した際にトリガーされます。
 
@@ -108,7 +108,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサリング&amp;amp；コロン；コンテンツ削除 {#content-remove}
+### aue&amp;colon;content-remove {#content-remove}
 
 `aue:content-remove` イベントは、コンポーネントをコンテナから削除した際にトリガーされます。
 
@@ -124,7 +124,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサリング&amp;amp；コロン；content-update {#content-update}
+### aue&amp;colon;content-update {#content-update}
 
 `aue:content-update` イベントは、コンポーネントのプロパティをコンテキスト内で更新した際にトリガーされます。
 
@@ -180,7 +180,7 @@ ht-degree: 94%
 
 ## UI イベント {#ui-events}
 
-### オーサーマップ（&colon;ui-preview） {#ui-preview}
+### aue&amp;amp；コロン；ui-preview {#ui-preview}
 
 `aue:ui-preview` イベントは、ページの編集モードを&#x200B;**プレビュー**&#x200B;に変更した際にトリガーされます。
 
@@ -192,7 +192,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサリング&amp;amp；コロン；ui-edit {#ui-edit}
+### aue&amp;amp；コロン；ui-edit {#ui-edit}
 
 `aue:ui-edit` イベントは、ページの編集モードを&#x200B;**編集**&#x200B;に変更した際にトリガーされます。
 
@@ -204,7 +204,7 @@ ht-degree: 94%
 }
 ```
 
-### オーサー&colon;ui-viewport-change {#ui-viewport-change}
+### aue&amp;colon;ui-viewport-change {#ui-viewport-change}
 
 `aue:ui-viewport-change` イベントは、ビューポートのサイズを変更した際にトリガーされます。
 
@@ -219,7 +219,7 @@ ht-degree: 94%
 }
 ```
 
-### カスタム&amp;colon；初期化済み {#initialized}
+### aue&amp;amp；コロン；初期化 {#initialized}
 
 `aue:initialized` イベントは、ユニバーサルエディターに正常に読み込まれたことをリモートページに通知するためにトリガーされます。
 
@@ -229,6 +229,39 @@ ht-degree: 94%
 {
     details: {}
 }
+```
+
+### aue&amp;amp；コロン；移動 {#navigate}
+
+ユニバーサルエディターのCORS ライブラリ （`@aem-sites/universal-editor-cors`）は、ユニバーサルエディターシェルにナビゲーションを中継する前に、キャンセル可能な`aue:navigate` イベントをディスパッチします。
+
+ペイロードは、ナビゲーションターゲットのURLです。
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+このイベントを使用すると、ページスクリプトで次のことが可能になります。
+
+* ****&#x200B;を変更して、ナビゲーション URLを`.html`変更します（例：`event.detail.href`拡張機能を追加）。
+* **キャンセル** ナビゲーションを`event.preventDefault()`経由で完全にキャンセルします。
+
+使用例：
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
 ```
 
 ## フォールバックイベントリスナー {#fallback-listeners}
