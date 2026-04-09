@@ -25,7 +25,7 @@ ht-degree: 80%
 
    >[!TIP]
    >
-   >既存のサイトを登録するのではなく、ユニバーサルエディターを使用してAEM オーサリングを使用する新しいEdge Delivery サイトを作成する場合は、[ ワンクリックで最初のEdge Delivery サイトを作成する](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 配信にEdge Deliveryを使用するプログラムの場合、パブリッシュ層は必要ない場合があります。 [柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+   >既存のサイトを登録するのではなく、ユニバーサルエディターを使用してAEM オーサリングを使用する新しいEdge Delivery サイトを作成する場合は、[&#x200B; ワンクリックで最初のEdge Delivery サイトを作成する](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 配信にEdge Deliveryを使用するプログラムの場合、パブリッシュ層は必要ない場合があります。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
 
 1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
 1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
@@ -40,7 +40,7 @@ ht-degree: 80%
 
    * ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを表示します。
 **サービス**&#x200B;見出しの下にある ![Web ページアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery サイト**」をクリックします。
-ページの右上隅付近にある「![ リンクアイコン」または「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)**Edge Delivery サイトを追加**」をクリックします。
+ページの右上隅付近にある「![&#x200B; リンクアイコン」または「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)**Edge Delivery サイトを追加**」をクリックします。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
