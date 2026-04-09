@@ -1,22 +1,22 @@
 ---
 title: カスケードメタデータ
-description: この記事では、アセット表示でアセットのカスケードメタデータを定義する方法について説明します。
+description: この記事では、アセットビューでアセットのカスケーディングメタデータを定義する方法について説明します。
 feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1198'
 ht-degree: 29%
 
 ---
 
-# カスケードメタデータAssets表示{#cascading-metadata-assets-view}
+# メタデータのカスケーディング Assets ビュー{#cascading-metadata-assets-view}
 
 アセットのメタデータ情報を取得するときに、ユーザーは様々なフィールドに情報を指定します。他のフィールドで選択されているオプションに応じて、特定のメタデータフィールドやフィールド値を表示できます。こうした条件に応じたメタデータの表示は、カスケードメタデータと呼ばれます。つまり、特定のメタデータフィールドや値と、1 つ以上のフィールドまたはその値（あるいはその両方）との依存関係を作成できます。
 
-メタデータFormsを使用して、カスケードメタデータを表示するルールを定義します。 例えば、メタデータフォームにアセットタイプフィールドが含まれている場合は、ユーザーが選択したアセットタイプに基づいて、表示するフィールドの関連セットを定義できます。
+メタデータ Formsを使用して、メタデータのカスケーディングルールを定義します。 例えば、メタデータフォームにアセットタイプフィールドが含まれている場合、ユーザーが選択したアセットのタイプに基づいて、表示する関連するフィールドセットを定義できます。
 
 次に、カスケードメタデータを定義できるいくつかの使用例を示します。
 
@@ -29,125 +29,122 @@ ht-degree: 29%
 
 >[!IMPORTANT]
 >
->カスケードメタデータ機能は、限定提供（LA）機能として利用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
+>カスケーディングメタデータ機能は、制限付き可用性機能として使用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
 
 ## [!DNL Experience Manager] でのカスケードメタデータの設定  {#configure-cascading-metadata-in-aem}
 
-選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。例：
+選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。例 – 
 
 * ビデオの場合、形式やコーデック、長さなど、適用可能なフィールドを表示します。
 * Word 文書や PDF ドキュメントの場合は、ページ数や作成者などのフィールドを表示します。
 
-例として `Image` という名前のドロップダウンフィールドを使用して、画像タイプに基づいてファイルを分類します。 ドロップダウンには、サポートされる画像拡張機能（JPG/JPEG、GIFなど）を表すオプションが含まれます。 データの一貫性を確保し、サポートされていない形式が選択または処理されないようにするには、このフィールドに検証ルールを適用します。 ルールは、選択したドロップダウン値を評価し、受け入れられる画像形式に合わせて制約を適用します。
+画像タイプに基づいてファイルを分類する例として、`Image`という名前のドロップダウンフィールドを使用しています。 ドロップダウンには、サポートされている画像拡張機能（JPG/JPEG、GIFなど）を表すオプションが含まれています。 データの一貫性を確保し、サポートされていない形式が選択または処理されないようにするには、検証ルールがこのフィールドに適用されます。 このルールは、選択したドロップダウン値を評価し、受け入れられる画像形式に沿った制約を適用します。
 
 >[!IMPORTANT]
 >
 >ドロップダウンフィールドのみに基づいてルールを作成できます。
 
-選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。 [&#x200B; 定義済みのメタデータコンポーネント &#x200B;](metadata-assets-view.md#property-components) および [&#x200B; フォルダーへのメタデータの割り当て &#x200B;](metadata-assets-view.md#assign-metadata-form-folder) を使用できます。
+選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。 [定義済みのメタデータコンポーネント ](metadata-assets-view.md#property-components)と[ メタデータをフォルダー](metadata-assets-view.md#assign-metadata-form-folder)に割り当てることができます。
 
-### メタデータFormsの構築 {#build-metadata-schema-forms}
+### Build Metadata Forms {#build-metadata-schema-forms}
 
-新しいメタデータフォームを作成するには、次の手順を検討してください。
+新しいメタデータフォームを作成するには、次の手順を検討します。
 
-1. [!DNL Experience Manager] ロゴを選択し、**[!UICONTROL 設定]**/**[!UICONTROL メタデータForms]**/**[!UICONTROL 作成]** に移動します。
+1. [!DNL Experience Manager] ロゴを選択し、**[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** > **[!UICONTROL Create]**&#x200B;に移動します。
 
-1. **[!UICONTROL タイプ]** ドロップダウンから、「**[!UICONTROL ファイル]**」、「**[!UICONTROL フォルダー]**」、「**[!UICONTROL コレクション]** のいずれかの適切なフォームタイプを選択します。
+1. 「**[!UICONTROL タイプ]**」ドロップダウンから、適切なフォームタイプ（**[!UICONTROL ファイル]**、**[!UICONTROL フォルダー]**、または&#x200B;**[!UICONTROL コレクション]**）を選択します。
 
-1. 「**[!UICONTROL 名前]**」フィールドでメタデータフォームのタイトルを指定します。
+1. **[!UICONTROL 名前]** フィールドにメタデータフォームのタイトルを指定します。
 
-1. または、「**[!UICONTROL 既存のフォームテンプレートから選択]**」ドロップダウンから既存のメタデータフォームテンプレートを選択します。
+1. または、**[!UICONTROL 既存のフォームテンプレートから選択]** ドロップダウンから既存のメタデータフォームテンプレートを選択します。
 
-1. 空のメタデータフォームが表示されます。 新規タブを追加します。
+1. 空白のメタデータフォームが表示されます。 新しいタブを追加します。
 
-   ![&#x200B; メタデータフォーム UI](assets/metadata-form-ui.png)
+   ![ メタデータフォーム UI](assets/metadata-form-ui.png)
 
-   * **A:** [!UICONTROL &#x200B; 編集 &#x200B;] または [!UICONTROL &#x200B; プレビュー &#x200B;] を切り替える
-   * **B:** [&#x200B; メタデータフォームのコンポーネント &#x200B;](metadata-assets-view.md#property-components)
-   * **C:** 他のメタデータフォームへの切り替え
-   * **D:** 新しいタブを追加
+   * **A:** [!UICONTROL 編集]または[!UICONTROL  プレビュー]を切り替えます
+   * **B:** [ メタデータフォームのコンポーネント ](metadata-assets-view.md#property-components)
+   * **C:**&#x200B;他のメタデータフォームへの切り替え
+   * **D:**&#x200B;新しいタブを追加
    * **E:** キャンバス
-   * **F:** 選択したコンポーネントの一般設定
-   * 「**G:** ルール」タブ
+   * **F:**&#x200B;選択したコンポーネントの一般設定
+   * **G:** ルール タブ
    * **H:** コンポーネントのプロパティ
 
-このビデオでは、手順のシーケンス [&#x200B; メタデータFormsの設定 &#x200B;](https://video.tv.adobe.com/v/341275) を確認します。
+このビデオでは、一連の手順（[ メタデータ Formsの設定](https://video.tv.adobe.com/v/341275)）を確認できます。
 
 ### 既存のメタデータフォームの変更 {#modify-existing-metadata-form}
 
 既存のメタデータフォームを変更するには、次の手順に従います。
 
-1. 既存のメタデータフォームを開き、フォームに追加する [&#x200B; 事前定義済みのコンポーネント &#x200B;](metadata-assets-view.md#property-components) に移動して、キャンバスに要素をドロップします。
+1. 既存のメタデータフォームを開き、フォームに追加する[事前定義済みコンポーネント ](metadata-assets-view.md#property-components)に移動し、キャンバスに要素をドロップします。
 
-   **画像** のユースケースに従って、ドロップダウンフィールドを追加して画像アセットタイプを定義します。 **設定** で名前およびプロパティのパスを指定し、オプションでフィールドを **[!UICONTROL 読み取り専用]** または **[!UICONTROL 複数選択]** に設定します。
+   **画像**&#x200B;の使用例に従って、画像アセットタイプを定義するドロップダウンフィールドを追加します。 **設定**&#x200B;で名前とプロパティのパスを指定し、オプションでフィールドを&#x200B;**[!UICONTROL 読み取り専用]**&#x200B;または&#x200B;**[!UICONTROL 複数選択]**&#x200B;に設定します。
 
-1. 手動で入力するか、JSON パスを指定するか、CSV ファイルを読み込むことで、ドロップダウンのキー値オプションを指定します。
+1. ドロップダウンのキー値オプションは、手動で入力するか、JSON パスを指定するか、CSV ファイルを読み込むことで指定します。
 
-   * 値を手動で指定するには、「選択肢 **[!UICONTROL の下の「]** 手動で追加 **[!UICONTROL 」を選択し]** 「`Add`」をクリックして、オプションのラベルと値を指定します。 例えば、ビデオ、PDF、画像の各アセットタイプを指定します。
+   * 値を手動で指定するには、**[!UICONTROL 選択肢]**&#x200B;の下の&#x200B;**[!UICONTROL 手動で追加]**&#x200B;を選択し、`Add`をクリックして、オプションのラベルと値を指定します。 例えば、ビデオ、PDF、画像のアセットタイプを指定します。
 
-     ![&#x200B; 画像アセットタイプ &#x200B;](assets/image-asset-type.png)
+     ![画像アセットタイプ ](assets/image-asset-type.png)
 
-   * JSON パスから値を取得するには、「**[!UICONTROL JSON パスで追加]** を選択し、JSON ファイルのパスを指定します。
+   * JSON パスから値を取得するには、**[!UICONTROL JSON パスを使用して追加]**&#x200B;を選択し、JSON ファイルのパスを指定します。
 
      >[!NOTE]
      >
-     >すべての DAM エディターおよび作成者がアクセスできる共有場所に JSON ファイルを必ず保存してください。
+     >すべてのDAM編集者と作成者がアクセスできる共有場所にJSON ファイルを保存します。
 
-     ![JSON パスを使用した選択肢の追加 &#x200B;](assets/add-json-choices.png)
+     ![JSON パスを通じて選択肢を追加](assets/add-json-choices.png)
 
-   * CSV から値を動的に取得するには、「**[!UICONTROL CSV を読み込み]** をクリックして、CSV ファイルのパスを指定します。 [!DNL Experience Manager] は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
+   * CSVから値を動的に取得するには、**[!UICONTROL CSVのインポート]**&#x200B;をクリックし、CSV ファイルのパスを指定します。 [!DNL Experience Manager] は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
 
-     ![CSV を使用した選択肢の追加 &#x200B;](assets/import-csv-choices.png)
+     ![CSV](assets/import-csv-choices.png)を通じて選択肢を追加
 
    >[!NOTE]
    > 
    >両方のオプションは相互に排他的なので、CSV ファイルからオプションを読み込んで手動で編集することはできません。
 
-1. 画像フィールドとその他のフィールド間の依存関係を作成するには、依存フィールドを選択して「**[!UICONTROL ルール]**」タブを開きます。 各コンポーネントは、特定のルールセットをサポートしています。 このユースケースでは、画像アセットタイプのオプションを使用してルールロジックを定義します。
+1. 画像フィールドと他のフィールドの間に依存関係を作成するには、依存フィールドを選択して「**[!UICONTROL ルール]**」タブを開きます。 各コンポーネントは、特定のルールのセットをサポートしています。 このユースケースでは、画像アセットタイプ オプションを使用してルールロジックを定義します。
 
    <!--![Image Asset Type Rule](assets/image-asset-type-rule.png)-->
 
    <!--![rule tab](assets/rule-tab.png)-->
 
-1. **[!UICONTROL 必須]** で、「**[!UICONTROL 新しいルールに基づいて必須]**」オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png) をクリックして、新しいルールを追加します。
+1. **[!UICONTROL 必須]**&#x200B;で、**[!UICONTROL 新しいルール]**&#x200B;に基づいて必須オプションを選択します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    ![ルール](assets/image-required-rule1.png)
 
-   現在のユースケースでは、画像アセットの形式がJPG/JPEG、PNG、GIF、TIFFまたは WEBP の場合に、「アセットタイプ」フィールドは必須です。 さらに、![&#x200B; 編集アイコン &#x200B;](assets/do-not-localize/edit.svg) をクリックしてルールを再定義するか、![&#x200B; 削除アイコン &#x200B;](assets/do-not-localize/delete.svg) をクリックして定義済みのルールを削除します。
+   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、GIF、TIFF、またはWEBPの場合、「アセットタイプ」フィールドが必要です。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-required-rule2.png)
 
-1. **[!UICONTROL 表示]** で、「**[!UICONTROL 表示、新しいルールに基づく]**」オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png) をクリックして、新しいルールを追加します。
+1. **[!UICONTROL 表示]**&#x200B;で、新しいルール **[!UICONTROL に基づいて]**&#x200B;表示オプションを選択します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    >[!NOTE]
    >
-   >**[!UICONTROL 要件]** 条件と **[!UICONTROL 表示]** 条件は互いに独立して適用できます。
+   >**[!UICONTROL 要件]**&#x200B;条件と&#x200B;**[!UICONTROL 表示]**&#x200B;条件を互いに独立して適用できます。
 
    ![ルール](assets/image-visible-rule1.png)
 
-   現在のユースケースでは、画像アセットの形式がJPG/JPEG、PNG またはGIFの場合に、「アセットタイプ」フィールドが表示されます。 さらに、![&#x200B; 編集アイコン &#x200B;](assets/do-not-localize/edit.svg) をクリックしてルールを再定義するか、![&#x200B; 削除アイコン &#x200B;](assets/do-not-localize/delete.svg) をクリックして定義済みのルールを削除します。
+   現在のユースケースでは、画像アセットのフォーマットがJPG/JPEG、PNG、またはGIFの場合、「アセットの種類」フィールドが表示されます。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-visible-rule2.png)
 
-1. **[!UICONTROL ルールに基づいた選択肢]** を選択して、依存関係を作成し、ルールを定義します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png) をクリックして、新しいルールを追加します。
+1. **[!UICONTROL ルールに基づく選択肢]**&#x200B;を選択して、依存関係を作成し、ルールを定義します。 ![ プラスアイコン ](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    ![ルール](assets/image-choices-rule1.png)
 
-   アセットタイプ ドロップダウンのルールベースの選択肢を設定するには、ルールを作成し、依存フィールドとして画像を設定します。 次に、JPG/JPEG、PNG、GIF、TIFFの画像を選択し、WEBP のビデオを選択することで、各画像形式の表示値を定義し、関連するオプションを動的に表示するために、各形式で意図された値のみがチェックされるようにします。 さらに、![&#x200B; 編集アイコン &#x200B;](assets/do-not-localize/edit.svg) をクリックしてルールを再定義するか、![&#x200B; 削除アイコン &#x200B;](assets/do-not-localize/delete.svg) をクリックして定義済みのルールを削除します。
+   アセットタイプ ドロップダウンのルールベースの選択肢を設定するには、ルールを作成し、依存フィールドとして「画像」を設定します。 次に、「JPG/JPEG、PNG、GIF、TIFFの画像」を選択し、「WEBPのビデオ」を選択して、各画像フォーマットの表示値を定義します。各フォーマットに対して目的の値のみがチェックされ、関連するオプションが動的に表示されるようにします。 さらに、![編集アイコン ](assets/do-not-localize/edit.svg)をクリックしてルールを再定義するか、![削除アイコン ](assets/do-not-localize/delete.svg)をクリックして定義されたルールを削除します。
 
    ![ルール](assets/image-choices-rule2.png)
 
-1. 同様に、この手順を繰り返して、「[!UICONTROL &#x200B; アセットタイプ &#x200B;]」フィールドのPDFや Word など他のアセットと、「[!UICONTROL &#x200B; ページ数 &#x200B;]」や「[!UICONTROL &#x200B; 作成者 &#x200B;] などのフィールドとの依存関係を作成します。
+1. 同様に、[!UICONTROL Asset Type] フィールドのPDFやWordなどの他のアセットと、[!UICONTROL Page Count]や[!UICONTROL Author]などのフィールドとの間に依存関係を作成する手順を繰り返します。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。メタデータフォームをフォルダーに適用します。
 
 1. メタデータフォームを適用したフォルダーに移動し、アセットのプロパティページを開きます。 「アセットの種類」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
 
-   ![&#x200B; カスケードメタデータフォーム出力 &#x200B;](assets/cascading-metadata-form-output.png)
+   ![ メタデータ フォーム出力のカスケーディング ](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->Assets ビューアカウントのカスケードメタデータに早期にアクセスするには、[Adobe カスタマーサポートケースを作成して送信 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html) します。
 
 ## 次の手順 {#next-steps}
 
