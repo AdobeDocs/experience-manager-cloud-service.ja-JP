@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 98%
+source-wordcount: '303'
+ht-degree: 93%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 98%
 Experience Manager Assets には、別の IMS 組織にプロビジョニングされた Creative Cloud 権限に接続する機能があり、この機能を使用すると、Express ライブラリや Creative Cloud ライブラリなどの最新の Creative Cloud 統合を AEM Assets で簡単に使用できます。
 
 Creative Cloud 製品と AEM Assets が別の IMS 組織にプロビジョニングされている場合は、異なる Creative Cloud 組織に接続して、2 つのソリューション間で統合されたワークフローを実行できます。
+
+>[!IMPORTANT]
+>
+>Assets ViewとのCreative Cloud Libraries統合は、2026年5月1日に削除されます。
 
 ## 前提条件 {#prerequisites}
 
