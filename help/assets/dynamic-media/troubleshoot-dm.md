@@ -6,10 +6,10 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 96%
+source-wordcount: '1260'
+ht-degree: 87%
 
 ---
 
@@ -38,7 +38,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 
 ### 同期のログ {#synchronization-logging}
 
-同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて &#x200B;](https://localhost:4502/system/console/slinglog) パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
+同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ほとんどの問題の根本原因を特定するには十分なログを利用できますが、Sling コンソール（`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502）を通じて](https://localhost:4502/system/console/slinglog) パッケージのDEBUGへのログを増やして、より多くの情報を収集できます。
 
 ### バージョン管理 {#version-control}
 
@@ -200,7 +200,7 @@ CRXDE Lite で以下を行います。
 1. Dynamic Media 同期フォルダー内の `<sync-folder>/_CSS/_OOTB` フォルダー（例えば `/content/dam/_CSS/_OOTB`）に移動します。
 1. 問題のあるアセットのメタデータノードを見つけます（例えば `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`）。
 1. `dam:scene7*` プロパティがあることを確認します。アセットの同期と公開に成功した場合は `dam:scene7FileStatus` が **PublishComplete** に設定されています。
-1. 次のプロパティと文字列リテラルの値を連結して Dynamic Media に直接アートワークを要求します。
+1. 次のプロパティと文字列リテラルの値を連結して、Dynamic Mediaからアートワークを直接要求します。
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -219,6 +219,34 @@ CRXDE Lite で以下を行います。
 1. 「**再インストール**」を選択します。
 1. クラウドサービスページで、Dynamic Media 設定ページに移動した後、Dynamic Media - Scene7 設定の設定ダイアログボックスを開きます。
 1. 何も変更せず、「**保存**」をクリックします。この保存アクションで、サンプルアセット、ビューアプリセット CSS およびアートワークを作成および同期するロジックが、再度トリガーされます。
+
+### 問題：「帯域幅とストレージ」タブを開くときにエラー#2046が発生する {#error-2046-bandwidth-storage}
+
+**デバッグの方法**
+
+![Dynamic Media Classicの「Bandwidth &amp; Storage」タブにエラー#2046表示されます](assets/2046-error.png)
+
+* Dynamic Media Classic（Scene7）デスクトップアプリケーションで「Bandwidth &amp; Storage」タブを開くと、エラー#2046が発生します。
+* この問題は、Adobe AIR フレームワークで使用されるキャッシュ RSL （Runtime Shared Library）の期限切れのデジタル署名証明書が原因で発生します。
+* このエラーは、ローカル証明書の再検証中に発生します。
+
+**解決策**
+
+ローカルキャッシュをクリアして、更新されたRSL （Runtime Shared Library）をAdobe AIRに強制的にダウンロードさせます。
+
+**macOS**
+
+1. 次の URL に移動します。
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. `.swz`と`.heu`のすべてのファイルを削除します。
+
+**Windows**
+
+1. 次の URL に移動します。
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. フォルダー内のすべてのファイルを削除します。
+
+キャッシュをクリアした後、アプリケーションを再起動します。
 
 ### 問題：ビューアプリセットのオーサリングで画像プレビューが読み込まれない {#image-preview-not-loading}
 
