@@ -22,7 +22,7 @@ ht-degree: 6%
 >
 >プライバシーの問題に対するAdobeの対応と、これがAdobeのお客様にとって何を意味するかについては、次を参照してください。
 >
->* Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス ](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
+>* Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス &#x200B;](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
 >* [Adobeのプライバシーセンター](https://www.adobe.com/jp/privacy.html)
 
 Adobe Experience Manager（AEM）as a Cloud Serviceの場合、Adobeは、HIPAAへの対応を理解するのに役立つドキュメントを提供します。 これらの規制を遵守するのに役立ちます。
@@ -57,7 +57,7 @@ HIPAA対応サービスに対するAdobe BAAの実行について詳しくは、
 >
 >お客様は、Adobe HIPAA対応サービスの使用と、Adobe HIPAA対応サービスがコンプライアンス要件を満たしていることを確認する責任があります。
 
-詳しくは、Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス ](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)を参照してください。
+詳しくは、Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス &#x200B;](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)を参照してください。
 
 ## HIPAA用語 {#hipaa-terminology}
 
@@ -107,7 +107,7 @@ HIPAA対応サービスに対するAdobe BAAの実行について詳しくは、
 
 ### 追加要件 {#additional-requirements}
 
-HIPAA対応として[ リストされているサービス ](#hipaa-readiness-of-services-in-aem-as-a-cloud-service)には、Extended Security for Healthcareの購入が必要です。
+HIPAA対応として[&#x200B; リストされているサービス &#x200B;](#hipaa-readiness-of-services-in-aem-as-a-cloud-service)には、Extended Security for Healthcareの購入が必要です。
 
 Extended Security for Healthcareを購入する場合、次の要件があります。
 
@@ -138,4 +138,4 @@ Extended Security for Healthcareを購入する場合、次の要件がありま
 
 ## セットアップ {#setup}
 
-[実稼動プログラムを作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)すると、「[ セキュリティ」タブに、HIPAA保護を有効にするオプションが表示されます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)。
+[実稼動プログラムを作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)すると、「[&#x200B; セキュリティ」タブに、HIPAA保護を有効にするオプションが表示されます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)。
