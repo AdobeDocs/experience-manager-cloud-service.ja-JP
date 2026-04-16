@@ -703,5 +703,5 @@ AEMが既にSAML Authentication Handlerで設定されており、[data synchron
 1. ユーザーからログインした後、saml認証ハンドラーで作成された古いユーザーを削除できます。
 
 >[!NOTE]
->SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[ データ同期](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
+>SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[&#x200B; データ同期](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
 
