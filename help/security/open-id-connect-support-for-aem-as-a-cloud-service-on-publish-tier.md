@@ -696,12 +696,12 @@ ID トークンでグループ要求を有効にするには、Microsoft Azure P
 
 ## Saml認証ハンドラーからOidc認証ハンドラーへの移行方法
 
-AEMが既にSAML Authentication Handlerで設定されており、[data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっているリポジトリにユーザーが存在する場合、元のSAML ユーザーと新しいOIDC ユーザーの間で競合が発生する可能性があります。
+AEMが既にSAML Authentication Handlerで設定されており、[data synchronization](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっているリポジトリにユーザーが存在する場合、元のSAML ユーザーと新しいOIDC ユーザーの間で競合が発生する可能性があります。
 
 1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)を設定し、`idpNameInPrincipals`SlingUserInfoProcessor[設定で](#configure-slinguserinfoprocessor)を有効にします
 1. 外部グループ [の](#configure-acl-for-external-groups)ACLを設定します。
 1. ユーザーからログインした後、saml認証ハンドラーで作成された古いユーザーを削除できます。
 
 >[!NOTE]
->SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[&#x200B; データ同期](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
+>SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[&#x200B; データ同期](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
 
