@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2567e58c599a27778aa86c94b13ceb80facd681d
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 67%
+source-wordcount: '1521'
+ht-degree: 66%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 67%
 
 1. 「**続行**」をクリックします。
 
-1. 「**セキュリティ**」タブで、使用するセキュリティオプションを選択します。 [&#x200B; セキュリティ &#x200B;](#security)を参照してください。
+1. 「**セキュリティ**」タブで、使用するセキュリティオプションを選択します。 [ セキュリティ ](#security)を参照してください。
 
    実稼動用に設定ウィザード ![の「](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png) セキュリティ」タブ
 
@@ -70,7 +70,7 @@ ht-degree: 67%
 
 1. 「**配信タイプ**」タブでは、前の手順で選択したソリューションとアドオンに基づいて事前入力されていることに注意してください。 **AEM パブリッシュ**&#x200B;を選択した場合は、後でオンデマンドでプロビジョニングできます。
 
-   ![配信タイプ タブ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+   ![配信タイプ タブ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
@@ -111,7 +111,7 @@ ht-degree: 67%
 アドビの HIPAA 準拠の WAF-DDOS（web アプリケーションファイアウォール - 分散型サービス拒否）により、脆弱性から保護するための多層アプローチの一環としてクラウドベースのセキュリティが促進されます。
 
 * **HIPAA** – このオプションを使用すると、AdobeのHIPAA対応ソリューションの実装が有効になります。
-   * アドビの HIPAA 対応ソリューションの実装について詳しくは、[こちら](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)を参照してください。
+   * Adobe Experience Manager as a Cloud Service[および](/help/compliance/hipaa/hipaa-readiness.md)AdobeのHIPAA対応ソリューション実装[の](https://www.adobe.com/jp/trust/compliance/hipaa-ready.html)HIPAA対応の詳細について説明します。
    * プログラムの作成後に HIPAA を有効または無効にすることはできません。
 * **WAF-DDOS 保護** - このオプションは、ルールを介して web アプリケーションファイアウォールを有効にし、アプリケーションを保護します。
    * 有効化されると、WAF-DDOS 保護は、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)で設定できます。
@@ -123,11 +123,11 @@ ht-degree: 67%
 >
 >ここで説明する柔軟なパブリッシュ層はBetaにあります。 Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
 
-組織で柔軟なパブリッシュ層機能が有効になっている場合は、プログラムの環境にパブリッシュ層が必要かどうかを設定できます。 このオプションは、**実稼動用に設定** ダイアログボックスの「**配信タイプ**」タブ（[&#x200B; プログラム作成中](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)）に表示されます。
+組織で柔軟なパブリッシュ層機能が有効になっている場合は、プログラムの環境にパブリッシュ層が必要かどうかを設定できます。 このオプションは、**実稼動用に設定** ダイアログボックスの「**配信タイプ**」タブ（[ プログラム作成中](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)）に表示されます。
 
-実稼動用に設定ウィザードの「![配信タイプ」タブ &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+実稼動用に設定ウィザードの「![配信タイプ」タブ ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
-**プログラムを編集** ダイアログボックスにも表示されます（[&#x200B; プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)する場合）。
+**プログラムを編集** ダイアログボックスにも表示されます（[ プログラムを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)する場合）。
 
 ![配信タイプのオプションが表示されたプログラムダイアログボックスを編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
 
