@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 99%
+source-wordcount: '1916'
+ht-degree: 97%
 
 ---
 
@@ -64,6 +64,10 @@ ht-degree: 99%
 | フォルダーを削除 | ✓ | ✓ | - | ✓ | - | - |
 | フォルダーをコピー | ✓ | ✓ | - | ✓ | - | - |
 | フォルダーを移動 | ✓ | ✓ | - | ✓ | - | - |
+
+>[!NOTE]
+>
+> Adobeでは、AEMでのバイナリ処理を避けるというベストプラクティスに違反しているため、アセットパッケージのアップロードはお勧めしません。 JCR パッケージを介してアセットをアップロードしても、AEM as a Cloud Serviceでそれらのアセットで処理がトリガーされることはありません。
 
 ## アセットのアップロード {#asset-upload}
 
