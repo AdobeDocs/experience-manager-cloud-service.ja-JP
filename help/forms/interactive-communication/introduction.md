@@ -57,7 +57,7 @@ ht-degree: 5%
 
 インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、お客様の環境IDと組織IDを記載した公式の電子メール IDから[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)に電子メールを送信します。 Adobeが登録を確認したら、[&#x200B; サービスへのオンボーディング &#x200B;](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 次の手順
 
