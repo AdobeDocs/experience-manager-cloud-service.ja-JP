@@ -6,7 +6,7 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 99%
@@ -38,11 +38,21 @@ MSM の概念の詳細な概要については、[コンテンツの再利用：
 
 MSM for Content Fragments をコンテンツフラグメントエディター内の機能と組み合わせると、フィールドレベルで継承を解除および復元できます。
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >MSM for Content Fragments は、**Assets** コンソールからコンテンツフラグメントを使用している際にのみ使用できます。
 >
 >MSM の機能は、**コンテンツフラグメント**&#x200B;コンソールを使用している際は&#x200B;*使用できません*。
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## 方法 {#how-to}
 

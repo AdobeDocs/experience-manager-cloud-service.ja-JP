@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 86%
@@ -65,8 +65,8 @@ ht-degree: 86%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
-      * コンテンツフラグメントの[&#x200B; ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
+      * コンテンツフラグメントの[ ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -94,7 +94,7 @@ ht-degree: 86%
 コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
 * **タイトル**
-   * 南京錠アイコンは、フラグメントが[&#x200B; チェックアウト &#x200B;](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
+   * 南京錠アイコンは、フラグメントが[ チェックアウト ](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
    * 情報（i） アイコンを使用すると、右側のパネルで、フラグメント固有の追加情報にすばやくアクセスできます。
 * **名前**
    * エディターでフラグメントを開くためのリンクを提供します。
@@ -192,6 +192,15 @@ ht-degree: 86%
 * **名前の変更**
 * **[チェックアウトとチェックイン](#check-out-and-check-in)**
 * **[削除](#deleting-a-fragment)**（非公開のフラグメントでのみ使用できます）
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+-->
 
 >[!NOTE]
 >
@@ -392,7 +401,7 @@ FolderC
 
 * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-* **[プレビューサービス](/help/headless/deployment/architecture.md)** - [&#x200B; プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
+* **[プレビューサービス](/help/headless/deployment/architecture.md)** - [ プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
 
   >[!CAUTION]
   >
@@ -489,8 +498,8 @@ FolderC
 
 AEMを活用すると、次のことが可能になります。
 
-* コンテンツフラグメントを[&#x200B; チェックアウト &#x200B;](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
-* [&#x200B; チェックイン &#x200B;](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
+* コンテンツフラグメントを[ チェックアウト ](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
+* [ チェックイン ](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
 
 フラグメントをチェックアウトすると、フラグメントはロックされます（`jcr:lock`）。 **タイトル**&#x200B;列の南京錠アイコンは、ロックされたフラグメントを示します。 南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
 
@@ -510,7 +519,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[&#x200B; チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
+>コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[ チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
 
 ### コンテンツフラグメントのチェックアウト {#check-out-a-content-fragment}
 
@@ -541,7 +550,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->Assets [強制チェックイン &#x200B;](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
+>Assets [強制チェックイン ](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
