@@ -178,7 +178,7 @@ AEM 側で Oauth を設定する前に、次の手順で accessToken と refresh
 1. Outlook の場合、`smtp.host` 設定値は `smtp.office365.com` です
 1. 実行時に、`refreshToken values` および `clientSecret` 秘密鍵を渡すには、[Cloud Manager 変数 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) を使用するか、[Cloud Manager を使用して変数を追加](/help/implementing/cloud-manager/environment-variables.md)します。 変数 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` と `SECRET_SMTP_OAUTH_CLIENT_SECRET` の値を定義する必要があります。
 
-SMTPとOAuth2を使用してもメールが機能しない場合は、[ トラブルシューティング ](#troubleshooting)を参照してください。
+SMTPとOAuth2を使用してもメールが機能しない場合は、[&#x200B; トラブルシューティング &#x200B;](#troubleshooting)を参照してください。
 
 ## Microsoft® Outlook用Microsoft Graph API {#microsoft-graph-api}
 
