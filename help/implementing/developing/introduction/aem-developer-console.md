@@ -1,28 +1,35 @@
 ---
 title: AEM as a Cloud Service Developer Console - Beta
-description: CRXDE Lite と AEM as a Cloud Service Developer Console について説明します。
+description: AEM as a Cloud Service Developer Consoleと、クラウド環境のデバッグ用の読み取り専用ツールについて説明します。
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 15%
 
 ---
 
+
 # AEM as a Cloud Service Developer Console（Beta） {#developer-console}
 
->[!NOTE]
->
->この記事では、現在ベータ版となっている AEM Cloud Service Developer Console の改良されたエクスペリエンスについて説明します。一部の顧客は、クラシック UI の上部にあるボタンをクリックしてアクセスできます。アドビでは、皆様からのフィードバックを `aemcs-new-devconsole-ui-beta@adobe.com` までお送りいただければ幸いです。従来の AEM Developer Console について詳しくは、[この記事](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
-
-AEM as a Cloud Service Developer Console には、クラウド環境でデバッグするツールセットが含まれます。Cloud Manager の環境ごとのリンクからアクセスできます。
+AEM as a Cloud Service Developer Consoleには、クラウド環境のデバッグ用の読み取り専用ツールのセットが含まれています。 Cloud Managerの環境ごとのリンクからアクセスでき、バンドル、OSGi設定、サービス、サーブレットなどを表示する機能を提供しています。
 
 >[!NOTE]
->AEM as a Cloud Service Developer Console を、同様の名前の [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) と混同しないでください。
 >
+>この記事では、現在ベータ版となっている AEM Cloud Service Developer Console の改良されたエクスペリエンスについて説明します。
+>
+>* 一部のユーザーは、現在のDeveloper Consoleの上部にあるボタンを使用して、新しいコンソールにアクセスできます。
+>* Adobeでは、`aemcs-new-devconsole-ui-beta@adobe.com`さんに送信できるフィードバックを歓迎します。
+>* 現在のAEM Developer Consoleに関するドキュメントについては、[この記事を参照してください。](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
+>* AEM as a Cloud Service Developer Consoleは、同様の名前の&#x200B;[*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)と混同しないでください。
 
+>[!TIP]
+>
+>Developer Consoleは読み取り専用です。 SDKを使用してローカル開発に取り組んでおり、OSGi設定またはリポジトリコンテンツを変更する必要がある場合は、次を使用できます。
+>
+>* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -40,71 +47,89 @@ There are multiple ways of accessing it:
    ```
 -->
 
-開発者は、以下に説明する機能にアクセスできます。
+## 前提条件 {#prerequisites}
 
-## OSGi バンドル {#osgi-bundles}
+Developer Consoleには、特定のプログラムで特定の役割を持つユーザーのみがアクセスできます。
 
-![Developer Console の新しい OSGi バンドル画面](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+* 実稼動プログラムの場合、Adobe Admin Consoleの「Cloud Manager – 開発者ロール」によってDeveloper Consoleへのアクセスが制御されます。
+* サンドボックスプログラムの場合、AEM へのアクセス権を付与する製品プロファイルを持つすべてのユーザーが Developer Console を使用できます。
+* すべてのプログラムの場合、ステータスダンプとリポジトリブラウザーへのアクセスには「Cloud Manager - 開発者の役割」が必要です。
 
-* 選択した環境タイプにデプロイされている OSGI バンドルの概要。全文検索が可能です。
-* 環境内のバンドルの実際の状態に関する情報を取得するのに役立ちます。書き出されたパッケージ、読み込まれたパッケージ、使用されたサービスなどの情報を取得できます。
-* 開発者は、実際の環境で検証し、バンドルが期待どおりに動作するかどうかを確認したいと考えています。
-* **ユースケースの例：**&#x200B;バンドル内で依存関係のバージョン範囲が指定されています。依存関係に問題が発生しています。バンドルに紐付けられている依存関係のバージョンを確認したいとします。確認するには、バンドルの詳細に移動し、「バンドル／パッケージを読み込み」を使用して、実行時に使用されているバンドルバージョンまたはパッケージバージョンを確認します。この情報を使用して、Maven 依存関係のバージョン範囲やコードを調整できます。
+オーサーサービスとパブリッシュサービスの両方のデータを表示するには、両方のサービスで「AEM Users」または「AEM Administrators Product Profile」にユーザーを割り当てる必要があります。
 
-## Java パッケージ {#java-packages}
+ユーザー権限の設定について詳しくは、[Cloud Manager ドキュメントを参照してください。](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
-![Developer Console UI の「Java パッケージ」タブ](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)
+## 「OSGi バンドル」タブ {#osgi-bundles}
 
-* 環境の OSGi システムでアクティブなパッケージを検索するための検索プロンプト。この場所では、どのバンドルがパッケージを書き出す（または提供する）バンドルと、パッケージを読み込む（または使用する）バンドルを確認できます。また、場合によっては、問題を引き起こす可能性のある重複パッケージ（同じパッケージ、異なるバージョン）を確認することもできます。
-* **ユースケースの例：**[動的クラスローダー](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html)を使用するカスタムサービスが、バージョンを指定せずにクラスを読み込みます。複数のバンドルが異なるバージョンを書き出すので、実装が異なり、動作が変わります。開発者は、機能モデルを分析することなく、環境内のパッケージを確認したいと考えています。パッケージを検索し、書き出されたすべてのバージョンを確認します。この機能により、より適切なバージョン範囲を入力するための情報が得られます。
+「**OSGi バンドル**」タブには、選択した環境にデプロイされたOSGi バンドルの概要が表示され、フルテキスト検索が提供されます。
 
-## サーブレット {#servlets}
+Developer Consoleの![新しいOSGi バンドル画面](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
-![Developer Console UI の「サーブレット」タブ](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)
+* このタブには、書き出されたパッケージ、読み込まれたパッケージ、使用済みのサービスなど、環境内のバンドルの実際の状態に関する情報が表示されます。
+* バンドルのステータスを確認して、バンドルが期待どおりに動作するかどうかを確認するのが理想的です。
 
-* セレクターでパスを指定し、GET または POST で拡張子を指定できる検索プロンプト。次に、Sling でリクエストを処理するサーブレットの結果を、優先順位に従って表示します。
-* **ユースケースの例：**&#x200B;リクエストに応じてアクティブ化し、応答に出力を印刷する OSGi サーブレットがあります。ただし、期待される出力ではなく、応答では空を返します。より具体的なセレクター、`resourceType`、拡張機能またはランキングにより、他のサーブレットが自分のサーブレットよりも優先されていないか確認する必要があります。期待されるパスを検索すると、より高いランクでアクティブになっている別のサーブレットが見つかります。次に、セレクターを追加するなどして、自分のサーブレットを上位ランクにできるかどうかを判断します。
+**使用例：** バンドルの依存関係のバージョン範囲を指定するとします。 ただし、依存関係に問題があり、実際にバンドルで使用されている依存関係のバージョンを確認する必要があります。 確認するには、Developer Consoleを開き、**OSGi バンドル** タブのバンドル名をクリックしてバンドルの詳細にアクセスし、**バンドルの読み込み** アコーディオンを使用して、実行時に使用されているバンドルバージョンまたはパッケージバージョンを確認します。 この情報を使用して、Maven 依存関係のバージョン範囲やコードを調整できます。
 
-## サービス {#services}
+## 「Java パッケージ」タブ {#java-packages}
 
-![Developer Console UI の「サービス」タブ](/help/implementing/developing/introduction/assets/services-dev-console.png)
+**Java パッケージ** タブには、環境のOSGi システムでアクティブなパッケージを検索するための検索フィールドが用意されています。
 
-* OSGi コンポーネントビューに類似していますが、サービスに基づいています。特定のプロパティで指定されているサービスを簡単に検索できます。
+Developer Console UI](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)の「![Java パッケージ」タブ
 
-## OSGi のコンポーネント {#osgi-components}
+* パッケージを書き出す（または提供する）バンドルと、パッケージを読み込む（または使用する）バンドルを確認できます。
+* また、場合によっては、問題を引き起こす可能性のある重複パッケージ（同じパッケージ、異なるバージョン）を確認することもできます。
 
-![Developer Console UI の「OSGi コンポーネント」タブ](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)
+**使用例：** [動的クラスローダー](https://sling.apache.org/apidocs/sling9/org/apache/sling/commons/classloader/DynamicClassLoaderManager.html)を使用するカスタムサービスが、バージョンを指定せずにクラスを読み込むとします。 複数のバンドルが異なるバージョンを書き出すので、実装が異なり、動作が変わります。 機能モデルを分析せずに、環境内のどのパッケージにあるかを確認する必要があります。 このタブを使用すると、パッケージを検索して書き出したすべてのバージョンを表示し、より良いバージョン範囲を使用できます。
 
-* 選択した環境タイプに存在するOSGi コンポーネントの概要。全文検索が可能です。
-* 環境内の OSGi コンポーネントのライブ状態を取得できます。コンポーネントが満たすサービス、コンポーネントを提供するバンドル、アクティブ化タイプ（即時または遅延）を確認できます。
-* **ユースケースの例 1：**&#x200B;開発者として、設定でアクティブ化されたコンポーネントが特定の環境でアクティブかどうかを確認する必要があります。その理由は、期待される動作が発生していないからです。検索でコンポーネントを検索し、そのコンポーネントがアクティブかどうかを確認するだけです。
-* **ユースケースの例 2：**&#x200B;環境で使用可能な標準コンポーネントを確認し、そのコンポーネントがサポートするサービスを特定したいと考えています。この機能は、Adobe Experience Manager as a Cloud Service について詳しく理解するのに役立ちます。これらは、コンポーネントリストでチェックアウトできます。
+## 「設定」タブ {#configurations}
 
-## 統合 {#integrations}
+「**設定**」タブには、環境でアクティブな設定の検索可能なリストが表示されます。 クリックして詳細ページを表示すると、各設定で提供されるプロパティを確認できます。
 
-![Developer Console UI の「統合」タブ](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)
+Developer Console UI](/help/implementing/developing/introduction/assets/configurations-dev-console.png)の「![設定」タブ
 
-* 管理者は、サービス資格情報と開発者トークンを生成、名前変更、削除する権限を持ちます。
+* **使用例：**&#x200B;指定した設定が実際に環境に存在することを確認するとします。 コンソールで「**設定**」タブを検索し、設定が見つからない場合は、機能モデル、設定実行モード、フォルダーを確認できます。
 
-## リポジトリ {#repository}
+## 「サーブレット」タブ {#servlets}
 
-* [リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を開きます。
+「**サーブレット**」タブには、セレクターを使用したパスと、GETまたはPOSTを使用した拡張機能を指定できる検索フィールドがあります。 次に、Slingでリクエストを処理するサーブレットのリストを優先順に提供します。
 
-## ステータスダンプ／クエリ {#status-dumps-queries}
+Developer Console UI](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)の「![ サーブレット」タブ
 
-![Developer Console UI の「ステータスダンプ／クエリ」タブ](/help/implementing/developing/introduction/assets/status-dumps-queries.png)
+**使用例：** リクエスト時にアクティブ化し、応答に出力を出力するOSGi サーブレットがあるとします。 ただし、期待される出力の代わりに、空の応答が返されます。 より特定のセレクター、`resourceType`、拡張機能、またはランキングにより、サーブレットよりも他のサーブレットが優先されているかどうかを確認する必要があります。 予想されるパスを検索すると、別のサーブレットがより高いランクでアクティブであることがわかります。 次に、例えばセレクターを追加して、サーブレットのランクを上げることができるかどうかを判断できます。
 
-* バンドル、パッケージ、設定、サービス、コンポーネント、Sling ジョブまたは Oak 定義の現在の状態の完全なテキストまたは JSON ダンプ。
-* 特に、開発者が予期せぬ状態を発見し、その状態を他の開発者に通信したり、文書化したりしたい場合に役立ちます。ダンプをダウンロードすることで、状態のスナップショットを取得し、後で参照できます。
+## 「サービス」タブ {#services}
 
-## 設定 {#configurations}
+「**サービス**」タブには、選択した環境に存在するサービスの概要が表示され、全文検索が提供されます。
 
-![Developer Console UI の「設定」タブ ](/help/implementing/developing/introduction/assets/configurations-dev-console.png)
+Developer Console UI](/help/implementing/developing/introduction/assets/services-dev-console.png)の「![ サービス」タブ
 
-* 環境内でアクティブな設定の検索可能なリスト。詳細ページをチェックアウトすることで、設定で提供されるプロパティを確認できます。
-* **ユースケースの例：**&#x200B;開発者は、指定した設定が環境に実際に存在するかどうかを確認したいと考えています。設定が不足している場合は、機能モデル、設定の実行モードまたはフォルダーを確認できます。
+サービスをクリックして、その詳細を表示します。
 
-実稼動プログラムの場合、Adobe Admin Console の「Cloud Manager - 開発者の役割」が AEM as a Cloud Service Developer Console へのアクセスを制御します。 サンドボックスプログラムの場合、AEM へのアクセス権を付与する製品プロファイルを持つすべてのユーザーが Developer Console を使用できます。すべてのプログラムの場合、ステータスダンプとリポジトリブラウザーへのアクセスには「Cloud Manager - 開発者の役割」が必要です。 オーサーサービスとパブリッシュサービスの両方のデータを表示するには、両方のサービスでユーザーが AEM ユーザーまたは AEM 管理者の製品プロファイルに割り当てられている必要もあります。
+## 「OSGi コンポーネント」タブ {#osgi-components}
 
-ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)を参照してください。
+「**OSGi コンポーネント**」タブには、選択した環境タイプに存在するOSGi コンポーネントの概要が表示され、フルテキスト検索が可能です。 環境内のOSGi コンポーネントのライブ状態と、それが満たすサービス、提供するバンドル、およびアクティベーションタイプ（即時または遅延）を確認できます。
 
+Developer Console UI](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)の「![OSGi コンポーネント」タブ
+
+* **ユースケースの例1:**&#x200B;設定でアクティブ化されたコンポーネントが、予期しない動作が発生したため、特定の環境でアクティブであるかどうかを確認する必要があるとします。 検索でコンポーネントを検索し、そのコンポーネントがアクティブかどうかを確認するだけです。
+* **ユースケースの例2:** Adobe Experience Manager as a Cloud Serviceの詳細を知るために、環境内で使用できる標準のコンポーネントを確認し、サポートしているサービスを特定するとします。 コンポーネントリストでコンポーネントを確認できます。
+
+## 「統合」タブ {#integrations}
+
+「**統合**」タブでは、管理者がサービス資格情報と開発者トークンを生成、名前変更、削除できます。
+
+Developer Console UI](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)の「![統合」タブ
+
+## 「リポジトリ」タブ {#repository}
+
+「**リポジトリ**」タブは、[ リポジトリブラウザーを開きます。](/help/implementing/developing/tools/repository-browser.md)
+
+## ステータスダンプ/クエリタブ {#status-dumps-queries}
+
+「**ステータスダンプ / クエリ**」タブを使用すると、バンドル、パッケージ、設定、サービス、コンポーネント、Sling ジョブ、またはOak定義の現在の状態のフルテキストまたはJSON ダンプをダウンロードできます。
+
+Developer Console UI](/help/implementing/developing/introduction/assets/status-dumps-queries.png)の「![ ステータスダンプ / クエリ」タブ
+
+[Query Performance ツールを開くこともできます。](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
+
+* **使用例：**&#x200B;このタブは、予期しない状態が発生し、他の開発者に通知または文書化したい場合に特に便利です。 ダンプをダウンロードすることで、状態のスナップショットを取得し、後で参照できます。
