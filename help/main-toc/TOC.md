@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: e1142a763f44a2c797f1859c2ad44807bc2935b9
+source-git-commit: 6e0455e325e7988a9f7081878dff6e568479c322
 workflow-type: tm+mt
-source-wordcount: '7245'
-ht-degree: 93%
+source-wordcount: '7384'
+ht-degree: 90%
 
 ---
 
@@ -33,10 +33,11 @@ ht-degree: 93%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [リリースノート（2026.3.0）](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [リリースノート（2026.2.0）](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [リリースノート（2026.1.0）](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
-         + [2025.12.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)
+         + [ リリースノート（2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)）
          + [2025.11.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md)
          + [2025.10.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md)
          + [2025.9.0 のリリースノート](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md)
@@ -260,17 +261,18 @@ ht-degree: 93%
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + [ユニバーサルエディターのリリースノートのプレビュー](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
-         + [リリースノート（2026.04.02）](/help/release-notes/universal-editor/2026/2026-04-02.md)
-         + [リリースノート（2026.03.26）](/help/release-notes/universal-editor/2026/2026-03-26.md)
-         + [リリースノート（2026.03.19）](/help/release-notes/universal-editor/2026/2026-03-19.md)
-         + [リリースノート（2026.03.12）](/help/release-notes/universal-editor/2026/2026-03-12.md)
-         + [リリースノート（2026.03.05）](/help/release-notes/universal-editor/2026/2026-03-05.md)
-         + [リリースノート（2026.02.26）](/help/release-notes/universal-editor/2026/2026-02-26.md)
-         + [リリースノート（2026.02.19）](/help/release-notes/universal-editor/2026/2026-02-19.md)
-         + [リリースノート（2026.02.13）](/help/release-notes/universal-editor/2026/2026-02-13.md)
-         + [リリースノート（2026.02.05）](/help/release-notes/universal-editor/2026/2026-02-05.md)
-         + [リリースノート（2026.01.29）](/help/release-notes/universal-editor/2026/2026-01-29.md)
-         + [リリースノート（2026.01.22）](/help/release-notes/universal-editor/2026/2026-01-22.md)
+         + [2026.04.09 リリースノート](/help/release-notes/universal-editor/2026/2026-04-09.md)
+         + [2026.04.02 リリースノート](/help/release-notes/universal-editor/2026/2026-04-02.md)
+         + [2026.03.26 リリースノート](/help/release-notes/universal-editor/2026/2026-03-26.md)
+         + [2026.03.19 リリースノート](/help/release-notes/universal-editor/2026/2026-03-19.md)
+         + [2026.03.12 リリースノート](/help/release-notes/universal-editor/2026/2026-03-12.md)
+         + [2026.03.05 リリースノート](/help/release-notes/universal-editor/2026/2026-03-05.md)
+         + [2026.02.26 リリースノート](/help/release-notes/universal-editor/2026/2026-02-26.md)
+         + [2026.02.19 リリースノート](/help/release-notes/universal-editor/2026/2026-02-19.md)
+         + [2026.02.13 リリースノート](/help/release-notes/universal-editor/2026/2026-02-13.md)
+         + [2026.02.05 リリースノート](/help/release-notes/universal-editor/2026/2026-02-05.md)
+         + [2026.01.29 リリースノート](/help/release-notes/universal-editor/2026/2026-01-29.md)
+         + [2026.01.22 リリースノート](/help/release-notes/universal-editor/2026/2026-01-22.md)
          + [リリースノート（2026.01.15）](/help/release-notes/universal-editor/2026/2026-01-15.md)
       + 2025 {#2025}
          + [リリースノート（2025.12.12）](/help/release-notes/universal-editor/2025/2025-12-12.md)
@@ -334,7 +336,7 @@ ht-degree: 93%
 + Experience Hub {#experience-hub}
    + [Experience Hub について](/help/experience-hub.md)
 + オンボーディング {#onboarding}
-   + [ここから開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
+   + [ここから始める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)
    + オンボーディングジャーニー {#journey}
       + [オンボーディングジャーニーの概要](/help/journey-onboarding/overview.md)
       + [オンボーディングの準備](/help/journey-onboarding/preparation.md)
@@ -567,6 +569,7 @@ ht-degree: 93%
             + [言語コピーウィザード](/help/sites-cloud/administering/translation/wizard.md)
             + [翻訳するコンテンツの特定](/help/sites-cloud/administering/translation/rules.md)
             + [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md)
+            + [AI翻訳統合の設定](/help/sites-cloud/administering/translation/ai-translation-integration.md)
             + [Microsoft Translator への接続](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻訳のベストプラクティス](/help/sites-cloud/administering/translation/best-practices.md)
       + [タグの管理](/help/sites-cloud/administering/tags.md)
@@ -580,23 +583,22 @@ ht-degree: 93%
       + [Adobe Target へのコンテンツフラグメントの書き出し](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Adobe Campaign との統合](/help/sites-cloud/integrating/campaign.md)
-      + [Adobe Journey Optimizer のコンテンツフラグメントの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
+      + [Adobe Journey Optimizerでのコンテンツフラグメントの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=ja)
    + [AEM as a Cloud Service の運用テレメトリ](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [コンテクストの検証](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概要と新機能](/help/assets/overview.md)
-   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] アーキテクチャ](/help/assets/architecture.md)
    + [サポートされているファイル形式](/help/assets/file-format-support.md)
    + [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
+   + [ [!DNL Assets] でのアクセシビリティ](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [AEM Assets の問題のトラブルシューティング](/help/assets/troubleshoot-aem-assets.md)
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
    + デジタルアセットの管理 {#manage}
-      + [Adobe アプリケーションでAEM コンテンツにアクセスするためのContent Advisor](/help/assets/content-advisor-adobe-applications.md)
       + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)
       + [マルウェア検出](/help/assets/malware-detection.md)
@@ -612,10 +614,10 @@ ht-degree: 93%
       + [AIが生成したメタデータでコンテンツの発見を強化](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [ビデオのスマートタグ](/help/assets/smart-tags-for-videos.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
-      + [&#x200B; [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
+      + [ [!DNL Adobe Stock] アセットを使用する](/help/assets/aem-assets-adobe-stock.md)
       + [コレクションを管理](/help/assets/manage-collections.md)
       + [メタデータの概要](/help/assets/manage-metadata.md)
-      + [&#x200B; [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
+      + [ [!DNL Adobe Creative Cloud] との統合](/help/assets/aem-cc-integration-best-practices.md)
       + [メタデータの追加と編集](/help/assets/meta-edit.md)
       + [フォルダーのアセットとコレクションのレビュー](/help/assets/bulk-approval.md)
       + [アセットインサイトの使用と設定](/help/assets/assets-insights.md)
@@ -628,21 +630,9 @@ ht-degree: 93%
       + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
       + [アセットへの透かしの適用](/help/assets/watermark-assets.md)
-      + [&#x200B; [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
+      + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
       + [画像のカラータグ](/help/assets/color-tag-images.md)
       + [PDF ドキュメントの管理](/help/assets/manage-pdf-documents.md)
-      + マイクロフロントエンドアセットセレクター {#asset-selector}
-         + [アセットセレクターの概要](/help/assets/overview-asset-selector.md)
-         + アセットセレクターの統合 {#asset-selector-integration}
-            + [アセットセレクターの統合の概要](/help/assets/integrate-asset-selector.md)
-            + [アセットセレクターとアドビアプリケーションの統合](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [アセットセレクターとアドビ以外のアプリケーションの統合](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [OpenAPI 機能を備えた Dynamic Media とのアセットセレクターの統合](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-         + [アセットセレクターのプロパティ](/help/assets/asset-selector-properties.md)
-         + [アセットセレクターの例](/help/assets/asset-selector-examples.md)
-         + [アセットセレクターのカスタマイズ](/help/assets/asset-selector-customization.md)
-         + [アセットセレクターのアップロード](/help/assets/asset-selector-upload.md)
-         + [アセットセレクターのコレクション](/help/assets/asset-selector-collections.md)
       + [マイクロフロントエンドの宛先セレクター](/help/assets/destination-selector.md)
    + [!DNL Assets] の設定、管理、拡張 {#admin}
       + [重複アセットの検出](/help/assets/detect-duplicate-assets.md)
@@ -663,9 +653,15 @@ ht-degree: 93%
       + [アセットメタデータの読み込みと書き出し](/help/assets/metadata-import-export.md)
       + [アセットのアップロード制限の設定](/help/assets/configure-asset-upload-restrictions.md)
    + アセットの共有と配布 {#brand-portal}
-      + [&#x200B; [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [&#x200B; [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
-      + [アセットを [!DNL Brand Portal] から  [!DNL Assets] に公開する](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
+      + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [ [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
+      + [ [!DNL Brand Portal] から [!DNL Assets]までのアセットを公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
+
+   + コンテンツアドバイザー {#content-advisor}
+      + [AdobeおよびAdobe以外のアプリケーションからAEM コンテンツにアクセスするためのContent Advisor](/help/assets/integrate-adobe-non-adobe-applications.md)
+      + [Content Advisor プロパティ](/help/assets/content-advisor-properties.md)
+      + [Content Advisor カスタマイズ](/help/assets/content-advisor-customization.md)
+      + [OpenAPI 機能を備えた Dynamic Media の統合](/help/assets/integrate-dynamic-media-open-api.md)
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
       + [コンテンツフラグメントと GraphQL のヘッドレス配信](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -705,8 +701,8 @@ ht-degree: 93%
       + [Dynamic Media ビューアプリセットを管理する](/help/assets/dynamic-media/managing-viewer-presets.md)
       + [Dynamic Media ビューアプリセットを適用する](/help/assets/dynamic-media/viewer-presets.md)
       + [バッチセットプリセット](/help/assets/dynamic-media/batch-set-presets-dm.md)
-      + [Dynamic Media を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-      + [Dynamic Media Classic を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+      + [Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+      + [Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
       + [クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media アセットを配信](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
@@ -807,11 +803,11 @@ ht-degree: 93%
    + Figma との統合 {#integration-figma}
       + [Figma とのネイティブ統合](/help/assets/integrate-aem-assets-with-figma.md)
    + Adobe Workfront との統合 {#integrations}
-      + [&#x200B; [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
+      + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [アセットメタデータマッピングの設定](/help/assets/configure-asset-metadata-mapping.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
-      + [&#x200B; [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
    + Adobe Express との統合 {#integration-adobe-express}
       + [Adobe Express とのネイティブ統合](/help/assets/native-integration-adobe-express.md)
@@ -835,7 +831,7 @@ ht-degree: 93%
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
-      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] &#x200B;](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] ](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
       + [Adobe Experience Software Development Kit（AEM SDK）の機能切替スイッチを有効にする](/help/forms/enable-feature-toggle.md)
@@ -855,10 +851,10 @@ ht-degree: 93%
       + フォームデータモデル {#use-form-data-model}
          + [AEM Forms をデータベースまたはデータソースに接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
-         + [&#x200B; [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+         + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
-         + [&#x200B; [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-         + [&#x200B; [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
+         + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
+         + [ [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
          + [アダプティブフォームをAzure SQL Databaseに接続する](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Salesforce クラウドサービスの設定](/help/forms/configure-salesforce.md)
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
@@ -874,14 +870,14 @@ ht-degree: 93%
          + [アダプティブフォームとフォームデータモデルの統合](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [アダプティブフォームと Microsoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
          + アダプティブフォームを Microsoft® SharePoint に接続{#connect-to-sharepoint}
-            + [Microsoft へのアダプティブフォームの接続](/help/forms/configure-submit-action-sharepoint.md)
+            + [アダプティブフォームを Microsoft® SharePoint に接続](/help/forms/configure-submit-action-sharepoint.md)
             + [SharePoint ドキュメントライブラリへの送信](/help/forms/connect-forms-to-sharepoint-document-library.md)
             + [SharePoint リストへの送信](/help/forms/connect-forms-to-sharepoint-list.md)
             + [認証範囲を使用した制限付きアクセスでの SharePoint サイトの設定](/help/forms/configure-sharepoint-site-limited-access.md)
          + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Azure Blob Storage へのアダプティブフォームの送信](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [アダプティブフォームの REST エンドポイント送信アクションへの送信の設定](/help/forms/configure-submit-action-restpoint.md)
-         + [Microsoft へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
+         + [Microsoft® OneDrive へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
          + [AEM アダプティブフォームと AEM ワークフローの統合](/help/forms/configure-submit-action-workflow.md)
          + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)
          + アダプティブフォームと Adobe Marketo Engage の統合{#integrate-adaptive-form-with-market-engage}
@@ -946,7 +942,7 @@ ht-degree: 93%
       + 基盤コンポーネント {#authoring-adaptive-forms-foundation-components}
          + PDF フォームのアダプティブフォームへの変換 {#afcs}
             + [自動フォーム変換サービスの概要](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=ja)
-            + [既存の PDF フォームからアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
+            + [既存のPDF フォームをアダプティブフォームに変換する](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
@@ -1105,8 +1101,8 @@ ht-degree: 93%
       + [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
       + [価値実現ダッシュボードを使用したフォームとドキュメントの使用状況トレンドの分析](/help/forms/using-the-value-realization-dashboard.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
-      + [アダプティブフォーム API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
-      + [AEM Forms Cloud Service 通信 API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [アダプティブ Forms API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [AEM Forms Cloud Service Communications API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API リファレンス](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API リファレンス](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
@@ -1280,7 +1276,7 @@ ht-degree: 93%
          + カスケードドロップダウン {#cascading-drop-down-list}
             + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-            + [&#x200B; フォームを作成](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [ フォームを作成](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
       + ドキュメントベースのオーサリング {#getting-started-edge-delivery-services-forms}
          + [最初のフォームの作成：Google Sheetsと Excel を使用したクイックスタートガイド](/help/edge/docs/forms/tutorial.md)
          + [Google Sheets または Excel を使用したフォームの作成方法：ステップバイステップガイド](/help/edge/docs/forms/create-forms.md)
@@ -1307,7 +1303,7 @@ ht-degree: 93%
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
-   + [開発者ポータル（追加のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+   + [Developer Portal （追加リソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
    + [ベストプラクティス - 設定と使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [はじめに](/help/headless/setup/introduction.md)
@@ -1322,8 +1318,8 @@ ht-degree: 93%
       + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=ja)
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=ja)
-         + [マークダウンエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
-      + [&#x200B; フラグメントのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=ja)
+         + [Markdown エディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=ja)
+      + [フラグメントのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=ja)
    + コンテンツフラグメントセレクター {#content-fragment-selector}
       + [マイクロフロントエンドコンテンツフラグメントセレクター - 概要](/help/headless/content-fragment-selector/overview.md)
@@ -1366,7 +1362,7 @@ ht-degree: 93%
          + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
          + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
          + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](/help/journey-headless/developer/create-spa.md)
-         + [開発者ポータル（追加のリソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
+         + [Developer Portal （追加リソース）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ja)
       + ヘッドレスコンテンツアーキテクトジャーニー {#architect}
          + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
          + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
@@ -1446,7 +1442,7 @@ ht-degree: 93%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + [高度なネットワーク機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
+      + [高度なネットワーク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=ja)
       + Edge Delivery サイト {#edge-delivery-sites}
          + [Cloud Manager の Edge Delivery Services の概要](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Cloud Manager への Edge Delivery サイトの追加](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
@@ -1550,10 +1546,10 @@ ht-degree: 93%
          + [はじめに](/help/implementing/universal-editor/getting-started.md)
          + [デベロッパー向け概要](/help/implementing/universal-editor/developer-overview.md)
          + [ローカル AEM 開発](/help/implementing/universal-editor/local-dev.md)
-         + [SecurBank サンプルアプリ &#x200B;](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank サンプルアプリ ](/help/implementing/universal-editor/securbank.md)
       + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
-         + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [AEMによるハイブリッドおよびSPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [SPA エディターの廃止](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA の概要およびガイド](/help/implementing/developing/hybrid/introduction.md)

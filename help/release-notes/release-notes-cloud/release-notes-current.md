@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
+source-git-commit: e27cad732fd03fe5c4d6077f80e6c094db6a5b27
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 29%
+source-wordcount: '1990'
+ht-degree: 32%
 
 ---
 
@@ -28,17 +28,19 @@ ht-degree: 29%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2026.3.0）のリリース日は、2026年3月26日（PT）です。次回の機能リリース（2026.4.0）は 2026年4月30日（PT）に予定されています。
+現在の機能リリース（2026.4.0）である[!DNL Cloud Service]のリリース日は2026年4月30日です。 [!DNL Adobe Experience Manager]次回の機能リリース（2026.5.0）は2026年5月28日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
 最新のメンテナンスリリースノートについては、[こちら](/help/release-notes/maintenance/latest.md)をご覧ください。
 
-## リリースビデオ {#release-video}
+<!-- 
+## Release Video {#release-video}
 
-2026.3.0 リリースで追加された機能の概要については、2026年3月のリリースに関する概要ビデオをご覧ください。
+Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483061/?captions=jpn&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+-->
 
 ## AEM Beta プログラム {#aem-beta-programs}
 
@@ -77,110 +79,88 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 ### AEM財団（Betaプログラム） {#aem-foundation-beta-programs}
 
-[AEM Foundation ベータプログラム &#x200B;](#foundation-early-adopter)を参照してください。
+[AEM Foundation ベータプログラム ](#foundation-early-adopter)を参照してください。
 
 ### Cloud Manager（Beta プログラム） {#cloud-manager-beta-programs}
 
-[Cloud Manager ベータ版プログラム &#x200B;](/help/implementing/cloud-manager/release-notes/current.md)を参照してください。
+[Cloud Manager ベータ版プログラム ](/help/implementing/cloud-manager/release-notes/current.md)を参照してください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### コンテンツフラグメントのチェックアウト/イン {#cf-checkout-in}
+### AI翻訳の統合 {#ai-translation-integration}
 
-AEM Touch UIとのパリティを向上させるために、新しいコンテンツフラグメント管理UIを使用して、コンテンツフラグメントをチェックアウトし、再びチェックインできるようになりました。 チェックアウト機能は変更されず、チェックアウトされたコンテンツフラグメントは効果的にロックされ、他のユーザーがコンテンツフラグメントエディターで編集できなくなります。 コンテンツフラグメントを所有しているユーザーと管理者は、フラグメントをチェックアウトして再びチェックインできます。 フラグメントをチェックアウトしても、参照されている子フラグメントまたはアセットには影響しません。
-
-### コンテンツフラグメントがジョブパネルを起動 {#cf-launches-jobs}
-
-コンテンツフラグメントの起動の非同期ジョブを、コンテンツフラグメントの起動の管理UIのプロパティパネルで表示できるようになりました。これにより、ジョブがまだ実行中、完了、または中止されている場合に、ジョブに関する関連詳細情報とともに、ステータスを確認できます。
-
-### コンテンツフラグメントエディターのRTEに更新します {#cf-rte-update}
-
-コンテンツフラグメントエディターのリッチテキストエディター（RTE）が、TinyMCEからTipTapに移行されました。 この変化には、多くの利点があります。
-
-* ユニバーサルエディターとコンテンツフラグメントエディターで、同じRTE テクノロジースタックが使用されるようになりました。
-   * つまり、両方のエディターで同じHTMLが生成されるようになりました。
-   * 拡張機能を再利用できるようになりました。
-   * 両方のエディターを使用して、同じ関数とメソッドを使用できるようになりました（ヘッドレスユースケースの場合）。
-   * 最終的な目標は、ひとつの設定を両方のエディターで統合されたエクスペリエンスにつなげることです。
-* Spectrum 2 スタイルの新しいルックアンドフィールが追加されました。
-* コンテンツフラグメントエディターで、検索と置換、コンテンツアドバイザーの準備など、新しい機能を利用できます。
+AEMユーザーは、コンテンツ翻訳に大規模言語モデル（LLM）を活用し、機械翻訳の速度で人間による翻訳品質を実現できるようになりました。 従来のサードパーティ翻訳サービスと同様に、Azure OpenAIはAEMの翻訳プロバイダーとして設定でき、今後のリリースで予定されている追加のLLMもサポートされます。 顧客は、この機能に独自のLLM ライセンスを使用します。 さらに、企業向け翻訳スタイルガイドをAEMにアップロードして、翻訳ルールを抽出することで、ブランドとスタイルの一貫性を確保できます。 詳しくは、[AI翻訳統合の設定](/help/sites-cloud/administering/translation/ai-translation-integration.md)を参照してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AEM SitesのContent Advisor**
+**Content AdvisorがAdobe WorkfrontおよびAdobe以外のアプリケーションで利用できるようになりました**
 
-Content AdvisorがAEM Sitesで利用可能になり、AEM Assetsからインテリジェントなアセット検出を直接導入できます。 これにより、ユーザーはワークフロー内で最適なアセットを簡単に見つけ、参照、再利用できるようになり、コンテキストを切り替える必要がなくなります。
+Content Advisorは、Adobe WorkfrontおよびAdobe以外（サードパーティ）のアプリケーションで利用できるようになりました。これにより、Adobe ExpressやAEM Sitesだけでなく、インテリジェントなアセット検索やコンテンツの再利用も可能になります。 このリリースでは、AIを活用した検索、コンテキストに応じたレコメンデーション、キャンペーンブリーフに基づく検出、Dynamic Media レンディションへのアクセス、コンテンツフラグメントの検出、フィルター、Adobe Workfrontのワークフローや外部アプリケーションへのアセットメタデータなど、Content Advisorの包括的なエクスペリエンスを提供します。
 
-Content Advisorは、キャンペーンの概要、ベースの提案、コンテキストの提案、Dynamic Mediaのレンディションへのアクセス、詳細なアセットメタデータなどのアセットにインテリジェントな機能を提供します。
-
-近日リリース予定 – Content Advisorで、Adobe WorkfrontおよびAJO B2C アプリケーションがサポートされ、コンテンツフラグメントの検出機能も含まれます
-
-### Dynamic Media の新機能 {#dynamic-media-new-features}
-
-#### Dynamic Media テンプレートエディターの更新 {#dynamic-media-template-editor-updates}
-
-**レイヤー管理の機能強化**
-
-* ドラッグ&amp;ドロップ操作によるレイヤーの並べ替え：レイヤーをドラッグしてレイヤーパネルで直接並べ替えることができるようになりました。これにより、既存の「前に移動」または「後ろに移動」アクションを超えて、レイヤーの重なり順をより迅速かつ直感的に整理できるようになりました。
-* コピー、ペースト、複製：キーボードショートカット（Cmd/Ctrl+C、V、D）またはコンテキストメニューを使用したレイヤーのコピー、ペースト、複製を完全にサポートし、マルチレイヤー選択もサポートしています。
-* レイヤーのプロパティを分離ボタン：レイヤー設定に簡単に移動するための専用のレイヤープロパティボタンを追加し、レイヤーをダブルクリックして素早くアクセスできるようにしました。
-
-**テキスト書式設定機能**
-
-* 行間の制御：新しい行間スライダーを使用すると、テキストレイヤーの行高さを正確に制御でき、取り消し/やり直しやテンプレートの保存/読み込みなどのエンドツーエンドのサポートを完全に備えています。
-* すべての大文字の書式設定：テキストレイヤーは、フォントスタイルツールバーの「すべての大文字」書式設定オプションを、太字、斜体、下線と並べてサポートするようになりました。
-* 垂直方向の整列オプション：テキストレイヤーに垂直方向の整列コントロールを追加し、テキストボックス内でより正確なテキストの配置を実現しました。
-
-**サイズとDimension コントロール**
-
-* 縦横比のロック解除：サイズのプロパティを調整する際に、縦横比をロック解除できるようになりました。これにより、幅と高さの調整を個別に行うことができ、より柔軟なレイヤーサイズに変更できます。
-* コピーフィット行の設定：テキストのコピーフィット プロパティで`copyfitlines`および`copyfitmaxlines`設定のサポートを追加し、テキストのフィッティング動作をより細かく制御できるようになりました。
-
-**ビジュアルポリッシュ**
-
-* スペクトラム 2 （S2）デザインシステムアイコンが洗練されたタイマーおよびシェイプレイヤーのアイコンを更新しました。
+Adobe AEM Assetsの承認済みアセットを、目的のアプリケーション内で直接検索、評価、再利用できるようになりました。これにより、AdobeとAdobe以外のアプリケーションの両方で、アセットを一貫して利用し、効率を高め、コンテンツ制作を効率化できます。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms の早期アクセス機能 {#forms-early-access-features}
 
 **複数選択ドロップダウンのラベルを送信PDFに表示**
-アダプティブFormsの複数選択ドロップダウンコンポーネントが、選択した表示ラベルを[生成された送信PDF](/help/forms/generate-document-of-record-core-components.md)でレンダリングするようになり、ユーザーがフォームに表示する内容を正確にドキュメントに反映できるようになりました。
+アダプティブFormsの複数選択ドロップダウンコンポーネントが、選択した表示ラベルを[生成された送信PDF](/help/forms/generate-document-of-record-core-components.md)でレンダリングするようになり、ユーザーがフォームに表示する内容が正確にドキュメントに反映されるようになりました。
 
 **チェックボックス、ラジオボタン、パネルコンポーネントのアクセシビリティが強化されました**
-アダプティブ Forms コアコンポーネントでは、[&#x200B; チェックボックスグループ（v2） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[&#x200B; ラジオボタングループ（v2） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)、[&#x200B; パネルコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)に対して、WCAG 2.2に準拠したセマンティックマークアップが導入されています。 これらのコンポーネントは、`<fieldset>`および`<legend>`個のHTML要素を活用して、グループラベルとそのオプションとの間に有意義な関係を確立し、スクリーンリーダーやその他の支援テクノロジーによる正確な解釈を可能にします。
+アダプティブ Forms コアコンポーネントでは、[ チェックボックスグループ（v2） ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[ ラジオボタングループ（v2） ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)、[ パネルコンポーネント ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)に対して、WCAG 2.2に準拠したセマンティックマークアップが導入されています。 これらのコンポーネントは、`<fieldset>`および`<legend>`個のHTML要素を活用して、グループラベルとそのオプションとの間に有意義な関係を確立し、スクリーンリーダーやその他の支援テクノロジーによる正確な解釈を可能にします。
 
-**Forms Managerでのバージョン管理のサポート**
-Forms Managerは、アダプティブ Forms（コアコンポーネントおよび基盤コンポーネント） [のバージョン管理、フォームフラグメント、テーマ、XDP テンプレート、バイナリアセットをサポートするようになりました](/help/forms/manage-form-versions-forms-manager.md)。 Formsとドキュメント コンソールから直接、バージョンを作成し、バージョン履歴を表示したり、フォームアセットの以前の状態を復元したりできます。
+Forms Managerでの&#x200B;**バージョン管理のサポート**
+Forms Managerでは、アダプティブ Forms（コアコンポーネントおよび基盤コンポーネント） ](/help/forms/manage-form-versions-forms-manager.md)、フォームフラグメント、テーマ、XDP テンプレート、バイナリアセットのバージョン管理が[ サポートされるようになりました。 Formsとドキュメント コンソールから直接、バージョンを作成し、バージョン履歴を表示したり、フォームアセットの以前の状態を復元したりできます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
 ### [!DNL Experience Manager]as a [!DNL Cloud Service]基盤の新機能 {#foundation-new}
 
-#### シンプルなインデックス管理 {#simplified-index-management}
+#### AEM JavaおよびDispatcher開発用のIDE AI ツール {#ai-dev}
 
-[簡易インデックス管理](https://oak-indexing.github.io/oakTools/simplified.html)は、完全な定義をコピーしたり、バージョンを手動で管理したりすることなく、1つのJSON ファイルを使用してカスタムインデックスを定義し、すぐに使用できる（OOTB）インデックスをカスタマイズする簡単な方法を提供します。 カスタマイズは最新のOOTB インデックスと結合され、必要に応じて新しいインデックス バージョンが作成されます。
+Java スタックチームでは、Cursor、Claude Code、Visual Studio、IntelliJなどのツールでAI支援による開発を利用して、機能の配信を高速化し、コード品質を向上させています。
 
-#### Cloud Manager MCP Server {#cm-mcp-server}
+IDE ツールは、コーディングエージェントがAEM コードとDispatcher設定を生成およびデバッグするために使用できます。 一例として、次のビデオチュートリアルでは、Agent Skillsを使用したAEM コンポーネントの構築を示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3480343/?captions=jpn&quality=12)
+AI ツールを使用した[ローカル開発](/help/ai-in-aem/local-development-with-ai-tools.md)の詳細と、ご質問やご意見をお寄せいただいた[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)までお気軽にお問い合わせください。
 
-最新のIDEでは、モデルコンテキストプロトコル（MCP）を使用して、大規模言語モデル（LLM）がMCP サーバーによって公開されたツールを呼び出せるようにします。 開発者は、低レベルのAPI仕様に直接統合するのではなく、自然言語で意図を記述することができます。
 
-Cloud Manager MCP Serverでは、プロンプトを使用して、IDEからCloud Manager APIと直接やり取りできます。 サポートされているシナリオには、パイプラインの実行、環境ステータスの確認などがあります。
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
-[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)の詳細をご覧ください。
+#### Experience Governance MCP Server {#gov-mcp-server}
+
+Experience Governance MCP Serverが一般公開（GA）されました。 MCP （モデルコンテキストプロトコル）をサポートするAI開発者ツールやチャットボットと統合されているため、チャットボットやIDEの自然言語プロンプトを使用して、ブランドの整合性とコンプライアンスを保護できます。 コンテンツ（テキスト、画像、ページ）をブランドガバナンスルールと比較して評価し、ブランド設定や利用可能なガバナンスチェックを取得することができます。
+
+[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)と[Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)の詳細をご覧ください。
+
+#### AEM OIDC on パブリッシュの新機能 {#aem-oidc-on-publish-new-features}
+
+* 修正：元のリクエストのクエリパラメーターは、認証後に失われます
+* OIDC認証[ ドキュメント ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)の認証後のカスタムリダイレクト
+
+#### Microsoft Graph APIのメールサービスのサポート {#mail-service-graph-api}
+
+AEM メールサービスが、Microsoft Graph APIを使用してMicrosoft® Outlook （Microsoft 365経由）をサポートするようになりました。 これは、メールサービスで既にサポートされているSMTPを許可していない組織に特に役立ちます。 認証はOAuth 2.0経由です。 [設定の方法について説明します](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api)。
+
+#### CDN ログはSumo Logicに転送できます {#sumo-cdn-logforwarding}
+
+[ ログ転送機能](/help/implementing/developing/introduction/log-forwarding.md#sumologic)で、CDN ログのSumo Logicへの送信がサポートされるようになりました。 以前、Sumo Logicへのログ転送はAEM ログに限定されていました。
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundationの重要なお知らせ {#foundation-notices}
 
+#### IMS認証リッチエラー {#ims-auth-rich-errors}
+
+IMS統合のトラブルシューティングを支援するために、`imsauth`は&#x200B;*リッチエラー*&#x200B;のサポートを追加しました。
+
+これらのエラーは、HTTP ステータスコードのみを返す代わりに、認証とアクセスをブロックする可能性のある問題の診断と解決に役立つ追加のコンテキストを提供します。
+
 #### Java APIの非推奨化 {#java-api-deprecation}
 
-2026年2月26日（PT）の削除をターゲットとする非推奨（廃止予定）のAPIは、コードで使用しないでください。 デプロイメントブロックを防ぐには、**2026年3月30日**&#x200B;までにAPIの使用を削除してください。 重要な日付：
+非推奨のAPIの使用を削除することが重要です。
 
-* **2026年1月26日以降**：アクション センターの通知メールは、これらのAPIの使用を削除するためのリマインダーとして送信されます。
-* **2026年2月26日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**一時停止**&#x200B;します。 デプロイメントマネージャー、プロジェクトマネージャー、ビジネスオーナーは、問題を上書きして、パイプラインを続行できます。 *コードの変更を検証およびリリースする機能が遅くなる可能性があります。*
-* **2026年3月30日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**失敗**&#x200B;します。 非推奨のAPI使用が削除されるまで、デプロイメントはブロックされます。 *これにより、時間の制約を受ける更新プログラムをリリースできなくなり、ビジネス運営に影響を与える可能性があります。*
-* **2026年5月4日**：まだ非推奨のAPI **を使用している環境では、Adobeの重要なリリースアップデート**&#x200B;を受け取ることができず、パフォーマンスと可用性に関するAdobeの標準的なコミットメントの対象にはなりません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。
+**4月14**&#x200B;日以降、2026年2月26日をターゲットとするAPIを使用したコードを含むCloud Manager パイプラインは、コードの品質&#x200B;**のステップ中に**&#x200B;削除に失敗します。 非推奨のAPI使用が削除されるまで、デプロイメントはブロックされます。 *これにより、時間の制約を受ける更新プログラムをリリースできなくなり、ビジネス運営に影響を与える可能性があります。*
+
+**2026年6月11日**&#x200B;以降、非推奨のAPI **をまだ使用している環境には、Adobeの重要なリリースアップデート**&#x200B;が適用されず、パフォーマンスと可用性に関するAdobeの標準的な要件は適用されません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。
 
 詳しくは、[非推奨（廃止予定）に関する記事](/help/release-notes/deprecated-removed-features.md#aem-apis)を参照してください。便宜上、これらの API を次に示します。
 
@@ -205,14 +185,6 @@ Cloud Manager MCP Serverでは、プロンプトを使用して、IDEからCloud
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation アーリーアダプター機能 {#foundation-early-adopter}
 
-#### AEM JavaおよびDispatcher開発向けIDE AI ツール（パブリック Beta プログラム） {#ai-dev-beta}
-
-Java スタックチームでは、Cursor、Claude Code、Visual Studio、IntelliJなどのツールでAI支援による開発を利用して、機能の配信を高速化し、コード品質を向上させています。
-
-パブリックベータ版に参加して（サインアップは必要ありません）、コーディングエージェントがAEM コードとDispatcher設定を生成およびデバッグするために使用できるIDE ツールを試してください。
-
-詳しくは、[AI ツールを使用したローカル開発](/help/ai-in-aem/local-development-with-ai-tools.md) ベータ版のドキュメントおよび質問やフィードバックを含むメール [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)を参照してください。
-
 #### AEM Edge Functions （Beta プログラム） {#edge-functions}
 
 [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)を使用すると、JavaScriptをCDN レイヤーで実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。
@@ -223,45 +195,47 @@ Java スタックチームでは、Cursor、Claude Code、Visual Studio、Intell
 * CDN と接触チャネルの間のミドルウェアとして機能させる
 * サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
-* ChatGPT や Claude などの LLM がカスタムツールにアクセスできるように MCP サーバーを公開する
+* ChatGPTやClaudeなどのAI アシスタントがカスタムツールにアクセスするためのMCP サーバーの公開
 
 AEM パブリッシュ配信またはライブ実稼動サイトのEdge Delivery Services プロジェクトで利用できる機会の数は限られています。 参加に関心がある場合や、詳細を確認したい場合は、ユースケースの簡単な説明を添えて [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)までメールでご連絡ください。
 
-#### Development Agent （Beta プログラム）を使用したWeb Tier Config Pipelineのトラブルシューティング {#devagent-webtier}
+#### Web階層設定パイプラインのトラブルシューティング（Beta プログラム） {#devagent-webtier}
 
-開発エージェントの[&#x200B; パイプラインのトラブルシューティング &#x200B;](/help/ai-in-aem/agents/brand-experience/development/development.md)機能は、開発者がAEM as a Cloud Service デプロイメントの問題を効率的に診断し、解決するのに役立ちます。 フルスタックパイプライン（デプロイメントとコード品質）のサポートに加えて、開発エージェントは、ベータプログラムの一部として、**Web階層設定パイプライン**&#x200B;のトラブルシューティングをサポートするようになりました。
+開発エージェントの[ パイプラインのトラブルシューティング ](/help/ai-in-aem/agents/brand-experience/development/development.md)機能は、開発者がAEM as a Cloud Service デプロイメントの問題を効率的に診断し、解決するのに役立ちます。 フルスタックパイプライン（デプロイメントとコード品質）のサポートに加えて、開発エージェントは、ベータプログラムの一部として、**Web階層設定パイプライン**&#x200B;のトラブルシューティングをサポートするようになりました。
 
 ベータ版へのアクセスをリクエストするには、[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)にメールを送信してください。 AEMのAgentsへの既存のアクセスが必要です。
 
-#### AEM 6.5からAEM Cloud Serviceへの移行（Alpha プログラム）用のIDE AI ツール {#cm-ide-migration}
+#### レプリケーション AIのトラブルシューティング（Alpha プログラム） {#replication-ai-troubleshooting-alpha}
 
-IDE AI ツールを使用して、[&#x200B; ベストプラクティスアナライザーレポート &#x200B;](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)の推奨事項に基づいて動作させることで、AEM 6.5からAEM as a Cloud Service（Java スタック）への移行を高速化できます。
+AEM オーサーのAI アシスタントやその他のインターフェイスを使用すると、ブロックされたキューなど、レプリケーションに関連する問題をトラブルシューティングできます。 Alpha プログラムに参加するには、[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)にメールを送信して、興味を説明してください。
 
-詳細については、[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)に電子メールを送信してください。
+#### AEM 6.5からAEM Cloud Serviceへの移行（Beta プログラム）用のIDE AI ツール {#cm-ide-migration}
+
+IDE AI ツールを使用して、[ ベストプラクティスアナライザーレポート ](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)の推奨事項に基づいて動作させることで、AEM 6.5からAEM as a Cloud Service（Java スタック）への移行を高速化できます。
+
+詳細と機能へのアクセスをリクエストするには、[aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)に電子メールを送信してください。
 
 #### Edge Delivery Services の Edge 認証（Beta プログラム） {#edge-authentication}
 
-Edge 認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。これを実現するには、OpenID Connect（OIDC）設定の YAML ファイルをデプロイします。
+Edge 認証を使用すると、Edge Delivery Services ページへのアクセスを、ID プロバイダー（IdP）で認証されたユーザーのみに制限できます。 これを実現するには、OpenID Connect（OIDC）設定の YAML ファイルをデプロイします。
 
 ご興味がある場合は、ユースケースの簡単な説明とご質問を [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) までお問い合わせください。
 
 #### ライブトラフィックを受け入れる前にコードをテストするための Canary 実稼動デプロイメント（Beta プログラム） {#canary-beta}
 
-エンドユーザーに公開する前に、内部専用テストトラフィックを使用して実稼動ビルドを検証します。実稼動環境に出荷し、Canary トラフィックのみをルーティング（特別なヘッダーを使用）し、動作を監視してから、顧客に影響を与えることなく、ライブトラフィックに昇格するか、ロールバックします。
-
-コードリリースを実稼動環境にデプロイしますが、ライブトラフィックを受け入れるかロールバックするかを決定する前に、内部テストトラフィックのみに制限します。
+エンドユーザーに公開する前に、内部専用テストトラフィックを使用して実稼動ビルドを検証します。 実稼動環境に出荷し、Canary トラフィックのみをルーティング（特別なヘッダーを使用）し、動作を監視してから、顧客に影響を与えることなく、ライブトラフィックに昇格するか、ロールバックします。
 
 アクセスをリクエストしてフィードバックを共有するには、[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) にメールを送信してください。
 
 #### RDEのスナップショット（Beta プログラム） {#rde-snapshot-program}
 
-ベータ版では、迅速な開発環境（RDE）が、コードとコンテンツの現在の状態のスナップショットを取得する機能をサポートするようになりました。これは、後で復元できます。 これは、元に戻す必要がある場合のあるコードを同期する場合や、異なる機能の開発を切り替える場合に役立つことがあります。 また、テストの既知の開始点として、可変コンテンツのみを復元することもできます。
+ベータ版では、迅速な開発環境（RDE）で、コードとコンテンツの現在の状態のスナップショット ](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots)を取得する機能[がサポートされるようになりました。これは、後で復元できます。 これは、元に戻す必要がある場合のあるコードを同期する場合や、異なる機能の開発を切り替える場合に役立つことがあります。 また、テストの既知の開始点として、可変コンテンツのみを復元することもできます。
 
 この機能を使用してフィードバックを提供することに関心がある場合は、[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)にメールを送信してください。
 
 #### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
-観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
+観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。 追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
