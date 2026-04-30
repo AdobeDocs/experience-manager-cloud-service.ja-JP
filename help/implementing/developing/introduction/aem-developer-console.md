@@ -74,7 +74,7 @@ Developer Consoleの![新しいOSGi バンドル画面](/help/implementing/devel
 
 **Java パッケージ** タブには、環境のOSGi システムでアクティブなパッケージを検索するための検索フィールドが用意されています。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)の「![Java パッケージ」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/java-packages-dev-console-ui.png)の「Java パッケージ」タブ
 
 * パッケージを書き出す（または提供する）バンドルと、パッケージを読み込む（または使用する）バンドルを確認できます。
 * また、場合によっては、問題を引き起こす可能性のある重複パッケージ（同じパッケージ、異なるバージョン）を確認することもできます。
@@ -85,7 +85,7 @@ Developer Console UI](/help/implementing/developing/introduction/assets/java-pac
 
 「**設定**」タブには、環境でアクティブな設定の検索可能なリストが表示されます。 クリックして詳細ページを表示すると、各設定で提供されるプロパティを確認できます。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/configurations-dev-console.png)の「![設定」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/configurations-dev-console.png)の「設定」タブ
 
 * **使用例：**&#x200B;指定した設定が実際に環境に存在することを確認するとします。 コンソールで「**設定**」タブを検索し、設定が見つからない場合は、機能モデル、設定実行モード、フォルダーを確認できます。
 
@@ -93,7 +93,7 @@ Developer Console UI](/help/implementing/developing/introduction/assets/configur
 
 「**サーブレット**」タブには、セレクターを使用したパスと、GETまたはPOSTを使用した拡張機能を指定できる検索フィールドがあります。 次に、Slingでリクエストを処理するサーブレットのリストを優先順に提供します。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)の「![ サーブレット」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/servlets-dev-console-ui.png)の「 サーブレット」タブ
 
 **使用例：** リクエスト時にアクティブ化し、応答に出力を出力するOSGi サーブレットがあるとします。 ただし、期待される出力の代わりに、空の応答が返されます。 より特定のセレクター、`resourceType`、拡張機能、またはランキングにより、サーブレットよりも他のサーブレットが優先されているかどうかを確認する必要があります。 予想されるパスを検索すると、別のサーブレットがより高いランクでアクティブであることがわかります。 次に、例えばセレクターを追加して、サーブレットのランクを上げることができるかどうかを判断できます。
 
@@ -101,7 +101,7 @@ Developer Console UI](/help/implementing/developing/introduction/assets/servlets
 
 「**サービス**」タブには、選択した環境に存在するサービスの概要が表示され、全文検索が提供されます。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/services-dev-console.png)の「![ サービス」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/services-dev-console.png)の「 サービス」タブ
 
 サービスをクリックして、その詳細を表示します。
 
@@ -109,7 +109,7 @@ Developer Console UI](/help/implementing/developing/introduction/assets/services
 
 「**OSGi コンポーネント**」タブには、選択した環境タイプに存在するOSGi コンポーネントの概要が表示され、フルテキスト検索が可能です。 環境内のOSGi コンポーネントのライブ状態と、それが満たすサービス、提供するバンドル、およびアクティベーションタイプ（即時または遅延）を確認できます。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)の「![OSGi コンポーネント」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/osgi-components-dev-console.png)の「OSGi コンポーネント」タブ
 
 * **ユースケースの例1:**&#x200B;設定でアクティブ化されたコンポーネントが、予期しない動作が発生したため、特定の環境でアクティブであるかどうかを確認する必要があるとします。 検索でコンポーネントを検索し、そのコンポーネントがアクティブかどうかを確認するだけです。
 * **ユースケースの例2:** Adobe Experience Manager as a Cloud Serviceの詳細を知るために、環境内で使用できる標準のコンポーネントを確認し、サポートしているサービスを特定するとします。 コンポーネントリストでコンポーネントを確認できます。
@@ -118,17 +118,17 @@ Developer Console UI](/help/implementing/developing/introduction/assets/osgi-com
 
 「**統合**」タブでは、管理者がサービス資格情報と開発者トークンを生成、名前変更、削除できます。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)の「![統合」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/integrations-dev-console-ui.png)の「統合」タブ
 
 ## 「リポジトリ」タブ {#repository}
 
-「**リポジトリ**」タブは、[ リポジトリブラウザーを開きます。](/help/implementing/developing/tools/repository-browser.md)
+「**リポジトリ**」タブは、[&#x200B; リポジトリブラウザーを開きます。](/help/implementing/developing/tools/repository-browser.md)
 
 ## ステータスダンプ/クエリタブ {#status-dumps-queries}
 
 「**ステータスダンプ / クエリ**」タブを使用すると、バンドル、パッケージ、設定、サービス、コンポーネント、Sling ジョブ、またはOak定義の現在の状態のフルテキストまたはJSON ダンプをダウンロードできます。
 
-Developer Console UI](/help/implementing/developing/introduction/assets/status-dumps-queries.png)の「![ ステータスダンプ / クエリ」タブ
+Developer Console UI![&#128279;](/help/implementing/developing/introduction/assets/status-dumps-queries.png)の「 ステータスダンプ / クエリ」タブ
 
 [Query Performance ツールを開くこともできます。](/help/operations/query-and-indexing-best-practices.md#query-performance-tool)
 
