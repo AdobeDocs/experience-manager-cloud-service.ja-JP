@@ -137,7 +137,7 @@ AI ツールを使用した[ローカル開発](/help/ai-in-aem/local-developmen
 
 Experience Governance MCP Serverが一般公開（GA）されました。 MCP （モデルコンテキストプロトコル）をサポートするAI開発者ツールやチャットボットと統合されているため、チャットボットやIDEの自然言語プロンプトを使用して、ブランドの整合性とコンプライアンスを保護できます。 コンテンツ（テキスト、画像、ページ）をブランドガバナンスルールと比較して評価し、ブランド設定や利用可能なガバナンスチェックを取得することができます。
 
-[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)と[Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)の詳細をご覧ください。
+[AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)と[Governance Agent](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)の詳細をご覧ください。
 
 #### Claude コネクタ {#aem-claude-connector}
 
