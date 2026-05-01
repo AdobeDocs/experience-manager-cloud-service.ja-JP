@@ -83,7 +83,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 | *selectedAssets* | 配列 `<Object>` | いいえ |                 | Content Advisorのレンダリング時に、選択したAssetsを指定します。 アセットの ID プロパティを含むオブジェクトの配列が必要です。 （例：`[{id: 'urn:234}, {id: 'urn:555'}]`）アセットは、現在のディレクトリで使用できる必要があります。 別のディレクトリを使用する必要がある場合は、`path` プロパティの値も指定します。 |
 | *acvConfig* | オブジェクト | いいえ | | デフォルトを上書きするカスタム設定が含まれているオブジェクトを含む、アセットコレクション表示プロパティです。 また、このプロパティは、アセットビューアのパネルビューを有効にするために `rail` プロパティと共にに使用されます。 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | いいえ |                 | OOTB 翻訳がアプリケーションのニーズを満たさない場合は、独自のローカライズされたカスタム値を `i18nSymbols` プロップ経由で渡すことができるインターフェイスを表示できます。 このインターフェイスを介して値を渡すと、提供されたデフォルトの翻訳が上書きされ、代わりに独自の翻訳が使用されます。 上書きを実行するには、上書きしたい `i18nSymbols` のキーに有効な[メッセージ記述子](https://formatjs.io/docs/react-intl/api/#message-descriptor)オブジェクトを渡す必要があります。 |
-| *intl* | オブジェクト | いいえ | | Content AdvisorはデフォルトのOOTB翻訳を提供します。 `intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。 例：`intl={{ locale: "es-es" }}` </br></br> サポートされているロケール文字列は、言語標準の名前を表す[ISO 639 - コード ](https://www.iso.org/iso-639-language-codes.html)に従っています。</br></br> サポートされているロケールのリスト：英語 – &#39;en-us&#39; （デフォルト） スペイン語 – &#39;es-es&#39; ドイツ語 – &#39;de&#39;フランス語 – &#39;fr-fr&#39; イタリア語 – &#39;it-it&#39;日本語 – &#39;ja-jp&#39;韓国語 – &#39;ko-kr&#39; ポルトガル語 – &#39;pt-br&#39;中国語（繁体字） - &#39;zh-cn&#39;中国語（台湾） - &#39;zh-tw&#39; |
+| *intl* | オブジェクト | いいえ | | Content AdvisorはデフォルトのOOTB翻訳を提供します。 `intl.locale` プロップを介して有効なロケール文字列を指定することで、翻訳言語を選択できます。 例：`intl={{ locale: "es-es" }}` </br></br> サポートされているロケール文字列は、言語標準の名前を表す[ISO 639 - コード &#x200B;](https://www.iso.org/iso-639-language-codes.html)に従っています。</br></br> サポートされているロケールのリスト：英語 – &#39;en-us&#39; （デフォルト） スペイン語 – &#39;es-es&#39; ドイツ語 – &#39;de&#39;フランス語 – &#39;fr-fr&#39; イタリア語 – &#39;it-it&#39;日本語 – &#39;ja-jp&#39;韓国語 – &#39;ko-kr&#39; ポルトガル語 – &#39;pt-br&#39;中国語（繁体字） - &#39;zh-cn&#39;中国語（台湾） - &#39;zh-tw&#39; |
 | *repositoryId* | 文字列 | いいえ | &#39;&#39; | コンテンツアドバイザーがコンテンツを読み込むリポジトリ。 |
 | *additionalAemSolutions* | `Array<string>` | いいえ | [ ] | 追加の AEM リポジトリのリストを追加できます。 このプロパティで情報が指定されない場合、メディアライブラリまたは AEM Assets リポジトリのみが考慮されます。 |
 | *hideTreeNav* | ブーリアン | いいえ |  | アセットツリーのナビゲーションサイドバーを表示するか非表示にするかを指定します。 このプロパティはモーダルビューでのみ使用されるので、パネルビューではこのプロパティの影響はありません。 |
@@ -171,7 +171,7 @@ const assetSelectorProps = {
 <AssetSelector {...assetSelectorProps} />
 ```
 
-`contentFragmentSelectorProps`では、[ コンテンツフラグメントセレクターのプロパティ ](/help/headless/content-fragment-selector/properties.md)で利用可能なプロパティのいずれかをメンションできます。
+`contentFragmentSelectorProps`では、[&#x200B; コンテンツフラグメントセレクターのプロパティ &#x200B;](/help/headless/content-fragment-selector/properties.md)で利用可能なプロパティのいずれかをメンションできます。
 
 Content AdvisorをAngular、React、およびJavaScript アプリケーションと統合する方法については、[Content Advisorの統合例](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)を参照してください。
 
