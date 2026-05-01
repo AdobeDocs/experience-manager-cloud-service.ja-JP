@@ -48,7 +48,7 @@ ht-degree: 7%
 
 **ビデオ スマート切り抜きを作成** オプションが、ビデオアセットのメタデータフォームで使用できるようになりました。
 
-![ ビデオ スマート切り抜きフィールドを作成](/help/assets/assets/video-smartcrop-metadata-field.png)
+![&#x200B; ビデオ スマート切り抜きフィールドを作成](/help/assets/assets/video-smartcrop-metadata-field.png)
 
 ## 承認されたビデオにビデオスマート切り抜きを適用する {#apply-video-smart-crops}
 
