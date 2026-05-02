@@ -26,4 +26,4 @@ ht-degree: 22%
 
 ## 機能改善 {#other-improvements}
 
-* [編集可能なアイテム ](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)のバッジが、いくつかの状況で、その背後にあるアイテムを隠していた問題が修正されました。
+* [編集可能なアイテム &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)のバッジが、いくつかの状況で、その背後にあるアイテムを隠していた問題が修正されました。
