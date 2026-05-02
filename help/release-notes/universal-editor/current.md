@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター 2026.04.09 リリースノート
-description: ユニバーサルエディターの 2026.04.09 リリースのリリースノートです。
+title: ユニバーサルエディター2026.04.30 リリースノート
+description: ユニバーサルエディターの2026.04.30 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a5f3b703706beab106591477372328e45f881b44
+source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 48%
+source-wordcount: '97'
+ht-degree: 22%
 
 ---
 
 
-# ユニバーサルエディター 2026.04.09 リリースノート {#release-notes}
+# ユニバーサルエディター2026.04.30 リリースノート {#release-notes}
 
-これらは、ユニバーサルエディターの2026年4月9日リリースのリリースノートです。
+ユニバーサルエディターの2026年4月30日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -22,10 +22,8 @@ ht-degree: 48%
 
 >[!TIP]
 >
->Adobe Experience Manager as a Cloud Service の最新のリリースノートについて詳しくは、[このページ](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+>Adobe Experience Manager as a Cloud Serviceの現在のリリースノートについては、[このページを参照してください。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 新機能 {#what-is-new}
+## 機能改善 {#other-improvements}
 
-* [&#x200B; リッチテキストエディター（RTE）ツールバー](/help/implementing/universal-editor/configure-rte.md#image)の「画像を追加」オプションが、AEM as a Cloud Serviceの[&#x200B; プロジェクトのオーサリングとコンテンツの保持でサポートされるようになりました。](https://www.aem.live/docs/aem-authoring)
-* [&#x200B; エディターからホーム画面](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)に戻る際に、プロパティパネル [が折りたたまれるようになりました。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-   * この機能を使用したい場合は、Adobe カスタマーサポートにお問い合わせください。
+* [編集可能なアイテム ](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)のバッジが、いくつかの状況で、その背後にあるアイテムを隠していた問題が修正されました。
