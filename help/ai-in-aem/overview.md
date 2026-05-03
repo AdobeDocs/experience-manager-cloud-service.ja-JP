@@ -1,49 +1,49 @@
 ---
-title: AEM as a Cloud Serviceの AI
+title: AEM AS A CLOUD SERVICEのAI
 description: Adobe Experience Manager as a Cloud Service の AI について
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: b18758b46e999222c4af1fa19781018acc9eb7ea
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 42%
 
 ---
 
 
-# AEM as a Cloud Serviceの AI {#ai-in-aem-as-a-cloud-service}
+# AEM AS A CLOUD SERVICEのAI {#ai-in-aem-as-a-cloud-service}
 
-人工知能（AI）は、Adobe Experience Manager as a Cloud Serviceに不可欠な要素であり、ユーザーによる情報検索やエクスペリエンス生成をサポートします。
+AIは、Adobe Experience Manager as a Cloud Serviceに不可欠な要素であり、利用者が情報を見つけたり、体験を構築したりするのに役立ちます。
 
 ## AI アシスタント {#ai-assistant}
 
-Adobe Experience Managerの [AI アシスタント &#x200B;](/help/implementing/cloud-manager/ai-assistant-in-aem.md) は、AEM関連のクエリに対する回答の検索を合理化するように設計された対話型インターフェイスを提供します。
+Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md)の[AI アシスタントは、AEM関連の問い合わせに対する回答を効率的に検索できるように設計された、会話型インターフェイスを提供します。
 
-## AEMの Agentic AI {#agentic-ai-in-aem}
+## AEMのAgentic AI {#agentic-ai-in-aem}
 
-AEMには、コンテンツの作成を高速化し、変更を自動的に調整するための様々な [&#x200B; エージェント &#x200B;](/help/ai-in-aem/agents/overview.md) が用意されています。
+AEMには、コンテンツの作成を高速化し、変更を自動的に調整するために、様々な[ エージェント ](/help/ai-in-aem/agents/overview.md)が用意されています。
 
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
-* [コンテンツ アドバイザーエージェント](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [ガバナンスエージェント](/help/ai-in-aem/agents/governance/overview.md)
+* [Content Advisor エージェント](/help/ai-in-aem/agents/content-advisor/overview.md)
+* [Governance エージェント](/help/ai-in-aem/agents/governance/overview.md)
 
-## AEMのジェネレーティブ AI {#generative-ai-in-aem}
+## AEMの生成AI {#generative-ai-in-aem}
 
-Adobe Experience Manager（AEM）as a Cloud Service の Adobe生成 AI を使用すると、編集インターフェイス内でコピーと画像生成の両方を行い、高パフォーマンスのエクスペリエンスを作成できます。生成 AI を使用すると、次のコンテンツを自律的に作成できます。
+Adobe Experience Manager（AEM）as a Cloud Service の Adobe生成 AI を使用すると、編集インターフェイス内でコピーと画像生成の両方を行い、高パフォーマンスのエクスペリエンスを作成できます。 生成 AI を使用すると、次のコンテンツを自律的に作成できます。
 
-* **ブランド対応** – 声のブランドトーン、スタイルガイドライン、その他の特定の要件を組み込んだコンテンツを作成します。
-* **オーディエンス別にパーソナライズ** – 詳細なコンテンツパフォーマンスインサイトを活用して、すべてのチャネルのペルソナに合わせてコンテンツをカスタマイズします。
-* **地域固有** – 翻訳だけでなく、地域の環境設定や行動パターンに基づいてコンテンツを適応させます。
-* **継続的に最適化** – 実験を実行して、どのバリエーションが最もパフォーマンスが高いのかを判断し、インサイトを使用して将来の AI 生成コンテンツを改善します。
+* **ブランド認知** - ブランドメッセージやスタイルガイドなど、特定の要件を取り入れたコンテンツを作成します。
+* **パーソナライズ別** – 詳細なコンテンツパフォーマンスのインサイトを活用して、あらゆるペルソナ向けに、チャネルをまたいでコンテンツをカスタマイズします。
+* **地域固有** – 翻訳の枠を超え、それぞれの地域の慣習や行動パターンにもとづいてコンテンツを調整できます。
+* **継続的に最適化** – 実験を実行して、最もパフォーマンスの高いバリエーションを特定し、AIが今後生成するコンテンツの改善にインサイトを利用します。
 
 AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 * [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  バリエーションを生成は、生成 AI を使用して、入力に基づいてコンテンツのバリエーションを作成します。 バリエーションを作成した後、Web サイトでコンテンツを使用できます。また、Edge Delivery Servicesの実験機能を使用して、コンテンツの成功を測定することもできます。
+  バリエーションの生成生成AIを使用して、入力にもとづいてコンテンツのバリエーションを作成します。 バリエーションを制作したら、web サイトのコンテンツを利用できます。また、Edge Delivery Servicesのテスト機能を利用して、そのバリエーションの効果を測定することもできます。
 
-   * [&#x200B; 以前のバージョンのバリエーションを生成 &#x200B;](/help/generative-ai/generate-variations.md) エディター以外では、引き続き使用できます。
+   * [ エディター以外の以前のバージョン「バリエーションを生成」は引き続き利用できます。](/help/generative-ai/generate-variations.md)
 
      >[!NOTE]
      >
@@ -53,11 +53,15 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 * [コンテンツハブの概要](/help/assets/product-overview.md)
 
-  コンテンツハブを使用すると、Adobe Express を使用して新しいコンテンツを作成できます（Adobe Express 権限がある場合）。使いやすいツールを使用して既存のコンテンツを編集し、テンプレートとブランド要素を使用してオンブランドのバリエーションを作成し、Adobe Firefly の最新の生成 AI 機能を使用して新しいコンテンツを作成できます。
+  コンテンツハブを使用すると、Adobe Express を使用して新しいコンテンツを作成できます（Adobe Express 権限がある場合）。 使いやすいツールを使用して既存のコンテンツを編集し、テンプレートとブランド要素を使用してオンブランドのバリエーションを作成し、Adobe Firefly の最新の生成 AI 機能を使用して新しいコンテンツを作成できます。
 
 * [AI で生成されたスマートタグ](/help/assets/metadata-assets-view.md#ai-smart-tags)
 
-  デジタルアセットの場合、手動入力に依存するのではなく、AI を使用して記述的タグを自動的に割り当てることができます。これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。このアプローチは、手動のタグ付けを排除し、効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保します。
+  デジタルアセットの場合、手動入力に依存するのではなく、AI を使用して記述的タグを自動的に割り当てることができます。 これらの AI で生成されたタグは、メタデータの品質を向上させ、アセットの検索、分類および推奨を容易にします。 このアプローチは、手動のタグ付けを排除し、効率を向上させるだけでなく、大量のデジタルコンテンツ間の一貫性とスケーラビリティも確保します。
+
+* [AI翻訳の統合](/help/sites-cloud/administering/translation/ai-translation-integration.md)
+
+  AI翻訳の統合により、Adobe Experience Managerでオーサリングするコンテンツの翻訳サービスとして大規模言語モデル（LLM）を使用できます。 AEMをLLM プロバイダー（Microsoft Azure OpenAI以降）に接続し、他のコネクタと同じ翻訳ワークフローを再利用し、オプションで翻訳スタイルガイドをアップロードすることで、AEMがロケールをまたいでトーン、用語、ブランド言語の一貫性を維持するルールを生成できるようにします。
 
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
@@ -65,12 +69,12 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
 ## その他の情報 {#further-information}
 
-次のような多くのリソースを利用できます。
+次のような多くの資料が用意されています。
 
-* [Adobe AI の概要](https://www.adobe.com/ai/overview.html?lang=ja)
+* [Adobe AIの概要](https://www.adobe.com/ai/overview.html?lang=ja)
 
-* [Adobeの責任ある AI](https://www.adobe.com/trust/responsible-ai.html)
+* [Adobeの責任あるAI](https://www.adobe.com/trust/responsible-ai.html)
 
-* [Experience Cloud 製品の生成 AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud製品で利用できる生成AI](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud 製品の生成 AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud製品の生成AI - Adobe Experience Manager](https://experienceleague.adobe.com/ja/docs/core-services/interface/features/generative-ai#aem)
