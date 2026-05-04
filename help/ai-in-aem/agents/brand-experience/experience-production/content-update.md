@@ -20,7 +20,7 @@ ht-degree: 1%
 
 コンテンツ更新ジョブは、コンテンツフラグメント、ページ、フォーム、アセットなどの既存のコンテンツを更新します。 コンテンツ要素の更新、削除、置換、追加などのアクションを実行し、エクスペリエンスを正確かつ最新の状態に保つことができます。 入力は自然言語の説明にすることができ、Jira PDFやスクリーンショットを使用して使用する場合も入力を提供できます。
 
-コンテンツ更新ジョブは、自然言語またはビジュアルを通じて、ページのコンテンツ更新に提供する詳細を変換します。 更新が必要なページのURLと、更新が必要な内容の詳細を指定すると、エージェントスキルがタスクを完了します。 Adobe Experience Manager （AEM） as a Cloud Serviceで使用すると、ジョブは新しい[launch](/help/sites-cloud/authoring/launches/overview.md)を作成し、適用する前に更新を確認できます。 ドキュメントのオーサリングで使用すると、ジョブは新しい[ バージョン ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)を作成します。
+コンテンツ更新ジョブは、自然言語またはビジュアルを通じて、ページのコンテンツ更新に提供する詳細を変換します。 更新が必要なページのURLと、更新が必要な内容の詳細を指定すると、エージェントスキルがタスクを完了します。 Adobe Experience Manager （AEM） as a Cloud Serviceで使用すると、ジョブは新しい[launch](/help/sites-cloud/authoring/launches/overview.md)を作成し、適用する前に更新を確認できます。 ドキュメントのオーサリングで使用すると、ジョブは新しい[&#x200B; バージョン &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)を作成します。
 
 ## 機能 {#capabilities}
 
@@ -35,7 +35,7 @@ AEMのジョブには、AI アシスタントからアクセスできます。
 
 [`experience.adobe.com`,](https://experience.adobe.com)のAI アシスタントを開き、`Ask AI Assistant anything` フィールドを使用して自然言語でプロンプトを指定して、やり取りを開始します。
 
-![ コンテンツ更新ジョブ ](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![&#x200B; コンテンツ更新ジョブ &#x200B;](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
 
 ### 公開URLの設定 {#configuring-the-publish-url}
 
@@ -53,7 +53,7 @@ AEMのジョブには、AI アシスタントからアクセスできます。
 
 次に例を示します。
 
-![ コンテンツ更新スキル – 公開URLの設定](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+![&#x200B; コンテンツ更新スキル – 公開URLの設定](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
 
 ### プロンプト {#prompts}
 
