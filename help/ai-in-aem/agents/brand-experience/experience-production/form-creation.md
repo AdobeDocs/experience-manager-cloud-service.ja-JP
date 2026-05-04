@@ -4,7 +4,7 @@ description: Brand Experience Agentのフォーム作成ジョブと、自然言
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
+source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -108,4 +108,4 @@ The form creation skill combines form creation and site integration in a single 
 
 Experience Production Agentを引き続き検討する場合は、次のリソースが役立つ可能性があります。
 
-* [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)をガイド付きの実践的な手順に使用することもできます。
+* [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/)をガイド付きの実践的な手順に使用することもできます。
