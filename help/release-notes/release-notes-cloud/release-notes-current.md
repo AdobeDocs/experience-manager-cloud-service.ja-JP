@@ -39,7 +39,7 @@ ht-degree: 30%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483061/?captions=jpn&quality=12)
 -->
 
 ## AEM Beta プログラム {#aem-beta-programs}
