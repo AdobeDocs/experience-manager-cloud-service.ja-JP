@@ -4,9 +4,9 @@ description: Brand Experience Agentのフォーム作成ジョブと、自然言
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 0%
 * **PDF ドキュメントを読み込んでフォームに変換**：既存のPDF ドキュメントを読み込んでフォームに変換できます。 このスキルは、アップロードされたコンテンツを分析し、ブランドとコンプライアンス基準を維持しながら、フィールドタイプの検出、レイアウトの保存、レスポンシブデザインと検証ロジックの強化を行います。
 
 これらの機能のいずれかを使用すると、作成するフォームのタイプを選択するように求められます。 コアコンポーネントベースのアダプティブフォームテンプレートまたはEdge Delivery Services ベースのアダプティブフォームテンプレートのいずれかを指定し、フォームを保存する任意のパスを指定します。 Edge Delivery Servicesに基づいてフォームを作成する場合は、リポジトリのGitHub URLを指定することもできます。
-
 
 ### サンプルプロンプト {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## その他のリソース {#additional-resources}
+
+Experience Production Agentを引き続き検討する場合は、次のリソースが役立つ可能性があります。
+
+* [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)をガイド付きの実践的な手順に使用することもできます。
