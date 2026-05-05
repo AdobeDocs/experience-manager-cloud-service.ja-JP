@@ -93,7 +93,7 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 バンドルのリストは次のように表示されます。
 
-![ バンドル ](assets/bundles.png)
+![&#x200B; バンドル &#x200B;](assets/bundles.png)
 
 この画面を使用すると、次のことが可能になります。
 
@@ -126,7 +126,7 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 特定のコンポーネントの名前をクリックして、そのステータスに関する詳細情報を表示します。 ここでは、コンポーネントを有効または無効にしたり、再読み込みしたりすることもできます。
 
-![ コンポーネントの詳細](assets/component-detail.png)
+![&#x200B; コンポーネントの詳細](assets/component-detail.png)
 
 >[!NOTE]
 >
