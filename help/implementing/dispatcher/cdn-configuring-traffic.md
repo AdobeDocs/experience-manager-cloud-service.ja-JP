@@ -386,7 +386,7 @@ data:
 
 AEM CDN を利用して、アドビ以外のアプリケーション（おそらくパスごとまたはサブドメインごと）を含む様々なバックエンドにトラフィックをルーティングできます。
 
-リクエストプロパティ `originalPath`と`originalUrl`は、それぞれ不変の元のパス（クエリパラメーターを含まない）と完全なURL （クエリパラメーターを含む）であり、CDN [ リクエスト変換](#request-transformations)の前に取得されます。 評価順序の早い段階で書き換えられた値ではなく、クライアントが最初に送信した値にルールを固定する必要がある場合、`when`条件で使用します。 パスのみのマッチングには`originalPath`を使用します。クエリ文字列が条件の一部である必要がある場合は`originalUrl`を使用します（例えば、特定の最初のリクエスト URLに対するルーティングまたはフィルタリング）。
+リクエストプロパティ `originalPath`と`originalUrl`は、それぞれ不変の元のパス（クエリパラメーターを含まない）と完全なURL （クエリパラメーターを含む）であり、CDN [&#x200B; リクエスト変換](#request-transformations)の前に取得されます。 評価順序の早い段階で書き換えられた値ではなく、クライアントが最初に送信した値にルールを固定する必要がある場合、`when`条件で使用します。 パスのみのマッチングには`originalPath`を使用します。クエリ文字列が条件の一部である必要がある場合は`originalUrl`を使用します（例えば、特定の最初のリクエスト URLに対するルーティングまたはフィルタリング）。
 
 設定例：
 
@@ -443,11 +443,11 @@ data:
 
 >[!IMPORTANT]
 >
->**domain**&#x200B;の値に`.adobeaemcloud.com`を含めることはできません。 adobeaemcloud.com ドメインに直接プロキシすることはできません。 この制限は、不要なリクエストループから保護します。 AEM as a Cloud Service環境にトラフィックをプロキシするには、代わりに、AEMaaCS環境にインストールされている[ カスタムドメイン ](#proxying-to-aemaacs)をオリジンバックエンドとして使用します。
+>**domain**&#x200B;の値に`.adobeaemcloud.com`を含めることはできません。 adobeaemcloud.com ドメインに直接プロキシすることはできません。 この制限は、不要なリクエストループから保護します。 AEM as a Cloud Service環境にトラフィックをプロキシするには、代わりに、AEMaaCS環境にインストールされている[&#x200B; カスタムドメイン &#x200B;](#proxying-to-aemaacs)をオリジンバックエンドとして使用します。
 
 ### カスタムドメインをAEM静的層にプロキシ化する {#proxy-custom-domain-static}
 
-オリジン セレクターを使用すると、[ フロントエンドパイプライン ](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を使用してデプロイされたAEMの静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 ユースケースには、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）で静的リソースを提供することが含まれます。
+オリジン セレクターを使用すると、[&#x200B; フロントエンドパイプライン &#x200B;](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を使用してデプロイされたAEMの静的コンテンツにAEM パブリッシュトラフィックをルーティングできます。 ユースケースには、ページと同じドメイン（例：example.com/static）または明示的に異なるドメイン（例：static.example.com）で静的リソースを提供することが含まれます。
 
 これを実現できるオリジンセレクタールールの例を以下に示します。
 

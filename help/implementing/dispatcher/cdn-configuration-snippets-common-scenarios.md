@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 一般的なシナリオのCDN設定スニペット {#cdn-configuration-snippets}
 
-この記事では、AEM as a Cloud Serviceの実用的な`cdn.yaml` パターンについて説明します。 [CDN トラフィックルール ](/help/implementing/dispatcher/cdn-configuring-traffic.md)、[お客様が管理するCDN資格情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)、および[WAF](/help/security/traffic-filter-rules-including-waf.md)を含むトラフィックフィルタールールの機能ドキュメントと一緒に使用します。 Cloud Manager [config パイプライン ](/help/operations/config-pipeline.md)を使用してスニペットをデプロイします。
+この記事では、AEM as a Cloud Serviceの実用的な`cdn.yaml` パターンについて説明します。 [CDN トラフィックルール &#x200B;](/help/implementing/dispatcher/cdn-configuring-traffic.md)、[お客様が管理するCDN資格情報](/help/implementing/dispatcher/cdn-credentials-authentication.md)、および[WAF](/help/security/traffic-filter-rules-including-waf.md)を含むトラフィックフィルタールールの機能ドキュメントと一緒に使用します。 Cloud Manager [config パイプライン &#x200B;](/help/operations/config-pipeline.md)を使用してスニペットをデプロイします。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ data:
 
 ### キャッシュキーの変更 {#cache-key}
 
-CDNは、個別の「キャッシュキー」フィールドを公開しません。 URLはキャッシュに参加するので、URLを変更してキャッシュエントリを分割できます。例えば、[ リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)を通じてクエリパラメーターを追加します。
+CDNは、個別の「キャッシュキー」フィールドを公開しません。 URLはキャッシュに参加するので、URLを変更してキャッシュエントリを分割できます。例えば、[&#x200B; リクエスト変換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)を通じてクエリパラメーターを追加します。
 
 ```yaml
 kind: "CDN"
