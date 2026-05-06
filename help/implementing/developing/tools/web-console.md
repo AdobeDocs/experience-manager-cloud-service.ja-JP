@@ -6,10 +6,11 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
+exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
+source-git-commit: 3995e0090e1b0be1cbc430c3da7458b6ce867e09
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 38%
+ht-degree: 22%
 
 ---
 
@@ -22,21 +23,22 @@ Adobe Experience Manager（AEM） Web コンソールを使用して、ローカ
 
 AEM as a Cloud Serviceは[設定とコードを実行時に不変として扱います。](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) つまり、すべての設定は、実稼動環境でコーディングする場合と同じようにデプロイする必要があります。 実稼動インスタンスの場合、品質ゲートが渡され、現在の環境の安定性と明瞭性が確保されます。
 
-ただし、開発目的では、OSGi設定の更新とバンドルの変更は、多くの場合、アドホック開発の変更をテストするために必要になります。 AEM as a Cloud Service SDKの一部として、Web コンソールでこれを許可します。 AEM as a Cloud ServiceのOSGi設定について詳しくは、[Adobe Experience Manager as a Cloud Service用OSGiの設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
+ただし、ローカル開発をテストするには、多くの場合、アドホック [OSGi設定](/help/implementing/deploying/configuring-osgi.md)の更新とバンドルの変更が必要です。 [AEM as a Cloud Service SDKの一部として、](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)Web コンソールでは、そのようなリアルタイム更新が有効になります。
 
-コンソールには、`http://<host>:<port>/system/console`からアクセスできます
+AEM as a Cloud Serviceがローカルで実行されている場合は、`http://<host>:<port>/system/console`からコンソールにアクセスできます。
 
-Web コンソールには、OSGi バンドルを管理するための次のような画面が用意されています。
+Web コンソールには、次のようなOSGi バンドルを管理するための画面とオプションが用意されています。
 
-* [設定](#configuration)：OSGi バンドルの設定に使用します。AEM システムパラメーターを設定するための基盤となるメカニズムです。
-* [バンドル](#bundles)：バンドルのインストールに使用します。
-* [コンポーネント](#components)：AEM に必要なコンポーネントのステータスを制御するために使用します。
+* [Configuration](#configuration): OSGi バンドルを設定するため、これはAEM システム パラメーターを設定するための基盤となるメカニズムです
+* [ バンドル ](#bundles): バンドルのインストール用
+* [ コンポーネント ](#components): AEMに必要なコンポーネントのステータスを制御する場合
+* [OSGi設定の生成](#generating-osgi-configurations): OSGi設定をJSONとして自動的に生成する場合
 
-実行された変更は、すぐに実行中の開発システムに適用されます。 再起動は不要です。
+実行された変更は、実行中のSDKにすぐに適用されます。 再起動は不要です。
 
-Web コンソールでは、デフォルト設定に関する説明はすべてSlingのデフォルトに関連しています。 AEM には独自のデフォルトがあるので、設定されたデフォルトは、コンソールに記載された設定とは異なる場合があります。
+Web コンソールでは、デフォルト設定に関する説明はすべてSlingのデフォルトに関連しています。 AEMには独自のデフォルトが設定されているため、デフォルト設定はコンソールで文書化されているものと異なる場合があります。
 
-Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)に基づいています。 Apache Felix は、OSGi R4 サービスプラットフォームを実装するためのコミュニティによる取り組みです。このプラットフォームには、OSGi フレームワークと標準サービスが含まれています。
+Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web Management Consoleに基づいています。](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html) Apache Felix は、OSGi R4 サービスプラットフォームを実装するためのコミュニティによる取り組みです。このプラットフォームには、OSGi フレームワークと標準サービスが含まれています。
 
 >[!NOTE]
 >
@@ -55,14 +57,14 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 設定のリストは以下のように表示されます。
 
-![configMgr](assets/config-mgr.png)
+![設定画面](assets/configuration.png)
 
-この画面のドロップダウンリストから、以下の 2 種類の設定を使用できます。
+この画面のリストから使用可能な設定には、次の2種類があります。
 
 * **設定**&#x200B;を使用すると、既存の設定を更新できます。 これらは永続的ID （PID）を持ち、次のいずれかを行うことができます。
    * AEMに標準および積分 – これらは必須です。削除すると、値はデフォルト設定に戻ります。
    * ファクトリ設定から作成されたインスタンス – これらのインスタンスはユーザーによって作成され、削除によってインスタンスが削除されます。
-* **ファクトリ設定**&#x200B;を使用すると、必要な機能オブジェクトのインスタンスを作成できます。 これは永続 ID に割り当てられており、設定ドロップダウンリストに表示されます。
+* **ファクトリ設定**&#x200B;を使用すると、必要な機能オブジェクトのインスタンスを作成できます。 これは永続IDに割り当てられ、設定リストにリストされます。
 
 リストからエントリを選択すると、その設定に関連するパラメーターが表示されます。
 
@@ -82,18 +84,18 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 >[!TIP]
 >
->詳しくは、[Web コンソールでの OSGi 設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
+>OSGi設定について詳しくは、[Adobe Experience Manager as a Cloud Service用OSGiの設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
 ## バンドル {#bundles}
 
 **バンドル**&#x200B;画面は、AEMに必要なOSGi バンドルのインストールに使用されます。 画面には、次のいずれかの方法でアクセスします。
 
-* ドロップダウンメニュー：**OSGi -> Bundels**
+* ドロップダウンメニュー：**OSGi -> バンドル**
 * URL：`http://<host>:<port>/system/console/bundles`
 
 バンドルのリストは次のように表示されます。
 
-![&#x200B; バンドル &#x200B;](assets/bundles.png)
+![ バンドル ](assets/bundles.png)
 
 この画面を使用すると、次のことが可能になります。
 
@@ -117,16 +119,15 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 **コンポーネント**&#x200B;画面では、コンポーネントを有効または無効にできます。 次のいずれかの方法でアクセスできます。
 
 * ドロップダウンメニュー：**メイン -> コンポーネント**
-
 * URL：`http://<host>:<port>/system/console/components`
 
-コンポーネントのリストが表示されます。 様々なアイコンを使用して、特定のコンポーネントを有効または無効にしたり、（必要に応じて）設定の詳細を開いたりすることができます。
+コンポーネントのリストが表示されます。 各行にアイコンを使用して、特定のコンポーネントの設定の詳細を有効、無効、または（適切な場合は）開くことができます。
 
 ![コンポーネント](assets/components.png)
 
 特定のコンポーネントの名前をクリックして、そのステータスに関する詳細情報を表示します。 ここでは、コンポーネントを有効または無効にしたり、再読み込みしたりすることもできます。
 
-![&#x200B; コンポーネントの詳細](assets/component-detail.png)
+![ コンポーネントの詳細](assets/component-details.png)
 
 >[!NOTE]
 >
@@ -136,6 +137,6 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 ## OSGi設定の生成 {#generating-osgi-configs}
 
-Web コンソールを使用してOSGi コンポーネントを設定し、OSGi設定をJSONとして書き出すことができます。 これが役に立つのは、AEM 提供の OSGi コンポーネントを設定する際に、その OSGi プロパティと値の形式を、AEM プロジェクトで OSGi 設定を定義する開発者がよく理解できない可能性がある場合です。
+Web コンソールを使用して、OSGi コンポーネントを設定し、OSGi設定をJSONとして書き出すことができます。 これは、AEM プロジェクトでOSGi設定を定義する際に、OSGi プロパティと値フォーマットが不明なAEM提供のOSGi コンポーネントを設定する場合に便利です。
 
 詳しくは、[Adobe Experience Manager as a Cloud Service用OSGiの設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console)を参照してください。
