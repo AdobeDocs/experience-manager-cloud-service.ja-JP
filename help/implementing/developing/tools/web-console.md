@@ -30,8 +30,8 @@ AEM as a Cloud Serviceがローカルで実行されている場合は、`http:/
 Web コンソールには、次のようなOSGi バンドルを管理するための画面とオプションが用意されています。
 
 * [Configuration](#configuration): OSGi バンドルを設定するため、これはAEM システム パラメーターを設定するための基盤となるメカニズムです
-* [ バンドル ](#bundles): バンドルのインストール用
-* [ コンポーネント ](#components): AEMに必要なコンポーネントのステータスを制御する場合
+* [&#x200B; バンドル &#x200B;](#bundles): バンドルのインストール用
+* [&#x200B; コンポーネント &#x200B;](#components): AEMに必要なコンポーネントのステータスを制御する場合
 * [OSGi設定の生成](#generating-osgi-configurations): OSGi設定をJSONとして自動的に生成する場合
 
 実行された変更は、実行中のSDKにすぐに適用されます。 再起動は不要です。
@@ -95,7 +95,7 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 バンドルのリストは次のように表示されます。
 
-![ バンドル ](assets/bundles.png)
+![&#x200B; バンドル &#x200B;](assets/bundles.png)
 
 この画面を使用すると、次のことが可能になります。
 
@@ -127,7 +127,7 @@ Adobe Experience Manager（AEM）のWeb コンソールは、[Apache Felix Web M
 
 特定のコンポーネントの名前をクリックして、そのステータスに関する詳細情報を表示します。 ここでは、コンポーネントを有効または無効にしたり、再読み込みしたりすることもできます。
 
-![ コンポーネントの詳細](assets/component-details.png)
+![&#x200B; コンポーネントの詳細](assets/component-details.png)
 
 >[!NOTE]
 >
