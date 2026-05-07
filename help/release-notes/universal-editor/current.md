@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.04.30 リリースノート
-description: ユニバーサルエディターの2026.04.30 リリースのリリースノートです。
+title: ユニバーサルエディター2026.05.07 リリースノート
+description: ユニバーサルエディターの2026.05.07 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 22%
+source-wordcount: '188'
+ht-degree: 12%
 
 ---
 
 
-# ユニバーサルエディター2026.04.30 リリースノート {#release-notes}
+# ユニバーサルエディター2026.05.07 リリースノート {#release-notes}
 
-ユニバーサルエディターの2026年4月30日リリースのリリースノートです。
+これらは、ユニバーサルエディターの2026年5月7日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -24,6 +24,15 @@ ht-degree: 22%
 >
 >Adobe Experience Manager as a Cloud Serviceの現在のリリースノートについては、[このページを参照してください。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 機能改善 {#other-improvements}
+## 新機能 {#what-is-new}
 
-* [編集可能なアイテム &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)のバッジが、いくつかの状況で、その背後にあるアイテムを隠していた問題が修正されました。
+* [ コンポーネントをエディターでドラッグ&amp;ドロップして移動できるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
+* ユニバーサルエディターUIとバックエンドシステム間の待ち時間を短縮するために、サービスワーカーが導入されました。
+* コンテンツフラグメントのすべてのアダプター（AEM 6.5、OpenAPI、GraphQL）に、アセットセレクターのフィルターが含まれるようになり、一貫性が確保され、ユーザーは許可されたアセットのみを選択できるようになりました。
+* `content:patch` インテントが指定されました。
+* アクセシビリティに役立つように、作成者のフローとランドマークが定義されています。
+
+## その他の改善点 {#other-improvements}
+
+* `assignImageDimensionFields`の不要な型のアサーションが削除されました。
+* また、`add`操作のサーバー側の処理で文字列値が繰り返され、パッチではなくオブジェクトとして扱われる問題が修正されました。
