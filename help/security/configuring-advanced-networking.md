@@ -123,7 +123,7 @@ AEM as a Cloud Service では、次の高度なネットワークオプション
 
 サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しに、新しいレコードが表示されます。 これには、インフラストラクチャのタイプ、ステータス、地域、有効になっている環境などの詳細が含まれます。
 
-![ ネットワークインフラストラクチャの下の新しいエントリ ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; ネットワークインフラストラクチャの下の新しいエントリ &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しの下に新しいレコードが表示されます。 これには、インフラストラクチャのタイプ、ステータス、地域、有効になっている環境などの詳細が含まれます。
 
-![ ネットワークインフラストラクチャの下の新しいエントリ ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; ネットワークインフラストラクチャの下の新しいエントリ &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
