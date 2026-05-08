@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. 設定サイドバーで、**コネクタ**&#x200B;を選択します。 コネクタ ページで、**カスタムコネクタを追加**&#x200B;を選択して、カスタム MCP エンドポイントを登録します。
 
-   カスタムコネクタを追加した設定の![ コネクタ ページ。](assets/claude-2.png)
+   カスタムコネクタを追加した設定の![&#x200B; コネクタ ページ。](assets/claude-2.png)
 
 1. **カスタムコネクタを追加** ダイアログで、表示名（**AEM Content MCP Service**&#x200B;など）とMCP サーバーのURLを入力し、**Add**&#x200B;を選択します。 展開に追加オプションが必要な場合にのみ&#x200B;**詳細設定**&#x200B;を使用してください。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. 会話を開きます。 メッセージフィールドの左側にある「ツールとモデル」メニュー（スライダーアイコン）を選択し、「コネクタ」で「**AEM Content MCP Service**」を有効にし、プロンプトを入力して、ClaudeがそのチャットにMCP ツールを使用できるようにします。
 
-   ![ ツールメニューでAEM Content MCP サービスを有効にしたチャットコンポーザー。](assets/claude-7.png)
+   ![&#x200B; ツールメニューでAEM Content MCP サービスを有効にしたチャットコンポーザー。](assets/claude-7.png)
 
 ## Adobe Experience Manager コネクタ（Anthropic コネクタマーケットプレイス）のインストール {#install-adobe-experience-manager-connector}
 
