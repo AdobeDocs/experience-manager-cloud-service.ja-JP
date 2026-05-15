@@ -25,7 +25,7 @@ ht-degree: 28%
 
 ## アダプティブ Forms コアコンポーネントの可用性
 
-すべての&#x200B;**AEM Forms as a Cloud Service**&#x200B;環境には、コアコンポーネントを使用してアダプティブ Formsを作成するためのネイティブサポートが含まれています。 フォーム作成の手順については、[ アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)を参照してください。
+すべての&#x200B;**AEM Forms as a Cloud Service**&#x200B;環境には、コアコンポーネントを使用してアダプティブ Formsを作成するためのネイティブサポートが含まれています。 フォーム作成の手順については、[&#x200B; アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)を参照してください。
 
 ### AEM 6.5のアダプティブ Forms コアコンポーネントの有効化
 
