@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 - データ構造に基づいて、コンテンツの静的な母集団と動的な母集団の両方をサポートします。
 
-## &#x200B;3. 使用状況
+## &#x200B;3. 使用方法
 
 サブフォームは、次の目的で広く使用されています。
 

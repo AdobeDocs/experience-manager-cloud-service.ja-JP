@@ -1,15 +1,15 @@
 ---
 title: 選択したユーザーグループに AEM アダプティブフォームルールエディターへのアクセス権を付与する方法
-description: アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限する方法を説明します。
+description: アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。 各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限する方法を説明します。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
-source-wordcount: '320'
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '330'
 ht-degree: 100%
 
 ---
@@ -18,22 +18,22 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
-アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。正しい知識を使用してスクリプトや複雑なルールを操作できる上級ユーザーもいれば、アダプティブフォームのレイアウトや基本的なプロパティ以外の操作はできない初心者のユーザーもいます。
+アダプティブフォームで作業を行うユーザーのタイプやスキルはそれぞれ異なります。 正しい知識を使用してスクリプトや複雑なルールを操作できる上級ユーザーもいれば、アダプティブフォームのレイアウトや基本的なプロパティ以外の操作はできない初心者のユーザーもいます。
 
-[!DNL Experience Manager Forms] では、各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限できます。アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
+[!DNL Experience Manager Forms] では、各ユーザーの役割や職務に応じて、ルールエディターへのアクセスを制限できます。 アダプティブフォームの設定サービスを使用して、ルールエディターを表示してアクセスできる[ユーザーグループ](forms-groups-privileges-tasks.md)を指定することができます。
 
 ## ルールエディターにアクセスできるユーザーグループの指定 {#specify-user-groups-that-can-access-rule-editor}
 
 1. 管理者として [!DNL Experience Manager Forms] にログインします。
-1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png) をクリックし、Adobe Experience Manager／ツール![ハンマー](assets/hammer-icon.svg)／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;をクリックします。新しいウィンドウに Web コンソールが表示されます。
+1. オーサーインスタンスで、![Adobe Experience Manager](assets/adobeexperiencemanager.png) をクリックし、Adobe Experience Manager／ツール![ハンマー](assets/hammer-icon.svg)／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;をクリックします。 新しいウィンドウに Web コンソールが表示されます。
 
    ![1-2](assets/1-2.png)
 
-1. [!UICONTROL Web コンソール]ウィンドウで、「**[!UICONTROL アダプティブフォーム設定サービス]**」を探してクリックします。**[!UICONTROL アダプティブフォーム設定サービス]**&#x200B;ダイアログが表示されます。値を変更せずに、「**[!UICONTROL 保存]**」をクリックします。
+1. [!UICONTROL Web コンソール]ウィンドウで、「**[!UICONTROL アダプティブフォーム設定サービス]**」を探してクリックします。 **[!UICONTROL アダプティブフォーム設定サービス]**&#x200B;ダイアログが表示されます。 値を変更せずに、「**[!UICONTROL 保存]**」をクリックします。
 
    これにより、CRX リポジトリーに `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` ファイルが作成されます。
 
-1. 管理者として CRXDE にログインします。`/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` ファイルを開いて編集します。
+1. 管理者として CRXDE にログインします。 `/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config` ファイルを開いて編集します。
 1. 次のプロパティを使用して、ルールエディターにアクセスできるグループの名前（例えば RuleEditorsUserGroup）を指定し、「**[!UICONTROL すべて保存]**」をクリックします。
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`

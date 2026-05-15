@@ -8,9 +8,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1079'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,6 @@ AIは、ステップ間のナビゲーション付きのフォーム構造を自
     米国の電話番号の形式の検証を@phoneNumberに追加する
     年齢の検証を設定する：@dateOfBirth
 では18歳以上である必要があります
-
 ## 顧客データ
 
 ### LLM強化スマートフィールドとは何ですか？
@@ -233,8 +232,8 @@ Forms Experience Builderで作成されたFormsは、標準的なAEM Formsのデ
 
 追加のサポート情報：
 
-- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認してください
-- [&#x200B; デプロイと設定ガイド &#x200B;](deploy-forms-experience-builder.md)を確認する
+- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認してください
+- [ デプロイと設定ガイド ](deploy-forms-experience-builder.md)を確認する
 - システム管理者にお問い合わせください
 - 技術的な問題については、Adobe サポートにお問い合わせください
 

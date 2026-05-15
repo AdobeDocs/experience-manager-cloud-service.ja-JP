@@ -2,11 +2,12 @@
 title: ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICEのHIPAAへの対応
 description: HIPAA規則に対するExperience Manager as a Cloud Serviceのサポートと、新しいAEM as a Cloud Service プロジェクトを実装する際に準拠する方法について説明します。
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 8%
 
 ---
 
@@ -22,10 +23,10 @@ ht-degree: 6%
 >
 >プライバシーの問題に対するAdobeの対応と、これがAdobeのお客様にとって何を意味するかについては、次を参照してください。
 >
->* Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス &#x200B;](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
+>* Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス ](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)
 >* [Adobeのプライバシーセンター](https://www.adobe.com/jp/privacy.html)
 
-Adobe Experience Manager（AEM）as a Cloud Serviceの場合、Adobeは、HIPAAへの対応を理解するのに役立つドキュメントを提供します。 これらの規制を遵守するのに役立ちます。
+Adobe Experience Manager（AEM）as a Cloud Serviceの場合、Adobeは、HIPAAへの対応を理解するのに役立つドキュメントを提供します。 これは、これらの規制に準拠するのに役立ちます。
 
 ## 健康保険の相互運用性と説明責任に関する法律（HIPAA） {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -57,7 +58,7 @@ HIPAA対応サービスに対するAdobe BAAの実行について詳しくは、
 >
 >お客様は、Adobe HIPAA対応サービスの使用と、Adobe HIPAA対応サービスがコンプライアンス要件を満たしていることを確認する責任があります。
 
-詳しくは、Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス &#x200B;](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)を参照してください。
+詳しくは、Adobe Trust Centerの[HIPAAおよびAdobeの製品とサービス ](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html)を参照してください。
 
 ## HIPAA用語 {#hipaa-terminology}
 
@@ -89,11 +90,11 @@ HIPAA対応サービスに対するAdobe BAAの実行について詳しくは、
 | AEM Assets | Dynamic Media OpenAPI | HIPAA対応ではありません<br>[1] PHIが導入されていない場合は、拡張セキュリティプログラムに追加できます。 |
 | AEM Assets | Dynamic Media Scene 7 | HIPAAに対応していない |
 | AEM Forms | AEM Forms、Authentication Facade Service、PDF Utility Service | HIPAA対応 |
-| AEM CIF | コマース統合フレームワーク | HIPAAに対応していない |
+| AEM CIF | Commerce Integration Framework | HIPAAに対応していない |
 | AEM Cloud Manager | AEM Cloud Manager、リリースオーケストレーター、リリーストグル、リリースバリデーター | HIPAA対応 |
 | AEM Cloud Manager | ソフトウェア配布 | HIPAA対応ではありません<br>[1] PHIが導入されていない場合は、拡張セキュリティプログラムに追加できます。 |
 |   |   |   |
-| AEM Guides  | AEM Guides  | HIPAAに対応していない |
+| AEM ガイド  | AEM ガイド  | HIPAAに対応していない |
 |   |   |   |
 | LLM Optimizer | LLM Optimizer | HIPAA対応ではありません<br>[1] PHIが導入されていない場合は、拡張セキュリティプログラムに追加できます。 |
 
@@ -107,7 +108,7 @@ HIPAA対応サービスに対するAdobe BAAの実行について詳しくは、
 
 ### 追加要件 {#additional-requirements}
 
-HIPAA対応として[&#x200B; リストされているサービス &#x200B;](#hipaa-readiness-of-services-in-aem-as-a-cloud-service)には、Extended Security for Healthcareの購入が必要です。
+HIPAA対応として[ リストされているサービス ](#hipaa-readiness-of-services-in-aem-as-a-cloud-service)には、Extended Security for Healthcareの購入が必要です。
 
 Extended Security for Healthcareを購入する場合、次の要件があります。
 
@@ -136,6 +137,6 @@ Extended Security for Healthcareを購入する場合、次の要件がありま
 | --- | --- | --- | --- | --- |
 | 環境タイプ  | いいえ  | いいえ  | いいえ  | はい  |
 
-## セットアップ {#setup}
+## 設定 {#setup}
 
-[実稼動プログラムを作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)すると、「[&#x200B; セキュリティ」タブに、HIPAA保護を有効にするオプションが表示されます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)。
+[実稼動プログラムを作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)すると、「[ セキュリティ」タブに、HIPAA保護を有効にするオプションが表示されます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)。

@@ -8,10 +8,11 @@ solution: Experience Manager Sites
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85b72909597a95531aea51719c841bc5db9c1a21
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 28%
+source-wordcount: '950'
+ht-degree: 29%
 
 ---
 
@@ -120,7 +121,7 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 右側の情報パネルが開きます。
 1. **ライブコピーの詳細**&#x200B;のタブを選択します。
 
-   ![&#x200B; ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+   ![ ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
 
 ## 変更を反映 {#propagate-modifications}
 
@@ -141,7 +142,7 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 
 1. コンテンツフラグメントコンソールで、フラグメントライブコピーの場所に移動します。
 1. フラグメントを選択します。
-1. ツールバーから「**ロールアウト**」を選択します。 ウィザードが開き、プロセスをガイドします。
+1. ツールバーの「**ロールアウト**」を選択します。 ウィザードが開き、プロセスをガイドします。
 1. ロールアウトに含めるライブコピーを選択し、**続行**&#x200B;します。
 1. 直ちに（**今**）または&#x200B;**後**&#x200B;のロールアウトをスケジュールします。
 1. 必要に応じて&#x200B;**続行**&#x200B;します。
@@ -150,7 +151,7 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 
 ## エディターでの継承をキャンセルして元に戻す {#cancel-and-revert-to-inheritance-in-the-editor}
 
-継承とは、コンポーネントからコンポーネントへコンテンツを自動的にプッシュできるメカニズムです。継承されたフィールドとバリエーションは、マルチサイト管理の製品にすることができます。
+継承とは、コンポーネントからコンポーネントへコンテンツを自動的にプッシュできるメカニズムです。 継承されたフィールドとバリエーションは、マルチサイト管理の製品にすることができます。
 
 コンテンツフラグメントエディターで継承をキャンセル（その後に戻す）できます。 フラグメントがライブコピーの一部である場合は、コンテキストに応じて、これをバリエーションに対して使用できます。個々のフィールドに対して使用することもできます。
 

@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 91%
+source-wordcount: '351'
+ht-degree: 82%
 
 ---
 
 
 # HTML5 フォームのドラフトでの保存 {#saving-an-html-form-as-a-draft}
 
-<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。アクセス権をリクエストするには、公式の（勤務先の）メールアドレスから aem-forms-ea@adobe.com にメールを送信してください。
+<span class="preview">HTML5 Forms 機能は、早期アクセスプログラムの一部として提供されています。 アクセスをリクエストするには、お客様の公式（仕事用）電子メール IDからaem-forms-ea@adobe.comに電子メールを送信します。
 </span>
 
-HTML5 フォームをドラフトとして保存し、後でフォームへの記入を再開できます。フォームポータルを使用すると、すべてのユーザーが HTML5 フォームを保存および復元できます。「ドラフトとして保存」機能を有効にするには、プロファイルのノードに次の設定を追加します。
+HTML5 フォームをドラフトとして保存し、後でフォームへの記入を再開できます。 フォームポータルを使用すると、すべてのユーザーが HTML5 フォームを保存および復元できます。 「ドラフトとして保存」機能を有効にするには、プロファイルのノードに次の設定を追加します。
 
 ## 「ドラフトとして保存」機能を許可するためのカスタムプロファイル {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms では初期状態で「**ドラフトとして保存**」プロファイルを使用できます。「ドラフトとして保存」プロファイルを持つフォームをレンダリングすると、HTML5 フォームのドラフト機能を有効にすることができます。**Forms Manager** で、フォームに対する HTML レンダリングプロファイルを指定できます。
+AEM Forms では初期状態で「**ドラフトとして保存**」プロファイルを使用できます。 「ドラフトとして保存」プロファイルを持つフォームをレンダリングすると、HTML5 フォームのドラフト機能を有効にすることができます。 **Forms Manager** で、フォームに対する HTML レンダリングプロファイルを指定できます。
 
 既存の[カスタムプロファイル](/help/forms/custom-profile.md)に対して「ドラフトとして保存」機能を有効にするには、カスタムプロファイルのノードに次のプロパティを追加します。
 
@@ -36,7 +36,7 @@ AEM Forms では初期状態で「**ドラフトとして保存**」プロファ
  <tbody>
   <tr>
    <td><strong>プロパティ名</strong></td>
-   <td><strong>タイプ</strong></td>
+   <td><strong>種類</strong></td>
    <td><strong>値</strong></td>
    <td><strong>説明</strong></td>
   </tr>
@@ -57,7 +57,7 @@ AEM Forms では初期状態で「**ドラフトとして保存**」プロファ
 
 ## ドラフトの保存と一覧表示 {#drafts-storage-and-listing}
 
-フォームの「ドラフトとして保存」機能を有効にした後、フォームを保存すると、ドラフトおよび送信コンポーネントにリストされます。 ドラフトと送信コンポーネントから保存しておいたフォームを取得して入力を開始できます。
+フォームの「ドラフトとして保存」機能を有効にした後、フォームが保存されると、「ドラフトと送信」コンポーネントに表示されます。 ドラフトと送信コンポーネントから保存しておいたフォームを取得して入力を開始できます。
 
 ドラフトと送信コンポーネントのフォームの一覧表示を有効にするには、プロファイルのノードに次のプロパティを追加します。
 
@@ -65,7 +65,7 @@ AEM Forms では初期状態で「**ドラフトとして保存**」プロファ
  <tbody>
   <tr>
    <td><strong>プロパティ名</strong></td>
-   <td><strong>タイプ</strong></td>
+   <td><strong>種類</strong></td>
    <td><strong>値</strong></td>
    <td><strong>説明</strong></td>
   </tr>
@@ -78,4 +78,4 @@ AEM Forms では初期状態で「**ドラフトとして保存**」プロファ
  </tbody>
 </table>
 
-デフォルトでは、AEM Forms はフォームのドラフトと送信に関連付けられたユーザーデータをパブリッシュインスタンスの /content/forms/fp ノードに保存します。カスタムのストレージプロバイダーを追加できます。詳細は、[ドラフトと送信コンポーネントのカスタムストレージ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)を参照してください。
+デフォルトでは、AEM Forms はフォームのドラフトと送信に関連付けられたユーザーデータをパブリッシュインスタンスの /content/forms/fp ノードに保存します。 カスタムのストレージプロバイダーを追加できます。詳細は、[ドラフトと送信コンポーネントのカスタムストレージ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)を参照してください。

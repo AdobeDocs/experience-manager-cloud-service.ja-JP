@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 99%
 
 ---
 
@@ -103,7 +103,7 @@ HH:MM 形式（24 時間形式）で時刻を検証します。
 ^#[0-9a-fA-F]{6}$
 ```
 
-6 桁の 16 進カラーコードを検証します。例えば、#FFFFFF です。
+6 桁の 16 進カラーコードを検証します。 例えば、#FFFFFF です。
 
 
 ## IP アドレス

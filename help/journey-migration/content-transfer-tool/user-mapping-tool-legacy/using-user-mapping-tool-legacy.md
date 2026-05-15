@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
-workflow-type: ht
-source-wordcount: '803'
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
+source-wordcount: '839'
 ht-degree: 100%
 
 ---
@@ -18,29 +18,29 @@ ht-degree: 100%
 
 >[!INFO]
 >
->このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。最新バージョンについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
+>このドキュメントでは、ツールの非推奨（廃止予定）バージョンについて説明します。 最新バージョンについて詳しくは、[グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)を参照してください。
 
-ユーザーマッピングツールで使用される API は、Adobe Identity Management System（IMS）ユーザーをメールアドレスで検索して、各ユーザーの IMS ID を返すことができます。この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
+ユーザーマッピングツールで使用される API は、Adobe Identity Management System（IMS）ユーザーをメールアドレスで検索して、各ユーザーの IMS ID を返すことができます。 この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
 
 ## ユーザーマッピングツールのセットアップ {#setting-up-user-mapping}
 
-**前提条件：**&#x200B;ユーザーマッピングでは、IMS ID にマッピングされる各ユーザーは、AEM のプロファイルと IMS にメールアドレスを持っている必要があります。ユーザーがログイン時にメールアドレスをユーザー ID として使用している場合でも、メールアドレスがプロファイルと IMS に存在しない限り、そのユーザーに対するマッピングは機能しません。
+**前提条件：**&#x200B;ユーザーマッピングでは、IMS ID にマッピングされる各ユーザーは、AEM のプロファイルと IMS にメールアドレスを持っている必要があります。 ユーザーがログイン時にメールアドレスをユーザー ID として使用している場合でも、メールアドレスがプロファイルと IMS に存在しない限り、そのユーザーに対するマッピングは機能しません。
 
 これを設定するには、次の手順に従います。
 
 1. Adobe ID を使用して [Adobe 開発者コンソール](https://developer.adobe.com/console/)に移動します。
 1. プロジェクトを作成するか、既存のプロジェクトを開きます。
 1. API を追加：「**プロジェクトに追加**」をクリックして、「**API**」を選択します。
-1. 「User Management API」を選択します。このオプションを使用するには、システム管理者の権限が必要です。
+1. 「User Management API」を選択します。 このオプションを使用するには、システム管理者の権限が必要です。
 1. JWT 資格情報を作成します。
-1. キーペアを生成するか、公開鍵（rsa 以外）をアップロードします。キーペアを作成する「**公開鍵／秘密鍵のペアを生成**」ボタンがあります。必ず、公開鍵と秘密鍵の両方を保存してください。
+1. キーペアを生成するか、公開鍵（rsa 以外）をアップロードします。 キーペアを作成する「**公開鍵／秘密鍵のペアを生成**」ボタンがあります。 必ず、公開鍵と秘密鍵の両方を保存してください。
 1. User Management API に移動します。
 1. 秘密鍵の内容をテキストボックスにペーストして「**トークンを生成**」をクリックすることで、アクセストークン（またはベアラートークン）を生成します。
 1. **クライアント ID**、**クライアントシークレット**、**テクニカルアカウント ID**、**テクニカルアカウントメールアドレス**、**組織 ID**、**アクセストークン**&#x200B;などの情報をすべて安全に保存します。
 
 ## ユーザーマッピングツールのユーザーインターフェイスへのアクセス {#user-interface}
 
-ユーザーマッピングツールは、コンテンツ転送ツールに統合されています。コンテンツ転送ツールは[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードできます。最新バージョンについて詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+ユーザーマッピングツールは、コンテンツトランスファーツールに統合されています。 コンテンツトランスファーツールは[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードできます。 最新バージョンについて詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 1. Adobe Experience Manager を選択し、ツール／**運用**／**コンテンツ移行**&#x200B;に移動します。
 
@@ -65,16 +65,16 @@ ht-degree: 100%
    * **組織 ID**：ユーザーが移行する組織の Adobe Identity Management System（IMS）組織 ID を入力します。
 
      >[!NOTE]
-     >組織 ID を取得するには、[Admin Console](https://adminconsole.adobe.com/) にログオンし、（右上の領域で）組織を選択します（複数の組織に属している場合）。組織 ID は、そのページの URL に `xx@AdobeOrg` のような形式で含まれます（xx が IMS 組織 ID です）。または、アクセストークンを生成した [Adobe 開発者コンソール](https://developer.adobe.com/console/)ページでも組織 ID が見つかります。
+     >組織 ID を取得するには、[Admin Console](https://adminconsole.adobe.com/) にログオンし、（右上の領域で）組織を選択します（複数の組織に属している場合）。 組織 ID は、そのページの URL に `xx@AdobeOrg` のような形式で含まれます（xx が IMS 組織 ID です）。 または、アクセストークンを生成した [Adobe 開発者コンソール](https://developer.adobe.com/console/)ページでも組織 ID が見つかります。
 
    * **クライアントID**：設定手順で保存したクライアント ID を入力します。
 
    * **アクセストークン**：設定手順で保存したアクセストークンを入力します。
 
      >[!NOTE]
-     >アクセストークンの有効期限は 24 時間で切れるので、そのたびに新しいアクセストークンを作成する必要があります。トークンを作成するには、[Adobe Developer Console](https://developer.adobe.com/console/) に戻り、プロジェクトを選択し、「**User Management API**」をクリックして、同じ秘密鍵をボックスにペーストします。
+     >アクセストークンの有効期限は 24 時間で切れるので、そのたびに新しいアクセストークンを作成する必要があります。 トークンを作成するには、[Adobe Developer Console](https://developer.adobe.com/console/) に戻り、プロジェクトを選択し、「**User Management API**」をクリックして、同じ秘密鍵をボックスにペーストします。
 
-1. フィールドに値を入力したら、「**設定をテスト**」をクリックして、User Management API サービスへの接続をテストします。接続に成功した場合は、「**保存**」をクリックして、設定を保存できます。
+1. フィールドに値を入力したら、「**設定をテスト**」をクリックして、User Management API サービスへの接続をテストします。 接続に成功した場合は、「**保存**」をクリックして、設定を保存できます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -97,7 +97,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。ユーザーマッピングカードにステータスとタイムスタンプが表示されます。「**コンテンツ転送**」をクリックします。これにより、抽出を実行する移行セットを作成できます。 詳しくは、[コンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
+   >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。 ユーザーマッピングカードにステータスとタイムスタンプが表示されます。 「**コンテンツ転送**」をクリックします。これにより、抽出を実行する移行セットを作成できます。 詳しくは、[コンテンツトランスファーツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja#running-tool)を参照してください。
 
 ### ユーザーマッピングプロセスの再開 {#resume-user-mapping-process}
 

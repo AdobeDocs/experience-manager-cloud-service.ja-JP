@@ -6,10 +6,10 @@ role: Admin, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 100%
+source-wordcount: '780'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 概要
 
-効果的なフォームの作成には、技術的な実装以上に、ユーザー心理、アクセシビリティ標準、パフォーマンスの最適化を理解する必要があります。この包括的なガイドでは、ユーザーが実際に入力するフォームを設計するための実証済みのベストプラクティスを提供します。
+効果的なフォームの作成には、技術的な実装以上に、ユーザー心理、アクセシビリティ標準、パフォーマンスの最適化を理解する必要があります。 この包括的なガイドでは、ユーザーが実際に入力するフォームを設計するための実証済みのベストプラクティスを提供します。
 
 ### 学習内容
 
@@ -95,5 +95,5 @@ ht-degree: 100%
 
 - [Edge Delivery Services Forms でのドキュメントベースのオーサリング](/help/edge/docs/forms/tutorial.md)
 - [Edge Delivery Services Forms でのユニバーサルエディター](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-- [ ドキュメントオーサリング (DA) とコンテンツの埋め込み ](https://www.aem.live/developer/da-tutorial)
+- [ドキュメント作成（DA）とコンテンツの埋め込み](https://www.aem.live/developer/da-tutorial)
 - [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

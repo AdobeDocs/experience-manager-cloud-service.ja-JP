@@ -1,16 +1,16 @@
 ---
-title: Edge Delivery ストアフロントの概要
-description: Edge Delivery Servicesでのストアフロントについて
+title: Edge Delivery Storefrontの概要
+description: Edge Delivery Servicesでストアフロントを理解する
 feature: Commerce Integration Framework
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d272ae4192ee34dcad18dd133a324dde9b20bea3
+exl-id: 9d2617da-ecc0-4b02-bc39-f6bb871ff583
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '18'
 ht-degree: 0%
 
 ---
 
-
-# Edge Delivery ストアフロントの概要 {#edge-storefront}
+# Edge Delivery Storefrontの概要 {#edge-storefront}

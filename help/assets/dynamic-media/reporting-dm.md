@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '289'
 ht-degree: 98%
 
 ---

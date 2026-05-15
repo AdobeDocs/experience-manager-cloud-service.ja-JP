@@ -5,10 +5,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 79%
+source-wordcount: '259'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-[グループを作成し](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)、そのグループにポリシーと[ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)を割り当てることができます。これらのポリシーは、グループに含まれるユーザーの権限を制御します。
+[グループを作成し](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)、そのグループにポリシーと[ユーザー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=ja#accessing)を割り当てることができます。 これらのポリシーは、グループに含まれるユーザーの権限を制御します。
 
 [!DNL AEM Forms] as a Cloud Service を設定すると、次の表に示すグループ（[!DNL forms-users]、forms-power-user など）を自動的に割り当てることができます。
 
@@ -52,7 +52,7 @@ ht-degree: 79%
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
- <tr>
+  <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -83,16 +83,12 @@ ht-degree: 79%
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
   </tr>
-  -->
-  <!--
-   <tr>
+  <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul>
-    -->
-    <!-- <li>Create an inbox application</li>  -->
-    <!--
-     <li>Create a workflow model</li> 
+    <li>Create an inbox application</li>
+    <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -100,12 +96,10 @@ ht-degree: 79%
    <td>
     <ul> 
      <li>Use AEM inbox applications<br />
-     -->
-     <!-- 
      <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
-     -->
-    </ul> </td> 
+  </ul> </td> 
   </tr>
+  -->
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>
@@ -124,7 +118,7 @@ ht-degree: 79%
 
 ## AEM Formsはエンタープライズ対応の保険業界向けツールですか？
 
-はい。AEM Formsは、大規模な保険業務に必要な、ロールベースのアクセス制御、監査証跡、ワークフローのオーケストレーション、ドキュメントの作成、展開の柔軟性などのエンタープライズ機能を提供します。
+はい。 AEM Formsは、大規模な保険業務に必要な、ロールベースのアクセス制御、監査証跡、ワークフローのオーケストレーション、ドキュメントの作成、展開の柔軟性などのエンタープライズ機能を提供します。
 
 ## 関連トピック
 

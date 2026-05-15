@@ -6,8 +6,8 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: ht
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 ユーザーが AEM as a Cloud Service にログインするか、アクセストークンを使用するたびに、Adobe Admin Console ユーザーグループ、製品プロファイルおよび製品プロファイルサービスがグループとして AEM リポジトリに同期されます。
 
-AEM メンテナンスリリース 19149 以降では、UI の簡素化およびパフォーマンスの最適化を行うために、グループ同期の動作が変更されています。具体的には、次の 2 つのカテゴリの AEM グループのユーザーグループメンバーシップは同期されなくなります。
+AEM メンテナンスリリース 19149 以降では、UI の簡素化およびパフォーマンスの最適化を行うために、グループ同期の動作が変更されています。 具体的には、次の 2 つのカテゴリの AEM グループのユーザーグループメンバーシップは同期されなくなります。
 
-1. サフィックス `GROUP_NAME_SUFFIX` を持つ AEM グループ。これらのグループは、Adobe Developer Console には表示されませんが、以下に示すように AEM グループ管理画面に表示されます。万が一、AEM アプリケーションがこれらのグループを参照する場合は、代わりにそのサフィックスのない Adobe Admin Console ユーザーグループを参照してください。
+1. サフィックス `GROUP_NAME_SUFFIX` を持つ AEM グループ。 これらのグループは、Adobe Developer Console には表示されませんが、以下に示すように AEM グループ管理画面に表示されます。 万が一、AEM アプリケーションがこれらのグループを参照する場合は、代わりにそのサフィックスのない Adobe Admin Console ユーザーグループを参照してください。
 
    ![削除されたグループ 1](/help/security/assets/removed-groups-1.png)
 
-1. 特定の環境に関連しない Adobe Admin Console 製品プロファイルに関連付けられた AEM グループ。これには、次の製品プロファイルが含まれる場合があります。
+1. 特定の環境に関連しない Adobe Admin Console 製品プロファイルに関連付けられた AEM グループ。 これには、次の製品プロファイルが含まれる場合があります。
 
    * 他のアドビ製品に関連する
    * 他の AEM プログラムに関連する
@@ -38,10 +38,10 @@ Cloud Manager の環境のアクションメニューでアクセスを管理／
 
 ![サフィックスを確認](/help/security/assets/suffix-check.png)
 
-これにより、以下のスクリーンショットに示すように、Adobe Admin Console に移動します。`<suffix>` は、ランダムな文字セット、または層、プログラムおよび環境 ID（例：`author - Program 12345 - Environment 45678`）のいずれかである場合があります。
+これにより、以下のスクリーンショットに示すように、Adobe Admin Console に移動します。 `<suffix>` は、ランダムな文字セット、または層、プログラムおよび環境 ID（例：`author - Program 12345 - Environment 45678`）のいずれかである場合があります。
 
 ![Admin Console のサフィックス](/help/security/assets/admin-console-profile-suffixes.png)
 
 万が一、AEM アプリケーションが参照しているグループが AEM に表示されなくなる場合は、代わりに i) 適切な AEM インスタンスの製品プロファイル、または ii) Adobe Admin Console ユーザーグループのいずれかを使用してください。
 
-ユーザーが環境にログインすると、そのユーザーのグループメンバーシップが同期され、現在の環境に関連しないグループからは削除されます。グループ自体は残り、機能の有効化以降ログインしていないユーザーはグループに含まれます。
+ユーザーが環境にログインすると、そのユーザーのグループメンバーシップが同期され、現在の環境に関連しないグループからは削除されます。 グループ自体は残り、機能の有効化以降ログインしていないユーザーはグループに含まれます。

@@ -11,18 +11,18 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '429'
 ht-degree: 92%
 
 ---
 
 # 参照用のアダプティブフォームフラグメント {#reference-adaptive-form-fragments}
 
-アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。これを使用してフォームを簡単にすばやく作成できます。サイドバーのアセットブラウザーを使用して、アダプティブフォームフラグメントをフォームにドラッグ&amp;ドロップし、フォームビルダーで編集できます。
+アダプティブフォームフラグメントは、フォームの作成時に使用できるフィールドのグループまたはフィールドのグループを含むパネルです。 これを使用してフォームを簡単にすばやく作成できます。 サイドバーのアセットブラウザーを使用して、アダプティブフォームフラグメントをフォームにドラッグ&amp;ドロップし、フォームビルダーで編集できます。
 
-アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [!DNL AEM FORMS] REFERENCE FRAGMENTS で参照用のフラグメントが提供されています。次のフラグメントが含まれています。
+アダプティブフォームの作成者に向けて、[!DNL AEM Forms] パッケージ [!DNL AEM FORMS] REFERENCE FRAGMENTS で参照用のフラグメントが提供されています。 次のフラグメントが含まれています。
 
 * アドレス
 * 連絡先情報
@@ -35,13 +35,13 @@ ht-degree: 92%
 * 利用条件
 * 署名付き利用条件
 
-パッケージをインストールすると、フォームとドキュメントの下に参照用フラグメントを含む参照用フラグメントフォルダーが作成されます。パッケージのインストールについては、[クラウドマネージャーとパッケージマネージャーを介したコンテンツパッケージのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#deploying-content-packages-via-cloud-manager-and-package-manager)および[パッケージの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja)を参照してください。
+パッケージをインストールすると、フォームとドキュメントの下に参照用フラグメントを含む参照用フラグメントフォルダーが作成されます。 パッケージのインストールについては、[クラウドマネージャーとパッケージマネージャーを介したコンテンツパッケージのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#deploying-content-packages-via-cloud-manager-and-package-manager)および[パッケージの使用方法](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja)を参照してください。
 
 ![すべてのフラグメントが表示されている](assets/ootb-frags.png)
 
 ## アドレス {#address}
 
-住所を指定するフィールドが含まれています。使用できるフィールドは、アドレス、郵便番号、市、州および国です。指定された米国の郵便番号に対応する市と州を入力する事前設定済みの web サービスも含まれています。
+住所を指定するフィールドが含まれています。 使用できるフィールドは、アドレス、郵便番号、市、州および国です。 指定された米国の郵便番号に対応する市と州を入力する事前設定済みの web サービスも含まれています。
 
 ![住所フラグメント](assets/address.png)
 
@@ -94,7 +94,7 @@ ht-degree: 92%
 
 ## 職歴 {#employment-history}
 
-職歴を取得するためのフィールドが含まれています。複数の会社を追加できます。
+職歴を取得するためのフィールドが含まれています。 複数の会社を追加できます。
 
 ![職歴フラグメント](assets/emp-history.png)
 
@@ -106,7 +106,7 @@ ht-degree: 92%
 
 ## 収入と支出 {#income-expenditure}
 
-1 か月のキャッシュフローと支出を取得するためのフィールドが含まれています。ユーザーに詳しい財務情報を提供するように求めるフォームでは、このフラグメントを使用して収入と支出を取得できます。
+1 か月のキャッシュフローと支出を取得するためのフィールドが含まれています。 ユーザーに詳しい財務情報を提供するように求めるフォームでは、このフラグメントを使用して収入と支出を取得できます。
 
 ![収入と支出フラグメント](assets/income.png)
 

@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ LLMを強化したスマートフィールドは、AIの組み込みナレッジ
 
 **業界および事業体の種類：**
 
-    NAICS コードを使用した業界分類用のフィールドを追加してください
-    ビジネスエンティティタイプ（LLC、株式会社、パートナーシップなど）のドロップダウンを作成してください
-    会社サイズカテゴリ（スタートアップ、SME、大規模法人）のフィールドを追加してください
-    大規模組織の場合は部門の選択を含めてください
-    プロフェッショナルサービスタイプのフィールドを追加してください
+    NAICS コードを使用した業界分類のフィールドの追加
+    事業体タイプ （LLC、企業、パートナーシップなど）のドロップダウンを作成
+    企業規模カテゴリ （スタートアップ、中小企業、企業）のフィールドを追加
+    大規模組織向けの部門選択を含める
+    専門職種のフィールドを追加
 
 **プロンプト例：**
 

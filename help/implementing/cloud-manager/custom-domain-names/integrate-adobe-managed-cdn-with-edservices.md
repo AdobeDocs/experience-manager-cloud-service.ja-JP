@@ -6,9 +6,9 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '521'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ EDS with CDN integration is beneficial for various scenarios, including e-commer
 
 このトピックでは、Cloud Manager の Adobe が管理する CDN に Edge Delivery Services をデプロイする 2 つの方法について説明します。また、同様に重要なこととして、これは、ユースケースに最適なオプションを決定するのに役立ちます。
 
-Edge Delivery Services は、次の 2 つのオプションのいずれかを使用して設定できます。それぞれ機能が異なります。
+Edge Delivery Services は、次の 2 つのオプションのいずれかを使用して設定できます。 それぞれ機能が異なります。
 
 |  | デプロイメントオプション | 主なドキュメント | 機能 | 次に最適 |
 | --- | --- | --- | --- | --- |
@@ -53,12 +53,12 @@ Edge Delivery Services は、次の 2 つのオプションのいずれかを使
 
 | オプション | 概要 | 次に最適 | 主なドキュメント |
 | --- | --- | --- | --- |
-| アドビが管理する CDN プロキシ | Adobe が管理する CDN は、既存の AEM Sites 環境の前面に配置されます。現在の Sites パイプラインは「オリジン」のままですが、AMC-D は Edge キャッシュと TLS 終了を処理します。 | Cloud Manager で既に Sites を実行しており、迅速で低リスクでパフォーマンスを向上させたいチーム。 | AMC-D プロキシの設定 |
+| アドビが管理する CDN プロキシ | Adobe が管理する CDN は、既存の AEM Sites 環境の前面に配置されます。 現在の Sites パイプラインは「オリジン」のままですが、AMC-D は Edge キャッシュと TLS 終了を処理します。 | Cloud Manager で既に Sites を実行しており、迅速で低リスクでパフォーマンスを向上させたいチーム。 | AMC-D プロキシの設定 |
 | originSelectors を使用した設定パイプライン | 専用の Edge Delivery 設定パイプラインは、静的コンテンツと動的コンテンツを Edge に直接公開します。 `originSelectors` は、AMC-D と AEM のオーサー層／パブリッシュ層の間でトラフィックをルーティングします。 | 完全な Edge Delivery アーキテクチャと詳細なルーティングを採用したい新しいビルドまたは移行。 | Edge Delivery パイプラインの設定 |
 
 >[!TIP]
 >
->選択するパスが不明ですか？決定のガイドラインについて詳しくは、以下の[デプロイメントモデルの選択](#choose-deployment-model)を参照してください。
+>選択するパスが不明ですか？ 決定のガイドラインについて詳しくは、以下の[デプロイメントモデルの選択](#choose-deployment-model)を参照してください。
 
 ## デプロイメントモデルの選択 {#choose-deployment-model}
 
@@ -71,7 +71,7 @@ Edge Delivery Services は、次の 2 つのオプションのいずれかを使
 
 ## 前提条件 {#prerequisites}
 
-1. Cloud Manager でサイトをオンボード - 両方のデプロイメントモデルで必須です。AEM サイトのオンボードに従います。
+1. Cloud Manager でサイトをオンボード - 両方のデプロイメントモデルで必須です。 AEM サイトのオンボードに従います。
 
 2. Bring Your Own Git（BYOG）（オプション）- サイトコードを Adobe Git の外部に保存する場合は、BYOG オンボーディングを完了します。
 

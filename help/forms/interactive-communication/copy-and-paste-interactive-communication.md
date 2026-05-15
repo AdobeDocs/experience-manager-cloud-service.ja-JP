@@ -9,9 +9,9 @@ index: false
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---

@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -261,7 +261,7 @@ AIは、次のことを自動的に検出し、変換します。
 コンバージョンの問題：
 
 - [Forms Experience Builder FAQ](forms-experience-builder-frequently-asked-questions.md)を確認します
-- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認する
+- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認する
 - テクニカルサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事

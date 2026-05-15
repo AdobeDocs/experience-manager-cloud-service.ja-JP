@@ -4,10 +4,10 @@ description: OpenAPI機能を備えたDynamic Mediaを使用すると、Adobe Ex
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 7%
+source-wordcount: '409'
+ht-degree: 8%
 
 ---
 
@@ -48,7 +48,10 @@ ht-degree: 7%
 
 **ビデオ スマート切り抜きを作成** オプションが、ビデオアセットのメタデータフォームで使用できるようになりました。
 
-![&#x200B; ビデオ スマート切り抜きフィールドを作成](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## 承認されたビデオにビデオスマート切り抜きを適用する {#apply-video-smart-crops}
 
