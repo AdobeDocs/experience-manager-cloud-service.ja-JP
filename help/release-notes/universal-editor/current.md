@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.05.07 リリースノート
-description: ユニバーサルエディターの2026.05.07 リリースのリリースノートです。
+title: ユニバーサルエディター2026.05.14 リリースノート
+description: ユニバーサルエディターの2026.05.14 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 12%
+source-wordcount: '123'
+ht-degree: 20%
 
 ---
 
 
-# ユニバーサルエディター2026.05.07 リリースノート {#release-notes}
+# ユニバーサルエディター2026.05.14 リリースノート {#release-notes}
 
-これらは、ユニバーサルエディターの2026年5月7日リリースのリリースノートです。
+これらは、ユニバーサルエディターの2026年5月14日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,13 +26,9 @@ ht-degree: 12%
 
 ## 新機能 {#what-is-new}
 
-* [&#x200B; コンポーネントをエディターでドラッグ&amp;ドロップして移動できるようになりました。](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
-* ユニバーサルエディターUIとバックエンドシステム間の待ち時間を短縮するために、サービスワーカーが導入されました。
-* コンテンツフラグメントのすべてのアダプター（AEM 6.5、OpenAPI、GraphQL）に、アセットセレクターのフィルターが含まれるようになり、一貫性が確保され、ユーザーは許可されたアセットのみを選択できるようになりました。
-* `content:patch` インテントが指定されました。
-* アクセシビリティに役立つように、作成者のフローとランドマークが定義されています。
+* [ デフォルトでプロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)が開くようになりました。
+* [拡張アイコンがSpectrum 2に移行されました。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
 
 ## その他の改善点 {#other-improvements}
 
-* `assignImageDimensionFields`の不要な型のアサーションが削除されました。
-* また、`add`操作のサーバー側の処理で文字列値が繰り返され、パッチではなくオブジェクトとして扱われる問題が修正されました。
+* リッチテキストエディターで保存する際に、スペースや特殊文字を含むURLが適切にパーセントエンコードされるようになりました。
