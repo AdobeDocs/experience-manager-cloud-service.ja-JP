@@ -3,10 +3,9 @@ title: AEM as a Cloud Serviceのコンテキスト実験
 description: 実験パネルを使用して、サイトに実験機能を追加する方法を説明します。
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Edge Delivery Services プロジェクト内の実験パネル機能にアクセ
 1. A/B アイコンをクリックして、実験の拡張機能を開きます。
 
 >[!NOTE]
->プロジェクトの実験の設定で問題が発生した場合は、[aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com)にお問い合わせください。
+>プロジェクトの実験の設定で問題が発生した場合は、`aem-contextual-experimentation@adobe.com`にお問い合わせください。
 
 >[!NOTE]
 >実験エンジンの設定と設定方法について詳しくは、次の[ リポジトリ ](https://github.com/adobe/aem-experimentation/tree/v2-ui)のドキュメントセクションを参照してください。
