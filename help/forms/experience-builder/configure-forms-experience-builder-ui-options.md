@@ -100,7 +100,7 @@ Forms Experience Builderで新しい会話スレッドを開始します。
 UI設定の追加サポートについて：
 
 - [Forms Experience Builder FAQ](forms-experience-builder-frequently-asked-questions.md)を確認します
-- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認する
+- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認する
 - テクニカルサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事
