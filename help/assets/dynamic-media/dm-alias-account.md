@@ -9,7 +9,7 @@ role: User,Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 99%
@@ -20,13 +20,12 @@ ht-degree: 99%
 
 <!--
  hide: true
-hidefromtoc: yes 
 -->
 
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Dynamic Media の URL とビューアの埋め込みコードには、会社のアカウント名が含まれます。 このアカウント名は、Dynamic Media のプロビジョニング時に作成されました。 ビジネスが買収やブランド変更を受けた、あるいは単にもっと記憶に残る名前を使用したいというシナリオがあるかもしれません。 このようなシナリオでは、すべての URL とビューアの埋め込みコード（標準搭載）で会社のアカウント名を手動で更新するのは簡単ではありません。 さらに、既存の Dynamic Media リポジトリに影響を与えたり、ライブコンテンツに影響を与えたりする可能性があります。 この問題を解決するには、Dynamic Media の会社エイリアスアカウントを設定します。

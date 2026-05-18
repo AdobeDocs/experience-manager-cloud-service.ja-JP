@@ -6,10 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 hide: true
-hidefromtoc: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 29%
@@ -121,7 +120,7 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 右側の情報パネルが開きます。
 1. **ライブコピーの詳細**&#x200B;のタブを選択します。
 
-   ![&#x200B; ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+   ![ ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
 
 ## 変更を反映 {#propagate-modifications}
 

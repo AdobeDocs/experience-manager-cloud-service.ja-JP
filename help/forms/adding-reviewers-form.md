@@ -8,10 +8,9 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 99%
@@ -60,7 +59,7 @@ ht-degree: 99%
 
 以下の手順を行う前に、「[必要条件](adding-reviewers-form.md#prerequisite)」を参照してください。
 
-グループを作成し、メンバーを追加するには、**ツール**／**操作**／**セキュリティ**／**グループ**&#x200B;に移動します。
+グループを作成し、メンバーを追加するには、**ツール**／**操作**／**セキュリティ**／**グループ**に移動します。
 詳しくは、「[ユーザー管理およびサービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja)」を参照してください。
 作成したグループが、あらかじめ用意されているユーザーグループ **forms-submission-reviewers** のメンバーとして追加されていることを確認してください。 このユーザーグループは、[!DNL AEM Forms] に付属しており、ユーザーは送信レビュー担当者として追加されます。
 

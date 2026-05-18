@@ -8,9 +8,8 @@ discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 feature: Adaptive Forms
 role: User
 hide: true
-hidefromtoc: true
 exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 100%

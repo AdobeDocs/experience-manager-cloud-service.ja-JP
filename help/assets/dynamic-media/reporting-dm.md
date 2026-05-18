@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 98%

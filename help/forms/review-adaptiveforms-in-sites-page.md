@@ -3,10 +3,9 @@ title: アダプティブフォームをレビュー用に送信する方法？ 
 description: レビューとは、レビュー担当者がタスクの割り当て手順を使用して、アダプティブフォームに対して様々なタスクを実行できるメカニズムです。
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 role: User
 exl-id: e53535a8-cd6b-4f30-9523-773243098757
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%

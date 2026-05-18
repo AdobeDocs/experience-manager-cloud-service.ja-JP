@@ -6,9 +6,8 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 index: false
-hidefromtoc: true
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 1%

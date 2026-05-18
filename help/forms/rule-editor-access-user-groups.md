@@ -5,9 +5,8 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 hide: true
-hidefromtoc: true
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 100%

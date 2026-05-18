@@ -4,9 +4,8 @@ description: AEM Forms の Edge Delivery Services では、フォームフィー
 feature: Edge Delivery Services
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 99%

@@ -3,11 +3,10 @@ title: インテリジェントな読み込みと変換
 description: Forms Experience Builderのインテリジェントな読み込み機能と変換機能を使用して、既存のドキュメント、PDF、画像をインタラクティブなデジタルフォームに変換する方法をご確認ください。
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -261,7 +260,7 @@ AIは、次のことを自動的に検出し、変換します。
 コンバージョンの問題：
 
 - [Forms Experience Builder FAQ](forms-experience-builder-frequently-asked-questions.md)を確認します
-- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認する
+- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認する
 - テクニカルサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事

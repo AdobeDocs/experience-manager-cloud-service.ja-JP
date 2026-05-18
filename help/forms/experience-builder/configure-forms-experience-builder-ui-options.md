@@ -3,11 +3,10 @@ title: Forms Experience Builder UI オプションの設定
 description: 最適なユーザーエクスペリエンスを実現するために、Forms Experience Builderのインターフェイスのオプションと設定を設定およびカスタマイズする方法について説明します。
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -101,7 +100,7 @@ Forms Experience Builderで新しい会話スレッドを開始します。
 UI設定の追加サポートについて：
 
 - [Forms Experience Builder FAQ](forms-experience-builder-frequently-asked-questions.md)を確認します
-- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認する
+- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認する
 - テクニカルサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事
