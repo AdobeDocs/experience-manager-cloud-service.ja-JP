@@ -74,7 +74,7 @@ ht-degree: 97%
 
 **戻り値のタイプ**：式は、式の結果が表示されるフィールドに対応する値を返します（例えば、小数値）。
 
-**例**: **field1**の2つのフィールドの合計を表示する計算式は次のとおりです。
+**例**: **field1**&#x200B;の2つのフィールドの合計を表示する計算式は次のとおりです。
 `field2.value + field3.value`
 
 ### クリック式 {#click-expression}
@@ -279,7 +279,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 作成したノードの「プロパティ」タブを開きます。 例えば、`textboxpatterns` の「プロパティ」タブを開きます。 このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
 1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。 数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。 Datepicker フィールドの値は&#x200B;*fd/af/components/formatter/guideDatepicker*です。
-``
+&grave;&grave;
 1. `textboxpatterns` ノードにプロパティを割り当てることで、カスタムパターンを追加できます。 名前の付いたプロパティ（例えば、`pattern1`）を追加して、追加するパターンにその値を設定します。 例えば、値が Fax=text{99-999-9999999} のプロパティ `pattern1` を追加します。 パターンは、アダプティブフォームで使用するすべてのテキストボックスで使用できます。
 
    ![CrxDe でのフィールドのカスタムパターンの作成](assets/creating-custom-patterns.png)

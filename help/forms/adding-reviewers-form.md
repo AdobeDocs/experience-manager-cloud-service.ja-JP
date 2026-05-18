@@ -60,7 +60,7 @@ ht-degree: 99%
 
 以下の手順を行う前に、「[必要条件](adding-reviewers-form.md#prerequisite)」を参照してください。
 
-グループを作成し、メンバーを追加するには、**ツール**／**操作**／**セキュリティ**／**グループ**に移動します。
+グループを作成し、メンバーを追加するには、**ツール**／**操作**／**セキュリティ**／**グループ**&#x200B;に移動します。
 詳しくは、「[ユーザー管理およびサービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja)」を参照してください。
 作成したグループが、あらかじめ用意されているユーザーグループ **forms-submission-reviewers** のメンバーとして追加されていることを確認してください。 このユーザーグループは、[!DNL AEM Forms] に付属しており、ユーザーは送信レビュー担当者として追加されます。
 
