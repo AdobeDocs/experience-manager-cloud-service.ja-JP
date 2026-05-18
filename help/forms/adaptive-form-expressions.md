@@ -18,7 +18,7 @@ ht-degree: 97%
 
 アダプティブフォームは、ダイナミックなスクリプト機能によってエンドユーザーのフォームへの入力作業を最適化および簡素化します。 式を記述することで、フィールドやパネルのダイナミックな表示／非表示など、様々な動作を追加できるようになります。 また、レポートを作成する計算指標フィールドを追加したり、フィールドを読み取り専用にしたり、検証ロジックを追加したりすることもできます。 動的動作は、ユーザー入力や事前入力データに基づいています。
 
-アダプティブフォームの式言語は JavaScript™ です。 すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。 これらの式は、特定のタイプの値を返します。 アダプティブフォームクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/jp/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
+アダプティブフォームの式言語は JavaScript™ です。 すべての式は、有効な JavaScript™ の式で、アダプティブフォームのスクリプトモデル API を使用しています。 これらの式は、特定のタイプの値を返します。 アダプティブフォームクラス、イベント、オブジェクトおよびパブリック API の完全なリストについては、「[アダプティブフォーム用 JavaScript™ ライブラリ API リファレンス](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)」を参照してください。
 
 ## 式を記述するためのベストプラクティス {#best-practices-for-writing-expressions}
 
@@ -74,7 +74,7 @@ ht-degree: 97%
 
 **戻り値のタイプ**：式は、式の結果が表示されるフィールドに対応する値を返します（例えば、小数値）。
 
-**例**: **field1**&#x200B;の2つのフィールドの合計を表示する計算式は次のとおりです。
+**例**: **field1**の2つのフィールドの合計を表示する計算式は次のとおりです。
 `field2.value + field3.value`
 
 ### クリック式 {#click-expression}
@@ -279,7 +279,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 作成したノードの「プロパティ」タブを開きます。 例えば、`textboxpatterns` の「プロパティ」タブを開きます。 このノードに `guideComponentType` プロパティを追加して、その値を *fd/af/components/formatter/guideTextBox* に設定します。
 
 1. このプロパティの値は、パターンを定義するフィールドに応じて変わります。 数値フィールドの場合、`guideComponentType` プロパティの値は、*fd/af/components/formatter/guideNumericBox* です。 Datepicker フィールドの値は&#x200B;*fd/af/components/formatter/guideDatepicker*です。
-&grave;&grave;
+``
 1. `textboxpatterns` ノードにプロパティを割り当てることで、カスタムパターンを追加できます。 名前の付いたプロパティ（例えば、`pattern1`）を追加して、追加するパターンにその値を設定します。 例えば、値が Fax=text{99-999-9999999} のプロパティ `pattern1` を追加します。 パターンは、アダプティブフォームで使用するすべてのテキストボックスで使用できます。
 
    ![CrxDe でのフィールドのカスタムパターンの作成](assets/creating-custom-patterns.png)

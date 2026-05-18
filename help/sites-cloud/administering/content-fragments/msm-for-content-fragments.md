@@ -121,7 +121,7 @@ MSM for Content Fragments をコンテンツフラグメントエディター内
 右側の情報パネルが開きます。
 1. **ライブコピーの詳細**&#x200B;のタブを選択します。
 
-   ![&#x200B; ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+   ![ ライブコピーに関する情報](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
 
 ## 変更を反映 {#propagate-modifications}
 

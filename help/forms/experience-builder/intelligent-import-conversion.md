@@ -261,7 +261,7 @@ AIは、次のことを自動的に検出し、変換します。
 コンバージョンの問題：
 
 - [Forms Experience Builder FAQ](forms-experience-builder-frequently-asked-questions.md)を確認します
-- [はじめにガイド &#x200B;](forms-experience-builder-getting-started.md)を確認する
+- [はじめにガイド ](forms-experience-builder-getting-started.md)を確認する
 - テクニカルサポートについては、システム管理者にお問い合わせください
 
 ## 関連記事
