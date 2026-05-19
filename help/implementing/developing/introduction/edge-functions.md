@@ -82,7 +82,7 @@ AEM Edge関数サービスは、YAML設定ファイルで宣言され、Cloud Ma
 
 ### &#x200B;1. 設定パイプラインの設定 {#configuration-pipeline}
 
-エッジ関数を作成する前に、Cloud Managerで環境用の設定パイプラインが存在することを確認します。 そうでない場合は、最初に[設定パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を作成します。
+エッジ関数を作成する前に、Cloud Managerで環境用の設定パイプラインが存在することを確認します。 そうでない場合は、最初に[設定パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を作成します。
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ data:
           originName: edgefunction-second-function
 ```
 
-オリジン選択ルールを使用すると、特定のパス、ドメイン、リクエストヘッダーなど、CDN ルールエンジンで利用可能なあらゆる条件に基づいて、トラフィックをエッジ関数にルーティングできます。 完全なルール構文については、[ オリジンセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)を参照してください。
+オリジン選択ルールを使用すると、特定のパス、ドメイン、リクエストヘッダーなど、CDN ルールエンジンで利用可能なあらゆる条件に基づいて、トラフィックをエッジ関数にルーティングできます。 完全なルール構文については、[&#x200B; オリジンセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)を参照してください。
 
 ### &#x200B;4. 設定のデプロイ {#deploy-configuration}
 
@@ -174,7 +174,7 @@ aio aem edge-functions deploy <function-name>
 aio aem edge-functions serve
 ```
 
-ローカル ランタイムがサポートする内容について詳しくは、[Compute JavaScript ドキュメント ](https://www.fastly.com/documentation/guides/compute/javascript/)を参照してください。
+ローカル ランタイムがサポートする内容について詳しくは、[Compute JavaScript ドキュメント &#x200B;](https://www.fastly.com/documentation/guides/compute/javascript/)を参照してください。
 
 ### テスト {#test}
 
