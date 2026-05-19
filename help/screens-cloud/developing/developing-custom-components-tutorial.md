@@ -145,9 +145,9 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    ```xml
    <!--/*
     /apps/weretail-run/components/content/helloworld/production.html
-   
+
    */-->
-   
+
    <div data-duration="${properties.duration}" class="cmp-hello-world">
     <h1 class="cmp-hello-world__message">${properties.message}</h1>
    </div>
@@ -164,19 +164,20 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
    ファイルに以下のように入力します。
 
    ```xml
+
    <!--/*
-   
+
     /apps/weretail-run/components/content/helloworld/edit.html
-   
+
    */-->
-   
+
    <!--/* if message populated */-->
    <div
     data-sly-test.message="${properties.message}"
     class="aem-Screens-editWrapper cmp-hello-world">
     <p class="cmp-hello-world__message">${message}</p>
    </div>
-   
+
    <!--/* empty place holder */-->
    <div data-sly-test="${!message}"
         class="aem-Screens-editWrapper cq-placeholder cmp-hello-world"
