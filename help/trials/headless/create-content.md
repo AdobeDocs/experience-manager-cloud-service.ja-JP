@@ -1,14 +1,13 @@
 ---
 title: ヘッドレスコンテンツの作成
 description: 前に作成したコンテンツフラグメントモデルを使用して、ページオーサリングに使用できる、またはヘッドレスコンテンツの基礎として使用できるコンテンツを作成します。
-hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '701'
 ht-degree: 100%
 
 ---

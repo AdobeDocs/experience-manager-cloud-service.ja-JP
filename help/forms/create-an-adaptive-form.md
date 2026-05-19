@@ -6,10 +6,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '2723'
 ht-degree: 93%

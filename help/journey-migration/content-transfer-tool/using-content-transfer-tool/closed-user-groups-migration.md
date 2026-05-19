@@ -2,11 +2,10 @@
 title: クローズドユーザーグループの移行
 description: コンテンツを Adobe Experience Manager as a Cloud Service に移行した後でクローズドユーザーグループを有効にするために必要な特別な考慮事項について説明します。
 hide: true
-hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%

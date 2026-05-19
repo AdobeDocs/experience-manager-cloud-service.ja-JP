@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.5.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 93e633b8c9ac2f0bc03df70d3419b70d7b2ea7ba
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 10%
 
 ---
@@ -30,7 +30,7 @@ AEM as a Cloud ServiceのCloud Manager 2026.5.0のリリース日は2026年5月7
 
 * 実稼動プログラムの&#x200B;**ソフト削除**
 
-  Cloud Managerでは、ソフト削除ワークフローを使用して実稼動プログラムを削除できるようになりました。 削除されたプログラムは30日以内に復元でき、永久削除の前に追加の安全ウィンドウが提供されます。 この機能は5月を通して段階的に展開されています。
+  Cloud Managerでは、ソフト削除ワークフローを使用して実稼動プログラムを削除できるようになりました。 削除されたプログラムは30日以内に復元でき、永久的な削除の前に追加の安全ウィンドウが提供されます。 この機能は5月を通して段階的に展開されています。
 
   [削除する実稼動プログラムのマークを付ける](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program)を参照してください。
 
@@ -75,7 +75,7 @@ Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp
 * [実稼動パイプラインでのスマートビルドの使用](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)。
 * [実稼動パイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)。
 
-Betaに参加するには、[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)にAdobe OrgIDとプログラム IDをメールで送信します。
+Betaに参加するには、[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
 
 <!-- 
 OLD

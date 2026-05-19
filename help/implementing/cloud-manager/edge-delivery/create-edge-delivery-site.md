@@ -4,12 +4,13 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: d3d956e9342fe6bb507b0efd952dfbecdda269c2
+source-git-commit: 9cf3ab69adf8819d9f5496bf826c63f7cf01d554
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 56%
+source-wordcount: '1450'
+ht-degree: 57%
 
 ---
+
 
 # 最初の Edge Delivery サイトをワンクリックで作成{#about-one-click-edge-delivery-site}
 
@@ -51,7 +52,7 @@ Adobe Edge Delivery サイトをワンクリックで作成するには、組織
 1. **Edge Delivery サイトを作成** ダイアログボックスの「**プロジェクト名**」テキストフィールドに、サイトの名前を入力します。
 1. **オーサリングオプション**&#x200B;で、次のいずれかを選択します。
    * **ドキュメントオーサリング** — Google ドライブまたはSharePointでコンテンツを作成します。 このオプションはデフォルトで、AEM環境は必要ありません。
-   * **AEM オーサリング （Beta）** — ユニバーサルエディターを使用してAEMでコンテンツを作成します。 このオプションを選択した場合、**テンプレートを選択**&#x200B;で、Edge Delivery サイトの初期テンプレートを選択します。
+   * **AEM オーサリング** — ユニバーサルエディターを使用してAEMでコンテンツを作成します。 このオプションを選択した場合、**テンプレートを選択**&#x200B;で、Edge Delivery サイトの初期テンプレートを選択します。
 
    ![AEM オーサリングを選択した状態でEdge Delivery サイトを作成ダイアログ ボックス。](/help/implementing/cloud-manager/edge-delivery/assets/eds-create-aem-authoring.png)
 
@@ -81,11 +82,7 @@ Adobe Edge Delivery サイトをワンクリックで作成するには、組織
    | ユーザーに Google Drive のコンテンツリポジトリへのアクセス権を付与 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![ユーザー追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg)「**コンテンツリポジトリへのアクセス権を取得**」をクリックします。</li><li>**`Add collaborators to your site`** ダイアログボックスで、コントリビューターの電子メールアドレスを入力し、![&#x200B; チェックマークアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)をクリックします。</li><li>必要に応じて、引き続きコントリビューターのメールを追加します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li><li>コンテンツの共同作業者とリンクを共有するには、**共同作業が正常に追加されました**&#x200B;ダイアログボックスで「**OK**」をクリックします。</li><li>共同作業が正常に追加されましたダイアログボックスで、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックしてリンクをコピーし、共同作業者と共有します。<br>リンクを共有する前に、共同作業者が IMS アカウントに関連付けられたメールアドレスを使用してログインしていることを確認します。 IMS メールアカウントが使用できない場合は、共同作業者として追加されたメールアドレスを使用する必要があります。 これにより、共同作業者はリンクにアクセスして、Google Drive で編集または更新するコンテンツを表示できます。</li><li>編集が完了したら、上記のようにCloud Managerで&#x200B;**サイトを公開**&#x200B;をクリックします。<br>または、上記のように行われた変更をプレビューします。</li></ul> |
    | ユーザーに GitHub のベースリポジトリへのアクセス権を付与 | <ul><li> **Edge Delivery サイト**&#x200B;リストボックスで、サイト名の右端にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックして、ドロップダウンメニューを開きます。</li><li>ドロップダウンメニューで ![コードアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)「**ベースリポジトリへのアクセス権を取得**」をクリックします。</li><li>**サイトのベースリポジトリへのアクセス**&#x200B;ダイアログボックスで、共同作業者の GitHub ユーザー名を入力し、![チェックマークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) をクリックします。</li><li>必要に応じて、引き続き GitHub ユーザー名を追加します。</li><li>完了したら、「**共同作業者を追加**」をクリックします。</li>ユーザーは、リポジトリを表示するのに独自の GitHub ユーザー名へのアクセス権を付与する必要があります。 |
 
-## AEM オーサーからEdge Delivery（Beta）へのコンテンツの公開 {#publish-from-aem-author}
-
->[!NOTE]
->
->ここで説明する公開機能はBetaにあります。 Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
+## AEM オーサーからEdge Deliveryへのコンテンツの公開 {#publish-from-aem-author}
 
 この機能は、AEM オーサリングオプションで作成されたEdge Delivery サイトでのみ使用できます。
 

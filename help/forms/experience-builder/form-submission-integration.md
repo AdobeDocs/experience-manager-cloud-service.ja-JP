@@ -4,11 +4,10 @@ description: フォーム送信を設定し、Forms Experience Builder フォー
 feature: Edge Delivery Services
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 2%

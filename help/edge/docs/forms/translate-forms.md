@@ -3,10 +3,9 @@ title: AEM Forms の Edge Delivery Services の翻訳とローカライズ
 description: AEM Forms の Edge Delivery Services の翻訳とローカライズ
 feature: Edge Delivery Services
 hide: true
-hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 89%

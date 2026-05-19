@@ -6,11 +6,10 @@ keywords: AEM Forms, アダプティブフォーム，フォームビルダー�
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: true
-hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 1%

@@ -8,10 +8,9 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 feature: Adaptive Forms
 role: User
 hide: true
-hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 92%

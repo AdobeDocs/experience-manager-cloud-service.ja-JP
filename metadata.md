@@ -13,21 +13,21 @@ cloud: Experience Cloud
 recommendations: noDisplay
 source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 51%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 
-# 内部使用メタデータ
+# 内部使用のためのメタデータ
 
 GitHub オーサリングシステムのメタデータは階層であり、次のレベルの前例で定義されています。
 
 1. metadata.md
-1. 目次
+1. ToC
 1. 記事
 
-metadata.md ファイルで定義されたメタデータはリポジトリ全体に適用されますが、目次と記事のレベルで上書きできます。メタデータの上書きは、可能な限り低いレベルで行う必要があります。
+metadata.md ファイルで定義されたメタデータは、リポジトリ全体に適用されますが、ToC レベルとアーティクルレベルで上書きできます。 メタデータの上書きは、可能な限り低いレベルで行う必要があります。
 
 experience-manager-cloud-service.en リポジトリのメタデータは、必要な最小値です。
 
@@ -43,7 +43,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-目次
+ToCs
 
 * `sub-product`
 * `user-guide-title`

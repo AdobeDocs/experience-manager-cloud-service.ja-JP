@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: caec03f07606ae324e4966af3ba2f3296a955b76
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '7397'
-ht-degree: 90%
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 90%
    + [KPI の評価](/help/overview/assessing-kpis.md)
    + [KPI の調整](/help/overview/aligning-kpis.md)
    + [適切なチームの選択](/help/overview/choose-right-team.md)
-   + [ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)
+   + {hide-from-toc}[&#x200B; ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)
 + リリースノート {#release-notes}
    + [リリース情報](/help/release-notes/home.md)
    + AEMaaCS 機能のリリースノート {#release-notes}
@@ -324,12 +324,12 @@ ht-degree: 90%
    + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [ネットワーク接続テスト](/help/security/network-connectivity-test.md)
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
-   + [ユーザーグループと製品プロファイルの同期の変更](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + {hide-from-toc}[&#x200B; ユーザーグループと製品プロファイルの同期の変更](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [外部IDと動的グループメンバーシップへの移行](/help/security/migrating-to-external-identity.md)
    + [AEM as a Cloud Service の同一サイト cookie サポート](/help/security/same-site-cookie-support.md)
    + [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)
    + [WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)
-   + [AEM as a Cloud Service のセキュリティに関する考慮事項](/help/security/security-considerations.md)
+   + {hide-from-toc}[AEM as a Cloud Service セキュリティに関する考慮事項](/help/security/security-considerations.md)
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [パブリッシュ層での AEM as a Cloud Service の Open ID Connect のサポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
@@ -367,12 +367,12 @@ ht-degree: 90%
       + [通知プロファイル](/help/journey-onboarding/notification-profiles.md)
 + AEMaaCS 体験版 {#trials}
    + ヘッドレス体験版 {#headless}
-      + [サンプル React アプリのコンテンツのカスタマイズ](/help/trials/headless/customize-app.md)
-      + [アプリのコンテンツ構造の作成](/help/trials/headless/content-structure.md)
-      + [ヘッドレスコンテンツの作成](/help/trials/headless/create-content.md)
-      + [GraphQL API を使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
-      + [JavaScript での JSON コンテンツの取得](/help/trials/headless/code-playground.md)
-      + [ユニバーサルエディターを使用してインラインを編集](/help/trials/headless/universal-editor.md)
+      + {hide-from-toc}[&#x200B; サンプル React アプリでコンテンツをカスタマイズ &#x200B;](/help/trials/headless/customize-app.md)
+      + {hide-from-toc}[&#x200B; アプリのコンテンツ構造を作成](/help/trials/headless/content-structure.md)
+      + {hide-from-toc}[&#x200B; ヘッドレスコンテンツの作成](/help/trials/headless/create-content.md)
+      + {hide-from-toc}[GraphQL APIを使用したコンテンツの抽出](/help/trials/headless/extract-content.md)
+      + {hide-from-toc}[JavaScriptを使用してJSON コンテンツを取得](/help/trials/headless/code-playground.md)
+      + {hide-from-toc}[&#x200B; ユニバーサルエディターでインライン編集](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 移行ジャーニー {#migration-journey}
    + [AEM as a Cloud Service の移動の概要](/help/journey-migration/getting-started.md)
    + [準備段階](/help/journey-migration/readiness.md)
@@ -402,7 +402,7 @@ ht-degree: 90%
          + [コンテンツトランスファーツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [コンテンツトランスファーツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [コンテンツ転送の検証](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
-         + [クローズドユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
+         + {hide-from-toc}[閉じたユーザーグループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [大規模なコンテンツリポジトリの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [グループの移行](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
@@ -415,9 +415,9 @@ ht-degree: 90%
          + [移行後の IMS へのプリンシパルの一括アップロード](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/bulk-principal-uploading.md)
          + [コンテンツトランスファーツールのトラブルシューティング](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 従来のユーザーマッピングツール（従来）{#legacy-user-mapping-tool}
-            + [概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
-            + [重要な検討事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
-            + [ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[重要な考慮事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
+            + {hide-from-toc}[&#x200B; ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + コードリファクタリングツール {#refactoring-tools}
       + [リファクタリングツール入門](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -524,7 +524,7 @@ ht-degree: 90%
          + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [フラグメントのプレビュー](/help/sites-cloud/administering/content-fragments/preview.md)
-         + [MSM を使用したコンテンツフラグメントの再利用](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+         + {hide-from-toc}[MSMを使用したコンテンツフラグメントの再利用](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [コンテンツフラグメントのローンチ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Adobe Journey Optimizer のコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -599,13 +599,13 @@ ht-degree: 90%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Assets as a Cloud Service Ultimate の有効化](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [AEM Assets の問題のトラブルシューティング](/help/assets/troubleshoot-aem-assets.md)
+   + {hide-from-toc}[AEM Assetsの問題のトラブルシューティング &#x200B;](/help/assets/troubleshoot-aem-assets.md)
    + [Assets 共同作業者ユーザー](/help/assets/assets-collaborator-users.md)
    + デジタルアセットの管理 {#manage}
       + [アセットを共有する](/help/assets/share-assets.md)
       + [アセットの再処理](/help/assets/reprocessing.md)
       + [マルウェア検出](/help/assets/malware-detection.md)
-      + [アクティビティと DAM タスクの監視](/help/assets/assets-activity-history.md)
+      + {hide-from-toc}[&#x200B; アクティビティとDAM タスクの監視](/help/assets/assets-activity-history.md)
       + [アセットマイクロサービスの基本](/help/assets/asset-microservices-configure-and-use.md)
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
       + [アセットを検索](/help/assets/search-assets.md)
@@ -690,10 +690,10 @@ ht-degree: 90%
       + [Dynamic Media を構成する](/help/assets/dynamic-media/config-dm.md)
       + [Dynamic Media Prime と Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
       + [Dynamic Media Prime と Ultimate の有効化](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
-      + [オプション - Dynamic Media の設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
-      + [オプション - Dynamic Media の設定、公開設定](/help/assets/dynamic-media/dm-publish-settings.md)
+      + {hide-from-toc}[&#x200B; オプション - Dynamic Mediaの設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
+      + {hide-from-toc}[&#x200B; オプション - Dynamic Mediaの設定、公開設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)
-      + [Dynamic Media Alias アカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)
+      + {hide-from-toc}[Dynamic Media エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media のアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md)
       + [Dynamic Media アセットを管理する](/help/assets/dynamic-media/managing-assets.md)
       + [画質最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -730,7 +730,7 @@ ht-degree: 90%
       + [ページに Dynamic Media アセットを追加する](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [Dynamic ビデオビューアまたは画像ビューアを web ページに埋め込む](/help/assets/dynamic-media/embed-code.md)
       + [Web アプリケーションに URL をリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-      + [失敗した配信 URL のエラーレポートをリクエスト](/help/assets/dynamic-media/reporting-dm.md)
+      + {hide-from-toc}[失敗した配信URLに関するエラーレポートの要求](/help/assets/dynamic-media/reporting-dm.md)
       + [ルールセットを使用して URL を変換する](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media アセットを公開する](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [Dynamic Media で選択的公開を使用する](/help/assets/dynamic-media/selective-publishing.md)
@@ -781,7 +781,7 @@ ht-degree: 90%
       + [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets ビュー UI 拡張機能](/help/assets/aem-assets-view-ui-extensibility.md)
 
-      + [レポートの管理](/help/assets/manage-reports-assets-view.md)
+      + {hide-from-toc}[&#x200B; レポートの管理](/help/assets/manage-reports-assets-view.md)
       + [メタデータのカスケーディング Assets ビュー](/help/assets/cascading-metadata-assets-view.md)
    + コンテンツハブ {#content-hub}
       + [概要](/help/assets/product-overview.md)
@@ -821,8 +821,8 @@ ht-degree: 90%
 + Forms {#forms}
    + 概要 {#forms-overview}
       + [はじめに](/help/forms/home.md)
-      + [はじめに2](/help/forms/home2.md)
-      + [はじめに3](/help/forms/home3.md)
+      + {hide-from-toc}[はじめに2](/help/forms/home2.md)
+      + {hide-from-toc}[はじめに3](/help/forms/home3.md)
       + [トップ Adobe Experience Manager Forms イノベーション](/help/forms/latest-innovations.md)
       + [早期アクセス（EA）機能](/help/forms/early-access-ea-features.md)
       + [主要な変更点](/help/forms/notable-changes.md)
@@ -832,15 +832,15 @@ ht-degree: 90%
    + 設定と移行 {#setup-configure-migrate}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
-      + [AEM Forms as a Cloud Service およびローカル開発環境で、アダプティブフォームのコアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
+      + {hide-from-toc}[AEM Forms as a Cloud Serviceおよびローカル開発環境でアダプティブ Forms コアコンポーネントを有効にする](/help/forms/enable-adaptive-forms-core-components.md)
       + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
       + [as a Cloud Service の移行元 [!DNL AEM 6.5 Forms] または以前のバージョン [!DNL AEM Forms] &#x200B;](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
       + [Adobe Experience Software Development Kit（AEM SDK）の機能切替スイッチを有効にする](/help/forms/enable-feature-toggle.md)
    + はじめに {#getting-started-forms}
-      + [ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
-      + [ローン申し込みフォームの作成](/help/forms/create-adaptive-form-tutorial.md)
+      + {hide-from-toc}[&#x200B; ユースケースと開発環境の設定](/help/forms/create-adaptive-form-tutorial-getting-started.md)
+      + {hide-from-toc}[&#x200B; ローン申し込みフォームを作成](/help/forms/create-adaptive-form-tutorial.md)
    + 統合 {#integrate}
       + サービス {#services}
          + [AEM Forms as a Cloud Service と Adobe Sign の統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
@@ -854,7 +854,7 @@ ht-degree: 90%
       + フォームデータモデル {#use-form-data-model}
          + [AEM Forms をデータベースまたはデータソースに接続](/help/forms/data-integration.md)
          + [データソースの設定](/help/forms/configure-data-sources.md)
-         + [&#x200B; [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
+         + {hide-from-toc}[設定 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [OAuth 2.0 クライアント資格情報フローを使用して、アダプティブフォームを Salesforce アプリケーションに接続](/help/forms/aem-forms-salesforce-integration.md)
          + [&#x200B; [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
          + [&#x200B; [!DNL Microsoft Dynamics 365]  クラウドサービスの設定](/help/forms/configure-msdynamics.md)
@@ -863,7 +863,7 @@ ht-degree: 90%
          + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
          + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
          + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
-         + [アダプティブフォームの XML スキーマのデザイン](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + {hide-from-toc}[&#x200B; アダプティブフォームのXML スキーマをデザイン &#x200B;](/help/forms/adaptive-form-xml-schema-form-model.md)
       + アダプティブフォームの送信アクションの設定 {#set-submit-action}
          + [アダプティブフォームでサポートされている送信アクション](/help/forms/aem-forms-submit-action.md)
          + [基盤コンポーネントに基づくアダプティブフォームの送信アクションの設定](/help/forms/configuring-submit-actions.md)
@@ -889,8 +889,8 @@ ht-degree: 90%
             + [既存のアダプティブフォーム用の Adobe Marketo Engage データソースの設定](/help/forms/use-marketo-engage-data-source-in-form.md)
             + [既存のフォーム用の Marketo Engage に対する送信アクションの設定](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + アダプティブフォーム {#adaptive-forms-authoring}
-      + [アダプティブフォームの作成](/help/forms/create-an-adaptive-form.md)
-      + [最適なアダプティブフォームの種類](/help/edge/docs/forms/authoring-a-form.md)
+      + {hide-from-toc}[アダプティブフォームを作成](/help/forms/create-an-adaptive-form.md)
+      + {hide-from-toc}[最適なアダプティブフォームの種類](/help/edge/docs/forms/authoring-a-form.md)
       + [アダプティブフォームフラグメントの作成](/help/forms/adaptive-form-fragments.md)
       + [AEM Sites ページまたはエクスペリエンスフラグメントにアダプティブフォームの追加](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + [Forms ManagerでのForm Assets バージョンの管理](/help/forms/manage-form-versions-forms-manager.md)
@@ -919,8 +919,8 @@ ht-degree: 90%
             + [アダプティブフォームへのバージョン管理、コメント、注釈の追加](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [アダプティブフォームの比較](/help/forms/compare-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [移行ユーティリティツールを使用した基盤コンポーネントベースのアダプティブフォームからコアコンポーネントベースのフォームへの変換](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [アダプティブフォームのメールテンプレート](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + {hide-from-toc}[移行ユーティリティツールを使用して、基盤コンポーネントに基づくアダプティブ Formsをコアコンポーネントベースのフォームに変換](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + {hide-from-toc}[アダプティブ Formsの電子メールテンプレート &#x200B;](/help/forms/html-email-templates-in-adaptive-forms.md)
             + [Experience Manager Forms での公開の管理](/help/forms/manage-publication.md)
             + コアコンポーネントに基づくアダプティブフォームのルールエディターの概要{#rule-editor-core-components}
                + [コアコンポーネントに基づくアダプティブフォームのルールエディターの概要](/help/forms/rule-editor-core-components.md)
@@ -949,17 +949,17 @@ ht-degree: 90%
             + [変換後のフォームのレビューと修正](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=ja#welcome-to-review-and-correct-editor)
          + アダプティブフォームの作成 {#create-an-adaptive-form-on-forms-cs}
             + [アダプティブフォームのオーサリングの概要](/help/forms/introduction-forms-authoring.md)
-            + [フォームフィールドの文脈依存ヘルプの作成](/help/forms/authoring-in-field-help.md)
+            + {hide-from-toc}[&#x200B; フォームフィールドのコンテキスト内ヘルプのオーサリング &#x200B;](/help/forms/authoring-in-field-help.md)
             + [アダプティブフォームの作成](/help/forms/creating-adaptive-form.md)
             + [参照テーマ、テンプレート、データモデル](/help/forms/reference-themes-templates-data-models.md)
             + [テンプレートの作成](/help/forms/template-editor.md)
             + [テーマの作成](/help/forms/themes.md)
-            + [参照用のアダプティブフォームフラグメント](/help/forms/reference-adaptive-form-fragments.md)
-            + [アダプティブフォームと XFA フォームテンプレートとの同期](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [XDP ベースのアダプティブフォームにおける XFA のサポート](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + {hide-from-toc}[&#x200B; アダプティブフォームフラグメントの参照](/help/forms/reference-adaptive-form-fragments.md)
+            + {hide-from-toc}[&#x200B; アダプティブ FormsとXFA フォームテンプレートの同期](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + {hide-from-toc}[XDP ベースのアダプティブ FormsでのXFA サポート &#x200B;](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [アダプティブフォームの JSON スキーマのデザイン](/help/forms/adaptive-form-json-schema-form-model.md)
             + [遅延読み込みによる大きなフォームのパフォーマンスの向上](/help/forms/lazy-loading-adaptive-forms.md)
-            + [フォームとドキュメントの公開と非公開](/help/forms/publishing-unpublishing-forms.md)
+            + {hide-from-toc}[&#x200B; フォームとドキュメントの公開と非公開](/help/forms/publishing-unpublishing-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
             + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -978,17 +978,17 @@ ht-degree: 90%
          + アダプティブフォームでのルール追加と式の使用 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [アダプティブフォームへのルールの追加](/help/forms/rule-editor.md)
             + [ルールエディターの呼び出しサービスを使用したカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms.md)
-            + [ルールエディターへのアクセスを許可してユーザーグループを選択](/help/forms/rule-editor-access-user-groups.md)
+            + {hide-from-toc}[&#x200B; ルールエディターにユーザーグループの選択アクセス権を付与](/help/forms/rule-editor-access-user-groups.md)
             + [アダプティブフォームでの SOM 式の使用](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [アダプティブフォームの式](/help/forms/adaptive-form-expressions.md)
+            + {hide-from-toc}[&#x200B; アダプティブフォーム式](/help/forms/adaptive-form-expressions.md)
          + [!DNL Adobe Sign] の使用 {#use-adobe-sign}
             + [Adobe Sign を使用したアダプティブフォームの電子サイン](/help/forms/working-with-adobe-sign.md)
          + 送信アクションとメタデータ送信の設定 {#configure-submit-actions-and-metadata-submission}
             + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
             + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
-            + [ユーザーデータからフォーム送信メタデータへの情報の追加](/help/forms/form-submission-metadata.md)
-            + [アダプティブフォームからフォームデータモデル（FDM）サービスを呼び出す API](/help/forms/invoke-form-data-model-services.md)
+            + {hide-from-toc}[&#x200B; ユーザーデータからフォーム送信メタデータへの情報の追加](/help/forms/form-submission-metadata.md)
+            + {hide-from-toc}[アダプティブ Formsからフォームデータモデル （FDM） サービスを呼び出すAPI](/help/forms/invoke-form-data-model-services.md)
          + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generate Submission PDF（旧Document of Record）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [アダプティブフォームへの新しいロケールのサポートの追加](/help/forms/supporting-new-language-localization.md)
@@ -998,14 +998,14 @@ ht-degree: 90%
          + アダプティブフォームのアクセシビリティの向上 {#accessible-adaptive-forms}
             + [アクセシブルなアダプティブフォームの作成](/help/forms/creating-accessible-adaptive-forms.md)
          + [レビューの作成と管理](/help/forms/create-reviews-forms.md)
-         + [送信レビュー担当者とフォームの関連付け](/help/forms/adding-reviewers-form.md)
-         + [アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + {hide-from-toc}[送信済みレビュー担当者をフォームに関連付ける](/help/forms/adding-reviewers-form.md)
+         + {hide-from-toc}[アダプティブフォームのレビューの作成と管理](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [アダプティブフォームのキーワード](/help/forms/adaptive-forms-keywords.md)
       + [フォームのプレビュー](/help/forms/previewing-forms.md)
    + HTML5 Forms {#html5-forms}
       + [HTML5 フォームの概要](/help/forms/introductionhtml5.md)
       + [HTML5 forms の概要](/help/forms/get-started.md)
-      + [HTML5 フォームのアーキテクチャ](/help/forms/html5-forms-architecture.md)
+      + {hide-from-toc}[HTML5 formsのアーキテクチャ &#x200B;](/help/forms/html5-forms-architecture.md)
       + [HTML5 フォームと PDF フォームの機能の違い](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
       + [HTML5 フォームに関するよくある質問（FAQ）](/help/forms/faqhtml5.md)
       + [HTML5 フォーム用のフォームテンプレートのデザイン](/help/forms/designing-form-template.md)
@@ -1026,11 +1026,11 @@ ht-degree: 90%
       + [アクセス可能な複雑なテーブルを HTML5 フォームで作成する](/help/forms/accessible-tables.md)
       + [HTML5 フォームのための CSS スタイルの作成](/help/forms/css-styles.md)
       + [HTML5 フォームのエラーメッセージのカスタマイズ](/help/forms/customzing-errors-html5-forms.md)
-      + [HTML5 フォームのドラフトでの保存](/help/forms/saving-html5-form-draft.md)
+      + {hide-from-toc}[HTML5 フォームをドラフトとして保存](/help/forms/saving-html5-form-draft.md)
       + [HTML5 フォーム内でのログの有効化](/help/forms/enable-logs.md)
       + [HTML5 フォーム のデバッグ](/help/forms/debug.md)
       + [HTML5 フォームのスクリプティングのサポート](/help/forms/scripting-support.md)
-      + [AEM Forms におけるフォームセット](/help/forms/formset-in-aem-forms.md)
+      + {hide-from-toc}[AEM Formsで設定されたフォーム &#x200B;](/help/forms/formset-in-aem-forms.md)
 + インタラクティブなコミュニケーション {#interactive-communication}
    + インタラクティブ通信について {#overview}
       + [はじめに](/help/forms/interactive-communication/introduction.md)
@@ -1038,8 +1038,8 @@ ht-degree: 90%
       + [インタラクティブなコミュニケーションの作成](/help/forms/interactive-communication/create-interactive-communication.md)
       + [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
-      + [最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+      + {hide-from-toc}[&#x200B; インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
+      + {hide-from-toc}[最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
    + Component {#component}
       + [テキストボックス](/help/forms/interactive-communication/text-box.md)
       + [画像](/help/forms/interactive-communication/image.md)
@@ -1065,8 +1065,8 @@ ht-degree: 90%
       + [動的なページ番号付けを実装する](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [コンテンツオーバーフローの処理](/help/forms/interactive-communication/handle-content-overflow.md)
       + [XDP編集をサポート](/help/forms/interactive-communication/support-xdp-editing.md)
-      + [バージョンの作成とコメントの追加](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + [インタラクティブ通信のコピーとペースト](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+      + {hide-from-toc}[&#x200B; バージョンの作成とコメントの追加](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[&#x200B; インタラクティブ通信のコピーと貼り付け](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [インタラクティブ通信でのワークフローの開始](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [動的テーブルを作成](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + UIの関連付け {#associateui}
@@ -1074,13 +1074,13 @@ ht-degree: 90%
       + [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + [よくある質問](/help/forms/interactive-communications-faq.md)
+   + {hide-from-toc}[よくある質問](/help/forms/interactive-communications-faq.md)
 + Forms 中心のワークフロー {#create-form-centric-workflows}
-   + [Forms 中心のワークフローの導入](/help/forms/aem-forms-workflow.md)
+   + {hide-from-toc}[Forms中心のワークフローの概要](/help/forms/aem-forms-workflow.md)
    + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
    + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
-   + [AEM Workflow での動的なユーザーまたはグループの選択](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-   + [AEM インボックスでの Forms アプリケーションとタスクの管理](/help/forms/manage-applications-inbox.md)
+   + {hide-from-toc}[AEM ワークフローでの動的なユーザーまたはグループの選択](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + {hide-from-toc}[AEM インボックスでのForms アプリケーションとタスクの管理](/help/forms/manage-applications-inbox.md)
    + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
 + 通信 API {#using-communications}
    + [通信 API の概要](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -1089,8 +1089,8 @@ ht-degree: 90%
    + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
    + [Forms Communications API - チュートリアル](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
    + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
-   + [OAuth サーバー間認証](/help/forms/oauth-api-authetication.md)
-   + [JWT （JSON Web Token）サーバー間の認証](/help/forms/jwt-api-authentication.md)
+   + {hide-from-toc}[OAuth サーバー間の認証](/help/forms/oauth-api-authetication.md)
+   + {hide-from-toc}[JWT （JSON Web トークン） サーバー間の認証](/help/forms/jwt-api-authentication.md)
    + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
    + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
    + [Designer での Page Zero コンテンツの変更](/help/forms/changing-page-zero-content-designer.md)
@@ -1101,8 +1101,8 @@ ht-degree: 90%
       + [トランザクションレポート請求可能 API](/help/forms/transaction-reports-billable-apis.md)
       + [カスタム実装のトランザクションの記録](/help/forms/record-transaction-custom-implementation.md)
    + 価値実現ダッシュボード  {#vr-dashboard}
-      + [価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
-      + [価値実現ダッシュボードを使用したフォームとドキュメントの使用状況トレンドの分析](/help/forms/using-the-value-realization-dashboard.md)
+      + {hide-from-toc}[価値実現ダッシュボードについて](/help/forms/aem-forms-value-realization-dashboard.md)
+      + {hide-from-toc}[価値実現ダッシュボードを使用したフォームとドキュメントの使用傾向の分析](/help/forms/using-the-value-realization-dashboard.md)
    + 開発者 API リファレンス {#aem-forms-developer-api-reference}
       + [アダプティブ Forms API リファレンス](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service Communications API リファレンス](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
@@ -1159,16 +1159,16 @@ ht-degree: 90%
       + [バリエーションを生成 - AEM エディターに統合済み](/help/generative-ai/generate-variations-integrated-editor.md)
       + [バリエーションを生成](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Forms Experience Builder – 概要](/help/forms/experience-builder/product-overview.md)
-      + [Forms Experience Builderの基本を学ぶ](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-      + [Forms Experience Builderのデプロイと設定](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + {hide-from-toc}[Forms Experience Builder – 概要](/help/forms/experience-builder/product-overview.md)
+      + {hide-from-toc}[Forms Experience Builderの概要](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + {hide-from-toc}[Forms Experience Builderのデプロイと設定](/help/forms/experience-builder/deploy-forms-experience-builder.md)
       + 方法 {#forms-experience-builder-how-to}
-         + [画像をフォームに変換する方法](/help/forms/experience-builder/intelligent-import-conversion.md)
-         + [フォーム送信と統合の設定方法](/help/forms/experience-builder/form-submission-integration.md)
-         + [Forms Experience BuilderでLLM強化スマートフィールドを作成する方法](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-         + [Forms experience builderで新しいスレッドの会話を開始する方法](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-      + [プロンプトライブラリ](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
-      + [よくある質問（FAQ）](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
+         + {hide-from-toc}[画像をフォームに変換する方法は？](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + {hide-from-toc}[&#x200B; フォームの送信と統合を設定する方法を教えてください。](/help/forms/experience-builder/form-submission-integration.md)
+         + {hide-from-toc}[Forms Experience BuilderでLLM強化スマートフィールドを作成する方法は？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + {hide-from-toc}[Forms experience builderで新しいスレッドの会話を開始する方法は？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + {hide-from-toc}[&#x200B; プロンプトライブラリ &#x200B;](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + {hide-from-toc}[よくある質問（FAQ） &#x200B;](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
@@ -1209,9 +1209,9 @@ ht-degree: 90%
 + コンテンツとコマース {#content-and-commerce}
    + [概要](/help/commerce-cloud/introduction.md)
    + Edge Delivery Services ストアフロント {#edge-storefront}
-      + [はじめに](/help/commerce-cloud/edge-storefront/introduction.md)
+      + {hide-from-toc}[はじめに](/help/commerce-cloud/edge-storefront/introduction.md)
    + サードパーティストアフロント {#thrid-party-storefront}
-      + [はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
+      + {hide-from-toc}[はじめに](/help/commerce-cloud/third-party-storefront/introduction.md)
    + CIF ストアフロント {#cif-storefront}
       + [CIF の概要](/help/commerce-cloud/cif-storefront/introduction.md)
       + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/cif-storefront/changes.md)
@@ -1275,7 +1275,7 @@ ht-degree: 90%
          + [Edge Delivery Services を使用したアダプティブフォームの公開](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [EDS フォームのカスタムコンポーネントの作成](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [Edge Delivery Services フォーム送信での 403 Forbidden エラーのトラブルシューティング](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [API 統合を使用したSalesforce リードオブジェクトの作成](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + {hide-from-toc}[API 統合を使用したSalesforce リードオブジェクトの作成](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + カスケードドロップダウン {#cascading-drop-down-list}
             + [はじめに](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [API 統合を作成](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
@@ -1286,23 +1286,23 @@ ht-degree: 90%
          + [アダプティブフォームブロックの様々なコンポーネント](/help/edge/docs/forms/form-components.md)
          + [Google Sheets へのフォームの接続：データ収集設定ガイド](/help/edge/docs/forms/submit-forms.md)
          + [フォームの運用：公開およびデータ収集ガイド](/help/edge/docs/forms/publish-forms.md)
-         + [フォームフィールドの検証：フォームへのエラーチェックの追加](/help/edge/docs/forms/validate-forms.md)
+         + {hide-from-toc}[&#x200B; フォームフィールド検証：Formsにエラーチェックを追加](/help/edge/docs/forms/validate-forms.md)
          + [美しいフォームの設計：スタイル設定とカスタマイズガイド](/help/edge/docs/forms/style-theme-forms.md)
          + [成功メッセージの作成：フォームの「ありがとうございます」ページのカスタマイズ](/help/edge/docs/forms/thank-you-page-form.md)
          + [動的フォームフィールド：URL からのオプションの読み込み](/help/edge/docs/forms/load-options-from-url.md)
          + [スマートな動作の追加：フォームルールとロジックガイド](/help/edge/docs/forms/rules-forms.md)
-         + [高度なフォームの検証：正規表現ガイド](/help/edge/docs/forms/regex-forms.md)
-         + [再利用可能なフォームの作成：フォームフラグメントに関するガイド](/help/edge/docs/forms/form-fragments.md)
+         + {hide-from-toc}[高度なフォーム検証：正規表現ガイド &#x200B;](/help/edge/docs/forms/regex-forms.md)
+         + {hide-from-toc}[再利用可能なFormsを作成：フォームフラグメントのガイド &#x200B;](/help/edge/docs/forms/form-fragments.md)
          + [動的なフォームの作成：繰り返し可能なセクションの追加](/help/edge/docs/forms/repeatable-forms.md)
-         + [フォームのグローバル化：フォーム翻訳ガイド](/help/edge/docs/forms/translate-forms.md)
+         + {hide-from-toc}[&#x200B; フォームをグローバルにする：フォーム翻訳ガイド &#x200B;](/help/edge/docs/forms/translate-forms.md)
          + [フォームの保護：reCAPTCHA セキュリティの追加](/help/edge/docs/forms/recaptacha-forms.md)
-         + [カスタムフォームコンポーネントの作成：開発者向けガイド](/help/edge/docs/forms/custom-components-forms.md)
-         + [フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + {hide-from-toc}[&#x200B; カスタムフォームコンポーネントの作成：開発者ガイド &#x200B;](/help/edge/docs/forms/custom-components-forms.md)
+         + {hide-from-toc}[フォームのパフォーマンスの監視：運用テレメトリのガイド](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [フォーム送信ガイド：フォーム送信サービスの使用](/help/forms/forms-submission-service.md)
       + [Edge Delivery Services Forms 用の送信設定](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [アダプティブ Forms ブロックフィールドのプロパティ](/help/edge/docs/forms/eds-form-field-properties.md)
-      + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [フォーム作成のベストプラクティス](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+      + {hide-from-toc}[FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+   + {hide-from-toc}[&#x200B; フォーム作成のベストプラクティス &#x200B;](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + ヘッドレス {#headless}
    + [ヘッドレス CMS とは](/help/headless/what-is-headless.md)
    + [AEM ヘッドレスの概要](/help/headless/introduction.md)
@@ -1439,7 +1439,7 @@ ht-degree: 90%
       + [カスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
       + レポート {#reports}
          + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
-         + [視覚的な比較](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+         + {hide-from-toc}[視覚的な比較](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
          + [健全性の評価](/help/implementing/cloud-manager/reports/report-health-assessment.md)
          + [エクスペリエンス監査](/help/implementing/cloud-manager/reports/report-experience-audit.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
@@ -1491,7 +1491,7 @@ ht-degree: 90%
       + [API リファレンス資料](/help/implementing/developing/reference-materials.md)
       + [OpenAPI ベースの API](/help/implementing/developing/open-api-based-apis.md)
       + [サーバーサイド API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [サーバーサイド API のアクセストークンの生成（レガシー）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + {hide-from-toc}[&#x200B; サーバーサイド API （レガシー）用のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [サイトのクイック作成とフロントエンドのカスタマイズ](/help/implementing/developing/introduction/quick-site-creation.md)
       + [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [サイトのテンプレートとテーマのカスタマイズ](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
@@ -1641,7 +1641,7 @@ ht-degree: 90%
       + [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md)
       + [Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)
       + [AMS から AEM as a Cloud Service への Dispatcher 設定の移行](/help/implementing/dispatcher/ams-aem.md)
-      + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)
+      + {hide-from-toc}[Dispatcher Tools Legacyを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service での CDN](/help/implementing/dispatcher/cdn.md)
       + [CDN でのトラフィックの設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)
       + [一般的なシナリオのCDN設定スニペット](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
@@ -1682,4 +1682,5 @@ ht-degree: 90%
       + [AEM as a Cloud Service と web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 + トラブルシューティング {#troubleshooting}
-   + [AEM AssetsとFormsの問題のトラブルシューティング](/help/troubleshooting/home.md)
+   + {hide-from-toc}[AEM AssetsとFormsの問題のトラブルシューティング &#x200B;](/help/troubleshooting/home.md)
+

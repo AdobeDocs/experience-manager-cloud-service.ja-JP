@@ -9,7 +9,7 @@ role: User,Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 99%
@@ -20,7 +20,6 @@ ht-degree: 99%
 
 <!--
  hide: true
-hidefromtoc: yes 
 -->
 
 <!-- 

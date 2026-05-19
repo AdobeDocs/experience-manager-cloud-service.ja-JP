@@ -3,11 +3,10 @@ title: Forms Experience Builder - プロンプトライブラリ
 description: Forms Management UI、アダプティブフォームエディター、ユニバーサルエディターで、AI を利用してフォームを作成する実証済みのプロンプトパターンと例のコレクション。
 hide: true
 index: false
-hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
 workflow-type: tm+mt
 source-wordcount: '2192'
 ht-degree: 97%

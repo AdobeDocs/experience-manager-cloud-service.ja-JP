@@ -6,10 +6,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager Sites
 hide: true
-hidefromtoc: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 29%
@@ -202,3 +201,4 @@ You can cancel (then revert) the inheritance. Depending on the context, this can
 ## 制限事項 {#limitations}
 
 * 変更時のトリガーと関連するロールアウト設定は、コンテンツフラグメントには存在しません。
+
