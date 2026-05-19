@@ -119,14 +119,14 @@ AEM Screens には、従来の WCM Sites コンポーネントには必ずしも
 
    ```xml
    <!--/*
-   
+
     /apps/weretail-run/components/content/helloworld/helloworld.html
-   
+
    */-->
-   
+
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
-   
+
    <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
