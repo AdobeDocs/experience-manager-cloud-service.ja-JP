@@ -119,7 +119,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Adobe Workfrontを使用したアダプティブフォームの接続
 
-Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md)と簡単に[接続するための、すぐに使えるオプションが用意されています。 これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
+Forms as a Cloud Serviceには、アダプティブフォームをAdobe Workfront[&#128279;](/help/forms/submit-adaptive-form-to-workfront-fusion.md)と簡単に接続するための、すぐに使えるオプションが用意されています。 これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
 
 #### コアコンポーネントベースのアダプティブフォーム用のビジュアルルールエディターの強化
 

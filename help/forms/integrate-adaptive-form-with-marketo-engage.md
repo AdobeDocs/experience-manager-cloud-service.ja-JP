@@ -25,7 +25,7 @@ Marketo EngageとAEM Formsを統合するためのクラウドサービス設定
 
 Marketo Engageをフォームに接続するための前提条件：
 
-* [ クラウドサービス設定を作成して、Marketo Engageとforms](/help/forms/integrate-form-to-marketo-engage.md)を統合します。
+* [&#x200B; クラウドサービス設定を作成して、Marketo Engageとforms](/help/forms/integrate-form-to-marketo-engage.md)を統合します。
 
 ## Marketo Engageと統合するように新しいアダプティブフォームを設定する方法
 
@@ -49,7 +49,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. **[!UICONTROL Source]** タブで、テンプレートを選択します
 
-   ![ テンプレートの選択](/help/forms/assets/select-template-af1.png)
+   ![&#x200B; テンプレートの選択](/help/forms/assets/select-template-af1.png)
 
 1. **[!UICONTROL スタイル]**&#x200B;から、テーマを選択します。
 
@@ -58,7 +58,7 @@ Marketo Engageをフォームに接続するための前提条件：
 1. 画面の右側のペインに表示されるドロップダウンリストから「**[!UICONTROL クラウド設定]**」を選択します。
 デフォルトでは、関連する設定のすべてのフィールドが表示されます。 このウィザードでは、チェックボックスを使用して、アダプティブフォームに含めるフィールドを選択できる利便性があります。
 
-   ![ データモデルの選択](/help/forms/assets/select-marketo-data-af1.png)
+   ![&#x200B; データモデルの選択](/help/forms/assets/select-marketo-data-af1.png)
 
 1. 「**[!UICONTROL 送信]**」タブで、「**[!UICONTROL Marketoに送信」アクションを選択します。]**
 
@@ -68,7 +68,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. 「**[!UICONTROL 作成]**」を選択します。 アダプティブフォームを保存するタイトル、名前、場所を指定します。
 
-   ![ フォームを作成](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; フォームを作成](/help/forms/assets/create-marketo-form.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
@@ -88,7 +88,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. **[!UICONTROL Source]** タブで、テンプレートを選択します
 
-   ![ テンプレートの選択](/help/forms/assets/select-template.png)
+   ![&#x200B; テンプレートの選択](/help/forms/assets/select-template.png)
 
 1. **[!UICONTROL スタイル]**&#x200B;から、テーマを選択します。
 
@@ -100,7 +100,7 @@ Marketo Engageをフォームに接続するための前提条件：
 1. 画面の右側のペインに表示されるドロップダウンリストから「**[!UICONTROL クラウド設定]**」を選択します。
 デフォルトでは、関連する設定のすべてのフィールドが表示されます。 このウィザードでは、チェックボックスを使用して、アダプティブフォームに含めるフィールドを選択できる利便性があります。
 
-   ![ データモデルの選択](/help/forms/assets/select-marketo-data.png)
+   ![&#x200B; データモデルの選択](/help/forms/assets/select-marketo-data.png)
 
 1. 「**[!UICONTROL 送信]**」タブで、「**[!UICONTROL Marketoに送信」アクションを選択します。]**
 
@@ -110,7 +110,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. 「**[!UICONTROL 作成]**」を選択します。 アダプティブフォームを保存するタイトル、名前、場所を指定します。
 
-   ![ フォームを作成](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; フォームを作成](/help/forms/assets/create-marketo-form.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
@@ -130,14 +130,14 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. **[!UICONTROL Source]** タブで、テンプレートを選択します
 
-   ![ テンプレートの選択](/help/forms/assets/select-template-ue.png)
+   ![&#x200B; テンプレートの選択](/help/forms/assets/select-template-ue.png)
 
 1. 「**[!UICONTROL データ]**」タブで、データモデルを&#x200B;**Marketo Engage**&#x200B;として選択します。
 
 1. 画面の右側のペインに表示されるドロップダウンリストから「**[!UICONTROL クラウド設定]**」を選択します。
 デフォルトでは、関連する設定のすべてのフィールドが表示されます。 このウィザードでは、チェックボックスを使用して、アダプティブフォームに含めるフィールドを選択できる利便性があります。
 
-   ![ データモデルの選択](/help/forms/assets/select-marketo-data-ue.png)
+   ![&#x200B; データモデルの選択](/help/forms/assets/select-marketo-data-ue.png)
 
 1. 「**[!UICONTROL 送信]**」タブで、「**[!UICONTROL Marketoに送信」アクションを選択します。]**
 
@@ -147,7 +147,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 1. 「**[!UICONTROL 作成]**」を選択します。 アダプティブフォームを保存するタイトル、名前、場所を指定します。
 
-   ![ フォームを作成](/help/forms/assets/create-marketo-form.png)
+   ![&#x200B; フォームを作成](/help/forms/assets/create-marketo-form.png)
 
 1. 「**[!UICONTROL 作成]**」を選択します。
 
@@ -173,7 +173,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 ## 次の手順
 
-アダプティブフォームを[Munchkin ライブラリ ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
+アダプティブフォームを[Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
 
 ## 関連記事
 
