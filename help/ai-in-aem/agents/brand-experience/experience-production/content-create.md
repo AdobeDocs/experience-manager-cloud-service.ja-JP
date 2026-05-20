@@ -3,9 +3,9 @@ title: コンテンツ作成ジョブ
 description: Brand Experience Agentのコンテンツ作成ジョブとは何か、およびそれがユーザーに対して何を可能にするかについて説明します。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-source-git-commit: 5d1a560b4eb386d0c3795d6634742ffce8ef4c71
+source-git-commit: 2e3b10f7886f8bc5757d2144875ec0b441de7bb5
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # コンテンツ作成ジョブ {#content-create}
 
-Content Create ジョブは、[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)の一部であり、自然言語、マーケティング概要、およびAEM テンプレートを使用して、ブランドに即した新しいページを作成します。 Adobe Experience Manager（AEM）as a Cloud ServiceとEdge Delivery Servicesのページ制作を高速化します。
+Content Create ジョブは、[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)の一部であり、自然言語、マーケティング概要、およびAEM テンプレートを使用して、ブランドに即した新しいページを作成します。 Adobe Experience Manager（AEM）as a Cloud ServiceとEdge Delivery Servicesのページ制作を高速化できます。
 
 <!-- see Limitations too and update when appropriate -->
 
