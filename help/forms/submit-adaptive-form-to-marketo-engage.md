@@ -1,76 +1,74 @@
 ---
-title: Forms 用にMarketo Engageに送信アクションを設定する方法
+title: フォームに対してMarketo Engageに送信アクションを設定するには？
 description: アダプティブフォームの送信アクションを設定して、Marketo Engageにデータを送信する方法を説明します。
-keywords: Marketo engage へのデータの送信、「Marketo Engageに送信」として送信アクションを設定する
+keywords: Marketo engageにデータを送信し、送信アクションをMarketo Engageに送信として設定します
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 24%
+source-wordcount: '779'
+ht-degree: 21%
 
 ---
 
 # 既存のフォーム用の Marketo Engage に対する送信アクションの設定
 
-<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
-
 ![ワークフロー](/help/forms/assets/workflow-marketo-3.png)
 
-アダプティブFormsエディターには、アダプティブFormsデータをMarketo Engageに送信して処理するための **Adobe Marketo Engageに送信** 送信アクションが用意されています。 送信時にデータを [Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home) に送信するように、既存のアダプティブフォームを設定できます。
+アダプティブ Forms エディターには、アダプティブ Forms データをAdobe Marketo Engageに送信して処理するための&#x200B;**Marketo Engageに送信**&#x200B;送信アクションが用意されています。 送信時に[Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home)にデータを送信するように、既存のアダプティブフォームを設定できます。
 
-フォームの送信を処理するための、すぐに使用できる様々な送信アクションを使用できます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
+フォーム送信を処理するための、すぐに使用できる様々な送信アクションを利用できます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事を参照してください。
 
-## フォーム用にMarketo Engageに送信アクションを設定する際の考慮事項
+## フォームに対するMarketo Engageへの送信アクションの設定時の考慮事項
 
-* フォーム送信時にMarketo Engageにデータを送信するように、アダプティブフォームがMarketo Engage データソースで設定されていることを確認します。 ただし、フォームがMarketo Engage データスキーマで設定されている場合でも、送信アクションを代替アクション（**OneDrive に送信** や **SharePointに送信** などに変更することができます。
+* アダプティブフォームが、フォーム送信時にMarketo Engageにデータを送信するようにMarketo Engage データソースで設定されていることを確認します。 ただし、フォームがMarketo Engage データスキーマで設定されている場合でも、「**OneDriveに送信**」や「**SharePointに送信**」などの代替手段に送信アクションを変更できます。
 
-## 既存のフォームのMarketo Engageに送信アクションを設定するための前提条件
+## 既存のフォームに対してMarketo Engageに送信アクションを設定するための前提条件
 
-Marketo Engageへの送信アクションを設定するための前提条件は次のとおりです。
+Marketo Engageに送信アクションを設定するための前提条件：
 
-* アダプティブフォームの [Marketo Engage データソースを設定し &#x200B;](/help/forms/use-marketo-engage-data-source-in-form.md) フォーム要素をMarketo Engage フィールドにバインドします。
+* アダプティブフォーム [&#128279;](/help/forms/use-marketo-engage-data-source-in-form.md)のMarketo Engage データソースを設定し、フォーム要素をMarketo Engage フィールドにバインドします。
 
-## 既存のフォームをMarketo Engageに送信する方法
+## 既存のフォームに対してMarketo Engageへの送信アクションを設定するには？
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
 
-<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。 UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 
 >[!BEGINTABS]
 
 >[!TAB 基盤コンポーネント]
 
-基盤コンポーネントに基づくアダプティブフォームの送信アクションを設定して、Adobe Marketo Engageにデータを送信できます。 Marketo Engageへの送信アクションを設定するには、次の手順を実行します。
+基盤コンポーネントに基づいてアダプティブフォームの送信アクションを設定し、Adobe Marketo Engageにデータを送信できます。 Marketo Engageに送信アクションを設定するには、次の手順を実行します。
 
 1. [!DNL Experience Manager Forms] オーサーインスタンスにログインします。
-1. 編集用にアダプティブフォームを開き、アダプティブフォームコンテナプロパティの **[!UICONTROL 送信]** セクションに移動して、送信アクションを **Marketo Engageに送信** として選択します。
+1. アダプティブフォームを開いて編集し、アダプティブフォームコンテナプロパティの&#x200B;**[!UICONTROL 送信]** セクションに移動し、送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 ![Marketo送信アクション &#x200B;](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
 
-アダプティブフォームの送信アクションを **Adobe Marketo Engageに送信** に設定すると、Marketo Engageにデータを送信して処理できます。 このデータを使用して、マーケティングキャンペーンの分析と最適化、フォローアップメールの自動化、フォーム送信に基づくワークフローのトリガーを行うことができます。
+アダプティブフォームの送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として設定した後、データをAdobe Marketo Engageに送信して処理できます。 それらのデータは、マーケティング施策の分析と最適化、フォローアップメールの自動化、フォームへの入力にもとづくトリガーワークフローの実行に活用できます。
 
 >[!TAB コアコンポーネント]
 
-コアコンポーネントに基づくアダプティブフォームの送信アクションを設定して、Adobe Marketo Engageにデータを送信できます。 Marketo Engageへの送信アクションを設定するには、次の手順を実行します。
+コアコンポーネントに基づいてアダプティブフォームの送信アクションを設定し、Adobe Marketo Engageにデータを送信できます。 Marketo Engageに送信アクションを設定するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
 1. コンテンツツリーを開き、「**[!UICONTROL ガイドコンテナ]**」を選択します。
-1. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。送信アクションを設定するための「アダプティブフォームコンテナ」ダイアログボックスが開きます。
-1. 「**[!UICONTROL 送信]**」タブを開き、送信アクションを「**Marketo Engageに送信** として選択します。
+1. アダプティブフォームコンテナのプロパティ（![アダプティブフォームコンテナのプロパティ](/help/forms/assets/configure-icon.svg) アイコン）をクリックします。 送信アクションを設定するためのアダプティブフォームコンテナダイアログボックスが開きます。
+1. 「**[!UICONTROL 送信]**」タブを開き、「**Marketo Engageに送信**」として送信アクションを選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
 ![Marketo送信アクション &#x200B;](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
-アダプティブフォームの送信アクションを **Adobe Marketo Engageに送信** に設定すると、Marketo Engageにデータを送信して処理できます。 このデータを使用して、マーケティングキャンペーンの分析と最適化、フォローアップメールの自動化、フォーム送信に基づくワークフローのトリガーを行うことができます。
+アダプティブフォームの送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として設定した後、データをAdobe Marketo Engageに送信して処理できます。 それらのデータは、マーケティング施策の分析と最適化、フォローアップメールの自動化、フォームへの入力にもとづくトリガーワークフローの実行に活用できます。
 
 >[!TAB ユニバーサルエディター]
 
-ユニバーサルエディターで作成されたアダプティブフォームの送信アクションを、Adobe Marketo Engageにデータを送信するように設定できます。 Marketo Engageへの送信アクションを設定するには、次の手順を実行します。
+ユニバーサルエディターで作成したアダプティブフォームの送信アクションを設定して、データをAdobe Marketo Engageに送信できます。 Marketo Engageに送信アクションを設定するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
 1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
@@ -87,18 +85,18 @@ Marketo Engageへの送信アクションを設定するための前提条件は
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-アダプティブフォームの送信アクションを **Adobe Marketo Engageに送信** に設定すると、Marketo Engageにデータを送信して処理できます。 このデータを使用して、マーケティングキャンペーンの分析と最適化、フォローアップメールの自動化、フォーム送信に基づくワークフローのトリガーを行うことができます。
+アダプティブフォームの送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として設定した後、データをAdobe Marketo Engageに送信して処理できます。 それらのデータは、マーケティング施策の分析と最適化、フォローアップメールの自動化、フォームへの入力にもとづくトリガーワークフローの実行に活用できます。
 
 >[!ENDTABS]
 
 ## よくある質問（FAQ）
 
-**Q:Marketo Engage スキーマに接続するように設定されたフォームの送信アクションを変更できますか？**
-**A:** デフォルトでは、Marketo Engage スキーマと接続するようにフォームが設定されている場合、**Marketoに送信** アクションが選択されています。 ただし、必要に応じて、フォームの送信アクションを変更できます。
+**Q: Marketo Engage スキーマに接続するように設定されたフォームの送信アクションを変更できますか？**
+**A:** デフォルトでは、フォームがMarketo Engage スキーマに接続するように設定されている場合、**Marketoに送信** アクションが選択されます。 ただし、必要に応じて、フォームの送信アクションを変更できます。
 
 ## 次の手順
 
-また、アダプティブフォームを [Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin) に接続して、訪問数、クリック数、フォーム送信数をトラッキングすることもできます。
+アダプティブフォームを[Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
 
 ## 関連記事
 

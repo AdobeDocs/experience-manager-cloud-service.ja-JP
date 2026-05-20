@@ -6,20 +6,18 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1441'
 ht-degree: 99%
 
 ---
 
 # REST エンドポイントへの送信アクションのアダプティブフォームの設定
 
-<span class="preview">設定を使用して REST エンドポイントを指定する機能は早期導入プログラムであり、コアコンポーネントと Edge Delivery Services Forms にのみ適用できます。公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。</span>
+**[!UICONTROL REST エンドポイントへの送信]**&#x200B;アクションを使用して、送信されたデータを REST URL に POST できます。 URL は、内部（フォームがレンダリングされるサーバー）または外部サーバーのどちらのものでも使用できます。
 
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;アクションを使用して、送信されたデータを REST URL に POST できます。URL は、内部（フォームがレンダリングされるサーバー）または外部サーバーのどちらのものでも使用できます。
-
-AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)の記事をご覧ください。
+AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)の記事をご覧ください。
 
 ## メリット
 
@@ -43,30 +41,31 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    ![REST エンドポイントへの送信のアクション設定](/help/forms/assets/submit-action-restendpoint.png)
 
-   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
+   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。 データは、リソースのパスに POST されます。 例えば、`/content/restEndPoint` のようになります。 このような POST リクエストには、送信リクエストの認証情報が使用されます。
+このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
+外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
-   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。`param1` を使用して取得されるデータを POST するための構文を以下に示します。
+   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。 `param1` を使用して取得されるデータを POST するための構文を以下に示します。
 
    `String data=request.getParameter("param1");`
 
    同様に、XML データと添付ファイルの POST に使用するパラメーターは、`dataXml` および `attachments` です。
 
-   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。データを格納および解析するための構文を以下に示します。
+   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。 データを格納および解析するための構文を以下に示します。
 
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。 リクエストにフィールド名を追加できます。 リクエストのフォーマットを以下に示します。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
 
    ![REST エンドポイント送信アクションの設定](assets/action-config.png)
 
-   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
+   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。 フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。 例えば、`/content/forms/af/SampleForm.html` のようになります。 他のサーバーにデータを送信するには、絶対パスを使用します。
 
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
@@ -81,31 +80,31 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    ![REST エンドポイントの設定](assets/rest-service-endpoint-config.png)
 
-   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
+   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。 データは、リソースのパスに POST されます。 例えば、`/content/restEndPoint` のようになります。 このような POST リクエストには、送信リクエストの認証情報が使用されます。
 
    REST エンドポイントを指定するには、次の 2 つのオプションがあります。
 
    +++URL
 
    このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
+外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
 
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
-   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。`param1` を使用して取得されるデータを POST するための構文を以下に示します。
+   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。 `param1` を使用して取得されるデータを POST するための構文を以下に示します。
 
    `String data=request.getParameter("param1");`
 
    同様に、XML データと添付ファイルの POST に使用するパラメーターは、`dataXml` および `attachments` です。
 
-   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。データを格納および解析するための構文を以下に示します。
+   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。 データを格納および解析するための構文を以下に示します。
 
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
 
-   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。 リクエストにフィールド名を追加できます。 リクエストのフォーマットを以下に示します。
 
    `{fieldName}={request parameter name}`
 
@@ -113,13 +112,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    ![REST エンドポイント送信アクションの設定](assets/action-config.png)
 
-   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
+   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。 フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。 例えば、`/content/forms/af/SampleForm.html` のようになります。 他のサーバーにデータを送信するには、絶対パスを使用します。
 
    +++
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください。
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
 
    +++
 
@@ -130,7 +129,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 ユニバーサルエディターでオーサリングされたアダプティブフォームの Swagger Open API 仕様に基づいて送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターの「**フォームプロパティを編集**」拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
 
    **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
@@ -141,31 +140,31 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL REST エンドポイントに送信]**」送信アクションを選択します。
 
-   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。データは、リソースのパスに POST されます。例えば、`/content/restEndPoint` のようになります。このような POST リクエストには、送信リクエストの認証情報が使用されます。
+   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。 データは、リソースのパスに POST されます。 例えば、`/content/restEndPoint` のようになります。 このような POST リクエストには、送信リクエストの認証情報が使用されます。
 
    REST エンドポイントを指定するには、次の 2 つのオプションがあります。
 
    +++URL
 
    このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。URL の形式は、`https://host:port/path_to_rest_end_point` です。POST リクエストを匿名で処理するためのパスを設定してください。
+外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
 
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
-   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。`param1` を使用して取得されるデータを POST するための構文を以下に示します。
+   上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。 `param1` を使用して取得されるデータを POST するための構文を以下に示します。
 
    `String data=request.getParameter("param1");`
 
    同様に、XML データと添付ファイルの POST に使用するパラメーターは、`dataXml` および `attachments` です。
 
-   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。データを格納および解析するための構文を以下に示します。
+   例えば、この 2 つのパラメーターをスクリプト中で使用して、REST エンドポイントに送信されたデータを解析できます。 データを格納および解析するための構文を以下に示します。
 
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
    この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
 
-   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。リクエストにフィールド名を追加できます。リクエストのフォーマットを以下に示します。
+   **[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。 リクエストにフィールド名を追加できます。 リクエストのフォーマットを以下に示します。
 
    `{fieldName}={request parameter name}`
 
@@ -173,13 +172,13 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    ![REST エンドポイント送信アクションの設定](/help/forms/assets/submit-to-rest-endpoint-ue.png)
 
-   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。例えば、`/content/forms/af/SampleForm.html` のようになります。他のサーバーにデータを送信するには、絶対パスを使用します。
+   **[!UICONTROL POST リクエストを有効にする]**&#x200B;ことで、リクエストを POST する URL を指定することもできます。 フォームをホストする AEM サーバーにデータを送信するには、AEM サーバーのルートパスに対応する相対パスを使用します。 例えば、`/content/forms/af/SampleForm.html` のようになります。 他のサーバーにデータを送信するには、絶対パスを使用します。
 
    +++
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
 
    +++
 

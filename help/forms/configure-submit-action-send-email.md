@@ -6,16 +6,16 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 87%
+source-wordcount: '936'
+ht-degree: 92%
 
 ---
 
 # アダプティブフォームのメール送信アクションの送信を設定する
 
-「**[!UICONTROL メールを送信]**」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。この送信アクションを使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。例えば、次のテンプレートで、送信されたフォームデータから顧客名、発送先住所、都道府県名、郵便番号が取得されるとします。
+「**[!UICONTROL メールを送信]**」送信アクションでは、フォームの送信が完了すると同時に、1 人または複数の受信者にメールを送信できます。 この送信アクションを使用すると、事前に定義された形式のフォームデータを含むメールを作成できます。 例えば、次のテンプレートで、送信されたフォームデータから顧客名、発送先住所、都道府県名、郵便番号が取得されるとします。
 
 
     ```
@@ -51,7 +51,7 @@ ht-degree: 87%
    ![「メールを送信」のアクション設定](/help/forms/assets/send-email-fc.png)
 
 1. **[!UICONTROL 送信者]**&#x200B;テキストボックスで送信者のメール ID を指定します。
-1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。 複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. [オプション] CC および BCC の受信者を追加するには、「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. **[!UICONTROL 件名]**&#x200B;テキストボックスで件名行を指定します。
 1. メールテンプレートを追加して「メールを送信」送信アクションを設定します。
@@ -60,7 +60,7 @@ ht-degree: 87%
 
    >[!NOTE]
    >
-   > また、**[!UICONTROL HTML テンプレートを使用]** を有効にして、デフォルトのテンプレートの代わりにカスタムのHTMLレイアウトを使用してメールを送信することもできます。 このオプションを有効にする場合は、「**外部テンプレートのパス**」フィールドでHTML ファイルを指定します。 この機能は、早期アクセスプログラムを通じて利用できます。 アクセスを要求するには、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信します。
+   > **[!UICONTROL HTML テンプレートを使用]**&#x200B;して、デフォルトのテンプレートではなくカスタム HTML レイアウトを使用してメールを送信することもできます。 このオプションが有効になっている場合は、**外部テンプレートのパス** フィールドでHTML ファイルを指定します。
 
 1. [オプション] **[!UICONTROL 「メールを送信」]**&#x200B;送信アクションには、メールに添付ファイルと[レコードのドキュメント（DoR）](generate-document-of-record-core-components.md)を含めるオプションが用意されています。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -76,7 +76,7 @@ ht-degree: 87%
 
    ![「メールを送信」のアクション設定](/help/forms/assets/send-email-action-configuration.gif)
 1. **[!UICONTROL 送信者]**&#x200B;テキストボックスで送信者のメール ID を指定します。
-1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。 複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. [オプション] CC および BCC の受信者を追加するには、「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. **[!UICONTROL 件名]**&#x200B;テキストボックスで件名行を指定します。
 1. メールテンプレートを追加して「メールを送信」送信アクションを設定します。
@@ -85,7 +85,7 @@ ht-degree: 87%
 
    >[!NOTE]
    >
-   > また、**[!UICONTROL HTML テンプレートを使用]** を有効にして、デフォルトのテンプレートの代わりにカスタムのHTMLレイアウトを使用してメールを送信することもできます。 このオプションを有効にする場合は、「**外部テンプレートのパス**」フィールドでHTML ファイルを指定します。 この機能は、早期アクセスプログラムを通じて利用できます。 アクセスを要求するには、公式アドレスから [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) にメールを送信します。
+   > **[!UICONTROL HTML テンプレートを使用]**&#x200B;して、デフォルトのテンプレートではなくカスタム HTML レイアウトを使用してメールを送信することもできます。 このオプションが有効になっている場合は、**外部テンプレートのパス** フィールドでHTML ファイルを指定します。
 
 1. [オプション] **[!UICONTROL 「メールを送信」]**&#x200B;送信アクションには、メールに添付ファイルと[レコードのドキュメント（DoR）](generate-document-of-record-core-components.md)を含めるオプションが用意されています。
 1. 「**[!UICONTROL 完了]**」をクリックします。
@@ -109,7 +109,7 @@ ht-degree: 87%
    ![「メールを送信」のユニバーサルエディター](/help/forms/assets/send-email-ue.png)
 
 1. **[!UICONTROL 送信者]**&#x200B;テキストボックスで送信者のメール ID を指定します。
-1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
+1. **[!UICONTROL 宛先]**&#x200B;テキストボックスに受信者のメール ID を追加します。 複数の受信者を追加するには「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. [オプション] CC および BCC の受信者を追加するには、「**[!UICONTROL 追加]**」ボタンをクリックします。
 1. **[!UICONTROL 件名]**&#x200B;テキストボックスで件名行を指定します。
 1. メールテンプレートを追加して「メールを送信」送信アクションを設定します。
@@ -123,9 +123,9 @@ ht-degree: 87%
 
 ## ベストプラクティス {#best-practices}
 
-* メールの内容は明確かつ簡潔にすることをお勧めします。ユーザーは、メールの目的と、実行する必要があるアクションを理解する必要があります。
+* メールの内容は明確かつ簡潔にすることをお勧めします。 ユーザーは、メールの目的と、実行する必要があるアクションを理解する必要があります。
 * フォームフィールドがアダプティブフォーム内の別のパネルに配置されている場合でも、すべてのフォームフィールドに一意の要素名を付けることをお勧めします。
-* AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信メールは無効になっています。それを有効にするには、[利用申請](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)にサポートチケットを送信します。
+* AEM as a Cloud Serviceを使用する場合、送信電子メールでは暗号化が必要です。 デフォルトでは、送信メールは無効になっています。 それを有効にするには、[利用申請](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#sending-email)にサポートチケットを送信します。
 
 ## 関連記事
 

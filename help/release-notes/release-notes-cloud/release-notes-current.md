@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
+source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2111'
 ht-degree: 30%
 
 ---
@@ -134,6 +134,13 @@ AI ツールを使用した[ローカル開発](/help/ai-in-aem/local-developmen
 >[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP Server {#gov-mcp-server}
+
+### AEM Forms の新機能 {#forms-new-features}
+
+Forms Managerでの&#x200B;**バージョン管理のサポート**
+Forms Managerでは、アダプティブ Forms（コアコンポーネントおよび基盤コンポーネント） [&#128279;](/help/forms/manage-form-versions-forms-manager.md)、フォームフラグメント、テーマ、XDP テンプレート、バイナリアセットのバージョン管理が サポートされるようになりました。 Formsとドキュメント コンソールから直接、バージョンを作成し、バージョン履歴を表示したり、フォームアセットの以前の状態を復元したりできます。
+
+### AEM Forms の早期アクセス機能 {#forms-early-access-features}
 
 Experience Governance MCP Serverが一般公開（GA）されました。 MCP （モデルコンテキストプロトコル）をサポートするAI開発者ツールやチャットボットと統合されているため、チャットボットやIDEの自然言語プロンプトを使用して、ブランドの整合性とコンプライアンスを保護できます。 コンテンツ（テキスト、画像、ページ）をブランドガバナンスルールと比較して評価し、ブランド設定や利用可能なガバナンスチェックを取得することができます。
 
