@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b68b4bb81695822a8536b5b9ec0c83cc0d530acb
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 68%
+source-wordcount: '1015'
+ht-degree: 66%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 68%
 
 はい。 Java™ 11 向けに適切に設定された `maven-toolchains-plugin` を追加します。
 
-プロセスは文書化されています。 [&#x200B; プロジェクト作成ウィザード &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)を参照してください。
+プロセスは文書化されています。 [ プロジェクト作成ウィザード ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)を参照してください。
 
-例えば、[WKND プロジェクトサンプルプロジェクトコード &#x200B;](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
+例えば、[WKND プロジェクトサンプルプロジェクトコード ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)を参照してください。
 
 ## Java™ 8からJava™ 11に切り替えた後、maven-scr-pluginに関するエラーでビルドが失敗します。 どうすればいいですか？ {#build-fails-maven-scr-plugin}
 
@@ -49,7 +49,7 @@ Cloud Manager ビルドの場合、`maven-enforcer-plugin` がこのエラーで
 
 はい。 セキュリティ評価を除くすべてのコード品質チェックのエラーは、重要でない指標です。 その結果、結果UIで項目を展開することで、デプロイメントパイプラインの一部として無視できます。
 
-[&#x200B; デプロイメントマネージャー、プロジェクトマネージャー、またはビジネスオーナー](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)の役割を持つユーザーは、問題を上書きできます。 そのような場合、パイプラインは進行するか、問題を受け入れることができます。その場合、パイプラインは失敗して停止します。
+[ デプロイメントマネージャー、プロジェクトマネージャー、またはビジネスオーナー](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)の役割を持つユーザーは、問題を上書きできます。 そのような場合、パイプラインは進行するか、問題を受け入れることができます。その場合、パイプラインは失敗して停止します。
 
 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate)および[実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines)について詳しくは、ドキュメントを参照してください。
 
@@ -116,7 +116,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 ## aio コマンドを使用して変数を設定できません。 どうすればいいですか？ {#set-variable}
 
-`aio` コマンドでパイプライン変数をリストアップまたは設定しようとすると、次のような `403` エラーが発生する場合があります。
+`aio` コマンドを使用してパイプライン変数を一覧表示または設定しようとすると、次のような`403` エラーが表示される場合があります。
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222

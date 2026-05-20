@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
 source-wordcount: '2585'
 ht-degree: 90%
@@ -108,7 +108,7 @@ ht-degree: 90%
 
 追加の地域を指定しない場合は、[環境を作成した後でも指定できます。](#edit-regions)
 
-プログラム用に[&#x200B; アドバンストネットワーク &#x200B;](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager APIを使用してパブリッシュリージョンを追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[ アドバンストネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager APIを使用してパブリッシュリージョンを追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ### 複数の公開地域の編集 {#edit-regions}
 
@@ -130,7 +130,7 @@ ht-degree: 90%
 
 本番環境に対する変更は、本番環境とステージング環境の両方に適用されます。 複数の公開地域に対する変更を編集できるのは、本番環境のみです。
 
-プログラム用に[高度なネットワーク &#x200B;](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、環境にパブリッシュ領域を追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[高度なネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、環境にパブリッシュ領域を追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ## 環境の詳細の表示 {#viewing-environment}
 
@@ -269,7 +269,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 | 状態 | 「更新」オプション... |
 | --- | --- |
-| パイプラインが既に更新されている | ユーザーにパイプラインの実行を求めるプロンプトが表示されます。 |
+| パイプラインが既に更新されている | パイプラインを実行するようユーザーに促します。 |
 | パイプラインが既に更新中である | 更新が既に実行中であることをユーザーに通知します。 |
 | パイプラインが存在しない | ユーザーに作成を求めるプロンプトが表示されます。 |
 
