@@ -4,9 +4,9 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
+source-git-commit: 8371bceaf116cdcd4e0542dd1b8d772d2d12a05d
 workflow-type: tm+mt
-source-wordcount: '4819'
+source-wordcount: '4306'
 ht-degree: 96%
 
 ---
@@ -141,75 +141,9 @@ data:
 | **プロパティ** | **ほとんどのトラフィックフィルタールール** | **WAF トラフィックフィルタルール** | **タイプ** | **デフォルト値** | **説明** |
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | ルール名（長さは 64 文字、英数字と - のみを使用できます） |
-| when | X | X | `Condition` | - | 基本的な構造は次のとおりです。<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[条件構造の構文を参照](#condition-structure)してください。ゲッター、述語および複数の条件を組み合わせる方法について記載しています。 |
+| when | X | X | `Condition` | - | 基本的な構造は次のとおりです。<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br> ゲッター、述語、および複数の条件を組み合わせる方法については、*CDN*&#x200B;でのトラフィックの設定の[条件構造](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)を参照してください。 |
 | アクション | X | X | `Action` | log | ログ、許可、ブロック、または Action オブジェクト。 デフォルトは log です。 |
 | rateLimit | X |   | `RateLimit` | 定義なし | レート制限の設定。 定義されていない場合、レート制限は無効になります。<br><br>以下に、rateLimit 構文と例を説明する別のセクションを示します。 |
-
-### 条件の構造 {#condition-structure}
-
-条件は、単純条件または条件のグループにすることができます。
-
-**単純条件**
-
-単純条件は、getter と述語で構成されています。
-
-```
-{ <getter>: <value>, <predicate>: <value> }
-```
-
-**グループ条件**
-
-条件グループは、複数の単純条件やグループ条件で構成されます。
-
-```
-<allOf|anyOf>:
-  - { <getter>: <value>, <predicate>: <value> }
-  - { <getter>: <value>, <predicate>: <value> }
-  - <allOf|anyOf>:
-    - { <getter>: <value>, <predicate>: <value> }
-```
-
-| **プロパティ** | **タイプ** | **意味** |
-|---|---|---|
-| **allOf** | `array[Condition]` | **AND** 操作。 リストに表示されているすべての条件が true を返す場合は true |
-| **anyOf** | `array[Condition]` | **OR** 操作。 リストに表示された条件のいずれかが true を返す場合は true |
-
-**getter**
-
-| **プロパティ** | **タイプ** | **説明** |
-|---|---|---|
-| reqProperty | `string` | リクエストプロパティ。<br><br>次のいずれか：<br><ul><li>`path`：URL のフルパスをクエリパラメーターなしで返します。 （エスケープされていないバリアントには `pathRaw` を使用）</li><li>`originalPath`: クエリパラメーター（CDN リクエスト変換の前のパス）を使用せずに、リクエストの不変の元のパスを返します。</li><li>`url`：完全な URL をクエリパラメーターを含めて返します。 （エスケープされていないバリアントには `urlRaw` を使用）</li><li>`originalUrl`: クエリパラメーター（CDN リクエスト変換の前のURL）を含む、リクエストの不変の元の完全URLを返します。</li><li>`queryString`：URL のクエリ部分を返します</li><li>`method`：リクエストで使用される HTTP メソッドを返します。</li><li>`tier`：`author`、`preview` または `publish` のいずれか 1 つを返します。</li><li>`domain`：小文字のドメインプロパティ（`Host` ヘッダーで定義）を返します</li><li>`clientIp`：クライアント IP を返します。</li><li>`forwardedDomain`：`X-Forwarded-Host` ヘッダーで定義されている最初のドメインを小文字で返します。</li><li>`forwardedIp`：`X-Forwarded-For` ヘッダーの最初の IP を返します。</li><li>`clientRegion`：[ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) で説明されているように、クライアントがいる地域を識別する国の下位区分コードを返します。</li><li>`clientCountry`：クライアントがいる国を識別する 2 文字のコード（[地域指標シンボル](https://en.wikipedia.org/wiki/Regional_indicator_symbol)）を返します。</li><li>`clientContinent`：クライアントがいる大陸を識別する 2 文字のコード（AF、AN、AS、EU、NA、OC、SA）を返します。</li><li>`clientAsNumber`：クライアント IP に関連付けられた[自律システム](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))番号を返します。</li><li>`clientAsName`：自律システム番号に関連付けられた名前を返します。</li></ul> |
-| reqHeader | `string` | 指定された名前のリクエストヘッダーを返します |
-| queryParam | `string` | 指定された名前のクエリパラメーターを返します |
-| reqCookie | `string` | 指定された名前の Cookie を返します |
-| postParam | `string` | リクエスト本文から指定された名前の Post パラメーターを返します。 本文がコンテンツタイプ `application/x-www-form-urlencoded` の場合にのみ機能します |
-
-**述語**
-
-| **プロパティ** | **タイプ** | **意味** |
-|---|---|---|
-| **equals** | `string` | getter の結果が指定された値と等しい場合は true |
-| **doesNotEqual** | `string` | ゲッターの結果が指定された値と等しくない場合は true |
-| **like** | `string` | getter の結果が指定されたパターンと一致する場合は true |
-| **notLike** | `string` | getter の結果が指定されたパターンに一致しない場合は true |
-| **matches** | `string` | getter の結果が指定された正規表現と一致する場合は true |
-| **doesNotMatch** | `string` | getter の結果が指定された正規表現と一致しない場合は true |
-| **in** | `array[string]` | 指定されたリストに getter の結果が含まれている場合は true |
-| **notIn** | `array[string]` | 指定されたリストに getter の結果が含まれていない場合は true |
-| **exists** | `boolean` | true に設定し、プロパティが存在する場合、または false に設定し、プロパティが存在しない場合は true |
-
-**備考**
-
-* request プロパティ `clientIp` は、`equals`、`doesNotEqual`、`in`、`notIn` の述語でのみ使用できます。 `clientIp` は、`in` および `notIn` 述語を使用する際に IP 範囲に対して比較することができます。 次の例では、クライアント IP が IP 範囲 192.168.0.0/24（192.168.0.0～192.168.0.255）内にあるかどうかを評価する条件を実装しています。
-
-```
-when:
-  reqProperty: clientIp
-  in: [ "192.168.0.0/24" ]
-```
-
-* 正規表現を使用する際は、[regex101](https://regex101.com/) および [Fastly Fidle](https://fiddle.fastly.dev/) の使用をお勧めします。 また、Fastly による正規表現の処理方法について詳しくは、[fastly ドキュメント - Fastly VCL の正規表現](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)を参照してください。
-
 
 ### アクション構造 {#action-structure}
 
