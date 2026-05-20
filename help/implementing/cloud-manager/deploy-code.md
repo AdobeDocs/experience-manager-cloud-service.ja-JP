@@ -36,7 +36,7 @@ Cloud Service のすべてのデプロイメントでは、ダウンタイムを
 
 ## AEM as a Cloud Service での Cloud Manager を使用したコードのデプロイ {#deploying-code-with-cloud-manager}
 
-リポジトリ、環境、テスト環境を含む実稼動パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を[設定したら、コードをデプロイする準備が整います。
+リポジトリ、環境、テスト環境を含む実稼動パイプライン [&#128279;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)を設定したら、コードをデプロイする準備が整います。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
