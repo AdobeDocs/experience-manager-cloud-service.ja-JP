@@ -111,7 +111,7 @@ ht-degree: 96%
 
 *トラフィックフィルタールール* を設定して、IP、ユーザーエージェント、リクエストヘッダー、ホスト名、地域、url などのパターンを照合できます。
 
-Extended Security （旧称WAF-DDoS Protection）またはExtended Security for Healthcare （旧称Enhanced Security）製品のライセンスを取得しているお客様は、1つ以上の[WAF フラグ ](#waf-flags-list)を参照する&#x200B;*WAF トラフィックフィルタールール* （または&#x200B;*WAF ルール*）と呼ばれる特別なカテゴリのトラフィックフィルタールールを設定することもできます。
+Extended Security （旧称WAF-DDoS Protection）またはExtended Security for Healthcare （旧称Enhanced Security）製品のライセンスを取得しているお客様は、1つ以上の[WAF フラグ &#x200B;](#waf-flags-list)を参照する&#x200B;*WAF トラフィックフィルタールール* （または&#x200B;*WAF ルール*）と呼ばれる特別なカテゴリのトラフィックフィルタールールを設定することもできます。
 
 WAF ルールも含む一連のトラフィックフィルタールールの例を以下に示します。
 
