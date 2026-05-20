@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 89%
@@ -87,7 +87,7 @@ Web フックを追加するには、次の手順に従います。
 
 >[!NOTE]
 >
-> テクニカルアカウントが&#x200B;**forms-users** グループのメンバーであることを確認してください。そうしないと、Webhookの追加に失敗します。 AEMのforms-users グループにテクニカルアカウントを追加するには、[ここをクリック &#x200B;](#add-technical-account-to-the-forms-users-group)してください。
+> テクニカルアカウントが&#x200B;**forms-users** グループのメンバーであることを確認してください。そうしないと、Webhookの追加に失敗します。 AEMのforms-users グループにテクニカルアカウントを追加するには、[ここをクリック ](#add-technical-account-to-the-forms-users-group)してください。
 
 #### Web フックに接続を追加 {#add-connection}
 
@@ -180,7 +180,7 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 ユニバーサルエディターを使用してオーサリングされたアダプティブフォームの送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
@@ -208,7 +208,7 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 1. 「**[!UICONTROL グループを選択]**」ドロップダウンリストから「`forms-users`」を選択します。
 1. 「**保存して閉じる**」をクリックします。
 
-![&#x200B; グループにテクニカル アカウントを追加](/help/forms/assets/add-technical-account.png)
+![ グループにテクニカル アカウントを追加](/help/forms/assets/add-technical-account.png)
 
 ユーザーのグループメンバーシップを確認することもできます。
 
