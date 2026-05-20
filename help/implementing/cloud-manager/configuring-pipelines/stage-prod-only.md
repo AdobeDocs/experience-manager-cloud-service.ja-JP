@@ -7,10 +7,10 @@ role: Admin, Developer
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 89%
+source-wordcount: '1118'
+ht-degree: 87%
 
 ---
 
@@ -79,7 +79,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 「**ソースコード**」タブで、「**フルスタックコード**」を選択します。 このオプションは、AEM アプリケーション全体（バックエンド、Dispatcher／web 層設定、リポジトリ内のフロントエンドモジュール）のビルドとデプロイを行います。
 
-1. **適格なデプロイメント環境**&#x200B;ドロップダウンリストで、パイプラインのデプロイメント環境として&#x200B;**ステージ**&#x200B;環境を選択します。 ステージを選択すると、ステージ環境専用のパイプラインが作成されます（実稼動環境のプロモーションは別のパイプラインによって行われます）。
+1. **適格なデプロイメント環境**&#x200B;ドロップダウンリストで、パイプラインのデプロイメント環境として&#x200B;**ステージ**&#x200B;環境を選択します。 ステージを選択すると、ステージ環境専用のパイプラインが作成されます（実稼動プロモーションは別のパイプラインを介して行われます）。
 
 1. それぞれのドロップダウンリストで&#x200B;**リポジトリ**&#x200B;と **Git 分岐**&#x200B;を選択し、「**続行**」をクリックします。
 

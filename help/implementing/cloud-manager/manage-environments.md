@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
 workflow-type: tm+mt
 source-wordcount: '2585'
 ht-degree: 90%
@@ -269,7 +269,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 | 状態 | 「更新」オプション... |
 | --- | --- |
-| パイプラインが既に更新されている | ユーザーにパイプラインの実行を求めるプロンプトが表示されます。 |
+| パイプラインが既に更新されている | パイプラインを実行するようユーザーに促します。 |
 | パイプラインが既に更新中である | 更新が既に実行中であることをユーザーに通知します。 |
 | パイプラインが存在しない | ユーザーに作成を求めるプロンプトが表示されます。 |
 
