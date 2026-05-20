@@ -39,7 +39,7 @@ ht-degree: 29%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483061/?captions=jpn&quality=12)
 -->
 
 ## AEM Beta プログラム {#aem-beta-programs}
@@ -150,7 +150,7 @@ Experience Governance MCP Serverが一般公開（GA）されました。 MCP �
 [AEM MCP Server](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)と[Governance Agent](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)の詳細をご覧ください。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486259/?captions=jpn&learn=on&enablevpops)
 
 #### Claude コネクタ {#aem-claude-connector}
 
