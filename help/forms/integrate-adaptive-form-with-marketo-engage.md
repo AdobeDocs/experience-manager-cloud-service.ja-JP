@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![ワークフロー](/help/forms/assets/workflow-marketo-4.png)
 
-Marketo EngageとAEM Formsを統合するためのクラウドサービス設定を作成した後、[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)と統合するためのアダプティブフォームを設定できます。
+Marketo EngageとAEM Formsを統合するためのクラウドサービス設定を作成した後、[Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home)と統合するためのアダプティブフォームを設定できます。
 
 フォームウィザードを使用してMarketo Engageをアダプティブフォームに接続できます。これにより、各ステップをガイドして設定プロセスが簡素化されます。 テンプレート、スタイル、データフィールドを選択するだけでなく、データマッピングを設定して、一度作成されたフォームがMarketo Engageと通信できるようにする必要もあります。 フォームウィザードを使用して、送信時にデータをAdobe Marketo Engageに直接送信するようにアダプティブフォームを設定することもできます。
 
@@ -173,7 +173,7 @@ Marketo Engageをフォームに接続するための前提条件：
 
 ## 次の手順
 
-アダプティブフォームを[Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
+アダプティブフォームを[Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
 
 ## 関連記事
 
