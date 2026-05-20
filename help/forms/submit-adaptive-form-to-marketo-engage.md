@@ -29,7 +29,7 @@ ht-degree: 21%
 
 Marketo Engageに送信アクションを設定するための前提条件：
 
-* アダプティブフォーム ](/help/forms/use-marketo-engage-data-source-in-form.md)の[Marketo Engage データソースを設定し、フォーム要素をMarketo Engage フィールドにバインドします。
+* アダプティブフォーム [&#128279;](/help/forms/use-marketo-engage-data-source-in-form.md)のMarketo Engage データソースを設定し、フォーム要素をMarketo Engage フィールドにバインドします。
 
 ## 既存のフォームに対してMarketo Engageへの送信アクションを設定するには？
 
@@ -48,7 +48,7 @@ Marketo Engageに送信アクションを設定するための前提条件：
 1. アダプティブフォームを開いて編集し、アダプティブフォームコンテナプロパティの&#x200B;**[!UICONTROL 送信]** セクションに移動し、送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-![Marketo送信アクション ](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
+![Marketo送信アクション &#x200B;](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
 
 アダプティブフォームの送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として設定した後、データをAdobe Marketo Engageに送信して処理できます。 それらのデータは、マーケティング施策の分析と最適化、フォローアップメールの自動化、フォームへの入力にもとづくトリガーワークフローの実行に活用できます。
 
@@ -62,7 +62,7 @@ Marketo Engageに送信アクションを設定するための前提条件：
 1. 「**[!UICONTROL 送信]**」タブを開き、「**Marketo Engageに送信**」として送信アクションを選択します。
 1. 「**[!UICONTROL 完了]**」をクリックします。
 
-![Marketo送信アクション ](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
+![Marketo送信アクション &#x200B;](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
 アダプティブフォームの送信アクションを&#x200B;**Marketo Engageに送信**&#x200B;として設定した後、データをAdobe Marketo Engageに送信して処理できます。 それらのデータは、マーケティング施策の分析と最適化、フォローアップメールの自動化、フォームへの入力にもとづくトリガーワークフローの実行に活用できます。
 
@@ -71,7 +71,7 @@ Marketo Engageに送信アクションを設定するための前提条件：
 ユニバーサルエディターで作成したアダプティブフォームの送信アクションを設定して、データをAdobe Marketo Engageに送信できます。 Marketo Engageに送信アクションを設定するには、次の手順を実行します。
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
@@ -81,7 +81,7 @@ Marketo Engageに送信アクションを設定するための前提条件：
 
 1. 「**送信**」タブをクリックし、「**[!UICONTROL Marketo Engageに送信]**」送信アクションを選択します。
 
-   ![Marketo送信アクション ](/help/forms/assets/marketo-engage-submit-action-ue.png)
+   ![Marketo送信アクション &#x200B;](/help/forms/assets/marketo-engage-submit-action-ue.png)
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
@@ -96,7 +96,7 @@ Marketo Engageに送信アクションを設定するための前提条件：
 
 ## 次の手順
 
-アダプティブフォームを[Munchkin ライブラリ ](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
+アダプティブフォームを[Munchkin ライブラリ &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)と接続して、訪問回数、クリック数、フォーム送信数を追跡することもできます。
 
 ## 関連記事
 
