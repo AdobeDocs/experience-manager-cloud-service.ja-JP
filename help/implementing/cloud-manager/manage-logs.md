@@ -90,7 +90,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->AEM as a Cloud Serviceのデバッグについて詳しくは、[このビデオリソース ](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab)をご覧ください。
+>AEM as a Cloud Serviceのデバッグについて詳しくは、[このビデオリソース &#x200B;](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab)をご覧ください。
 
 Cloud Manager API と Adobe I/O CLI について詳しくは、次の追加のリソースを参照してください。
 
