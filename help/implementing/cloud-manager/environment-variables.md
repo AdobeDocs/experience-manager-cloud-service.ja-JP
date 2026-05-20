@@ -39,7 +39,7 @@ ht-degree: 84%
 
 複数の変数を追加する場合、アドビでは、最初の変数を追加してから、**環境設定**&#x200B;ダイアログの ![追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 「**追加**」を使用してその他の変数を追加することをお勧めします。 この方法では、1回の環境アップデートで追加できます。
 
-環境変数を追加、更新、または削除するには、[ デプロイメントマネージャーの役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
+環境変数を追加、更新、または削除するには、[&#x200B; デプロイメントマネージャーの役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
 
 **環境変数を追加するには：**
 
