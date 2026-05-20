@@ -1,31 +1,29 @@
 ---
 title: Adobe Workfront Fusion とAEM Forms Submission の統合
-description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続できます。
+description: Adobe Workfront Fusion を使用すると、繰り返しのタスクに重点を置くのではなく、新しいタスクに重点を置くことができます。 フォーム送信を使用して、Adobe Workfront Fusion をアダプティブフォームに接続できます。
 keywords: Adobe Workfront Fusion へのアダプティブフォームの送信、Adobe Workfront Fusion と AEM Forms Submission の統合、Adobe Workfront Fusion と AEM Forms の統合、Workfront Fusion と AEM Forms の統合、AEM Forms への Workfront Fusion の接続、AEM Forms Fusion への Workfront Fusion の接続 、AEM Forms への Workfront Fusion の接続方法?、フォームへの Workfront Fusion の接続
 topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 90%
+source-wordcount: '1503'
+ht-degree: 89%
 
 ---
 
 # Adobe Workfront Fusion へのアダプティブフォームの送信
 
-<span class="preview">機能は、早期導入プログラムで利用できます。早期導入プログラムに参加し、機能へのアクセスをリクエストするには、公式のメール ID で aem-forms-ea@adobe.com までメールを送信してください。</span>
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ja) は、ドキュメント承認ワークフロー、メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。 Adobe Workfront Fusion には、複数のシナリオが含まれています。 シナリオは、アプリケーションと web サービス間のデータ転送を実行する一連のモジュールで構成されます。 シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=ja) は、ドキュメント承認ワークフロー、メールのフィルタリングや並べ替えなど、同じタスクを繰り返すプロセスを自動化し、繰り返しタスクではなく新しいタスクに焦点を当てることができます。Adobe Workfront Fusion には、複数のシナリオが含まれています。シナリオは、アプリケーションと web サービス間のデータ転送を実行する一連のモジュールで構成されます。シナリオでは、様々な手順（モジュール）を追加してタスクを自動化します。
+例えば、Workfront Fusion を使用すると、シナリオを作成して、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信できます。 シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
 
-例えば、Workfront Fusion を使用すると、シナリオを作成して、アダプティブフォームでデータを収集し、データを処理し、データをアーカイブ用にデータストアに送信できます。シナリオを設定すると、ユーザーがフォームに入力するたびに、Workfront Fusion は自動的にタスクを実行し、データストアをシームレスに更新します。
-
-AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。フォームを Adobe Workfront Fusion に送信すると、次のようなメリットがあります。
+AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront Fusion に接続して送信するための OOTB コネクタが用意されています。 フォームを Adobe Workfront Fusion に送信すると、次のようなメリットがあります。
 
 * フォーム送信データを Workfront Fusion ワークフローへとシームレスに転送できるようになりました。
-* フォーム送信によってトリガーされる様々なタスクを自動化するのに役立ちます。これには、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。これらはすべて手動介入なしで実行できます。
+* フォーム送信によってトリガーされる様々なタスクを自動化するのに役立ちます。 これには、プロジェクトの開始、特定のチームメンバーへのタスクの割り当て、通知の送信、プロジェクトステータスの更新などが含まれます。これらはすべて手動介入なしで実行できます。
 * Workfront Fusion 内で取り込まれたすべてのフォーム送信では、プロジェクト関連情報の信頼できる単一の情報源を提供します。
 
 
@@ -33,7 +31,7 @@ AEM Forms as a Cloud Service には、アダプティブフォームを Adobe Wo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
-<span>このビデオは、コアコンポーネントのみに適用されます。UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
+<span>このビデオは、コアコンポーネントのみに適用されます。 UE／基盤コンポーネントについて詳しくは、記事を参照してください。</span>
 
 ## AEM Forms と Adobe Workfront Fusion を統合する前提条件 {#prerequisites}
 
@@ -58,7 +56,7 @@ Workfront シナリオを作成するには、次の手順に従います。
 
 1. [Workfront Fusion アカウント](https://app-qa.workfrontfusion.com/)にログインします。
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」![共有アイコン](/help/forms/assets/Smock_ShareAndroid_18_N.svg)をクリックします。
-1. ページの右上隅にある「**[!UICONTROL 新規シナリオを作成]**」をクリックします。新しいシナリオを作成するページが画面に表示されます。
+1. ページの右上隅にある「**[!UICONTROL 新規シナリオを作成]**」をクリックします。 新しいシナリオを作成するページが画面に表示されます。
 1. ページの左上隅にある「**[!UICONTROL 新規シナリオ]**」を選択し、シナリオの適切な名前を入力します。
 1. 疑問符をクリックし、**[!UICONTROL AEM Forms]** として最初のモジュールを追加することを確認します。
 
@@ -85,11 +83,11 @@ Web フックを追加するには、次の手順に従います。
    >
    > 指定した Web フック名が AEM インスタンスに表示されるので、Web フック名は慎重に選択することをお勧めします。
 
-1. 「**[!UICONTROL 追加]**」をクリックして、新しい接続を追加します。**[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスが表示されます。
+1. 「**[!UICONTROL 追加]**」をクリックして、新しい接続を追加します。 **[!UICONTROL 接続を作成]**&#x200B;ダイアログボックスが表示されます。
 
 >[!NOTE]
 >
-> テクニカルアカウントが **forms-users** グループのメンバーであることを確認します。メンバーでない場合、Webhook の追加に失敗します。 テクニカルアカウントをAEMの forms-users グループに追加するには、[&#x200B; ここをクリック &#x200B;](#add-technical-account-to-the-forms-users-group)。
+> テクニカルアカウントが&#x200B;**forms-users** グループのメンバーであることを確認してください。そうしないと、Webhookの追加に失敗します。 AEMのforms-users グループにテクニカルアカウントを追加するには、[ここをクリック ](#add-technical-account-to-the-forms-users-group)してください。
 
 #### Web フックに接続を追加 {#add-connection}
 
@@ -148,7 +146,7 @@ Web フックを追加するには、次の手順に従います。
 >
 > Workfront シナリオをアクティブ化しない場合、フォームの送信は検出されず、送信アクションを Workfront に設定すると送信が失敗します。
 
-### &#x200B;2. Workfront Fusion 用のアダプティブフォームの送信アクションの設定
+### &#x200B;2. Workfront Fusionのアダプティブフォームの送信アクションを設定する
 
 >[!BEGINTABS]
 
@@ -182,7 +180,7 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 ユニバーサルエディターを使用してオーサリングされたアダプティブフォームの送信アクションを設定するには：
 
 1. アダプティブフォームを編集用に開きます。
-1. エディターで&#x200B;**フォームプロパティを編集**&#x200B;拡張機能をクリックします。
+1. エディターで&#x200B;**フォームプロパティを編集**拡張機能をクリックします。
 **フォームプロパティ**&#x200B;ダイアログが表示されます。
 
    >[!NOTE]
@@ -199,31 +197,31 @@ Workfront Fusion のコアコンポーネントに基づくアダプティブフ
 
 >[!ENDTABS]
 
-## テクニカルアカウントを forms-users グループに追加する
+## forms-users グループにテクニカルアカウントを追加
 
-テクニカルアカウントをAEMの `forms-users` グループに追加するには、次の手順を実行します。
+テクニカルアカウントをAEMの`forms-users` グループに追加するには、次の手順を実行します。
 
 1. **ツール**／**セキュリティ**／**ユーザー**&#x200B;に移動します。
-1. ユーザーのリストで、組織のテクニカルアカウントのメールを見つけます。 例えば、`Workfront-test` のようにユーザーを検索します。
-1. ユーザーをクリックすると、ユーザーの詳細が表示されます。
+1. ユーザーのリストで、組織のテクニカルアカウントのメールを探します。 例えば、ユーザーを`Workfront-test`として検索します。
+1. ユーザーをクリックして、ユーザーの詳細を表示します。
 1. ユーザーの詳細で、「**グループ**」タブを選択します。
-1. `forms-users` グループを選択 **[!UICONTROL ドロップダウンリストから「]**」を選択します。
+1. 「**[!UICONTROL グループを選択]**」ドロップダウンリストから「`forms-users`」を選択します。
 1. 「**保存して閉じる**」をクリックします。
 
-![&#x200B; グループへのテクニカルアカウントの追加 &#x200B;](/help/forms/assets/add-technical-account.png)
+![ グループにテクニカル アカウントを追加](/help/forms/assets/add-technical-account.png)
 
-また、ユーザーのグループメンバーシップを確認することもできます。
+ユーザーのグループメンバーシップを確認することもできます。
 
-1. **ツール**/**セキュリティ**/**グループ** に移動します。
+1. **ツール** > **セキュリティ** > **グループ**&#x200B;に移動します。
 1. `forms-users` グループを検索します。
-1. グループを開き、「**メンバー**」タブに移動して、ユーザーがグループメンバーのリストに表示されることを確認します。
+1. グループを開き、**メンバー** タブに移動し、ユーザーがグループメンバーのリストに表示されていることを確認します。
 
 ![verify-group](/help/forms/assets/verify-group.png)
 
 ## ベストプラクティス {#best-practices}
 
-* AEM インスタンスでシナリオ名を取得する方法がないので、Web フック名は慎重に選択することをお勧めします。後で Web フック名を変更しても、AEM Forms の送信アクションドロップダウンリストには反映されません。
-* 1 つのシナリオに複数の Web フックリンクを含めることができますが、一度にアクティブになる Web フックリンクは 1 つだけです。リンクされていない Web フックは、AEM Forms の送信アクションドロップダウンリストに表示されないように削除することをお勧めします。
+* AEM インスタンスでシナリオ名を取得する方法がないので、Web フック名は慎重に選択することをお勧めします。 後で Web フック名を変更しても、AEM Forms の送信アクションドロップダウンリストには反映されません。
+* 1 つのシナリオに複数の Web フックリンクを含めることができますが、一度にアクティブになる Web フックリンクは 1 つだけです。 リンクされていない Web フックは、AEM Forms の送信アクションドロップダウンリストに表示されないように削除することをお勧めします。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
 
