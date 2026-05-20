@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # Marketo Engage の AEM Forms への統合
 
-AEM Formsと[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)を統合することで、Marketo Engageの機能を活用して、取り込まれたデータからビジネスロジックを作成し、スマートキャンペーンやメールオートメーションなどのワークフローを自動化することができます。 設定されたフォームは、キャプチャしたデータをMarketo Engageに送信して処理できます。
+AEM Formsと[Adobe Marketo Engage](https://experienceleague.adobe.com/ja/docs/marketo/using/home)を統合することで、Marketo Engageの機能を活用して、取り込まれたデータからビジネスロジックを作成し、スマートキャンペーンやメールオートメーションなどのワークフローを自動化することができます。 設定されたフォームは、キャプチャしたデータをMarketo Engageに送信して処理できます。
 
 ## Marketo Engageとフォームを統合する利点
 
@@ -51,7 +51,7 @@ AEM Formsと[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/ma
 Marketo EngageとAEM Formsを統合する際の考慮事項：
 
 * AEMは、様々なMarketo データベースの中のPeople （Leads） データベースのみをサポートします。
-* Marketoでは、ユーザー定義オブジェクトとして10個のカスタムオブジェクト [&#128279;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)を作成し、リードの標準フィールドを超える特殊なデータを保存して、独自のビジネスニーズをサポートすることができます。
+* Marketoでは、ユーザー定義オブジェクトとして10個のカスタムオブジェクト [&#128279;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)を作成し、リードの標準フィールドを超える特殊なデータを保存して、独自のビジネスニーズをサポートすることができます。
 * AEMがカスタムオブジェクトにアクセスできるのは、リードデータベースに関連付けられている場合のみです
 
 ## Marketo Engageとフォームを統合するための前提条件
@@ -59,7 +59,7 @@ Marketo EngageとAEM Formsを統合する際の考慮事項：
 Marketo EngageとAEM Formsを連携するための前提条件は次のとおりです。
 
 * 有効なAdobe Marketo Engage ライセンス
-* [へのMarketo Engageの作業中のインスタンスは、クラウド設定を作成するためにクライアント IDとクライアントシークレット &#x200B;](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)を取得します。
+* [へのMarketo Engageの作業中のインスタンスは、クラウド設定を作成するためにクライアント IDとクライアントシークレット &#x200B;](https://experienceleague.adobe.com/ja/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)を取得します。
 
 ## AEM Forms（アダプティブForms）とMarketo Engageを接続するためのクラウドサービス設定の作成
 
