@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b96b2f202c80c4dc1886cb60fcf206dd6ffaf5f1
+source-git-commit: cc95dec08f8fecbd798ce0b19a8698bdf1bc6a51
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7400'
 ht-degree: 86%
 
 ---
@@ -1134,6 +1134,7 @@ ht-degree: 86%
          + Experience Production エージェント {#experience-production}
             + [概要](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [コンテンツ更新ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+            + [コンテンツ作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
             + [コミュニケーション作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [フォーム作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
          + Experience Modernization エージェント {#modernization}
