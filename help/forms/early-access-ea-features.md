@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 60fa6bd9f29e670acb2acf52a40266e699bb99d3
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 18%
@@ -49,7 +49,6 @@ The Generative AI capabilities on offer via AEM Forms AI Assistant are:
 * **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
 -->
-
 <!--
 
 ### AEM Forms Workfront Fusion Connector

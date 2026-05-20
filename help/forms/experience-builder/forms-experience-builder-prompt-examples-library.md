@@ -6,7 +6,7 @@ index: false
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 95e2216ee79433783da384134243f3688ff7797d
+source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
 workflow-type: tm+mt
 source-wordcount: '2170'
 ht-degree: 97%
