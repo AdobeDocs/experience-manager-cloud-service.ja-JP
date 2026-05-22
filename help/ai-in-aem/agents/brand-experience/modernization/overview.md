@@ -20,7 +20,7 @@ Experience Modernization Agentが、AIを活用してweb サイトをEdge Delive
 
 [Brand Experience Agentの一部として、](/help/ai-in-aem/agents/brand-experience/overview.md)Experience Modernization Agentは、web サイトの移行と基本サイトの設定を自動化することで、Edge Delivery Servicesへのオンボーディングを高速化します。
 
-初期web サイトのオンボーディング用に[ サイトの作成と移行のスキル ](#creation-migration)を、サイトの作成と移行のワークフローをサポートするために[ ブロック開発機能](#block-development)を組み合わせています。 また、Web ベースのAI支援による開発環境として、[Experience Modernization Console](#console)を直接利用できます。 ユーザーはそのコンソールを通じて直接エージェントを操作できますが、開発者は出荷内容を完全に制御できます。
+初期web サイトのオンボーディング用に[&#x200B; サイトの作成と移行のスキル &#x200B;](#creation-migration)を、サイトの作成と移行のワークフローをサポートするために[&#x200B; ブロック開発機能](#block-development)を組み合わせています。 また、Web ベースのAI支援による開発環境として、[Experience Modernization Console](#console)を直接利用できます。 ユーザーはそのコンソールを通じて直接エージェントを操作できますが、開発者は出荷内容を完全に制御できます。
 
 複雑または優先度の高い移行の場合、Adobeでは、[Agentic Outcome Engineer （AOE）配信モデル、](#aoe-delivery)Experience Modernization Agentを使用して本番環境に対応したEdge Delivery サイトを配信するように設計されたエンジニアリング主導のサービスを提供します。
 
@@ -60,14 +60,14 @@ Experience Modernization Agentは、ライブサイトの移行に加えて、Fi
 
 ソース web サイトにページが既に存在しない場合、エージェント [は、Figma フレームまたはページから新しいEdge Delivery Services ページを直接生成し、Figma セクションを既存のブロック、デフォルトコンテンツ、または新しいバリエーションにマッピングします](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma)。 テキストとアセットはFigmaから来ています。
 
-これらのワークフロー、個々のFigma ブロックの移行、プロンプトのヒントについて詳しくは、「[Experience Modernization Agentのプロンプト ガイド ](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)」を参照してください。
+これらのワークフロー、個々のFigma ブロックの移行、プロンプトのヒントについて詳しくは、「[Experience Modernization Agentのプロンプト ガイド &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)」を参照してください。
 
 ## ブロック開発機能 {#block-development}
 
 Experience Modernization Agentは、様々な開発作業に対応する一般的なEdge Delivery Services開発機能を活用し、初期のサイト作成や移行にとどまらない継続的な価値を提供します。
 
 * 作成者にとって使いやすいコンテンツモデルのためのコンテンツ駆動開発（CDD）手法に従います
-* [ ブロックコレクション ](https://www.aem.live/developer/block-collection)および[ ブロックパーティ ](https://www.aem.live/developer/block-party/)を利用して、参照実装とベストプラクティスを見つけます
+* [&#x200B; ブロックコレクション &#x200B;](https://www.aem.live/developer/block-collection)および[&#x200B; ブロックパーティ &#x200B;](https://www.aem.live/developer/block-party/)を利用して、参照実装とベストプラクティスを見つけます
 * デプロイメント前に変更を検証するためのワークフローのテストとデバッグをサポート
 
 詳細な機能には、ブロック開発、コンテンツモデリング、参照ブロックの発見、テスト、デバッグなどがあります。
@@ -89,7 +89,7 @@ Experience Modernization Consoleの基本を学ぶ
 
 ## プロジェクト文書作成スキル {#project-documentation}
 
-プロジェクトの引き継ぎには時間がかかる性質があるため、[ オーサリングと開発作業が完了すると、プロジェクトドキュメントスキル ](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)は包括的なドキュメントを自動的に生成できます。
+プロジェクトの引き継ぎには時間がかかる性質があるため、[&#x200B; オーサリングと開発作業が完了すると、プロジェクトドキュメントスキル &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)は包括的なドキュメントを自動的に生成できます。
 
 ## Agentic Outcome Engineer （AOE）による配信 {#aoe-delivery}
 
