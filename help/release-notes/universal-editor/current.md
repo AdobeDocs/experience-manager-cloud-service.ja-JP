@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.05.14 リリースノート
-description: ユニバーサルエディターの2026.05.14 リリースのリリースノートです。
+title: ユニバーサルエディター2026.05.21 リリースノート
+description: ユニバーサルエディターの2026.05.21 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
+source-git-commit: 8ba59c47379e9d506813cec8e647b93679bf9815
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 20%
+source-wordcount: '82'
+ht-degree: 28%
 
 ---
 
 
-# ユニバーサルエディター2026.05.14 リリースノート {#release-notes}
+# ユニバーサルエディター2026.05.21 リリースノート {#release-notes}
 
-これらは、ユニバーサルエディターの2026年5月14日リリースのリリースノートです。
+ユニバーサルエディターの2026年5月21日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,9 +26,4 @@ ht-degree: 20%
 
 ## 新機能 {#what-is-new}
 
-* [&#x200B; デフォルトでプロパティパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)が開くようになりました。
-* [拡張アイコンがSpectrum 2に移行されました。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
-
-## その他の改善点 {#other-improvements}
-
-* リッチテキストエディターで保存する際に、スペースや特殊文字を含むURLが適切にパーセントエンコードされるようになりました。
+* 軽微な改善と修正
