@@ -235,7 +235,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[`Sling` ドキュメント ](https://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明しているように、パスによるバインディングサーブレットは推奨されません。 パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。 パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[`Sling` ドキュメント &#x200B;](https://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明しているように、パスによるバインディングサーブレットは推奨されません。 パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。 パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 非準拠コード {#non-compliant-code-5}
 
@@ -547,7 +547,7 @@ Experience Manager API のサーフェスは、使用が勧められず、非推
 
 `Apache Sling` プロジェクトでは、`DefaultInjectionStrategy.OPTIONAL` （フィールドレベルまたはクラスレベル）と組み合わせるとパフォーマンスが低下する可能性があるため、`@Inject`注釈をSling モデルのコンテキストで使用しないでください。 代わりに、より具体的なインジェクション（`@ValueMapValue` または `@OsgiInjector` 注釈など）を使用する必要があります。
 
-推奨される注釈と、この推奨が最初に行われた理由について詳しくは、[`Apache Sling` ドキュメント ](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)を参照してください。
+推奨される注釈と、この推奨が最初に行われた理由について詳しくは、[`Apache Sling` ドキュメント &#x200B;](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1)を参照してください。
 
 
 ### HTTPClient のインスタンスを再利用 {#sonarqube-reuse-httpclient}

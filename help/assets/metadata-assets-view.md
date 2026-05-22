@@ -101,7 +101,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   メタデータフォーム ](cascading-metadata-assets-view.md#build-metadata-forms)の[ ユーザーインターフェイスについて説明します。
+   メタデータフォーム [&#128279;](cascading-metadata-assets-view.md#build-metadata-forms)の ユーザーインターフェイスについて説明します。
 
    <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
