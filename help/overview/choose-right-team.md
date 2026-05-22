@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '874'
+ht-degree: 98%
 
 ---
 
@@ -20,17 +20,18 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=ja" text="KPI の評価"
 
-組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
+組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。 ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
 
-デジタルガバナンスの出発点は、誰が何を担当し、誰がどのようなデジタル関連の業務を行っているかを把握することです。必要なスキルを追加するために、戦略的な雇用が必要になることもあります。それよりも大きな課題は文化の転換を推進すること、つまり、新しいテクノロジーを幅広くサポートし、担当者が新しい働き方に慣れるのを手助けすることです。その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
+デジタルガバナンスの出発点は、誰が何を担当し、誰がどのようなデジタル関連の業務を行っているかを把握することです。 必要なスキルを追加するために、戦略的な雇用が必要になることもあります。 それよりも大きな課題は文化の転換を推進すること、つまり、新しいテクノロジーを幅広くサポートし、担当者が新しい働き方に慣れるのを手助けすることです。 その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
 
-当面は、適切な人材を適切な職に配備し、Adobe Experience Manager デプロイメントの促進を支援することに重点を置きます。コア製品（Adobe Experience Manager Sites と Adobe Experience Manager Assets）ごとに、担当者を決める必要がある役割の一覧と、それぞれの役割に必要なスキル、専門知識レベルおよび資質の一覧を示しました。
+当面は、適切な人材を適切な職に配備し、Adobe Experience Manager デプロイメントの促進を支援することに重点を置きます。 コア製品（Adobe Experience Manager Sites と Adobe Experience Manager Assets）ごとに、担当者を決める必要がある役割の一覧と、それぞれの役割に必要なスキル、専門知識レベルおよび資質の一覧を示しました。
 
 今週の課題は、導入チームと一緒に両方のリストを確認し、条件を満たす人材がそれぞれの役割に割り当てられていることを確認することです。
 
 ## **Adobe Experience Manager Sites に必要な主な役割**
 
-デプロイメントチームと同様に、成功するチームでは 9 人の担当者がそれぞれ適切な役割を果たす必要があります。Adobe Experience Manager Sites の導入で成功を収めることができるかどうかは、チームメンバーの力とメンバー間の協力にかかっています。これら 9 つの役割は、必ず、推奨条件を満たす持つ人材に割り当ててください。
+デプロイメントチームと同様に、成功するチームでは 9 人の担当者がそれぞれ適切な役割を果たす必要があります。 Adobe Experience Manager Sites の導入で成功を収めることができるかどうかは、チームメンバーの力とメンバー間の協力にかかっています。 9つの役割が割り当てられていることを確認します
+推奨される資格を持つユーザーに通知されます。
 
 | 役割 | スキル | 能力レベル | 資質 |
 |--- |--- |--- |--- |
@@ -50,13 +51,13 @@ ht-degree: 100%
 
 ![実装の役割をレビュー](assets/team_involvement.png)
 
-**導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
+**導入チームと一緒にこのリストを確認し**、条件を満たす人材がそれぞれの役割に割り当てられていることを確認します。 Adobe Experience Cloud に詳しくないチームメンバーは、[Experience League](https://experienceleague.adobe.com/ja?lang=ja#recommended/solutions/experience-manager) の学習リソースを利用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
 
 ## **Adobe Experience Manager Assets に必要な主な役割**
 
 アーキテクトからスクラムマスターまで、さらには DAM イブラリアンも含めて、このチームに関係する役割はすべて不可欠です。
 
-Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。この一覧は Adobe Experience Manager Sites の場合と似ていますが、重要な追加が 1 点あります。つまり、デジタルアセットを見つけやすいように整理しラベル付けするライブラリアンが必要です。
+Adobe Experience Manager Assets の導入を成功させるために必要な人材のほとんどが既に揃っている可能性があります。 この一覧は Adobe Experience Manager Sites の場合と似ていますが、重要な追加が 1 点あります。つまり、デジタルアセットを見つけやすいように整理しラベル付けするライブラリアンが必要です。
 
 | 役割 | スキル | 能力レベル | 資質 |
 |--- |--- |--- |--- |

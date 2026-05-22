@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 100%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="ベストプラクティスアナライザーの概要"
->abstract="ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。"
+>abstract="ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。 また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。 また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。"
 
-ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。
+ベストプラクティスアナライザーは、AEM のベストプラクティスに従っていない部分を指摘することで、現在の AEM 実装を評価します。 また、AEM のベストプラクティスを導入するための次の手順に関するガイダンスも提供します。 また、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行する上でも役立ちます。
 
 このツールでは、AEM as a Cloud Service への移行の最初の手順として、リファクタリングの可能性がある部分を識別するレポートを生成します。
 
 ## ベストプラクティスアナライザーレポート {#bpa-report}
 
-ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。このレポートには、カテゴリの範囲内で発見された問題が指摘されており、AEM as a Cloud Service のデプロイメントを成功させるには、それらの問題を解決する必要があります。
+ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。 このレポートには、カテゴリの範囲内で発見された問題が指摘されており、AEM as a Cloud Service のデプロイメントを成功させるには、それらの問題を解決する必要があります。
 
 ベストプラクティスアナライザーレポートには、次のカテゴリが含まれます。
 
@@ -39,4 +39,4 @@ ht-degree: 100%
 >[!NOTE]
 >ベストプラクティスアナライザーレポートを使用すれば、情報を手動で収集および評価する必要がなくなるので、AEM as a Cloud Service の移行にかかる時間とコストをすばやく見積もれるようになります。
 
-ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。詳しくは、[ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)を参照してください。
+ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。 詳しくは、[ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)を参照してください。

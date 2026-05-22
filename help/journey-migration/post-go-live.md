@@ -6,7 +6,7 @@ feature: Migration
 role: Admin
 source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '510'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM のトラブルシューティング"
->abstract="継続的な開発とログの管理に関するベストプラクティスを確認します。AEM に関する問題のトラブルシューティングに役立つ、Developer Console や CRXDE Lite などのツールについて説明します。"
+>abstract="継続的な開発とログの管理に関するベストプラクティスを確認します。 AEM に関する問題のトラブルシューティングに役立つ、Developer Console や CRXDE Lite などのツールについて説明します。"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="ログへのアクセスと管理"
 >additional-url="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
-このジャーニーは最後の部分です。移行が完了した後で、問題を監視してパフォーマンスを向上させる方法を確認します。一時ファイルを確実にクリーンアップ、継続的な開発のベストプラクティスを確認し、ログを管理します。
+このジャーニーは最後の部分です。移行が完了した後で、問題を監視してパフォーマンスを向上させる方法を確認します。 一時ファイルを確実にクリーンアップ、継続的な開発のベストプラクティスを確認し、ログを管理します。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 ユーザーは開発環境では CRXDE Lite にアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
 
 >[!IMPORTANT]
->実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。ユーザーは、ステージング環境と本番環境用の開発者ツールにもアクセスできません。
+>実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。 ユーザーは、ステージング環境と本番環境用の開発者ツールにもアクセスできません。
 
 CRXDE Lite を使用して AEM アプリケーションを開発する方法について詳しくは、[CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md)を参照してください。
 
@@ -67,7 +67,7 @@ Cloud Service へのアクセスに関するご質問については、アドビ
 
 ## 習得事項の文書化 {#document-learnings}
 
-移行が完了したら、このプロセスで得られた知識を文書化してください。文書化には次の質問が役立つでしょう。
+移行が完了したら、このプロセスで得られた知識を文書化してください。 文書化には次の質問が役立つでしょう。
 
 * 何がうまくいき、何がうまくいかなかったのか？
 * 主な問題点は何でしたか？
@@ -75,9 +75,9 @@ Cloud Service へのアクセスに関するご質問については、アドビ
 
 移行後に得られたこれらの気づきを組織内の関係者やチームと共有してください。
 
-## ジャーニーの完了  {#journey-ends}
+## ジャーニーの完了 {#journey-ends}
 
-おめでとうございます。AEM as a Cloud Service 移行ジャーニーを完了しました。以下の方法を理解しておく必要があります。
+おめでとうございます。 AEM as a Cloud Service 移行ジャーニーを完了しました。 以下の方法を理解しておく必要があります。
 
 * AEM as a Cloud Service への移行を開始する
 * デプロイメントを AEM as a Cloud Service に移行する準備ができているかどうかを確認する

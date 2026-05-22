@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 role: Admin
 source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '998'
 ht-degree: 100%
 
 ---
@@ -20,23 +20,23 @@ ht-degree: 100%
 
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
-ここでは、Dispatcher ツールとそのダウンロードおよび抽出方法、サポートされている Apache モジュール、レガシーモードとフレキシブルモードの概要について説明します。さらに、検証とデバッグ、AMS から AEM as a Cloud Service への Dispatcher 設定の移行についても説明します。<!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
+ここでは、Dispatcher ツールとそのダウンロードおよび抽出方法、サポートされている Apache モジュール、レガシーモードとフレキシブルモードの概要について説明します。 さらに、検証とデバッグ、AMS から AEM as a Cloud Service への Dispatcher 設定の移行についても説明します。<!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Dispatcher ツール {#dispatcher-sdk}
 
 Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下を提供します。
 
 * Dispatcher 用の Maven プロジェクトにインクルードする設定ファイルを含んだバニラファイル構造。
-* AEM as a Cloud Service でサポートされているディレクティブのみ Dispatcher 設定に含まれていることを顧客が検証するためのツール。また、ツールでは、構文が正しく、Apache が正常に起動できるかどうかも検証されます。
+* AEM as a Cloud Service でサポートされているディレクティブのみ Dispatcher 設定に含まれていることを顧客が検証するためのツール。 また、ツールでは、構文が正しく、Apache が正常に起動できるかどうかも検証されます。
 * Dispatcher をローカルで実行する Docker イメージ。
 
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
-[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。新しい Dispatcher ツールバージョンで利用可能な新しい設定は、そのバージョン以降の AEM が実行されているクラウド環境にデプロイするときに使用できます。
+[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。 新しい Dispatcher ツールバージョンで利用可能な新しい設定は、そのバージョン以降の AEM が実行されているクラウド環境にデプロイするときに使用できます。
 
 SDK を解凍します。SDK には、macOS 版、Linux® 版および Windows 版の Dispatcher ツールがバンドルされています。
 
-**macOS／Linux の場合**：Dispatcher ツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下に、Dispatcher ツールのファイルが自己抽出されます。
+**macOS／Linux の場合**：Dispatcher ツールのアーティファクトを実行可能にして実行します。 保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下に、Dispatcher ツールのファイルが自己抽出されます。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -49,9 +49,9 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Dispatcher ツールを使用した検証とデバッグ {#validation-debug}
 
-Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデバッグに使用されます。これらのツールの使用方法について詳しくは、プロジェクトの Dispatcher 設定がフレキシブルモードとレガシーモードのどちらで構造化されているかに応じて、以下で紹介するページを参照してください。
+Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデバッグに使用されます。 これらのツールの使用方法について詳しくは、プロジェクトの Dispatcher 設定がフレキシブルモードとレガシーモードのどちらで構造化されているかに応じて、以下で紹介するページを参照してください。
 
-* **フレキシブルモード** - [AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降の推奨モードであり、デフォルトです。Cloud Manager 2021.7.0 リリース以降に作成された新しい環境用に Cloud Manager でも使用されます。このモードを有効にするには、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。より柔軟性の高いこのモードを使用する場合は、rewrites フォルダー下のファイル構造に制限はありません。レガシーモードでは、このフォルダーに 1 つの `rewrite.rules` ファイルが必要でした。また、追加できるルールの数に制限はありません。フォルダー構造とローカル検証について詳しくは、[Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)を参照してください。
+* **フレキシブルモード** - [AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降の推奨モードであり、デフォルトです。Cloud Manager 2021.7.0 リリース以降に作成された新しい環境用に Cloud Manager でも使用されます。 このモードを有効にするには、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。 より柔軟性の高いこのモードを使用する場合は、rewrites フォルダー下のファイル構造に制限はありません。レガシーモードでは、このフォルダーに 1 つの `rewrite.rules` ファイルが必要でした。 また、追加できるルールの数に制限はありません。 フォルダー構造とローカル検証について詳しくは、[Dispatcher ツールを使用した検証とデバッグ](/help/implementing/dispatcher/validation-debug.md)を参照してください。
 
 * **レガシーモード** - Dispatcher 設定のレガシーモードでのフォルダー構造とローカル検証について詳しくは、[Dispatcher ツールを使用した検証とデバッグ（レガシー）](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください
 
@@ -104,7 +104,7 @@ Dispatcher ツールは、プロジェクトの Dispatcher 設定の検証とデ
 | `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
-お客様が任意のモジュールを追加することはできませんが、今後、上記の表にある以外のモジュールが追加で組み込まれる可能性があります。お客様は、SDK でバリデーターの allowlist コマンドを実行することにより、特定の Dispatcher バージョンで使用可能なディレクティブのリストを見つけることができます。
+お客様が任意のモジュールを追加することはできませんが、今後、上記の表にある以外のモジュールが追加で組み込まれる可能性があります。 お客様は、SDK でバリデーターの allowlist コマンドを実行することにより、特定の Dispatcher バージョンで使用可能なディレクティブのリストを見つけることができます。
 
 Apache の設定ファイルで許可されているディレクティブは、バリデーターの allowlist コマンドを実行すると表示できます。
 
