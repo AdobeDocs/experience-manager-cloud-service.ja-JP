@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8be88cd42efababa187ad5154005e1ee173d3f73
+source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
 workflow-type: tm+mt
-source-wordcount: '7411'
+source-wordcount: '7415'
 ht-degree: 85%
 
 ---
@@ -1502,6 +1502,7 @@ ht-degree: 85%
       + [AEM におけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)
       + [Sling Model Exporter による ResourceResolvers のシリアル化を許可しない](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)
+      + [AEM Edge Functions キャッシュ](/help/implementing/developing/introduction/edge-functions-caching.md)
       + フルスタック AEM 開発 {#full-stack}
          + [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI の構造](/help/implementing/developing/introduction/ui-structure.md)
