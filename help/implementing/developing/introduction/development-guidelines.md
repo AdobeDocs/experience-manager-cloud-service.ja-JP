@@ -18,7 +18,7 @@ ht-degree: 69%
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
 >abstract="AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスでの AEM および AMS での AEM との重要な違いについて説明します。"
->additional-url="https://video.tv.adobe.com/v/345904?captions=jpn" text="パッケージ構造のデモ"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
 
 このドキュメントでは、AEM as a Cloud Service での開発に関するガイドラインと、オンプレミスおよび AMS の AEM とは異なる重要な方法について説明します。
 
@@ -112,7 +112,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発の場合、ログ エントリは`/crx-quickstart/logs` フォルダー内のローカル ファイルに書き込まれます。
 
-Cloud環境では、開発者はCloud Managerを通じてログをダウンロードするか、コマンドラインツールを使用してログをテールできます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Cloud環境では、開発者はCloud Managerを通じてログをダウンロードするか、コマンドラインツールを使用してログをテールできます。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **ログレベルの設定**
 
@@ -173,7 +173,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### ローカル開発 {#local-development}
 
-ローカル開発のために、開発者は[CRXDE Lite](/help/implementing/developing/tools/crxde.md) （`/crx/de`）および[Web コンソール &#x200B;](/help/implementing/developing/tools/web-console.md) （`/system/console`）に完全にアクセスできます。
+ローカル開発のために、開発者は[CRXDE Lite](/help/implementing/developing/tools/crxde.md) （`/crx/de`）および[Web コンソール ](/help/implementing/developing/tools/web-console.md) （`/system/console`）に完全にアクセスできます。
 
 （SDKを使用して）ローカル開発の場合、`/apps`と`/libs`は直接に書き込むことができます。これは、最上位のフォルダーが不変であるクラウド環境とは異なります。
 
@@ -186,7 +186,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 オーサー層の開発環境でCRXDE liteにアクセスできますが、ステージングや実稼動環境にはアクセスできません。 不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。 詳しくは、[&#x200B; リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を参照してください。
+代わりに、AEM as a Cloud Service Developer Console からリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層でのすべての環境に対してリポジトリへの読み取り専用ビューを提供できます。 詳しくは、[ リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
 AEM as a Cloud Service開発者向け環境をデバッグするための一連のツールは、RDE、開発、ステージ、実稼動環境用の[AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)で利用できます。 URLは、オーサーまたはパブリッシュサービスのURLを次のように調整することで決定できます。
 
@@ -238,11 +238,11 @@ Adobeはフレキシブルポートエグレスのトラフィックのパフォ
 
 ### メールの送信 {#sending-emails}
 
-[Day CQ メールサービス OSGI サービス &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用する必要があり、メールは受信者に直接送信するのではなく、サポート要求に示されているメールサーバーに送信する必要があります。
+[Day CQ メールサービス OSGI サービス ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用する必要があり、メールは受信者に直接送信するのではなく、サポート要求に示されているメールサーバーに送信する必要があります。
 
 ### 設定 {#email-configuration}
 
-AEMの電子メールは、[Day CQ Mail Service OSGI サービス &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用して送信する必要があります。
+AEMの電子メールは、[Day CQ Mail Service OSGI サービス ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用して送信する必要があります。
 
 メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。 AEM as a Cloud Serviceの場合は、`com.day.cq.mailer.DefaultMailService` OSGi サービスに次の必要な調整を行います。
 

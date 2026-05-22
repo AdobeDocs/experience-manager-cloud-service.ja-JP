@@ -1,13 +1,13 @@
 ---
-title: コンテンツ転送ツールでの移行セットの削除
-description: コンテンツ転送ツールで移行セットを削除する方法について説明します。
+title: コンテンツトランスファーツールでの移行セットの削除
+description: コンテンツトランスファーツールで移行セットを削除する方法について説明します。
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 feature: Migration
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '233'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 移行セットを削除する手順は次のとおりです。
 
-1. Cloud Acceleration Manager で移行セットリスト表示に移動し、削除する移行セットの横の 3 つのドット（**...**）をクリックします。**削除**&#x200B;アクションは、次のように表示されます。
+1. Cloud Acceleration Managerの移行セット リスト ビューに移動し、3つのドット （**...**）をクリックします 削除する移行セットの横にあります。 **削除**&#x200B;アクションは、次のように表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
@@ -34,9 +34,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Cloud Acceleration Manager（CAM）から移行セットを削除しても、コンテンツ転送ツールからは削除されません。移行セットを CAM から削除すると、ユーザーはコンテンツ転送ウィザードでその移行セットに対する抽出を実行できなくなります。ただし、移行セットがコンテンツ転送ウィザードから削除された場合でも、Cloud Acceleration Manager で移行セットが理試用可能であれば再作成できます。
+>Cloud Acceleration Manager（CAM）から移行セットを削除しても、コンテンツトランスファーツールからは削除されません。 移行セットを CAM から削除すると、ユーザーはコンテンツ転送ウィザードでその移行セットに対する抽出を実行できなくなります。 ただし、移行セットがコンテンツ転送ウィザードから削除された場合でも、Cloud Acceleration Manager で移行セットが理試用可能であれば再作成できます。
 >
->コンテンツ転送ツールと Cloud Acceleration Manager の同期を維持するために、コンテンツ転送ツールから移行セットを削除することもできます。
+>コンテンツトランスファーツールと Cloud Acceleration Manager の同期を維持するために、コンテンツトランスファーツールから移行セットを削除することもできます。
 
 コンテンツ転送ウィザードで移行セットを削除するには、移行セットを選択し、アクションバーの「**削除**」をクリックします。
 

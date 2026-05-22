@@ -4,7 +4,7 @@ description: AEM リファクタリングツールの基本を学ぶ
 exl-id: b8137e01-87e8-4298-b0cc-b376330cb730
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 100%
 >id="aemcloud_rs_overview"
 >title="Overview"
 >abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja" text="Guidelines and Best Practices"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
 -->
 
 # リファクタリングツールの概要 {#refactoring-tools-overview}
 
-**リファクタリングツール**&#x200B;は、**AEM as a Cloud Service（AEMaaCS）**&#x200B;と互換性を持たせるために、既存の AEM プロジェクトを更新するプロセスを合理化します。これらのツールは、一般的なリファクタリングおよび最新化タスクを自動化し、**Cloud Acceleration Manager（CAM）**&#x200B;と統合して、シームレスなエクスペリエンスを実現します。
+**リファクタリングツール**&#x200B;は、**AEM as a Cloud Service（AEMaaCS）**&#x200B;と互換性を持たせるために、既存の AEM プロジェクトを更新するプロセスを合理化します。 これらのツールは、一般的なリファクタリングおよび最新化タスクを自動化し、**Cloud Acceleration Manager（CAM）**&#x200B;と統合して、シームレスなエクスペリエンスを実現します。
 
 以前は CLI ユーティリティとしてのみ利用可能だったリファクタリングツールは、自動化された検査、設定の生成、ジョブの実行などの機能を備えた統合インターフェイスを提供するようになり、手動によるオーバーヘッドを削減し、可視性を向上させます。
 
@@ -40,11 +40,11 @@ ht-degree: 100%
 
 ### Repository Modernizer {#repo-modernizer}
 
-**Repository Modernizer** は、AEM プロジェクトのリポジトリレイアウトとコンテンツを再構築して、AEMaaCS の標準とベストプラクティスに準拠させます。従来のリポジトリ最新化ツールを、強化された自動化と精度で置き換えます。
+**Repository Modernizer** は、AEM プロジェクトのリポジトリレイアウトとコンテンツを再構築して、AEMaaCS の標準とベストプラクティスに準拠させます。 従来のリポジトリ最新化ツールを、強化された自動化と精度で置き換えます。
 
 ### コード変換サービス {#code-transformer}
 
-**コード変換**&#x200B;は、インテリジェントパターン認識と AI 駆動の分析を使用して、AEMaaCS と互換性のないコードセグメントを検出および更新します。このツールにより、移行作業が簡素化され、手動によるコード変更が減ります。
+**コード変換**&#x200B;は、インテリジェントパターン認識と AI 駆動の分析を使用して、AEMaaCS と互換性のないコードセグメントを検出および更新します。 このツールにより、移行作業が簡素化され、手動によるコード変更が減ります。
 
 ## リファクタリングのワークフローフェーズ {#phases-in-refactoring-tools}
 
