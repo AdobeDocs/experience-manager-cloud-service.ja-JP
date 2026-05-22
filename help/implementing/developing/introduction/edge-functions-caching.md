@@ -3,9 +3,9 @@ title: AEM Edge Functionsでのキャッシュ
 description: CDN キャッシュとEdge関数のキャッシュの取り込み方法、キャッシュ動作の設定方法、およびキャッシュされたコンテンツを両方のレイヤー間でパージする方法について説明します。
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: b33a565d9623ed44309e1d34377345dae86757cd
+source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ return new Response(body, {
 
 ## Edge関数の取得キャッシュ（内部） {#fetch-cache}
 
-Edge関数の取得キャッシュは、Edge関数と呼び出すバックエンドの間にあります。 Edge関数コード内で行われた&#x200B;**バックエンドの応答**&#x200B;から`fetch()`呼び出しをキャッシュします。 また、[**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache)または&#x200B;[**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache)を介してコードに格納されているデータも保持します。プログラムによるキャッシュ インターフェイスを使用すると、キャッシュされる内容、時間、サロゲート キーの下を詳細に制御できます。
+Edge関数の取得キャッシュは、Edge関数と呼び出すバックエンドの間にあります。 Edge関数コード内で行われた&#x200B;**バックエンドの応答**&#x200B;から`fetch()`呼び出しをキャッシュします。 また、[**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert)または&#x200B;[**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache)を介してコードに格納されているデータも保持します。プログラムによるキャッシュ インターフェイスを使用すると、キャッシュされる内容、時間、サロゲート キーの下を詳細に制御できます。
 
 これは、Edge関数の送信レスポンスに設定したヘッダーの影響を受ける&#x200B;**影響を受けません。バックエンドのレスポンス ヘッダー、フェッチ呼び出しの[`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) オプション、またはCore Cache APIへの書き込み時にプログラムで割り当てたサロゲート キーによってのみ影響を受けます。**
 
@@ -120,7 +120,7 @@ CDNは、Edge関数から返された最終応答をキャッシュします。 
 パージ コマンドで使用されるサロゲート キーは、キャッシュされたコンテンツに保存された時点で&#x200B;**タグ付けされていたキーと一致する必要があります**。 これは、AEM CDNで使用される[&#x200B; サロゲート キーベースのパージ &#x200B;](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge)と同じ概念ですが、Edge関数の内部キャッシュに適用されます。 これらのキーは次の場所から取得されます。
 
 - Edge関数がバックエンドから取得したときにバックエンドが返す`Surrogate-Key`応答ヘッダー。
-- [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache)への書き込み時にプログラムで割り当てるキー（キャッシュエントリの挿入時に`surrogateKeys` オプションを使用するなど）。
+- [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert)への書き込み時にプログラムで割り当てるキー（キャッシュエントリの挿入時に`surrogateKeys` オプションを使用するなど）。
 
 例えば、バックエンドが次のように応答する場合：
 
