@@ -108,4 +108,4 @@ The form creation skill combines form creation and site integration in a single 
 
 Experience Production Agentを引き続き検討する場合は、次のリソースが役立つ可能性があります。
 
-* [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook)をガイド付きの実践的な手順に使用することもできます。
+* [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook_jp)をガイド付きの実践的な手順に使用することもできます。
