@@ -21,13 +21,13 @@ ht-degree: 37%
 
 フラグメントをプレビューするには、次の操作を行います。
 
-* [ プレビューインスタンス ](#preview-instance)に公開して、から非公開にする
+* [&#x200B; プレビューインスタンス &#x200B;](#preview-instance)に公開して、から非公開にする
 
-* [外部アプリケーション ](#preview-url-pattern)で、[ プレビューURL パターン ](#preview-url-pattern)を使用しています
+* [外部アプリケーション &#x200B;](#preview-url-pattern)で、[&#x200B; プレビューURL パターン &#x200B;](#preview-url-pattern)を使用しています
 
-* [ ビジュアライゼーション （HTML） テンプレートを使用](#preview-with-visualization-html-templates)
+* [&#x200B; ビジュアライゼーション （HTML） テンプレートを使用](#preview-with-visualization-html-templates)
 
-もちろん、[ コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)でフラグメントを表示することもできます。
+もちろん、[&#x200B; コンテンツフラグメントエディター](/help/sites-cloud/administering/content-fragments/authoring.md)でフラグメントを表示することもできます。
 
 >[!IMPORTANT]
 >
@@ -51,9 +51,9 @@ ht-degree: 37%
 
 以下を参照してください。
 
-* 詳細については、[ フラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)を参照してください。
+* 詳細については、[&#x200B; フラグメントの公開とプレビュー](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)を参照してください。
 
-* 詳細については、[ フラグメント ](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment)を非公開にします。
+* 詳細については、[&#x200B; フラグメント &#x200B;](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment)を非公開にします。
 
 ## 外部アプリケーションでのプレビュー {#preview-in-an-external-application}
 
@@ -87,12 +87,12 @@ URLが定義されると、**[プレビュー](/help/sites-cloud/administering/c
 
 >[!NOTE]
 >
->このオプションには、[ プレビューURL パターン ](#preview-url-pattern)を設定する必要があります。
+>このオプションには、[&#x200B; プレビューURL パターン &#x200B;](#preview-url-pattern)を設定する必要があります。
 
 1. コンテンツフラグメントコンソールで、フラグメントの場所に移動します。
 1. エディターでフラグメントを開きます
 1. 上部のツールバーから「**プレビュー**」を選択します。
-1. **アプリケーション**&#x200B;を選択して、外部アプリケーションでフラグメントを開きます（例：[ ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)）。
+1. **アプリケーション**&#x200B;を選択して、外部アプリケーションでフラグメントを開きます（例：[&#x200B; ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)）。
 
 ## ビジュアライゼーション（HTML）テンプレートを使用したプレビュー {#preview-with-visualization-html-templates}
 
@@ -106,9 +106,9 @@ URLが定義されると、**[プレビュー](/help/sites-cloud/administering/c
 
 AEMでは、HTML テンプレートに基づいたビジュアルレイアウトを使用して、コンテンツフラグメントをプレビューできます。
 
-テンプレート ](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template)を使用してフラグメントを[ プレビューする方法について詳しくは、[ ビジュアルコンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)を参照してください。
+テンプレート [&#128279;](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template)を使用してフラグメントを プレビューする方法について詳しくは、[&#x200B; ビジュアルコンテンツフラグメント &#x200B;](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)を参照してください。
 
 >[!NOTE]
 >
->独自のHTML テンプレートを作成、カスタマイズ、アップロードする方法について詳しくは、[ ビジュアルコンテンツフラグメント – テンプレート ](/help/implementing/developing/extending/content-fragments-visualization-templates.md)を参照してください。
+>独自のHTML テンプレートを作成、カスタマイズ、アップロードする方法について詳しくは、[&#x200B; ビジュアルコンテンツフラグメント – テンプレート &#x200B;](/help/implementing/developing/extending/content-fragments-visualization-templates.md)を参照してください。
 
