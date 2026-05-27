@@ -112,7 +112,7 @@ Scan my config files and create Cloud Manager environment secrets or variables.
 | ソース | 用途 |
 |--------|------------|
 | **BPA CSV ファイル** | AEM インスタンスまたはCloud Acceleration ManagerからCSVを書き出しました。 セッションの開始時にファイルパスを指定します。 |
-| **MCP経由のCAM** | AEM Cloud Migration MCPが設定されています。 エージェントはCAM プロジェクトをリストし、どのプロジェクトを使用するかを確認し、調査結果を直接取得します。 [ クラウド移行MCPの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)を参照してください。 |
+| **MCP経由のCAM** | AEM Cloud Migration MCPが設定されています。 エージェントはCAM プロジェクトをリストし、どのプロジェクトを使用するかを確認し、調査結果を直接取得します。 [&#x200B; クラウド移行MCPの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)を参照してください。 |
 | **手動ファイル パス** | BPA レポートなしで特定のファイルを移行する場合。 プロンプトで直接パスを指定します。 |
 
 ### MCP エラー処理 {#mcp-errors}
