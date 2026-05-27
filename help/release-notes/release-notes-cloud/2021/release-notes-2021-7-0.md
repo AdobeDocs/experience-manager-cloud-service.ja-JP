@@ -31,7 +31,7 @@ ht-degree: 65%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオ[をご覧ください。
+追加された機能の概要については、[&#128279;](https://video.tv.adobe.com/v/335580)2021 年 7 月リリースの概要ビデオをご覧ください。
 
 ## Experience Manager Foundation as a Cloud Service {#foundation}
 
@@ -51,7 +51,7 @@ ht-degree: 65%
 
   ![PDF ビューアを使用した [!DNL Experience Manager] での PDF ファイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* リンク共有のダウンロード機能では、非同期ダウンロードを使用して、ダウンロード速度を向上させます。 詳しくは、[ リンク共有を使用して共有されたアセットのダウンロード ](/help/assets/download-assets-from-aem.md#link-share-download)を参照してください。
+* リンク共有のダウンロード機能では、非同期ダウンロードを使用して、ダウンロード速度を向上させます。 詳しくは、[&#x200B; リンク共有を使用して共有されたアセットのダウンロード &#x200B;](/help/assets/download-assets-from-aem.md#link-share-download)を参照してください。
 
   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
@@ -101,7 +101,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` は、[!DNL Experience Manag
 
 * **Acroform べースのレコードのドキュメント**：XFA ベースのフォームテンプレート以外にも、[Adobe Acrobat Form PDF（Acroform PDF）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、レコードドキュメントのテンプレートとして使用することもできます。
 
-* **Microsoft® Azure データストアコネクタ**: [ フォームデータモデルをMicrosoft® Azure ストレージ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)に接続できるようになりました。 アダプティブフォームデータを取得して、Microsoft® Azure Storage as a BLOBに保存できます。
+* **Microsoft® Azure データストアコネクタ**: [&#x200B; フォームデータモデルをMicrosoft® Azure ストレージ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)に接続できるようになりました。 アダプティブフォームデータを取得して、Microsoft® Azure Storage as a BLOBに保存できます。
 
 ## CIF アドオン {#cloud-services-cif}
 
