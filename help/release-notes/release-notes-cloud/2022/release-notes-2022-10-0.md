@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.10.0 リ
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 78%
+source-wordcount: '857'
+ht-degree: 77%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の 2022.10.0 リリースノート {#release-notes}
 
-次の節では、[!DNL Experience Manager] のas a Cloud Serviceの 2022.10.0 バージョンの機能リリースノートの概要を説明します。
+次の節では、[!DNL Experience Manager] as a Cloud Serviceの2022.10.0 バージョンの機能リリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 78%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の月間リリース（2022.10.0）のリリース日は 2022 年11月10日です。次回の月間リリース（2023.1.0）は 2023年2月9日に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の月間リリース（2022.10.0）のリリース日は 2022 年11月10日です。 次回の月次リリース（2023.1.0）は2023年2月9日（PT）に予定されています。
 
 ## リリースビデオ {#release-video}
 
@@ -38,7 +38,7 @@ ht-degree: 78%
 
 ### の新機能[!DNL Sites] {#sites-features}
 
-* [&#x200B; エクスペリエンスフラグメントの「Personalization」タブでは &#x200B;](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment) エクスペリエンスフラグメントエディターにセグメント化指定機能を提供し、ネストしたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
+* エクスペリエンスフラグメント用の[Personalization タブ ](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment)では、エクスペリエンスフラグメントエディターに対するセグメント化機能と、ネストされたエクスペリエンスフラグメントを柔軟に作成できるので、複数のセグメントに対してヘッダーとフッターのバリエーションを作成できます。 この機能を開始する前は、AEM が提供するパーソナライゼーションはサイトのページでのみ使用できますが、エクスペリエンスフラグメントでは使用できません
 
 * この[コンテンツフラグメントコンソール](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)では、ユーザーが翻訳されたコンテンツフラグメントを効率的に管理できるようになりました。 すべての言語コピーを表示するための 1 回のクリックアクセスが提供されています。 また、ユーザーは、関心があるロケールに基づいてテーブル表示をフィルタリングすることもできます。
 
@@ -50,7 +50,7 @@ ht-degree: 78%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [&#x200B; Experience Manager Assetsでは、サポートされている他の形式タイプのドキュメントをアップロードして、組み込まれているDocument Cloudビューアを使用してプレビューができるようになりました &#x200B;](/help/assets/manage-pdf-documents.md)。 サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
+* Experience Manager Assetsでは、サポートされている他の形式のドキュメントをアップロードし、付属のDocument Cloud ビューア ](/help/assets/manage-pdf-documents.md)を使用してプレビューできるようになりました。 [サポートされる形式の種類には、TXT、RTF、DOC、DOCX、PPT、PPTX、XLS、XLSX が含まれます。
 
   ![他の形式向けの PDF レンディション](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -67,12 +67,12 @@ ht-degree: 78%
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **アダプティブFormsテンプレートエディター**：テンプレートエディターでは、組織のアダプティブFormsの基本構造と表示方法を事前に定義できます。 このリリースでは、テンプレートエディターが次のように改善されました：
+* **アダプティブ Forms テンプレート エディター**: テンプレート エディターを使用すると、組織のアダプティブ Formsの基本構造と外観を事前に定義できます。 このリリースでは、テンプレートエディターが次のように改善されました：
    * **[テンプレートエディターのフォームデータモデル](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：テンプレートエディター内で、フォームデータモデルスキーマをアダプティブフォームテンプレートに関連付けることができます。 これにより、アダプティブフォームの作成に要する時間を短縮します。 このオプションはアダプティブ フォームエディターにも追加され、ユーザーは既存のフォームのフォームデータモデルを選択または変更することができます。
-   * **[テンプレートエディターでのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：テンプレートを使用して作成されたすべてのフォームのレコードのドキュメント生成を標準化できるようになりました。これにより、組織の要件に対するコンプライアンスと標準化が強化されます。
+   * **[テンプレートエディターでのレコードのドキュメント](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：テンプレートを使用して作成されたすべてのフォームのレコードのドキュメント生成を標準化できるようになりました。 これにより、組織の要件に対するコンプライアンスと標準化が強化されます。
 
-* **[AEM Sites ページからアダプティブフォームウィザードを起動](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites ページでは、アダプティブフォームのサポートが拡張されました。AEM Sites ページを表示したまま、アダプティブフォームを作成したり、既存のアダプティブフォームを埋め込んだりできるようになりました。
-* **[DoR でチェックボックスとラジオボタンの表示の配置を変更](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：レコードのドキュメントのチェックボックスおよびラジオボタンに対して、配置（水平、垂直、アダプティブフォームと同じ）を設定できるようになりました。このオプションは、レコードのドキュメント内でのチェックボックスおよびラジオボタンの位置を決定します。
+* **[AEM Sites ページからアダプティブフォームウィザードを起動](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites ページでは、アダプティブフォームのサポートが拡張されました。 AEM Sites ページに残ったまま、アダプティブフォームを作成したり、既存のアダプティブフォームを埋め込んだりできるようになりました。
+* **[DoR でチェックボックスとラジオボタンの表示の配置を変更](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：レコードのドキュメントのチェックボックスおよびラジオボタンに対して、配置（水平、垂直、アダプティブフォームと同じ）を設定できるようになりました。 このオプションは、レコードのドキュメント内でのチェックボックスおよびラジオボタンの位置を決定します。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -87,11 +87,11 @@ ht-degree: 78%
 
 ### 新機能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。詳しくは、統合シェルの [Cloud ServiceとしてのAEM](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
+* AEM as a Cloud Service（オーサーサービス）が統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべての Experience Cloud アプリケーションと統合されました。 詳しくは、「AEM as a [ Cloud Service on Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)」を参照してください。
 
-* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション API を使用して 10 MB を超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは、非推奨（廃止予定）になり実施されるようになりました。 これらの大きなコンテンツ パッケージをレプリケートするための推奨アプローチについて詳しくは、[&#x200B; 公開の管理 &#x200B;](/help/operations/replication.md#manage-publication) または [&#128279;](/help/operations/replication.md#publish-content-tree-workflow)2&rbrace;Publish コンテンツツリーのワークフロー &rbrace; を参照してください。
+* リリースノートで前述したように、レプリケーションエージェントの管理画面またはレプリケーション APIを使用して、10 MBを超えるコンテンツパッケージ（バイナリを含まないプロパティを持つノード）を配布することは非推奨（廃止予定）になり、強制されるようになりました。 これらの大規模なコンテンツパッケージをレプリケートするための推奨アプローチについては、[公開の管理](/help/operations/replication.md#manage-publication)または[ コンテンツツリーの公開ワークフロー](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow)を参照してください。
 
-* Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。詳しくは、[&#x200B; マーケティングキャンペーンパラメーター &#x200B;](/help/implementing/dispatcher/caching.md#marketing-parameters) を参照してください。
+* Dispatcher 設定で、一般的なマーケティングキャンペーンのクエリパラメーターをリストするファイルが参照されるようになりました。 顧客が関連するパラメーターのコメント解除を選択できるので、キャッシュが改善されました。 詳しくは、[ マーケティングキャンペーンパラメーター](/help/implementing/dispatcher/caching.md#marketing-parameters)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
