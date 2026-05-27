@@ -3,7 +3,7 @@ title: AEM as a Cloud Serviceのツリーレプリケーションワークフロ
 description: ツリーのアクティベーションのワークフローステップとAEM as a Cloud Serviceの関連ワークフローを使用して、詳細なコンテンツ階層をレプリケートする方法について説明します。
 feature: Operations
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 82%
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 一括ツリーレプリケーションには、**ツリーのアクティブ化ワークフロー手順**&#x200B;を使用します。 これは、大規模なペイロードに対する推奨アプローチです。 **コンテンツツリーワークフローの公開**&#x200B;は引き続き参照用に文書化されますが、ツリーのアクティブ化ステップのために非推奨になります。
 
-その他のレプリケーションに関するトピックについては、[&#x200B; レプリケーション &#x200B;](/help/operations/replication.md)を参照してください。
+その他のレプリケーションに関するトピックについては、[ レプリケーション ](/help/operations/replication.md)を参照してください。
 
 ## ツリーアクティベーションワークフローステップ {#tree-activation}
 
@@ -162,3 +162,4 @@ ht-degree: 82%
 ```
 
 +++
+

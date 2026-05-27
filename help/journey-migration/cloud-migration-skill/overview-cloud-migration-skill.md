@@ -3,7 +3,7 @@ title: AEM AS A CLOUD SERVICEへのAIを活用したコードの移行
 description: AEM Cloud Migration SkillとMCPの概要。BPAの調査結果を読み取り、AEM 6.x コードをAEM as a Cloud Serviceに移行するAI エージェントソリューションで、パターン別に表示されます。
 feature: Migration
 role: Developer
-source-git-commit: 85b630684db9de7e16e3a52203f55bca5846f66e
+source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 1%
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 ### はじめに {#getting-started-skill}
 
-1. [Adobe スキルリポジトリ &#x200B;](https://github.com/adobe/skills)から`aem-cloud-service` スキルパッケージをインストールします。
+1. [Adobe スキルリポジトリ ](https://github.com/adobe/skills)から`aem-cloud-service` スキルパッケージをインストールします。
 2. AEM プロジェクトをIDEのワークスペースルートとして開きます。
 3. BPA調査結果の取得：BPAからCSVをエクスポートするか、クラウド移行MCPを設定します（以下を参照）。
 4. 次のいずれかのプロンプトを使用して、エージェントとのセッションを開始します。
@@ -92,7 +92,7 @@ ht-degree: 1%
 >[!NOTE]
 >スキルは、セッションごとに1つのパターンを処理します。 BPA レポートに複数のパターンが含まれる場合、開始する前に1つを選択するように求められます。
 
-完全なパターン参照とセッション管理ガイダンスについては、[&#x200B; クラウド移行スキルの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)を参照してください。
+完全なパターン参照とセッション管理ガイダンスについては、[ クラウド移行スキルの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)を参照してください。
 
 ## クラウド移行MCP {#cloud-migration-mcp}
 
@@ -113,15 +113,16 @@ ht-degree: 1%
 2. プロンプトが表示されたら、Adobe IDでログインしてCloud Acceleration Managerに対する認証を行います。
 3. 移行スキルは、CAM プロジェクトからBPAの調査結果を直接取得できるようになりました。
 
-セットアップとトラブルシューティングの詳細については、[&#x200B; クラウド移行MCPの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)を参照してください。
+セットアップとトラブルシューティングの詳細については、[ クラウド移行MCPの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)を参照してください。
 
 ## どのように移行ジャーニーに組み込むのかを解説します {#migration-journey}
 
 スキルとMCPは、**実装フェーズ**&#x200B;の他のツールを補完します。
 
-- **ベストプラクティスアナライザー**: スキルを促進する調査結果を生成します。 [&#x200B; ベストプラクティスアナライザーの使用](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を参照してください。
+- **ベストプラクティスアナライザー**: スキルを促進する調査結果を生成します。 [ ベストプラクティスアナライザーの使用](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)を参照してください。
 - **Cloud Acceleration Manager**: BPA レポートをホストし、移行の全体的な進行状況を追跡します。 [CAMの使用を開始するを参照してください](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)。
-- **リファクタリング ツール**: リポジトリ構造とDispatcher設定の近代化を処理します。 [&#x200B; リファクタリング ツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)を参照してください。
+- **リファクタリング ツール**: リポジトリ構造とDispatcher設定の近代化を処理します。 [ リファクタリング ツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)を参照してください。
 - **コンテンツ転送ツール**：リポジトリコンテンツをAEM 6.xからAEMaaCSに移行します。
 
 全体像については、[実装フェーズの概要](/help/journey-migration/implementation.md)を参照してください。
+
