@@ -4,7 +4,7 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のリリース
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: a1fc361dd4d060bf2aa4a085188ddc28d996c62a
+source-git-commit: 5ffc7086ba11105e8feb04d429f589c0882611ee
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 99%
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2026.4.0 |
+| バージョン | 2026.5.0 |
 | タイプ | 継続的アップデート |
 | 公開日 | 継続的アップデート |
 
