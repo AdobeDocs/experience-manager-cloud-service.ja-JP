@@ -55,7 +55,7 @@ Adobe Experience Cloud サービスとして、ユニバーサルエディター
 
 ### 拡張ポイント {#extension-points}
 
-ユニバーサルエディターUIで使用できる拡張ポイントの完全なリストについては、Adobe Developer ドキュメント [ ユニバーサルエディター拡張ポイント ](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)を参照してください。
+ユニバーサルエディターUIで使用できる拡張ポイントの完全なリストについては、Adobe Developer ドキュメント [&#x200B; ユニバーサルエディター拡張ポイント &#x200B;](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)を参照してください。
 
 ## その他のリソース {#additional-resources}
 
