@@ -4,7 +4,7 @@ description: AEM as a Cloud Serviceの自動更新による運用上の影響を
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 53900e778b64d1b818a9268bf9148db11414b7a8
+source-git-commit: d289256163dab0deaf67377af0e8f054b54b2ee4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 >[!NOTE]
 >「[自動メンテナンス更新](/help/implementing/deploying/aem-version-updates.md)」にオンボーディングした後にのみ、無料時間および無料期間の更新機能を使用できます。
 
-AEM as a Cloud Service [自動メンテナンスアップデート &#x200B;](/help/implementing/deploying/aem-version-updates.md)は、インスタンスが最新のメンテナンスリリースで安全かつ最新の状態に保たれるようにします。 ただし、場合によっては（公開イベントなど）、重要な勤務時間を潜在的な混乱から「保護」する必要がある場合があります。 AEM as a Cloud Serviceには、プログラムの自動メンテナンス更新を一時停止する期間を選択するオプションが用意されています。 これは、すべてのインフラストラクチャのアクティビティを妨げるわけではなく、メンテナンスの更新以外の下位レベルのプラットフォームの変更が引き続き行われる可能性があります（IMSなど）。
+AEM as a Cloud Service [自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md)は、インスタンスが最新のメンテナンスリリースで安全かつ最新の状態に保たれるようにします。 ただし、場合によっては（公開イベントなど）、重要な勤務時間を潜在的な混乱から「保護」する必要がある場合があります。 AEM as a Cloud Serviceには、プログラムの自動メンテナンス更新を一時停止する期間を選択するオプションが用意されています。 これは、すべてのインフラストラクチャのアクティビティを妨げるわけではなく、メンテナンスの更新以外の下位レベルのプラットフォームの変更が引き続き行われる可能性があります（IMSなど）。
 
 次の2つのスケジュール設定オプションを使用して、これらの時間枠を設定できます。
 
@@ -25,9 +25,9 @@ AEM as a Cloud Service [自動メンテナンスアップデート &#x200B;](/he
 
 更新無料期間とサイレントアワー機能は、「プログラムごとに」設定されます。 **ビジネスオーナー**&#x200B;および&#x200B;**デプロイメントマネージャー**&#x200B;の「ユーザーロール」を持つユーザーのみが、これらの機能を表示および使用できます。
 
-また、予定されているAEM as a Cloud Serviceの自動メンテナンス期間については、[Experience Manager リリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+また、予定されているAEM as a Cloud Serviceの自動メンテナンス期間については、[Experience Manager リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
-## AEM AI アシスタント manage-ai-assistantを使用した管理（限定提供）{#manage-ai-assistant}
+## AEM AI アシスタント manage-ai-assistantを使用した管理（限定提供） {#manage-ai-assistant}
 
 Cloud Managerインターフェイスに加えて、AEM AI アシスタントを使用してサイレントアワーを管理し、無料期間を更新することができます。 アシスタントは、自然言語リクエストから、現在のサイレントアワーのリスト表示と無料期間の更新、新しい更新無料期間またはサイレントアワー期間の作成、既存の期間の編集または削除をすべて行うことができます。 アシスタントは、利用可能なオプションと、適用中に適用されるルールをガイドするので、無効な設定が発生する前に回避するのに役立ちます。 浮動小数の365日ウィンドウ内の最大3つの更新無料期間、期間の間の必須1週間の間隔、サイレントアワーの8時間の制限、計画されたメンテナンス除外期間のスケジュール制限など、会話に関連する制限が表示されます。 手動設定と同様に、これらのアクションはプログラムごとに適用され、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つユーザーのみが使用できます。
 
@@ -49,7 +49,7 @@ Cloud Managerインターフェイスに加えて、AEM AI アシスタントを
 2. 「**編集**」をクリックします。
 3. 設定ウィンドウでサイレントアワー間隔を設定します。
 
-![&#x200B; サイレント時間設定](assets/quiet-hours.png)
+![ サイレント時間設定](assets/quiet-hours.png)
 
 設定が完了すると、指定した開始時間と終了時間が、今後のすべてのカレンダー日に適用されます。 必要に応じて、サイレントアワー時間の値を無効にするか、再設定できます。
 
@@ -79,7 +79,7 @@ Cloud Managerインターフェイスに加えて、AEM AI アシスタントを
 
 ## 計画保守の除外期間 {#planned-maintenance}
 
-Adobeには、いくつかのメンテナンス除外期間が計画されています。 これらの期間は、重要な出来事に関するリスクを最小限に抑えるためにAdobeによって定義され、通常は年に2～3回発生します。 メンテナンス除外期間の正確なスケジュールは、[&#x200B; メンテナンスリリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
+Adobeには、いくつかのメンテナンス除外期間が計画されています。 これらの期間は、重要な出来事に関するリスクを最小限に抑えるためにAdobeによって定義され、通常は年に2～3回発生します。 メンテナンス除外期間の正確なスケジュールは、[ メンテナンスリリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
 
 更新不要の期間を正確に設定するために、メンテナンスの除外期間も静かな時間数と更新不要の期間のユーザーインターフェイスに表示されます。
 
