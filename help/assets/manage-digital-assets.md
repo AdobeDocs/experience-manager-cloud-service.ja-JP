@@ -282,7 +282,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## アセットをダウンロード {#download-assets}
 
-「[ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md) からのアセットのダウンロード」を参照してください。
+「[&#x200B; [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md) からのアセットのダウンロード」を参照してください。
 
 ## アセットの公開または非公開 {#publish-assets}
 
@@ -334,7 +334,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。 
 
 アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケターによるアセットの堅牢な管理、DAM 管理者による管理などです。
 
-最も適切なアセットを検出し使用するためのシンプル検索、アドバンス検索、カスタム検索については、[ でのアセットの検索 [!DNL Experience Manager]](/help/assets/search-assets.md)を参照してください。
+最も適切なアセットを検出し使用するためのシンプル検索、アドバンス検索、カスタム検索については、[&#x200B; でのアセットの検索 [!DNL Experience Manager]](/help/assets/search-assets.md)を参照してください。
 
 ## クイックアクション {#quick-actions}
 
@@ -404,7 +404,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 タイムラインを使用すると、アセットのアクティブなワークフロー、コメントや注釈、アクティビティログ、バージョンなど、選択した項目の様々なイベントを表示できます。
 
-![ アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
+![&#x200B; アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
 *図：アセットのタイムラインエントリの並べ替え*
 
 >[!NOTE]
