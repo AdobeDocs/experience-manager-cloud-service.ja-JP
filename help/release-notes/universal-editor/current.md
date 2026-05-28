@@ -28,7 +28,7 @@ ht-degree: 14%
 
 * AEM ページプロパティにアクセスするための新しいボタンがツールバー[に追加されました。](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
    * これにより、元の`aem-page-properties` [拡張機能](/help/implementing/universal-editor/extending.md)の機能がユニバーサルエディターにネイティブに取り込まれます。
-   * ボタンは、リモートページがプロトコル ](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との[接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
+   * ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
 
 ## その他の改善点 {#other-improvements}
 
