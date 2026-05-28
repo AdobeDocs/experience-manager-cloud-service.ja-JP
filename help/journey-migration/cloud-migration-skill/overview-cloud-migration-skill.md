@@ -17,7 +17,7 @@ ht-degree: 1%
 
 次のデモビデオでは、AEM Cloud Migration ソリューションの簡単なエンドツーエンドのチュートリアルを紹介します。参照用に含まれています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3491439?captions=jpn&learn=on)
 
 このソリューションは、次の2つのコンポーネントで構成されています。
 
