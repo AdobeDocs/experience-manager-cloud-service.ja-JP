@@ -16,7 +16,7 @@ ht-degree: 3%
 >[!NOTE]
 >「[自動メンテナンス更新](/help/implementing/deploying/aem-version-updates.md)」にオンボーディングした後にのみ、無料時間および無料期間の更新機能を使用できます。
 
-AEM as a Cloud Service [自動メンテナンスアップデート ](/help/implementing/deploying/aem-version-updates.md)は、インスタンスが最新のメンテナンスリリースで安全かつ最新の状態に保たれるようにします。 ただし、場合によっては（公開イベントなど）、重要な勤務時間を潜在的な混乱から「保護」する必要がある場合があります。 AEM as a Cloud Serviceには、プログラムの自動メンテナンス更新を一時停止する期間を選択するオプションが用意されています。 これは、すべてのインフラストラクチャのアクティビティを妨げるわけではなく、メンテナンスの更新以外の下位レベルのプラットフォームの変更が引き続き行われる可能性があります（IMSなど）。
+AEM as a Cloud Service [自動メンテナンスアップデート &#x200B;](/help/implementing/deploying/aem-version-updates.md)は、インスタンスが最新のメンテナンスリリースで安全かつ最新の状態に保たれるようにします。 ただし、場合によっては（公開イベントなど）、重要な勤務時間を潜在的な混乱から「保護」する必要がある場合があります。 AEM as a Cloud Serviceには、プログラムの自動メンテナンス更新を一時停止する期間を選択するオプションが用意されています。 これは、すべてのインフラストラクチャのアクティビティを妨げるわけではなく、メンテナンスの更新以外の下位レベルのプラットフォームの変更が引き続き行われる可能性があります（IMSなど）。
 
 次の2つのスケジュール設定オプションを使用して、これらの時間枠を設定できます。
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service [自動メンテナンスアップデート ](/help/imple
 
 更新無料期間とサイレントアワー機能は、「プログラムごとに」設定されます。 **ビジネスオーナー**&#x200B;および&#x200B;**デプロイメントマネージャー**&#x200B;の「ユーザーロール」を持つユーザーのみが、これらの機能を表示および使用できます。
 
-また、予定されているAEM as a Cloud Serviceの自動メンテナンス期間については、[Experience Manager リリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+また、予定されているAEM as a Cloud Serviceの自動メンテナンス期間については、[Experience Manager リリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
 
 ## AEM AI アシスタント manage-ai-assistantを使用した管理（限定提供）{#manage-ai-assistant}
 
@@ -49,7 +49,7 @@ Cloud Managerインターフェイスに加えて、AEM AI アシスタントを
 2. 「**編集**」をクリックします。
 3. 設定ウィンドウでサイレントアワー間隔を設定します。
 
-![ サイレント時間設定](assets/quiet-hours.png)
+![&#x200B; サイレント時間設定](assets/quiet-hours.png)
 
 設定が完了すると、指定した開始時間と終了時間が、今後のすべてのカレンダー日に適用されます。 必要に応じて、サイレントアワー時間の値を無効にするか、再設定できます。
 
@@ -79,7 +79,7 @@ Cloud Managerインターフェイスに加えて、AEM AI アシスタントを
 
 ## 計画保守の除外期間 {#planned-maintenance}
 
-Adobeには、いくつかのメンテナンス除外期間が計画されています。 これらの期間は、重要な出来事に関するリスクを最小限に抑えるためにAdobeによって定義され、通常は年に2～3回発生します。 メンテナンス除外期間の正確なスケジュールは、[ メンテナンスリリースロードマップ ](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
+Adobeには、いくつかのメンテナンス除外期間が計画されています。 これらの期間は、重要な出来事に関するリスクを最小限に抑えるためにAdobeによって定義され、通常は年に2～3回発生します。 メンテナンス除外期間の正確なスケジュールは、[&#x200B; メンテナンスリリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) ページで確認できます。
 
 更新不要の期間を正確に設定するために、メンテナンスの除外期間も静かな時間数と更新不要の期間のユーザーインターフェイスに表示されます。
 
