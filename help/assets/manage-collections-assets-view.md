@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -115,13 +115,13 @@ You can share collections with various users that are assigned different levels 
 
    * **[!DNL All]:**&#x200B;通常のコレクションとスマートコレクションの両方を表示します。
    * **[!DNL Collection]:** アセットが個別に追加される手動で作成されたコレクションを表示します。
-   * **[!DNL Smart Collection]:** [&#x200B; スマートコレクション &#x200B;](#manage-smart-collection)に保存されているアセットを自動的に含むコレクションを表示します。
+   * **[!DNL Smart Collection]:** [ スマートコレクション ](#manage-smart-collection)に保存されているアセットを自動的に含むコレクションを表示します。
 
 * **[!DNL Created Date]** ドロップダウンを使用すると、コレクションの作成日時に基づいてコレクションをフィルタリングできます。 日付範囲を指定して、最近作成したコレクションや古いコレクションを検索できます。
 
-  ![&#x200B; コレクションを検索](assets/search-collection.png)
+  ![ コレクションを検索](assets/search-collection.png)
 
-詳しくは、[検索アセット &#x200B;](search-assets-view.md)、[検索結果の絞り込み](search-assets-view.md#refine-search-results)、または[保存した検索の管理](search-assets-view.md##saved-search)を参照してください。
+詳しくは、[検索アセット ](search-assets-view.md)、[検索結果の絞り込み](search-assets-view.md#refine-search-results)、または[保存した検索の管理](search-assets-view.md##saved-search)を参照してください。
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 
@@ -191,7 +191,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## コレクションのリンクの共有 {#share-collection-links}
 
-[!DNL Assets view] を使用すると、リンクを生成して、[!DNL Assets view] アプリケーションに対するアクセス権を持たない外部の関係者と、コレクションやコレクション内のアセットを共有できます。 リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
+[!DNL Assets view]を使用すると、リンクを生成し、コレクション内のコレクションとアセットを、[!DNL Assets view] アプリケーションにアクセスできない外部関係者と共有できます。 リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
 
 ![アセットのリンクの共有](assets/share-link-collections.png)
 
