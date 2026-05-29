@@ -46,7 +46,7 @@ Content Hubでは、管理者がContent Hub ホームページでカスタムメ
 
 AEM Assets Delivery APIは、アセット検索とアセットのダウンロードイベントをサポートするようになり、接続されたアプリケーションやエクスペリエンスをまたいでアセットが検出および使用される方法を追跡し、対応できるようになりました。 これらのイベントは、アセットの使用パターンの可視性を向上し、分析とレポートのワークフローをサポートします。また、外部システムや自動化プロセスとの統合を簡素化します。
 
-イベント駆動型のインサイトにより、コンテンツエンゲージメントをより深く理解し、より連続性のあるデジタルアセットワークフローを構築することができます。 詳しくは、[API ドキュメント ](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded)を参照してください。
+イベント駆動型のインサイトにより、コンテンツエンゲージメントをより深く理解し、より連続性のあるデジタルアセットワークフローを構築することができます。 詳しくは、[API ドキュメント &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded)を参照してください。
 
 >[!IMPORTANT]
 >
