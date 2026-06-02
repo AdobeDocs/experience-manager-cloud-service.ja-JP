@@ -38,7 +38,7 @@ When the package is installed, the following entities and services are available
 -->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。 [!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service（OData サービス）は、すべての実行モードで使用できます。 [!DNL Experience Manager] インスタンスの実行モードの設定について詳しくは、「[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)」を参照してください。
 
 AEM as a Cloud Service では、フォーム送信を処理するための様々な送信アクションが標準で提供されます。 これらのオプションについて詳しくは、[アダプティブフォーム送信アクション](/help/forms/configure-submit-actions-core-components.md)の記事をご覧ください。
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    * [!DNL Microsoft Dynamics] 365 オンプレミス
    * [!DNL Microsoft Dynamics] 2016 オンプレミス
 
-* [ [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。 登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。 これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
+* [&#x200B; [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。 登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。 これらの値は [&#x200B; [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
 
 ## 登録された [!DNL Microsoft Dynamics] アプリケーションの応答 URL を設定 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -79,7 +79,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 >
 > この手順は、[!DNL Experience Manager Forms] をオンプレミスの [!DNL Microsoft Dynamics] サーバーと統合する場合にのみ使用してください。
 
-1. 「[ [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
+1. 「[&#x200B; [!DNL Microsoft Dynamics] の IFD 設定](https://technet.microsoft.com/ja-jp/library/dn609803.aspx)」の説明に従って、IFD の [!DNL Microsoft Dynamics] オンプレミスインスタンスを設定します。
 1. Windows PowerShell を使用して以下のコマンドを実行し、IFD が有効になっている [!DNL Microsoft Dynamics] でクレームを設定します。
 
    ```shell
@@ -133,7 +133,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
    クラウドサービス設定用フォルダーの作成方法と構成方法については、「[クラウドサービス設定用フォルダーの構成](#cloud-folder)」を参照してください。
 
-1. 「**[!UICONTROL Create]**」を選択して、**[!UICONTROL Data Source設定の作成ウィザード]**&#x200B;を開きます。名前とオプションで設定のタイトルを指定し、**[!UICONTROL サービスタイプ]** ドロップダウンから&#x200B;**[!UICONTROL OData サービス]**&#x200B;を選択し、オプションで設定のサムネイル画像を参照して選択し、**[!UICONTROL 次へ]**を選択します。
+1. 「**[!UICONTROL Create]**」を選択して、**[!UICONTROL Data Source設定の作成ウィザード]**&#x200B;を開きます。名前とオプションで設定のタイトルを指定し、**[!UICONTROL サービスタイプ]** ドロップダウンから&#x200B;**[!UICONTROL OData サービス]**&#x200B;を選択し、オプションで設定のサムネイル画像を参照して選択し、**[!UICONTROL 次へ]**&#x200B;を選択します。
 「**[!UICONTROL 認証設定]**」タブで、次の操作を行います。
 
    1. 「**[!UICONTROL サービスルート]**」フィールドの値を入力します。 Dynamics インスタンスの「**[!UICONTROL 開発者向けリソース]**」に移動し、「サービスルート」フィールドの値を表示します。 例えば、https://&lt;tenant-name>/api/data/v9.1/ です。
