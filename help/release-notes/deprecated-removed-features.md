@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
+source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4154'
 ht-degree: 71%
 
 ---
@@ -46,12 +46,13 @@ ht-degree: 71%
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI を使用したコンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>と<br> [コンテンツフラグメントおよびコンテンツフラグメントモデルの管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
+| Sites | コンテンツフラグメントテキスト要約 | AEM バリエーションを生成 |
 | Sites | [PWA 機能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
 | Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。<br>- フォームベース用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
 | Sites | [Experience Cloud 設定自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | なし |
-| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在の[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
+| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。 [非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。 技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
 | [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。 カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
@@ -247,7 +248,7 @@ ht-degree: 71%
     <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language 0&rbrace;org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.apache parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.parser.dwg<br>org.apache.tika.parser.envi{33.org.apache .parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazeter}org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.parser.parser.istc<br>org.apache.apache.parser.parser.parser atab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat{56.aporache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>aporache .tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.mitie<br>org.apache.partika.parser.parser ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pdf}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.センチメント<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.parser.xml<br>org.apache.tika.sax<br>org.aptika.apache.3path org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br><br><br><br><br><br><br></td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language 0}org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.apache parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.parser.dwg<br>org.apache.tika.parser.envi{33.org.apache .parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazeter}org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.parser.parser.istc<br>org.apache.apache.parser.parser.parser atab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat{56.aporache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>aporache .tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.mitie<br>org.apache.partika.parser.parser ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pdf}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.センチメント<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.parser.xml<br>org.apache.tika.sax<br>org.aptika.apache.3path org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br><br><br><br><br><br><br></td>
     <td>このバージョンのApache Tikaは古くなっているため、Cloud Serviceから削除されます。 新しいバージョンのApache Tikaに切り替えます。</td>
     <td>4/30/2026</td>
     <td>9/30/2026</td>
@@ -384,7 +385,7 @@ ht-degree: 71%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨のJava APIを特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)をMaven プロジェクトに統合し、ローカルで実行します。 このレポートには、検出された非推奨のAPI使用状況がすべて一覧表示され、各APIを参照しているOSGi バンドルが示されます。 Maven プラグインの使用方法については、[このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)を参照してください。
+コードで使用している非推奨のJava APIを特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)をMaven プロジェクトに統合し、ローカルで実行します。 このレポートには、検出された非推奨のAPI使用状況がすべて一覧表示され、各APIを参照しているOSGi バンドルが示されます。 Maven プラグインの使用方法については、[このチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)を参照してください。
 
 非推奨（廃止予定）のAPIはすべて時間の経過とともに修正する必要がありますが、非推奨（廃止予定）のAPI テーブルにリストされているAPIは、Targetの削除日が2026年2月26日（またはそれ以前）の状態で優先順位付けしてください。 AEM Analyzer レポートでは、これらのAPIは2025年8月31日の有効削除日で表示される場合があります。
 
@@ -398,7 +399,7 @@ ht-degree: 71%
 
 非推奨APIの独自のバージョン（Guavaなど）をデプロイする場合は、このAPIを使用するすべてのバンドルがバージョンに接続されていることを確認してください。 現在Cloud Serviceに含まれているメジャーバージョンと同じメジャーバージョンをデプロイする場合は、それ以上の操作は必要ありません。 ただし、推奨事項に従って最新バージョンをデプロイする場合は、Maven プロジェクトを調整する必要があります。そのライブラリを`aem-sdk-api`の前に新しい依存関係として含めてください。 この方法で、コードは新しいバージョンに接続されます。 変更を行ったら、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)で、非推奨APIの使用にフラグが付けられていないことを確認します。
 
-ACS AEM Commonsを使用している場合は、少なくともバージョン 6.17.2 （最新バージョンをお勧めします）を使用し、コンテンツパッケージに分類子`cloud`を指定して、Cloud Service[&#128279;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)のバージョンを必ず含めてください。
+ACS AEM Commonsを使用している場合は、少なくともバージョン 6.17.2 （最新バージョンをお勧めします）を使用し、コンテンツパッケージに分類子`cloud`を指定して、Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)のバージョンを[必ず含めてください。
 
 非推奨APIの読み込みが`optional`とマークされている場合でも、これを削除してみてください。 ただし、このようなオプションの使用は、デプロイメントをブロックしません。 ただし、オプションのインポートが満たされなくなると、デプロイメントが影響を受ける可能性があります。
 
@@ -545,16 +546,16 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 | **OSGI コンポーネント ID** | **変更不能プロパティ** |
 |---|---|
 | **`com.day.cq.auth.impl.cug.CugSupportImpl`** |  |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
-| **`org.apache.sling.feature.apiregions.impl`** | all |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
-| **`org.apache.sling.feature.apiregions.factory`** | all |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて |
+| **`org.apache.sling.feature.apiregions.impl`** | すべて |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | すべて |
+| **`org.apache.sling.feature.apiregions.factory`** | すべて |
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | すべて |
 
 
@@ -577,10 +578,10 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 | `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | はい | 文字列 | 「情報」、「デバッグ」、「TRACE」のいずれか |
 |   | `org.apache.sling.commons.log.names` |   | 文字列の配列 |   |
 |   | `org.apache.sling.commons.log.additiv` |   | ブーリアン |   |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | いいえ | 文字列[] |   |
-|   | `externalizer.encodedpath` | いいえ | ブーリアン |   |
-|   | `externalizer.host` | いいえ | 文字列 |   |
-|   | `externalizer.contextpath` | いいえ | 文字列 |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 不要 | 文字列[] |   |
+|   | `externalizer.encodedpath` | 不要 | ブーリアン |   |
+|   | `externalizer.host` | 不要 | 文字列 |   |
+|   | `externalizer.contextpath` | 不要 | 文字列 |   |
 
 ### OSGi プロパティの制限 {#restrictions-osgi-properties}
 
@@ -626,20 +627,20 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 |   | `org.apache.felix.http.session.uniqueid` |   | ブーリアン |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | はい | 整数 | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | はい | 文字列の配列 | 「js」を含める必要があります |
-| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | いいえ | 文字列 |   |
-|   | `request.log.outputtype` | いいえ | 文字列 |   |
-|   | `request.log.entry.format` | いいえ | 文字列 |   |
-|   | `request.log.exit.format` | いいえ | 文字列 |   |
-|   | `request.log.enabled` | いいえ | 文字列 |   |
-|   | `access.log.output` | いいえ | 文字列 |   |
-|   | `access.log.outputtype` | いいえ | 文字列 |   |
-|   | `access.log.enabled` | いいえ | 文字列 |   |
-| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | いいえ | 文字列 |   |
-|   | `servletresolver.cacheSize` | いいえ | 整数 |   |
-|   | `servletresolver.paths` | いいえ | 文字列[] |   |
-|   | `servletresolver.defaultExtensions` | いいえ | 文字列 |   |
-|   | `servletresolver.mountProviders` | いいえ | ブーリアン |   |
-|   | `servletresolver.scriptUser` | いいえ | 文字列 | 廃止されています。使用しないでください。 |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 不要 | 文字列 |   |
+|   | `request.log.outputtype` | 不要 | 文字列 |   |
+|   | `request.log.entry.format` | 不要 | 文字列 |   |
+|   | `request.log.exit.format` | 不要 | 文字列 |   |
+|   | `request.log.enabled` | 不要 | 文字列 |   |
+|   | `access.log.output` | 不要 | 文字列 |   |
+|   | `access.log.outputtype` | 不要 | 文字列 |   |
+|   | `access.log.enabled` | 不要 | 文字列 |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | 不要 | 文字列 |   |
+|   | `servletresolver.cacheSize` | 不要 | 整数 |   |
+|   | `servletresolver.paths` | 不要 | 文字列[] |   |
+|   | `servletresolver.defaultExtensions` | 不要 | 文字列 |   |
+|   | `servletresolver.mountProviders` | 不要 | ブーリアン |   |
+|   | `servletresolver.scriptUser` | 不要 | 文字列 | 廃止されています。使用しないでください。 |
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 
