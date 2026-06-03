@@ -50,7 +50,7 @@ Adobeでは、以下に示すサービス統合ごとに次の原則を適用し
 
 | Admin Consoleに表示される名前 | 動作 | 使用者 | 付与された権限 | デフォルトで有効 |
 |---|---|---|---|---|
-| **AEM Managed CDN Integration** | LLM Optimizer サービスがAEM as a Cloud Service Managed CDN **エージェント型トラフィックルーティングルール**&#x200B;をユーザーに代わって更新できるようにし、AIおよびエージェントweb クローラー（ChatGPT、Perplexity、Claudeなど）をチームが手動でCDNを変更することなくLLM Optimizerに最適化されたオリジンにルーティングできるようにします。 | **LLM Optimizer** ～ [Edgeでの最適化](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview)機能 | Cloud Manager **デプロイメントマネージャー**&#x200B;の役割 | はい |
+| **AEM Managed CDN Integration** | LLM Optimizer サービスがAEM as a Cloud Service Managed CDN **エージェント型トラフィックルーティングルール**&#x200B;をユーザーに代わって更新できるようにし、AIおよびエージェントweb クローラー（ChatGPT、Perplexity、Claudeなど）をチームが手動でCDNを変更することなくLLM Optimizerに最適化されたオリジンにルーティングできるようにします。 | **LLM Optimizer** ～ [Edgeでの最適化](https://experienceleague.adobe.com/ja/docs/llm-optimizer/using/resources/optimize-at-edge/overview)機能 | Cloud Manager **デプロイメントマネージャー**&#x200B;の役割 | はい |
 
 次のスクリーンショットは、上記の表に記載されている&#x200B;**AEM Managed CDN Integration**&#x200B;の例です。
 
