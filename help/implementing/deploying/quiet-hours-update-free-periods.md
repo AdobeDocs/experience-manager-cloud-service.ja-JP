@@ -4,10 +4,10 @@ description: AEM as a Cloud Serviceの自動更新による運用上の影響を
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
+source-git-commit: d289256163dab0deaf67377af0e8f054b54b2ee4
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '931'
+ht-degree: 3%
 
 ---
 
@@ -26,6 +26,10 @@ AEM as a Cloud Service [自動メンテナンスアップデート &#x200B;](/he
 更新無料期間とサイレントアワー機能は、「プログラムごとに」設定されます。 **ビジネスオーナー**&#x200B;および&#x200B;**デプロイメントマネージャー**&#x200B;の「ユーザーロール」を持つユーザーのみが、これらの機能を表示および使用できます。
 
 また、予定されているAEM as a Cloud Serviceの自動メンテナンス期間については、[Experience Manager リリースロードマップ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)を参照してください。
+
+## AEM AI アシスタント manage-ai-assistantを使用した管理（限定提供） {#manage-ai-assistant}
+
+Cloud Managerインターフェイスに加えて、AEM AI アシスタントを使用してサイレントアワーを管理し、無料期間を更新することができます。 アシスタントは、自然言語リクエストから、現在のサイレントアワーのリスト表示と無料期間の更新、新しい更新無料期間またはサイレントアワー期間の作成、既存の期間の編集または削除をすべて行うことができます。 アシスタントは、利用可能なオプションと、適用中に適用されるルールをガイドするので、無効な設定が発生する前に回避するのに役立ちます。 浮動小数の365日ウィンドウ内の最大3つの更新無料期間、期間の間の必須1週間の間隔、サイレントアワーの8時間の制限、計画されたメンテナンス除外期間のスケジュール制限など、会話に関連する制限が表示されます。 手動設定と同様に、これらのアクションはプログラムごとに適用され、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つユーザーのみが使用できます。
 
 ## サイレントアワー {#quiet-hours}
 

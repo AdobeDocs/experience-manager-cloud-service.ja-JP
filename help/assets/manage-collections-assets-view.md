@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -191,7 +191,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## コレクションのリンクの共有 {#share-collection-links}
 
-[!DNL Assets view] を使用すると、リンクを生成して、[!DNL Assets view] アプリケーションに対するアクセス権を持たない外部の関係者と、コレクションやコレクション内のアセットを共有できます。 リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
+[!DNL Assets view]を使用すると、リンクを生成し、コレクション内のコレクションとアセットを、[!DNL Assets view] アプリケーションにアクセスできない外部関係者と共有できます。 リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
 
 ![アセットのリンクの共有](assets/share-link-collections.png)
 

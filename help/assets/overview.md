@@ -3,7 +3,7 @@ title: AEM でのデジタルアセット管理の Assets as a Cloud Service の
 description: AEM でのデジタルアセット管理の Assets as a Cloud Service の概要
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
 workflow-type: tm+mt
 source-wordcount: '6014'
 ht-degree: 81%
@@ -1018,7 +1018,7 @@ OpenAPI 機能を備えた Dynamic Media には、次のような主なメリッ
 
 * **アセットビュー**：アドビの軽量なアセット管理エクスペリエンスで、デジタルアセットの保存、管理、検出および使用が実現します。 合理化されたユーザーインターフェイスには、重要なデジタルアセット管理機能が含まれます。 アップロード、メタデータの管理、検索、ダウンロードおよび共有に重点を置いた軽量な DAM ユーザー向けに設計されています。
 
-![add-tags](assets/newui-overview.svg)
+![add-tags](assets/newui-overview.png)
 
 管理ビューへのアクセス権を持つユーザーは、アセットビューにもアクセスできます。 アセットビューにはシンプルなユーザーインターフェイスが用意されており、デジタルアセットの管理、検出、配布が容易になります。 クリエイティブ、マーケティング、事業部門のチームなど、異なる部門をまたいだ幅広いユーザーが、アセットで共同作業を行い、必要に応じて適切な承認済みアセットにアクセスできます。 多くの一般的な DAM ユーザーは、機能のサブセットのみを含むアセットビューを好みます。 このエクスペリエンスの対象は、クリエイティブ、読み取り専用アセットの消費者、より軽量な DAM ユーザーです。
 

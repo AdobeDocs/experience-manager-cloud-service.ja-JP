@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
+source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
 workflow-type: tm+mt
-source-wordcount: '2839'
-ht-degree: 95%
+source-wordcount: '2932'
+ht-degree: 93%
 
 ---
 
@@ -364,7 +364,7 @@ ht-degree: 95%
 
 * AEM インスタンスとリモートアセットリポジトリインスタンスは、両方とも同じバージョンにする必要があります。
 
-* アセットメタデータは、Management API および Delivery API 経由では公開されません。アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
+* アセットメタデータは、Management API および Delivery API 経由では公開されません。 アセットメタデータの詳細を取得するには、Asset Metadata API を使用する必要があります。
 
    * 個々のアセットメタデータ：[https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
@@ -544,7 +544,25 @@ For example:
 
 ## フラグメントのプレビュー {#preview-content-fragment}
 
-コンテンツフラグメントエディターには、外部フロントエンドアプリケーションで編集をプレビューするオプションが用意されています。 これには、エディターの上部ツールバーにある「**[プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**」ボタンを有効にするために、**デフォルトのプレビューURL パターン**&#x200B;が定義されている必要があります。 このボタンを選択すると、（別のタブで）外部アプリケーションを起動して、コンテンツフラグメントをレンダリングできます。
+コンテンツフラグメントエディターには、作成者がフラグメントをプレビューするための2つのオプションが用意されています。
+
+両方のオプションは、上部のツールバーの&#x200B;**プレビュー**&#x200B;を使用して使用できます。
+
+* **アプリケーション**
+
+   * このオプションを選択すると、[外部アプリケーションを（別のタブで）起動して、コンテンツフラグメント &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-application)をレンダリングできます。
+
+* **テンプレート**
+
+   * このオプションを使用すると、**[ビジュアライゼーション（HTML）テンプレート](#preview-with-visualization-html-templates)**&#x200B;を使用してコンテンツフラグメントをプレビューできます。
+
+     <!-- CQDOC-23232 - remove when GA -->
+
+     >[!NOTE]
+     >
+     >ビジュアルコンテンツフラグメントは現在、限定的でご利用いただけます。
+     >
+     >参加を希望される場合は、公式メールアドレスから[experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com)にリクエストを送信してください。
 
 ## フラグメントの公開 {#publish-content-fragment}
 
@@ -583,7 +601,7 @@ For example:
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>ブーリアン</b></p> </td>
+   <td><p><b>ブール値</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>

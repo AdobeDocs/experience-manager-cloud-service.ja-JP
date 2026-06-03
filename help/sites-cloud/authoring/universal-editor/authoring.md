@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
 workflow-type: tm+mt
-source-wordcount: '3159'
-ht-degree: 67%
+source-wordcount: '3149'
+ht-degree: 66%
 
 ---
 
@@ -276,7 +276,7 @@ ht-degree: 67%
 >[!TIP]
 >
 >ホットキー`Command-U`または`Shift-Command-U`を使用して、それぞれ上または上に移動します。
->ホットキー`Command-J`または`Shift-Command-J`を使用して、それぞれ下または下に移動します。
+> ホットキー`Command-J`または`Shift-Command-J`を使用して、それぞれ下または下に移動します。
 
 >[!NOTE]
 >
@@ -385,17 +385,16 @@ ht-degree: 67%
 
 ### ページプロパティへのアクセス {#page-properties}
 
-**AEM ページプロパティ拡張機能**&#x200B;を使用すると、現在編集中のページの[ページプロパティウィンドウ](/help/sites-cloud/authoring/sites-console/page-properties.md)にすばやくアクセスできます。
+**ページプロパティ** ボタンを使用すると、現在編集中のページの[AEM ページプロパティウィンドウ &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md)にすばやくアクセスできます。
 
 ![ページプロパティアイコン](assets/page-properties-icon.png)
 
 ユニバーサルエディターツールバーの&#x200B;**ページプロパティ**&#x200B;アイコンをタップまたはクリックすると、新しいブラウザータブでページのページプロパティが開きます。
 
-この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
-
 >[!NOTE]
 >
->**AEM ページプロパティ拡張機能**&#x200B;ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>* **AEM ページプロパティ拡張機能**&#x200B;ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>* ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
 
 ### Sites コンソールへのアクセス {#sites-console}
 

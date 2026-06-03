@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 459858d160eaaeddc24321aea031e855911e735f
+source-git-commit: 662715341c35fab62ac0c882a03cba8f41748dbf
 workflow-type: tm+mt
-source-wordcount: '4146'
+source-wordcount: '4154'
 ht-degree: 71%
 
 ---
@@ -46,20 +46,21 @@ ht-degree: 71%
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI を使用したコンテンツフラグメント配信](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>と<br> [コンテンツフラグメントおよびコンテンツフラグメントモデルの管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
+| Sites | コンテンツフラグメントテキスト要約 | AEM バリエーションを生成 |
 | Sites | [PWA 機能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | なし |
 | Sites | [SPA Editor](/help/implementing/developing/hybrid/introduction.md) | AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のとおりです。<br>- ビジュアル編集用の[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。<br>- フォームベース用の[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/ja/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。 | この機能は間もなく削除される予定です。 |
 | Sites | [Experience Cloud 設定自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | なし |
-| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在の[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
+| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。 [非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。 技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
 | [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。 カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。 FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
-| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021年9月30日（PT）以降に削除） | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)のアプローチ。 |
-| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブとレプリケーション API では、10 MB を超えるコンテンツパッケージをレプリケートできません。 | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation) |
+| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021年9月30日（PT）以降に削除） | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/tree-replication-workflows.md#tree-activation)のアプローチ。 |
+| [!DNL Foundation] | レプリケーションエージェントの管理画面の「配布」タブとレプリケーション API では、10 MB を超えるコンテンツパッケージをレプリケートできません。 | [パブリケーションの管理](/help/operations/replication.md#manage-publication)または[ツリーアクティベーションワークフローステップ](/help/operations/tree-replication-workflows.md#tree-activation) |
 | [!DNL Foundation] | Adobe Developer Console プロジェクトから生成された資格情報を使用した統合では、サービスアカウント（JWT）資格情報のサポートが段階的に失われます。 2024年5月1日（PT）以降、Adobe Developer Console で新しいサービスアカウント（JWT）資格情報を作成できなくなります。 既存のサービスアカウント（JWT）資格情報は、2025年1月1日（PT）まで引き続き、設定済みの統合に使用できますが、それ以降は機能しなくなり、お客様は OAuth サーバー間の資格情報に移行する必要があります。 [詳細情報](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | OAuth サーバー間の資格情報に[移行](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)します。 |
-| [!DNL Foundation] | コンテンツツリーを公開ワークフローと、コンテンツの階層のレプリケーションに使用された関連するコンテンツツリーを公開ワークフローステップ。 | よりパフォーマンスの高い[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)を使用します。 |
+| [!DNL Foundation] | コンテンツツリーを公開ワークフローと、コンテンツの階層のレプリケーションに使用された関連するコンテンツツリーを公開ワークフローステップ。 | よりパフォーマンスの高い[ツリーアクティベーションワークフローステップ](/help/operations/tree-replication-workflows.md#tree-activation)を使用します。 |
 | [!DNL Foundation] | YUI を使用した JavaScript クライアントライブラリの圧縮／軽量化。 アドビでは、YUI ライブラリを今後更新する予定はありません。 | アドビは、実装を Google Closure Compiler（GCC）に切り替えることをお勧めします。 |
 | [!DNL Foundation] | com.adobe.granite.oauth.server のサポート | Adobe IMS 統合 |
 
@@ -545,16 +546,16 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 | **OSGI コンポーネント ID** | **変更不能プロパティ** |
 |---|---|
 | **`com.day.cq.auth.impl.cug.CugSupportImpl`** |  |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
-| **`org.apache.sling.feature.apiregions.impl`** | all |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
-| **`org.apache.sling.feature.apiregions.factory`** | all |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | すべて |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | すべて |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | すべて |
+| **`org.apache.sling.feature.apiregions.impl`** | すべて |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | すべて |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | すべて |
+| **`org.apache.sling.feature.apiregions.factory`** | すべて |
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | すべて |
 
 
@@ -577,10 +578,10 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 | `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | はい | 文字列 | 「情報」、「デバッグ」、「TRACE」のいずれか |
 |   | `org.apache.sling.commons.log.names` |   | 文字列の配列 |   |
 |   | `org.apache.sling.commons.log.additiv` |   | ブーリアン |   |
-| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | いいえ | 文字列[] |   |
-|   | `externalizer.encodedpath` | いいえ | ブーリアン |   |
-|   | `externalizer.host` | いいえ | 文字列 |   |
-|   | `externalizer.contextpath` | いいえ | 文字列 |   |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 不要 | 文字列[] |   |
+|   | `externalizer.encodedpath` | 不要 | ブーリアン |   |
+|   | `externalizer.host` | 不要 | 文字列 |   |
+|   | `externalizer.contextpath` | 不要 | 文字列 |   |
 
 ### OSGi プロパティの制限 {#restrictions-osgi-properties}
 
@@ -626,20 +627,20 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
 |   | `org.apache.felix.http.session.uniqueid` |   | ブーリアン |   |
 | `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | はい | 整数 | >= 2048 |
 |   | `org.apache.sling.scripting.cache.additional_extensions` | はい | 文字列の配列 | 「js」を含める必要があります |
-| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | いいえ | 文字列 |   |
-|   | `request.log.outputtype` | いいえ | 文字列 |   |
-|   | `request.log.entry.format` | いいえ | 文字列 |   |
-|   | `request.log.exit.format` | いいえ | 文字列 |   |
-|   | `request.log.enabled` | いいえ | 文字列 |   |
-|   | `access.log.output` | いいえ | 文字列 |   |
-|   | `access.log.outputtype` | いいえ | 文字列 |   |
-|   | `access.log.enabled` | いいえ | 文字列 |   |
-| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | いいえ | 文字列 |   |
-|   | `servletresolver.cacheSize` | いいえ | 整数 |   |
-|   | `servletresolver.paths` | いいえ | 文字列[] |   |
-|   | `servletresolver.defaultExtensions` | いいえ | 文字列 |   |
-|   | `servletresolver.mountProviders` | いいえ | ブーリアン |   |
-|   | `servletresolver.scriptUser` | いいえ | 文字列 | 廃止されています。使用しないでください。 |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 不要 | 文字列 |   |
+|   | `request.log.outputtype` | 不要 | 文字列 |   |
+|   | `request.log.entry.format` | 不要 | 文字列 |   |
+|   | `request.log.exit.format` | 不要 | 文字列 |   |
+|   | `request.log.enabled` | 不要 | 文字列 |   |
+|   | `access.log.output` | 不要 | 文字列 |   |
+|   | `access.log.outputtype` | 不要 | 文字列 |   |
+|   | `access.log.enabled` | 不要 | 文字列 |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | 不要 | 文字列 |   |
+|   | `servletresolver.cacheSize` | 不要 | 整数 |   |
+|   | `servletresolver.paths` | 不要 | 文字列[] |   |
+|   | `servletresolver.defaultExtensions` | 不要 | 文字列 |   |
+|   | `servletresolver.mountProviders` | 不要 | ブーリアン |   |
+|   | `servletresolver.scriptUser` | 不要 | 文字列 | 廃止されています。使用しないでください。 |
 
 ## Java ランタイムのバージョン 21 へのアップデート {#java-runtime-update-21}
 

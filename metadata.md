@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Serviceのドキュメント。
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-service.ja-JP
 index: true
 type: Documentation
-solution: Experience Manager, Experience Manager as a Cloud Service
+solution: Experience Manager as a Cloud Service, Experience Manager
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
@@ -14,7 +14,7 @@ landing-page-breadcrumb-title: AEM
 version: Experience Manager as a Cloud Service
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: 41d72ba991b6aa5a4b2c2f6d16f37d2f5c498889
+source-git-commit: bcbd874dfee4d448eda4e0be8bc508493fb8f058
 workflow-type: tm+mt
 source-wordcount: 95
 ht-degree: 2%

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ea43e2f4c7e52f98e8458e86bb48f124191dc03c
+source-git-commit: 77b81e63078f95ad1c70c4e19af8d9be41bf2c84
 workflow-type: tm+mt
-source-wordcount: '7415'
+source-wordcount: '7469'
 ht-degree: 85%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 85%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [リリースノート（2026.4.0）](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
          + [リリースノート（2026.3.0）](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [リリースノート（2026.2.0）](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [リリースノート（2026.1.0）](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
@@ -264,6 +265,7 @@ ht-degree: 85%
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + [ユニバーサルエディターのリリースノートのプレビュー](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [2026.05.21 リリースノート](/help/release-notes/universal-editor/2026/2026-05-21.md)
          + [2026.05.14 リリースノート](/help/release-notes/universal-editor/2026/2026-05-14.md)
          + [2026.05.07 リリースノート](/help/release-notes/universal-editor/2026/2026-05-07.md)
          + [2026.04.30 リリースノート](/help/release-notes/universal-editor/2026/2026-04-30.md)
@@ -336,6 +338,7 @@ ht-degree: 85%
    + [Adobe Developer Console での JWT 資格情報の非推奨（廃止予定）](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [パブリッシュ層での AEM as a Cloud Service の Open ID Connect のサポート](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [AEM as a Cloud Service の IMS 統合の設定](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [Adobe Admin ConsoleでのAdobeで管理されるAPI統合](/help/security/adobe-managed-api-integrations-in-adobe-admin-console.md)
    + [権限管理のプリンシパルビュー](/help/security/touch-ui-principal-view.md)
    + [Sling サービスユーザーマッピングとサービスユーザー定義のベストプラクティス](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service の顧客管理キー](/help/security/customer-managed-keys.md)
@@ -421,6 +424,10 @@ ht-degree: 85%
             + {hide-from-toc}[概要](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + {hide-from-toc}[重要な考慮事項](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + {hide-from-toc}[&#x200B; ユーザーマッピングツールの使用](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+   + AIを活用したコード移行 {#cloud-migration-skill}
+      + [概要](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
+      + [クラウド移行スキルの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
+      + [クラウド移行MCPの使用](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
    + コードリファクタリングツール {#refactoring-tools}
       + [リファクタリングツール入門](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
       + [リファクタリングツールの概要](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -527,6 +534,7 @@ ht-degree: 85%
          + [削除に関する考慮事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [構造の分析](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [フラグメントのプレビュー](/help/sites-cloud/administering/content-fragments/preview.md)
+         + [ビジュアルコンテンツフラグメント](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
          + {hide-from-toc}[MSMを使用したコンテンツフラグメントの再利用](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
          + [コンテンツフラグメントのローンチ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
          + [コンテンツフラグメントコンソールのアセット](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -1138,6 +1146,7 @@ ht-degree: 85%
             + [概要](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [コンテンツ更新ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
             + [コンテンツ作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
+            + [Figmaからビジュアルコンテンツフラグメントジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
             + [コミュニケーション作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
             + [フォーム作成ジョブ](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
          + Experience Modernization エージェント {#modernization}
@@ -1615,6 +1624,8 @@ ht-degree: 85%
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [コンテンツフラグメントコンソールおよびエディターのカスタマイズ](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+      + [ビジュアルコンテンツフラグメント – テンプレート](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+      + [ビジュアルコンテンツフラグメント – 公開URLを使用した配信](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
       + 検索フォームの管理 {#manage-search-forms}
          + [検索フォームの設定](/help/implementing/developing/extending/search-forms.md)
          + [インボックス用の検索フィルターの設定](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -1665,6 +1676,7 @@ ht-degree: 85%
    + [アクションセンター](/help/operations/actions-center.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
    + [コンテンツレプリケーションサービス](/help/operations/replication.md)
+   + [ツリーレプリケーションワークフロー](/help/operations/tree-replication-workflows.md)
    + [追加の公開地域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service のインフラストラクチャとサービスモニタリング](/help/operations/monitoring.md)
    + [メンテナンスタスク](/help/operations/maintenance.md)
@@ -1688,4 +1700,3 @@ ht-degree: 85%
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 + トラブルシューティング {#troubleshooting}
    + {hide-from-toc}[AEM AssetsとFormsの問題のトラブルシューティング &#x200B;](/help/troubleshooting/home.md)
-

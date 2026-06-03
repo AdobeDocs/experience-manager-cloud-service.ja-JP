@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d787726947e6b04f3f3749a21eb348f25fc5d7fb
+source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
 workflow-type: tm+mt
 source-wordcount: '2186'
 ht-degree: 3%

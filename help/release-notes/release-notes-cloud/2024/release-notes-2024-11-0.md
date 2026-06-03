@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 リ
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: b336b6e52bf6f3cba64ddd4b4580eabded86afdb
+source-git-commit: d6555eebfa13a400f084ef4edefb92b4471adcac
 workflow-type: tm+mt
 source-wordcount: '2217'
 ht-degree: 94%
@@ -180,7 +180,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### ツリーレプリケーションのパフォーマンスの向上（およびコンテンツツリーを公開ワークフローの廃止） {#tree-replication-performance}
 
-[ツリーアクティベーションワークフローステップ](/help/operations/replication.md#tree-activation)は、深いコンテンツ階層をレプリケートするために推奨される新しいワークフローモデルステップです。 処理中のツリーレプリケーションワークフローと並行して、独立したレプリケーション（クイック公開や公開の管理など）を実行できます。 これは、一括レプリケーションの処理中に、時間制限があるコンテンツを公開する必要がある場合に特に役立ちます。 ツリーレプリケーションステップは、現在非推奨（廃止予定）となっているコンテンツツリーを公開ワークフローと、関連するワークフローステップに代わるものです。
+[ツリーアクティベーションワークフローステップ](/help/operations/tree-replication-workflows.md#tree-activation)は、深いコンテンツ階層をレプリケートするために推奨される新しいワークフローモデルステップです。 処理中のツリーレプリケーションワークフローと並行して、独立したレプリケーション（クイック公開や公開の管理など）を実行できます。 これは、一括レプリケーションの処理中に、時間制限があるコンテンツを公開する必要がある場合に特に役立ちます。 ツリーレプリケーションステップは、現在非推奨（廃止予定）となっているコンテンツツリーを公開ワークフローと、関連するワークフローステップに代わるものです。
 
 ### OpenAPI ベースの API - 早期導入プログラム {#open-apis-earlyadopter}
 

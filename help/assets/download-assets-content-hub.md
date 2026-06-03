@@ -4,16 +4,16 @@ description: Content Hub ポータルから1つ以上のアセットとそのレ
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 44%
+source-wordcount: '1471'
+ht-degree: 41%
 
 ---
 
 # Content Hub からのアセットのダウンロード {#download-assets}
 
-[!DNL Content Hub] では、アセットをダウンロードして共有できます。[!DNL Content Hub] のユーザーインターフェイスには、承認済みアアセットのみが表示されます。これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。[!DNL Content Hub] では、効果的なアセット配布用のアクセシビリティと適応性が強化されます。
+[!DNL Content Hub] では、アセットをダウンロードして共有できます。 [!DNL Content Hub] のユーザーインターフェイスには、承認済みアアセットのみが表示されます。 これらのアセットには、画像、ビデオ、またはその他のデジタルコンテンツが含まれる場合があります。 [!DNL Content Hub] では、効果的なアセット配布用のアクセシビリティと適応性が強化されます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
@@ -26,10 +26,13 @@ ht-degree: 44%
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
 * 単一のアセットとそのレンディションをダウンロードするには：
+
    1. アセットカードで利用可能な![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg)を選択して、アセットとその利用可能なレンディションをプレビューします。
    1. 使用可能なレンディションを選択し、ダイアログボックスの「**[!UICONTROL ダウンロード]**」オプションをクリックして、選択したレンディションをZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
-      ![&#x200B; アセットのダウンロード &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-または、アセットのサムネールをクリックし、![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg)をクリックして、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードします。
+
+  ![&#x200B; アセットのダウンロード &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+
+  または、アセットのサムネールをクリックし、![download](/help/assets/assets/download-icon.svg)をクリックして、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードします。 アセットプロパティに移動して「ダウンロード」アイコンをクリックすると、アセットレンディションの配信URLをコピーすることもできます。 配信URLをコピーするオプションは、アセットの承認対象が[配信](/help/assets/approve-assets-content-hub.md#set-approval-target)に設定されている場合にのみ使用できます。
 
 * 複数のアセットとそのレンディションをダウンロードするには：
    1. アセットを選択し、![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**&#x200B;をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
@@ -42,18 +45,22 @@ ht-degree: 44%
       > * **[!UICONTROL アセットごとに個別のフォルダーを作成する]** オプションは、認証済みの[!DNL Content Hub] ユーザーのみが利用できます。 [!DNL Content Hub]を使用すると、パブリック ユーザーはアセットを個別のアセットとしてダウンロードできます。
 
    1. 「**[!UICONTROL ダウンロード]**」をクリックして、選択したアセットとそのレンディションをダウンロードします。
-      ![複数のアセットのダウンロード](/help/assets/assets/bulk-asset-download-content-hub.png)
+
+![複数のアセットのダウンロード](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 ダウンロードの処理中に[!DNL Content Hub]を引き続き使用できます。 ダウンロードプロセス中にContent Hubがワークフローを中断することはありません。
+
 ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
-**[!UICONTROL アセットをダウンロード]**&#x200B;ダイアログボックスにアセットライセンスが表示されている場合、左側のウィンドウ（「[!UICONTROL T&amp;C ドキュメント]」セクション）から各ライセンスを選択してライセンスをプレビューし、ダイアログボックスの中央のウィンドウに、ライセンスに関連付けられた選択したアセットを表示します。各ライセンスを確認した後、レンディションを選択し、**[!UICONTROL 上記の利用条件を読んで同意しました]**、および&#x200B;**[!UICONTROL ダウンロード]**&#x200B;を選択してダウンロードします。
+
+**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合は、左側のペイン（[!UICONTROL T&amp;C ドキュメント &#x200B;] セクション）から各ライセンスを選択して、ライセンスをプレビューし、ダイアログボックスの中央のペインにライセンスに関連付けられた選択されたアセットを表示します。 各ライセンスを確認した後、レンディションを選択し、**[!UICONTROL 上記の利用条件を読んで同意しました]**、および&#x200B;**[!UICONTROL ダウンロード]**&#x200B;を選択してダウンロードします。
+
 ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
 >
 >* レンディションは、[[!UICONTROL 設定]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)ユーザーインターフェイスを使用して表示が有効になっている場合にのみ表示されます。
 >* [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) へのアクセス権を持つユーザーは、動的およびスマート切り抜きレンディションを表示およびダウンロードできます。
->* ライセンスのプレビューは、アセットが [!DNL Assets as a Cloud Service] オーサリング環境を使用して承認された場合にのみ表示されます。詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
+>* ライセンスのプレビューは、アセットが [!DNL Assets as a Cloud Service] オーサリング環境を使用して承認された場合にのみ表示されます。 詳しくは、[コンテンツハブのライセンス済みアセットの管理](/help/assets/manage-licensed-assets-on-content-hub.md)を参照してください。
 
 <!--
 
@@ -145,25 +152,25 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## レンディションのタイプ {#types-of-renditions}
 
-アセットレンディションは、アセットの元のファイルを様々に表現したものです。これらのレンディションには、サムネール、webまたはモバイル用に最適化されたバージョン、透かし、DRMで保護されたファイル、スマート切り抜きなどの動的要素が含まれます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
+アセットレンディションは、アセットの元のファイルを様々に表現したものです。 これらのレンディションには、サムネール、webまたはモバイル用に最適化されたバージョン、透かし、DRMで保護されたファイル、スマート切り抜きなどの動的要素が含まれます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
 詳しくは、[&#x200B; [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
-* [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
+* [静的レンディション](/help/assets/renditions.md#static-renditions)：静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。 これらは、web サムネイル、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度ファイルなど、特定の用途とプラットフォーム用に最適化され、効率化された一貫したエクスペリエンスを提供します。
 
-* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。これらのレンディションにより、より広範な要件に合わせて、パーソナライズおよび最適化されたエクスペリエンスを提供できます。アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
+* [動的レンディション](/help/assets/renditions.md#dynamic-renditions)：動的レンディションは、様々なデバイスの解像度に合わせた画像のサイズ変更や、様々な縦横比に合わせた切り抜きなど、様々なアクションを実行するために、リアルタイムでカスタマイズされたアセットバージョンです。 これらのレンディションにより、より広範な要件に合わせて、パーソナライズおよび最適化されたエクスペリエンスを提供できます。 アセットの動的レンディションは、[!DNL Adobe Experience Manager Assets] オーサー環境で作成されます。 動的レンディションを有効にするために必要な手順について詳しくは、[動的レンディションの有効化](#enable-dynamic-media-renditions)を参照してください。
 
-* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。Dynamic Mediaのスマート切り抜きは、Adobe AIによる人工知能を活用して、注目すべきポイントを追跡し、アセットをあらゆる画面サイズで最適に表示します。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
+* [スマート切り抜き](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：スマート切り抜きは、切り抜きプロセス中にアセットの重要な部分にのみ焦点を当てます。 Dynamic Mediaのスマート切り抜きは、Adobe AIによる人工知能を活用して、注目すべきポイントを追跡し、アセットをあらゆる画面サイズで最適に表示します。 [!DNL Adobe Experience Manager] のスマート切り抜きでは、タイトルと共にアセットレンディションの幅と高さが表示されます。 詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)を参照してください。
 
-  スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
+  スマート切り抜きレンディションは、[OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) にアクセスできる場合にのみ表示され、ダウンロードできます。 スマート切り抜きレンディションは、画像アセットに対してのみ使用できます。
 
   ![レンディションタイプ](/help/assets/assets/renditions-types.png)
 
   >[!NOTE]
   > 
-  > ダウンロードパネルには、カスタムの静的レンディションのみが表示されます。デフォルトの `cq5dam.*` サムネールは、コンテンツハブには表示されません。
+  > ダウンロードパネルには、カスタムの静的レンディションのみが表示されます。 デフォルトの `cq5dam.*` サムネールは、コンテンツハブには表示されません。
 
 ### 動的レンディションの有効化 {#enable-dynamic-media-renditions}
 
@@ -177,9 +184,9 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. [設定](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)ユーザーインターフェイスの「**[!UICONTROL レンディション]**」タブにある「**[!UICONTROL レンディションの可用性を有効にする]**」切替スイッチを有効にします。
 
-1. 既存の画像プリセットを再保存して、コンテンツハブで使用できるようにします。これは、OpenAPI を備えた Dynamic Media に新しくオンボードした場合にのみ適用されます。
+1. 既存の画像プリセットを再保存して、コンテンツハブで使用できるようにします。 これは、OpenAPI を備えた Dynamic Media に新しくオンボードした場合にのみ適用されます。
 
-   既存の画像プリセットを再保存するには、管理ビューに移動し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 画像プリセット]**&#x200B;を選択します。プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
+   既存の画像プリセットを再保存するには、管理ビューに移動し、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 画像プリセット]**&#x200B;を選択します。 プリセットを選択し、「**[!UICONTROL 編集]**」をクリックして、「**[!UICONTROL 保存]**」をクリックします。
 
 
 
