@@ -101,7 +101,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 ![コンテンツハブの設定 UI のアップロードの詳細](assets/filter-new.png)
 
 設定ユーザーインターフェイスで有効になっているメタデータは、アセットのアップロードページに表示されます。
-![Content Hubにメタデータをアップロード ](assets/add-assets-for-approval1.png)
+![Content Hubにメタデータをアップロード &#x200B;](assets/add-assets-for-approval1.png)
 
 ### フィルター {#configure-filters-content-hub}
 
@@ -117,7 +117,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
    >
    >新しいフィルターは、リポジトリ内にフィルター条件に一致するアセットが 1 つ以上ある場合にのみ、検索ページに表示されます。
 
-同様に、使用可能な各フィルターの横にある![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックしてラベルを編集するか、削除アイコンをクリックして既存のフィルターを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**をクリックして、変更を適用します。
+同様に、使用可能な各フィルターの横にある![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックしてラベルを編集するか、削除アイコンをクリックして既存のフィルターを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**&#x200B;をクリックして、変更を適用します。
 ![Content Hubの設定UI フィルター](assets/add-filters.png)
 
 設定ユーザーインターフェイスで有効になっているフィルターは、検索ページに表示されます。
@@ -129,7 +129,7 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**[!UICONTROL フィルター]**」をクリックします。
 
-1. 使用可能な各フィルターの横にある ![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックします。
+1. 使用可能な各フィルターの横にある ![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックします。
 
 1. **[!UICONTROL 一括検索]**&#x200B;切り替えスイッチを有効にします。 デフォルトの区切り文字（`[ , | \t | \r\n | \r | \n ]`）は自動的に表示されます。 さらに、追加の区切り文字を設定することもできます。 これを行うには、入力ボックスに区切り文字を `pipe symbol (|)` で区切って指定します。
 
@@ -159,15 +159,15 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 ### アセットカード {#asset-card}
 
-**アセットカード**に表示する必要がある主要なメタデータプロパティを、最大6つのフィールドまで設定することもできます。
-![ アセットカードの主要メタデータ ](/help/assets/assets/asset-card-metadata.png)
+**アセットカード**&#x200B;に表示する必要がある主要なメタデータプロパティを、最大6つのフィールドまで設定することもできます。
+![&#x200B; アセットカードの主要メタデータ &#x200B;](/help/assets/assets/asset-card-metadata.png)
 次の手順を実行して、メタデータプロパティを設定し、**[!UICONTROL アセットカード]**&#x200B;に表示します。
 
 1. [設定](#access-configuration-options-content-hub)ユーザーインターフェイスで、「**アセットカード**」をクリックします。
 2. 「**メタデータを追加**」をクリックします。 **アセットカードメタデータを追加**&#x200B;ダイアログボックスが表示されます。
 3. 「**ラベル**」フィールドでメタデータ名を指定し、「**メタデータ**」フィールドでメタデータプロパティを選択します。
 4. 「**確認**」をクリックし、「**保存**」をクリックして変更を適用し、新しいプロパティがアセットの詳細ページに表示されるようにします。
-   ![ アセットカード](/help/assets/assets/configuration-asset-card1.png)
+   ![&#x200B; アセットカード](/help/assets/assets/configuration-asset-card1.png)
 同様に、使用可能な各プロパティの横にある![編集](/help/assets/assets/edit-content-hub.svg)をクリックして必要な変更を加えるか、![削除](/help/assets/assets/delete-content-hub.svg)をクリックして既存のメタデータプロパティを削除します。 すべての変更を行ったら、「**保存**」をクリックして、変更を適用します。
 
 ### 検索 {#configure-metadata-search-content-hub}
@@ -186,14 +186,14 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. 「**[!UICONTROL 保存]**」をクリックして変更を適用し、新しいメタデータプロパティがメタデータフィールドのリストに表示されるようにします。
 
-同様に、使用可能な各メタデータプロパティの横にある![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックしてプロパティを編集するか、削除アイコンをクリックして既存のプロパティを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**をクリックして、変更を適用します。
+同様に、使用可能な各メタデータプロパティの横にある![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックしてプロパティを編集するか、削除アイコンをクリックして既存のプロパティを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**&#x200B;をクリックして、変更を適用します。
 ![Content Hubでの設定UIの検索](assets/configuration-search.png)
 
 ### ブランディング {#configure-branding-content-hub}
 
 管理者は、[!DNL Content Hub] ポータルをブランド要件に合わせてカスタマイズします。
-![既定をリセット ](/help/assets/assets/reset-default-content-hub.png)
-![ ブランディング ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL バナー]**、**[!UICONTROL カラー]**、**[!UICONTROL バナー画像]**&#x200B;の各セクションを使用して、次のカスタマイズを実行します。
+![既定をリセット &#x200B;](/help/assets/assets/reset-default-content-hub.png)
+![&#x200B; ブランディング &#x200B;](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL バナー]**、**[!UICONTROL カラー]**、**[!UICONTROL バナー画像]**&#x200B;の各セクションを使用して、次のカスタマイズを実行します。
 
 1. [「[!UICONTROL バナー画像]」セクションからロゴ画像を変更する](#Change-the-logo-image)
 1. [「[!UICONTROL バナー画像]」セクションからバナー画像を変更する](#Change-the-banner-image)
@@ -226,17 +226,17 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 #### タイトルと本文をバナーに追加し、テキストカラーを変更します{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-![ ブランディング ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL バナー]** セクションの各フィールドを使用して、バナーにタイトルと本文テキストを追加します。
-**[!UICONTROL バナーテキストカラー]**の横にある正方形ボックスをクリックして、バナーテキストのカラーピッカーからテキストカラーを選択するか、カラーピッカーの正方形ボックスの横のフィールドでカラーの16進コードを指定します。
-![ バナーテキストコンテンツハブ ](/help/assets/assets/banner-text-content-hub.png)
+![&#x200B; ブランディング &#x200B;](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL バナー]** セクションの各フィールドを使用して、バナーにタイトルと本文テキストを追加します。
+**[!UICONTROL バナーテキストカラー]**&#x200B;の横にある正方形ボックスをクリックして、バナーテキストのカラーピッカーからテキストカラーを選択するか、カラーピッカーの正方形ボックスの横のフィールドでカラーの16進コードを指定します。
+![&#x200B; バナーテキストコンテンツハブ &#x200B;](/help/assets/assets/banner-text-content-hub.png)
 
 #### プライマリカラーとセカンダリカラーの変更{#Change-the-primary-and-secondary-color}
 
-![ ブランディング ](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL カラー]** セクションを使用して、カラーピッカーを使用して選択するか、カラーの16進コードを定義して、プライマリカラーとセカンダリカラーを設定します。これらの色により、UI要素の背景、テキスト、アイコンの色が設定され、[!DNL Content Hub] UIがブランドのテーマに合わせて調整されます。
-![ プライマリカラーとセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
+![&#x200B; ブランディング &#x200B;](/help/assets/assets/ColorPalette.svg) **[!UICONTROL ブランディング]** ページで、**[!UICONTROL カラー]** セクションを使用して、カラーピッカーを使用して選択するか、カラーの16進コードを定義して、プライマリカラーとセカンダリカラーを設定します。これらの色により、UI要素の背景、テキスト、アイコンの色が設定され、[!DNL Content Hub] UIがブランドのテーマに合わせて調整されます。
+![&#x200B; プライマリカラーとセカンダリカラー](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL プライマリの色]:**&#x200B;主な配色は、選択操作、チェックボックス、検索バー、切り替えスイッチなどのインタラクティブ要素（[!DNL Content Hub]）に適用されます。これには、[!DNL Content Hub] ホームページと[!UICONTROL 設定] ページが含まれます。また、**[!UICONTROL すべてのAssets]**&#x200B;および&#x200B;**[!UICONTROL コレクション]** ページで利用できるオプションなど、プライマリ [!DNL Content Hub] インターフェイスで利用できるアクションオプションにも適用されます。
 
-**[!UICONTROL セカンダリカラー]：**[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。 選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
+**[!UICONTROL セカンダリカラー]：**&#x200B;[!DNL Content Hub] ホームページでは、ダイアログボックス内で使用可能な UI オプションおよび入力フィールドにセカンダリカラースキームが適用されます。 選択アクション、チェックボックス、検索バー、切替スイッチを除く、[!UICONTROL 設定]ページで使用可能なすべての設定メニューオプションに適用されます。
 
 ### アセット表示{#asset-visibility-content-hub}
 
@@ -294,11 +294,11 @@ Experience Manager Assets リポジトリに追加するすべてのアセット
 
 1. 「**[!UICONTROL 保存]**」をクリックして、変更内容を適用します。
 
-同様に、各URLの横にある![編集アイコン ](assets/do-not-localize/edit_icon.svg)をクリックしてリンクを編集するか、削除アイコンをクリックして既存のURLを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**をクリックして、変更を適用します。
-![Content Hubの設定UI カスタムリンク ](assets/configuration-custom-links1.png)
+同様に、各URLの横にある![編集アイコン &#x200B;](assets/do-not-localize/edit_icon.svg)をクリックしてリンクを編集するか、削除アイコンをクリックして既存のURLを削除できます。すべての変更を行った後、**[!UICONTROL 保存]**&#x200B;をクリックして、変更を適用します。
+![Content Hubの設定UI カスタムリンク &#x200B;](assets/configuration-custom-links1.png)
 
 カスタムリンクは、Content Hub ホームページの「インサイト」タブの横に新しいタブとして表示されます。
-Content Hub](assets/configuration-ui-custom-link-tab.png)の![Configuration UI Custom Links タブ
+Content Hub![&#128279;](assets/configuration-ui-custom-link-tab.png)のConfiguration UI Custom Links タブ
 
 ### コレクションと共有 {#configure-collections-content-hub}
 
@@ -329,7 +329,7 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 -->
 
-詳しくは、[ [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
+詳しくは、[&#x200B; [!DNL Content Hub]](share-assets-content-hub.md) でのアセットの共有を参照してください。
 
 ## よくある質問 {#faqs-content-hub-upload-assets}
 
