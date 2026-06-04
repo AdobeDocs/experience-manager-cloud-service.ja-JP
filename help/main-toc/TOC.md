@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7b7e4bc576d13b39f7d8a8d8f942e9a16a8ada9a
+source-git-commit: 44aacc1578fc1288d1d07e06ac2307dea31ec90a
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7480'
 ht-degree: 85%
 
 ---
@@ -762,6 +762,7 @@ ht-degree: 85%
          + [画像の最適化](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [バニティ URLを作成](/help/assets/vanity-urls.md)
          + [キャッシュ管理](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [ビデオスマート切り抜き](/help/assets/video-smart-crops.md)
          + [マルチオーディオとマルチキャプション](/help/assets/multi-audio-multi-caption.md)
          + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
    + アセットビューの操作 {#assets-view}
@@ -1157,6 +1158,7 @@ ht-degree: 85%
             + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [プロンプトガイド](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
             + [プロジェクト文書作成スキル](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+            + [サイトカタログスキル](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)
             + [AOE配信](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [開発エージェント](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Content Advisor エージェント {#content-advisor}
