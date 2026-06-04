@@ -38,7 +38,7 @@ ht-degree: 9%
 1. メタデータスキーマエディターで、「**[!UICONTROL ビデオ]**」タブを選択します。
 1. 「**[!UICONTROL フォームを作成]**」セクションから、**[!UICONTROL ドロップダウン]** コンポーネントをフォームにドラッグします。
 
-   ![ メタデータ スキーマに追加されたビデオ スマート切り抜きフィールドの作成](/help/assets/assets/metadata-schema-form.png)
+   ![&#x200B; メタデータ スキーマに追加されたビデオ スマート切り抜きフィールドの作成](/help/assets/assets/metadata-schema-form.png)
 
 1. 新しく追加したフィールドを選択し、**[!UICONTROL 設定]** パネルで次の設定を行います。
 
@@ -50,7 +50,7 @@ ht-degree: 9%
    * はい→true
    * No → false
 
-   ![ ビデオ スマート切り抜きフィールドの作成の設定](/help/assets/assets/edit-setting1.png)
+   ![&#x200B; ビデオ スマート切り抜きフィールドの作成の設定](/help/assets/assets/edit-setting1.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -69,7 +69,7 @@ ht-degree: 9%
 1. 「**[!UICONTROL プロパティ]**」をクリックします。
 1. メタデータパネルで、**[!UICONTROL ビデオのスマートクロップを作成]**&#x200B;を&#x200B;**はい**&#x200B;に設定し、アセットステータスを&#x200B;**[!UICONTROL 承認済み]**&#x200B;に更新して、**[!UICONTROL 保存]**&#x200B;をクリックします。
 
-   ![ ビデオ スマート切り抜きが有効になっている承認済みビデオアセット ](/help/assets/assets/assets-create-video-smartcrops1.png)
+   ![&#x200B; ビデオ スマート切り抜きが有効になっている承認済みビデオアセット &#x200B;](/help/assets/assets/assets-create-video-smartcrops1.png)
 
 プロパティが正常に更新されると、確認メッセージが表示されます。
 
