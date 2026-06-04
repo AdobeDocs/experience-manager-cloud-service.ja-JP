@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2287'
 ht-degree: 28%
 
 ---
@@ -58,11 +58,11 @@ Adobeが開発している機能をいち早く利用することで、お客様
 
 **現在のベータ版プログラム**
 
-以下のセクションでは、アクティブなベータ版プログラムの一覧を示します。
+以下のセクションでは、アクティブなベータ版と早期アクセスプログラムをリストアップします。
 
-### AEMの担当者 {#agents-in-aem}
+### AEMのエージェント（早期アクセス）{#agents-in-aem}
 
-本番環境、ガバナンス、最適化、検出、および開発に関する強力な新しいAEM エージェンティック機能を確認する場合は、[こちらからアクセスする方法をご確認ください。](/help/ai-in-aem/agents/overview.md)
+実稼動、ガバナンス、最適化、検出、および開発に関する強力な新しいAEM エージェント機能を確認する場合は、[こちらからアクセスする方法について説明します。](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
