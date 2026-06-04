@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 77b81e63078f95ad1c70c4e19af8d9be41bf2c84
+source-git-commit: 7b7e4bc576d13b39f7d8a8d8f942e9a16a8ada9a
 workflow-type: tm+mt
-source-wordcount: '7469'
+source-wordcount: '7474'
 ht-degree: 85%
 
 ---
@@ -758,11 +758,12 @@ ht-degree: 85%
          + [アセット配信の制限](/help/assets/restrict-assets-delivery.md)
          + [リモート AEM Assets と AEM Sites の統合](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [アセットのプレビュー](/help/assets/preview-assets.md)
-         + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
          + [カスタムドメインの設定](/help/assets/configure-custom-domain.md)
          + [画像の最適化](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
          + [バニティ URLを作成](/help/assets/vanity-urls.md)
          + [キャッシュ管理](/help/assets/cache-management-dynamic-media-open-api.md)
+         + [マルチオーディオとマルチキャプション](/help/assets/multi-audio-multi-caption.md)
+         + [よくある質問](/help/assets/dynamic-media-open-apis-faqs.md)
    + アセットビューの操作 {#assets-view}
       + [はじめに](/help/assets/assets-view-introduction.md)
       + [はじめに](/help/assets/get-started-assets-view.md)
