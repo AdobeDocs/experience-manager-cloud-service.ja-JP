@@ -19,7 +19,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 >[!NOTE]
 >
->OpenAPI機能を備えたDynamic Mediaのマルチオーディオおよびマルチキャプションのサポートは、限定的な可用性機能です。 [ サポートチケット ](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)を作成して有効にできます。
+>OpenAPI機能を備えたDynamic Mediaのマルチオーディオおよびマルチキャプションのサポートは、限定的な可用性機能です。 [&#x200B; サポートチケット &#x200B;](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)を作成して有効にできます。
 
 サポートされているすべてのDynamic MediaとOpenAPI機能ビデオ形式は、複数のキャプションとオーディオトラックをサポートしています。
 
@@ -37,7 +37,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 ## 複数のオーディオトラックを追加 {#add-audio-tracks}
 
-![ キャプションとオーディオトラックのタブ ](/help/assets/assets/caption-audio-tracks1.png)
+![&#x200B; キャプションとオーディオトラックのタブ &#x200B;](/help/assets/assets/caption-audio-tracks1.png)
 
 ビデオにオーディオトラックを追加するには：
 
@@ -55,7 +55,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 * **Type** – 元の説明、標準の説明、または音声の説明。
 * **ラベル** - プレーヤーのオーディオセレクターに表示される表示名。
 
-![ オーディオトラックダイアログ ](/help/assets/assets/edit-audio1.png)
+![&#x200B; オーディオトラックダイアログ &#x200B;](/help/assets/assets/edit-audio1.png)
 
 1. 「**保存**」をクリックします。
 2. 必要に応じて、追加のオーディオトラックに対してこれを繰り返します。
@@ -67,7 +67,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 ## 複数のキャプションを追加 {#add-captions}
 
-![ キャプションとオーディオトラックのタブ ](/help/assets/assets/caption-audio-tracks1.png)
+![&#x200B; キャプションとオーディオトラックのタブ &#x200B;](/help/assets/assets/caption-audio-tracks1.png)
 
 キャプションを追加するには：
 
@@ -77,7 +77,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 4. 1つ以上の`.vtt` ファイルを選択してください。
 5. キャプションファイルの横にある&#x200B;**Draw** アイコンをクリックします。
 
-![ キャプションダイアログのアップロード ](/help/assets/assets/upload-caption.png)
+![&#x200B; キャプションダイアログのアップロード &#x200B;](/help/assets/assets/upload-caption.png)
 
 **キャプションを編集** ダイアログボックスで、次の操作を行います。
 
@@ -86,7 +86,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 * **種類** – 字幕またはキャプション。
 * **ラベル** - プレーヤーのキャプションセレクターに表示される表示名。
 
-![ キャプションを編集ダイアログ ](/help/assets/assets/edit-captions.png)
+![&#x200B; キャプションを編集ダイアログ &#x200B;](/help/assets/assets/edit-captions.png)
 
 1. 「**保存**」をクリックします。
 2. 「**保存して閉じる**」をクリックします。
@@ -129,7 +129,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 1. ビデオプレビューを開きます。
 
-   ![ ビデオプレビュープレーヤー](/help/assets/assets/preview-caption-audio.png)
+   ![&#x200B; ビデオプレビュープレーヤー](/help/assets/assets/preview-caption-audio.png)
 
 2. プレーヤーのコントロールの使用：
 
@@ -142,7 +142,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 2. 「**ダウンロード**」をクリックします。
 
-   ![ トラックアクションのダウンロード ](/help/assets/assets/download-caption.png)
+   ![&#x200B; トラックアクションのダウンロード &#x200B;](/help/assets/assets/download-caption.png)
 
 3. 「**ダウンロード**」をクリックします。
 
@@ -154,7 +154,7 @@ OpenAPI機能を備えた[!DNL Adobe Experience Manager Assets] Dynamic Mediaを
 
 2. 「**削除**」をクリックします。
 
-   ![ トラックアクションを削除](/help/assets/assets/delete-caption.png)
+   ![&#x200B; トラックアクションを削除](/help/assets/assets/delete-caption.png)
 
 3. 「**OK**」をクリックします。
 
