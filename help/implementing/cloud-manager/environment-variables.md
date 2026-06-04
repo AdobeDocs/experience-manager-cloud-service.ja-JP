@@ -39,7 +39,7 @@ ht-degree: 82%
 
 複数の変数を追加する場合、アドビでは、最初の変数を追加してから、**環境設定**&#x200B;ダイアログの ![追加アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 「**追加**」を使用してその他の変数を追加することをお勧めします。 この方法では、1回の環境アップデートで追加できます。
 
-環境変数を追加、更新、または削除するには、[ デプロイメントマネージャーの役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
+環境変数を追加、更新、または削除するには、[&#x200B; デプロイメントマネージャーの役割](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)のメンバーである必要があります。
 
 **環境変数を追加するには：**
 
@@ -48,7 +48,7 @@ ht-degree: 82%
 1. サイドメニューで、「**環境**」をクリックします。
 1. **環境**&#x200B;ページで、環境変数を追加する環境が含まれるテーブルの行を選択します。
 1. 環境の詳細ページで、「**設定**」タブをクリックします。
-1. ![追加/更新 – 円を追加アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **追加/更新**をクリックします。
+1. ![追加/更新 – 円を追加アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **追加/更新**&#x200B;をクリックします。
 環境変数を初めて追加する場合は、ページの中央にある「**設定を追加**」をクリックします。
 
    ![「設定」タブ](assets/configuration-tab.png)
