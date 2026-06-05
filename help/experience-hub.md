@@ -40,7 +40,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    このプリセットはいつでも変更できます。
 
-   ![ コンテンツ作成者プリセットを表示するドロップダウンリストが選択されています](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![&#x200B; コンテンツ作成者プリセットを表示するドロップダウンリストが選択されています](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 Adobe Experience Manager ページが更新され、強化されたナビゲーションとインタラクティブウィジェットが使用できるようになりました。 以前のソリューションカードのコレクションでは、次のようなツールにアクセスできました。
 
@@ -89,9 +89,9 @@ Experience Hubは、Adobe Experience Managerの中央ハブとして機能し、
 
 +++**Experience HubからCustomer Managed Keysを設定するにはどうすればよいですか？**
 
-プログラムでCMKが有効になっている場合、Experience HubはCMK設定ページへの直接リンクを提供します。 プログラムカードから&#x200B;**Configure CMK**を選択するか、
+プログラムでCMKが有効になっている場合、Experience HubはCMK設定ページへの直接リンクを提供します。 プログラムカードから&#x200B;**Configure CMK**&#x200B;を選択するか、
 クイックショートカット。 完全な設定手順については、を参照してください。
-AEM as a Cloud Service](/help/security/customer-managed-keys.md)の[ カスタマー管理キー設定。
+AEM as a Cloud Service[&#128279;](/help/security/customer-managed-keys.md)の カスタマー管理キー設定。
 
 +++
 
@@ -157,4 +157,4 @@ AEM の AI アシスタントは、前提条件を満たしたユーザーが利
 
 ## AEM の AI アシスタント
 
-前提条件の条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)を[完了したお客様の場合、AEMのAI アシスタントは、お客様の組織のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
+前提条件の条件[&#128279;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)を完了したお客様の場合、AEMのAI アシスタントは、お客様の組織のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。

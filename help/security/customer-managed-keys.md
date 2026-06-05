@@ -19,7 +19,7 @@ AEM as a Cloud Service は現在、顧客データを Azure Blob Storage と Mon
 >
 >Azure Key Vaultを設定する前に、まずCloud ManagerでCloud Service プログラムのCMKを有効にする必要があります。 CMKは、実稼動プログラムの作成時または既存プログラムの編集時に、**セキュリティ** タブで有効になります。
 >
->[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)または[ プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。
+>[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)または[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。
 
 
 ## このソリューションの目的 {#the-problem-being-solved}

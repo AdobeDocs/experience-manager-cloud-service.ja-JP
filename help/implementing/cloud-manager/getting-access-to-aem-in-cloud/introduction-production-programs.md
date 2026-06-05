@@ -17,7 +17,7 @@ ht-degree: 55%
 
 本番プログラムは、コードの記述、構築、テストを開始する準備ができているチームを対象としています。 目的は、ライブトラフィックをホストするためにデプロイすることです。
 
-実稼動プログラムを[作成した後](creating-production-programs.md)、[ プログラム作成ウィザード ](using-the-wizard.md)が、プログラム作成の目的に応じてユーザーを選択できるようにガイドします。
+実稼動プログラムを[作成した後](creating-production-programs.md)、[&#x200B; プログラム作成ウィザード &#x200B;](using-the-wizard.md)が、プログラム作成の目的に応じてユーザーを選択できるようにガイドします。
 
 ## プログラム作成オプション {#program-creation-options}
 
@@ -25,7 +25,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->>組織の使用権限によっては、実稼動プログラムに対して顧客管理キー（CMK）を有効にできる場合もあります。 CMKでは、保存データに独自の暗号化キーを指定できます。 [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
+>&#x200B;>組織の使用権限によっては、実稼動プログラムに対して顧客管理キー（CMK）を有効にできる場合もあります。 CMKでは、保存データに独自の暗号化キーを指定できます。 [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
 
 次の表に、使用可能なソリューションの一般的なシナリオと、それらに基づいて作成される一般的な実稼動プログラムを示します。
 
