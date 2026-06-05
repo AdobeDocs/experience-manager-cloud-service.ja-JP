@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3443e9d000cf9ddc4f4f2ac18bcdf614688f5242
+source-git-commit: 657d097b36ffe361655999d51b0a95ec497ddc48
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 28%
+source-wordcount: '2332'
+ht-degree: 27%
 
 ---
 
@@ -86,6 +86,10 @@ Customers selected for participation will be notified directly by Adobe. Partici
 ### Cloud Manager（Beta プログラム） {#cloud-manager-beta-programs}
 
 [Cloud Manager ベータ版プログラム &#x200B;](/help/implementing/cloud-manager/release-notes/current.md)を参照してください。
+
+### AEM Assets（Beta プログラム） {#aem-assets-beta-programs}
+
+[AEM Assets ベータ版プログラム &#x200B;](#assets-beta-program-features)を参照してください。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -268,6 +272,15 @@ Cursor、Claude Code、Visual Studio、IntelliJなどのツールで[AI支援に
 #### アプリケーションパフォーマンスモニタリング（APM）の拡張（Alpha プログラム） {#apm-alpha}
 
 観測性のために、AEM Cloud Service は現在、アドビ提供の [New Relic One](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)と顧客管理の [Dynatrace](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) をサポートしています。 追加の APM オプションのサポートを検討中ですので、ユースケースと共に、ご希望のベンダーまたはテクノロジーを記載したメールを [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) までお送りください。
+
+### [!DNL Experience Manager]as a [!DNL Cloud Service] Assets Betaの機能 {#assets-beta-program-features}
+
+#### ASSETS ビューのUI拡張性 {#ui-extensibility-assets-view}
+
+Assets Viewは、開発者を第一に考えたUI拡張性に対応しています。この機能を利用すれば、顧客はすばやくエクスペリエンスをカスタマイズし、特定のビジネス要件に対応できます。
+Adobeの開発者向けドキュメントに従うことで、最小限の労力で拡張機能を構築、デプロイし、既存の安定した拡張ポイントを活用できます。必要な拡張ポイントがまだ利用できないユースケースの場合、Adobeはお客様と直接連携して、要件を検討し、ニーズに合わせた新しい拡張性APIを提供することの技術的な実現可能性を評価し、**ベータリリース**&#x200B;などの新しいAPIを提供する可能性があります。
+さらに、Adobeでは、社内の早期導入フェーズで現在利用可能な&#x200B;**GenAIを活用した拡張機能ジェネレーションツール**&#x200B;を開発しました。このツールは、拡張機能の開発時間を大幅に短縮できます。このベータプログラムに参加されるお客様には、このツールへのアクセス権が付与され、その進化を形作るためにフィードバックを共有することが推奨されます。
+参加または詳細を知りたい場合は、`GRP-ASSETSVIEWUIEXTENSIBILITY@adobe.com`さんにメールを送信してください。
 
 ## [!DNL Experience Manager] ガイド {#guides}
 
