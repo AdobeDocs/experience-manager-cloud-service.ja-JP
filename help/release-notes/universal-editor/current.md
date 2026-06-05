@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.05.28 リリースノート
-description: ユニバーサルエディターの2026.05.28 リリースのリリースノートです。
+title: ユニバーサルエディター2026.06.04 リリースノート
+description: ユニバーサルエディターの2026.06.05 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 63c3a7e2ca28890370701fd388f6cc9f068c6dc5
+source-git-commit: 683e8c5f5d51872d9ba9cee59b05570920e697fe
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 14%
+source-wordcount: '124'
+ht-degree: 20%
 
 ---
 
 
-# ユニバーサルエディター2026.05.28 リリースノート {#release-notes}
+# ユニバーサルエディター2026.06.05 リリースノート {#release-notes}
 
-ユニバーサルエディターの2026年5月28日リリースのリリースノートです。
+ユニバーサルエディターの2026年6月5日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,11 +26,8 @@ ht-degree: 14%
 
 ## 新機能 {#what-is-new}
 
-* AEM ページプロパティにアクセスするための新しいボタンがツールバー[に追加されました。](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
-   * これにより、元の`aem-page-properties` [拡張機能](/help/implementing/universal-editor/extending.md)の機能がユニバーサルエディターにネイティブに取り込まれます。
-   * ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
+* ユニバーサルエディターで[認証済みドキュメント作成ページがサポートされるようになりました。](https://docs.da.live/developers/reference/access-control)
 
 ## その他の改善点 {#other-improvements}
 
-* アプリが独自の背景色を設定していない場合、編集キャンバスのデフォルトの背景色は白（#FFFFFF）になりました。
-* ページ間のコピー&amp;ペーストが機能しない問題を修正しました。
+* リッチテキストエディターで&#x200B;**見出し**&#x200B;から&#x200B;**コード**&#x200B;に選択したテキストを変更すると、選択したスタイルを保持する代わりに&#x200B;**段落**&#x200B;に書式を戻すことができる問題が修正されました。
