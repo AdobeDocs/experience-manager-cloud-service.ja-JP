@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 61101046e4383acb534b04f467bef1b0313c4ef5
+source-git-commit: 3c78dbcbc453eaaaab3904b83f22744eef60080c
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 4%
@@ -12,10 +12,6 @@ ht-degree: 4%
 ---
 
 # Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.6.0のリリースノート {#release-notes}
-
-<!-- 
-https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
--->
 
 AEM（Adobe Experience Manager）as a Cloud ServiceのCloud Manager 2026.6.0のリリースについて説明します。
 
@@ -37,7 +33,6 @@ AEM as a Cloud ServiceのCloud Manager 2026.6.0のリリース日は2026年6月4
 
   ![顧客管理キーのアイコンを表示しているマイ プログラム カード &#x200B;](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
   *自分のプログラム カード*
-
 
   ![実稼動用に設定ダイアログボックスに、「顧客が管理するキー」オプションが選択された「セキュリティ」タブが表示されている](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
   実稼動用に設定ダイアログボックスの「セキュリティ」タブで&#x200B;*顧客管理キーが選択されました*
@@ -89,7 +84,7 @@ Betaに参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp
 
 ### モジュールのキャッシュによるビルドの高速化 {#quick-build-cm-pipelines}
 
-新しいビルドモデルでは、モジュールレベルのキャッシュを使用して、変更されたモジュールのみを（リポジトリ全体ではなく）コンパイルし、ビルド時間を短縮します。 本番パイプラインに適用されます。 **スマートビルド**&#x200B;を使用する実稼動パイプラインを制御します。
+新しいビルドモデルでは、モジュールレベルのキャッシュを使用して、変更されたモジュールのみを（リポジトリ全体ではなく）コンパイルし、ビルドパフォーマンスを向上させます。 本番パイプラインに適用されます。 **スマートビルド**&#x200B;を使用する実稼動パイプラインを制御します。
 
 詳しくは、次を参照してください。
 
