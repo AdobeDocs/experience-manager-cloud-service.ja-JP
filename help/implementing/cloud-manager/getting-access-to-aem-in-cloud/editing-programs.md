@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 29%
+source-wordcount: '1212'
+ht-degree: 22%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 29%
 
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。 プログラムを編集すると、次の操作を実行できます。
 
-* Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
+* Adobe Experience Manager SitesをAssetsの既存のプログラムに追加し、Adobe Experience Manager Sitesの既存のプログラムにAssetsを追加します。
 * SitesとAssetsの両方を持つ既存のプログラムから、SitesまたはAssetsを削除します。
 * 使用されていないソリューションの使用権限を既存のプログラムに追加するか、新しいプログラムを作成する。
 * 実稼動プログラムに削除用のマークを付けます。
@@ -42,18 +42,41 @@ ht-degree: 29%
 1. **マイプログラム** ページで、編集するプログラムをクリックします。
 1. ページの左上隅付近で、プログラムの名前をクリックし、「**プログラムを編集**」を選択します。
 
-   ![&#x200B; プログラムのドロップダウンメニューの「プログラムを編集」オプション &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program.png)
+   ![ プログラムのドロップダウンメニューの「プログラムを編集」オプション ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program.png)
 
 1. **プログラムを編集** ダイアログボックスで、タブを使用して必要な様々なオプションを設定します。
 
    ![「一般」タブ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    プログラムの編集に使用できるオプションは、プログラムの作成のオプションと同じです。
-   * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+   * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
    * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
-   * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)は組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
+   * [組織の使用権限に応じて、実稼動プログラムに追加のオプション ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)を使用できます。
+   * 「**セキュリティ**」タブでは、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にすることもできます。
+
+   ![ プログラムを編集ダイアログボックスに、選択した顧客管理キーが表示されている](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   アクティブ化後にCMKを無効にすることはできません。 CMKを有効にした後、Experience Hubで暗号化キーを設定します。 Experience Hub](#configure-cmk-experience-hub)でのCMKの設定については、[を参照してください。
 
 1. 「**更新**」をクリックして変更を保存します。
+
+## Experience HubでのCMKの設定 {#configure-cmk-experience-hub}
+
+プログラムに対してCMKを有効にすると、Cloud ManagerはExperience HubのCMK設定ページへの直接リンクを提供するので、次のように設定できます
+プログラムから離れることなく暗号化キーを使用できます。
+
+CMKが環境に対して正常に設定されると、環境の詳細ページに&#x200B;**CMK設定** ステータスバッジが表示されます。 CMKがプログラムに対して有効になっているが、特定の環境に対してまだ設定されていない場合、その環境の詳細ページにバッジは表示されません。
+
+**Experience HubでCMKを設定するには：**
+
+1. **マイプログラム** ページで、CMKが有効になっているプログラムカードを探します。
+2. ![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**CMK**&#x200B;の設定をクリックします。
+
+   ![有効を示すCMK アイコンを示すプログラムカード、次に省略記号メニューの「CMKを設定」オプション ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-configure-edit-program-dlg.png)
+
+   Experience Hubでは、Azure Key Vaultの詳細と暗号化キー情報を入力できるCMK設定ページが開きます。
+
+   設定手順について詳しくは、[AEM as a Cloud Service用のお客様が管理するキーの設定](/help/security/customer-managed-keys.md)を参照してください。
 
 ## 実稼動プログラムを削除用にマーク {#delete-production-program}
 
@@ -68,7 +91,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->サンドボックスプログラムは、このプロセスの影響を受けません。 サンドボックスプログラムを削除するには、[&#x200B; サンドボックスプログラムの削除](#delete-sandbox-program)を参照してください。
+>サンドボックスプログラムは、このプロセスの影響を受けません。 サンドボックスプログラムを削除するには、[ サンドボックスプログラムの削除](#delete-sandbox-program)を参照してください。
 
 **削除する実稼動プログラムをマークするには：**
 
@@ -76,13 +99,13 @@ ht-degree: 29%
 1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
 1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
 1. 適切な組織を選択します。
-1. **マイプログラム** ページで、削除対象としてマークする実稼動プログラムの場合、![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**プログラムを削除**&#x200B;をクリックします。
+1. **マイプログラム** ページで、削除対象としてマークする実稼動プログラムの場合、![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**プログラムを削除**&#x200B;をクリックします。
 
    ![実稼動プログラムのドロップダウンリストから「プログラムを削除」を選択する&#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*上記の実稼動プログラムの例は、イラスト用です。*
 
 1. **削除のための実稼動プログラムのマーク** ダイアログボックスで、実稼動環境、ステージ環境、開発環境など、プログラムに接続されているリソースを一覧表示する警告を確認します。
 
-   ![実稼動プログラムの削除ダイアログボックス &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+   ![実稼動プログラムの削除ダイアログボックス ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
 
    >[!NOTE]
@@ -96,7 +119,7 @@ ht-degree: 29%
 
    確認後、実稼動プログラムは、プロセスの実行中に&#x200B;**削除用のマーキング** ステータスを表示します。
 
-   ![削除状態のマーク &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete3.png)
+   ![削除状態のマーク ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete3.png)
 
    完了すると、実稼動プログラムカードが更新され、**削除用にマーク**&#x200B;され、関連するアラートバッジが付きます。
 
@@ -120,11 +143,11 @@ ht-degree: 29%
 
 1. **マイプログラム** ページで、**削除用にマーク済みであることを示す実稼動プログラムカードを探します**。
 
-1. 実稼動プログラムカードで、![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**削除するマークを解除**&#x200B;をクリックします。
+1. 実稼動プログラムカードで、![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**削除するマークを解除**&#x200B;をクリックします。
 
    ![実稼動プログラムの予定永久削除日のマークを解除する](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   本番プログラムは削除のマークが外されています。
+   実稼動プログラムは削除対象としてマークされていません。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 
@@ -147,6 +170,6 @@ ht-degree: 29%
 
    ![プログラムオプションを削除する](assets/delete-sandbox1.png)
 
-または、Cloud Managerの概要ページからサンドボックスプログラムのカードの![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**プログラムの削除**&#x200B;を選択することもできます。
+または、Cloud Managerの概要ページからサンドボックスプログラムのカードの![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**プログラムの削除**&#x200B;を選択することもできます。
 
 ![プログラムカードからサンドボックスを削除](assets/delete-sandbox2.png)
