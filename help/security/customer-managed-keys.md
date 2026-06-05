@@ -4,38 +4,45 @@ description: AEM as a Cloud Service の暗号化キーの管理方法を学ぶ
 feature: Security
 role: Admin
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1290'
-ht-degree: 100%
+source-git-commit: 753542017cb92871a2b22a53cb9de0f38324872c
+workflow-type: tm+mt
+source-wordcount: '1243'
+ht-degree: 36%
 
 ---
 
-# AEM as a Cloud Service の顧客管理キーの設定 {#customer-managed-keys-for-aem-as-a-cloud-service}
+# AEM as a Cloud ServiceのCustomer Managed Keysの設定 {#customer-managed-keys-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service は現在、顧客データを Azure Blob Storage と MongoDB に保存し、デフォルトでプロバイダー管理の暗号化キーを使用してデータを保護します。この設定は多くの組織のセキュリティニーズを満たしますが、規制の厳しい業界の企業や強化されたデータセキュリティを必要とする企業は、より厳密な暗号化の制御を求める場合があります。データのセキュリティ、コンプライアンス、暗号化キーの管理機能を優先する組織にとって、顧客管理キー（CMK）ソリューションは重要な機能強化を提供します。
+AEM as a Cloud Service は現在、顧客データを Azure Blob Storage と MongoDB に保存し、デフォルトでプロバイダー管理の暗号化キーを使用してデータを保護します。 この設定は、多くの組織のセキュリティニーズを満たしていますが、規制が厳しい業界の企業や、データセキュリティの強化が必要な企業は、暗号化方法をより詳細に制御することを求めています。 データのセキュリティ、コンプライアンス、暗号化キーの管理機能を優先する組織にとって、顧客管理キー（CMK）ソリューションは重要な機能強化を提供します。
 
-## 解決中の問題 {#the-problem-being-solved}
+>[!NOTE]
+>
+>Azure Key Vaultを設定する前に、まずCloud ManagerでCloud Service プログラムのCMKを有効にする必要があります。 CMKは、実稼動プログラムの作成時または既存プログラムの編集時に、**セキュリティ** タブで有効になります。
+>
+>[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)または[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。
 
-プロバイダー管理キーは、追加のプライバシーと整合性を必要とする企業にとって懸念となる可能性があります。キー管理を制御できない場合、組織はコンプライアンス要件を満たし、カスタムセキュリティポリシーを実装し、完全なデータセキュリティを確保するという課題に直面します。
 
-顧客管理キー（CMK）の導入により、AEM のお客様は暗号化キーを完全に制御できることで、これらの懸念に対処します。AEM CS では、Microsoft Entra ID（旧称 Azure Active Directory）を通じて認証することで、お客様の Azure Key Vault に安全に接続し、キーの作成、ローテーション、失効を含む暗号化キーのライフサイクルを管理できます。
+## このソリューションの目的 {#the-problem-being-solved}
+
+プロバイダーが管理するキーは、プライバシーと完全性が追加されることを必要とするビジネスにとって、困難な状況になる可能性があります。 キー管理を制御できない場合、組織はコンプライアンス要件を満たし、カスタムセキュリティポリシーを実装し、完全なデータセキュリティを確保するという課題に直面します。
+
+顧客管理キー（CMK）の導入により、AEM のお客様は暗号化キーを完全に制御できることで、これらの懸念に対処します。 Microsoft Entra ID （旧Azure Active Directory）を介して認証すると、AEM CSはお客様のAzure Key Vaultに安全に接続され、暗号化キーの作成、ローテーション、失効などのライフサイクルを管理できます。
 
 CMK には、次のようないくつかの利点があります。
 
-* **データとアプリケーションの暗号化を制御：** AEM アプリケーションとデータ暗号化キーを直接管理することで、セキュリティを強化します。
-* **機密性と整合性の向上：** 完全な暗号化管理により、機密性の高いデータや専有データへの不用意なアクセスや開示の可能性を軽減します。
-* **Azure Key Vault のサポート：** Azure Key Vault を使用すると、キーストレージ、シークレットの操作の処理、キーのローテーションの実行が可能になります。
+* **データとアプリケーションの暗号化の管理：** AEM アプリケーションとデータ暗号化キーを直接管理して、セキュリティを強化します。
+* **機密性と完全性の向上：**&#x200B;完全な暗号化管理により、機密データや専有データへの誤ったアクセスや開示の可能性を減らします。
+* **Azure Key Vaultのサポート：** Azure Key Vaultを使用すると、キーの保存、秘密操作の処理、キーのローテーションの実行が可能になります。
 
-CMK を採用することで、データセキュリティと暗号化の実践に対する制御を強化し、リスクを軽減しながら、AEM CS のスケーラビリティと柔軟性を引き続き確保できます。
+CMKを導入することで、AEM CSの拡張性と柔軟性を維持しながら、お客様はデータセキュリティと暗号化方法の管理を強化し、セキュリティを強化し、リスクを軽減することができます。
 
-AEM as a Cloud Service を使用すると、保存データを暗号化するための独自の暗号化キーを使用できます。このガイドでは、AEM as a Cloud Service の Azure Key Vault で顧客管理キー（CMK）を設定する手順について説明します。
+AEM as a Cloud Serviceでは、保存データを暗号化するために独自の暗号化キーを使用できます。 このガイドでは、AEM as a Cloud Service用Azure Key Vaultでカスタマーマネージドキー（CMK）を設定する手順について説明します。
 
 >[!WARNING]
 >
->CMK を設定した後は、システム管理キーに戻すことはできません。データへのアクセスが失われないように、キーを安全に管理し、Azure 内でキーコンテナ、キー、CMK アプリへのアクセスを提供するのはお客様の責任です。
+>CMK を設定した後は、システム管理キーに戻すことはできません。 データへのアクセスが失われないように、キーを安全に管理し、Azure 内でキーコンテナ、キー、CMK アプリへのアクセスを提供するのはお客様の責任です。
 
-また、必要なインフラストラクチャを作成および設定するための次の手順についても説明します。
+このガイドでは、必要なインフラストラクチャを作成および設定するための次の手順について説明します。
 
 1. 環境の設定
 1. アドビからのアプリケーション ID の取得
@@ -44,33 +51,34 @@ AEM as a Cloud Service を使用すると、保存データを暗号化するた
 1. Key Vault に対して Adobe アクセス権を付与する
 1. 暗号化キーの作成
 
-キーコンテナの URL、暗号化キー名、およびキーコンテナに関する情報をアドビと共有する必要があります。
+Key Vault URL、暗号化キー名、Key Vaultに関する情報をAdobeと共有する必要があります。
 
 ## 環境の設定 {#setup-your-environment}
 
-Azure コマンドラインインターフェイス（CLI）は、このガイドの唯一の要件です。Azure CLI をまだインストールしていない場合は、[こちら](https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli)にある公式のインストール手順に従ってください。
+Azure コマンドラインインターフェイス（CLI）は、このガイドの唯一の要件です。 Azure CLI をまだインストールしていない場合は、[こちら](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)にある公式のインストール手順に従ってください。
 
-このガイドの残りの部分に進む前に、`az login` を使用して CLI にログインしてください。
+このガイドの残りの部分に進む前に、`az login`でCLIにログインしてください。
 
 >[!NOTE]
 >
->このガイドでは Azure CLI を使用しますが、Azure コンソール経由で同じ操作を実行することもできます。Azure コンソールを使用する場合は、以下のコマンドを参考にしてください。
+>このガイドでは Azure CLI を使用しますが、Azure コンソール経由で同じ操作を実行することもできます。 Azure コンソールを使用する場合は、以下のコマンドを参考にしてください。
 
 
 ## AEM as a Cloud Serviceの CMK 設定プロセスの開始 {#request-cmk-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service 環境の顧客管理キー（CMK）設定を UI を使用してリクエストする必要があります。 これをおこなうには、「**顧客管理キー**」セクションで AEM ホームセキュリティ UI に移動します。その後、「**オンボーディングを開始**」ボタンをクリックして、オンボーディングプロセスを開始できます。
+AEM as a Cloud Service環境のCustomer Managed Keys （CMK）設定をUI経由でリクエストする必要があります。これを行うには、**Customer Managed Keys** セクションの下にあるAEM Home Security UIに移動します。
+その後、**オンボーディングの開始** ボタンをクリックして、オンボーディングプロセスを開始できます。
 
 ![CMK UI を使用した web サイトのオンボーディングの開始](./assets/cmk/step1.png)
 
 
 ## アドビからのアプリケーション ID の取得 {#obtain-an-application-id-from-adobe}
 
-オンボーディングプロセスを開始すると、アドビから Entra アプリケーション ID が提供されます。このアプリケーション ID は、ガイドの残りの部分で必要であり、Adobeが Key Vault にアクセスできるようにするサービスプリンシパルの作成に使用されます。 アプリケーション ID がまだない場合は、Adobe から提供されるまで待つ必要があります。
+オンボーディングプロセスを開始すると、AdobeはEntra アプリケーション IDを提供します。 このアプリケーション IDは、このガイドの残りの部分に必要であり、AdobeがKey Vaultにアクセスできるようにするサービスプリンシパルを作成します。 アプリケーション IDがない場合は、Adobeが提供するまで待ちます。
 
 ![リクエストは処理中です。Adobeが Entra アプリケーション ID を提供するのを待ちます](./assets/cmk/step2.png)
 
-リクエストが完了すると、CMK UI でアプリケーション ID を確認できるようになります。
+リクエストが完了すると、CMK UIにアプリケーション IDが表示されます。
 
 ![Entra Application ID はAdobeから提供されます](./assets/cmk/step3.png)
 
@@ -87,14 +95,14 @@ $resourceGroup="<RESOURCE GROUP>"
 az group create --location $location --resource-group $resourceGroup
 ```
 
-既にリソースグループがある場合は、代わりにそのリソースグループを使用できます。このガイドの残りの部分では、リソースグループの場所とその名前は、それぞれ `$location` と `$resourceGroup` で識別されます。
+既にリソースグループがある場合は、代わりにそれを使用してください。 このガイドの残りの部分では、リソースグループの場所とその名前は、それぞれ `$location` と `$resourceGroup` で識別されます。
 
-## キーコンテナの作成 {#create-a-key-vault}
+## Key Vault の作成 {#create-a-key-vault}
 
-暗号化キーを格納するには、キーコンテナを作成する必要があります。キーコンテナでは、パージ保護が有効になっている必要があります。他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。アドビのサービスが Key Vault にアクセスできることを確認するには、パブリックネットワークアクセスも有効にする必要があります。
+暗号化キーを格納するKey Vaultを作成します。 キーコンテナでは、パージ保護が有効になっている必要があります。 他の Azure サービスからの保存データを暗号化するには、パージ保護が必要です。 アドビのサービスが Key Vault にアクセスできることを確認するには、パブリックネットワークアクセスも有効にする必要があります。
 
 >[!IMPORTANT]
->パブリックネットワークアクセスを無効にしてキーコンテナを作成すると、キーの作成やローテーションなどのすべてのキーコンテナ関連の操作は、キーコンテナへのネットワークアクセス権を持つ環境（キーコンテナにアクセスできる VM など）から実行する必要があります。
+>Key Vaultのパブリック ネットワーク アクセスを無効にするには、Key Vaultへのネットワーク アクセスを持つ環境からキーの作成や回転などの操作を実行する必要があります。 例えば、Key VaultにアクセスできるVMなどです。
 
 ```powershell
 # Reuse this information from the previous step.
@@ -115,11 +123,11 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## キーコンテナに対して Adobe アクセス権を付与する {#grant-adobe-access-to-the-key-vault}
+## Key Vault に対して Adobe アクセス権を付与する {#grant-adobe-access-to-the-key-vault}
 
-この手順では、アドビが Entra アプリケーションを通じてキーコンテナにアクセスできるようにします。Entra アプリケーションの ID は、アドビから既に提供されている必要があります。
+この手順では、AdobeがEntra アプリケーションを通じてKey Vaultにアクセスできるようにします。 Adobeは、既にEntra アプリケーションのIDを提供している必要があります。
 
-まず、Entra アプリケーションにアタッチされたサービスプリンシパルを作成し、それに **Key Vault Reader** の役割と **Key Vault Crypto User** の役割を割り当てる必要があります。役割は、このガイドで作成したキーコンテナに限定されます。
+最初に、Entra アプリケーションに添付されたサービス プリンシパルを作成し、**Key Vault Reader**&#x200B;および&#x200B;**Key Vault Crypto User**&#x200B;のロールを割り当てる必要があります。 役割は、このガイドで作成したキーコンテナに限定されます。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -142,9 +150,9 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypt
 
 ## 暗号化キーの作成 {#create-an-encryption-key}
 
-最後に、キーコンテナで暗号化キーを作成できます。この手順を完了するには、**Key Vault Crypto Officer** の役割が必要です。ログインしたユーザーにこの役割がない場合は、システム管理者に問い合わせて、この役割を付与してもらうか、既にその役割を持っているユーザーにこの手順を完了するよう依頼してください。
+最後に、キーコンテナで暗号化キーを作成できます。 この手順を完了するには、**Key Vault Crypto Officer**&#x200B;の役割が必要です。 この役割を付与するには、ログインユーザーにこの役割がない場合は、システム管理者にお問い合わせください。 あるいは、既にその役割を持っている人に、このステップを完了するように依頼することもできます。
 
-暗号化キーを作成するには、キーコンテナへのネットワークアクセスが必要です。まず、キーコンテナにアクセスできることを確認してから、キーを作成します。
+暗号化キーを作成するには、キーコンテナへのネットワークアクセスが必要です。 まず、キーコンテナにアクセスできることを確認してから、キーを作成します。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -157,9 +165,9 @@ $keyName="<KEY NAME>"
 az keyvault key create --vault-name $keyVaultName --name $keyName
 ```
 
-## キーコンテナ情報の共有 {#share-the-key-vault-information}
+## 重要なVault情報の共有 {#share-the-key-vault-information}
 
-この時点で、すべての準備が整いました。必要な情報を CMK UI を使用して共有するだけで、環境設定プロセスが開始されます。
+この時点で、設定は完了です。 必要な情報をCMK UIを介して共有し、環境設定プロセスを開始します。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -180,27 +188,27 @@ $tenantId=(az keyvault show --name $keyVaultName `
 $subscriptionId="<Subscription ID>"
 ```
 
-CMK UI でこの情報を提供します。
-![UI への情報の入力 ](./assets/cmk/step3a.png)
+CMK UIに次の情報を入力します。
+![UIに情報を入力](./assets/cmk/step3a.png)
 
 ## キーアクセスの取り消しの影響 {#implications-of-revoking-key-access}
 
-キーコンテナ、キー、または CMK アプリへのアクセスを取り消したり無効にしたりすると、プラットフォームの操作に重大な変更が行われるなど、重大な中断が生じる可能性があります。これらのキーが無効になると、プラットフォーム内のデータにアクセスできなくなる場合があり、このデータに依存するダウンストリーム操作は機能しなくなります。主要な設定に変更を行う前に、ダウンストリームの影響を完全に理解することが重要です。
+Key Vault、key、またはCMK アプリへのアクセスを取り消すか無効にすると、AEM as a Cloud Service環境の運用が大幅に中断される可能性があります。 これらのキーを無効にすると、AEM as a Cloud Serviceのデータにアクセスできなくなり、このデータに依存するダウンストリームオペレーションは機能しなくなります。 重要な設定を変更する前に、潜在的な影響を把握することが重要です。
 
-データへのプラットフォームアクセスを取り消す場合は、Azure 内のキーコンテナからアプリケーションに関連付けられているユーザーの役割を削除します。
+データに対するAEM as a Cloud Serviceのアクセス権を取り消す場合は、Azure内のKey Vaultからアプリケーションに関連付けられているユーザーロールを削除することで取り消すことができます。
 
 ## 次の手順 {#next-steps}
 
-CMK UI で必要な情報を指定すると、Adobe は AEM as a Cloud Service 環境の設定プロセスを開始します。この処理には時間がかかる場合があり、完了すると通知されます。
+CMK UIで必要な情報を指定すると、AdobeはAEM as a Cloud Service環境の設定プロセスを開始します。 このプロセスには時間がかかり、完了すると通知が送信されます。
 
 ![Adobe が環境を設定するのを待ちます。](./assets/cmk/step4.png)
 
 
-## CMK 設定の完了 {#complete-the-cmk-setup}
+## CMK設定の完了 {#complete-the-cmk-setup}
 
-設定プロセスが完了すると、UI で CMK 設定のステータスを確認できるようになります。 Key Vault と暗号化キーも確認できます。
-![プロセスが完了しました](./assets/cmk/step5.png)
+設定プロセスが完了すると、UIでCMK設定のステータスを確認できます。Key Vaultと暗号化キーも確認できます。
+![のプロセスが完了しました](./assets/cmk/step5.png)
 
 ## 質問とサポート {#questions-and-support}
 
-AEM as a Cloud Service の顧客管理キー設定に関するご質問、お問い合わせ、サポートが必要な場合はお問い合わせください。ご不明な点がある場合は、Adobe サポートがサポートいたします。
+AEM as a Cloud ServiceのCustomer Managed Keys設定に関するご質問やご質問、サポートが必要な場合は、Adobeにお問い合わせください。 Adobe サポートでは、お客様の質問に対応します。

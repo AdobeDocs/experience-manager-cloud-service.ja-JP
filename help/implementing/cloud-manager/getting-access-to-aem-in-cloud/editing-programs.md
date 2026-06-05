@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1c42dff8efb505d050583c8af2f150a7f862d8c9
+source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 29%
+source-wordcount: '1212'
+ht-degree: 22%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 29%
 
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。 プログラムを編集すると、次の操作を実行できます。
 
-* Assets を使用している既存のプログラムに Sites ソリューションを追加する（その逆も同様）。
+* Adobe Experience Manager SitesをAssetsの既存のプログラムに追加し、Adobe Experience Manager Sitesの既存のプログラムにAssetsを追加します。
 * SitesとAssetsの両方を持つ既存のプログラムから、SitesまたはAssetsを削除します。
 * 使用されていないソリューションの使用権限を既存のプログラムに追加するか、新しいプログラムを作成する。
 * 実稼動プログラムに削除用のマークを付けます。
@@ -51,9 +51,32 @@ ht-degree: 29%
    プログラムの編集に使用できるオプションは、プログラムの作成のオプションと同じです。
    * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
    * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
-   * [その他のオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)は組織の使用権限に応じて、実稼動プログラムで使用できる場合があります。
+   * [組織の使用権限に応じて、実稼動プログラムに追加のオプション &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)を使用できます。
+   * 「**セキュリティ**」タブでは、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にすることもできます。
+
+   ![&#x200B; プログラムを編集ダイアログボックスに、選択した顧客管理キーが表示されている](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   アクティブ化後にCMKを無効にすることはできません。 CMKを有効にした後、Experience Hubで暗号化キーを設定します。 Experience Hub[&#128279;](#configure-cmk-experience-hub)でのCMKの設定については、を参照してください。
 
 1. 「**更新**」をクリックして変更を保存します。
+
+## Experience HubでのCMKの設定 {#configure-cmk-experience-hub}
+
+プログラムに対してCMKを有効にすると、Cloud ManagerはExperience HubのCMK設定ページへの直接リンクを提供するので、次のように設定できます
+プログラムから離れることなく暗号化キーを使用できます。
+
+CMKが環境に対して正常に設定されると、環境の詳細ページに&#x200B;**CMK設定** ステータスバッジが表示されます。 CMKがプログラムに対して有効になっているが、特定の環境に対してまだ設定されていない場合、その環境の詳細ページにバッジは表示されません。
+
+**Experience HubでCMKを設定するには：**
+
+1. **マイプログラム** ページで、CMKが有効になっているプログラムカードを探します。
+2. ![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**CMK**&#x200B;の設定をクリックします。
+
+   ![有効を示すCMK アイコンを示すプログラムカード、次に省略記号メニューの「CMKを設定」オプション &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-configure-edit-program-dlg.png)
+
+   Experience Hubでは、Azure Key Vaultの詳細と暗号化キー情報を入力できるCMK設定ページが開きます。
+
+   設定手順について詳しくは、[AEM as a Cloud Service用のお客様が管理するキーの設定](/help/security/customer-managed-keys.md)を参照してください。
 
 ## 実稼動プログラムを削除用にマーク {#delete-production-program}
 
@@ -124,7 +147,7 @@ ht-degree: 29%
 
    ![実稼動プログラムの予定永久削除日のマークを解除する](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png)
 
-   本番プログラムは削除のマークが外されています。
+   実稼動プログラムは削除対象としてマークされていません。
 
 ## サンドボックスプログラムの削除 {#delete-sandbox-program}
 
