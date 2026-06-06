@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f1623f112ab539b961d5948446153bec98fcf7e3
+source-git-commit: 5a7a52a4ec67417f8a61406913ecf5175d330664
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 55%
@@ -25,7 +25,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->&#x200B;>組織の使用権限によっては、実稼動プログラムに対して顧客管理キー（CMK）を有効にできる場合もあります。 CMKでは、保存データに独自の暗号化キーを指定できます。 [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
+>組織の使用権限によっては、実稼動プログラムに対して顧客管理キー（CMK）を有効にできる場合もあります。 CMKでは、保存データに独自の暗号化キーを指定できます。 [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)を参照してください。
 
 次の表に、使用可能なソリューションの一般的なシナリオと、それらに基づいて作成される一般的な実稼動プログラムを示します。
 
