@@ -40,7 +40,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    このプリセットはいつでも変更できます。
 
-   ![ コンテンツ作成者プリセットを表示するドロップダウンリストが選択されています](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
+   ![&#x200B; コンテンツ作成者プリセットを表示するドロップダウンリストが選択されています](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 Adobe Experience Manager ページが更新され、強化されたナビゲーションとインタラクティブウィジェットが使用できるようになりました。 以前のソリューションカードのコレクションでは、次のようなツールにアクセスできました。
 
@@ -155,4 +155,4 @@ AEM の AI アシスタントは、前提条件を満たしたユーザーが利
 
 ## AEM の AI アシスタント
 
-前提条件の条件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)を[完了したお客様の場合、AEMのAI アシスタントは、お客様の組織のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
+前提条件の条件[&#128279;](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)を完了したお客様の場合、AEMのAI アシスタントは、お客様の組織のユーザーが利用できます。 [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)を参照してください。
