@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1723'
 ht-degree: 55%
 
 ---
@@ -118,11 +118,7 @@ ht-degree: 55%
 * **WAF-DDOS Protection** – このオプションを使用すると、ルールを通じてWeb Application Firewallを有効にして、アプリケーションを保護できます。
    * 有効化されると、WAF-DDOS 保護は、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)で設定できます。
    * リポジトリでトラフィックフィルタールールを管理し、適切にデプロイする方法について詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
-* **顧客管理キー** – このオプションを使用すると、プログラムのCMK （顧客管理キー）がアクティブ化され、Azure Blob StorageおよびMongoDBに保存されているデータに独自の暗号化キーを指定できます。
-
-  >[!IMPORTANT]
-  >
-  >プログラム作成後にCMKを有効または無効にすることはできません。
+* **顧客管理キー** – このオプションを使用すると、プログラムのCMK （顧客管理キー）がアクティブ化され、Azure Blob StorageおよびMongoDBに保存されているデータに独自の暗号化キーを指定できます。 選択した場合は、後で[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を行うことでCMKを有効にできます。
 
    * CMKは、Cloud Service プログラムでのみ使用できます。 サンドボックスプログラムでは有効にできません。
    * プログラム内では、CMKはステージング環境と実稼動環境のみをカバーします。
