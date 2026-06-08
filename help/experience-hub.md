@@ -8,7 +8,7 @@ feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: e31b3f6a249d6b0a5836f42b5cf8725e1339b117
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 65%
@@ -89,9 +89,7 @@ Experience Hubは、Adobe Experience Managerの中央ハブとして機能し、
 
 +++**Experience HubからCustomer Managed Keysを設定するにはどうすればよいですか？**
 
-プログラムでCMKが有効になっている場合、Experience HubはCMK設定ページへの直接リンクを提供します。 プログラムカードから&#x200B;**Configure CMK**&#x200B;を選択するか、
-クイックショートカット。 完全な設定手順については、を参照してください。
-AEM as a Cloud Service[&#128279;](/help/security/customer-managed-keys.md)の カスタマー管理キー設定。
+プログラムでCMKが有効になっている場合、Experience HubはCMK設定ページへの直接リンクを提供します。 プログラムカードまたはクイックショートカットから「**CMK**&#x200B;の設定」を選択します。 設定手順について詳しくは、[AEM as a Cloud Service用のお客様が管理するキーの設定](/help/security/customer-managed-keys.md)を参照してください。
 
 +++
 
