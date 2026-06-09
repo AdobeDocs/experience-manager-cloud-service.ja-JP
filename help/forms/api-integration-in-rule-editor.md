@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 keywords: ルールエディターでの API の統合, サービス拡張機能の呼び出し
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
+source-git-commit: 2c4a963786db1b5dabf16c5d96be950bb7ad7807
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,16 @@ ht-degree: 4%
 * **API URL**: API サービスのエンドポイント。
 * **HTTP メソッドを選択**: APIの呼び出しに使用されるHTTP リクエストメソッド。
 * **コンテンツの種類**：要求と応答の形式を定義します。
-* **暗号化が必要**: （オプション）送信中に機密データが暗号化されるようにします。
+* **暗号化が必要**: （オプション）選択すると、リクエストと応答のペイロードを、**function.js**&#x200B;のカスタム関数を使用して暗号化できます。 「**公開鍵**」フィールドが表示されます。 API統合設定を保存する前に、公開鍵をこのフィールドに貼り付けます。
 * **クライアントで実行**：有効にすると、API呼び出しはサーバーではなくクライアント（ブラウザー）から行われます。
+
+>[!NOTE]
+>
+> 手順とサンプル **encrypt**&#x200B;および&#x200B;**decrypt**&#x200B;関数については、[暗号化と復号化](#encryption-and-decryption)を参照してください。
 
 **認証タイプ**
 
-* **オプション**：なし、基本、API キー、OAuth 2.0。
+* **オプション**：なし、基本、API キー。
 
 **入力パラメーター**
 
@@ -90,7 +94,7 @@ ht-degree: 4%
 6. 宛先の国（ドロップダウン）
 7. 到着予定日（日付）
 
-国の静的なリストを管理する代わりに、フォームは&#x200B;**getcountryname API**&#x200B;を使用して国の情報（大陸、大文字、ISO Alpha コードなど）を動的に取得します。
+国の静的なリストを管理する代わりに、フォームは国の情報（大陸、大文字、ISO Alpha コードなど）を動的に取得します。 **getcountryname API**&#x200B;を使用：
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -126,7 +130,70 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> APIを呼び出し、カスタム関数[を使用して、JSON配列からプロパティ値を](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)取得できます。 このアプローチにより、値を抽出し、フォームフィールドに直接結び付けることができます。
+> APIを呼び出し、カスタム関数](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)を使用して、JSON配列からプロパティ値を[取得できます。 このアプローチにより、値を抽出し、フォームフィールドに直接結び付けることができます。
+
+## 既存のAPI統合の編集
+
+API統合を作成した後、新しい統合を作成せずにルールエディターから更新できます。 **呼び出しサービス** ステートメントがAPI統合を参照する場合、その統合に&#x200B;**編集** オプションが使用できます。
+
+既存のAPI統合を編集するには：
+
+1. **サービスを呼び出し** ステートメントを含むルール エディターでルールを開きます。
+2. **Invoke Service** ステートメントで、更新するAPI統合を選択します。
+3. 「**編集**」アイコンをクリックして、**API統合設定** ウィンドウを開きます。
+4. API URL、認証、入力および出力パラメーターまたはその他の設定を更新し、変更を保存します。
+
+![API統合の編集](/help/forms/assets/edit-api-rule-editor.png)
+
+## 暗号化と復号
+
+API統合に&#x200B;**暗号化必須**&#x200B;を選択した場合、API統合設定ウィンドウの&#x200B;**公開鍵** フィールドに公開鍵を貼り付けます。 ルールエディターは、各送信リクエストの前に&#x200B;**暗号化**&#x200B;を呼び出し、応答が成功した後に&#x200B;**暗号化**&#x200B;を呼び出します。 **function.js**&#x200B;にカスタムロジックを追加しない場合、両方の関数はペイロードを変更せずに返します。
+
+リクエストおよび応答データを暗号化および復号化するには、**encrypt**&#x200B;および&#x200B;**decrypt**&#x200B;関数を&#x200B;**function.js**&#x200B;に追加します。
+
+1. アダプティブフォームの&#x200B;**function.js** ファイルを開きます。
+2. API呼び出しの前に、リクエスト（本文、ヘッダー、関連オプション）を変換する&#x200B;**encrypt**&#x200B;関数を追加します。
+3. API呼び出しに成功した後に応答を変換する&#x200B;**decrypt**&#x200B;関数を追加します。 **decrypt**&#x200B;関数は、暗号化された応答と&#x200B;**originalRequest**&#x200B;を受信します。これには、暗号化中に設定された&#x200B;**cryptoMetadata**&#x200B;が含まれます。
+4. **function.js**&#x200B;を保存し、ルールエディターで&#x200B;**Invoke Service**&#x200B;を使用して統合をテストします。
+
+次のサンプルコードは、**function.js**&#x200B;で&#x200B;**encrypt**&#x200B;関数を追加する方法を示しています。
+
+```javascript
+function encrypt(payload) {
+    const { body, headers, options } = payload;
+    const { encryptedBody, encryptedKey } = await myRsaEncrypt(body);
+    return {
+        body: encryptedBody,
+        headers: { ...headers, 'X-Encrypted-Key': encryptedKey },
+        cryptoMetadata: { keyId: 'rsa-2048-v1' },
+        options
+    };
+}
+```
+
+
+
+**暗号化（プリリクエストペイロードフック）**
+
+**encrypt**&#x200B;関数は、**body**、**ヘッダー**、オプションの&#x200B;**cryptoMetadata**&#x200B;および&#x200B;**オプション**&#x200B;を含むペイロードオブジェクトを受信します。 同じシェイプの変更されたバージョンが返されます。 **options** フィールドには、リクエストパイプラインを通じてFetch API設定（例：`credentials: 'include'`）が格納されます。 **options**&#x200B;の値は、基になる`fetch()`呼び出しに適用されます。 **cryptoMetadata** フィールドには、復号化中に使用するデータが格納されます。 暗号化中に&#x200B;**cryptoMetadata**&#x200B;で設定した内容は、**originalRequest.cryptoMetadata**&#x200B;に保存され、後で&#x200B;**decrypt**&#x200B;関数で使用できるようになります。 名前にかかわらず、**encrypt**&#x200B;は一般的なプリリクエストトランスフォーマです。 暗号暗号化だけでなく、ヘッダーやリクエスト本文の変更にも使用できます。 デフォルトの実装では、ペイロードは変更されずに返されます。
+>>
+
+次のサンプルコードは、**decrypt**&#x200B;関数を示しています。
+
+```javascript
+function decrypt(encryptedData, originalRequest) {
+    const { keyId } = originalRequest?.cryptoMetadata || {};
+    return await myRsaDecrypt(encryptedData, keyId);
+}
+```
+
+**復号（リクエスト応答フックの後）**
+
+**decrypt**&#x200B;関数は、応答が成功した後に実行されます。 応答の本文と&#x200B;**originalRequest**&#x200B;を受信します。 **originalRequest** オブジェクトには、**encrypt**&#x200B;関数の&#x200B;**cryptoMetadata**&#x200B;と、**url**、**method**、およびその他のリクエストメタデータが含まれています。 復号化された本文を同期的または非同期的に返す必要があります。 デフォルトの実装では、変更されていないデータが返されます。 **decrypt**&#x200B;関数は、成功した応答に対してのみ実行されます。 エラー応答は&#x200B;**復号**&#x200B;を呼び出しません。
+
+>[!NOTE]
+>
+> 上記の例では、`myRsaEncrypt`と`myRsaDecrypt`を暗号化関数に置き換えます。
 
 ## API障害に対する再試行メカニズムの実装
 
@@ -204,7 +271,7 @@ function retryHandler(requestFn) {
 ## よくある質問
 
 * **アダプティブ FormsにAPIを統合するには、フォームデータモデルを作成する必要がありますか？**\
-  いいえ。ビジュアルルールエディターを使用すると、フォームデータモデルを作成することなく、**API統合を作成** オプションを使用してAPIを直接統合できます。 このアプローチは、軽量なユースケースや、フォーム固有のユースケースに最適です。
+  いいえ。 ビジュアルルールエディターを使用すると、フォームデータモデルを作成することなく、**API統合を作成** オプションを使用してAPIを直接統合できます。 このアプローチは、軽量なユースケースや、フォーム固有のユースケースに最適です。
 
 * **ルールエディターから作成されたAPI呼び出しを保護できますか？**\
-  はい。API統合設定には、**Basic、API Key、OAuth 2.0**&#x200B;などの認証オプションが用意されています。 また、**暗号化必須**&#x200B;を有効にして、機密データが安全に送信されるようにすることもできます。
+  はい。 API統合設定には、**基本**&#x200B;や&#x200B;**API キー**&#x200B;などの認証オプションが用意されています。 **暗号化必須**&#x200B;を選択し、**function.js**&#x200B;でカスタム **暗号化**&#x200B;および&#x200B;**復号化** ロジックを追加することもできます。 設定手順と例については、[暗号化と復号](#encryption-and-decryption)を参照してください。
