@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # フォームをドラフトとして保存し、サイトページにリスト表示する
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 フォームへの入力を開始したものの、一時停止して後から戻る必要があるユーザーを考えてみましょう。 AEMには`save-as-draft` オプションが用意されており、後で入力するためにフォームをドラフトとして保存できます。 これを容易にするために、AEMでは、AEM Sites ページにドラフトと提出物を表示する&#x200B;**ドラフトと提出物** Forms ポータル コンポーネントをすぐに利用できます。 コンポーネントには、後で完了するためにドラフトとして保存されたフォームと、送信されたフォームが一覧表示されます。 下書きを編集したり、送信されたフォームを表示できるのは、ログインしたユーザーのみです。 ただし、匿名ユーザーが&#x200B;**Search &amp; Lister** コンポーネントを使用してフォームのリスト内を移動し、フォームをドラフトとして保存した場合、そのドラフトは&#x200B;**Drafts &amp; Submissions** コンポーネントには表示されません。 ドラフトと送信を表示するには、フォーム送信時にユーザーがログインする必要があります。
 
