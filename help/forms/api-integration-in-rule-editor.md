@@ -130,7 +130,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> APIを呼び出し、カスタム関数](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)を使用して、JSON配列からプロパティ値を[取得できます。 このアプローチにより、値を抽出し、フォームフィールドに直接結び付けることができます。
+> APIを呼び出し、カスタム関数[&#128279;](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)を使用して、JSON配列からプロパティ値を取得できます。 このアプローチにより、値を抽出し、フォームフィールドに直接結び付けることができます。
 
 ## 既存のAPI統合の編集
 
@@ -176,7 +176,7 @@ function encrypt(payload) {
 **暗号化（プリリクエストペイロードフック）**
 
 **encrypt**&#x200B;関数は、**body**、**ヘッダー**、オプションの&#x200B;**cryptoMetadata**&#x200B;および&#x200B;**オプション**&#x200B;を含むペイロードオブジェクトを受信します。 同じシェイプの変更されたバージョンが返されます。 **options** フィールドには、リクエストパイプラインを通じてFetch API設定（例：`credentials: 'include'`）が格納されます。 **options**&#x200B;の値は、基になる`fetch()`呼び出しに適用されます。 **cryptoMetadata** フィールドには、復号化中に使用するデータが格納されます。 暗号化中に&#x200B;**cryptoMetadata**&#x200B;で設定した内容は、**originalRequest.cryptoMetadata**&#x200B;に保存され、後で&#x200B;**decrypt**&#x200B;関数で使用できるようになります。 名前にかかわらず、**encrypt**&#x200B;は一般的なプリリクエストトランスフォーマです。 暗号暗号化だけでなく、ヘッダーやリクエスト本文の変更にも使用できます。 デフォルトの実装では、ペイロードは変更されずに返されます。
->>
+&#x200B;>>
 
 次のサンプルコードは、**decrypt**&#x200B;関数を示しています。
 
