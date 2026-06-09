@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.6.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: ab2b623cd8c0605a41b96401762baf254dc8b339
+source-git-commit: 012a31a9b1ffe3d7228d714049295536f2deeaac
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,9 @@ AEM as a Cloud ServiceのCloud Manager 2026.6.0のリリース日は2026年6月4
 ## 新機能 – Cloud Manager {#cloud-manager-whats-new}
 
 * **顧客管理キー（CMK）のセルフサービス**
-お客様は、Adobe サポートの関与を必要とせずに、Cloud Managerから直接顧客管理キーを設定できるようになりました。 新しいCMK オプションは、プログラムの作成中、プログラムの編集設定、および環境の詳細ページで使用できます。
+お客様は、Adobe サポートの関与を必要とせずに、Cloud Managerから直接顧客管理キーを設定できるようになりました。 新しいCMK オプションは、プログラムの作成中またはプログラムの編集中、および環境の詳細ページで使用できます。
+
+  [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create)および[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を参照してください。
 
   CMK ステータスは、マイプログラムカードおよびライセンスダッシュボードに表示され、管理者はすべての環境で暗号化設定を明確に把握できます。 このアプローチにより、独自の暗号化キーの制御が必要な組織のコンプライアンスワークフローが簡素化されます。
 
@@ -40,7 +42,6 @@ AEM as a Cloud ServiceのCloud Manager 2026.6.0のリリース日は2026年6月4
   ![&#x200B; ライセンスダッシュボードで使用可能な顧客管理キーの数を表示する](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
   *ライセンスダッシュボードで使用可能な顧客管理キーの数を表示*
 
-  [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create)および[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を参照してください。
 
 * **環境変数の制限が400に増加**
 Cloud Managerでは、1つの環境につき最大400個の環境変数をサポートするようになりました。これは、以前の制限である200個から2倍になります。
