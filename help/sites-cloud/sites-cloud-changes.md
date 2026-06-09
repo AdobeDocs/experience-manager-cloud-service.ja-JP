@@ -6,20 +6,20 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 5d1a5007a4089628fb72ec6a4ae5c576497a6c3a
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 99%
+source-wordcount: '575'
+ht-degree: 93%
 
 ---
 
 
 # AEM Sites as a Cloud Service の主な変更点 {#notable-changes}
 
-AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Service には、AEM as a Cloud Service の主なメリット（クラウドネイティブの拡張性、稼動時間、最新状態の維持など）に加え、Sites 固有の変更や追加もいくつか含まれています。
+AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。 AEM Sites as a Cloud Service には、AEM as a Cloud Service の主なメリット（クラウドネイティブの拡張性、稼動時間、最新状態の維持など）に加え、Sites 固有の変更や追加もいくつか含まれています。
 
 >[!NOTE]
->このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
+>このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。 AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 >* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
@@ -49,17 +49,17 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 >[!NOTE]
 >
->この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
+>この新機能を利用するためにシステムのユーザーに必要な変更はありません。 ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/)（新しい AEM の参照用サイト）が更新および公開されました。このサイトには、AEM で web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)では、プロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックについて説明します。
+[WKND](https://wknd.site/)（新しい AEM の参照用サイト）が更新および公開されました。このサイトには、AEM で web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。 新しい参照サイトと[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)では、プロジェクトの設定、コアコンポーネント、編集可能なテンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックについて説明します。
 
-これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。AEM as a Cloud Service では、参照サイトはデフォルトではインストールされません。 代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリー](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)が提供されます。
+これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。 AEM as a Cloud Service では、参照サイトはデフォルトではインストールされません。 代わりに、更新されたWKND リファレンスサイトコードを含む[git リポジトリ &#x200B;](https://github.com/adobe/aem-guides-wknd/)と[付属チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)が提供されます。
 
 ## 実行時に使用できない機能 {#capabilities-not-available-at-runtime}
 
-AEM as a Cloud Service は常に有効で、常に最新の状態に保たれています。それを実現するには、不変コンテンツと可変コンテンツで AEM リポジトリーを分離し、実行時に不変コンテンツにアクセスできないようにする必要があります。可変コンテンツと不変コンテンツについて詳しくは、[リポジトリの可変領域と不変領域](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)を参照してください。
+AEM as a Cloud Service は常に有効で、常に最新の状態に保たれています。 それを実現するには、不変コンテンツと可変コンテンツで AEM リポジトリーを分離し、実行時に不変コンテンツにアクセスできないようにする必要があります。 可変コンテンツと不変コンテンツの詳細については、[&#x200B; リポジトリの可変コンテンツと不変コンテンツの領域](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable)を参照してください。
 
 実行時には不変コンテンツにアクセスできないので、AEM Sites の次の操作は実行時に使用できません。
 
