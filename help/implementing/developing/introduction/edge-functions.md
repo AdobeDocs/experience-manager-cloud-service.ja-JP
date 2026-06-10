@@ -82,7 +82,7 @@ AEM Edge関数サービスは、YAML設定ファイルで宣言され、Cloud Ma
 
 ### &#x200B;1. 設定パイプラインの設定 {#configuration-pipeline}
 
-エッジ関数を作成する前に、Cloud Managerで環境用の設定パイプラインが存在することを確認します。 そうでない場合は、最初に[設定パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を作成します。
+エッジ関数を作成する前に、Cloud Managerで環境用の設定パイプラインが存在することを確認します。 そうでない場合は、最初に[設定パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を作成します。
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ data:
           originName: edgefunction-my-edge-function
 ```
 
-オリジン選択ルールを使用すると、特定のパス、ドメイン、リクエストヘッダーなど、CDN ルールエンジンで利用可能なあらゆる条件に基づいて、トラフィックをエッジ関数にルーティングできます。 複数のルールで異なるパスを同じエッジ関数にルーティングできます。 完全なルール構文については、[ オリジンセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)を参照してください。
+オリジン選択ルールを使用すると、特定のパス、ドメイン、リクエストヘッダーなど、CDN ルールエンジンで利用可能なあらゆる条件に基づいて、トラフィックをエッジ関数にルーティングできます。 複数のルールで異なるパスを同じエッジ関数にルーティングできます。 完全なルール構文については、[&#x200B; オリジンセレクター](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)を参照してください。
 
 ### &#x200B;4. 設定のデプロイ {#deploy-configuration}
 
@@ -174,7 +174,7 @@ aio aem edge-functions deploy <function-name>
 aio aem edge-functions serve
 ```
 
-ローカル ランタイムがサポートする内容について詳しくは、[Compute JavaScript ドキュメント ](https://www.fastly.com/documentation/guides/compute/javascript/)を参照してください。
+ローカル ランタイムがサポートする内容について詳しくは、[Compute JavaScript ドキュメント &#x200B;](https://www.fastly.com/documentation/guides/compute/javascript/)を参照してください。
 
 ### テスト {#test}
 
@@ -209,7 +209,7 @@ Browser → AEM CDN (CDN Cache) → AEM Edge Functions (Fetch Cache) → Backend
 
 CDNとEdge関数の内部フェッチ キャッシュは独立して動作するため、基になるデータを変更するには、**両方** レイヤーを意図的に無効化する必要があります。 このアーキテクチャを理解することは、信頼性の高いキャッシュ管理に不可欠です。
 
-キャッシュ動作の設定、キャッシュの有効期間の制御、サロゲートキーの使用、キャッシュされたコンテンツのパージに関する詳細な技術的ガイダンスについては、[AEM Edge Functionsでのキャッシュ ](/help/implementing/developing/introduction/edge-functions-caching.md)を参照してください。
+キャッシュ動作の設定、キャッシュの有効期間の制御、サロゲートキーの使用、キャッシュされたコンテンツのパージに関する詳細な技術的ガイダンスについては、[AEM Edge Functionsでのキャッシュ &#x200B;](/help/implementing/developing/introduction/edge-functions-caching.md)を参照してください。
 
 ## 制限事項 {#limitations}
 
@@ -246,7 +246,7 @@ const response = await fetch(request, { backend: "my-origin-name" });
 
 >[!NOTE]
 >
->サービスストア （`configs`、`secrets`、および`kvs`）は、[ サンドボックスプログラム ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)では利用できません。 Edge機能サービス自体は、通常、サンドボックス環境で実行されます。ストアのみがプロビジョニングされません。
+>サービスストア （`configs`、`secrets`、および`kvs`）は、[&#x200B; サンドボックスプログラム &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)では利用できません。 Edge機能サービス自体は、通常、サンドボックス環境で実行されます。ストアのみがプロビジョニングされません。
 
 ### サービス設定 {#service-configuration}
 
