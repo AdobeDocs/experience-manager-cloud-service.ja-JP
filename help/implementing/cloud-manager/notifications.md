@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: b8faae6a4237bf7d564bf989b4e728342c7bd5fc
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 63%
+ht-degree: 55%
 
 ---
 
@@ -21,9 +21,9 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 [!UICONTROL Cloud Manager]は、実稼動パイプラインが開始され、実稼動デプロイメントの開始時に（正常または失敗して）完了したときに通知を送信します。
 
-これらの通知は、[!UICONTROL Experience Cloud] の通知システムを介して、**ビジネスオーナー**、**プログラムマネージャー**、**デプロイメントマネージャー**&#x200B;の役割のユーザーに送信されます。
+これらの通知は、[!UICONTROL CX Enterprise]通知システムを通じて、**ビジネスオーナー**、**プログラムマネージャー**、**デプロイメントマネージャー**&#x200B;の役割のユーザーに送信されます。
 
-通知は、[!UICONTROL Cloud Manager] のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 全体に表示されます。 ヘッダーのベルアイコンは、新しい通知がある場合にバッジが割り当てられます。
+通知は、[!UICONTROL Cloud Manager]内およびAdobe [!UICONTROL CX Enterprise]全体のサイドバーに表示されます。 ヘッダーのベルアイコンは、新しい通知がある場合にバッジが割り当てられます。
 
 ![通知アイコン](assets/notifications-bell-badged.png)
 
@@ -45,7 +45,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 通知の受信方法と受信する通知をカスタマイズできます。
 
-通知サイドバーの上部にある歯車アイコンをクリックして、**Experience Cloudの環境設定** ウィンドウを開きます。 ここから、通知サブスクリプションと通知の受信方法を定義できます。
+通知サイドバーの上部にある歯車アイコンをクリックして、**CX エンタープライズ環境設定** ウィンドウを開きます。 ここから、通知サブスクリプションと通知の受信方法を定義できます。
 
 ![通知設定アイコン](assets/notifications-configuration.png)
 
@@ -81,7 +81,7 @@ Cloud Manager による重要なイベントの通知方法を説明します。
 
 ### メール {#emails}
 
-Adobe [!UICONTROL Experience Cloud] ソリューションの web ユーザーインターフェイスで通知を確認できます。 また、これらの通知を「**メール**」セクションで、メールで送信するように選択することもできます。
+通知は、Adobe [!UICONTROL CX Enterprise] ソリューションのweb ユーザーインターフェイスで利用できます。 また、これらの通知を「**メール**」セクションで、メールで送信するように選択することもできます。
 
 ![通知メール](assets/notifications-emails.png)
 

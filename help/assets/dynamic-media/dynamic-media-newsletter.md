@@ -6,10 +6,10 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 99%
+source-wordcount: '1040'
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->月刊ニュースレターの提供は終了しました。ただし、以下のニュースレターアーカイブには引き続きアクセスできます。
+>月刊ニュースレターの提供は終了しました。 ただし、以下のニュースレターアーカイブには引き続きアクセスできます。
 
 Experience League 提供の Dynamic Media ニュースレターは、Dynamic Media および Dynamic Media Classic をユーザーがすばやく習得して価値の実現にすぐに着手できるようにすることを目的としていました。
 
-必要なものがすべて揃っているこのニュースレターで、ハウツービデオやソリューション概要など、知識構築のための有益なリソースを見つけることができます。また、画像プリセット、ビューアプリセット、ビデオプロファイルといった主要な機能の紹介も含まれています。
+必要なものがすべて揃っているこのニュースレターで、ハウツービデオやソリューション概要など、知識構築のための有益なリソースを見つけることができます。 また、画像プリセット、ビューアプリセット、ビデオプロファイルといった主要な機能の紹介も含まれています。
 
 <!--
  ## Get inspired. Stay informed.
@@ -70,7 +70,7 @@ Experience League 提供の Dynamic Media ニュースレターは、Dynamic Med
    * Dynamic Media の切り抜きマジックの使い方を知る
    * Dynamic Media Classic の価値を高めるために、アドビの無料監査を活用してください。
    * Dynamic Media Classic の新しいユーザーインターフェイスの説明
-   * `Georgia Myers` 氏（Adobe Experience Cloud カスタマーサクセス担当マネージャー）へのインタビュー
+   * Adobe CX Enterpriseのカスタマーサクセス担当マネージャー`Georgia Myers`にご相談ください。
 
 * **[2020 年 1 月、第 1 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=ja)**
 
@@ -158,7 +158,7 @@ Experience League 提供の Dynamic Media ニュースレターは、Dynamic Med
 
 * **[2019 年 4 月、第 04 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=ja)**
 
-  Dynamic Media ニュースレターの創刊号へようこそ。アドビの新しい月刊ニュースレターには、ニュース、イベント、リソースが多数掲載されています。コンテンツは、 Experience Manager Assets や Adobe Dynamic Media Classic の Dynamic Media ユーザーを対象としています。
+  Dynamic Media ニュースレターの創刊号へようこそ。 アドビの新しい月刊ニュースレターには、ニュース、イベント、リソースが多数掲載されています。 コンテンツは、 Experience Manager Assets や Adobe Dynamic Media Classic の Dynamic Media ユーザーを対象としています。
 
   この号の主な内容：
 
