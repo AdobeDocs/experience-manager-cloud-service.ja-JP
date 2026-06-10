@@ -4,12 +4,13 @@ description: Experience Modernization Consoleを使用してExperience Moderniza
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
+source-git-commit: c80a2ad29839eaf4d8ad940f9a90d8575e5230f1
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
+
 
 # AEM オーサリングプロジェクト用Experience Modernization Agentの概要 {#getting-started-aem-authoring}
 
@@ -57,8 +58,8 @@ ht-degree: 1%
 
 ## コンテンツを検証 {#validate-content}
 
-プレビューパネルで、選択したページのコンテンツを検証します。 エラーは、**エラー** ボタンをクリックすると表示されます。
-エージェントとのチャット会話を続行して、エラーを修正します。 **チャットに追加**&#x200B;機能を使用して、ページ、パーサーファイル、またはトランスフォーマーファイルの特定の要素に修正を適用します。
+コンテンツパネルのプレビューで、選択したページのコンテンツを検証します。エラーは、**エラー** ボタンをクリックすると表示されます。
+エージェントとのチャット会話を続行して、エラーを修正します。**チャットに追加**&#x200B;機能を使用して、ページ、パーサーファイル、またはトランスフォーマーファイルの特定の要素に修正を適用します。
 
 ![&#x200B; コンテキストチャット &#x200B;](assets/contextual-chat.png)
 
