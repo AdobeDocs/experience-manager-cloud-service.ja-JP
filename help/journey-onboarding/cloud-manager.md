@@ -4,10 +4,10 @@ description: プロジェクトリソースを設定するための Cloud Manage
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 90dcda6778ef3d3aca3163f649505902efeb2fd7
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 94%
+source-wordcount: '827'
+ht-degree: 92%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 94%
 
 ## 目的 {#objective}
 
-オンボーディングジャーニーの前の記事 [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)では、AEMaaCS チームに適切な役割を付与しました。ここでは、チームが使用するプロジェクトリソースを設定するための Cloud Manager にアクセスする方法について説明します。
+オンボーディングジャーニーの前の記事 [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](assign-profiles-cloud-manager.md)では、AEMaaCS チームに適切な役割を付与しました。 ここでは、チームが使用するプロジェクトリソースを設定するための Cloud Manager にアクセスする方法について説明します。
 
-ジャーニーの前の手順を完了したので、チームは Cloud Manager にアクセスできます。Cloud Manager を使用すると、プログラムや環境などのプロジェクトリソースの作成と管理を行えます。
+ジャーニーの前の手順を完了したので、チームは Cloud Manager にアクセスできます。 Cloud Manager を使用すると、プログラムや環境などのプロジェクトリソースの作成と管理を行えます。
 
 このドキュメントを読むと、次の点を理解できるようになります。
 
@@ -28,15 +28,15 @@ ht-degree: 94%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネントであり、チームにとって単一のエントリポイントとして機能します。専用の CI/CD パイプラインを構築して、お客様のエンタープライズ開発体制をサポートします。このパイプラインは、徹底したテストと最高のコード品質を確保し、優れたエクスペリエンスを提供するために備わっています。Cloud Manager は、クラウドのリソースや環境を作成する機能など、セルフサービス方式での作業を開始するために必要なものを提供します。
+Cloud Manager は、AEM as a Cloud Service に不可欠なコンポーネントであり、チームにとって単一のエントリポイントとして機能します。 専用の CI/CD パイプラインを構築して、お客様のエンタープライズ開発体制をサポートします。このパイプラインは、徹底したテストと最高のコード品質を確保し、優れたエクスペリエンスを提供するために備わっています。 Cloud Manager は、クラウドのリソースや環境を作成する機能など、セルフサービス方式での作業を開始するために必要なものを提供します。
 
-通常、**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられたグループメンバーは、プログラムや環境などのクラウドリソースの追加を担当します。この担当者は、ビジネスニーズを理解し、Cloud Manager の初期設定を実施します。
+通常、**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられたグループメンバーは、プログラムや環境などのクラウドリソースの追加を担当します。 この担当者は、ビジネスニーズを理解し、Cloud Manager の初期設定を実施します。
 
-このオンボーディングジャーニーの目的上、システム管理者は既に&#x200B;**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられており、クラウドリソースを設定できます。実際のプロジェクト要件に応じて、ビジネスオーナーはシステム管理者と同一人物の場合も別の人物の場合もあります。
+このオンボーディングジャーニーの目的上、システム管理者は既に&#x200B;**ビジネスオーナー**&#x200B;の製品プロファイルに割り当てられており、クラウドリソースを設定できます。 実際のプロジェクト要件に応じて、ビジネスオーナーはシステム管理者と同一人物の場合も別の人物の場合もあります。
 
 ## システム管理者およびビジネスオーナーとして Cloud Manager にアクセス {#access-sysadmin-bo}
 
-**ビジネスオーナー**&#x200B;の役割に割り当てたチームメンバーが Cloud Manager にアクセスし、クラウドリソースの作成を開始できるようにするには、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる必要があります。また、このオンボーディングジャーニーの前の手順と同様に、Cloud Manager にログインする必要があります。
+**ビジネスオーナー**&#x200B;の役割に割り当てたチームメンバーが Cloud Manager にアクセスし、クラウドリソースの作成を開始できるようにするには、システム管理者に&#x200B;**ビジネスオーナー**&#x200B;の役割を割り当てる必要があります。 また、このオンボーディングジャーニーの前の手順と同様に、Cloud Manager にログインする必要があります。
 
 1. システム管理者として、**ビジネスオーナー**&#x200B;の役割が割り当てられていることを確認します。
 
@@ -82,13 +82,13 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
 
 <!--
  OLD
-Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe CX Enterprise home page using these steps.
 
-1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
+1. Navigate directly to [Adobe CX Enterprise](https://experience.adobe.com) and login using your Adobe ID.
 
-1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
+1. From the Adobe CX Enterprise home page, select **Experience Manager** to open the AEM home page.
 
-   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
+   ![CX Enterprise homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
 1. On the **Cloud Manager** tile, select **Launch**.
 
@@ -139,7 +139,7 @@ Cloud Manager に正常にログインしたら、**ビジネスオーナー**&#
 
    ![ユーザーの役割のリスト](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Cloud Manager にビジネスオーナーとして正常にログインしました。**ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
+Cloud Manager にビジネスオーナーとして正常にログインしました。 **ビジネスオーナー**&#x200B;の役割を割り当てられていない場合は、システム管理者にお問い合わせください。
 
 ## 次の手順 {#whats-next}
 
@@ -151,7 +151,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
 オンボーディングジャーニーのコンテンツの範囲を超えた情報について詳しくは、次の追加のオプションリソースを参照してください。
 
-* [Cloud Manager の概要](/help/onboarding/cloud-manager-introduction.md) - 
+* [Cloud Managerの概要](/help/onboarding/cloud-manager-introduction.md) -
 Cloud Manager、Cloud Manager プログラム、環境について説明します。
 * [AEM as a Cloud Service のチームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md) - ライセンス取得済みのアドビソリューションに対するアクセスを AEM as a Cloud Service のチームおよび製品プロファイルで許可および制限する方法について説明します。
 <!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager UI](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Watch this video for an overview of Cloud Manager's UI from an AEM champion. -->
