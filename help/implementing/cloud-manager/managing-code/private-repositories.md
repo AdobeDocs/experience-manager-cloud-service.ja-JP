@@ -4,9 +4,9 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 18511b9e809cb4aa372fd04213d555dc669bbb0d
+source-git-commit: 01bd83a9285158ba2d3ce840bccf8bef1b1f37a8
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1082'
 ht-degree: 59%
 
 ---
@@ -18,44 +18,13 @@ ht-degree: 59%
 >[!IMPORTANT]
 >Cloud Managerは、リポジトリのホスト場所に応じて、次の2つの方法のいずれかでGitHub リポジトリの所有権を検証します。
 >
->* この手順のページは、`github.com`でホストされているGitHub Enterprise Cloud デプロイメントを含む、`github.com`でホストされているリポジトリに適用されます。 これらのリポジトリでは、Adobe GitHub アプリを使用して所有権を検証します。 Cloud Managerはアプリを通じて直接統合されるため、Webhookの設定は必要ありません。
+>* このページは、`github.com`でホストされているGitHub Enterprise Cloud デプロイメントを含む、`github.com`でホストされているリポジトリに適用されます。 これらのリポジトリでは、Adobe GitHub アプリを使用して所有権を検証します。 Cloud Managerはアプリを通じて直接統合されるため、Webhookの設定は必要ありません。
 >* 次のいずれかのリポジトリタイプを追加する場合は、[Cloud Managerでの外部リポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。 これらのリポジトリでは、PAT （個人アクセストークン）と手動で設定されたWebhookを使用して所有権を検証します。
 >
 >   * GitHub Enterprise Server （GitHubのセルフホスティング版）リポジトリ。
 >   * GitLab （`gitlab.com`とGitLabのセルフホスティング版の両方）リポジトリ。
 >   * Bitbucket （のみ`bitbucket.org`、クラウドバージョン） リポジトリ。 Bitbucketのセルフホスティング バージョンは、2024年2月15日（PT）をもって非推奨（廃止予定）となりました。
 >   * Azure DevOps （`dev.azure.com`） リポジトリ。
-
-<!--
->[!NOTE]
->
->You can also add the following repository types with webhooks:
->
->* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
->* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
->* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
->* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
->
->See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
--->
-
-<!--
- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
-
-* **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
-
-* **Customization and Autonomy**: Companies often prefer managing their own source code repositories for security, control, and integration purposes. "Build your own GitHub" allows organizations to maintain their internal development processes while leveraging the full functionality of Cloud Manager for building, testing, and deploying AEM (Adobe Experience Manager) applications.
-
-* **Simplified Workflow**: It reduces the overhead of synchronizing code between multiple repositories by allowing Cloud Manager to access the organization's private repository directly, making the development cycle faster and more efficient.
-
-* **CI/CD Pipelines**: Teams can still benefit from Adobe Cloud Manager's automated build, test, and deployment processes, as the integration allows the CI/CD pipelines to pull code from the organization's own GitHub repository.
-
-In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to manage their own GitHub repositories while still using the robust deployment and validation capabilities of Cloud Manager.
-
->[!NOTE]
->
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
--->
 
 ## 設定 {#configuration}
 
