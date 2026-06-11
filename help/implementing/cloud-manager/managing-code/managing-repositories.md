@@ -4,10 +4,10 @@ description: Cloud Manager で Git リポジトリを追加、表示および削
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2089473457cc2f8e4dc935dde40d075ec5b62011
+source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -83,7 +83,7 @@ Adobe以外でコードをホストする場合、使用する手順のページ
 
 **リポジトリ情報**&#x200B;ウィンドウが開き、詳細が表示されます。 リポジトリ情報へのアクセスについて詳しくは、[リポジトリ情報へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)を参照してください。
 
-## 分岐を確認 / プロジェクトを作成 {#check-branches}
+## ブランチの確認/プロジェクトの作成 {#check-branches}
 
 **AEM Cloud Manager** において、**分岐を確認／プロジェクトを作成**&#x200B;アクションは、リポジトリの現在の状態に応じて 2 つの目的を果たします。
 
@@ -92,7 +92,7 @@ Adobe以外でコードをホストする場合、使用する手順のページ
 
   ![分岐を確認アクション](assets/check-branches.png)
 
-## リポジトリ URL を作成 {#copy-url}
+## リポジトリ URL をコピー {#copy-url}
 
 **リポジトリ URL をコピー**&#x200B;アクションでは、**リポジトリ**&#x200B;ページで選択したリポジトリの URL を、他の場所で使用できるようクリップボードにコピーします。
 
