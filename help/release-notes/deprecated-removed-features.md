@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4942d2acaa59ec0a5b8c4e7b8a0ea5d29995cea6
+source-git-commit: d3133acd35ffe533a4bd0014d106b8978953296d
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 71%
@@ -31,12 +31,12 @@ ht-degree: 71%
 
 >[!IMPORTANT]
 >
->[非推奨のAPI](#aem-apis)が&#x200B;**2026年6月11日**&#x200B;に削除されます。 以下の重要な日付と影響を確認してください。
+>一部の[非推奨のAPI](#aem-apis)は、**2026年7月23日**&#x200B;に削除されます。 以下の重要な日付と影響を確認してください。
 >
 >* **2026年1月26日以降**: パイプラインが最近実行された場合、これらのAPIの使用を削除するためのリマインダーとして、アクション センターの通知メールが送信されます。
 >* **2026年2月26日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**一時停止**&#x200B;します。 デプロイメントマネージャー、プロジェクトマネージャー、ビジネスオーナーは、問題を上書きして、パイプラインを続行できます。 *コードの変更を検証およびリリースする機能が遅くなる可能性があります。*
 >* **2026年4月14日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**失敗**&#x200B;します。 非推奨のAPI使用が削除されるまで、デプロイメントはブロックされます。 *これにより、時間の制約を受ける更新プログラムをリリースできなくなり、ビジネス運営に影響を与える可能性があります。*
->* **2026年6月11日**：まだ非推奨のAPI **を使用している環境では、Adobeの重要なリリースアップデート**&#x200B;を受け取ることができず、パフォーマンスと可用性に関するAdobeの標準的なコミットメントの対象にはなりません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。 Adobe リリースの更新を再度受け取るには、フルスタックパイプラインを正常に実行する必要があります。その後、更新は数日以内に適用されます。
+>* **2026年7月23日**：非推奨のAPI **を使用している環境では、Adobeの重要なリリースアップデート**&#x200B;を受け取ることができず、パフォーマンスと可用性に関するAdobeの標準的なコミットメントの対象にはなりません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。 Adobe リリースの更新を再度受け取るには、フルスタックパイプラインを正常に実行する必要があります。その後、更新は数日以内に適用されます。
 >
 
 ## 非推奨の機能 {#deprecated-features}
@@ -87,12 +87,12 @@ ht-degree: 71%
 
 >[!IMPORTANT]
 >
->[非推奨のAPI](#aem-apis)が&#x200B;**2026年6月11日**&#x200B;に削除されます。 以下の重要な日付と影響を確認してください。
+>一部の[非推奨のAPI](#aem-apis)は、**2026年7月23日**&#x200B;に削除されます。 以下の重要な日付と影響を確認してください。
 >
 >* **2026年1月26日以降**：アクション センターの通知メールは、これらのAPIの使用を削除するためのリマインダーとして送信されます。
 >* **2026年2月26日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**一時停止**&#x200B;します。 デプロイメントマネージャー、プロジェクトマネージャー、ビジネスオーナーは、問題を上書きして、パイプラインを続行できます。 *コードの変更を検証およびリリースする機能が遅くなる可能性があります。*
 >* **2026年4月14日**：これらのAPIを使用するコードを含むCloud Manager パイプラインは、**コード品質**&#x200B;の手順で&#x200B;**失敗**&#x200B;します。 非推奨のAPI使用が削除されるまで、デプロイメントはブロックされます。 *これにより、時間の制約を受ける更新プログラムをリリースできなくなり、ビジネス運営に影響を与える可能性があります。*
->* **2026年6月11日**：まだ非推奨のAPI **を使用している環境では、Adobeの重要なリリースアップデート**&#x200B;を受け取ることができず、パフォーマンスと可用性に関するAdobeの標準的な取り組みの対象にはなりません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。
+>* **2026年7月23日**：まだ非推奨のAPI **を使用している環境では、Adobeの重要なリリースアップデート**&#x200B;を受け取ることができず、パフォーマンスと可用性に関するAdobeの標準的なコミットメントの対象にはなりません。 その結果、新しい機能やバグ修正が提供されず、アプリケーションの安定性とアップタイムが悪影響を受ける可能性があり、セキュリティリスクにさらされる可能性があります。
 >
 
 <details>
@@ -248,7 +248,7 @@ ht-degree: 71%
     <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language 0&rbrace;org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.apache parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.parser.dwg<br>org.apache.tika.parser.envi{33.org.apache .parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazeter}org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.parser.parser.istc<br>org.apache.apache.parser.parser.parser atab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat{56.aporache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>aporache .tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.mitie<br>org.apache.partika.parser.parser ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pdf}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.センチメント<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.parser.xml<br>org.apache.tika.sax<br>org.aptika.apache.3path org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br><br><br><br><br><br><br></td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language 0}org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.apache parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.parser.dwg<br>org.apache.tika.parser.envi{33.org.apache .parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazeter}org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.parser.parser.istc<br>org.apache.apache.parser.parser.parser atab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat{56.aporache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>aporache .tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.mitie<br>org.apache.partika.parser.parser ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pdf}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.センチメント<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.parser.xml<br>org.apache.tika.sax<br>org.aptika.apache.3path org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br><br><br><br><br><br><br></td>
     <td>このバージョンのApache Tikaは古くなっているため、Cloud Serviceから削除されます。 新しいバージョンのApache Tikaに切り替えます。</td>
     <td>4/30/2026</td>
     <td>9/30/2026</td>
@@ -391,7 +391,7 @@ ht-degree: 71%
 
 この節では、上記の表に示した様々な API の API 削除ガイダンスを反映しています。
 
-コードで使用している非推奨のJava APIを特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)をMaven プロジェクトに統合し、ローカルで実行します。 このレポートには、検出された非推奨のAPI使用状況がすべて一覧表示され、各APIを参照しているOSGi バンドルが示されます。 Maven プラグインの使用方法については、[このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)を参照してください。
+コードで使用している非推奨のJava APIを特定するには、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)をMaven プロジェクトに統合し、ローカルで実行します。 このレポートには、検出された非推奨のAPI使用状況がすべて一覧表示され、各APIを参照しているOSGi バンドルが示されます。 Maven プラグインの使用方法については、[このチュートリアル ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)を参照してください。
 
 非推奨（廃止予定）のAPIはすべて時間の経過とともに修正する必要がありますが、非推奨（廃止予定）のAPI テーブルにリストされているAPIは、Targetの削除日が2026年2月26日（またはそれ以前）の状態で優先順位付けしてください。 AEM Analyzer レポートでは、これらのAPIは2025年8月31日の有効削除日で表示される場合があります。
 
@@ -405,7 +405,7 @@ ht-degree: 71%
 
 非推奨APIの独自のバージョン（Guavaなど）をデプロイする場合は、このAPIを使用するすべてのバンドルがバージョンに接続されていることを確認してください。 現在Cloud Serviceに含まれているメジャーバージョンと同じメジャーバージョンをデプロイする場合は、それ以上の操作は必要ありません。 ただし、推奨事項に従って最新バージョンをデプロイする場合は、Maven プロジェクトを調整する必要があります。そのライブラリを`aem-sdk-api`の前に新しい依存関係として含めてください。 この方法で、コードは新しいバージョンに接続されます。 変更を行ったら、[AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)で、非推奨APIの使用にフラグが付けられていないことを確認します。
 
-ACS AEM Commonsを使用している場合は、少なくともバージョン 6.17.2 （最新バージョンをお勧めします）を使用し、コンテンツパッケージに分類子`cloud`を指定して、Cloud Service[&#128279;](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)のバージョンを必ず含めてください。
+ACS AEM Commonsを使用している場合は、少なくともバージョン 6.17.2 （最新バージョンをお勧めします）を使用し、コンテンツパッケージに分類子`cloud`を指定して、Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html)のバージョンを[必ず含めてください。
 
 非推奨APIの読み込みが`optional`とマークされている場合でも、これを削除してみてください。 ただし、このようなオプションの使用は、デプロイメントをブロックしません。 ただし、オプションのインポートが満たされなくなると、デプロイメントが影響を受ける可能性があります。
 
