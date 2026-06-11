@@ -63,7 +63,7 @@ AEM 全体における生成 AI の使用用途は、以下のとおりです。
 
   AI翻訳の統合により、Adobe Experience Managerでオーサリングするコンテンツの翻訳サービスとして大規模言語モデル（LLM）を使用できます。 AEMをLLM プロバイダー（Microsoft Azure OpenAI以降）に接続し、他のコネクタと同じ翻訳ワークフローを再利用し、オプションで翻訳スタイルガイドをアップロードすることで、AEMがロケールをまたいでトーン、用語、ブランド言語の一貫性を維持するルールを生成できるようにします。
 
-* [AEM Content AI](https://experienceleague.adobe.com/en/docs/experience-manager-content-ai/using/introduction)
+* [AEM Content AI](https://experienceleague.adobe.com/ja/docs/experience-manager-content-ai/using/introduction)
 
   AEM Content AIは、AI システムによってメッセージが表現されるようになりつつある中、企業が正確かつ最新のブランド基準に即したコンテンツを維持するのに役立ちます。これにより、AIを活用したオーサリング、自然言語によるコンテンツの発見、人間とAIの両方の体験に対するブランド認知の向上を実現できます。
 
