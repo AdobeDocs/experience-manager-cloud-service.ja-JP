@@ -4,9 +4,9 @@ description: 独自のプライベート GitHub リポジトリを操作する C
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36142c0569da782e12adbea9f36a44734a93aaf
+source-git-commit: 20e86bf332ee7a753287ac738dc090c771f444ea
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1106'
 ht-degree: 75%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 プライベート GitHub Cloud（`github.com` でホストされているリポジトリ）と統合するように Cloud Manager を設定すると、Cloud Manager を使用して GitHub 内で直接コードを検証できます。 この設定により、コードを Adobe リポジトリと定期的に同期する必要がなくなります。
 
-Cloud Managerは、リポジトリのホスト場所に応じて、2つの方法のいずれかでGitHub リポジトリの所有権を検証します。
+Cloud Managerは、リポジトリのホスト場所に応じて、次の2つの方法のいずれかでGitHub リポジトリの所有権を検証します。
 
 * `github.com`でホストされているGitHub Enterprise Cloud デプロイメントを含む`github.com`のリポジトリでは、Adobe GitHub アプリを使用します。 このページでは、その方法について説明します。
 * GitHub Enterprise Server （セルフホスト）リポジトリでは、PAT （個人アクセストークン）とWebhookを使用します。 [Cloud Manager でのプライベートリポジトリの追加](/help/implementing/cloud-manager/managing-code/external-repositories.md)を参照してください。
