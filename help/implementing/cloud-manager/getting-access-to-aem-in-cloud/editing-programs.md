@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ae77b2c9cff253749578127827a12e8483aaf7f
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 22%
+source-wordcount: '1324'
+ht-degree: 20%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 22%
 
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。 プログラムを編集すると、次の操作を実行できます。
 
+* 「**セキュリティ**」タブの&#x200B;**WAF-DDOS Protection**&#x200B;を有効または無効にします。
 * Adobe Experience Manager SitesをAssetsの既存のプログラムに追加し、Adobe Experience Manager Sitesの既存のプログラムにAssetsを追加します。
 * SitesとAssetsの両方を持つ既存のプログラムから、SitesまたはAssetsを削除します。
 * 使用されていないソリューションの使用権限を既存のプログラムに追加するか、新しいプログラムを作成する。
@@ -49,10 +50,23 @@ ht-degree: 22%
    ![「一般」タブ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    プログラムの編集に使用できるオプションは、プログラムの作成のオプションと同じです。
+
+   * 「**セキュリティ**」タブで、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にできます。
+
+     >[!NOTE]
+     >
+     >Web Application Firewall （WAF）を有効または無効にするには、同じ「セキュリティ」タブで「**WAF-DDOS Protection**」チェックボックスをオンまたはオフにします。 WAF ルールがライセンスされていても、このチェックボックスがオンになっていない場合、この機能は有効ではなく、その保護は適用されません。 詳しくは、「[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)」を参照してください。
+     >
+     >この機能がアクティブであることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 例：
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブになると表示されます。
+
    * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
    * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
    * [組織の使用権限に応じて、実稼動プログラムに追加のオプション &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)を使用できます。
-   * 「**セキュリティ**」タブでは、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にすることもできます。
+
 
    ![&#x200B; プログラムを編集ダイアログボックスに、選択した顧客管理キーが表示されている](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
 

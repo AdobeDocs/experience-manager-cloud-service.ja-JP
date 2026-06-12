@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2503863e0c146f86bb158c411ea5b7bb47033a3e
+source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 55%
+source-wordcount: '1792'
+ht-degree: 51%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 55%
 
 ![セキュリティオプション](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security-tab.png)
 
-「**セキュリティ**」タブには、実稼動プログラム用の **HIPAA** か **WAF-DDOS 保護**&#x200B;のどちらか一方または両方をアクティブにするオプションが表示されます。
+「**セキュリティ**」タブには、実稼動プログラム用に&#x200B;**HIPAA**、**WAF-DDOS Protection**、またはその両方、および&#x200B;**Customer Managed Keys**&#x200B;をアクティブ化するためのオプションが用意されています。
 
 アドビの HIPAA 準拠の WAF-DDOS（web アプリケーションファイアウォール - 分散型サービス拒否）により、脆弱性から保護するための多層アプローチの一環としてクラウドベースのセキュリティが促進されます。
 
@@ -117,7 +117,17 @@ ht-degree: 55%
    * プログラムの作成後に HIPAA を有効または無効にすることはできません。
 * **WAF-DDOS Protection** – このオプションを使用すると、ルールを通じてWeb Application Firewallを有効にして、アプリケーションを保護できます。
    * 有効化されると、WAF-DDOS 保護は、[実稼動以外のパイプライン](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)で設定できます。
-   * リポジトリでトラフィックフィルタールールを管理し、適切にデプロイする方法について詳しくは、[WAF ルールを含むトラフィックフィルタールール](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
+
+     >[!NOTE]
+     >
+     >**WAF-DDOS Protection**&#x200B;をオンにすると、この機能が有効になりますが、ライセンス済みのWAF ルールでは、チェックボックスをオンにした後にのみ保護が提供されます。 リポジトリ内のトラフィックフィルタールールを適切にデプロイできるように管理する方法については、[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
+     >
+     >この機能がアクティブであることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 例：
+     >
+     >`"rules": "waf=SQLI"`
+     >
+     >この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブになると表示されます。
+
 * **顧客管理キー** – このオプションを使用すると、プログラムのCMK （顧客管理キー）がアクティブ化され、Azure Blob StorageおよびMongoDBに保存されているデータに独自の暗号化キーを指定できます。 選択した場合は、後で[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を行うことでCMKを有効にできます。
 
    * CMKは、Cloud Service プログラムでのみ使用できます。 サンドボックスプログラムでは有効にできません。
