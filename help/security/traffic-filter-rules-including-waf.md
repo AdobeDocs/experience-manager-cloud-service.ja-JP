@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 70%
 >リクエスト/レスポンスの編集、リダイレクトの宣言、AEM以外のオリジンへのプロキシなど、その他のCDN トラフィック設定オプションについては、「[CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) トラフィックの設定」を参照してください。
 
 
-## この記事の編成方法 {#how-organized}
+## この記事の編集方法 {#how-organized}
 
 この記事は、次の節で構成されています。
 
@@ -170,7 +170,7 @@ data:
 | **block** | `status, wafFlags`（任意、相互に排他的）、`alert`（任意） | wafFlags が存在しない場合、他のすべてのプロパティをバイパスする HTTP エラーを返します。エラーコードは status プロパティによって定義されるか、デフォルトの 406 となります。 wafFlags が存在する場合は、指定された WAF 保護を有効にし、さらにルール処理を続行します。 <br>アラートを指定した場合、ルールが 5 分間に 10 回トリガーされると、アクションセンター通知が送信されます。 特定のルールに対してアラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。 |
 | **log** | `wafFlags`（任意）、`alert`（任意） | ルールがトリガーされたことをログに記録します。トリガーされていない場合、処理に影響は及びません。 wafFlags は影響を受けません。 <br>アラートを指定した場合、ルールが 5 分間に 10 回トリガーされると、アクションセンター通知が送信されます。 特定のルールに対してアラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。 |
 
-### WAF フラグリスト {#waf-flags-list}
+### WAFのフラグ一覧 {#waf-flags-list}
 
 ライセンス可能なWAF トラフィックフィルタールールで使用される`wafFlags` プロパティは、次を参照します。
 
@@ -190,7 +190,7 @@ data:
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻撃では、Log4J バージョン 2.16.0 より前の [Log4Shell 脆弱性](https://ja.wikipedia.org/wiki/Log4Shell)を悪用しようと試みます |
 | CVE | CVE | CVE を識別するフラグ。 常にフラグ `CVE-<CVE Number>` と組み合わせます。 アドビが保護する CVE について詳しくは、アドビにお問い合わせください。 |
 
-#### 不審なトラフィック
+#### 疑わしいトラフィック
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
@@ -210,7 +210,7 @@ data:
 | PRIVATEFILE | プライベートファイル | プライベートファイルは、Apache `.htaccess` ファイルや、機密情報の漏洩につながる可能性のある設定ファイルなど、本来、部外秘のものです。 |
 | スキャナー | スキャナー | 一般に使用されるスキャンサービスおよびツールを指定します。 |
 
-#### その他のトラフィック
+#### その他の交通
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
@@ -361,7 +361,7 @@ data:
 
 レート制限は、エッジに到達するトラフィック、接触チャネルに到達するトラフィック、またはエラーの数に基づいて評価されます。
 
-### rateLimit の構造 {#ratelimit-structure}
+### rateLimit構造体 {#ratelimit-structure}
 
 | **プロパティ** | **タイプ** | **デフォルト** | **意味** |
 |---|---|---|---|
@@ -454,7 +454,7 @@ data:
           alert: true
 ```
 
-## 接触チャネルでのトラフィックスパイクを示すデフォルトアラート {#traffic-spike-at-origin-alert}
+## 発信元でのデフォルトのトラフィックスパイクの警告 {#traffic-spike-at-origin-alert}
 
 同じIP アドレスからの高トラフィックがオリジンに達すると、[&#x200B; アクション センター](/help/operations/actions-center.md)のメール通知で警告が表示され、DDoS攻撃が疑われます。
 
