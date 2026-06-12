@@ -72,7 +72,7 @@ Adobe以外でコードをホストする場合、使用する手順のページ
 | --- | --- | --- |
 | `github.com` （Free、Pro、Team、Enterprise Cloudなどの任意のGitHub プラン） | Adobe GitHub アプリとシークレットファイル。 Webhookは必要ありません。 | [Cloud Managerでプライベート GitHub リポジトリを追加](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server （セルフホスト） | 個人アクセストークンとWebhook | [Cloud Managerで外部リポジトリを追加](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
-| GitLab、Bitbucket、またはAzure DevOps | 個人アクセストークンとWebhook | [Cloud Managerで外部リポジトリを追加](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
+| GitLab、Bitbucket、またはAzure DevOps | 個人アクセストークンとWebhook | [Cloud Managerで外部リポジトリを追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
 
 ## リポジトリ情報へのアクセス {#repo-info}
