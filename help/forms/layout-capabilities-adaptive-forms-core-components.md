@@ -1,6 +1,6 @@
 ---
 title: コアコンポーネントに基づくアダプティブFormsのレイアウト機能は何ですか？
-description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
+description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。 各種レイアウトとレイアウトの適用方法について説明します。
 feature: Adaptive Forms, Core Components
 keywords: コアコンポーネントに基づくアダプティブフォームのレイアウト、フォームのさまざまなレイアウト、ダイナミックフォームレイアウト AEM、AEM Cloud Service フォームレイアウト、AEM コアコンポーネントのフォームレイアウトタイプ、アダプティブフォームレイアウト
 role: User, Developer, Admin
@@ -8,8 +8,8 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 21%
+source-wordcount: '2276'
+ht-degree: 25%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 21%
 
 ## AEM Formsは、マルチステップの保険金請求フォームに対応していますか？
 
-はい。AEM Formsは、条件付きロジックを使用したガイド付きマルチステップのアダプティブフォームをサポートしています。これにより、保険会社は請求内容の種類とコンテキストに基づいて、請求情報を段階的に収集できます。
+はい。 AEM Formsは、条件付きロジックを使用したガイド付きマルチステップのアダプティブフォームをサポートしています。これにより、保険会社は請求内容の種類とコンテキストに基づいて、請求情報を段階的に収集できます。
 
 ## お客様は、AEM Formsを使用して請求書類を安全にアップロードできますか？
 
-はい。AEM Formsは、フォーム送信の一部として安全なドキュメントのアップロードをサポートしています。エンタープライズのセキュリティ要件に合わせて、アクセス制御と安全なデータ処理を行うことができます。
+はい。 AEM Formsは、フォーム送信の一部として安全なドキュメントのアップロードをサポートしています。エンタープライズのセキュリティ要件に合わせて、アクセス制御と安全なデータ処理を行うことができます。
 
 
 ## アダプティブFormsのレイアウトタイプ
@@ -53,23 +53,23 @@ ht-degree: 21%
 
 >[!TAB パネルレイアウト]
 
-パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。パネルレイアウトは、アダプティブフォーム内の個別のセクションまたはパネル内にフォームコンポーネントを配置します。
+パネルレイアウトは、関連するフィールドを整理して、対応するコンテンツを簡単に移動および検索するのに役立ちます。 パネルレイアウトは、アダプティブフォーム内の個別のセクションまたはパネル内にフォームコンポーネントを配置します。
 
 ![パネルレイアウト](/help/forms/assets/panel-layout.png)
 
 パネルレイアウト
 
-[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)を使用して、フォームにパネルレイアウトをフォームに追加できます。パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)の記事を参照してください。
+[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)を使用して、フォームにパネルレイアウトをフォームに追加できます。 パネルコンポーネントの様々なプロパティを設定する方法について詳しくは、[パネルコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)の記事を参照してください。
 
 >[!TAB ウィザードレイアウト]
 
-ウィザードレイアウトは、複雑なフォームを明確な手順に分割して簡素化するのに役立ちます。各ステップはプロセスの異なる部分を表し、ユーザーは&#x200B;**次** ボタンと&#x200B;**前** ボタンを使用して順にステップを進みます。 ウィザードレイアウトを使用して、複数のセクションや手順を含むフォームを作成できます。
+ウィザードレイアウトは、複雑なフォームを明確な手順に分割して簡素化するのに役立ちます。 各ステップはプロセスの異なる部分を表し、ユーザーは&#x200B;**次** ボタンと&#x200B;**前** ボタンを使用して順にステップを進みます。 ウィザードレイアウトを使用して、複数のセクションや手順を含むフォームを作成できます。
 
 ![ウィザードレイアウト](/help/forms/assets/wizard-layout-compare.gif)
 
 ウィザードレイアウト
 
-[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)を使用して、フォームにウィザードレイアウトを追加できます。ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)の記事を参照してください。
+[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)を使用して、フォームにウィザードレイアウトを追加できます。 ウィザードコンポーネントの様々なプロパティを設定する方法について詳しくは、[ウィザードコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)の記事を参照してください。
 
 >[!TAB 縦組みタブのレイアウト ]
 
@@ -96,13 +96,13 @@ ht-degree: 21%
 
 >[!TAB アコーディオンレイアウト]
 
-アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみが可能なセクションまたはパネルにコンテンツが表示されます。セクションを展開すると、そのセクション内のコンテンツが表示されますが、他のセクションは折りたたまれたままになります。このレイアウトは、大量の情報をコンパクトなフォームで表示する場合に最適です。
+アコーディオンレイアウトでは、アダプティブフォーム内の折りたたみが可能なセクションまたはパネルにコンテンツが表示されます。 セクションを展開すると、そのセクション内のコンテンツが表示されますが、他のセクションは折りたたまれたままになります。 このレイアウトは、大量の情報をコンパクトなフォームで表示する場合に最適です。
 
 ![アコーディオンレイアウト](/help/forms/assets/accordion-layout-compare.gif)
 
 アコーディオンレイアウト
 
-[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)を使用して、フォームにアコーディオンレイアウトを追加できます。アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)の記事を参照してください。
+[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)を使用して、フォームにアコーディオンレイアウトを追加できます。 アコーディオンコンポーネントの様々なプロパティを設定する方法について詳しくは、[アコーディオンコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)の記事を参照してください。
 
 >[!ENDTABS]
 
@@ -127,7 +127,7 @@ ht-degree: 21%
 
 ![&#x200B; レイアウトとフォームコンポーネントを追加するワークフロー](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-「**アダプティブ Forms レイアウトの種類**」セクションに表示されている[IT リクエストフォーム &#x200B;](#adaptive-forms-layout-types)を検討してください。 このフォームは、ネットワークまたはノートパソコンに関連する技術的な問題を経験している従業員から情報を収集します。 3つのパネルが含まれています。
+「[&#x200B; アダプティブ Forms レイアウトの種類](#adaptive-forms-layout-types)」セクションに表示されている&#x200B;**IT リクエストフォーム**&#x200B;を検討してください。 このフォームは、ネットワークまたはノートパソコンに関連する技術的な問題を経験している従業員から情報を収集します。 3つのパネルが含まれています。
 
 * **従業員の詳細**: パネルには、従業員に関する情報が収集され、「名前」、「電子メール ID」、「部署」というラベルの3つのテキストボックスが含まれています。
 
@@ -137,7 +137,7 @@ ht-degree: 21%
 
 レイアウトを挿入してコンポーネントを追加する手順を見てみましょう。 この例では、水平タブレイアウトがフォームに挿入されています。
 
-### &#x200B;1. レイアウトコンポーネントをフォームに挿入する
+### &#x200B;1. レイアウトコンポーネントのフォームへの挿入
 
 1. [!DNL Experience Manager Forms] インスタンスにログインします。
 1. 左上隅で、**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Formsとドキュメント]**&#x200B;を選択します。
@@ -150,7 +150,7 @@ ht-degree: 21%
 1. フォームビルダー内で、レイアウトを追加できるセクションを探します。
 
    ![&#x200B; フォームビルダー](/help/forms/assets/form-editor.png)
-1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
+1. **追加**&#x200B;アイコンをクリックします。 アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
 
    ![&#x200B; レイアウトを挿入](/help/forms/assets/insert-layout-add-icon.png)
 
@@ -236,7 +236,7 @@ ht-degree: 21%
 -->
 
 1. コンポーネントを追加できるセクションをパネル内で探します。
-1. **追加**&#x200B;アイコンをクリックします。アイコンはプラス記号（+）で、新しいコンポーネントを追加するオプションを示します。
+1. 「**追加**」アイコンをクリックします。アイコンは、新しいコンポーネントを追加するオプションを示すプラス記号（+）です。
    ![&#x200B; レイアウトを挿入](/help/forms/assets/tabs-on-top-add-component.png)
 
    **追加**&#x200B;アイコンをクリックすると、**新規コンポーネントを挿入**&#x200B;ダイアログボックスが表示され、挿入する様々なコンポーネントが表示されます。
@@ -244,7 +244,7 @@ ht-degree: 21%
    ![新しいコンポーネントダイアログボックスを挿入](/help/forms/assets/insert-new-component.png)
 
 1. 表示されるダイアログボックスで使用可能なコンポーネントを参照し、目的のコンポーネントを選択します。 この場合は、テキストボックスコンポーネントを選択します。
-1. 追加したコンポーネントのプロパティを開き、名前を指定します。 追加したテキストボックスコンポーネントのプロパティを編集し、名前を指定します。
+1. 追加したコンポーネントのプロパティを開き、名前を指定します。追加したテキストボックスコンポーネントのプロパティを編集し、名前を指定します。
    ![&#x200B; レイアウトを挿入](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. 同様に、さらに2つのテキストボックスコンポーネントと名前を追加し、コンポーネントをメール IDと部署として追加しました。\
    ![最初のパネル &#x200B;](/help/forms/assets/tabs-on-tops-first-panel.png)
