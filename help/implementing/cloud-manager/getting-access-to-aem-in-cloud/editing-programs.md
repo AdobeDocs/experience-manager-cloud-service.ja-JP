@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
+source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -17,8 +17,8 @@ ht-degree: 20%
 
 プログラムを管理および編集するには、[**マイプログラム**&#x200B;コンソール](/help/implementing/cloud-manager/navigation.md)から開始します。 **マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。 個々のプログラムを選択すると、**プログラムの概要** ページにプログラムの詳細の概要が表示されます。
 
-
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。 プログラムを編集すると、次の操作を実行できます。
+
 
 * 「**セキュリティ**」タブの&#x200B;**WAF-DDOS Protection**&#x200B;を有効または無効にします。
 * Adobe Experience Manager SitesをAssetsの既存のプログラムに追加し、Adobe Experience Manager Sitesの既存のプログラムにAssetsを追加します。
