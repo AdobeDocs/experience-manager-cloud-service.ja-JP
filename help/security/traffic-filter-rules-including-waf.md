@@ -4,10 +4,10 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d1f3c63c50368dffb2ff5c41c401a5b050495cdd
+source-git-commit: 199c11b6f6655f9a0c790501b0aa554119ea0998
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 70%
 
 これらのトラフィックフィルタールールの多くは、AEM as a Cloud Service Sites および Forms のすべてのお客様が利用できます。 *標準トラフィックフィルタールール*&#x200B;として、IP、ホスト名、パス、ユーザーエージェントなどのリクエストプロパティで動作します。 標準トラフィックフィルタールールには、トラフィックスパイクを防ぐためのレート制限ルールが含まれます。
 
-トラフィックフィルタールールのサブカテゴリには、Extended Security （旧称WAF-DDoS Protection）またはExtended Security for Healthcare （旧称Enhanced Security）ライセンスが必要です。 これらの強力なルールは、WAF（Web Application Firewall）トラフィックフィルタールール（または&#x200B;*WAF ルール*）と呼ばれ、この記事で後述する[WAF フラグ &#x200B;](#waf-flags-list)にアクセスできます。
+トラフィックフィルタールールのサブカテゴリには、Extended Security （旧称WAF-DDoS Protection）またはExtended Security for Healthcare （旧称Enhanced Security）ライセンスが必要です。 これらの強力なルールは、WAF（Web Application Firewall）トラフィックフィルタールール（または&#x200B;*WAF ルール*）と呼ばれ、この記事で後述する[WAF フラグ ](#waf-flags-list)にアクセスできます。
 
 トラフィックフィルタールールは、Cloud Manager 設定パイプラインを通じて、開発環境、ステージ環境および本番環境のタイプにデプロイできます。 設定ファイルは、コマンドラインツールを使用して高速開発環境（RDE）にデプロイできます。
 
-この機能に関する専門知識をすばやく得るには、[&#x200B; チュートリアルを完了](#tutorial)します。
+この機能に関する専門知識をすばやく得るには、[ チュートリアルを完了](#tutorial)します。
 
 >[!NOTE]
 >リクエスト/レスポンスの編集、リダイレクトの宣言、AEM以外のオリジンへのプロキシなど、その他のCDN トラフィック設定オプションについては、「[CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) トラフィックの設定」を参照してください。
 
 
-## この記事の編成方法 {#how-organized}
+## この記事の編集方法 {#how-organized}
 
 この記事は、次の節で構成されています。
 
@@ -59,9 +59,9 @@ ht-degree: 70%
 
 顧客は、コンテンツ配信フローの様々なレイヤーでルールを設定することで、アプリケーションレイヤーの攻撃（レイヤー7）を軽減するための積極的な対策を講じます。
 
-例えば、Apache レイヤーでは、特定のコンテンツへのアクセスを制限するために、[Dispatcher モジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)または[ModSecurity](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection)のいずれかを設定します。
+例えば、Apache レイヤーでは、特定のコンテンツへのアクセスを制限するために、[Dispatcher モジュール ](https://experienceleague.adobe.com/ja/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)または[ModSecurity](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection)のいずれかを設定します。
 
-この記事で説明しているように、トラフィックフィルタールールは、Cloud Managerの[設定パイプライン &#x200B;](/help/operations/config-pipeline.md)を使用してAdobe Managed CDNにデプロイされます。 *標準トラフィックフィルタールール* （IP、パス、ヘッダー、レート制限）を超えると、お客様は&#x200B;*WAF ルール*&#x200B;のライセンスを取得します。
+この記事で説明しているように、トラフィックフィルタールールは、Cloud Managerの[設定パイプライン ](/help/operations/config-pipeline.md)を使用してAdobe Managed CDNにデプロイされます。 *標準トラフィックフィルタールール* （IP、パス、ヘッダー、レート制限）を超えると、お客様は&#x200B;*WAF ルール*&#x200B;のライセンスを取得します。
 
 ## 推奨プロセス {#suggested-process}
 
@@ -108,9 +108,9 @@ ht-degree: 70%
 
    1. 新しいプログラムでWAFを設定するには、[実稼動プログラムを作成する](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)際に&#x200B;**セキュリティ** タブの&#x200B;**WAF-DDOS Protection** チェックボックスをオンにします。
 
-   1. 既存のプログラムでWAFを設定するには、[&#x200B; プログラムを編集します](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。 「**セキュリティ**」タブで、**WAF-DDOS Protection** オプションをオンにして機能を有効にするか、オフにして機能を無効にします。 この設定はいつでも変更できます。
+   1. 既存のプログラムでWAFを設定するには、[ プログラムを編集します](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。 「**セキュリティ**」タブで、**WAF-DDOS Protection** オプションをオンにして機能を有効にするか、オフにして機能を無効にします。 この設定はいつでも変更できます。
 
-      機能を有効にした後に&#x200B;*アクティブ*&#x200B;であることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 次に例を示します。
+      機能を有効にした後に&#x200B;*アクティブ*&#x200B;であることを確認するには、トラフィックがサイトに流れたら、[CDN ログ ](#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 次に例を示します。
 
       `"rules": "waf=SQLI" `
 
@@ -122,7 +122,7 @@ ht-degree: 70%
 
 IP、ユーザーエージェント、ヘッダー、ホスト名、地域、URLなどのパターンを一致させるには、*トラフィックフィルタールール*&#x200B;を設定できます。
 
-Extended SecurityまたはExtended Security for Healthcare ライセンスをお持ちのお客様は、*WAF ルール*&#x200B;を設定して、[WAF フラグ &#x200B;](#waf-flags-list)を参照してください。
+Extended SecurityまたはExtended Security for Healthcare ライセンスをお持ちのお客様は、*WAF ルール*&#x200B;を設定して、[WAF フラグ ](#waf-flags-list)を参照してください。
 
 WAF ルールも含む一連のトラフィックフィルタールールの例を以下に示します。
 
@@ -170,7 +170,7 @@ data:
 | **block** | `status, wafFlags`（任意、相互に排他的）、`alert`（任意） | wafFlags が存在しない場合、他のすべてのプロパティをバイパスする HTTP エラーを返します。エラーコードは status プロパティによって定義されるか、デフォルトの 406 となります。 wafFlags が存在する場合は、指定された WAF 保護を有効にし、さらにルール処理を続行します。 <br>アラートを指定した場合、ルールが 5 分間に 10 回トリガーされると、アクションセンター通知が送信されます。 特定のルールに対してアラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。 |
 | **log** | `wafFlags`（任意）、`alert`（任意） | ルールがトリガーされたことをログに記録します。トリガーされていない場合、処理に影響は及びません。 wafFlags は影響を受けません。 <br>アラートを指定した場合、ルールが 5 分間に 10 回トリガーされると、アクションセンター通知が送信されます。 特定のルールに対してアラートがトリガーされると、翌日（UTC）まで再度アラートはトリガーされません。 |
 
-### WAF フラグリスト {#waf-flags-list}
+### WAFのフラグ一覧 {#waf-flags-list}
 
 ライセンス可能なWAF トラフィックフィルタールールで使用される`wafFlags` プロパティは、次を参照します。
 
@@ -190,7 +190,7 @@ data:
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻撃では、Log4J バージョン 2.16.0 より前の [Log4Shell 脆弱性](https://ja.wikipedia.org/wiki/Log4Shell)を悪用しようと試みます |
 | CVE | CVE | CVE を識別するフラグ。 常にフラグ `CVE-<CVE Number>` と組み合わせます。 アドビが保護する CVE について詳しくは、アドビにお問い合わせください。 |
 
-#### 不審なトラフィック
+#### 疑わしいトラフィック
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
@@ -210,7 +210,7 @@ data:
 | PRIVATEFILE | プライベートファイル | プライベートファイルは、Apache `.htaccess` ファイルや、機密情報の漏洩につながる可能性のある設定ファイルなど、本来、部外秘のものです。 |
 | スキャナー | スキャナー | 一般に使用されるスキャンサービスおよびツールを指定します。 |
 
-#### その他のトラフィック
+#### その他の交通
 
 | **フラグ ID** | **フラグ名** | **説明** |
 |---|---|---|
@@ -297,7 +297,7 @@ data:
 
 **例 4**
 
-このルールは、パス `/block-me` へのリクエストをパブリッシュ時にブロックし、`SQLI` または `XSS` パターンに一致するすべてのリクエストをブロックします。 この例には、`SQLI`および`XSS` [WAF フラグ &#x200B;](#waf-flags-list)を参照するWAF トラフィックフィルタールールが含まれているため、別のライセンスが必要です。
+このルールは、パス `/block-me` へのリクエストをパブリッシュ時にブロックし、`SQLI` または `XSS` パターンに一致するすべてのリクエストをブロックします。 この例には、`SQLI`および`XSS` [WAF フラグ ](#waf-flags-list)を参照するWAF トラフィックフィルタールールが含まれているため、別のライセンスが必要です。
 
 ```
 kind: "CDN"
@@ -361,7 +361,7 @@ data:
 
 レート制限は、エッジに到達するトラフィック、接触チャネルに到達するトラフィック、またはエラーの数に基づいて評価されます。
 
-### rateLimit の構造 {#ratelimit-structure}
+### rateLimit構造体 {#ratelimit-structure}
 
 | **プロパティ** | **タイプ** | **デフォルト** | **意味** |
 |---|---|---|---|
@@ -454,11 +454,11 @@ data:
           alert: true
 ```
 
-## 接触チャネルでのトラフィックスパイクを示すデフォルトアラート {#traffic-spike-at-origin-alert}
+## 発信元でのデフォルトのトラフィックスパイクの警告 {#traffic-spike-at-origin-alert}
 
-同じIP アドレスからの高トラフィックがオリジンに達すると、[&#x200B; アクション センター](/help/operations/actions-center.md)のメール通知で警告が表示され、DDoS攻撃が疑われます。
+同じIP アドレスからの高トラフィックがオリジンに達すると、[ アクション センター](/help/operations/actions-center.md)のメール通知で警告が表示され、DDoS攻撃が疑われます。
 
-このしきい値を満たした場合、AdobeはそのIP アドレスからのトラフィックをブロックします。レート制限トラフィックフィルタールールの設定など、オリジンを保護するためのさらなる対策を講じます。 ガイド付きのチュートリアルについては、「[&#x200B; トラフィックルールを使用したDoSおよびDDoS攻撃のブロック」チュートリアル &#x200B;](#tutorial-blocking-DDoS-with-rules)を参照してください。
+このしきい値を満たした場合、AdobeはそのIP アドレスからのトラフィックをブロックします。レート制限トラフィックフィルタールールの設定など、オリジンを保護するためのさらなる対策を講じます。 ガイド付きのチュートリアルについては、「[ トラフィックルールを使用したDoSおよびDDoS攻撃のブロック」チュートリアル ](#tutorial-blocking-DDoS-with-rules)を参照してください。
 
 システムはデフォルトでこのアラートを有効にしますが、*defaultTrafficAlerts* プロパティを使用して無効にできます。このプロパティはfalseに設定されます。 アラートがトリガーされると、翌日（UTC）まで再度トリガーされません。
 
@@ -724,7 +724,7 @@ data:
 
 ## チュートリアル {#tutorial}
 
-WAF ルールを含むトラフィックフィルタールールに関する実用的な知識と経験を得るには、[一連のチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)を進めてください。
+WAF ルールを含むトラフィックフィルタールールに関する実用的な知識と経験を得るには、[一連のチュートリアル ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)を進めてください。
 
 チュートリアルには、次が含まれます。
 
