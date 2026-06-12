@@ -91,7 +91,7 @@ ht-degree: 25%
 
 横組みタブレイアウト
 
-[水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)を使用して、フォームに水平タブレイアウトを追加できます。 横組みタブコンポーネントの様々なプロパティを設定する方法について詳しくは、[横組みタブコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)の記事を参照してください。
+[水平タブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)を使用して、フォームに水平タブレイアウトを追加できます。 横組みタブコンポーネントの様々なプロパティを設定する方法について詳しくは、[横組みタブコンポーネント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)の記事を参照してください。
 
 
 >[!TAB アコーディオンレイアウト]
