@@ -4,10 +4,10 @@ description: Cloud Manager で Git リポジトリを追加、表示および削
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fcdb7bb423500a5c17149ccb5913a2bb3330b073
+source-git-commit: 188201dfaececb21d373450711eb206b8e2323e2
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 70%
+source-wordcount: '894'
+ht-degree: 68%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe以外でコードをホストする場合、使用する手順のページ
 
 | リポジトリがホストされている場所 | 検証方法 | 使用する手順のページ |
 | --- | --- | --- |
-| `github.com` （`github.com`でホストされているGitHub Enterprise Cloud デプロイメントを含む） | Adobe GitHub アプリとシークレットファイル。 Webhookは必要ありません。 | [Cloud Managerでプライベート GitHub Cloud リポジトリを追加](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
+| `github.com` （Free、Pro、Team、Enterprise Cloudなどの任意のGitHub プラン） | Adobe GitHub アプリとシークレットファイル。 Webhookは必要ありません。 | [Cloud Managerでプライベート GitHub リポジトリを追加](/help/implementing/cloud-manager/managing-code/private-repositories.md) |
 | GitHub Enterprise Server （セルフホスト） | 個人アクセストークンとWebhook | [Cloud Managerで外部リポジトリを追加](/help/implementing/cloud-manager/managing-code/external-repositories.md) |
 | GitLab、Bitbucket、またはAzure DevOps | 個人アクセストークンとWebhook | [Cloud Managerで外部リポジトリを追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/external-repositories) |
 
