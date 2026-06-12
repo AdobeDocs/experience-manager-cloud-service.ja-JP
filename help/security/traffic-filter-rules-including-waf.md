@@ -4,7 +4,7 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 68%
@@ -15,6 +15,7 @@ ht-degree: 68%
 # WAF ルールを含むトラフィックフィルタールール {#traffic-filter-rules-including-waf-rules}
 
 トラフィックフィルタールールは、CDN レイヤーでのリクエストをブロックまたは許可します。これは、次のようなシナリオで役立ちます。
+
 
 * 新しいサイトが公開される前に、社内トラフィックへの特定のドメインへのアクセスを制限する。
 * ボリューム型DoS攻撃の影響を受けにくくするには、レート制限を設定します。

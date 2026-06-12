@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629ac4c2da92997ab01a91fe3f4f1d93fd6d7c30
+source-git-commit: 416723b6688fffa02287e314535fef519207cf9c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -16,6 +16,7 @@ ht-degree: 20%
 # プログラムの編集 {#editing-programs}
 
 プログラムを管理および編集するには、[**マイプログラム**&#x200B;コンソール](/help/implementing/cloud-manager/navigation.md)から開始します。 **マイプログラム**&#x200B;ページには、アクセス権を持つすべてのプログラムの概要が表示されます。 個々のプログラムを選択すると、**プログラムの概要** ページにプログラムの詳細の概要が表示されます。
+
 
 必要な権限を持つユーザーは、**プログラムの概要**&#x200B;から、[組織内で作成された実稼動プログラム](creating-production-programs.md)および[組織内で作成されたサンドボックスプログラム](creating-sandbox-programs.md)を編集できます。 プログラムを編集すると、次の操作を実行できます。
 
