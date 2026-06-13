@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 20%
@@ -52,26 +52,24 @@ ht-degree: 20%
 
    プログラムの編集に使用できるオプションは、プログラムの作成のオプションと同じです。
 
-   * 「**セキュリティ**」タブで、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にできます。
+   * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+   * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
+   * Web Application Firewall （WAF）を有効または無効にするには、「**セキュリティ**」タブを選択し、「**WAF-DDOS Protection**」チェックボックスをオンまたはオフにします。 WAF ルールがライセンスされていても、このチェックボックスがオンになっていない場合、この機能は有効ではなく、その保護は適用されません。 詳しくは、「[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)」を参照してください。
 
      >[!NOTE]
-     >
-     >Web Application Firewall （WAF）を有効または無効にするには、同じ「セキュリティ」タブで「**WAF-DDOS Protection**」チェックボックスをオンまたはオフにします。 WAF ルールがライセンスされていても、このチェックボックスがオンになっていない場合、この機能は有効ではなく、その保護は適用されません。 詳しくは、「[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)」を参照してください。
-     >
      >この機能がアクティブであることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 例：
      >
      >`"rules": "waf=SQLI"`
      >
      >この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブになると表示されます。
 
-   * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
-   * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
+     ![&#x200B; プログラムを編集ダイアログボックスに「セキュリティ」タブのオプションが表示されている](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
+
+   * 同じ&#x200B;**セキュリティ** タブで、既存のプログラムに対して&#x200B;**顧客管理キー**&#x200B;を有効にできます。
+
+     アクティブ化後にCMKを無効にすることはできません。 CMKを有効にした後、Experience Hubで暗号化キーを設定します。 Experience Hub[&#128279;](#configure-cmk-experience-hub)でのCMKの設定については、を参照してください。
+
    * [組織の使用権限に応じて、実稼動プログラムに追加のオプション &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)を使用できます。
-
-
-   ![&#x200B; プログラムを編集ダイアログボックスに、選択した顧客管理キーが表示されている](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cmk-edit-programs.png)
-
-   アクティブ化後にCMKを無効にすることはできません。 CMKを有効にした後、Experience Hubで暗号化キーを設定します。 Experience Hub[&#128279;](#configure-cmk-experience-hub)でのCMKの設定については、を参照してください。
 
 1. 「**更新**」をクリックして変更を保存します。
 
