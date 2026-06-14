@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: c5949b2d49cb8d405da7a34cb7e69da62ec28247
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 51%
@@ -127,7 +127,7 @@ ht-degree: 51%
      >
      >`"rules": "waf=SQLI"`
      >
-     >この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブになると表示されます。
+     >この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブな場合に表示されます。
 
 * **顧客管理キー** – このオプションを使用すると、プログラムのCMK （顧客管理キー）がアクティブ化され、Azure Blob StorageおよびMongoDBに保存されているデータに独自の暗号化キーを指定できます。 選択した場合は、後で[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を行うことでCMKを有効にできます。
 

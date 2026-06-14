@@ -4,9 +4,9 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10a8e73223d52f5caf092a707cf7b541f09d9802
+source-git-commit: 3c140f8cdf3bd03c4b4be101d2d1fb6d8cff84ea
 workflow-type: tm+mt
-source-wordcount: '4257'
+source-wordcount: '4268'
 ht-degree: 68%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 68%
 
    >[!IMPORTANT]
    >
-   >WAFのライセンス認証ルールでは、ライセンス認証は行われません。 この機能は、Cloud Managerの「**セキュリティ**」タブで&#x200B;**WAF-DDOS Protection**&#x200B;がチェックされるまで非アクティブのままです。
+   >WAF ルール *のライセンスを取得しても、*&#x200B;はライセンスを取得しません。 この機能は、Cloud Managerの「**セキュリティ**」タブで&#x200B;**WAF-DDOS Protection**&#x200B;がチェックされるまで非アクティブのままです。 この機能を有効にするには、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)または[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)を参照してください。
 
 1. ライセンスが付与されている場合のWAF ルールなど、トラフィックフィルタールールの使用方法を説明するチュートリアルを読み、完了してください。 このチュートリアルでは、開発環境にルールのデプロイ、悪意のあるトラフィックのシミュレート、[CDN ログ](#cdn-logs)のダウンロード、[ダッシュボードツール](#dashboard-tooling)での分析を行う方法を説明します。
 1. 推奨されるスタータールールを `cdn.yaml` にコピーし、一部のルールをログモードにして、本番環境に設定をデプロイします。
