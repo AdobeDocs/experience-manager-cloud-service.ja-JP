@@ -7,10 +7,10 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: f06e04efec715413306b41be82328fba24c31404
 workflow-type: tm+mt
-source-wordcount: '4336'
-ht-degree: 97%
+source-wordcount: '4541'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->* Experience Cloudに共有する場合、種類が`sling:OrderedFolder`のAssets フォルダーの共有はサポートされていません。 フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
+>* 種類が`sling:OrderedFolder`のAssets フォルダーの共有は、Experience Cloudへの共有時にはサポートされていません。 フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 >* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。 これは、複合アセットのサブアセットを含むノード用に予約されたキーワードです。
 
 1. 新しいフォルダーの作成先となるデジタルアセットフォルダー内の場所に移動します。 メニューで、「**[!UICONTROL 作成]**」をクリックします。 「**[!UICONTROL 新規フォルダー]**」を選択します。
@@ -280,9 +280,28 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。 参照元のアセットを削除するとリンクが壊れるので、この操作を禁止できます。 オーバーレイを使用して「削除を強制」ボタンを無効にします。
 
+## 非同期バックグラウンドジョブ {#asynchronous-background-jobs}
+
+大量のアセットを処理する際のパフォーマンスと信頼性を向上させるために、AEMでは、特定のアセット管理業務に非同期バックグラウンドジョブを使用します。 これらの作業を即座に完了するのではなく、AEMを利用してバックグラウンドで処理し、進捗状況を個別に追跡しながら作業を継続することができます。
+
+
+150個を超えるアセットを含むフォルダーの移動、コピー、削除などの操作は、非同期ジョブとして自動的に実行されます。 ユーザーは、これらの操作のいずれかを開始する際に、ジョブをすぐに実行するか、後でスケジュールするかを選択できます。
+
+![日付選択](assets/schedule-asnyc-job.png)
+
+オペレーションの実行中、AEMはアセットを一括処理し、進行状況を定期的に保存します。 AEM ユーザーインターフェイスには、進行状況の更新も表示され、ユーザーは操作のステータスをモニターできます。
+
+![日付選択](assets/move-progress-folder-indicator.png)
+
+移動操作と削除操作では、ジョブの実行中に影響を受けるフォルダーへのアクセスが制限され、アクションの競合を防ぐことができます。
+
+ジョブの進捗状況を追跡するには、Assets ジョブコンソール（**Assets** > **ジョブ**）を管理者ビュー内で開きます。 コンソールには、現在のステータス、完了率、その他のジョブ情報などの詳細が表示されます。 ジョブを選択し、「開く」をクリックして、進捗状況や完了予定残り時間など、追加の詳細を表示します。 操作が完了すると、ユーザーにも通知されます。
+
+![日付選択](assets/async-jobs-status.png)
+
 ## アセットをダウンロード {#download-assets}
 
-「[&#x200B; [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md) からのアセットのダウンロード」を参照してください。
+「[ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md) からのアセットのダウンロード」を参照してください。
 
 ## アセットの公開または非公開 {#publish-assets}
 
@@ -334,7 +353,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。 
 
 アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケターによるアセットの堅牢な管理、DAM 管理者による管理などです。
 
-最も適切なアセットを検出し使用するためのシンプル検索、アドバンス検索、カスタム検索については、[&#x200B; でのアセットの検索 [!DNL Experience Manager]](/help/assets/search-assets.md)を参照してください。
+最も適切なアセットを検出し使用するためのシンプル検索、アドバンス検索、カスタム検索については、[ でのアセットの検索 [!DNL Experience Manager]](/help/assets/search-assets.md)を参照してください。
 
 ## クイックアクション {#quick-actions}
 
@@ -404,7 +423,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 タイムラインを使用すると、アセットのアクティブなワークフロー、コメントや注釈、アクティビティログ、バージョンなど、選択した項目の様々なイベントを表示できます。
 
-![&#x200B; アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
+![ アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
 *図：アセットのタイムラインエントリの並べ替え*
 
 >[!NOTE]
