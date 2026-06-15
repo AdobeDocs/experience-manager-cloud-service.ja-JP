@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d3133acd35ffe533a4bd0014d106b8978953296d
+source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
 workflow-type: tm+mt
-source-wordcount: '4171'
-ht-degree: 71%
+source-wordcount: '4207'
+ht-degree: 70%
 
 ---
 
@@ -257,6 +257,18 @@ ht-degree: 71%
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>代わりに、ファイルのアップロードを処理するために公式のServlet APIを使用してください。</td>
     <td>2/6/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.adobe.cq.smartcontent</td>
+    <td>このAPIは非推奨（廃止予定）であり、削除が予定されています。</td>
+    <td>6/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize 2&rbrace;opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model<br></td>
+    <td>このバージョンのOpenNLP ライブラリは非推奨（廃止予定）です。 独自のバージョンのOpenNLPを使用します。</td>
+    <td>6/30/2026</td>
     <td>9/30/2026</td>
   </tr>
   <tr>
