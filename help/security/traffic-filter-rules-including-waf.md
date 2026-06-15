@@ -4,7 +4,7 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3c140f8cdf3bd03c4b4be101d2d1fb6d8cff84ea
+source-git-commit: 2976da7d7032a40912d9822816788fcdc95d828d
 workflow-type: tm+mt
 source-wordcount: '4268'
 ht-degree: 68%
