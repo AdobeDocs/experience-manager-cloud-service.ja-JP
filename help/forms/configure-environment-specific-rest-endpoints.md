@@ -107,7 +107,7 @@ ht-degree: 4%
 
 REST設定の場合、通常、`serviceEndPoint`、`userName`、`password`のプロパティの環境変数を作成し、プロジェクトの`OsgiConfigurationOverrideProvider`設定ファイルからそれらを参照します。
 
-完全な手順については、[&#x200B; コンテキストに応じたクラウド設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)を参照してください。
+完全な手順については、[&#x200B; コンテキストに応じたクラウド設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)を参照してください。
 
 ## 実稼動時のエンドポイント URLの更新 {#configure-endpoint-on-production}
 
@@ -148,5 +148,5 @@ REST設定の場合、通常、`serviceEndPoint`、`userName`、`password`のプ
 
 * [REST エンドポイントへの送信アクションのアダプティブフォームの設定](/help/forms/configure-submit-action-restpoint.md)
 * [データソースの設定](/help/forms/configure-data-sources.md)
-* [コンテキスト対応のクラウド設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [コンテキスト対応のクラウド設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)
