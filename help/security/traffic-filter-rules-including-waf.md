@@ -4,7 +4,7 @@ description: Web アプリケーションファイアウォール（WAF）ルー
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
+source-git-commit: fd729f12b4d6ff94ba4f3c86b8b8c1a0d3627c16
 workflow-type: tm+mt
 source-wordcount: '4278'
 ht-degree: 66%
@@ -115,7 +115,7 @@ ht-degree: 66%
 
       機能を有効にした後に&#x200B;*アクティブ*&#x200B;であることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 次に例を示します。
 
-      `"rules": "waf=SQLI" `
+      `"rules": "*waf=*" `
 
       この属性は、WAF ルールがデプロイされる前であっても、WAFがアクティブになると表示されます。
 
