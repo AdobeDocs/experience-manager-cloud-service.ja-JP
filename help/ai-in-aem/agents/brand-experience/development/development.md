@@ -99,7 +99,7 @@ To access this agent, please refer to the [release notes](/help/release-notes/re
 
 -->
 
-[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)に従って、開発エージェントを使用してパイプラインのエラーをトラブルシューティングする方法を学習します。
+[&#x200B; チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)に従って、開発エージェントを使用してパイプラインのエラーをトラブルシューティングする方法を学習します。
 
 ### Cloud ManagerからDevelopment Agentにアクセスします {#how-to-access-the-agent}
 
