@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f58ab16d09b995d81879e9efaeb91446e530f540
+source-git-commit: ee44611ddea115fffd9800a54728d747d4360a6b
 workflow-type: tm+mt
-source-wordcount: '7486'
-ht-degree: 85%
+source-wordcount: '7496'
+ht-degree: 84%
 
 ---
 
@@ -895,6 +895,7 @@ ht-degree: 85%
          + [Adobe Workfront Fusion へのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [Azure Blob Storage へのアダプティブフォームの送信](/help/forms/configure-submit-action-azure-blob-storage.md)
          + [アダプティブフォームの REST エンドポイント送信アクションへの送信の設定](/help/forms/configure-submit-action-restpoint.md)
+         + [同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)
          + [Microsoft® OneDrive へのアダプティブフォームの送信](/help/forms/configure-submit-action-onedrive.md)
          + [AEM アダプティブフォームと AEM ワークフローの統合](/help/forms/configure-submit-action-workflow.md)
          + [AEM Forms と Adobe Experience Platform（AEP）の統合](/help/forms/aem-forms-aep-connector.md)

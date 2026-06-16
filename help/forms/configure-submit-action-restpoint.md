@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 99%
+source-wordcount: '1352'
+ht-degree: 88%
 
 ---
 
@@ -41,9 +41,9 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    ![REST エンドポイントへの送信のアクション設定](/help/forms/assets/submit-action-restendpoint.png)
 
-   内部サーバーにデータを POST 送信するには、リソースのパスを指定します。 データは、リソースのパスに POST されます。 例えば、`/content/restEndPoint` のようになります。 このような POST リクエストには、送信リクエストの認証情報が使用されます。
+   内部サーバーにデータを送信するには、リソースのパスを指定します。データはリソースのパスに投稿されます。例：`/content/restEndPoint`。このようなPOST リクエストには、送信リクエストの認証情報が使用されます。
 このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
+外部サーバーにデータを投稿するには、URLを指定します。URLの形式は`https://host:port/path_to_rest_end_point`です。POST リクエストを匿名で処理するパスを設定していることを確認してください。
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
    上の例で、ユーザーが `textbox` に入力した情報は、パラメーター `param1` を使用して取得されます。 `param1` を使用して取得されるデータを POST するための構文を以下に示します。
@@ -57,8 +57,8 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String data=request.getParameter("dataXml");`
    `String att=request.getParameter("attachments");`
 
-   この例では、`data` が XML データを格納し、`att` が添付ファイルデータを格納します。
-**[!UICONTROL REST エンドポイントへの送信]**&#x200B;送信アクションでは、フォームに入力されたデータを HTTP GET リクエストの一部として設定済みの確認ページに送信します。 リクエストにフィールド名を追加できます。 リクエストのフォーマットを以下に示します。
+   この例では、`data`はXML データを格納し、`att`は添付データを格納します。
+**[!UICONTROL REST エンドポイントに送信]**&#x200B;送信アクションは、HTTP GET リクエストの一部として、フォームに入力されたデータを、設定された確認ページに送信します。リクエストするフィールドの名前を追加できます。リクエストの形式は次のとおりです。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -87,7 +87,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    +++URL
 
    このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
+外部サーバーにデータを投稿するには、URLを指定します。URLの形式は`https://host:port/path_to_rest_end_point`です。POST リクエストを匿名で処理するパスを設定していることを確認してください。
 
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
@@ -118,7 +118,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[&#x200B; データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
 
    +++
 
@@ -147,7 +147,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    +++URL
 
    このオプションを使用すると、ターゲット REST エンドポイントを直接入力できます。
-外部サーバーにデータを POST 送信するには、URL を指定します。 URL の形式は、`https://host:port/path_to_rest_end_point` です。 POST リクエストを匿名で処理するためのパスを設定してください。
+外部サーバーにデータを投稿するには、URLを指定します。URLの形式は`https://host:port/path_to_rest_end_point`です。POST リクエストを匿名で処理するパスを設定していることを確認してください。
 
    ![「ありがとうございます」ページのパラメーターとして渡されたフィールド値のマッピング](assets/post-enabled-actionconfig.png)
 
@@ -178,7 +178,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツタイプについて詳しくは、[データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)を参照してください
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[&#x200B; データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
 
    +++
 
@@ -208,6 +208,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
 * 外部サーバーにデータを POST する場合は、URL がセキュリティで保護されていることを確認し、POST リクエストを匿名で処理して機密情報を保護するパスを設定します。
 * フィールドを REST URL 内のパラメーターとして渡すには、すべてのフィールドが異なる要素名を持っている必要があります。これは、異なるパネルに置かれているフィールドにも適用されます。
+* フォームを変更せずにステージングおよび実稼動環境で異なるREST エンドポイント URLを使用するには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
 
 ## 関連記事
 
