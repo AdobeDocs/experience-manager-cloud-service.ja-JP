@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 4a080bfb281ba9b61bf9b8ebd090f7e98ddaf2d0
+source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 88%
@@ -58,7 +58,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
    `String att=request.getParameter("attachments");`
 
    この例では、`data`はXML データを格納し、`att`は添付データを格納します。
-**[!UICONTROL REST エンドポイントに送信]**&#x200B;送信アクションは、HTTP GET リクエストの一部として、フォームに入力されたデータを、設定された確認ページに送信します。リクエストするフィールドの名前を追加できます。リクエストの形式は次のとおりです。
+**[!UICONTROL REST エンドポイントに送信]**送信アクションは、HTTP GET リクエストの一部として、フォームに入力されたデータを、設定された確認ページに送信します。リクエストするフィールドの名前を追加できます。リクエストの形式は次のとおりです。
    `{fieldName}={request parameter name}`
 
    以下の画像に示されているように、`param1` および `param2` が、**textbox** フィールドおよび **numericbox** フィールドからコピーされた値を持つパラメーターとして、次のアクションに向けて渡されます。
@@ -118,7 +118,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[&#x200B; データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[ データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
 
    +++
 
@@ -178,7 +178,7 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
 
    +++設定
 
-   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[&#x200B; データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
+   このオプションを使用すると、AEM の設定ブラウザー経由で管理される事前定義済みの HTTP 設定を追加できます。 サービス REST エンドポイント認証タイプおよびコンテンツタイプ用に作成した設定を選択できます。 認証タイプとコンテンツ タイプについて詳しくは、[ データソースの設定](/help/forms/configure-data-sources.md#configure-restful-services-service-endpoint)を参照してください。 同じフォームを各環境の別のエンドポイントにルーティングするには、[同じアダプティブフォームに対する環境固有のREST エンドポイントの設定](/help/forms/configure-environment-specific-rest-endpoints.md)を参照してください。
 
    +++
 
@@ -201,8 +201,6 @@ AEM as a Cloud Service では、フォーム送信を処理するための様々
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
 8. Click Done.
 -->
-
-
 
 ## ベストプラクティス
 

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 40410875-96d0-4728-8cbd-b1e1dfa438c4
-source-git-commit: 202d8ffc19c5f309e537009cb8cd8f7fda4a35a5
+source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 4%
@@ -22,8 +22,8 @@ ht-degree: 4%
 ## 前提条件 {#prerequisites}
 
 * コアコンポーネントに基づくアダプティブフォーム。
-* **クラウド設定**&#x200B;が有効になっている設定ブラウザー（**ツール** > **一般** > **設定ブラウザー**）を介して作成された[設定コンテナ &#x200B;](/help/implementing/developing/introduction/configurations.md)。
-* 各環境（または[Cloud Manager デプロイメントパイプライン &#x200B;](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)）で&#x200B;**ツール** > **Cloud Services**&#x200B;およびプロモーション用に[&#x200B; パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)にアクセスするための権限。
+* **クラウド設定**&#x200B;が有効になっている設定ブラウザー（**ツール** > **一般** > **設定ブラウザー**）を介して作成された[設定コンテナ ](/help/implementing/developing/introduction/configurations.md)。
+* 各環境（または[Cloud Manager デプロイメントパイプライン ](/help/implementing/deploying/overview.md#deploying-content-packages-via-cloud-manager-and-package-manager)）で&#x200B;**ツール** > **Cloud Services**&#x200B;およびプロモーション用に[ パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)にアクセスするための権限。
 
 ## ステージングでのRESTful サービス設定の作成 {#create-rest-configuration}
 
@@ -89,7 +89,7 @@ ht-degree: 4%
 
 作成者が各環境でフォームと設定を直接管理する場合に使用します。
 
-1. **ステージング** オーサーインスタンスで、フォームとその設定コンテナを含むコンテンツパッケージを[&#x200B; パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)に作成します。次に例を示します。
+1. **ステージング** オーサーインスタンスで、フォームとその設定コンテナを含むコンテンツパッケージを[ パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)に作成します。次に例を示します。
 
    * `/content/dam/formsanddocuments/<your-form-path>`
    * `/content/forms/af/<your-form-path>`
@@ -107,7 +107,7 @@ ht-degree: 4%
 
 REST設定の場合、通常、`serviceEndPoint`、`userName`、`password`のプロパティの環境変数を作成し、プロジェクトの`OsgiConfigurationOverrideProvider`設定ファイルからそれらを参照します。
 
-完全な手順については、[&#x200B; コンテキストに応じたクラウド設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)を参照してください。
+完全な手順については、[ コンテキストに応じたクラウド設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)を参照してください。
 
 ## 実稼動時のエンドポイント URLの更新 {#configure-endpoint-on-production}
 
@@ -148,5 +148,5 @@ REST設定の場合、通常、`serviceEndPoint`、`userName`、`password`のプ
 
 * [REST エンドポイントへの送信アクションのアダプティブフォームの設定](/help/forms/configure-submit-action-restpoint.md)
 * [データソースの設定](/help/forms/configure-data-sources.md)
-* [コンテキスト対応のクラウド設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
+* [コンテキスト対応のクラウド設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)
