@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c5949b2d49cb8d405da7a34cb7e69da62ec28247
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 51%
+source-wordcount: '1801'
+ht-degree: 50%
 
 ---
 
@@ -121,7 +121,7 @@ ht-degree: 51%
 
      >[!NOTE]
      >
-     >**WAF-DDOS Protection**&#x200B;をオンにすると、この機能が有効になりますが、ライセンス済みのWAF ルールでは、チェックボックスをオンにした後にのみ保護が提供されます。 リポジトリ内のトラフィックフィルタールールを適切にデプロイできるように管理する方法については、[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
+     >**WAF-DDOS Protection**&#x200B;をオンにすると、この機能が有効になりますが、一部の自動CVE （Common Vulnerabilities and Exposures）保護の他に、Cloud Managerを通じてWAF ルールをデプロイする必要があります。 リポジトリ内のトラフィックフィルタールールを適切にデプロイできるように管理する方法については、[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
      >
      >この機能がアクティブであることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 例：
      >

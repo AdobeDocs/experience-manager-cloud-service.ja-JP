@@ -5,9 +5,9 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d5c87853bcc10587c97710e69b350bb9ebe509ae
+source-git-commit: c3f3693793922f965a59dd693b69a7df9ea96cda
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1346'
 ht-degree: 20%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 20%
 
    * パブリッシュ層を新しい環境（Beta）用にプロビジョニングするかどうかを設定できます。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
    * 個々のオプションについて詳しくは、[実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)と[サンドボックスプログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)を参照してください。
-   * Web Application Firewall （WAF）を有効または無効にするには、「**セキュリティ**」タブを選択し、「**WAF-DDOS Protection**」チェックボックスをオンまたはオフにします。 WAF ルールがライセンスされていても、このチェックボックスがオンになっていない場合、この機能は有効ではなく、その保護は適用されません。 詳しくは、「[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)」を参照してください。
+   * Web Application Firewall （WAF）を有効または無効にするには、「**セキュリティ**」タブを選択し、「**WAF-DDOS Protection**」チェックボックスをオンまたはオフにします。 このチェックボックスをオンにすると、機能が有効になりますが、一部の自動Common Vulnerabilities and Exposures （CVE）保護に加えて、Cloud Managerを通じてWAF ルールをデプロイする必要があります。 WAF ルールがライセンスされていても、このチェックボックスがオンになっていない場合、この機能はアクティブになっていません。 詳しくは、[WAF ルールを含むトラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)を参照してください。
 
      >[!NOTE]
      >この機能がアクティブであることを確認するには、トラフィックがサイトに流れたら、[CDN ログ &#x200B;](//help/security/traffic-filter-rules-including-waf.md#cdn-logs)を調べます。 `waf`属性を含む`rules` プロパティを含むログエントリを探します。 例：
