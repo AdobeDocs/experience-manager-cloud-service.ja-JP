@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 40410875-96d0-4728-8cbd-b1e1dfa438c4
-source-git-commit: ee79ef0d9b1101a245ea918c8ce46d502e98fdb3
+source-git-commit: 8d60f09ffd3912f4a14df01baccf1c368a518a91
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 4%
@@ -150,3 +150,4 @@ REST設定の場合、通常、`serviceEndPoint`、`userName`、`password`のプ
 * [データソースの設定](/help/forms/configure-data-sources.md)
 * [コンテキスト対応のクラウド設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/context-aware-fdm)
 * [アダプティブフォーム送信アクション](/help/forms/aem-forms-submit-action.md)
+
