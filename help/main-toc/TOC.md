@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d7993198005126c42ccbe4a434cf73cf1bd1f713
+source-git-commit: 5c83ebe973e5d9bd5a25ebcd82c53b35943d7413
 workflow-type: tm+mt
-source-wordcount: '7505'
+source-wordcount: '7506'
 ht-degree: 84%
 
 ---
@@ -724,7 +724,7 @@ ht-degree: 84%
       + [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
       + [クライアントサイドのデバイスピクセル比（DPR）を使用したスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media アセットを配信](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-      + [Dynamic Media テンプレート](/help/assets/dynamic-media/dynamic-media-templates.md)
+      + [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D サポート](/help/assets/dynamic-media/assets-3d.md)
       + [Dynamic Media の制限](/help/assets/dynamic-media/limitations.md)
