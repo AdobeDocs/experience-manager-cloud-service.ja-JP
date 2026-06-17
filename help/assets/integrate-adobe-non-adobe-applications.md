@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: bfef942f248d926d699ed489a5c117f89da76459
+source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2203'
 ht-degree: 3%
 
 ---
@@ -127,6 +127,8 @@ Dynamic Media タブを表示するには、有効なAEM Dynamic Media ライセ
 ![Dynamic Media レンディションのプレビュー](assets/content-advisor-dm-preview.png)
 
 「**[!UICONTROL 修飾子を追加]**」をクリックし、テキストボックスに修飾子を指定してEnter キーを押し、すべてのアセットレンディションにリアルタイムで変換を適用します。 同様に、複数の修飾子をレンディションに追加し、それらの変換をプレビューできます。 レンディション名をクリックし、**[!UICONTROL 選択]**&#x200B;をクリックして、レンディションをホストアプリケーションで使用できるようにします。 これらの修飾子を適用した後のレンディションは保存されません。 [Dynamic Media Scene7](https://experienceleague.adobe.com/ja/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)および[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)でサポートされている修飾子の一覧を参照してください。
+
+Dynamic Media パネルとContent Advisorの統合方法について詳しくは、[Dynamic Mediaとの統合](/help/assets/integration-with-dynamic-media.md)を参照してください。
 
 ### コンテンツフラグメントの検出 {#content-fragments-discovery-content-advisor}
 

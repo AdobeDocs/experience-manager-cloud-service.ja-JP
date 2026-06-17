@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cf36954ea4d8374213f4f78ab7ab8f65f34badfe
+source-git-commit: d7993198005126c42ccbe4a434cf73cf1bd1f713
 workflow-type: tm+mt
-source-wordcount: '7501'
+source-wordcount: '7505'
 ht-degree: 84%
 
 ---
@@ -678,6 +678,7 @@ ht-degree: 84%
       + [AdobeおよびAdobe以外のアプリケーションからAEM コンテンツにアクセスするためのContent Advisor](/help/assets/integrate-adobe-non-adobe-applications.md)
       + [Content Advisor プロパティ](/help/assets/content-advisor-properties.md)
       + [Content Advisor カスタマイズ](/help/assets/content-advisor-customization.md)
+      + [Dynamic Mediaとの統合](/help/assets/integration-with-dynamic-media.md)
       + [OpenAPI 機能を備えた Dynamic Media の統合](/help/assets/integrate-dynamic-media-openapi.md)
    + コンテンツフラグメント {#content-fragments}
       + [コンテンツフラグメントの使用方法](/help/assets/content-fragments/content-fragments.md)
