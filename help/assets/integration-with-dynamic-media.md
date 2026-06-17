@@ -3,7 +3,7 @@ title: Content AdvisorとDynamic Mediaの統合
 description: Content AdvisorとDynamic Mediaを統合して、ユーザーがアプリケーションやワークフローで使用するDynamic Media レンディションを参照、プレビュー、選択できるようにする方法について説明します。
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
-source-git-commit: c54f9da5aea9111a8f162688676d5c3c7e7518bc
+source-git-commit: 95209a154a0d3208c5fcda8d4117f80d1015d2fe
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 1%
@@ -338,5 +338,4 @@ rotate=90&width=1200
 ```
 
 生成された文字列は、最終的なDynamic Media URLに追加され、アセットの配信時に選択した変換が適用されます。
-
 
