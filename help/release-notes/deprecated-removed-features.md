@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 4e896f6bbea276c061e086c80d5dabed30421970
+source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
 workflow-type: tm+mt
-source-wordcount: '4207'
+source-wordcount: '4206'
 ht-degree: 70%
 
 ---
@@ -197,103 +197,103 @@ ht-degree: 70%
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>この API は内部でのみ使用されます。</td>
     <td>2024/9/23</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2022/10/31</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>この API は非推奨（廃止予定）です。 代わりに、Apache Sling のビルダーを使用します。</td>
     <td>2022/10/31</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>代わりに、org.apache.sling.xss を使用します。</td>
     <td>2023年12月12日（PT）</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>この API は非推奨（廃止予定）です。</td>
     <td>07/10/2024</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>このAPIはcommons-lang （これは2021年から非推奨）に依存しているため、非推奨です。</td>
     <td>11/30/2025</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>この API は、サポートされなくなりました。</td>
     <td>01/01/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>この API の使用は、AEM as a Cloud Service ではサポートされていません。</td>
     <td>2/13/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>代わりに、org.apache.sling.xss を使用します。</td>
     <td>2023年12月12日（PT）</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language 0&rbrace;org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.apache parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.parser.dwg<br>org.apache.tika.parser.envi{33.org.apache .parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazeter}org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.parser.parser.istc<br>org.apache.apache.parser.parser.parser atab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat{56.aporache .tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>aporache .tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.mitie<br>org.apache.partika.parser.parser ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pdf}org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.センチメント<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.parser.xml<br>org.apache.tika.sax<br>org.aptika.apache.3path org.apache.tika.parser.microsoft.ooxml.xps<br><br><br><br><br><br><br><br><br><br></td>
     <td>このバージョンのApache Tikaは古くなっているため、Cloud Serviceから削除されます。 新しいバージョンのApache Tikaに切り替えます。</td>
     <td>4/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>org.apache.commons.fileupload<br>org.apache.commons.fileupload.disk<br>org.apache.commons.fileupload.portlet<br>org.apache.commons.fileupload.servlet<br>org.apache.commons.fileupload.util</td>
     <td>代わりに、ファイルのアップロードを処理するために公式のServlet APIを使用してください。</td>
     <td>2/6/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.adobe.cq.smartcontent</td>
     <td>このAPIは非推奨（廃止予定）であり、削除が予定されています。</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>opennlp.tools.chunker<br>opennlp.tools.dictionary<br>opennlp.tools.dictionary.serializer<br>opennlp.tools.ml<br>opennlp.tools.ml.maxent<br>opennlp.tools.ml.maxent.io<br>opennlp.tools.ml.maxent.quasinewton<br>opennlp.tools.ml.model<br>opennlp.tools.ml.perceptron<br>opennlp.tools.namefind<br>opennlp.tools.ngram<br>opennlp.tools.postag<br>opennlp.tools.tokenize 2&rbrace;opennlp.tools.tokenize.lang<br>opennlp.tools.util<br>opennlp.tools.util.eval<br>opennlp.tools.util.ext<br>opennlp.tools.util.featuregen<br>opennlp.tools.util.model<br></td>
     <td>このバージョンのOpenNLP ライブラリは非推奨（廃止予定）です。 独自のバージョンのOpenNLPを使用します。</td>
     <td>6/30/2026</td>
-    <td>9/30/2026</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>4/30/2021</td>
-    <td>2027/3/31 （仮称）</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
-    <td>4/30/2021</td>
-    <td>2027/3/31 （仮称）</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
-    <td>4/30/2021</td>
-    <td>2027/3/31 （仮称）</td>
+    <td>3/31/2027</td>
   </tr>
   <tr>
     <td>com.day.cq.commons.predicate</td>
     <td>この API は非推奨（廃止予定）です。 代わりにcom.day.cq.commons.predicatesを使用してください。</td>
     <td>6/1/2024</td>
-    <td>2027/3/31 （仮称）</td>
+    <td>3/31/2027</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 はメンテナンスモードになっています。 Commons Lang 3 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>4/30/2021</td>
+    <td>2027/12/31 （仮称）</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 はメンテナンスモードになっています。 Commons Collections 4 を代わりに使用してください。 <a href="#apache.commons">以下の削除に関するメモを参照してください。</a></td>
+    <td>4/30/2021</td>
+    <td>2027/12/31 （仮称）</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td><a href="https://johnzon.apache.org/index.html">javax.json</a> の Apache Johnzon 実装の使用をお勧めします。 </td>
+    <td>4/30/2021</td>
+    <td>2027/12/31 （仮称）</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
