@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
 workflow-type: tm+mt
 source-wordcount: '3149'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。 まだの場合は、[&#x200B; ユニバーサルエディターへのアクセスとナビゲーション &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md)を参照してください。
+>このドキュメントは、ユニバーサルエディターへのアクセスと操作の方法を、ユーザーが既に理解していることを前提としています。 まだの場合は、[ ユニバーサルエディターへのアクセスとナビゲーション ](/help/sites-cloud/authoring/universal-editor/navigation.md)を参照してください。
 
 >[!TIP]
 >
->ユニバーサルエディターの詳細については、[&#x200B; ユニバーサルエディターの概要を参照してください。](/help/implementing/universal-editor/introduction.md)
+>ユニバーサルエディターの詳細については、[ ユニバーサルエディターの概要を参照してください。](/help/implementing/universal-editor/introduction.md)
 
 ## コンテンツの編集 {#editing-content}
 
@@ -46,7 +46,7 @@ ht-degree: 66%
 >
 >デフォルトでは、コンテンツをタップまたはクリックすると、そのコンテンツが編集用に選択されます。 リンクをたどってコンテンツを移動する場合は、[プレビューモード](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)に切り替えます。
 
-選択したコンテンツに応じて、インプレース編集オプションと、[&#x200B; プロパティパネルのコンテンツに関する追加情報とオプションが異なる場合があります。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+選択したコンテンツに応じて、インプレース編集オプションと、[ プロパティパネルのコンテンツに関する追加情報とオプションが異なる場合があります。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### コンテキストメニュー {#context-menu}
 
@@ -54,7 +54,7 @@ ht-degree: 66%
 
 このバッジをクリックすると、編集アクションを含むコンテキストメニューにすばやくアクセスできます。 選択されていない編集可能な項目を右クリックすると、自動的に選択され、コンテキストメニューも開きます。
 
-![編集可能なバッジオプション &#x200B;](assets/editable-badge.png)
+![編集可能なバッジオプション ](assets/editable-badge.png)
 
 ### プレーンテキストの編集 {#edit-plain-text}
 
@@ -64,7 +64,7 @@ ht-degree: 66%
 
 薄い水色のアウトラインが濃い青色のアウトラインに変わり、選択範囲が示され、カーソルが表示されます。 変更を行ったら、Enter キーまたは Return キーを押すか、テキストボックスの外側を選択して、変更を保存します。
 
-テキストコンポーネントを選択すると、その詳細が[&#x200B; プロパティパネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) パネルのテキストを編集することもできます。
+テキストコンポーネントを選択すると、その詳細が[ プロパティパネルに表示されます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) パネルのテキストを編集することもできます。
 
 ![プロパティパネルでのテキストの編集](assets/ue-editing-text-component-rail.png)
 
@@ -88,13 +88,13 @@ ht-degree: 66%
 
 #### プロパティパネル {#properties-rail}
 
-[&#x200B; プロパティパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)には、選択したリッチテキストコンポーネントのエントリが表示されます。
+[ プロパティパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)には、選択したリッチテキストコンポーネントのエントリが表示されます。
 
-![&#x200B; プロパティパネルのリッチテキストコンポーネント &#x200B;](assets/rich-text-properties-panel.png)
+![ プロパティパネルのリッチテキストコンポーネント ](assets/rich-text-properties-panel.png)
 
 #### モーダルエディター {#modal-editor}
 
-[&#x200B; プロパティパネル &#x200B;](#properties-rail)のエントリをタップすると、モーダルエディターが開き、大きなキャンバスを使用してリッチテキストを編集できます。
+[ プロパティパネル ](#properties-rail)のエントリをタップすると、モーダルエディターが開き、大きなキャンバスを使用してリッチテキストを編集できます。
 
 ![リッチテキスト編集ダイアログ](assets/rich-text-canvas.png)
 
@@ -143,7 +143,7 @@ ht-degree: 66%
 * **すべての書式を削除**
    * 選択したテキストからすべての書式設定オプションを削除します。
 
-バックエンドによっては、デフォルトで使用できるオプションが異なる場合があります。 RTEは、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、「[&#x200B; ユニバーサルエディターのRTEの設定](/help/implementing/universal-editor/configure-rte.md)」のドキュメントを参照してください。
+バックエンドによっては、デフォルトで使用できるオプションが異なる場合があります。 RTEは、作成者のニーズに応じて、オプションを非表示にしたり、追加のオプションを表示したりするように設定できます。 詳しくは、「[ ユニバーサルエディターのRTEの設定](/help/implementing/universal-editor/configure-rte.md)」のドキュメントを参照してください。
 
 ### メディアの編集 {#edit-media}
 
@@ -152,7 +152,7 @@ ht-degree: 66%
 ![メディアの編集](assets/ue-edit-media.png)
 
 1. プロパティパネルで、選択した画像のプレビューをタップまたはクリックします。
-1. [&#x200B; コンテンツアドバイザー](/help/assets/integrate-adobe-non-adobe-applications.md) ウィンドウが開き、アセットを選択できます。
+1. [ コンテンツアドバイザー](/help/assets/integrate-adobe-non-adobe-applications.md) ウィンドウが開き、アセットを選択できます。
 1. 選択して、新しいアセットを選択します。
 1. 「**選択**」を選択して、アセットが置き換えられたプロパティパネルに戻ります。
 
@@ -160,7 +160,7 @@ ht-degree: 66%
 
 ### コンテンツフラグメントの編集 {#edit-content-fragment}
 
-[&#x200B; コンテンツフラグメント &#x200B;](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、[&#x200B; プロパティパネルでその詳細を編集できます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+[ コンテンツフラグメント ](/help/sites-cloud/administering/content-fragments/overview.md)を選択した場合、[ プロパティパネルでその詳細を編集できます。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![コンテンツフラグメントの編集](assets/ue-edit-cf.png)
 
@@ -198,7 +198,7 @@ ht-degree: 66%
 
    * コンテキストメニューで「**追加**」オプションを選択します。
 
-     ![&#x200B; コンテキストメニューから追加](assets/add-from-context-menu.png)
+     ![ コンテキストメニューから追加](assets/add-from-context-menu.png)
 
 1. コンポーネントピッカーダイアログが開きます。
    * 左側の列を使用して、カテゴリ別にコンポーネントをフィルタリングするか、検索を使用して名前でフィルタリングします。
@@ -206,7 +206,7 @@ ht-degree: 66%
    * コンテナ内で使用できるコンポーネントが1つしかない場合は、自動的に挿入されます。
    * ピッカーの外側をクリックして、コンポーネントの挿入をキャンセルします。
 
-   ![&#x200B; コンポーネントピッカー](assets/component-picker.png)
+   ![ コンポーネントピッカー](assets/component-picker.png)
 
 コンポーネントがコンテナに挿入され、エディターで編集できます。
 
@@ -226,19 +226,19 @@ ht-degree: 66%
 
    * コンテキストメニューから「**重複**」オプションを選択します。
 
-     ![&#x200B; コンテキストメニューから複製](assets/duplicate-from-context-menu.png)
+     ![ コンテキストメニューから複製](assets/duplicate-from-context-menu.png)
 
 コンポーネントが複製され、選択したコンポーネントの下に挿入されます。
 
 ### コンテナからのコンポーネントの削除 {#deleting-components}
 
-1. [&#x200B; コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターで、コンテナ内のコンポーネントを選択します。
+1. [ コンテンツツリー](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)またはエディターで、コンテナ内のコンポーネントを選択します。
 1. 次のいずれかを実行できます。
    * プロパティパネルで「**削除**」アイコンを選択します。
 
      ![コンポーネントの削除](assets/ue-delete-component.png)
    * コンテキストメニューで「**削除**」オプションを選択します。
-     ![&#x200B; コンテキストメニューから削除](assets/delete-from-context-menu.png)
+     ![ コンテキストメニューから削除](assets/delete-from-context-menu.png)
 
 選択したコンポーネントが削除されました。
 
@@ -258,18 +258,18 @@ ht-degree: 66%
 
 1. 移動するコンポーネントをクリックしてドラッグします。
    * 宛先にマウスポインターを置くと、コンポーネントを青い横線でドロップすると、エディターに配置される場所が表示されます。
-     ![&#x200B; コンポーネントをドラッグ&amp;ドロップして移動します](assets/drag-and-drop-component-move.png)
+     ![ コンポーネントをドラッグ&amp;ドロップして移動します](assets/drag-and-drop-component-move.png)
 1. コンポーネントをドロップして再配置します。
 
 #### コンテキストメニューでのコンポーネントの移動 {#move-context-menu}
 
-1. コンポーネントを右クリックするか、選択したコンポーネントのバッジをクリックして、[&#x200B; コンテキストメニューを開きます。](#context-menu)
+1. コンポーネントを右クリックするか、選択したコンポーネントのバッジをクリックして、[ コンテキストメニューを開きます。](#context-menu)
 1. 目的の移動オプションを選択します。
    * 最上位に移動
    * 上に移動
    * 下に移動
    * 最下位に移動
-     ![&#x200B; コンテキストメニューのオプションを移動](assets/move-options-in-conext-menu.png)
+     ![ コンテキストメニューのオプションを移動](assets/move-options-in-conext-menu.png)
 
 コンポーネントは、エディターとコンテンツツリーの両方で移動します。
 
@@ -280,7 +280,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->コンテキストメニューオプションは、コンテナ内のコンポーネントのみを移動できます。 コンテナ間でコンポーネントを移動する場合は、[&#x200B; コンテンツツリーを使用します。](#reorder-content-tree)
+>コンテキストメニューオプションは、コンテナ内のコンポーネントのみを移動できます。 コンテナ間でコンポーネントを移動する場合は、[ コンテンツツリーを使用します。](#reorder-content-tree)
 
 #### コンテンツツリーでのコンポーネントの移動 {#reorder-content-tree}
 
@@ -300,7 +300,7 @@ ht-degree: 66%
 エディターで最後に行った編集を取り消すまたはやり直すには、「取り消し」ボタンまたは「やり直し」ボタンを選択します。
 
 ![取り消しアイコン](assets/undo.png)
-![やり直しアイコン &#x200B;](assets/redo.png)
+![やり直しアイコン ](assets/redo.png)
 
 * コンテキスト内での編集、プロパティパネルを使用した編集、ブロックの追加、複製、移動、削除に対して、取り消しとやり直しを実行できます。
 * 取り消しとやり直しは、現在のブラウザーセッションに限定されます。
@@ -315,21 +315,21 @@ ht-degree: 66%
 
 コピー&amp;ペーストは、同じブラウザータブ、またはタブが既に開いている場合は、ブラウザータブ間で行うことができます。 アイテムをコピーしてから、新しいブラウザータブを開いて貼り付けることはできません。
 
-![&#x200B; コピーアイコン](assets/copy.png)
-![&#x200B; アイコンを貼り付け](assets/paste.png)
+![ コピーアイコン](assets/copy.png)
+![ アイコンを貼り付け](assets/paste.png)
 
 1. エディター内またはコンテンツツリーでコンポーネントを選択します。
 1. 次のいずれかを実行できます。
-   * [&#x200B; プロパティパネルの&#x200B;**コピー** アイコンをクリックします。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
-     ![&#x200B; パネルからコピー](assets/copy-from-panel.png)
+   * [ プロパティパネルの&#x200B;**コピー** アイコンをクリックします。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![ パネルからコピー](assets/copy-from-panel.png)
    * コンテキストメニューで「**コピー**」オプションを選択します。
-     ![&#x200B; コンテキストメニューからコピー](assets/copy-from-context-menu.png)
+     ![ コンテキストメニューからコピー](assets/copy-from-context-menu.png)
 1. コピーしたコンポーネントをペーストした&#x200B;_後_&#x200B;のコンポーネントを選択します。
 1. 次のいずれかを実行できます。
    * プロパティパネルで「**貼り付け**」をタップまたはクリックします。
-     ![&#x200B; パネルからの貼り付け](assets/paste-from-panel.png)
+     ![ パネルからの貼り付け](assets/paste-from-panel.png)
    * コンテキストメニューで「**貼り付け**」を選択します。
-     ![&#x200B; コンテキストメニューからの貼り付け](assets/paste-from-context-menu.png)
+     ![ コンテキストメニューからの貼り付け](assets/paste-from-context-menu.png)
 
 コピーしたコンポーネントは、選択したコンポーネントの&#x200B;_後_&#x200B;にペーストされます。
 
@@ -351,7 +351,7 @@ ht-degree: 66%
 
 **AEM マルチサイト管理（MSM）拡張機能**&#x200B;がプログラムに対して有効な場合は、ユニバーサルエディター内で個々のコンポーネントの継承ステータスを表示および変更する[追加のツールバーオプション](#inheritance-extension)があります。
 
-ユニバーサルエディターを使用した継承の仕組みについて詳しくは、「[&#x200B; ユニバーサルエディターでのコンテンツの継承」を参照してください。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+ユニバーサルエディターを使用した継承の仕組みについて詳しくは、「[ ユニバーサルエディターでのコンテンツの継承」を参照してください。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## オプションのツールバー機能 {#toolbar-options}
 
@@ -385,7 +385,7 @@ ht-degree: 66%
 
 ### ページプロパティへのアクセス {#page-properties}
 
-**ページプロパティ** ボタンを使用すると、現在編集中のページの[AEM ページプロパティウィンドウ &#x200B;](/help/sites-cloud/authoring/sites-console/page-properties.md)にすばやくアクセスできます。
+**ページプロパティ** ボタンを使用すると、現在編集中のページの[AEM ページプロパティウィンドウ ](/help/sites-cloud/authoring/sites-console/page-properties.md)にすばやくアクセスできます。
 
 ![ページプロパティアイコン](assets/page-properties-icon.png)
 
@@ -393,8 +393,8 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->* **AEM ページプロパティ拡張機能**&#x200B;ページに対してのみ機能し、コンテンツフラグメントには機能しません。
->* ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
+>* 「**AEM ページプロパティ**」ボタンは、コンテンツフラグメントではなく、ページでのみ機能します。
+>* ボタンは、リモートページがプロトコル ](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との[接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
 
 ### Sites コンソールへのアクセス {#sites-console}
 
