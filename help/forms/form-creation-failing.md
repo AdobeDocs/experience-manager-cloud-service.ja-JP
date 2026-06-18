@@ -1,42 +1,42 @@
 ---
-title: フォーム作成の失敗のトラブルシューティング方法
-description: AEM Forms as a Cloud Service環境でのフォーム作成の失敗のトラブルシューティング。
+title: フォーム作成のエラーをトラブルシューティングする方法
+description: AEM Forms as a Cloud Service環境でのフォーム作成エラーのトラブルシューティング。
 feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '190'
 ht-degree: 6%
 
 ---
 
-# フォームの公開中の問題{#form-creation-fails}
+# フォームの公開中に問題が発生する
 
-ユーザーがAEM Forms as a Cloud Serviceのバージョン `2024.5.16461` に更新した後：
+ユーザーがAEM Forms as a Cloud Service バージョン `2024.5.16461`に更新した後：
 
-**一部のユーザー** フォームの作成中に問題が発生する場合がありますが、この問題は、ユーザーがフォームを作成すると、作成ダイアログボックスに次のエラーメッセージがポップアップ表示されるというものです。
+**一部のユーザー**&#x200B;は、フォームの作成中に問題が発生する可能性があります。ユーザーがフォームを作成すると、作成ダイアログボックスに次のエラーメッセージが表示されます。
 
 `A server error occurred. Try again after sometime.`
 
 ## 原因 {#cause-form-creation-fails}
 
-この問題は、作成者がフォームで使用されている **最初にテンプレートを公開** せずにフォームを公開したために発生します。 その結果、`jcr:uuid` やその他の保護されたプロパティおよびシステム生成プロパティが `<template-path>/initial/jcr:content` ノードに追加され、その後のフォーム作成でエラーが発生します。
+この問題は、作成者がフォームを公開し、そのフォームで使用されているテンプレート **を最初に公開しないために発生します。**&#x200B;この結果、`jcr:uuid`およびその他の保護およびシステム生成プロパティが`<template-path>/initial/jcr:content` ノードに追加され、後続のフォーム作成でエラーが発生します。
 
 ## 対処方法 {#resolution-form-creation-fails}
 
 問題を解決するには、次の手順に従います。
 
-1. フォームで使用するテンプレートのパス `jcr:uuid` に、`<template-path>/initial/jcr:content node` およびその他のシステム生成された保護されたプロパティがないことを確認します。
+1. フォームで使用するテンプレートに`jcr:uuid`およびその他のシステムで生成された保護されたプロパティがパス `<template-path>/initial/jcr:content node`にないことを確認してください。
 1. テンプレートコンソールを使用して、テンプレートを明示的に公開します。
-1. 次に、テンプレートが公開されたら、テンプレートを使用して新しいフォームを作成してみてください。
-1. 使用したテンプレートが今後のリリースで更新される場合は、（手順 2 で指定したように）テンプレートを再度公開して、フォーム作成の失敗の問題を防ぎます。
+1. テンプレートが公開されたら、テンプレートを使用して新しいフォームを作成してみましょう。
+1. 今後のリリースで更新を使用したテンプレートの場合は、フォーム作成エラーの問題を防ぐために、（手順2で説明したように）テンプレートを再度公開します。
 
 
 <!--
 
-# Issue {#form-creation-fails}
+# Issue
 
 After updating to AEM Forms as a Cloud Service version `2024.5.16461.20240524T172309Z`, When a user publishes a form using an unpublished template, it fails to create a form and shows an error:
 

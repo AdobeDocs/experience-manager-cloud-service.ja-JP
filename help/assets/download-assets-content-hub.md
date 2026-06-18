@@ -4,7 +4,7 @@ description: Content Hub ポータルから1つ以上のアセットとそのレ
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 41%
@@ -21,7 +21,7 @@ ht-degree: 41%
 
 [Content Hub での使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
 
-## 1 つ以上のアセットとそのレンディションのダウンロード {#download-asset-renditions}
+## 1 つ以上のアセットとそのレンディションのダウンロード
 
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
@@ -64,7 +64,7 @@ ht-degree: 41%
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 

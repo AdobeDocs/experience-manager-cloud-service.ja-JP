@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
-description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
+description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。 ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2296'
 ht-degree: 99%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 99%
 
 [!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、適切にキュレーションされ、著作権使用料が不要で質の高い何百万点もの写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。
 
-[!DNL Adobe Stock] エンタープライズ版の場合は、デフォルトで、組織全体での共有権限が含まれます。組織のユーザーがアセットのライセンスを取得すると、組織の他のユーザーがこのアセットを識別、ダウンロード、使用できるようになります。再度ライセンスを取得する必要はありません。組織でアセットのライセンスを取得すると、そのアセットの使用権限が永続的に有効になります。
+[!DNL Adobe Stock] エンタープライズ版の場合は、デフォルトで、組織全体での共有権限が含まれます。 組織のユーザーがアセットのライセンスを取得すると、組織の他のユーザーがこのアセットを識別、ダウンロード、使用できるようになります。再度ライセンスを取得する必要はありません。 組織でアセットのライセンスを取得すると、そのアセットの使用権限が永続的に有効になります。
 
-[!DNL Adobe Stock] エンタープライズ版プランと [!DNL Experience Manager Assets] を統合すると、[!DNL Experience Manager] の強力なアセット管理機能を使用して、ライセンスを取得したアセットをクリエイティブプロジェクトやマーケティングプロジェクトに幅広く活用できます。[!DNL Experience Manager] ユーザーは、[!DNL Experience Manager] に保存されている Adobe Stock アセットの検索、プレビューおよびライセンス取得を、[!DNL Experience Manager] インターフェイスから画面を切り替えることなく、すばやく実行できます。
+[!DNL Adobe Stock] エンタープライズ版プランと [!DNL Experience Manager Assets] を統合すると、[!DNL Experience Manager] の強力なアセット管理機能を使用して、ライセンスを取得したアセットをクリエイティブプロジェクトやマーケティングプロジェクトに幅広く活用できます。 [!DNL Experience Manager] ユーザーは、[!DNL Experience Manager] に保存されている Adobe Stock アセットの検索、プレビューおよびライセンス取得を、[!DNL Experience Manager] インターフェイスから画面を切り替えることなく、すばやく実行できます。
 
 ## [!DNL Experience Manager] と [!DNL Adobe Stock] を統合する前提条件 {#integrate-aem-and-adobe-stock}
 
@@ -43,10 +43,10 @@ ht-degree: 99%
 * Stock の使用権に対して [!DNL Adobe Admin Console] にクレジットが購入されました。
 * [!DNL Adobe Admin Console] でクレジットとライセンスをグローバルに管理できるようになります。
 
-権利付与において、[!DNL Adobe Stock] のデフォルトの製品プロファイルは [!DNL Admin Console] に存在します。複数のプロファイルを作成でき、これらのプロファイルによって、誰が Stock アセットのライセンスを取得できるかが決まります。製品プロファイルに直接アクセスできるユーザーは、[https://stock.adobe.com/jp](https://stock.adobe.com/jp/) にアクセスして、Stock アセットのライセンスを取得できます。一方、Developer Access を使用して統合（API）を作成する方法もあります。この統合により、[!DNL Experience Manager Assets] と [!DNL Adobe Stock] 間の通信が認証されます。
+権利付与において、[!DNL Adobe Stock] のデフォルトの製品プロファイルは [!DNL Admin Console] に存在します。 複数のプロファイルを作成でき、これらのプロファイルによって、誰が Stock アセットのライセンスを取得できるかが決まります。 製品プロファイルに直接アクセスできるユーザーは、[https://stock.adobe.com/jp](https://stock.adobe.com/jp/) にアクセスして、Stock アセットのライセンスを取得できます。 一方、Developer Access を使用して統合（API）を作成する方法もあります。 この統合により、[!DNL Experience Manager Assets] と [!DNL Adobe Stock] 間の通信が認証されます。
 
 <!--
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
@@ -97,7 +97,7 @@ TBD: Update the URL to update the terminology when AIO team updates their docume
    In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### Create an IMS configuration {#create-an-ims-configuration}
+### Create an IMS configuration
 
 The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
@@ -213,11 +213,11 @@ To configure the IMS account:
 1. 「**[!UICONTROL プロジェクトに追加]**」をクリックして、「**[!UICONTROL API]**」を選択します。
 1. 「**[!UICONTROL Adobe Stock]**」を選択して、「**[!UICONTROL 次へ]**」をクリックします。
 1. **[!UICONTROL 資格情報名]**&#x200B;を指定し、**[!UICONTROL OAuth サーバー間]**&#x200B;が選択されていることを確認して、「**[!UICONTROL 次へ]**」をクリックします。
-1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。[!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードが表示されます。
+1. **[!UICONTROL AEM Assets]** **[!UICONTROL 製品プロファイル]**&#x200B;を選択して、「**[!UICONTROL 設定済み API を保存]**」をクリックします。 [!DNL Developer Console] でプロジェクトを作成したことを確認する成功メッセージが表示されます。 プロジェクトのダッシュボードが開き、上部にプロジェクト名、**[!UICONTROL APIS]** の下に **[!UICONTROL Adobe Stock]**、**[!UICONTROL 製品プロファイル]**&#x200B;の下に **[!UICONTROL AEM Assets]**、**[!UICONTROL 接続された資格情報]**&#x200B;の下に **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードが表示されます。
 
    ![AEM Assets と Adobe Stock の統合](/help/assets/assets/adc-project-name.png)
 
-1. **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードを選択すると、**[!UICONTROL 資格情報の詳細]**&#x200B;が表示されます。**[!UICONTROL クライアント ID]**、**[!UICONTROL クライアント秘密鍵]**、**[!UICONTROL 範囲]**、**[!UICONTROL 資格情報名]**、**[!UICONTROL テクニカルアカウント ID]**、**[!UICONTROL 組織 ID]** など、プロジェクトの [!DNL OAuth Server-to-Server] 資格情報の詳細を使用して、[AEM オーサーインスタンスに設定を追加](#add-configuration-in-the-aem-author-instance)します。
+1. **[!UICONTROL OAuth サーバー間]**&#x200B;資格情報カードを選択すると、**[!UICONTROL 資格情報の詳細]**&#x200B;が表示されます。 **[!UICONTROL クライアント ID]**、**[!UICONTROL クライアント秘密鍵]**、**[!UICONTROL 範囲]**、**[!UICONTROL 資格情報名]**、**[!UICONTROL テクニカルアカウント ID]**、**[!UICONTROL 組織 ID]** など、プロジェクトの [!DNL OAuth Server-to-Server] 資格情報の詳細を使用して、[AEM オーサーインスタンスに設定を追加](#add-configuration-in-the-aem-author-instance)します。
 
    ![AEM Assets と Adobe Stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
@@ -234,7 +234,7 @@ To configure the IMS account:
 
 1. [!DNL AEM] オーサーインスタンスに移動します。
 1. 「![AEM Assets と Adobe Stock](/help/assets/assets/Hammer.svg)」をクリックし、「**[!UICONTROL セキュリティ]**」、「**[!UICONTROL Adobe IMS 設定]**」の順に選択します。
-1. 「**[!UICONTROL 作成]**」をクリックして、新しい IMS 設定を作成します。**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]**」などの複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
+1. 「**[!UICONTROL 作成]**」をクリックして、新しい IMS 設定を作成します。 **[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページには、「**[!UICONTROL クラウドソリューション]**」、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL クライアント ID]**」、「**[!UICONTROL クライアント秘密鍵]**」、「**[!UICONTROL 範囲]**」、「**[!UICONTROL 組織 ID]**」などの複数のフィールドが表示されます。 これらのフィールドの詳細を指定するには、次の手順に従います。
 
    * **[!UICONTROL クラウドソリューション]**：「**[!UICONTROL Adobe Stock]**」を選択します。
    * **[!UICONTROL タイトル]**：この統合の名前を指定します。
@@ -257,7 +257,7 @@ To configure the IMS account:
 
    ![AEM での Adobe Stock の使用](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 
-1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe Stock 設定]**&#x200B;ページに複数のフィールドが表示されます。これらのフィールドの詳細を指定するには、次の手順に従います。
+1. 「**[!UICONTROL 作成]**」をクリックすると、**[!UICONTROL Adobe Stock 設定]**&#x200B;ページに複数のフィールドが表示されます。 これらのフィールドの詳細を指定するには、次の手順に従います。
 
    * **[!UICONTROL タイトル]**：**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページ（[手順 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) を参照）に移動し、タイトルをコピーしてここにペーストします。
    * **[!UICONTROL 関連する Adobe IMS 設定]**：作成した [!DNL Adobe Stock] 統合を選択します。
@@ -287,7 +287,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 1. Click **[!UICONTROL Save & Close]**. 
 -->
 
-お使いの[!DNL Experience Manager Assets]オーサーインスタンスは、[!DNL Adobe Stock] に統合されています。複数の [!DNL Adobe Stock] 設定（例えばロケールベースの設定など）を作成できます。これで、[!DNL Experience Manager] ユーザーインターフェイスの中から [!DNL Adobe Stock] アセットにアクセス、検索およびライセンス付与ができます。
+お使いの[!DNL Experience Manager Assets]オーサーインスタンスは、[!DNL Adobe Stock] に統合されています。 複数の [!DNL Adobe Stock] 設定（例えばロケールベースの設定など）を作成できます。 これで、[!DNL Experience Manager] ユーザーインターフェイスの中から [!DNL Adobe Stock] アセットにアクセス、検索およびライセンス付与ができます。
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
 
@@ -299,7 +299,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. ユーザーまたはグループを追加するには、[!DNL Adobe Stock]クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. Adobe Stock 設定にアクセスする権限を割り当てられたユーザーまたはグループを検索して追加します。詳しくは、[ユーザーグループへの権限の割り当て](#assign-permissions-to-group)を参照してください。
+1. Adobe Stock 設定にアクセスする権限を割り当てられたユーザーまたはグループを検索して追加します。 詳しくは、[ユーザーグループへの権限の割り当て](#assign-permissions-to-group)を参照してください。
 
 
 ## ユーザーグループへの権限の割り当て {#assign-permissions-to-group}
@@ -312,11 +312,11 @@ To configure the [!DNL Adobe Stock] cloud service:
 * 権限： `jcr:read`
 * 権限タイプ: `Allow`
 
-ユーザーグループを作成したり、既存のユーザーグループに権限を割り当てることができます。権限は、[!DNL Experience Manager Assets] インターフェイスまたは [!DNL User Admin] コンソールを使用して割り当てられます。
+ユーザーグループを作成したり、既存のユーザーグループに権限を割り当てることができます。 権限は、[!DNL Experience Manager Assets] インターフェイスまたは [!DNL User Admin] コンソールを使用して割り当てられます。
 
 **[!DNL Experience Manager] からユーザーグループにアクセスを許可するには：**
 
-1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL グループ]**&#x200B;に移動します。[!DNL Adobe Stock] のユーザーグループを作成します。
+1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL グループ]**&#x200B;に移動します。 [!DNL Adobe Stock] のユーザーグループを作成します。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL 権限]**&#x200B;に移動します。
 
@@ -324,23 +324,23 @@ To configure the [!DNL Adobe Stock] cloud service:
 
    * 次のパスを設定します。 `/conf/global/settings/stock`
    * 権限： `jcr:read`
-   * 権限タイプ：`Allow`
+   * 権限タイプ: `Allow`
 
    「**[!UICONTROL 追加]**」をクリックします。
 
    ![user-permissions](assets/aem-stock-user-permissions.png)
 
-1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Adobe Stock]** に移動します。[!DNL Adobe Stock] クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
+1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／ **[!UICONTROL Adobe Stock]** に移動します。 [!DNL Adobe Stock] クラウド設定を選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 
-1. 作成したユーザーグループを [!DNL Adobe Stock] 設定に追加します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. 作成したユーザーグループを [!DNL Adobe Stock] 設定に追加します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
    ![assign-user](assets/aem-stock-adduser.png)
 
 **[!DNL User Admin Console] からユーザーにアクセスを提供する：**
 
-1. [!DNL Experience Manager] ユーザー Admin Console を開きます。デフォルトの URL は `http://localhost:4502/userdamin` です。
+1. [!DNL Experience Manager] ユーザー Admin Console を開きます。 デフォルトの URL は `http://localhost:4502/userdamin` です。
 
-1. 左側のパネルで、`user_id` または `name` を入力して、ユーザーを検索します。ダブルクリックして、ユーザープロパティを開きます。
+1. 左側のパネルで、`user_id` または `name` を入力して、ユーザーを検索します。 ダブルクリックして、ユーザープロパティを開きます。
 
 1. 「**[!UICONTROL 権限]**」タブに移動し、[!DNL Adobe Stock] クラウド設定の `read` 権限を許可します。`/conf/global/settings/stock`
 
@@ -361,19 +361,19 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 管理者以外のユーザーが [!DNL Adobe Stock] クラウド設定の権限がある場合、[!DNL Experience Manager] インターフェイスから [!DNL Adobe Stock] アセットの検索やライセンスの取得ができます。
 
-ユーザーは、[!DNL Adobe Stock] アセットへのアクセス前に [!DNL Adobe Stock] クラウド設定をアクティベートする追加のステップを行う必要があります。これは 1 回限りのアクティビティです。ユーザーが複数の [!DNL Adobe Stock] クラウド設定に対する権限が割り当てられている場合、ユーザーは&#x200B;**[!UICONTROL ユーザーの環境設定]**&#x200B;から必要な設定を選択することができます。
+ユーザーは、[!DNL Adobe Stock] アセットへのアクセス前に [!DNL Adobe Stock] クラウド設定をアクティベートする追加のステップを行う必要があります。 これは 1 回限りのアクティビティです。 ユーザーが複数の [!DNL Adobe Stock] クラウド設定に対する権限が割り当てられている場合、ユーザーは&#x200B;**[!UICONTROL ユーザーの環境設定]**&#x200B;から必要な設定を選択することができます。
 
 [!DNL Adobe Stock] クラウド設定をアクティベートするには、次の操作を実行します。
 
 1. [!DNL Experience Manager] にログインします。
 
-1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックします。**[!UICONTROL ユーザー管理]**&#x200B;ウィンドウが開きます。
+1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックします。 **[!UICONTROL ユーザー管理]**&#x200B;ウィンドウが開きます。
 
 1. ドロップダウンリストから目的の&#x200B;**[!UICONTROL 在庫設定]**&#x200B;を選択し、「**[!UICONTROL 承諾]**」をクリックして設定をアクティベートします。
 
    ![user-preferences](assets/aem-stock-preferences.png)
 
-1. **[!UICONTROL Assets]** ／ **[!UICONTROL Adobe Stock]** に移動します。[!DNL Adobe Stock] アセットの表示、検索、ライセンスの取得が可能になりました。
+1. **[!UICONTROL Assets]** ／ **[!UICONTROL Adobe Stock]** に移動します。 [!DNL Adobe Stock] アセットの表示、検索、ライセンスの取得が可能になりました。
 
 次の表では、[!DNL Adobe Stock] アセットにアクセスする際のユーザー権限の仕組みについて説明します。
 
@@ -384,35 +384,35 @@ To configure the [!DNL Adobe Stock] cloud service:
 | test-doc1 | DAM ユーザー | /conf/global/settings/stock/cloud-config | いいえ | エラー：データの読み込みに失敗しました | いいえ |
 | test-doc1 | DAM ユーザー | **許可**：/conf/global/settings/stock **拒否**：/cloud-config | Stock 設定が表示されません | はい | いいえ |
 
-## [!DNL Adobe Stock] での [!DNL Experience Manager] アセットの使用と管理  {#usemanage}
+## [!DNL Adobe Stock] での [!DNL Experience Manager] アセットの使用と管理
 
-この機能を使用すると、[!DNL Experience Manager Assets] で [!DNL Adobe Stock] アセットを操作できます。[!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
+この機能を使用すると、[!DNL Experience Manager Assets] で [!DNL Adobe Stock] アセットを操作できます。 [!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
 
-[!DNL Experience Manager] 内で [!DNL Adobe Stock] アセットのライセンスを取得すると、そのアセットを通常のアセットと同様に使用および管理できます。ユーザーは [!DNL Experience Manager] 内でアセットの検索およびプレビュー、アセットのコピーおよび公開、[!DNL Brand Portal] でのアセットの共有、[!DNL Experience Manager] デスクトップアプリケーション経由でのアセットのアクセスおよび使用を行うことができます。
+[!DNL Experience Manager] 内で [!DNL Adobe Stock] アセットのライセンスを取得すると、そのアセットを通常のアセットと同様に使用および管理できます。 ユーザーは [!DNL Experience Manager] 内でアセットの検索およびプレビュー、アセットのコピーおよび公開、[!DNL Brand Portal] でのアセットの共有、[!DNL Experience Manager] デスクトップアプリケーション経由でのアセットのアクセスおよび使用を行うことができます。
 
 ![[!DNL Adobe Experience Manager] Workspace から [!DNL Adobe Stock] アセットを検索して結果を絞り込む](assets/adobe-stock-search-results-workspace.png)
 
-**A.** [!DNL Adobe Stock] ID が指定されているアセットと類似しているアセットを検索します。**B.** 選択した形状や向きと一致するアセットを検索します。**C.** サポートされているアセットタイプのいずれかを検索します。**D.** フィルターウィンドウを開く／折りたたみます。**E.** 選択したアセットのライセンスを取得して [!DNL Experience Manager] に保存します。**F.** アセットを透かし付きで [!DNL Experience Manager] に保存します。**G.** 選択したアセットと類似したアセットを [!DNL Adobe Stock] の web サイトで調べます。**H.** 選択したアセットを [!DNL Adobe Stock] の web サイトに表示します。**I.** 検索結果から選択したアセットの数。**J.** カード表示とリスト表示を切り替えます。
+**A.** [!DNL Adobe Stock] ID が指定されているアセットと類似しているアセットを検索します。 **B.** 選択した形状や向きと一致するアセットを検索します。 **C.** サポートされているアセットタイプのいずれかを検索します。**D.** フィルターウィンドウを開く／折りたたみます。**E.** 選択したアセットのライセンスを取得して [!DNL Experience Manager] に保存します。**F.** アセットを透かし付きで [!DNL Experience Manager] に保存します。**G.** 選択したアセットと類似したアセットを [!DNL Adobe Stock] の web サイトで調べます。**H.** 選択したアセットを [!DNL Adobe Stock] の web サイトに表示します。**I.** 検索結果から選択したアセットの数。**J.** カード表示とリスト表示を切り替えます。
 
-### アセットの検索 {#find-assets}
+### アセットの検索
 
-[!DNL Experience Manager] ユーザーは、[!DNL Experience Manager] と [!DNL Adobe Stock] の両方でアセットを検索できます。検索場所を [!DNL Adobe Stock] に限定しない場合は、[!DNL Experience Manager] と [!DNL Adobe Stock] からの検索結果が表示されます。
+[!DNL Experience Manager] ユーザーは、[!DNL Experience Manager] と [!DNL Adobe Stock] の両方でアセットを検索できます。 検索場所を [!DNL Adobe Stock] に限定しない場合は、[!DNL Experience Manager] と [!DNL Adobe Stock] からの検索結果が表示されます。
 
 * [!DNL Adobe Stock] アセットを検索するには、**[!UICONTROL ナビゲーション]**／**[!UICONTROL アセット]**／**[!UICONTROL Adobe Stock を検索]**&#x200B;をクリックします。
 
 * [!DNL Adobe Stock] と [!DNL Experience Manager Assets] にまたがるアセットを検索するには、「![検索](assets/do-not-localize/search_icon.png)」をクリックします。
 
-また、アセットを選択するには、検索バーに「`Location: Adobe Stock`」と入力します。[!DNL Adobe Stock]&#x200B;[!DNL Experience Manager] は、検索されたアセットに対する高度なフィルタリング機能を備えており、サポートされているアセットのタイプや画像の向き、ライセンスの状態などのフィルターを使用して、必要なアセットをすばやく見つけることができます。
+また、アセットを選択するには、検索バーに「`Location: Adobe Stock`」と入力します。[!DNL Adobe Stock] [!DNL Experience Manager] は、検索されたアセットに対する高度なフィルタリング機能を備えており、サポートされているアセットのタイプや画像の向き、ライセンスの状態などのフィルターを使用して、必要なアセットをすばやく見つけることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Stock] から検索されたアセットは [!DNL Experience Manager] に表示されます。[アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットにライセンスを付与して保存](/help/assets/aem-assets-adobe-stock.md#licenseassets)した後でないと、[!DNL Adobe Stock] アセットを取得して [!DNL Experience Manager] リポジトリーに保存することはできません。既に [!DNL Experience Manager] に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。また、[!DNL Stock] アセットは、ソースが [!DNL Stock] であることを示すいくつかの追加メタデータとともに保存されます。
+>[!DNL Adobe Stock] から検索されたアセットは [!DNL Experience Manager] に表示されます。 [アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットにライセンスを付与して保存](/help/assets/aem-assets-adobe-stock.md#licenseassets)した後でないと、[!DNL Adobe Stock] アセットを取得して [!DNL Experience Manager] リポジトリーに保存することはできません。 既に [!DNL Experience Manager] に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。 また、[!DNL Stock] アセットは、ソースが [!DNL Stock] であることを示すいくつかの追加メタデータとともに保存されます。
 
 ![[!DNL Experience Manager] の検索フィルターと、検索結果内でハイライトされている [!DNL Adobe Stock] アセット](assets/aem-search-filters2.jpg)
 
-### 必要なアセットの保存と表示 {#saveassets}
+### 必要なアセットの保存と表示
 
-[!DNL Experience Manager] に保存するアセットを選択します。上部ツールバーの「[!UICONTROL 保存]」をクリックし、アセットの名前と保存場所を指定します。ライセンスが不要なアセットはローカルに透かし付きで保存されます。
+[!DNL Experience Manager] に保存するアセットを選択します。 上部ツールバーの「[!UICONTROL 保存]」をクリックし、アセットの名前と保存場所を指定します。 ライセンスが不要なアセットはローカルに透かし付きで保存されます。
 
 アセットの検索を次回実行すると、保存済みのアセットは、[!DNL Experience Manager Assets] で使用可能であることを示すバッジ付きでハイライトされます。
 
@@ -420,36 +420,36 @@ To configure the [!DNL Adobe Stock] cloud service:
 >
 >最近追加されたアセットには、ライセンスが許諾されていることを示すバッジではなく、新しいアセットであることを示すバッジが表示されます。
 
-### アセットのライセンス取得 {#licenseassets}
+### アセットのライセンス取得
 
-[!DNL Adobe Stock] エンタープライズプランの割り当てを使用することで、[!DNL Adobe Stock] アセットのライセンスを取得できます。ライセンスを許諾されたアセットは透かしなしで保存され、[!DNL Experience Manager Assets] で検索することも使用することも可能になります。
+[!DNL Adobe Stock] エンタープライズプランの割り当てを使用することで、[!DNL Adobe Stock] アセットのライセンスを取得できます。 ライセンスを許諾されたアセットは透かしなしで保存され、[!DNL Experience Manager Assets] で検索することも使用することも可能になります。
 
 ![[!DNL Adobe Stock] アセットのライセンスを取得して [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg) に保存するダイアログ
 
 
-### メタデータおよびアセットプロパティへのアクセス {#access-metadata-and-asset-properties}
+### メタデータおよびアセットプロパティへのアクセス
 
-メタデータ（[!DNL Experience Manager] に保存されているアセットの [!DNL Adobe Stock] メタデータプロパティを含む）にアクセスしてプレビューし、アセットの&#x200B;**[!UICONTROL ライセンス参照]**&#x200B;を追加できます。ただし、ライセンス参照の更新は [!DNL Experience Manager] と [!DNL Adobe Stock] Web サイトの間で同期されません。
+メタデータ（[!DNL Experience Manager] に保存されているアセットの [!DNL Adobe Stock] メタデータプロパティを含む）にアクセスしてプレビューし、アセットの&#x200B;**[!UICONTROL ライセンス参照]**&#x200B;を追加できます。 ただし、ライセンス参照の更新は [!DNL Experience Manager] と [!DNL Adobe Stock] Web サイトの間で同期されません。
 
 ユーザーは、ライセンスを許諾されたアセットとライセンスを許諾されていないアセットの両方を表示できます。
 
 ![保存されているアセットのメタデータとライセンス参照の表示、アクセス](assets/metadata_properties.jpg)
 
 
-## 既知の制限事項 {#known-limitations}
+## 既知の制限事項
 
 * **ユーザーのライセンスを制限する機能が正しく機能しない**：Stock 設定に対する `read` 権限を持つすべてのユーザーは、[!DNL Adobe Stock] アセットを検索してライセンスを取得できます。
 
-* **管理者以外のユーザーは、[!DNL Adobe Stock] クラウド設定を手動でアクティベートする必要がある**：**[!UICONTROL ユーザー環境設定]**&#x200B;ウィンドウで、**[!UICONTROL Stock 設定]**&#x200B;に [!DNL Adobe Stock] クラウド設定は有効になっていますが、管理者以外のユーザーには機能しません。ユーザーは、「**[!UICONTROL 同意する]**」ボタンをクリックして、Stock 設定をアクティベートする必要があります。この手順がない場合、システムは **[!UICONTROL Assets]** にアクセスする際にエラーメッセージを反映します。
+* **管理者以外のユーザーは、[!DNL Adobe Stock] クラウド設定を手動でアクティベートする必要がある**：**[!UICONTROL ユーザー環境設定]**&#x200B;ウィンドウで、**[!UICONTROL Stock 設定]**&#x200B;に [!DNL Adobe Stock] クラウド設定は有効になっていますが、管理者以外のユーザーには機能しません。 ユーザーは、「**[!UICONTROL 同意する]**」ボタンをクリックして、Stock 設定をアクティベートする必要があります。 この手順がない場合、システムは **[!UICONTROL Assets]** にアクセスする際にエラーメッセージを反映します。
 
-* **編集画像の警告が表示されない**：画像のライセンスを取得する場合、ユーザーは画像が「編集のみ使用」かどうか確認できません。管理者は誤用を防ぐために、Admin Console から編集用アセットへのアクセスをオフにできます。
+* **編集画像の警告が表示されない**：画像のライセンスを取得する場合、ユーザーは画像が「編集のみ使用」かどうか確認できません。 管理者は誤用を防ぐために、Admin Console から編集用アセットへのアクセスをオフにできます。
 
-* **間違ったライセンスの種類が表示される**：[!DNL Experience Manager] で、アセットに対して正しくないライセンスタイプが表示される可能性があります。[!DNL Adobe Stock] Web サイトにログインすると、ライセンスタイプを確認できます。
+* **間違ったライセンスの種類が表示される**：[!DNL Experience Manager] で、アセットに対して正しくないライセンスタイプが表示される可能性があります。 [!DNL Adobe Stock] Web サイトにログインすると、ライセンスタイプを確認できます。
 
-* **参照フィールドとメタデータが同期されない**：ユーザーがライセンス参照フィールドを更新すると、そのライセンス参照情報は [!DNL Experience Manager] で更新されますが、[!DNL Adobe Stock] Web サイト上では更新されません。同様に、[!DNL Adobe Stock] Web サイトで参照フィールドを更新すると、更新情報が [!DNL Experience Manager] には反映されません。
+* **参照フィールドとメタデータが同期されない**：ユーザーがライセンス参照フィールドを更新すると、そのライセンス参照情報は [!DNL Experience Manager] で更新されますが、[!DNL Adobe Stock] Web サイト上では更新されません。 同様に、[!DNL Adobe Stock] Web サイトで参照フィールドを更新すると、更新情報が [!DNL Experience Manager] には反映されません。
 
 <!--
-## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
+## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager]
 
 Using this capability, organizations users can work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
 
@@ -465,7 +465,7 @@ Once an [!DNL Adobe Stock] asset is licensed in [!DNL Experience Manager], it ca
 -->
 
 <!--
-### Find assets {#find-assets}
+### Find assets
 
 Your [!DNL Experience Manager] users, can search for assets in both, [!DNL Experience Manager] and [!DNL Adobe Stock]. When the search location is not limited to [!DNL Adobe Stock], the search results from [!DNL Experience Manager] and [!DNL Adobe Stock] are displayed.
 
@@ -483,7 +483,7 @@ Alternatively, start typing `Location: Adobe Stock` in the search bar to select 
 
 *Figure: Search filters in [!DNL Experience Manager] and highlighted [!DNL Adobe Stock] assets in search results.*
 
-### Save and view the required assets {#saveassets}
+### Save and view the required assets
 
 Select an asset that you want to save in [!DNL Experience Manager]. Click [!UICONTROL Save] in the toolbar at the top and provide the name and location of the asset. The unlicensed assets are saved locally with a watermark.
 
@@ -493,7 +493,7 @@ Next time when you search for assets, the saved assets are highlighted with a ba
 >
 >The recently added assets display a New badge instead of Licensed badge.
 
-### License assets {#licenseassets}
+### License assets
 
 Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Adobe Stock] enterprise plan. When you license an asset, it is saved without a watermark and is available for searching and using in [!DNL Experience Manager Assets].
 
@@ -501,7 +501,7 @@ Users can license [!DNL Adobe Stock] assets by using the quota of their [!DNL Ad
 
 *Figure: Dialog to license and save [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets].*
 
-### Access metadata and asset properties {#access-metadata-and-asset-properties}
+### Access metadata and asset properties
 
 Users can access and preview the metadata, including the [!DNL Adobe Stock] metadata properties for the assets saved in [!DNL Experience Manager], and add **[!UICONTROL License References]** for an asset. However, the updates to license reference are not synced between [!DNL Experience Manager] and [!DNL Adobe Stock] website.
 
@@ -511,7 +511,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 *Figure: View and access metadata and license references of saved assets.*
 
-## Known limitations {#known-limitations}
+## Known limitations
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 
