@@ -50,7 +50,7 @@ ht-degree: 96%
 
 * （サンドボックスのみ）サービスにオンボードした後、[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=ja)と[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=ja)は、実稼働用と非実稼働用の両方のパイプラインを実行します。 [!DNL AEM Forms] as a Cloud Service の最新機能を有効にし、環境に提供します。
 
-Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。 [ オンボーディング ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)を[!DNL Adobe Experience Manager] as a Cloud Serviceに完了したら、次の操作を実行して、Forms - デジタル登録またはカスタマーコミュニケーション機能を有効にします。 <!--You can also enable both the features-->:
+Forms as a Cloud Service を使用してアダプティブフォーム（デジタル登録）を作成したり、顧客通信を生成したりできます。 [&#x200B; オンボーディング &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=ja)を[!DNL Adobe Experience Manager] as a Cloud Serviceに完了したら、次の操作を実行して、Forms - デジタル登録またはカスタマーコミュニケーション機能を有効にします。 <!--You can also enable both the features-->:
 
 1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 1. 「プログラムを編集」オプションを開き、「ソリューションとアドオン」タブに移動します。

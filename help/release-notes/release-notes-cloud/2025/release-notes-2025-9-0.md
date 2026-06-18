@@ -159,7 +159,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **自動メンテナンスアップデートの一時停止**
 
-運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。 [ 新しいセルフサービス機能 ](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
+運用開始日、ライブイベント、ピーク時の売上といった瞬間を逃すことはできません。 [&#x200B; 新しいセルフサービス機能 &#x200B;](/help/implementing/deploying/quiet-hours-update-free-periods.md)により、重要な場合に自動メンテナンスアップデートを停止し、チームが集中できるようにします。
 
 * 静かな時間：毎日設定された時間に自動メンテナンスをブロックします。 勤務時間、夜間の実行や朝の切り替え時などに最適です。
 * 更新不要の期間：自動メンテナンスを 1 週間ブロックします。 ローンチ、プロモーションまたは年次フリーズに使用します。
