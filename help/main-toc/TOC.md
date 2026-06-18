@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5c83ebe973e5d9bd5a25ebcd82c53b35943d7413
+source-git-commit: a773352161bf99b8058a3b20177803c662f96d30
 workflow-type: tm+mt
-source-wordcount: '7506'
+source-wordcount: '7499'
 ht-degree: 84%
 
 ---
@@ -656,7 +656,6 @@ ht-degree: 84%
       + [開発者向けドキュメントと API リファレンス](/help/assets/developer-reference-material-apis.md)
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
       + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
-      + [オーディオおよびビデオアセットのトランスクリプションの設定](/help/assets/configure-transcription.md)
       + [アセットを翻訳](/help/assets/translate-assets.md)
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
