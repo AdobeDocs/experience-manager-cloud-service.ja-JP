@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b1de659aeb1e1d2d6d5428ec6434a2757dfe7d2d
+source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
 workflow-type: tm+mt
 source-wordcount: '3149'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -393,7 +393,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->* **AEM ページプロパティ拡張機能**&#x200B;ページに対してのみ機能し、コンテンツフラグメントには機能しません。
+>* 「**AEM ページプロパティ**」ボタンは、コンテンツフラグメントではなく、ページでのみ機能します。
 >* ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
 
 ### Sites コンソールへのアクセス {#sites-console}
