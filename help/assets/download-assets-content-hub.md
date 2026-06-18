@@ -4,7 +4,7 @@ description: Content Hub ポータルから1つ以上のアセットとそのレ
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 46ca8082f85cdb957681aa9596b9312b35e4f6ec
+source-git-commit: a0d2982cff40cd8a9826eb22304f16b14a44d631
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 41%
@@ -21,21 +21,21 @@ ht-degree: 41%
 
 [Content Hub での使用可能なレンディションのタイプ](#types-of-renditions)を参照してください。
 
-## 1 つ以上のアセットとそのレンディションのダウンロード {#download-asset-renditions}
+## 1 つ以上のアセットとそのレンディションのダウンロード
 
 1 つ以上のアセットとそのレンディションをダウンロードするには、次の手順を実行します。
 
 * 単一のアセットとそのレンディションをダウンロードするには：
 
-   1. アセットカードで利用可能な![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg)を選択して、アセットとその利用可能なレンディションをプレビューします。
+   1. アセットカードで利用可能な![ ダウンロード ](/help/assets/assets/download-icon.svg)を選択して、アセットとその利用可能なレンディションをプレビューします。
    1. 使用可能なレンディションを選択し、ダイアログボックスの「**[!UICONTROL ダウンロード]**」オプションをクリックして、選択したレンディションをZIP ファイルとしてダウンロードします。 ダイアログボックスに（ライセンス済みアセットの）アセットライセンスが表示された場合は、ライセンス条件に同意し、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-  ![&#x200B; アセットのダウンロード &#x200B;](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+  ![ アセットのダウンロード ](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
   または、アセットのサムネールをクリックし、![download](/help/assets/assets/download-icon.svg)をクリックして、ダイアログボックスで使用可能なレンディションを選択して表示してからダウンロードします。 アセットプロパティに移動して「ダウンロード」アイコンをクリックすると、アセットレンディションの配信URLをコピーすることもできます。 配信URLをコピーするオプションは、アセットの承認対象が[配信](/help/assets/approve-assets-content-hub.md#set-approval-target)に設定されている場合にのみ使用できます。
 
 * 複数のアセットとそのレンディションをダウンロードするには：
-   1. アセットを選択し、![&#x200B; ダウンロード &#x200B;](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**&#x200B;をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
+   1. アセットを選択し、![ ダウンロード ](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**&#x200B;をクリックして、**[!UICONTROL アセットをダウンロード]** ダイアログボックスで選択したアセットのリストを確認します。 アセットの横にある![選択解除](/help/assets/assets/Close.svg)をクリックして、リストから選択を解除します。
    1. 1つ以上のレンディションを選択して、ZIP ファイルとしてダウンロードします。 **[!UICONTROL スマート切り抜き]**&#x200B;および&#x200B;**[!UICONTROL 静的レンディション]**&#x200B;を選択すると、選択した各アセットの使用可能なすべての静的およびスマート切り抜きレンディションがダウンロードされます。
    1. オプション：「**[!UICONTROL アセットごとに個別のフォルダーを作成する]**」の選択を解除して、選択したアセットとそのレンディションをzip ファイル内のフォルダー内のフラット階層としてダウンロードします。 デフォルトでは、[!DNL Content Hub]は選択したアセットとそのレンディションをzip ファイル内の個別のフォルダーにダウンロードします。
 
@@ -52,7 +52,7 @@ ht-degree: 41%
 
 ![複数のアセットのダウンロード](/help/assets/assets/download-assets-notification-ch.png)
 
-**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合は、左側のペイン（[!UICONTROL T&amp;C ドキュメント &#x200B;] セクション）から各ライセンスを選択して、ライセンスをプレビューし、ダイアログボックスの中央のペインにライセンスに関連付けられた選択されたアセットを表示します。 各ライセンスを確認した後、レンディションを選択し、**[!UICONTROL 上記の利用条件を読んで同意しました]**、および&#x200B;**[!UICONTROL ダウンロード]**&#x200B;を選択してダウンロードします。
+**[!UICONTROL アセットをダウンロード]** ダイアログボックスにアセットライセンスが表示されている場合は、左側のペイン（[!UICONTROL T&amp;C ドキュメント ] セクション）から各ライセンスを選択して、ライセンスをプレビューし、ダイアログボックスの中央のペインにライセンスに関連付けられた選択されたアセットを表示します。 各ライセンスを確認した後、レンディションを選択し、**[!UICONTROL 上記の利用条件を読んで同意しました]**、および&#x200B;**[!UICONTROL ダウンロード]**&#x200B;を選択してダウンロードします。
 
 ![複数のアセットのダウンロード](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
@@ -64,7 +64,7 @@ ht-degree: 41%
 
 <!--
 
-## Download an asset and its renditions {#download-asset-renditions} 
+## Download an asset and its renditions
 
 To download an asset and its renditions, execute the following steps: 
 
@@ -154,7 +154,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 アセットレンディションは、アセットの元のファイルを様々に表現したものです。 これらのレンディションには、サムネール、webまたはモバイル用に最適化されたバージョン、透かし、DRMで保護されたファイル、スマート切り抜きなどの動的要素が含まれます。 元のファイルタイプと一致する必要はなく、代わりに、様々なユースケースでアセットを表すために機能します。
 
-詳しくは、[&#x200B; [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
+詳しくは、[ [!DNL Experience Manager Assets]](/help/assets/renditions.md) でのレンディションの表示と管理を参照してください。
 
 [!DNL Experience Manager Assets] では、次のレンディションのタイプをサポートしています。
 
