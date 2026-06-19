@@ -23,7 +23,7 @@ ht-degree: 80%
 >
 >* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [コンテンツフラグメントコンソールでのアセットの表示と管理](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
->* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+>* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して、次のことができます。
 
@@ -66,8 +66,8 @@ ht-degree: 80%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
-      * コンテンツフラグメントの[ ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
+      * コンテンツフラグメントの[&#x200B; ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -95,7 +95,7 @@ ht-degree: 80%
 コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
 * **タイトル**
-   * 南京錠アイコンは、フラグメントが[ チェックアウト ](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
+   * 南京錠アイコンは、フラグメントが[&#x200B; チェックアウト &#x200B;](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
    * 情報（i） アイコンを使用すると、右側のパネルで、追加のフラグメント固有の情報と設定オプションにすばやくアクセスできます。
 * **名前**
    * エディターでフラグメントを開くためのリンクを提供します。
@@ -403,7 +403,7 @@ FolderC
 
 * コンテンツフラグメントのプレビュー：
 
-   * [ ビジュアライゼーションテンプレート ](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
+   * [&#x200B; ビジュアライゼーションテンプレート &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
 
      <!-- CQDOC-23232 - remove when GA -->
 
@@ -419,7 +419,7 @@ FolderC
 
    * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [ プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
+   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [&#x200B; プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
 
      >[!CAUTION]
      >
@@ -516,8 +516,8 @@ FolderC
 
 AEMを活用すると、次のことが可能になります。
 
-* コンテンツフラグメントを[ チェックアウト ](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
-* [ チェックイン ](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
+* コンテンツフラグメントを[&#x200B; チェックアウト &#x200B;](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
+* [&#x200B; チェックイン &#x200B;](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
 
 フラグメントをチェックアウトすると、フラグメントはロックされます（`jcr:lock`）。 **タイトル**&#x200B;列の南京錠アイコンは、ロックされたフラグメントを示します。 南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
 
@@ -537,7 +537,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[ チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
+>コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[&#x200B; チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
 
 ### コンテンツフラグメントのチェックアウト {#check-out-a-content-fragment}
 
@@ -568,7 +568,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->Assets [強制チェックイン ](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
+>Assets [強制チェックイン &#x200B;](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 

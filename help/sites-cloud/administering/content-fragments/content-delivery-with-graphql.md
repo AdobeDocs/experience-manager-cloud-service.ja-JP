@@ -23,7 +23,7 @@ ht-degree: 98%
 >
 >関連トピック：
 >
->* [ ヘッドレスとは何ですか？](/help/headless/what-is-headless.md) ヘッドレスの概念と用語の概要を説明します。
+>* [&#x200B; ヘッドレスとは何ですか？](/help/headless/what-is-headless.md) ヘッドレスの概念と用語の概要を説明します。
 >
 >* AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[ヘッドレスと AEM](/help/headless/introduction.md) を参照してください。
 
