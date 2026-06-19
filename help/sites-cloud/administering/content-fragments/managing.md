@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3402'
 ht-degree: 80%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 80%
 >
 >* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [コンテンツフラグメントコンソールでのアセットの表示と管理](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
->* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+>* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して、次のことができます。
 
@@ -52,7 +52,7 @@ ht-degree: 80%
 
 **コンテンツフラグメント**&#x200B;を選択すると、コンソールが新しいタブで開きます。
 
-![コンテンツフラグメントコンソール - 概要](assets/cf-managing-console-overview.png)
+![コンテンツフラグメントコンソール - 概要](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-overview.png)
 
 主な領域が 3 つあります。
 
@@ -66,8 +66,8 @@ ht-degree: 80%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
-      * コンテンツフラグメントの[&#x200B; ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
+      * コンテンツフラグメントの[ ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -95,7 +95,7 @@ ht-degree: 80%
 コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
 * **タイトル**
-   * 南京錠アイコンは、フラグメントが[&#x200B; チェックアウト &#x200B;](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
+   * 南京錠アイコンは、フラグメントが[ チェックアウト ](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
    * 情報（i） アイコンを使用すると、右側のパネルで、追加のフラグメント固有の情報と設定オプションにすばやくアクセスできます。
 * **名前**
    * エディターでフラグメントを開くためのリンクを提供します。
@@ -130,17 +130,17 @@ ht-degree: 80%
 * **参照元**:
    * フラグメントのすべての[親参照](#parent-references-fragment)を一覧表示するダイアログを開くリンクを提供します。コンテンツフラグメント、エクスペリエンスフラグメント、ページの参照が含まれます。 特定の参照を開くには、ダイアログで「**タイトル**」をクリックします。
 
-     ![コンテンツフラグメントコンソール - 参照ダイアログ](assets/cf-managing-console-references-dialog.png)
+     ![コンテンツフラグメントコンソール - 参照ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 * **言語**：[言語](#language-copies-fragment)コピーを示します
 
    * コンテンツフラグメントのロケールと、コンテンツフラグメントに関連付けられたローカル／[言語](#language-copies-fragment)コピーの総数を示します。
 
-     ![コンテンツフラグメントコンソール - 言語インジケーター](assets/cf-managing-console-language-indicator.png)
+     ![コンテンツフラグメントコンソール - 言語インジケーター](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-language-indicator.png)
 
    * カウントを選択して、すべての言語コピーが表示されるダイアログを開きます。 特定の言語コピーを開くには、ダイアログで「**タイトル**」をクリックします。
 
-     ![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
+     ![コンテンツフラグメントコンソール - 言語ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 * **ワークフロー**
 
@@ -148,11 +148,11 @@ ht-degree: 80%
 
    * 特定のフラグメントのアイコンを選択します。
 
-     ![コンテンツフラグメントコンソール - ワークフローアイコン](assets/cf-managing-console-workflows-icon.png)
+     ![コンテンツフラグメントコンソール - ワークフローアイコン](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-icon.png)
 
      フラグメントのワークフロー（過去および現在）に関する詳細情報を含むダイアログを開くには、次の手順を実行します。
 
-     ![コンテンツフラグメントコンソール - ワークフローダイアログ](assets/cf-managing-console-workflows-dialog.png)
+     ![コンテンツフラグメントコンソール - ワークフローダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-workflows-dialog.png)
 
 ## アクション {#actions}
 
@@ -182,7 +182,7 @@ ht-degree: 80%
 
 特定のフラグメントを選択するとツールバーが開き、そのフラグメントで使用可能なアクションが表示されます。 複数のフラグメントを選択することもできます。それに応じて、焦点が当たるアクションも変化します。
 
-![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](assets/cf-managing-console-fragment-toolbar.png)
+![コンテンツフラグメントコンソール - 選択したフラグメントのツールバー](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fragment-toolbar.png)
 
 * **[新しいエディターで開く](#editing-the-content-of-your-fragment)**
 * **[公開](#publishing-and-previewing-a-fragment)**（および&#x200B;**[非公開](#unpublishing-a-fragment)**）
@@ -239,7 +239,7 @@ ht-degree: 80%
    * **名前** - **タイトル**&#x200B;に基づいてオートコンプリートされますが、必要に応じて編集できます。
    * **説明**
 
-   ![新しいコンテンツフラグメントダイアログ](assets/cf-managing-new-cf-dialog.png)
+   ![新しいコンテンツフラグメントダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-new-cf-dialog.png)
 
 1. 「**作成**」または「**作成して開く**」を選択して、定義を保持します。
 
@@ -271,7 +271,7 @@ ht-degree: 80%
 
 1. フラグメントエディターが開きます。 必要な&#x200B;**バリエーション**&#x200B;を選択して、必要に応じて変更を加えます（変更は自動保存されます）。
 
-   ![フラグメントエディター](assets/cf-managing-editor.png)
+   ![フラグメントエディター](/help/sites-cloud/administering/content-fragments/assets/cf-managing-editor.png)
 
 ## コンテンツフラグメントのコピー {#copy-a-content-fragment}
 
@@ -385,7 +385,7 @@ FolderC
 1. ツールバーで「**タグを管理**」を選択します。
 1. タグセレクターを使用して、適用または削除するタグを選択します。
 
-   ![タグを管理](assets/cf-managing-manage-tags.png)
+   ![タグを管理](/help/sites-cloud/administering/content-fragments/assets/cf-managing-manage-tags.png)
 
 1. 更新を&#x200B;**保存**&#x200B;します。 これによりコンソールに戻ります。
 
@@ -403,7 +403,7 @@ FolderC
 
 * コンテンツフラグメントのプレビュー：
 
-   * [&#x200B; ビジュアライゼーションテンプレート &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
+   * [ ビジュアライゼーションテンプレート ](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
 
      <!-- CQDOC-23232 - remove when GA -->
 
@@ -419,7 +419,7 @@ FolderC
 
    * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [&#x200B; プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
+   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [ プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
 
      >[!CAUTION]
      >
@@ -458,7 +458,7 @@ FolderC
 
 1. すべての詳細をダイアログに入力します。 例えば、スケジュールされた公開リクエストの場合は、次のようになります。
 
-   ![公開ダイアログ](assets/cf-managing-publish-dialog.png)
+   ![公開ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-publish-dialog.png)
 
    >[!NOTE]
    >
@@ -486,7 +486,7 @@ FolderC
 
 関連するダイアログが開いたら、適切なサービスを選択できます。
 
-![非公開ダイアログ](assets/cf-managing-unpublish-dialog.png)
+![非公開ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-unpublish-dialog.png)
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ FolderC
 
 **置換**&#x200B;アクション（上部のツールバーにある）を使用すると、選択したコンテンツフラグメント内の指定したテキストを検索して置換できます。
 
-![検索と置換](assets/cf-managing-find-replace.png)
+![検索と置換](/help/sites-cloud/administering/content-fragments/assets/cf-managing-find-replace.png)
 
 置換前に検証条件がチェックされ、競合がある場合は通知されるので、置換文字列を変更するか、検証済みのインスタンスのみを置換できます。
 
@@ -510,14 +510,14 @@ FolderC
 >
 >20 個を超えるコンテンツフラグメントを選択すると、**検索と置換を実行できません**&#x200B;というメッセージが表示されます。
 
-![置換の確認](assets/cf-managing-confirm-replace.png)
+![置換の確認](/help/sites-cloud/administering/content-fragments/assets/cf-managing-confirm-replace.png)
 
 ## チェックアウトとチェックイン {#check-out-and-check-in}
 
 AEMを活用すると、次のことが可能になります。
 
-* コンテンツフラグメントを[&#x200B; チェックアウト &#x200B;](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
-* [&#x200B; チェックイン &#x200B;](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
+* コンテンツフラグメントを[ チェックアウト ](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
+* [ チェックイン ](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
 
 フラグメントをチェックアウトすると、フラグメントはロックされます（`jcr:lock`）。 **タイトル**&#x200B;列の南京錠アイコンは、ロックされたフラグメントを示します。 南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
 
@@ -537,7 +537,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[&#x200B; チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
+>コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[ チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
 
 ### コンテンツフラグメントのチェックアウト {#check-out-a-content-fragment}
 
@@ -568,7 +568,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->Assets [強制チェックイン &#x200B;](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
+>Assets [強制チェックイン ](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -594,7 +594,7 @@ AEMを活用すると、次のことが可能になります。
 
 例：
 
-![コンテンツフラグメントコンソール - 参照ダイアログ](assets/cf-managing-console-references-dialog.png)
+![コンテンツフラグメントコンソール - 参照ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-references-dialog.png)
 
 ## フラグメントの言語コピーの検索 {#language-copies-fragment}
 
@@ -605,21 +605,21 @@ AEMを活用すると、次のことが可能になります。
 
 コンテンツフラグメントのロケールと、コンテンツフラグメントに関連付けられたロケール/言語コピーの総数を示します。 例えば、コンソールで次の操作を実行できます。
 
-![コンテンツフラグメントコンソール - 言語インジケーター](assets/cfc-console-language-indicator.png)
+![コンテンツフラグメントコンソール - 言語インジケーター](/help/sites-cloud/administering/content-fragments/assets/cfc-console-language-indicator.png)
 
 カウントを選択して、すべての言語コピーが表示されるダイアログを開きます。 特定の言語コピーを開くには、ダイアログで「**タイトル**」をクリックします。
 
-![コンテンツフラグメントコンソール - 言語ダイアログ](assets/cf-managing-console-languages-dialog.png)
+![コンテンツフラグメントコンソール - 言語ダイアログ](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-languages-dialog.png)
 
 ## コンソールに表示される列の選択 {#select-columns-console}
 
 他のコンソールと同様に、表示する列やアクションに使用できる列を設定できます。
 
-![コンテンツフラグメントコンソール - 列の設定](assets/cf-managing-console-column-icon.png)
+![コンテンツフラグメントコンソール - 列の設定](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-icon.png)
 
 表示または非表示にできる列のリストが表示されます。
 
-![コンテンツフラグメントコンソール - 列の設定](assets/cf-managing-console-column-selection.png)
+![コンテンツフラグメントコンソール - 列の設定](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-column-selection.png)
 
 ## フラグメントのフィルタリング {#filtering-fragments}
 
@@ -634,7 +634,7 @@ AEMを活用すると、次のことが可能になります。
 
 選択した後、「検索」ボックスの下に「**フィルター条件**」オプションが表示され、 そこから選択を解除できます。 例：
 
-![コンテンツフラグメントコンソール - フィルタリング](assets/cf-managing-console-filter.png)
+![コンテンツフラグメントコンソール - フィルタリング](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
 ### 高速フィルタリング {#fast-filtering}
 
@@ -646,22 +646,22 @@ AEMを活用すると、次のことが可能になります。
 >
 >高速フィルターが対応しているのは、「**モデル**」、「**ステータス**」、「**変更者**、「**タグ**」、「**公開者**」の列のみです。
 
-![コンテンツフラグメントコンソール - フィルタリング](assets/cf-managing-console-fast-filter-overview.png)
+![コンテンツフラグメントコンソール - フィルタリング](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-overview.png)
 
 選択すると、フィルターの述語として表示され、それに応じてリストがフィルターされます。
 
-![コンテンツフラグメントコンソール - フィルタリング](assets/cf-managing-console-fast-filter-criteria.png)
+![コンテンツフラグメントコンソール - フィルタリング](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-fast-filter-criteria.png)
 
 ## フラグメントの検索 {#searching-fragments}
 
 検索ボックスは全文検索をサポートします。 検索ボックスに検索語句を入力します。
 
-![コンテンツフラグメントコンソール - 検索](assets/cf-managing-console-search-specification.png)
+![コンテンツフラグメントコンソール - 検索](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
 
 選択した結果が表示されます。
 
-![コンテンツフラグメントコンソール - 検索結果](assets/cf-managing-console-search-results.png)
+![コンテンツフラグメントコンソール - 検索結果](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
 
 また、検索ボックスでは&#x200B;**最近のコンテンツフラグメント**&#x200B;と&#x200B;**保存済みの検索結果**&#x200B;へのクイックアクセスも可能です。
 
-![コンテンツフラグメントコンソール - 最近および保存済みフラグメント](assets/cf-managing-console-search-saved.png)
+![コンテンツフラグメントコンソール - 最近および保存済みフラグメント](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
