@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 2919670732d924cb1d473be59513044239a780e6
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2938'
 ht-degree: 93%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 93%
    * [公開](#publish-content-fragment)および[非公開](#unpublish-content-fragment)アクション
    * すべての&#x200B;**親参照**&#x200B;を表示するオプション（リンクアイコン）
    * フラグメント&#x200B;**[ステータス](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**、および最後に保存した情報
-   * 元の（アセットベースの）エディターへの切替スイッチ
+   * 元のエディター（/help/sites-cloud/administering/content-fragments/assets-based）に切り替えるトグル
 
      >[!WARNING]
      >
@@ -601,7 +601,7 @@ For example:
    <td><p> <img src="assets/cf-authoring-number-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>ブール値</b></p> </td>
+   <td><p><b>ブーリアン</b></p> </td>
    <td><p> <img src="assets/cf-authoring-boolean-icon.png"> </p></td>
   </tr>
   <tr>
