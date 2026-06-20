@@ -5,21 +5,21 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 4dd6a9576092c2389f1416377b8e936360a7c7f8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 98%
+source-wordcount: '1522'
+ht-degree: 54%
 
 ---
 
 
-# ビルド環境 {#build-environment}
+# Cloud Managerのビルド環境 {#build-environment}
 
 Cloud Manager のビルド環境と、コードを作成およびテストする方法について説明します。
 
 >[!TIP]
 >
->このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。コンテンツのオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[&#x200B; サポートされているクライアントプラットフォーム &#x200B;](/help/overview/supported-platforms.md)を参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。 コンテンツのオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md)を参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 
@@ -32,15 +32,15 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * インストールされる Java バージョンは、Oracle JDK 11.0.22、Oracle JDK 17.0.10 および Oracle JDK 21.0.4 です。
 
 <!-- OLD Removed 1/16/25 * **IMPORTANT:** By default, the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`, which contains Oracle JDK 8u401. This default should be overridden for AEM Cloud Projects to use JDK 11. See the Setting the Maven JDK Version section for more details. -->
-* **重要：**&#x200B;デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。***AEM Cloud プロジェクトで JDK 21（推奨）、17、または 11 を使用するには、このデフォルトを上書きする必要があります***。詳しくは、[Maven JDK バージョンの設定](#alternate-maven-jdk-version)の節を参照してください。
-* 必要に応じてインストールされる追加のシステムパッケージが、次のようにいくつかあります。
+* **重要：**&#x200B;デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_401` に設定されています。これには、Oracle JDK 8u401 が含まれています。 ***AEM Cloud プロジェクトのこのデフォルトを上書きして、JDK 21 （推奨）、17、または11***&#x200B;を使用します。 詳しくは、[Maven JDK バージョンの設定](#alternate-maven-jdk-version)の節を参照してください。
+* 必要なシステムパッケージが追加でインストールされています。
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* [追加のシステムパッケージのインストール](#installing-additional-system-packages)の節で説明されているように、ビルド時にその他のパッケージがインストールされる場合があります。
-* 各ビルドはクリーンな環境で実行され、ビルドコンテナは実行間で状態を保持しません。
+* その他のパッケージは、[追加システムパッケージのインストール ](#installing-additional-system-packages)の節で説明されているように、ビルド時にインストールされます。
+* 各ビルドは新しい環境で実行されます。ビルドコンテナは、実行間でデータを保持しません。
 * Maven は常に次の 3 つのコマンドで実行されます。
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -49,15 +49,15 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 >[!NOTE]
 >
->Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは指定されませんが、必要なバージョンはプロジェクトの Java バージョンによって異なります。Java 8 の場合、プラグインのバージョンは `0.7.5.201505241946` 以降にする必要がありますが、新しい Java バージョンではより新しいリリースが必要になることがあります。
+>Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは指定されませんが、必要なバージョンはプロジェクトの Java バージョンによって異なります。 Java 8の場合、プラグインバージョンは少なくとも`0.7.5.201505241946`である必要がありますが、新しいJava バージョンでは、より新しいリリースが必要です。
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
-Cloud Manager [リリース 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) では、Maven 3.8.8 へのアップデートを含む、ビルド環境へのローリングアップデートが開始されました（リリース 2023.12.0 で完了）。Maven 3.8.1 で導入された重要な変更は、潜在的な脆弱性を軽減することを目的としたセキュリティ強化でした。具体的には、[Maven リリースノート](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
+Cloud Manager [ リリース 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)では、ビルド環境のローリングアップデート（リリース 2023.12.0で完了）が開始され、これにはMaven 3.8.8へのアップデートが含まれています。 Maven 3.8.1で導入された大きな変更は、潜在的な脆弱性を軽減するためのセキュリティ強化でした。 具体的には、[Maven リリースノート](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
 
-このセキュリティ強化の結果、一部のユーザーには、ビルド手順で、特に安全でない HTTP 接続を使用する Maven リポジトリからアーティファクトをダウンロードする際に問題が発生する場合があります。
+一部のユーザーは、安全でないHTTP接続を使用するMaven リポジトリからアーティファクトをダウンロードする際に、ビルド手順で問題が発生します。
 
-アップデートされたバージョンでスムーズなエクスペリエンスを実現するために、アドビでは、ユーザーが Mavenリポジトリを更新して HTTP ではなく HTTPS を使用することをお勧めします。この調整は、業界でセキュアな通信プロトコルへの移行が進むのに合わせて行われ、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
+アップデートされたバージョンでスムーズなエクスペリエンスを実現するために、アドビでは、ユーザーが Mavenリポジトリを更新して HTTP ではなく HTTPS を使用することをお勧めします。 この調整は、業界の安全な通信プロトコルへの移行と一致し、安全で信頼性の高いビルドプロセスを維持するのに役立ちます。
 
 <!--
  OLD below Removed 1/16/25
@@ -79,79 +79,79 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 ### 特定の Java バージョンの使用 {#using-java-support}
 
-Cloud Manager のビルドプロセスでは、デフォルトで Oracle 8 JDK を使用してプロジェクトを作成しますが、AEM Cloud Service のお客様は Maven 実行 JDK バージョンを 21（推奨）、17、または 11 に設定する必要があります。
+Cloud Manager ビルドプロセスでは、デフォルトでOracle 8 JDKを使用してプロジェクトをビルドしますが、AEM Cloud Serviceのお客様は、Maven実行JDK バージョンを21 （推奨）、17、または11に設定します。
 
 #### Maven JDK バージョンの設定 {#alternate-maven-jdk-version}
 
-Maven 実行 JDK を設定するには、パイプラインで使用される Git リポジトリ分岐に `.cloudmanager/java-version` というファイルを作成します。`21` または `17` というテキストのみが含まれるようにファイルを編集します。Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。その他の値は無視されます。`21` または `17` を指定した場合は、Oracle Java 21 または Oracle Java 17 が使用されます。
+Maven 実行 JDK を設定するには、パイプラインで使用される Git リポジトリ分岐に `.cloudmanager/java-version` というファイルを作成します。 `21` または `17` というテキストのみが含まれるようにファイルを編集します。 Cloud Manager は値 `8` も受け入れますが、このバージョンは AEM Cloud Service プロジェクトではサポートされなくなりました。 その他の値は無視されます。 `21` または `17` を指定した場合は、Oracle Java 21 または Oracle Java 17 が使用されます。
 
 
 #### Java 21 または Java 17 を使用したビルドへの移行の前提条件 {#prereq-for-building}
 
-Java 21 または Java 17 でビルドするために、Cloud Manager は、これらの Java バージョンと互換性のある SonarQube 9.9 を使用するようになりました。この変更は、Cloud Manager リリース 2025.1.0 で導入されました。SonarQube のアップグレードにお客様によるアクションは必要ありません。詳細および変更点については、[Cloud Manager 2025.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)を参照してください。
+Java 21 または Java 17 でビルドするために、Cloud Manager は、これらの Java バージョンと互換性のある SonarQube 9.9 を使用するようになりました。 この変更は、Cloud Manager リリース 2025.1.0で導入されました。 SonarQubeをアップグレードするために顧客の操作は必要ありません。 詳細および変更点については、[Cloud Manager 2025.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)を参照してください。
 
 アプリケーションを新しい Java ビルドバージョンとランタイムバージョンに移行する場合は、実稼動環境にデプロイする前に、開発環境とステージ環境で徹底的にテストします。
 
 次のデプロイメント戦略をお勧めします。
 
-1. https://experience.adobe.com/#/downloads からダウンロードできる Java 21 を使用してローカル SDK を実行し、アプリケーションをデプロイして機能を検証します。ログを確認して、クラスロードまたはバイトコードウィービングの問題を示すエラーがないことを確認します。
-1. Cloud Manager リポジトリ内の分岐を、ビルド時の Java バージョンとして Java 21 を使用するように設定し、この分岐を使用するように開発パイプラインを設定して、パイプラインを実行します。検証テストを実行します。
-1. 問題がなければ、ビルド時の Java バージョンとして Java 21 を使用するようにステージ／実稼動パイプラインを設定して、パイプラインを実行します。
+1. https://experience.adobe.com/#/downloadsからダウンロードできるJava 21でローカル SDKを実行し、アプリケーションをデプロイして、その機能を検証します。 クラスの読み込みやバイトコードの織り込みに関する問題を示すエラーがないことを確認するには、ログを確認します。
+1. Java 21をビルド時間Java バージョンとして使用するには、Cloud Manager リポジトリでブランチを設定し、このブランチを使用するようにDEV パイプラインを設定してパイプラインを実行します。 検証テストを実行します。
+1. Java 21をビルド時間Java バージョンとして使用する場合に結果が良好である場合は、ステージ/実稼動パイプラインを設定してパイプラインを実行します。
 
-##### 一部の翻訳機能について {#translation-features}
+##### 翻訳機能 {#translation-features}
 
-Java 21 ランタイムにデプロイすると、次の機能が正しく機能しない可能性があります。アドビでは、2025年初頭までにこれらの問題を解決する予定です。
+Java 21 ランタイムにデプロイすると、次の機能が正しく機能せず、Adobeでは2025年初頭までにそれらを解決する予定です。
 
 * `XLIFF`（XML Localization Interchange File Format）は、人による翻訳を使用すると失敗します。
-* 新しい Java バージョンでの ロケールコンストラクタの変更により、`I18n`（国際化）では、言語ロケールのヘブライ語（`he`）、インドネシア語（`in`）、イディッシュ語（`yi`）が適切に処理されません。
+* 新しいJava バージョンでロケールコンストラクターが変更されたため、`I18n` （国際化）は、ヘブライ語（`he`）、インドネシア語（`in`）、およびイディッシュ語（`yi`）の言語ロケールを適切に処理できません。
 
 #### ランタイム要件 {#runtime-requirements}
 
-Java 21 ランタイムは、すべての対象環境（AEM リリース 17098 以降で以下の条件を満たす環境）に適用されています。環境が条件を満たさない場合は、パフォーマンス、可用性、セキュリティを確保するために調整を行うことが重要です。
+Java 21 ランタイムは、以下の条件を満たすAEM リリース 17098以降の環境である、すべての対象環境に適用されました。 環境が条件を満たさない場合は、パフォーマンス、可用性、セキュリティを確保するために調整を行うことが重要です。
 
-* **ASM の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、多くの場合、`org.ow2.asm.*` アーティファクトにバンドルされている Java パッケージ `org.objectweb.asm` の使用をバージョン 9.5 以降に更新します。
+* **ASMの最小バージョン：**
+新しいJVM ランタイムのサポートを確保するために、Java パッケージ `org.objectweb.asm`の使用状況をバージョン 9.5以降に更新します（多くの場合、`org.ow2.asm.*` アーティファクトにバンドルされています）。
 
-* **Groovy の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、Java パッケージ `org.apache.groovy` または `org.codehaus.groovy` の使用をバージョン 4.0.22 以降に更新します。
+* **Groovyの最小バージョン：**
+Java パッケージ `org.apache.groovy`または`org.codehaus.groovy`の使用方法をバージョン 4.0.22以降に更新して、新しいJVM ランタイムをサポートするようにします。
 
   このバンドルは、AEM Groovy コンソールなどのサードパーティの依存関係を追加することで間接的に含めることができます。
 
-* **Aries SPIFly の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、Java パッケージ `org.apache.aries.spifly.dynamic.bundle` の使用をバージョン 1.3.6 以降に更新します。
+* **Aries SPIFlyの最小バージョン：**
+新しいJVM ランタイムのサポートを確保するために、Java パッケージ `org.apache.aries.spifly.dynamic.bundle`の使用方法をバージョン 1.3.6以降に更新します。
 
 AEM Cloud Service SDK は、Java 21 をサポートしています。これにより、Cloud Manager パイプラインを実行する前にプロジェクトと Java 21 の互換性を確認できます。
 
-* **ランタイムパラメーターの編集：**
-Java 21 を使用して AEM をローカルで実行すると、`MaxPermSize` パラメーターにより起動スクリプト（`crx-quickstart/bin/start` または `crx-quickstart/bin/start.bat`）が失敗します。対処方法としては、スクリプトから `-XX:MaxPermSize=256M` を削除するか、環境変数 `CQ_JVM_OPTS` を定義して `-Xmx1024m -Djava.awt.headless=true` に設定します。
+* **ランタイム パラメーターを編集：**
+Java 21でAEMをローカルで実行すると、`MaxPermSize` パラメーターが原因で開始スクリプト （`crx-quickstart/bin/start`または`crx-quickstart/bin/start.bat`）が失敗します。 または、スクリプトから`-XX:MaxPermSize=256M`を削除するか、環境変数`CQ_JVM_OPTS`を定義して`-Xmx1024m -Djava.awt.headless=true`に設定します。
 
   この問題は、AEM Cloud Service SDK のバージョン 19149 以降で解決されています。
 
 >[!IMPORTANT]
 >
->環境が Java 21 ランタイムにまだ自動更新されていない場合は、Java 17 または 21 を使用してビルドすれば、トリガーできます。これを行うには、`.cloudmanager/java-version` を `21` または `17` に設定します。ご不明な点については、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）までお問い合わせください。
+>環境が Java 21 ランタイムにまだ自動更新されていない場合は、Java 17 または 21 を使用してビルドすれば、トリガーできます。 この設定は、`.cloudmanager/java-version`を`21`または`17`に設定することによって行います。 ご不明な点については、アドビ（[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)）までお問い合わせください。
 
 #### ビルド時間の要件 {#build-time-reqs}
 
-Java 21 および Java 17 を使用してプロジェクトをビルドできるようにするには、次の調整が必要です。これらは古い Java バージョンと互換性があるので、Java 21 および Java 17 を実行する前でも更新できます。
+Java 21 および Java 17 を使用してプロジェクトをビルドできるようにするには、次の調整が必要です。 これらは古い Java バージョンと互換性があるので、Java 21 および Java 17 を実行する前でも更新できます。
 
 新しい言語機能を活用するには、AEM Cloud Service のお客様はできるだけ早く Java 21 を使用してプロジェクトを作成することをお勧めします。
 
-* **`bnd-maven-plugin` の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、`bnd-maven-plugin` の使用をバージョン 6.4.0 に更新します。
+* **最小バージョンの`bnd-maven-plugin`:**
+新しいJVM ランタイムのサポートを確保するために、`bnd-maven-plugin`の使用方法をバージョン 6.4.0に更新します。
 
   バージョン 7 以降は、Java 11 以下と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
 
-* **`aemanalyser-maven-plugin` の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、`aemanalyser-maven-plugin` の使用をバージョン 1.6.16 以降に更新します。
+* **最小バージョンの`aemanalyser-maven-plugin`:**
+新しいJVM ランタイムのサポートを確保するために、`aemanalyser-maven-plugin`の使用方法をバージョン 1.6.16以降に更新します。
 
-* **`maven-bundle-plugin` の最小バージョン：**
-新しい JVM ランタイムのサポートを確保するには、`maven-bundle-plugin` の使用をバージョン 5.1.5 以降に更新します。
+* **最小バージョンの`maven-bundle-plugin`:**
+新しいJVM ランタイムのサポートを確保するために、`maven-bundle-plugin`の使用方法をバージョン 5.1.5以降に更新します。
 
   バージョン 6 以降は、Java 11 以下と互換性がないので、そのバージョンへのアップグレードはお勧めしません。
 
-* **`maven-scr-plugin` の依存関係の更新：**
-`maven-scr-plugin` は、Java 21 または Java 17 と直接互換性がありません。ただし、次の例に示すように、プラグイン設定で ASM 依存関係バージョンを更新して、記述子ファイルを生成できます。
+* **`maven-scr-plugin`の依存関係を更新：**
+`maven-scr-plugin`は、Java 21またはJava 17と直接互換性がありません。 ただし、次の例に示すように、プラグイン設定で ASM 依存関係バージョンを更新して、記述子ファイルを生成できます。
 
 ```XML
 <project>
@@ -191,9 +191,9 @@ Java 21 および Java 17 を使用してプロジェクトをビルドできる
 
 ## 環境変数 - 標準 {#environment-variables}
 
-場合によっては、プログラムやパイプラインに関する情報に基づいてビルドプロセスを変更する必要があります。
+プログラムまたはパイプラインに関する情報に基づいてビルドプロセスを設定します。
 
-例えば、gulp などのツールを使用してビルド時に JavaScript の縮小が行われる場合、様々な環境で異なる縮小レベルが望ましいことがあります。開発ビルドでは、ステージング環境や実稼動環境と比較して、より軽い縮小レベルが使用される可能性があります。
+例えば、gulpなどのツールを使用してビルド時にJavaScriptの縮小が行われる場合、様々な環境に対して異なる縮小レベルが推奨されます。 開発ビルドでは、ステージングや実稼動と比較して、より軽い縮小レベルを使用します。
 
 これをサポートするために、Cloud Manager は、これらの標準環境変数を各実行のビルドコンテナに追加します。
 
@@ -210,13 +210,13 @@ Java 21 および Java 17 を使用してプロジェクトをビルドできる
 
 ## 環境変数 - パイプライン {#pipeline-variables}
 
-ビルドプロセスでは、Git リポジトリに保存すべきではない特定の設定変数が必要になる可能性があります。または、同じ分岐を使用したパイプライン実行間で、これらの変数の調整が必要になる場合があります。
+ビルドプロセスには、Git リポジトリに保存されていない特定の設定変数が必要です。 さらに、同じブランチを使用するパイプライン実行間でこれらの変数を調整する必要があります。
 
 詳しくは、[パイプライン変数の設定](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)も参照してください。
 
 ## 追加のシステムパッケージのインストール {#installing-additional-system-packages}
 
-すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージが必要です。例えば、Python や Ruby のスクリプトが呼び出される可能性のあるビルドでは、適切な言語インタープリターのインストールが必要になります。このインストールプロセスは、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して APT を起動することで、管理できます。この実行は通常、Cloud Manager 専用の Maven プロファイルにラップされます。この例では、Python をインストールしています。
+すべての機能を実装するにあたり、一部のビルドでは追加のシステムパッケージが必要です。 例えば、ビルドはPythonまたはRuby スクリプトを呼び出し、適切な言語インタープリターがインストールされている必要があります。 このインストールプロセスは、`pom.xml` で [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) を呼び出して APT を起動することで、管理できます。 この実行は、Cloud Manager固有のMaven プロファイルでラップされます。 この例では、Python をインストールしています。
 
 ```xml
         <profile>
@@ -273,7 +273,7 @@ Java 21 および Java 17 を使用してプロジェクトをビルドできる
 
 >[!NOTE]
 >
->この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストールされません。 AEM 環境にシステムパッケージをインストールする必要がある場合は、アドビ担当者にお問い合わせください。
+>この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストールされません。 AEM環境にシステムパッケージをインストールする必要がある場合は、Adobe担当者にお問い合わせください。
 
 >[!TIP]
 >

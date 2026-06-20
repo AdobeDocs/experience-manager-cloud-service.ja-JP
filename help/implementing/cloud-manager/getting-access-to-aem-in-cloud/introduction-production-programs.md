@@ -5,7 +5,7 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5a7a52a4ec67417f8a61406913ecf5175d330664
+source-git-commit: d41a68a2d60c45fcd0b48799c93f43b533948217
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 55%
@@ -15,9 +15,9 @@ ht-degree: 55%
 
 # 実稼働プログラムの概要 {#production-programs}
 
-本番プログラムは、コードの記述、構築、テストを開始する準備ができているチームを対象としています。 目的は、ライブトラフィックをホストするためにデプロイすることです。
+本番プログラムは、コードの記述、構築、テストを開始する準備ができているチームを対象としています。 目的は、ライブトラフィックをサポートするためにデプロイすることです。
 
-実稼動プログラムを[作成した後](creating-production-programs.md)、[&#x200B; プログラム作成ウィザード &#x200B;](using-the-wizard.md)が、プログラム作成の目的に応じてユーザーを選択できるようにガイドします。
+実稼動プログラムを[作成した後](creating-production-programs.md)、[ プログラム作成ウィザード ](using-the-wizard.md)が、プログラム作成の目的に応じてユーザーを選択できるようにガイドします。
 
 ## プログラム作成オプション {#program-creation-options}
 
