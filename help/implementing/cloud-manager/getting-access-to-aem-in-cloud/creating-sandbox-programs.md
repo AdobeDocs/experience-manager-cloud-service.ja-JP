@@ -5,16 +5,16 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0376fa4df5966807a11a64f304c8da2112e62bfd
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 63%
 
 ---
 
 # サンドボックスプログラムの作成 {#create-sandbox-program}
 
-サンドボックスプログラムは通常、トレーニング、デモの実行、有効化、概念実証（POC）またはドキュメント化の目的で作成されるので、ライブトラフィックを実行するためのものではありません。詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。
+サンドボックスプログラムは通常、トレーニング、デモの実行、有効化、概念実証（POC）またはドキュメント化の目的で作成されるので、ライブトラフィックを実行するためのものではありません。 詳しくは、[サンドボックスプログラムの概要](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。
 
 プログラムタイプについて詳しくは、[プログラムとプログラムタイプについて](program-types.md)のドキュメントを参照してください。
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 
    ![Cloud Manager ランディングページ](assets/log-in.png)
 
-1. *プログラムを作成*&#x200B;ウィザードの&#x200B;**プログラム名**&#x200B;テキストフィールドに、プログラムの名前を入力します。
+1. 「*プログラムを作成しましょう*」ウィザードの「**プログラム名**」テキストフィールドに、プログラムの名前を入力します。
 
 1. **プログラムの目的**&#x200B;の下で、![自動選択アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg)「**サンドボックスを設定**」を選択します。
 
    ![プログラムタイプの作成](assets/create-sandbox.png)
 
-1. （オプション）ウィザードダイアログボックスの右下隅で、次のいずれかの操作を行います。
+1. （オプション）ウィザード ダイアログボックスの右下隅で、次のいずれかの操作を行います。
 
    * 画像ファイルを ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **プログラム画像を追加**&#x200B;ターゲットにドラッグ＆ドロップします。
    * ![画像アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg)「**プログラム画像を追加**」をクリックし、ファイルブラウザーから画像を選択します。
@@ -43,23 +43,23 @@ ht-degree: 100%
 1. **ソリューションとアドオン**&#x200B;リストボックスで、プログラムに含める 1 つ以上のソリューションを選択します。
 
    * ソリューション名の左側にある山形をクリックすると、選択したソリューションに含める使用可能なオプションのアドオンが表示されます。
-   * **Sites**、**Assets**、**Edge Delivery Services** の各ソリューションは、サンドボックスプログラムの作成時に、デフォルトで常に選択されます。選択を解除することはできません。
+   * Cloud Managerでは、サンドボックスプログラムを作成する際に、デフォルトで&#x200B;**Sites**、**Assets**&#x200B;および&#x200B;**Edge Delivery Services**&#x200B;のソリューションが常に選択されます。 選択を解除することはできません。
 
    ![サンドボックス用のソリューションとアドオンを選択](assets/sandbox-solutions-add-ons.png)
 
-1. 「**作成**」をクリックします。Cloud Manager によってサンドボックスプログラムが作成され、ランディングページに表示されて選択できます。
+1. 「**作成**」をクリックします。 Cloud Manager によってサンドボックスプログラムが作成され、ランディングページに表示されて選択できます。
 
 ![概要ページからのサンドボックスの作成](assets/sandbox-setup.png)
 
 ## サンドボックスアクセス {#access}
 
-新しいサンドボックスプログラムの作成が完了したら、プログラムの概要ページを表示して、サンドボックス設定の詳細を確認し、環境にアクセスできます。
+新しいサンドボックスプログラムを作成した後、サンドボックス設定の詳細を表示し、プログラムの概要ページを表示して環境にアクセスできます。
 
-1. Cloud Manager ランディングページのサンドボックスプログラムで、作成したサンドボックスプログラムの ![その他の小さいリストアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. Cloud Manager ランディングページで、サンドボックスプログラムの場合は、作成したサンドボックスプログラムの![その他の小さなリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
    ![プログラムの概要へのアクセス](assets/program-overview-sandbox.png)
 
-1. プロジェクト作成手順が完了したら、「**リポジトリ情報にアクセス**」リンクをクリックすると、Git リポジトリを使用できるようになります。
+1. プロジェクトの作成手順が完了したら、「**リポジトリ情報にアクセス**」リンクをクリックして、Git リポジトリを使用できます。
 
    ![プログラム設定](assets/create-program4.png)
 
@@ -71,10 +71,10 @@ ht-degree: 100%
 
    ![AEM へのアクセスリンク](assets/create-program5.png)
 
-1. 実稼動以外のパイプラインによる開発環境へのデプロイメントが完了したら、コールトゥアクションのウィザードに従って、AEM 開発環境にアクセスしたり、開発環境にコードをデプロイしたりできます。
+1. 実稼動以外のパイプラインのデプロイメントが完了すると、call-to-actionのウィザードにより、AEM開発環境にアクセスするか、コードをデプロイするかを指定できます。
 
    ![サンドボックスのデプロイ](assets/create-program-setup-deploy.png)
 
 >[!TIP]
 >
->Cloud Manager の操作方法と&#x200B;**マイプログラム**&#x200B;コンソールについて詳しくは、[Cloud Manager UI の操作](/help/implementing/cloud-manager/navigation.md)を参照してください。
+>Cloud Managerの操作方法と&#x200B;**マイプログラム** コンソールの理解については、[Cloud Manager UIの操作](/help/implementing/cloud-manager/navigation.md)を参照してください。
