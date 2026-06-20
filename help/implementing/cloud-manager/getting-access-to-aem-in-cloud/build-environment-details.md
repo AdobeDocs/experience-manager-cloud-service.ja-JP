@@ -19,7 +19,7 @@ Cloud Manager のビルド環境と、コードを作成およびテストする
 
 >[!TIP]
 >
->このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。 コンテンツのオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[ サポートされているクライアントプラットフォーム ](/help/overview/supported-platforms.md)を参照してください。
+>このドキュメントでは、AEM as a Cloud Service プロジェクトを開発する Cloud Manager のビルド環境について説明します。 コンテンツのオーサリング用にAEM as a Cloud Serviceでサポートされているクライアントプラットフォームについて詳しくは、[&#x200B; サポートされているクライアントプラットフォーム &#x200B;](/help/overview/supported-platforms.md)を参照してください。
 
 ## ビルド環境の詳細 {#build-environment-details}
 
@@ -39,7 +39,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* その他のパッケージは、[追加システムパッケージのインストール ](#installing-additional-system-packages)の節で説明されているように、ビルド時にインストールされます。
+* その他のパッケージは、[追加システムパッケージのインストール &#x200B;](#installing-additional-system-packages)の節で説明されているように、ビルド時にインストールされます。
 * 各ビルドは新しい環境で実行されます。ビルドコンテナは、実行間でデータを保持しません。
 * Maven は常に次の 3 つのコマンドで実行されます。
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -53,7 +53,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ## HTTPS Maven リポジトリ {#https-maven}
 
-Cloud Manager [ リリース 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)では、ビルド環境のローリングアップデート（リリース 2023.12.0で完了）が開始され、これにはMaven 3.8.8へのアップデートが含まれています。 Maven 3.8.1で導入された大きな変更は、潜在的な脆弱性を軽減するためのセキュリティ強化でした。 具体的には、[Maven リリースノート](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
+Cloud Manager [&#x200B; リリース 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md)では、ビルド環境のローリングアップデート（リリース 2023.12.0で完了）が開始され、これにはMaven 3.8.8へのアップデートが含まれています。 Maven 3.8.1で導入された大きな変更は、潜在的な脆弱性を軽減するためのセキュリティ強化でした。 具体的には、[Maven リリースノート](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)で説明するように、Maven では安全でないすべての `http://*` ミラーをデフォルトで無効にするようになりました。
 
 一部のユーザーは、安全でないHTTP接続を使用するMaven リポジトリからアーティファクトをダウンロードする際に、ビルド手順で問題が発生します。
 

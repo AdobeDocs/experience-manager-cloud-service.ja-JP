@@ -55,7 +55,7 @@ ht-degree: 63%
 
 新しいサンドボックスプログラムを作成した後、サンドボックス設定の詳細を表示し、プログラムの概要ページを表示して環境にアクセスできます。
 
-1. Cloud Manager ランディングページで、サンドボックスプログラムの場合は、作成したサンドボックスプログラムの![その他の小さなリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
+1. Cloud Manager ランディングページで、サンドボックスプログラムの場合は、作成したサンドボックスプログラムの![その他の小さなリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
    ![プログラムの概要へのアクセス](assets/program-overview-sandbox.png)
 
