@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 71%
+source-wordcount: '606'
+ht-degree: 73%
 
 ---
 
@@ -42,10 +42,8 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
 **Edge Delivery パイプラインを追加するには：**
 
-1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
-1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
-1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
-1. 必要な組織を選択します。
+{{sign-in-to-cloud-manager}}
+
 1. **マイプログラム** コンソールで、プログラムをクリックします。
 
    ![Cloud Manager のマイプログラムページ](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
