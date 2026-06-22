@@ -44,7 +44,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 
 **前提条件：**
 
-前述のロジックが正しく機能するには、送信して[ データ同期](#data-synchronization-data-synchronization)を有効にしてください
+前述のロジックが正しく機能するには、送信して[&#x200B; データ同期](#data-synchronization-data-synchronization)を有効にしてください
 適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ### 外部 web アプリケーション {#external-managed-registration}
@@ -68,7 +68,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
 
 **前提条件：**
 
-前述のロジックが正しく機能するには、送信して[ データ同期](#data-synchronization-data-synchronization)を有効にしてください
+前述のロジックが正しく機能するには、送信して[&#x200B; データ同期](#data-synchronization-data-synchronization)を有効にしてください
 適切なプログラムと環境を示すカスタマーサポートへのリクエスト。
 
 ### ID プロバイダーとの統合 {#integration-with-an-idp}
