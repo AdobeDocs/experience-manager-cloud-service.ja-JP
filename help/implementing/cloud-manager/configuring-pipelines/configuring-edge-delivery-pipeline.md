@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 71%
+source-wordcount: '606'
+ht-degree: 73%
 
 ---
 
@@ -42,10 +42,8 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
 **Edge Delivery パイプラインを追加するには：**
 
-1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
-1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
-1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
-1. 必要な組織を選択します。
+{{sign-in-to-cloud-manager}}
+
 1. **マイプログラム** コンソールで、プログラムをクリックします。
 
    ![Cloud Manager のマイプログラムページ](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
@@ -97,14 +95,14 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
      また、Cloud Manager でリポジトリを追加および管理する方法について詳しくは、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)も参照してください。
 
-   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![ごみ箱アイコンまたは更新アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のプッシュ後にGit ブランチ ドロップダウンリストを再読み込みします。
+   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![ごみ箱アイコンまたは更新アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のプッシュ後にGit ブランチ ドロップダウンリストを再読み込みします。
    * **コードの場所** - パイプライン対応コードが開始されるリポジトリ内のフォルダーパスを定義します（`/` はリポジトリのルートと同じです）。
 
    ![設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
 1. 「**保存**」をクリックします。
 
-[&#x200B; パイプラインを管理](managing-pipelines.md)できるようになりました。**プログラムの概要** ページの&#x200B;**パイプライン** カードから、または&#x200B;**パイプライン** ページから管理できます。
+[ パイプラインを管理](managing-pipelines.md)できるようになりました。**プログラムの概要** ページの&#x200B;**パイプライン** カードから、または&#x200B;**パイプライン** ページから管理できます。
 
 
 ![パイプライン名、ステータス、リポジトリー、ブランチを表示する「Edge Delivery パイプライン」ウィジェット](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)

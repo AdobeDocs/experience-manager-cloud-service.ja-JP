@@ -1,8 +1,8 @@
 ---
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 99%
+source-wordcount: '1719'
+ht-degree: 93%
 
 ---
 # スニペット {#snippets}
@@ -51,7 +51,7 @@ ht-degree: 99%
 * [Power Automate に送信](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Workfront Fusion に送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Salesforce アプリケーションにアダプティブフォームを接続](/help/forms/aem-forms-salesforce-integration.md)
-* [Microsoft へのアダプティブフォームの接続](/help/forms/configure-msdynamics.md)
+* [アダプティブフォームをMicrosoft® Dynamicsに接続する](/help/forms/configure-msdynamics.md)
 * [Adobe Marketo Engage にアダプティブフォームを接続](/help/forms/integrate-form-to-marketo-engage.md)
 * [カスタム送信アクションの作成](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
@@ -93,14 +93,14 @@ ht-degree: 99%
   <tr>
     <td>オプションのドロップダウンリストを設定 </td>
     <td>オプションのドロップダウンリストは、ルールエディターの「<b>オプションを設定</b>」プロパティを使用して設定します。</td>
-    <td>オプションのドロップダウンリストは、ルールエディターの <b> サービスの呼び出し </b> プロパティを使用して設定されます。 
+    <td>オプションのドロップダウンリストは、ルールエディターの<b> サービスを呼び出し</b> プロパティを使用して設定されます。 
    </td>
    </tr>
      </tr>
    <tr>
     <td>繰り返し可能なパネルフィールドで数学演算を実行 </td>
     <td>繰り返し可能なパネルフィールドに OOTB 数学関数を適用し、ルールエディターを使用して sum、average などの関数を実行できます。 2 つの引数を指定する必要があります。1 つ目はフィールドを含む繰り返し可能なパネルを指定し、2 つ目は対応する繰り返し可能なパネル内のフィールドを指定します。 </td>
-    <td>繰り返し可能なパネルフィールドでの数学演算は、カスタム関数を使用して実行できます。 また、ルールエディターを使用して、繰り返し可能なパネルのフィールドに数学関数を直接適用することもできます。
+    <td>繰り返し可能なパネルフィールドの数学的操作は、カスタム関数を使用して実行できます。ルールエディターの繰り返し可能パネルのフィールドに数学関数を直接適用することもできます。
    </td>
    </tr>
       <tr>
@@ -166,20 +166,20 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->フロントエンドパイプラインでは、以下の IP 許可リストを事前に Cloud Manager に追加する必要があります。
->必要に応じて、以下のアドレスのブロックをコピーして [&#128279;](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)IP 許可リストを追加します。 各アドレスはコンマで区切ります。 このブロックを **IP 許可リストを追加**&#x200B;ダイアログボックスの「**IP アドレス / CIDR**」フィールドにペーストします。 アドレスリストの最初のコンマの直後にカーソルを置き、**Enter** キーを押します。 リストを保存します。
->フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前に*、この IP 許可リストを Cloud Manager に確実に追加します。
+>フロントエンドパイプラインでは、事前に次のIP 許可リストをCloud Managerに追加する必要があります。
+>必要に応じて、以下のアドレス ブロックをコピーして[IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を追加します。各アドレスはコンマで区切られます。ブロックを&#x200B;**IP 許可リストを追加** ダイアログボックスの&#x200B;**IP アドレス / CIDR** フィールドに貼り付けます。アドレスリストの最初のコンマのすぐ後にカーソルを置き、**Enter** キーを押します。リストを保存します。
+> フロントエンドパイプラインの実行が中断されないようにするには、パイプラインを有効にする&#x200B;*前*&#x200B;にこのIP 許可リストがCloud Managerに追加されていることを確認してください。
 >
->**Cloud Manager の IP 許可リスト**
->52.254.106.192/28、20.186.185.181、52.254.106.240/28、52.254.107.128/28、52.254.105.192/28、52.254.106.176/28、20.186.185.227、52.254.106.144/28、52.254.107.64/28、20.186.185.239、20.22.83.112、52.254.107.80/28、52.254.107.144/28、52.254.106.224/28、20.14.241.153、52.254.107.0/28、52.254.107.32/28、52.254.106.208/28、40.70.154.136/29、52.254.106.160/28、52.254.107.16/28、52.254.106.0/28、4.152.211.251
+>**Cloud Manager IP 許可リスト**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Cloud Manager の IP 許可リストとフロントエンドパイプラインの追加 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->フロントエンドパイプラインを使用してサイトを開発する場合や、使用する予定がある場合は、事前に Cloud Manager IP 許可リストを追加する必要があります。
->詳しくは、[フロントエンドパイプラインでの Cloud Manager IP 許可リストの使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)を参照してください。
+>フロントエンドパイプラインを使用する、または使用する場合は、事前にCloud Manager IP 許可リストを追加する必要があります。
+> フロントエンドパイプラインでのCloud Manager IP 許可リストの使用[を参照](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## IP 許可リストとユニバーサルエディター {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ ht-degree: 99%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
@@ -231,7 +231,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->SPA エディターは、新しいプロジェクトでは[非推奨（廃止予定）になりました](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。アドビでは既存のプロジェクトに対して引き続きサポートしますが、新しいプロジェクトには使用しないでください。AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
+>SPA エディターは、新しいプロジェクトでは[非推奨（廃止予定）になりました](/help/implementing/developing/hybrid/spa-editor-deprecation.md)。 アドビでは既存のプロジェクトに対して引き続きサポートしますが、新しいプロジェクトには使用しないでください。 AEM でヘッドレスコンテンツの管理に推奨されるエディターは次のようになりました。
 >
 >* ヘッドレスコンテンツを視覚的に編集する[ユニバーサルエディター](https://www.aem.live/docs/aem-authoring)。
 >* ヘッドレスコンテンツをフォームベースで編集する[コンテンツフラグメントエディター](/help/assets/content-fragments/content-fragments-managing.md)。
@@ -278,7 +278,7 @@ ht-degree: 99%
 >
 >**AEM 向け Edge Delivery Services について検討したことはありますか？**
 >
->既存のプロジェクトでは、このドキュメントで説明されている方法を引き続き使用できます。ただし、新規プロジェクトの場合は、[Edge Delivery Services](/help/edge/overview.md) を利用することをお勧めします
+>既存のプロジェクトでは、このドキュメントで説明されている方法を引き続き使用できます。 ただし、新規プロジェクトの場合は、[Edge Delivery Services](/help/edge/overview.md) を利用することをお勧めします
 
 ## アドビ提供のサイトテンプレート {#adobe-templates}
 
@@ -287,3 +287,12 @@ ht-degree: 99%
 * [Edge Delivery Services を使用した AEM サイト](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - ユニバーサルエディターを使用して AEM ページをオーサリングし、[Edge Delivery](/help/edge/overview.md) を通じて配信する場合
 * [Commerce 用の AEM オーサリングを使用した Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - Commerce プロジェクト用のユニバーサルエディターを使用して AEM ページをオーサリングし、[Edge Delivery](/help/edge/overview.md) を通じて配信する場合
 * [標準 AEM サイトテンプレート](https://github.com/adobe/aem-site-template-standard/releases) - 従来の AEM ページをオーサリングし、[公開配信](/help/sites-cloud/authoring/author-publish.md)を通じて配信する場合
+
+
+## Cloud Managerにログイン {#sign-in-to-cloud-manager}
+
+1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
+   1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
+   1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
+1. Cloud Managerで、ページの右上隅付近にある、必要な組織を選択します。
+
