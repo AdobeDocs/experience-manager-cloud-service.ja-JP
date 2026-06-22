@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 1f5eb7bd50f90c9bac3adb42823f038668a10c36
+source-git-commit: 01db3bdabcbdcc8256b80841cf6fa84e4726c0a2
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 72%
@@ -21,7 +21,7 @@ ht-degree: 72%
 
 サンドボックスプログラムは、通常、トレーニング、デモの実行、イネーブルメント、概念実証（POC）の目的で作成されるので、ライブトラフィックを実行するためのものではありません。
 
-サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは[実稼動プログラム](introduction-production-programs.md)です。 プログラムの種類について詳しくは、[&#x200B; プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
+サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは[実稼動プログラム](introduction-production-programs.md)です。 プログラムの種類について詳しくは、[ プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
 
 ## 自動作成 {#auto-creation}
 
@@ -31,7 +31,7 @@ ht-degree: 72%
 
   ![サンドボックス用のソリューションとアドオンを選択](assets/sandbox-solutions-add-ons.png)
 
-* [AEM プロジェクトアーキタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づくサンプルプロジェクトを使用して、プロジェクト Git リポジトリを初期化します。
+* [AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づくサンプルプロジェクトを使用して、プロジェクト Git リポジトリを初期化します。
 * 開発環境を作成します。
 * その開発環境へのデプロイメントを行う実稼動以外のパイプラインを作成します。
 
