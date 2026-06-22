@@ -14,7 +14,7 @@ ht-degree: 73%
 
 # プロジェクト作成ウィザード {#project-creation-wizard}
 
-実稼動プログラムを作成した後、Cloud Managerでは、[AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づいて最小限のAEM プロジェクトを作成するためのウィザードが用意されています。
+実稼動プログラムを作成した後、Cloud Managerでは、[AEM プロジェクトアーキタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)に基づいて最小限のAEM プロジェクトを作成するためのウィザードが用意されています。
 
 ウィザードを使用してCloud ManagerでAEM アプリケーションプロジェクトを作成するには、次の手順に従います。
 
