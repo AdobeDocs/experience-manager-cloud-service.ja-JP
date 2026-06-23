@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4c142a00601c37bb30e1d8774cb25927e5f9838
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 100%
+source-wordcount: '1572'
+ht-degree: 84%
 
 ---
 
@@ -35,13 +35,13 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 パイプラインのリストの下部には、次の一般的なオプションがあります。
 
 * **追加** - [新しい実稼動パイプラインを追加](configuring-production-pipelines.md)するか、[新しい実稼動以外のパイプラインを追加](configuring-non-production-pipelines.md)します。
-* **すべて表示** - ユーザーをパイプライン画面に移動して、すべてのパイプラインをより詳細なテーブルに表示します
+* **すべてを表示** – すべてのパイプラインをより詳細なテーブルで表示するには、パイプライン画面に移動します。
 * **リポジトリ情報にアクセス** - Cloud Manager の Git リポジトリへのアクセスに必要な情報を表示します
 * **詳細情報** - CI／CD パイプラインのドキュメントリソースに移動します。
 
 ## パイプラインページ {#pipelines}
 
-**パイプライン**&#x200B;ページには、選択したプログラムのすべてのパイプラインの完全なリストが表示されます。この情報は、[パイプラインカード](#pipeline-card)で使用可能な情報よりも包括的な情報を表示するので便利です。
+**パイプライン**&#x200B;ページには、選択したプログラムのすべてのパイプラインの完全なリストが表示されます。 この情報は、[パイプラインカード](#pipeline-card)で使用可能な情報よりも包括的な情報を表示するので便利です。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 
@@ -49,9 +49,9 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
 
-1. **パイプライン**&#x200B;ページでは、プログラムのすべてのパイプラインのリストを確認できるほか、**パイプラインカード**&#x200B;の場合と同様に、パイプライン実行を開始および停止することができます。
+1. **パイプライン** ページで、プログラムのすべてのパイプラインのリストを表示し、**パイプラインカード**&#x200B;で行ったように、パイプラインの実行を開始および停止します。
 
-パイプラインが実行中の場合は、「**ステータス**」列の ![情報 - 中程度のアイコン](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) をクリックして、実行に関する詳細を示すポップアップを表示します。ポップアップ内で、「**詳細を表示**」をクリックして[パイプライン実行の詳細](#view-details)を表示します。
+パイプラインが実行中の場合は、「**ステータス**」列の ![情報 - 中程度のアイコン](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) をクリックして、実行に関する詳細を示すポップアップを表示します。 ポップアップ内で、「**詳細を表示**」をクリックして[パイプライン実行の詳細](#view-details)を表示します。
 
 ![パイプライン実行の詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
@@ -62,19 +62,20 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 ### パイプラインのお気に入りをマークする{#pipeline-favorites}
 
-特定のパイプラインをお気に入りとしてマークして、**パイプライン**&#x200B;ページのリストの上部に表示できます。この機能により、頻繁にアクセスされるパイプラインを見つけて実行しやすくなります。
+特定のパイプラインをお気に入りとしてマークして、**パイプライン**&#x200B;ページのリストの上部に表示できます。 この機能により、頻繁にアクセスされるパイプラインを見つけて実行しやすくなります。
 
 **パイプラインのお気に入りをマークするには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
-1. パイプラインページのパイプライン名とタイプの左側で、![星型のアウトラインアイコン（お気に入り登録されていないパイプライン用）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)をクリックすると、そのパイプラインをお気に入りリストに追加できます。または、![お気に入りのパイプラインの星型アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) をクリックして、お気に入りリストからパイプラインを削除します。
+1. パイプラインページのパイプライン名とタイプの左側で、![お気に入りでないパイプラインのスターアウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)をクリックして、お気に入りリストに追加します。
+または、お気に入りパイプラインの![ スターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)をクリックして、お気に入りリストからパイプラインを削除します。
 
 
 ## アクティビティページ {#activity}
 
-**アクティビティ**&#x200B;ページには、選択したプログラムのすべてのパイプライン実行とその他の重要なプログラムイベントの完全なリストが表示されます。
+**アクティビティ** ページには、選択したプログラムおよびその他の重要なプログラムイベントに対するすべてのパイプライン実行の完全なリストが表示されます。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
@@ -98,7 +99,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. 実行するパイプラインの横にある![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
+1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューから、![実行 - 再生アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg)「**実行**」をクリックします。
 
@@ -106,22 +107,22 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 実行の詳細を確認するには、![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、「**[詳細を表示](#view-details)**」をクリックします。
 
-パイプラインのタイプによっては、![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックして「**キャンセル**」をクリックすると、実行をキャンセルできる場合があります。
+パイプラインのタイプに応じて、![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をもう一度クリックし、**キャンセル**&#x200B;をクリックして、実行をキャンセルします。
 
 ## 複数のパイプラインの実行 {#run-multiple-pipelines}
 
-Cloud Manager を使用すると、複数のパイプラインを同時に実行できるので、AEM as a Cloud Service のお客様のデプロイメント効率が向上します。**選択されている実行**&#x200B;機能を使用すると、複数のパイプラインを選択し、一度に実行するようにトリガーできます。これにより、パイプラインを個別に実行する必要がある手動の作業が軽減され、ビルドとデプロイメントのワークフローが最適化されます。
+Cloud Manager を使用すると、複数のパイプラインを同時に実行できるので、AEM as a Cloud Service のお客様のデプロイメント効率が向上します。 **選択されている実行**&#x200B;機能を使用すると、複数のパイプラインを選択し、一度に実行するようにトリガーできます。 パイプラインを個別に実行する手作業を減らし、ビルドとデプロイメントのワークフローを最適化します。
 
 **複数のパイプラインを実行するには：**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. 左側のサイドメニューから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン**&#x200B;をクリックします。
-1. **パイプライン**ページのテーブルで、実行するパイプラインの横にあるチェックボックスをオンにします。
-必要に応じて、![フィルターアイコン、ファネル](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **フィルター**&#x200B;をクリックして、パイプラインを名前、環境、デプロイされたコードタイプ、またはこれら 3 つすべての組み合わせで並べ替えます。
+1. **パイプライン** ページのテーブルで、実行するパイプラインの横にあるチェックボックスを選択します。
+必要に応じて、![ フィルターアイコン、funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター**&#x200B;をクリックして、名前、環境、デプロイされたコードタイプまたは3つすべてを組み合わせてパイプラインを並べ替えます。
 1. ページの右上隅付近にある「**選択されている実行（x）**」をクリックします。
 1. **選択されているパイプラインを実行（x）**&#x200B;ダイアログボックスで、「**実行（x）**」をクリックします。
 
-   「**実行**」ボタンには、実行できるパイプラインの数が反映されます。例えば、4 つのパイプラインを選択したが、1 つが既に実行されている場合があります。または、選択したパイプラインにリンクされた環境が存在しなくなりました。このような場合、システムはそれに応じて調整します。ボタンが「実行（3）」に更新され、3 つのパイプラインが続行できることが示されます。
+   「**実行**」ボタンには、実行できるパイプラインの数が反映されます。 例えば、4つのパイプラインを選択したが、1つは既に実行中です。 または、選択したパイプラインにリンクされた環境が存在しなくなりました。 このような場合、システムはそれに応じて調整します。 ボタンが「実行（3）」に更新され、3 つのパイプラインが続行できることが示されます。
 
 1. パイプラインの実行が開始され、**パイプライン**&#x200B;リストにそのステータスが更新されます。
 
@@ -147,7 +148,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
 >[!NOTE]
 >
->Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。制限の詳細と完全なリストについては、[Cloud Manager でのプライベート GitHub リポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)を参照してください。
+>Web 階層設定パイプラインは、プライベートリポジトリではサポートされていません。 制限の詳細と完全なリストについては、[Cloud Manager でのプライベート GitHub リポジトリの追加](/help/implementing/cloud-manager/managing-code/private-repositories.md)を参照してください。
 
 ## パイプラインの削除 {#deleting-pipelines}
 
@@ -157,20 +158,20 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. 実行するパイプラインの横にある ![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューで、「**削除**」をクリックします。
 
 
 ## 前回のパイプライン実行の詳細を表示 {#view-details}
 
-パイプラインの詳細を確認して、最新の実行のステータスとログを表示できます。ただし、詳細にアクセスできるのは、パイプラインが現在実行中か、少なくとも 1 回実行されている場合のみです。
+最新の実行のステータスとログを表示するには、パイプラインの詳細を確認します。 ただし、詳細にアクセスできるのは、パイプラインが現在実行中か、少なくとも 1 回実行されている場合のみです。
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. ドロップダウンメニューから、実行するパイプラインの横にある ![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
+1. ドロップダウンメニューから、実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューで、「**前回の実行を表示**」をクリックします。
 
@@ -178,9 +179,9 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
    ![パイプラインの詳細](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-   ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。コードデプロイメントと実行されているテストについて詳しくは、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)を参照してください。
+   ここから、診断の目的で、パイプラインの様々なステップのステータスを確認し、ビルドログを取得できます。 コードデプロイメントと実行されているテストについて詳しくは、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)を参照してください。
 
-   パイプライン実行のすべての手順が表示され、まだ開始されていない手順はグレーアウトされます。完了した手順には、期間が表示されます。
+   パイプライン実行のすべての手順が表示され、まだ開始されていない手順はグレーアウトされます。 完了した手順には、期間が表示されます。
 
    パイプラインの手順が完了すると、概要が表示されます。
 
@@ -194,7 +195,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
    ![コード品質の問題](assets/managing-pipelines-code-quality-issues.png)
 
-   CSV ファイルには「**プロジェクトファイルの場所**」列が含まれており、プロジェクトに関連する問題のあるコードへのパスを示しています。これに対し、「**ファイルの場所**」列には、Maven で生成されたパスが反映されます。
+   CSV ファイルには、**プロジェクト ファイルの場所**&#x200B;列が含まれており、プロジェクトに関連する問題を含むコードへのパスが表示されます。 **ファイルの場所**&#x200B;列には、Mavenが生成したパスが反映されます。
 
    ![プロジェクトコードスキャン問題の詳細](assets/managing-pipelines-code-quality-details.png)
 
