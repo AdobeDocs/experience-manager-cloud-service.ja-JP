@@ -44,7 +44,7 @@ ht-degree: 3%
 
 | フィールドデータタイプ | パターン構文 | 出力例 | 参照 |
 |-----------------|----------------|----------------|-----------|
-| テキスト | `text{…}` | (555) 123-4567 | [ テキスト ボックス – パターンを表示](/help/forms/interactive-communication/text-box.md#2-display-pattern) |
+| テキスト | `text{…}` | (555) 123-4567 | [&#x200B; テキスト ボックス – パターンを表示](/help/forms/interactive-communication/text-box.md#2-display-pattern) |
 | 数値 | `num{…}` | $1,234.21 | [数値フィールド – パターンを表示](/help/forms/interactive-communication/numeric-field.md#2-display-pattern) |
 | 日付 | `date{…}` | 01/04/2007 | [日付フィールド – パターンを表示](/help/forms/interactive-communication/date-field.md#2-display-pattern) |
 | 日付/時刻 | `date{…} time{…}` | 04/01/2007 14:30 | [日付/時刻フィールド – パターンを表示](/help/forms/interactive-communication/date-time-field.md#2-display-pattern) |
@@ -149,10 +149,10 @@ ht-degree: 3%
 
 ## 関連トピック
 
-- [ テキストボックスコンポーネント ](/help/forms/interactive-communication/text-box.md) — テキスト値の表示パターン構文
-- [数値フィールドコンポーネント ](/help/forms/interactive-communication/numeric-field.md) – 数値および通貨値のパターン構文を表示
-- [日付フィールドコンポーネント ](/help/forms/interactive-communication/date-field.md) – 日付の表示パターン構文
-- [日付/時刻フィールドコンポーネント ](/help/forms/interactive-communication/date-time-field.md) – 日付と時刻を組み合わせた値の表示パターン構文
-- [ インタラクティブ通信エディターでルールエディターを使用](/help/forms/interactive-communication/use-the-rule-editor.md) – 式を書き込んで値を計算し、バインドされていない変数に割り当てます
+- [&#x200B; テキストボックスコンポーネント &#x200B;](/help/forms/interactive-communication/text-box.md) — テキスト値の表示パターン構文
+- [数値フィールドコンポーネント &#x200B;](/help/forms/interactive-communication/numeric-field.md) – 数値および通貨値のパターン構文を表示
+- [日付フィールドコンポーネント &#x200B;](/help/forms/interactive-communication/date-field.md) – 日付の表示パターン構文
+- [日付/時刻フィールドコンポーネント &#x200B;](/help/forms/interactive-communication/date-time-field.md) – 日付と時刻を組み合わせた値の表示パターン構文
+- [&#x200B; インタラクティブ通信エディターでルールエディターを使用](/help/forms/interactive-communication/use-the-rule-editor.md) – 式を書き込んで値を計算し、バインドされていない変数に割り当てます
 - [インタラクティブ通信エディターでのデータバインディングの設定](/help/forms/interactive-communication/configure-data-binding.md)
 
