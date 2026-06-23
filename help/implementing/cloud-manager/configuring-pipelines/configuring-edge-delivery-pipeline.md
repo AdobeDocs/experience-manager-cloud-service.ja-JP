@@ -7,10 +7,10 @@ role: Admin, Developer
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 4f9c0d41fce9ee16aae19077759cea312487513f
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 73%
+ht-degree: 65%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 73%
 
 Edge Delivery パイプラインを設定し、コードをビルドして本番環境にデプロイする方法について説明します。 Edge Delivery パイプラインでは、ログ転送やAdobeで管理されるCDNなどの機能を設定できます。
 
-サポートされている設定の一覧については、[設定パイプラインを使用 – サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
+サポートされている設定の一覧については、[設定パイプラインの使用 – サポートされている設定](/help/operations/config-pipeline.md#configurations)を参照してください。
 
 本番パイプラインを設定するには、ユーザーに&#x200B;**[デプロイメントマネージャー](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;の役割が必要です。
 
 >[!IMPORTANT]
 >
->以下の条件が満たされるまで、Edge Delivery パイプラインは設定できません。
+>次の操作が行われるまでは、Edge Delivery パイプラインを設定できません。
 >
 >* 1 つの Edge Delivery Services サイトと 1 つのマッピングされたドメインを含むプログラムが作成されます。 そうでない場合は、**Edge Delivery パイプラインを追加**&#x200B;というオプションがユーザーインターフェイスで無効に表示され、ツールチップに不足している要件が説明されます。 [Cloud Manager での Edge Delivery サイトの作成](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。
 >* Git リポジトリには 1 つ以上の分岐があります。 [Cloud Manager でのリポジトリの管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)を参照してください。
@@ -91,12 +91,12 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
    * **デプロイメント環境** - ターゲット環境フィールドを表示します。読み取り専用のままです。
 
-   * **リポジトリ** - ドロップダウンリストを使用して、Edge Delivery 設定を保存する正確な Git リポジトリをパイプラインに指定します。
+   * **Repository** - ドロップダウンリストを使用して、Edge Delivery設定を保存するGit リポジトリにパイプラインをポイントします。
 
      また、Cloud Manager でリポジトリを追加および管理する方法について詳しくは、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)も参照してください。
 
-   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![ごみ箱アイコンまたは更新アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のプッシュ後にGit ブランチ ドロップダウンリストを再読み込みします。
-   * **コードの場所** - パイプライン対応コードが開始されるリポジトリ内のフォルダーパスを定義します（`/` はリポジトリのルートと同じです）。
+   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![Recycle アイコンまたはRefresh アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のコミット後にGit ブランチ ドロップダウンリストを更新します。
+   * **コードの場所** - パイプライン準備コードが開始するリポジトリ内のフォルダーパスを定義します（`/`はリポジトリルートに等しいです）。
 
    ![設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 

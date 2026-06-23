@@ -5,16 +5,16 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7a229f94996802ba1df6ac188c41572a9a76145a
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 97%
+source-wordcount: '675'
+ht-degree: 81%
 
 ---
 
 # Cloud Manager のパイプライン変数 {#configuring-pipeline-variables}
 
-ビルドプロセスが、Git リポジトリに保存すべきではない特定の設定変数に依存している可能性があります。または、同じブランチでのパイプライン実行間で調整が必要になる場合があります。Cloud Manager では、これらの設定をパイプライン変数として管理できます。
+ビルドプロセスでは、Git リポジトリに保存されていない特定の設定変数を使用します。 または、同じブランチ上のパイプライン実行の間で調整する必要があります。 Cloud Manager では、これらの設定をパイプライン変数として管理できます。
 
 ## パイプライン変数について {#pipeline-variables}
 
@@ -22,13 +22,13 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 * [Cloud Manager ユーザーインターフェイスの使用](#ui)
 * [Cloud Manager CLI の使用](#cli)
-* [Cloud Manager API の使用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Cloud Manager APIの使用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Variables/operation/getPipelineVariables)
 
-変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
+変数は、プレーンテキストとして保存されるか、保存時に暗号化されます。 変数は、ビルド環境内で環境変数として利用できます。環境変数は、`pom.xml` ファイルまたはその他のビルドスクリプトから参照できます。
 
 ## Cloud Manager を使用したパイプライン変数の追加 {#ui}
 
-パイプライン変数は、Cloud Manager ユーザーインターフェイスを使用して設定および管理できます。これは、特に様々なステップで異なる設定が必要な場合に、パイプライン管理を効率化するのに役立ちます。
+パイプライン変数は、Cloud Manager ユーザーインターフェイスを使用して設定および管理できます。 特に、複数のステップにわたって異なる設定が必要な場合は、パイプライン管理を簡素化できます。
 
 パイプライン変数を追加、編集、削除するには、パイプラインを編集する権限が必要です。
 
@@ -46,9 +46,9 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
    | フィールド | 説明 |
    | --- | --- |
-   | 名前 | 設定変数の一意の名前です。パイプラインで使用される特定の変数を識別します。次の命名規則に従う必要があります。<ul><li>変数には、英数字とアンダースコア（`_`）のみ使用できます。</li><li>名前はすべて大文字にします。</li><li>変数の数はパイプラインあたり最大 200 個までです。</li><li>名前は 100 文字以下にする必要があります。</li><li>`string` 変数の値はそれぞれ、2048 文字未満にする必要があります。</li><li>`secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。</li></ul> |
+   | 名前 | 設定変数の一意の名前です。 パイプラインで使用される特定の変数を識別します。 次の命名規則に従う必要があります。<ul><li>変数には、英数字とアンダースコア（`_`）のみ使用できます。</li><li>名前はすべて大文字にします。</li><li>変数の数はパイプラインあたり最大 200 個までです。</li><li>名前は 100 文字以下にする必要があります。</li><li>`string` 変数の値はそれぞれ、2048 文字未満にする必要があります。</li><li>`secretString` 変数型の値はそれぞれ、500 文字以下にする必要があります。</li></ul> |
    | 値 | 変数が保持する値です。 |
-   | 適用されたステップ | 必須。変数が適用されるパイプラインのステップ：<ul><li>**ビルド** - 変数は、ビルドプロセス中に適用されます。</li><li>**機能テスト** - 変数は、機能テストステップで使用されます。</li><li>**UI テスト** - 変数は、UI テスト段階で使用されます。</li><li>**Deploy** – 変数は、デプロイステップで使用されます。 例えば、Edge Delivery Services パイプラインには、この変数を使用します。</li></ul> |
+   | 適用されたステップ | 必須。 変数が適用されるパイプラインのステップ：<ul><li>**ビルド** - 変数は、ビルドプロセス中に適用されます。</li><li>**機能テスト** - 変数は、機能テストステップで使用されます。</li><li>**UI テスト** - 変数は、UI テスト段階で使用されます。</li><li>**デプロイ** – 変数はデプロイ手順で使用されます。 例えば、この変数をEdge Delivery Services パイプラインに使用します。</li></ul> |
    | タイプ | 変数がプレーンテキストか、シークレットとして暗号化されているかを選択します。 |
 
    ![変数の追加](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
@@ -97,13 +97,13 @@ Cloud Manager を使用すると、複数の方法でパイプライン変数を
 
 ## Cloud Manager CLI を使用したパイプライン変数の設定 {#cli}
 
-CLI（コマンドラインインターフェイス）のこのコマンドで、変数を設定します。
+このCLI （コマンドラインインターフェイス）コマンドは、変数を設定します。
 
 ```shell
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
 ```
 
-このコマンドは、変数を一覧表示します。
+このコマンドは、変数のリストを表示します。
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
