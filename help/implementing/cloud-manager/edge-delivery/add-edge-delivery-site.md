@@ -25,7 +25,7 @@ ht-degree: 58%
 
    >[!TIP]
    >
-   >既存のサイトを登録するのではなく、ユニバーサルエディターを使用してAEM オーサリングを使用する新しいEdge Delivery サイトを作成する場合は、[ ワンクリックで最初のEdge Delivery サイトを作成する](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 配信にEdge Deliveryを使用するプログラムの場合、パブリッシュ層は必要ない場合があります。 [柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+   >既存のサイトを登録するのではなく、ユニバーサルエディターを使用してAEM オーサリングを使用する新しいEdge Delivery サイトを作成する場合は、[&#x200B; ワンクリックで最初のEdge Delivery サイトを作成する](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)を参照してください。 配信にEdge Deliveryを使用するプログラムの場合、パブリッシュ層は必要ない場合があります。 [柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
 
 {{sign-in-to-cloud-manager}}
 
@@ -36,9 +36,9 @@ ht-degree: 58%
 
      ![「Edge Delivery」タブからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * ページの左上隅にある「![ メニューアイコンを表示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」をクリックして、左側のメニューを開きます。
-「**サービス**」の見出しの下で、![Web ページアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**をクリックします。
-ページの右上隅付近にある「![ リンクアイコン」または「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)**Edge Delivery サイトを追加**」をクリックします。
+   * ページの左上隅にある「![&#x200B; メニューアイコンを表示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」をクリックして、左側のメニューを開きます。
+「**サービス**」の見出しの下で、![Web ページアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**&#x200B;をクリックします。
+ページの右上隅付近にある「![&#x200B; リンクアイコン」または「](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)**Edge Delivery サイトを追加**」をクリックします。
 
      ![「Edge Delivery サイト」ボタンからの Edge Delivery サイトの追加](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 
@@ -57,7 +57,7 @@ ht-degree: 58%
    | 手順番号 | 説明 |
    | - | - |
    | **1** | 「**リポジトリ URL**」フィールドにリストされている Git リポジトリの `main` 分岐に、パスと名前が `well-known/adobe/cloudmanager-challenge.txt` のファイルを追加します。 場所のパスの先頭にピリオドを追加&#x200B;*しない*&#x200B;でください。<br>必要に応じて、![コピーアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) をクリックして、パスをクリップボードにコピーします。 |
-   | **2** | 手順2のテキストフィールドに表示されるコードを、手順1で作成したばかりのファイルに追加します。<br>必要に応じて、![ コピーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)をクリックして、コードをクリップボードにコピーします。 |
+   | **2** | 手順2のテキストフィールドに表示されるコードを、手順1で作成したばかりのファイルに追加します。<br>必要に応じて、![&#x200B; コピーアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)をクリックして、コードをクリップボードにコピーします。 |
    | **3** | 作成した変更のプルリクエストを Git リポジトリに作成し、`main` に結合してコードをコミットします。 |
 
 1. 「**確認**」をクリックします。

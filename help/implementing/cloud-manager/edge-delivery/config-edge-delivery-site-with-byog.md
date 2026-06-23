@@ -37,8 +37,8 @@ Cloud Managerに既にオンボーディングされているプライベート 
 
    Cloud Manager は、1 回限りの秘密鍵トークンを返します。 サイトを再設定すると、Cloud Manager により新しい秘密鍵トークンが生成されます。
 
-1. トークンをコピーし、[BYO Git ガイド ](https://www.aem.live/developer/byo-git)の説明に従って、**helix-admin**&#x200B;でサイト設定に追加します。
-1. Cloud Managerで、外部リポジトリを使用するようにサイトが設定されている行の末尾にある![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**Sync code**&#x200B;をクリックします。
+1. トークンをコピーし、[BYO Git ガイド &#x200B;](https://www.aem.live/developer/byo-git)の説明に従って、**helix-admin**&#x200B;でサイト設定に追加します。
+1. Cloud Managerで、外部リポジトリを使用するようにサイトが設定されている行の末尾にある![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**Sync code**&#x200B;をクリックします。
 1. 同期する分岐を選択し、「**同期**」をクリックします。
 
 任意の分岐の各コミットで、自動同期がトリガーされるようになりました。 完全な手動同期が必要な場合は、**コードを同期**&#x200B;を再度使用します。
