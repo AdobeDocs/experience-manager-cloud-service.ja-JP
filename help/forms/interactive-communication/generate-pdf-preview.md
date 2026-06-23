@@ -1,68 +1,65 @@
 ---
-title: 様々なデータオプションを使用した、インタラクティブ通信エディターでのPDF プレビュー
-description: 「様々なデータオプションを使用したインタラクティブ通信エディターでのPDFのプレビュー」オプションを使用すると、インタラクティブ通信を 3 つの異なる方法でプレビューできます。
+title: 異なるデータオプションを使用したインタラクティブ通信エディターでのPDF プレビュー
+description: 異なるデータオプションを使用したインタラクティブ通信エディターでのPDF プレビューでは、インタラクティブ通信を3つの異なる方法でプレビューできます。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '336'
 ht-degree: 4%
 
 ---
 
 # インタラクティブ通信エディターでのPDF プレビュー
 
->[!NOTE]
->
-> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
-PDFのプレビュー機能を使用すると、インタラクティブ通信を 3 つの方法（データなし、ローカル JSON ベースのデータ、設定済みのデータモデルからのサンプルデータ）でプレビューできます。
+PDFのプレビュー機能を使用すると、データなし、ローカル JSON ベースのデータ、または設定されたデータモデルのサンプルデータを使用して、インタラクティブ通信を3つの異なる方法でプレビューできます。
 
 ## 主なメリット
 
-- サンプルデータを使用したインタラクティブ通信のプレビューを表示して、通信と結合した際のライブデータの表示を視覚化します。
+- サンプルデータを使用してインタラクティブコミュニケーションをプレビューし、ライブデータがコミュニケーションと結合されたときに表示される方法を視覚化します。
 
-- バックエンドのセットアップを行わずにデータ駆動型のプレビューを生成するには、ローカルの JSON データファイルをアップロードします。
+- ローカルのJSON データファイルをアップロードして、バックエンドを設定することなくデータ駆動型のプレビューを生成できます。
 
-- 接続フォームデータモデル（FDM）を使用すると、設計時にサンプルデータを使用したリアルタイムデータ統合をシミュレートできます。
+- 接続されたフォームデータモデル（FDM）を使用して、デザイン中にサンプルデータとリアルタイムのデータ統合をシミュレートできます。
 
 - データオプション（データなし、ローカルデータ、FDM）を簡単に切り替えて、レイアウト、構造、パーソナライゼーションを検証できます。
 
-## 様々なデータオプションを使用した、インタラクティブ通信エディターでのPDF プレビュー
+## 異なるデータオプションを使用したインタラクティブ通信エディターでのPDF プレビュー
 
-データ、ローカルデータ、設定済みデータモデルのサンプルデータを使用しないインタラクティブ通信のプレビューが表示されるので、柔軟なテストと検証が可能になります。
+データ、ローカルデータ、または設定済みのデータモデルからのサンプルデータを使用せずに、インタラクティブ通信をプレビューし、柔軟なテストと検証を実現します。
 
-+++&#x200B;1. データのないプレビュー。
++++&#x200B;1. データを使用せずにプレビュー。
 
 1.1. IC エディターでインタラクティブ通信を開きます。
 
-1.2. データのない通信を表示するには、「PDF プレビュー」オプションを使用し、「**データなし**」オプションを選択します。
+1.2. 「PDF プレビュー」オプションを使用し、「**データなし**」オプションを選択して、データを含まないコミュニケーションを表示します。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/nodata.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/nodata.png)
 
 +++
 
 +++&#x200B;2. ローカル JSON データを使用したプレビュー
 
-2.1.構造化 JSON ファイルを準備する 参考までに、通信に使用される JSON スキーマ [&#x200B; （FDM）からサンプルデータをコピー &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) きます。
+2.1. 構造化JSON ファイルを準備します。 参照用に、通信に使用するJSON スキーマ [ （FDM） ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)からサンプルデータをコピーできます。
 
-2.2. IC Editor で、**PDF Preview** > Using Local Data に移動します。
+2.2. IC エディターで、**PDF Preview** > Using Local Dataに移動します。
 
-2.3. JSON ファイルを選択してアップロードし、提供されたデータでPDF プレビューをレンダリングする。
+2.3. JSON ファイルを選択してアップロードし、提供されたデータを使用してPDF プレビューをレンダリングします。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/localdata.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/localdata.png)
 
 +++
 
 +++&#x200B;3. データモデルを使用したプレビュー 
 
-3.1.既に設定されている IC のフォームデータモデル（FDM）のサンプルデータを使用するには、「**データモデルの使用**」を選択します。
+3.1. 「**データモデルを使用**」を選択して、ICの既に設定されているフォームデータモデル（FDM）のサンプルデータを使用します。
 
-3.2. プレビューでは、モデルフィールドからデータが自動的に入力されます。 最初の使用時にサンプルデータが FDM に保存されていることを確認してください。保存されていない場合、プレビューがデータなしで表示されることがあります。
+3.2. プレビューでは、モデルフィールドからデータが自動入力されます。 サンプルデータが最初に使用するときにFDMに保存されていることを確認します。そうしないと、プレビューにデータが表示されない場合があります。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/datamodel.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++

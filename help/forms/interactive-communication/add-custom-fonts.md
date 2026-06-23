@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 8%
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
 
 # インタラクティブ通信エディターへのカスタムフォントの追加
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 カスタムフォント機能を使用すると、カスタムまたは組織承認済みのフォントを使用できるようにすることで、インタラクティブ通信のルックアンドフィールを向上させることができます。 AEM Forms as a Cloud Serviceにフォントをパッケージ化して埋め込むことで、デバイスやプラットフォームをまたいで一貫性のあるPDFのレンダリングを実現します。
 
@@ -33,5 +30,5 @@ ht-degree: 8%
 
 >[!NOTE]
 >
-> 詳細な設定手順については、ガイド [&#x200B; カスタムフォントの使用](/help/forms/use-custom-fonts.md)に従ってください
+> 詳細な設定手順については、ガイド [ カスタムフォントの使用](/help/forms/use-custom-fonts.md)に従ってください
 >手順を完了してパイプラインを実行すると、カスタムフォントをインタラクティブ通信エディターで直接使用できるようになります。

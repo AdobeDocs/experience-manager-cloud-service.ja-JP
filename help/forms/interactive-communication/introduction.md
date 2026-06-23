@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 5%
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
 # インタラクティブ通信エディターの概要
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 ## インタラクティブ通信エディターとは
 
@@ -45,9 +42,9 @@ ht-degree: 5%
 
 | **機能** | **主な機能** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG Editor** |  – 正確なレンダリングのためのピクセルの完璧さ<br> - [&#x200B; フォントスタイル設定コントロール &#x200B;](/help/forms/interactive-communication/add-custom-fonts.md) <br> - プロフェッショナルなデザインのための柔軟なレイアウト |
+| **WYSIWYG Editor** |  – 正確なレンダリングのためのピクセルの完璧さ<br> - [ フォントスタイル設定コントロール ](/help/forms/interactive-communication/add-custom-fonts.md) <br> - プロフェッショナルなデザインのための柔軟なレイアウト |
 | [**レイアウト管理**](/help/forms/interactive-communication/handle-content-overflow.md) | - ポジショニング （絶対および流動） <br> – 簡単なドラッグ&amp;ドロップ機能<br> - マスターページを使用して一貫したレイアウトを定義する |
-| **コンポーネント** | - [&#x200B; テーブル &#x200B;](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)、グラフ、[&#x200B; バーコード &#x200B;](/help/forms/interactive-communication/barcode.md)<br>など、新しく導入されたコンポーネントへのアクセス – すぐに使用できるコンポーネントにより、デザインを高速化 |
+| **コンポーネント** | - [ テーブル ](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)、グラフ、[ バーコード ](/help/forms/interactive-communication/barcode.md)<br>など、新しく導入されたコンポーネントへのアクセス – すぐに使用できるコンポーネントにより、デザインを高速化 |
 | [**データバインディング**](/help/forms/interactive-communication/configure-data-binding.md) | - コンポーネントをデータソース <br>に直接リンクする – パーソナライズされたコミュニケーション用にフィールドを自動的に事前入力する |
 | [**ルールエディター**](/help/forms/interactive-communication/use-the-rule-editor.md) | - ダイナミック検証<br>を設定 – インタラクティブな計算と条件付きロジックを追加 |
 | [**フラグメントライブラリ**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - モジュール式の構成要素（ヘッダー、フッター、免責事項、アイコン）を作成する<br> – 複数のコミュニケーションで一貫性を維持する |
@@ -55,15 +52,15 @@ ht-degree: 5%
 
 ## オンボーディング
 
-インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、お客様の環境IDと組織IDを記載した公式の電子メール IDから[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)に電子メールを送信します。 Adobeが登録を確認したら、[&#x200B; サービスへのオンボーディング &#x200B;](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
+インタラクティブ通信を開始するには、[ サービスへのオンボーディング ](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
-https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 次の手順
 
-[&#x200B; インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
-[&#x200B; インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[&#x200B; インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+[ インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 <!-- 
 ## Where to Find IC Documentation, Samples, and Tutorials
