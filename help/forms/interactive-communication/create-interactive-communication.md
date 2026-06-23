@@ -87,13 +87,13 @@ ht-degree: 3%
 
 ## 次の手順
 
-[ インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[ インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[&#x200B; インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 ## 関連トピック
 
-* [ インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — IC キャンバス上に配置された注釈ピンを使用して、レビュー担当者と共同作業を行います。
-* [ インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — 2つのバージョン間のレイアウトとコンテンツの違いを並べて調べます。
-* [ テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — セルの結合または分割によって柔軟なテーブル レイアウトを作成します。
-* [ コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md) – 一貫したクロスページコンポーネントの配置を確保します。
+* [&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — IC キャンバス上に配置された注釈ピンを使用して、レビュー担当者と共同作業を行います。
+* [&#x200B; インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — 2つのバージョン間のレイアウトとコンテンツの違いを並べて調べます。
+* [&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — セルの結合または分割によって柔軟なテーブル レイアウトを作成します。
+* [&#x200B; コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md) – 一貫したクロスページコンポーネントの配置を確保します。
 
