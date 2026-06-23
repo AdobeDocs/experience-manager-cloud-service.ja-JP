@@ -1,8 +1,8 @@
 ---
-source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 93%
+source-wordcount: '1721'
+ht-degree: 92%
 
 ---
 # スニペット {#snippets}
@@ -220,7 +220,7 @@ ht-degree: 93%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
@@ -231,8 +231,8 @@ ht-degree: 93%
 
 1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
    1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
-   1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
-1. Cloud Managerで、ページの右上隅付近にある、必要な組織を選択します。
+   1. 左側のパネルで、**Cloud Manager**&#x200B;をクリックします。
+1. Cloud Managerで、ページの右上隅付近にある、使用する組織を選択します。
 
 
 ## SPA エディターよりユニバーサルエディターを推奨 {#ue-over-spa}
