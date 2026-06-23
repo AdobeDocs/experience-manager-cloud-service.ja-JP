@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: configure-dropdown-options-associate-ui
-source-git-commit: 7619c18a771191a1491447484195bc480b1d2708
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 2%
@@ -60,7 +60,7 @@ ht-degree: 2%
 
    ドロップダウンフィールドに&#x200B;**データバインディング**&#x200B;を設定しないでください。データ **からの** バインディングまたは手動オプションのみを使用してください。
 
-   ![&#x200B; ドロップダウンオプションのバインディングの設定](/help/forms/interactive-communication/assets/associate-ui-configure-drop-down1.png)
+   ![ ドロップダウンオプションのバインディングの設定](/help/forms/interactive-communication/assets/associate-ui-configure-drop-down1.png)
 
 1. **アソシエイトによる編集を許可**&#x200B;をオンにして、アソシエイト UIで値を選択できるようにします。
 
@@ -108,3 +108,4 @@ ht-degree: 2%
 - [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [アソシエート UIのバインド変数とバインドされていない変数の設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [インタラクティブなコミュニケーションの作成](/help/forms/interactive-communication/create-interactive-communication.md)
+

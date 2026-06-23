@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: configure-bound-unbound-variables-associate-ui
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -60,7 +60,7 @@ ht-degree: 1%
    - **Data bound: deptName**
    - **連結なし：unboundvar**
 
-   ![&#x200B; バインドされた変数とバインドされていない変数を含むテキストコンポーネントを選択](/help/forms/interactive-communication/assets/bound-unbound-variable1.png)
+   ![ バインドされた変数とバインドされていない変数を含むテキストコンポーネントを選択](/help/forms/interactive-communication/assets/bound-unbound-variable1.png)
 
 1. **テキスト** プロパティ パネルで、テキスト内のバインド変数とバインドされていない変数ごとに&#x200B;**アソシエイトによる編集を許可**&#x200B;が&#x200B;**オフ**&#x200B;であることを確認します。
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 1. プレビューでコンテンツを直接編集します。例えば、**Data bound: APP Department**&#x200B;を更新し、**Unbound:**&#x200B;の後に値を入力します。 連結および非連結の変数が適切に更新されることを確認します。
 
-   ![&#x200B; アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)でテキスト コンポーネント全体をインラインで編集する
+   ![ アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable2.png)でテキスト コンポーネント全体をインラインで編集する
 
 1. オプションで「**印刷プレビュー**」を選択して、生成された出力がプレビューと一致することを確認します。
 
@@ -96,7 +96,7 @@ ht-degree: 1%
    - 必要に応じて&#x200B;**表示タイプ**&#x200B;を設定します（例：**パターンなし**）。
    - **アソシエイトによる編集を許可**&#x200B;を有効にします。
 
-   ![&#x200B; アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable3.png)のバインド変数deptNameの設定
+   ![ アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable3.png)のバインド変数deptNameの設定
 
 1. **コンポーネント階層** パネルで、バインドされていない変数（例：**unboundvar**）を選択します。
 
@@ -106,7 +106,7 @@ ht-degree: 1%
    - **アソシエイトによる編集を許可**&#x200B;を有効にします。
    - オプションで、**アソシエイトプロパティ**&#x200B;の下の&#x200B;**ツールチップ**&#x200B;と&#x200B;**検証**&#x200B;を設定します。
 
-   ![&#x200B; アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable4.png)のバインドされていない変数unboundvarの設定
+   ![ アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable4.png)のバインドされていない変数unboundvarの設定
 
 1. 親&#x200B;**テキスト** コンポーネントの&#x200B;**アソシエイトによる編集を許可**&#x200B;が&#x200B;**オフ**&#x200B;であることを確認してください。
 
@@ -144,7 +144,7 @@ ht-degree: 1%
    - **Data bound: deptName**
    - **連結なし：unboundvar**
 
-   ![&#x200B; サブフォームでバインドされた変数とバインドされていない変数を重複して設定](/help/forms/interactive-communication/assets/bound-unbound-variable7.png)
+   ![ サブフォームでバインドされた変数とバインドされていない変数を重複して設定](/help/forms/interactive-communication/assets/bound-unbound-variable7.png)
 
 1. **コンポーネント階層** パネルで、バインドされた変数とバインドされていない変数をそれぞれ選択し、**フィールド**&#x200B;のプロパティ パネルで&#x200B;**アソシエイトによる編集を許可**&#x200B;をオンにします。
 
@@ -160,7 +160,7 @@ ht-degree: 1%
 
 1. **deptName**&#x200B;に&#x200B;**APP Department**&#x200B;と入力します。 **unboundvar**&#x200B;を空のままにして、ドキュメントのプレビュー更新で両方の出現を確認します。例えば、各ブロックには&#x200B;**データがバインドされています：APP Department**&#x200B;と&#x200B;**Unbound: unboundvar**。
 
-   ![&#x200B; アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)で重複する変数の伝達を確認
+   ![ アソシエイト UI](/help/forms/interactive-communication/assets/bound-unbound-variable8.png)で重複する変数の伝達を確認
 
 1. オプションで「**印刷プレビュー**」を選択して、生成された出力がプレビューと一致することを確認します。
 
@@ -184,7 +184,7 @@ ht-degree: 1%
 
 **相互の排他的条件**
 
-**&#x200B;**&#x200B;テキスト **コンポーネントと、その中の個別のバインド済みまたはバインドされていない変数に対するアソシエイト**&#x200B;による編集を許可します。相互に排他的です。 **テキスト** コンポーネントごとに1つのアプローチを有効にします。
+**** テキスト **コンポーネントと、その中の個別のバインド済みまたはバインドされていない変数に対するアソシエイト**&#x200B;による編集を許可します。相互に排他的です。 **テキスト** コンポーネントごとに1つのアプローチを有効にします。
 
 **値のないバインドされていない変数**
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 **テキスト** コンポーネントと、その中のバインド済みまたはバインドされていない変数に対する編集の関連付けは、相互に排他的です。両方ではなく、テキストブロック全体または個々の変数で編集を有効にします。
 
 **連結されていない変数で、プレビューに値ではなく変数名が表示されるのはなぜですか？**
-パートナーはまだ値を入力していない可能性があります。個々の変数で関連付け編集を有効にし、デフォルトの&#x200B;**値**&#x200B;が設定されていない場合、データ入力パネルにデータが入力されるまで、プレビューに変数名が表示される場合があります。
+パートナーはまだ値を入力していない可能性があります。個々の変数で関連付け編集を有効にし、デフォルトの**値**&#x200B;が設定されていない場合、データ入力パネルにデータが入力されるまで、プレビューに変数名が表示される場合があります。
 
 **連結された変数と連結されていない変数の違いは何ですか？**
 バインドされた変数は、**バインディング**&#x200B;設定を通じてフォームデータモデルフィールドにリンクされます。連結されていない変数は文書内で定義され、データモデルに関連付けられていません。
@@ -213,4 +213,5 @@ ht-degree: 1%
 - [関連付けUIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
 - [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [インタラクティブ通信エディターのバインドされていない変数コンポーネント](/help/forms/interactive-communication/unbound-variable.md)
+
 

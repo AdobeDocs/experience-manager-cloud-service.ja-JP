@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: review-annotate-interactive-communication
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -119,10 +119,11 @@ ht-degree: 2%
 いいえ。注釈は、オーサリングワークフローとレビューワークフローにのみ含まれます。公開されたコンテンツや顧客向けのコンテンツには含まれません。
 
 **注釈とコメントの違いは何ですか？**
-注釈は、カンバス上の特定のコンポーネントに関連付けられた位置ピンで、読み取り専用の注釈ビューに表示されます。コメントは、インタラクティブなコミュニケーション全体に添付された一般的なメモで、エディターのコメントパネルから追加されます。コメントの詳細については、[&#x200B; バージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
+注釈は、カンバス上の特定のコンポーネントに関連付けられた位置ピンで、読み取り専用の注釈ビューに表示されます。コメントは、インタラクティブなコミュニケーション全体に添付された一般的なメモで、エディターのコメントパネルから追加されます。コメントの詳細については、[ バージョン管理とコメント ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
 
 ## 関連トピック
 
 - [インタラクティブなコミュニケーションの作成](/help/forms/interactive-communication/create-interactive-communication.md)
 - [インタラクティブ通信エディターでのテンプレートロック](/help/forms/interactive-communication/enable-template-lock.md)
 - [インタラクティブ通信エディターでのバージョン管理とコメント](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+
