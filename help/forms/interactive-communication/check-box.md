@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -123,3 +123,4 @@ ht-degree: 0%
 - [ラジオボタンコンポーネント](/help/forms/interactive-communication/radio-button.md)
 - [インタラクティブ通信エディターでのデータバインディングの設定](/help/forms/interactive-communication/configure-data-binding.md)
 - [インタラクティブ通信エディターでのルールエディターの使用](/help/forms/interactive-communication/use-the-rule-editor.md)
+

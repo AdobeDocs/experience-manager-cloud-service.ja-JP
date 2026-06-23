@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -110,3 +110,4 @@ ht-degree: 3%
 - [アソシエート UIのバインド変数とバインドされていない変数の設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

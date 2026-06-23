@@ -4,7 +4,7 @@ description: AEM Forms as a Cloud Serviceのインタラクティブ通信に関
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
-source-git-commit: 8043d0bd709962023f4828a6fffa2939788538b2
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 5%
@@ -79,3 +79,4 @@ ht-degree: 5%
 
 **Q: マスターページに移動できないコンポーネントタイプはどれですか？**
 コンテンツエリア、ページエリア、マスターセット、フラグメント、サブフォーム、テーブル行、テーブルセル、ラジオボタンの各タイプは、「ページに移動」アクションの対象にはなりません。コンテンツロックまたはレイアウトロックが適用されているコンポーネントも対象外です。
+

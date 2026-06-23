@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -96,3 +96,4 @@ ht-degree: 3%
 * [&#x200B; インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — 2つのバージョン間のレイアウトとコンテンツの違いを並べて調べます。
 * [&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — セルの結合または分割によって柔軟なテーブル レイアウトを作成します。
 * [&#x200B; コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md) – 一貫したクロスページコンポーネントの配置を確保します。
+

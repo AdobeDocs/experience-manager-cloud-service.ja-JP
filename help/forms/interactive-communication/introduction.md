@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 3%
@@ -76,3 +76,4 @@ AEM Forms Interactive Communication Guide
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
 -->
+

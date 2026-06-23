@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -90,3 +90,4 @@ ICに対して関連付けビューを有効にしたら、関連付けを編集
 - [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [&#x200B; アソシエイト UIの送信ワークフロー – IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md) – 送信とワークフローの仕組み、およびIC送信からPDFを生成するワークフローの例。
+

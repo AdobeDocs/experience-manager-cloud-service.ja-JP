@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 21%
@@ -357,4 +357,5 @@ Forms Manager now supports versioning for Adaptive Forms (Core Components and Fo
 * [AEM Forms as a Cloud Servicesの機能](/help/forms/home.md)
 
 * [AEM 6.5 Forms（AMSおよびオンプレミス）とAEM Forms as a Cloud Services （AEM CS Forms）の違い](/help/forms/notable-changes.md)
+
 

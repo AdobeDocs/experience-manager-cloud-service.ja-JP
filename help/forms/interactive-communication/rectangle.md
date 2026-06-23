@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 7%
@@ -112,3 +112,4 @@ ht-degree: 7%
 - [線コンポーネント](/help/forms/interactive-communication/line.md)
 - [画像コンポーネント](/help/forms/interactive-communication/image.md)
 - [インタラクティブ通信エディターでのコンテンツオーバーフローの処理](/help/forms/interactive-communication/handle-content-overflow.md)
+
