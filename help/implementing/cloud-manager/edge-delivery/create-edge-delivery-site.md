@@ -4,19 +4,19 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 9cf3ab69adf8819d9f5496bf826c63f7cf01d554
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 57%
+source-wordcount: '1446'
+ht-degree: 53%
 
 ---
 
 
 # 最初の Edge Delivery サイトをワンクリックで作成{#about-one-click-edge-delivery-site}
 
-最初の Edge Delivery サイトをワンクリックで作成する機能は、Cloud Manager 内で Edge Delivery サイトのオンボーディングとデプロイメントを自動処理できるように設計されています。 ボタン 1 回をクリックするだけで、プロセスが大幅に簡素化されます。 ワンクリックで必要なインフラストラクチャをプロビジョニングし、GitHubと統合してバージョン管理を行い、Google Driveでドキュメントとアセットストレージを設定します。
+最初の Edge Delivery サイトをワンクリックで作成する機能は、Cloud Manager 内で Edge Delivery サイトのオンボーディングとデプロイメントを自動処理できるように設計されています。 プロビジョニング用のボタンが1つ用意されているため、プロセスが簡素化されます。 ワンクリックで必要なインフラストラクチャをプロビジョニングし、GitHubと統合してバージョン管理を行い、Google Driveでドキュメントとアセットストレージを設定します。
 
-この自動処理により、最初のサイトを設定するのに必要な手作業の労力が軽減されます。 エッジでのコンテンツ管理に関して、シームレスなワークフローとスケーラビリティが確保され、チームのパフォーマンスが向上します。
+この自動処理により、最初のサイトを設定するのに必要な手作業の労力が軽減されます。 これにより、シームレスなワークフロー、拡張性、エッジでのコンテンツ管理時のパフォーマンスの向上を実現できます。
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ Adobe Edge Delivery サイトをワンクリックで作成するには、組織
 
 1. 「**今すぐサイトを作成**」をクリックします。
 
-   画面の上部中央付近にトーストが表示され、Edge Delivery サイトのプロビジョニングが開始されたことが通知されます。
+   Edge Delivery サイトのプロビジョニングが開始されたことを知らせる通知が画面の上部中央に表示されます。
 
    Cloud Managerがサイトのプロビジョニングと検証を完了すると、Edge Delivery ページの&#x200B;**Edge Delivery サイト** リストボックスに&#x200B;**サイト名** （先ほど入力したプロジェクト名）が表示されます。 **検証済み** ステータス列の左側には、緑色のドットも表示されます。
 
