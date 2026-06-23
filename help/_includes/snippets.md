@@ -1,5 +1,5 @@
 ---
-source-git-commit: 10b54f1870113f6a94811df3976017c854ccf1eb
+source-git-commit: 73befe46aa362b0d6ef8530fbf3bb222c262d626
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 93%
@@ -220,12 +220,20 @@ ht-degree: 93%
 
 **サポートチケットをログに記録するには：**
 
-1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/ja?support-tab=home#support)チケットを作成します。
+1. [標準のサポートプロセスに従って、](https://experienceleague.adobe.com/?support-tab=home#support)チケットを作成します。
 1. チケットのタイトルに「**Edge Delivery**」を追加します。
 1. 説明では、問題の説明に加えて、次の詳細を入力します。
 
    * ライブ web サイトの URL。 例：`www.mydomain.com`。
    * オリジン web サイトの URL（`.hlx` URL）。
+
+## Cloud Managerにログイン {#sign-in-to-cloud-manager}
+
+1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
+   1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
+   1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
+1. Cloud Managerで、ページの右上隅付近にある、必要な組織を選択します。
+
 
 ## SPA エディターよりユニバーサルエディターを推奨 {#ue-over-spa}
 
@@ -287,12 +295,4 @@ ht-degree: 93%
 * [Edge Delivery Services を使用した AEM サイト](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - ユニバーサルエディターを使用して AEM ページをオーサリングし、[Edge Delivery](/help/edge/overview.md) を通じて配信する場合
 * [Commerce 用の AEM オーサリングを使用した Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - Commerce プロジェクト用のユニバーサルエディターを使用して AEM ページをオーサリングし、[Edge Delivery](/help/edge/overview.md) を通じて配信する場合
 * [標準 AEM サイトテンプレート](https://github.com/adobe/aem-site-template-standard/releases) - 従来の AEM ページをオーサリングし、[公開配信](/help/sites-cloud/authoring/author-publish.md)を通じて配信する場合
-
-
-## Cloud Managerにログイン {#sign-in-to-cloud-manager}
-
-1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
-   1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
-   1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
-1. Cloud Managerで、ページの右上隅付近にある、必要な組織を選択します。
 
