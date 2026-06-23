@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 87%
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager でカスタムドメイン名を追加する前に、次の要件
 
 * カスタムドメイン名を追加する&#x200B;*前*&#x200B;に、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)ドキュメントの説明に従って、追加するドメインのドメイン SSL 証明書を追加しておく必要があります。
 * Cloud Manager でカスタムドメイン名を追加するには、**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割が必要です。
-* Fastly または他の CDN（コンテンツ配信ネットワーク）を使用する必要があります。
+* FastlyなどのCDN （コンテンツ配信ネットワーク）を使用する。
 
 >[!IMPORTANT]
 >
@@ -53,8 +53,8 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 1. **ドメイン設定**&#x200B;ページの右上隅付近にある「**ドメインを追加**」をクリックします。
 
-1. **ドメインを追加**&#x200B;ダイアログボックスの「**ドメイン名**」フィールドに、使用するカスタムドメイン名を入力します。
-ドメイン名を入力する際は、`http://`、`https://`、スペースを含めないでください。
+1. **ドメインを追加** ダイアログボックスの&#x200B;**ドメイン名** フィールドに、使用しているカスタムドメイン名を入力します。
+ドメイン名を入力するときは、`http://`、`https://`、またはスペースを含めないでください。
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 1. **ドメインを検証**&#x200B;ダイアログボックスで、選択した証明書タイプに応じて、次のいずれかを行います。
 
    | 選択した証明書タイプ | 説明 |
-   | --- | ---  |
+   | --- | --- |
    | アドビが管理する証明書 | a. 以下の[Adobe管理証明書の手順](#adobe-managed-cert-steps)を実行します。 手順を完了したら、**ドメインを検証**&#x200B;ダイアログボックスで「**検証**」をクリックします。<ul><li>DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。</li><li>Cloud Manager は最終的にドメイン名の所有権を確認し、**ドメイン設定**&#x200B;テーブルのステータスを更新します。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li>![ドメインステータスの検証](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. これで、[Adobe Managed （DV） SSL証明書を追加する準備ができました](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)。</li></ul> |
    | 顧客が管理する証明書 | a. 「**OK**.<br>b」をクリックします。 これで、[顧客管理（OV/EV） SSL証明書を追加する準備が整いました](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)。<br>証明書を追加すると、ドメイン名が&#x200B;**ドメイン設定**&#x200B;テーブルで検証済みとマークされます。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li></ul><br>![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
@@ -92,7 +92,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 使用中のドメインを検証するには、CNAME を追加して検証する必要があります。
 
-`CNAME` レコードタイプまたは `A` レコードタイプがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。 その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。 テストされていない場合は、コンテンツにエラーがある可能性があります。 この手順が常にテストが完了し運用開始の準備が整った後に実行されるのは、このためです。
+`CNAME` レコードタイプまたは `A` レコードタイプがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。 その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。 テストされていない場合は、コンテンツのエラーが発生する可能性があります。 この検証は、テストが完了し、本番稼動の準備が整った後に、この手順が常に実行される理由です。
 
 これらの設定を行うには、カスタムドメイン名が Cloud Manager ドメイン名を指すように、`CNAME` または Apex レコードを設定する必要があるかどうかを判断します。 このドキュメントの後の節は、DNS 設定に適したレコードタイプを判断するうえで役に立ちます。
 
@@ -105,7 +105,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 >[!WARNING]
 >
->ここでは、「広告を出す前に登録する」原則が適用されます。 つまり、DNS の設定は、ドメインマッピングが正常に追加された&#x200B;*後*&#x200B;にのみ実行する必要があります。 これにより、Cloud Managerが、ドメインに対するリクエストに応答する前に、ドメインが自身の設定に存在することを認識し、検証できるようになります。 これにより、ドメインの乗っ取り行為を防ぐこともできます。
+>ここでは、「広告を出す前に登録する」原則が適用されます。 つまり、DNSの設定は、ドメイン マッピングを正常に追加した&#x200B;*後にのみ実行する必要があります。*&#x200B;これにより、Cloud Managerが、ドメインに対するリクエストに応答する前に、ドメインが自身の設定に存在することを認識し、検証できるようになります。 これにより、ドメインの乗っ取り行為を防ぐこともできます。
 
 DNS レコードを設定する&#x200B;*前に*、次の要件を満たしていることを確認します。
 
@@ -119,7 +119,7 @@ DNS レコードを設定する&#x200B;*前に*、次の要件を満たしてい
 
 DNS サービスプロバイダーにログインし、次のテーブルのように、カスタムドメイン名がターゲットを指すように `CNAME` レコードを作成します。
 
-| CNAME | カスタムドメイン名の参照先 |
+| CNAME | カスタムドメイン名ポイントからターゲットへ |
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 

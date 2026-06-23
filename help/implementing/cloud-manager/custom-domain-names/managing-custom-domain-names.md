@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1b7357b7f3fb99937857e5a7716baedd8124b549
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager では、カスタムドメイン名の編集、更新、置換、
 
 ## カスタムドメイン名の設定の編集 {#view-and-update}
 
-Adobe Cloud Manager では、次の理由により、カスタムドメイン名の設定を編集する必要がある場合があります。
+Adobe Cloud Managerでは、次の理由により、カスタムドメイン名設定を編集できます。
 
 * **環境の切り替え**：コンテンツをエンドユーザー（パブリッシュ）に提供するか、内部ユーザー（オーサー）に提供するかに応じて、正しい設定を適用します。
 * **セキュリティの更新**：セキュリティまたはコンプライアンスを強化するために、新しい SSL 証明書にアップグレードします。
@@ -31,7 +31,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 
-1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左サイドメニューを表示します。
+1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左側のサイドメニューを開きます。
 
 1. **サービス**&#x200B;見出しの下にある ![ソーシャルネットワークアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg)「**ドメインマッピング**」をクリックします。
 
@@ -49,7 +49,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 ## カスタムドメイン名の SSL 証明書の更新 {#update-cert}
 
-上記と同じ手順に従って、カスタムドメイン名の SSL 証明書を更新します。
+カスタムドメイン名のSSL証明書を更新するには、上記と同じ手順に従います。
 
 >[!NOTE]
 >
@@ -70,19 +70,19 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. ドロップダウンメニューで、「**検証**」をクリックします。
 
-1. **ドメインを検証**&#x200B;ダイアログボックスの&#x200B;**このドメインで使用する予定の証明書タイプは何ですか？**&#x200B;ドロップダウンリストで、次のオプションのいずれかを選択します。
+1. **ドメインの確認** ダイアログボックスで、**このドメインで使用する証明書の種類は何ですか？** ドロップダウンリストから、次のいずれかのオプションを選択します。
 
    | 証明書タイプオプション | 説明 |
    | --- | --- |
-   | アドビが管理する（DV）SSL 証明書 | DV（ドメイン検証）証明書を使用する場合は、この証明書タイプを選択します。このオプションは、ほとんどの場合に最適で、基本的なドメイン検証を提供します。証明書は、アドビによって管理され、自動的に更新されます。 |
-   | 顧客が管理する（OV/EV）SSL 証明書 | EV/OV SSL 証明書を使用してドメインを保護する場合は、この証明書タイプを選択します。このオプションでは、OV（組織検証）または EV（拡張検証）でセキュリティが強化されます。より厳しい検証、より高い信頼レベル、証明書に対するカスタム管理のいずれかが必要な場合に使用します。 |
+   | アドビが管理する（DV）SSL 証明書 | DV（ドメイン検証）証明書を使用する場合は、この証明書タイプを選択します。 このオプションは、ほとんどの場合に最適で、基本的なドメイン検証を提供します。 証明書は、アドビによって管理され、自動的に更新されます。 |
+   | 顧客が管理する（OV/EV）SSL 証明書 | EV/OV SSL 証明書を使用してドメインを保護する場合は、この証明書タイプを選択します。 このオプションでは、OV（組織検証）または EV（拡張検証）でセキュリティが強化されます。 より厳しい検証、より高い信頼レベル、証明書に対するカスタム管理のいずれかが必要な場合に使用します。 |
 
 1. **ドメインを検証**&#x200B;ダイアログボックスで、選択した証明書タイプに応じて、次のいずれかを行います。
 
    | 選択した証明書タイプ | 説明 |
    | --- | ---  |
-   | アドビが管理する証明書 | a. [アドビが管理する証明書の手順](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps)を完了します。**ドメインの検証**&#x200B;ダイアログボックスの手順を完了したら、「**検証**」をクリックします。<ul><li>DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。</li><li>Cloud Manager は最終的にドメイン名の所有権を確認し、**ドメイン設定**&#x200B;テーブルのステータスを更新します。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li>![ドメインステータスの検証](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. [アドビが管理する（DV）SSL 証明書を追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)する準備が整いました。</li></ul> |
-   | 顧客が管理する証明書 | a. 「**OK**」をクリックします。<br>b. これで、[顧客が管理する（OV/EV）SSL 証明書を追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)する準備が整いました。<br>証明書を追加すると、ドメイン名が&#x200B;**ドメイン設定**&#x200B;テーブルで検証済みとマークされます。詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li></ul><br>![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | アドビが管理する証明書 | a. [Adobe管理証明書の手順](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps)を完了します。 **ドメインの検証**&#x200B;ダイアログボックスの手順を完了したら、「**検証**」をクリックします。<ul><li>DNS の生成遅延が原因で、DNS 検証の処理に数時間かかる場合があります。</li><li>Cloud Manager は最終的にドメイン名の所有権を確認し、**ドメイン設定**&#x200B;テーブルのステータスを更新します。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li>![ドメインステータスの検証](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. これで、[Adobe Managed （DV） SSL証明書を追加する準備ができました](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)。</li></ul> |
+   | 顧客が管理する証明書 | a. 「**OK**.<br>b」をクリックします。 これで、[顧客管理（OV/EV） SSL証明書を追加する準備が整いました](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)。<br>証明書を追加すると、ドメイン名が&#x200B;**ドメイン設定**&#x200B;テーブルで検証済みとマークされます。 詳しくは、[カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)を参照してください。</li></ul><br>![顧客が管理する EV/OV 証明書のドメイン検証](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
 ## 関連するすべての環境からカスタムドメイン名の削除 {#deleting}
@@ -108,7 +108,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 >[!WARNING]
 >
->Cloud Manager でドメインを削除する&#x200B;*前*&#x200B;に、DNS プロバイダーでドメインの DNS レコードを削除します。放棄された（ダングリングされた） DNS エントリはハイジャックされ、セキュリティリスクをもたらす場合があります。
+>Cloud Manager でドメインを削除する&#x200B;*前*&#x200B;に、DNS プロバイダーでドメインの DNS レコードを削除します。 未使用のDNS エントリは危険にさらされ、セキュリティ上のリスクを引き起こす可能性があります。
 
 **特定の環境からカスタムドメイン名を削除するには：**
 
@@ -116,7 +116,7 @@ Adobe Cloud Manager では、次の理由により、カスタムドメイン名
 
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;画面に移動します。
 
-1. **環境**&#x200B;ページから、対象となる環境の詳細画面に移動します。
+1. **環境** ページから、選択した環境の詳細画面に移動します。
 
 1. ドメインマッピングのテーブルで、削除するカスタムドメイン名の行を見つけます。
 
