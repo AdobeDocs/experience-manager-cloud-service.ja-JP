@@ -63,7 +63,7 @@ Cloud Manager の[ドメイン設定ページ](#adding-cdn-settings)からカス
 
 1. 「**作成**」をクリックします。
 
-1. **ドメイン設定** ページで、ドメイン名の右側にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**検証**&#x200B;をクリックします。
+1. **ドメイン設定** ページで、ドメイン名の右側にある![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックし、**検証**&#x200B;をクリックします。
 
 1. **ドメインの確認** ダイアログボックスで、**このドメインで使用する証明書の種類は何ですか？** ドロップダウンリストから、次のいずれかのオプションを選択します。
 
