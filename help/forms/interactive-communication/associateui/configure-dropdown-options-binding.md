@@ -60,7 +60,7 @@ ht-degree: 2%
 
    ドロップダウンフィールドに&#x200B;**データバインディング**&#x200B;を設定しないでください。データ **からの** バインディングまたは手動オプションのみを使用してください。
 
-   ![ ドロップダウンオプションのバインディングの設定](/help/forms/interactive-communication/assets/associate-ui-configure-drop-down1.png)
+   ![&#x200B; ドロップダウンオプションのバインディングの設定](/help/forms/interactive-communication/assets/associate-ui-configure-drop-down1.png)
 
 1. **アソシエイトによる編集を許可**&#x200B;をオンにして、アソシエイト UIで値を選択できるようにします。
 

@@ -39,7 +39,7 @@ ht-degree: 2%
 
 1. コンテキストメニューで「**移動先**」を選択し、「**マスターページ**」を選択します。
 
-   ![ マスターページに移動](/help/forms/interactive-communication/assets/move-to-master-page.png)
+   ![&#x200B; マスターページに移動](/help/forms/interactive-communication/assets/move-to-master-page.png)
 
    コンポーネントがデザインページから削除され、同じ視覚的位置でマスターページに追加されます。 これで、そのマスターページを使用するすべてのページに表示されます。
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 1. 「**マスター**」タブを選択して、銀行のロゴと銀行の住所が想定される役職に表示されていることを確認します。
 
-   ![ マスターページに移動](/help/forms/interactive-communication/assets/move-to-master-page2.png)
+   ![&#x200B; マスターページに移動](/help/forms/interactive-communication/assets/move-to-master-page2.png)
 
 ## 対象コンポーネント
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 | 表のセル | テーブル構造内に属するセルレベルの要素 |
 | ラジオボタン | フォームデータ構造の一部である選択コントロール |
 
-**コンテンツロック**&#x200B;または&#x200B;**レイアウトロック**&#x200B;が適用されているコンポーネントも対象外です。 移動する前にロックを解除するか、テンプレートの設計時にマスターページにコンポーネントを配置するように計画します。 インタラクティブ通信エディターの[ テンプレートのロック ](/help/forms/interactive-communication/enable-template-lock.md)を参照してください。
+**コンテンツロック**&#x200B;または&#x200B;**レイアウトロック**&#x200B;が適用されているコンポーネントも対象外です。 移動する前にロックを解除するか、テンプレートの設計時にマスターページにコンポーネントを配置するように計画します。 インタラクティブ通信エディターの[&#x200B; テンプレートのロック &#x200B;](/help/forms/interactive-communication/enable-template-lock.md)を参照してください。
 
 ## よくある質問
 

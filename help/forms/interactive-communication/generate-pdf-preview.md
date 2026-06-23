@@ -44,7 +44,7 @@ PDFのプレビュー機能を使用すると、データなし、ローカル J
 
 +++&#x200B;2. ローカル JSON データを使用したプレビュー
 
-2.1. 構造化JSON ファイルを準備します。 参照用に、通信に使用するJSON スキーマ [ （FDM） ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)からサンプルデータをコピーできます。
+2.1. 構造化JSON ファイルを準備します。 参照用に、通信に使用するJSON スキーマ [&#x200B; （FDM） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)からサンプルデータをコピーできます。
 
 2.2. IC エディターで、**PDF Preview** > Using Local Dataに移動します。
 

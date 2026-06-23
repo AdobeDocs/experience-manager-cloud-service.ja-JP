@@ -32,7 +32,7 @@ ht-degree: 3%
 
 1.1. [作成したインタラクティブ通信](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
 1.2.「**ダウンロード**」オプションをクリックして、ZIP ファイルとしてエクスポートします。
-1.3. ダウンロードされたZIP ファイルには、選択した**テンプレート**、**フラグメント**、**データモデル**&#x200B;と共にICが含まれています。
+1.3. ダウンロードされたZIP ファイルには、選択した&#x200B;**テンプレート**、**フラグメント**、**データモデル**&#x200B;と共にICが含まれています。
 
 ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/downloadic.png)
 +++
@@ -40,8 +40,8 @@ ht-degree: 3%
 +++&#x200B;2. インタラクティブ通信のインポート方法
 
 2.1. ターゲット環境に移動します。
-2.2. **Forms/Formsとドキュメント/作成/ファイルアップロード**に移動します。
-2.3. ZIP ファイルを**インポート**&#x200B;にICにアップロードします。
+2.2. **Forms/Formsとドキュメント/作成/ファイルアップロード**&#x200B;に移動します。
+2.3. ZIP ファイルを&#x200B;**インポート**&#x200B;にICにアップロードします。
 
 ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/uploadfile.png)
 
