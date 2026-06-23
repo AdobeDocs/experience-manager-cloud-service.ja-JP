@@ -5,17 +5,17 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
+source-git-commit: 8422eeb1538c7d3fc64bf4769cb577c894c85769
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 63%
+source-wordcount: '288'
+ht-degree: 55%
 
 ---
 
 
 # IP 許可リストの追加 {#add-ip-allow-list}
 
-Cloud Manager を使用して独自の IP 許可リストを追加する方法を説明します。
+Cloud Managerを使用してIP許可リストを設定します。
 
 IP 許可リストを追加するには、**Business Owner**&#x200B;または&#x200B;**Deployment Manager**&#x200B;の役割を持つユーザーが、次の手順に従います。
 
@@ -28,7 +28,7 @@ IP 許可リストを追加するには、**Business Owner**&#x200B;または&#x
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
 
-1. **プログラムの概要** ページで、左側のメニューを使用して（必要に応じて、左上隅の![&#x200B; メニューアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)をクリックしてメニューを表示）、![&#x200B; タスクリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 許可リスト**&#x200B;をクリックします。
+1. **プログラムの概要** ページで、左側のナビゲーションメニューを使用して（必要に応じて、左上隅の![&#x200B; メニューアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)をクリックしてメニューを表示）、![&#x200B; タスクリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 許可リスト**&#x200B;をクリックします。
 
    ![左側のサイドメニューの「IP 許可リスト」オプション](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
@@ -41,9 +41,9 @@ IP 許可リストを追加するには、**Business Owner**&#x200B;または&#x
 1. 「**IP アドレス／CIDR**」フィールドに、最大 50 個の IP アドレスまたは CIDR ブロックを入力します。 次のいずれかの方法で追加できます。
 
    * 一度に 1 つずつ：アドレスを入力し、`Enter` キーを押します。 追加のアドレスごとに繰り返します。
-   * 一度に複数：アドレスをコンマ（,）またはタブで区切って入力し、`Enter`を押して、各アドレスを個別に処理します。
+   * 複数を同時に：アドレスをコンマ （,）またはタブで区切って入力し、`Enter`を押して各アドレスを処理します。
 
-1. 最後の IP アドレスまたは CIDR ブロックの入力が完了したら、`Enter` キーを押して入力を確認します。 `Enter` キーを押すと、エントリに対する確認が行われ、「**保存**」ボタンがアクティブになります。
+1. 最後のIP アドレスまたはCIDR ブロックを入力したら、`Enter`を押して入力を確認します。 `Enter` キーを押すと、エントリに対する確認が行われ、「**保存**」ボタンがアクティブになります。
 
 1. 「**保存**」をクリックします。
 
