@@ -4,10 +4,10 @@ description: ボタンをクリックするだけで Cloud Manager で Edge Deli
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
+source-git-commit: d36dc453097b1f2507ff1ca6d775acf8b9ac5add
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 53%
+source-wordcount: '1419'
+ht-degree: 54%
 
 ---
 
@@ -40,10 +40,8 @@ Adobe Edge Delivery サイトをワンクリックで作成するには、組織
 
 **ワンクリックで Cloud Manager に Edge Delivery サイトを作成するには：**
 
-1. [experience.adobe.com](https://experience.adobe.com)でCloud Managerにログインします。
-   1. **クイックアクセス** セクションで、**Experience Manager**&#x200B;をクリックします。
-   1. 左側のサイドパネルで、「**Cloud Manager**」をクリックします。
-   1. 組織を選択します。
+{{sign-in-to-cloud-manager}}
+
 1. **マイプログラム** コンソールで、プログラムをクリックします。
 1. ページの左上隅にある ![メニューを表示アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) をクリックして、左サイドメニューを表示します。
 1. 左側のサイドメニューの&#x200B;**プログラム**&#x200B;見出しの下にある「**概要**」をクリックします。
