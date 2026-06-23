@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: compare-interactive-communication-versions
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -89,3 +89,4 @@ ht-degree: 2%
 - [インタラクティブ通信エディターでのバージョン管理とコメント](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
 - [インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
 - [インタラクティブなコミュニケーションの作成](/help/forms/interactive-communication/create-interactive-communication.md)
+

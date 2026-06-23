@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
-source-git-commit: efdfec8f3ce63a2931a78eeb4be3820e22b13a8d
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 1%
@@ -130,3 +130,4 @@ ht-degree: 1%
 - [インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
 - [インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
 - [インタラクティブなコミュニケーションの作成](/help/forms/interactive-communication/create-interactive-communication.md)
+

@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: unbound-variable-ic-editor
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 3%
@@ -155,3 +155,4 @@ ht-degree: 3%
 - [日付/時刻フィールドコンポーネント &#x200B;](/help/forms/interactive-communication/date-time-field.md) – 日付と時刻を組み合わせた値の表示パターン構文
 - [&#x200B; インタラクティブ通信エディターでルールエディターを使用](/help/forms/interactive-communication/use-the-rule-editor.md) – 式を書き込んで値を計算し、バインドされていない変数に割り当てます
 - [インタラクティブ通信エディターでのデータバインディングの設定](/help/forms/interactive-communication/configure-data-binding.md)
+
