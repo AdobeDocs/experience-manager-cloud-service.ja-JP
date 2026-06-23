@@ -7,19 +7,16 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 4%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
 
 # インタラクティブ通信エディターのサブフォーム
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 ## &#x200B;1. はじめに
 

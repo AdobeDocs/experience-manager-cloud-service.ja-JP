@@ -5,18 +5,15 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 4%
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
 # アソシエイト UIの送信ワークフロー
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 この記事では、アソシエイト UIのワークフローを有効にした場合の送信とワークフローの仕組みについて説明します。 次に、送信ワークフローの設定方法を説明します。 このチュートリアルでは、例として、インタラクティブ通信（IC）ペイロードからPDFを生成する方法を使用します。他のワークフロータイプに手順を適応させることができます。
 
@@ -92,4 +89,4 @@ Associates open the Associate UI on the Publish instance, using the integration 
 - [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [&#x200B; ワークフローのデータを外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ja)
+- [ワークフローデータの外部化](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=ja)

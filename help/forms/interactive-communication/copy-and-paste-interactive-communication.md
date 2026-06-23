@@ -8,18 +8,15 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: 77f7d21eed1322de768ee07e3518638f60e3ae40
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 1%
 
 ---
 
 # インタラクティブ通信エディターでのコピー&amp;ペースト
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 インタラクティブ通信（IC）エディターのコピー&amp;ペースト機能を使用すると、作成者は既存のインタラクティブ通信を複製して、別のフォルダーまたは場所で再利用できます。 この機能により、元のバージョンを変更することなく、ICの複数のバリエーションを有効にすることで、チームは効率的に作業できます。
 

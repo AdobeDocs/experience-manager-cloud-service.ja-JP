@@ -1,78 +1,75 @@
 ---
 title: インタラクティブ通信テンプレートの作成
-description: AEM Formsでインタラクティブ通信テンプレートを作成して、再利用可能なレイアウトを定義し、ブランドの一貫性を確保し、パーソナライズされたデータ駆動型コミュニケーションの作成を効率化します。
+description: AEM Formsなら、インタラクティブなコミュニケーションテンプレートを作成して、再利用可能なレイアウトを定義し、ブランドの一貫性を確保しながら、パーソナライズされたデータ主導のコミュニケーションを効率的に構築できます。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 5%
 
 ---
 
 
 # インタラクティブ通信テンプレートの作成
 
->[!NOTE]
->
-> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
-AEMのインタラクティブ通信テンプレートを使用すると、ヘッダー、フッター、ロゴ、デフォルトのスタイル設定など、再利用可能なレイアウト構造を定義できます。 これらのテンプレートは、一貫性があり、ブランド化され、効率的なコミュニケーションを作成する基盤となります。
+AEMのインタラクティブ通信テンプレートを使用すると、ヘッダー、フッター、ロゴ、デフォルトのスタイル設定など、再利用可能なレイアウト構造を定義できます。 これらのテンプレートは、一貫性のあるブランド化された効率的なコミュニケーションを作成するための基盤として機能します。
 
 ## 前提条件
 
-* [作成者が forms-users グループと template-authors グループのメンバーであることを確認してください。](/help/forms/setup-forms-cloud-service.md#configure-users)
+* [作成者がforms-users グループとtemplate-authors グループのメンバーであることを確認します。](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* [AEM アーキタイプバージョン 55](https://github.com/adobe/aem-project-archetype) 以降がインストールされていることを確認します。
+* [AEM アーキタイプバージョン 55](https://github.com/adobe/aem-project-archetype)以降がインストールされていることを確認します。
 
 ## インタラクティブ通信テンプレートの作成
 
 インタラクティブ通信テンプレートを作成するには、次の手順を実行します。
 
-1. **Adobe Experience Manager（AEM）Forms as a Cloud Service インスタンス** を開きます。
+1. **Adobe Experience Manager （AEM） Forms as a Cloud Service インスタンス**&#x200B;を開きます。
 
-1. **ツール** に移動します。
+1. **ツール**&#x200B;に移動します
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/aem.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/aem.png)
 
-1. **ツール/一般/テンプレート** に移動します。
+1. **ツール/一般/テンプレート**&#x200B;に移動します。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/template.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/template.png)
 
 1. フォルダーの作成または選択
 
-   インタラクティブ通信テンプレートを作成する新しいフォルダーを作成するか、既存のフォルダーを選択します。
+   新しいフォルダーを作成するか、インタラクティブ通信テンプレートを作成する既存のフォルダーを選択します。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/choosefolder.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/choosefolder.png)
 
-1. 新しいテンプレートを作成するには、「**作成**」をクリックし、「インタラクティブ通信の汎用テンプレート」を選択します。
+1. 新しいテンプレートを作成し、**作成**&#x200B;をクリックして、インタラクティブ通信の汎用テンプレートを選択します。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create1.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/create1.png)
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/choose.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/choose.png)
 
-1. 次のように **テンプレート** を入力します。
+1. 次のように、**テンプレート**&#x200B;を入力します。
 
    * タイトル
    * 名前
    * 説明 (オプション)
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/create2.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/create2.png)
 
-1. 「**作成**」ボタン、「インタラクティブ通信テンプレートが正常に作成されました」の順にクリックします。
+1. 「**作成**」ボタンをクリックすると、インタラクティブ通信テンプレートが正常に作成されました。
 
-   ![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/enabled.png)
+   ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/enabled.png)
 
-1. **テンプレート** を有効にする：このアクションにより、ユーザーはインタラクティブ通信の作成にテンプレートを使用できるようになります。
+1. **テンプレート**&#x200B;を有効にします。このアクションを使用すると、ユーザーはテンプレートを使用してインタラクティブ通信を作成できます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/enable.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/enable.png)
 
-上記の手順に従うと、インタラクティブ通信テンプレートを正常に作成できます。 有効にすると、これらのテンプレートを再利用して、一貫性のあるパーソナライズされたコミュニケーションドキュメントを効率的に作成できます。
+上記の手順に従うことで、インタラクティブ通信テンプレートを正常に作成できます。 有効にすると、これらのテンプレートを再利用して、一貫性のあるパーソナライズされたコミュニケーションドキュメントを効率的に作成できます。
 
 ## 次の手順
 
-[&#x200B; インタラクティブ通信の作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication.md)
-[&#x200B; インタラクティブ通信フラグメントの作成 &#x200B;](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[&#x200B; インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+[&#x200B; インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

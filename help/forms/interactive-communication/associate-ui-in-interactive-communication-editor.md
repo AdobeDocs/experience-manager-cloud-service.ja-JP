@@ -6,18 +6,15 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
+source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 4%
+source-wordcount: '652'
+ht-degree: 3%
 
 ---
 
 # インタラクティブ通信エディターでのUIの関連付け
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 **アソシエイト UI**&#x200B;は、インタラクティブ通信（IC）エディター上に構築された、専用のシンプルなインターフェイスです。 現場スタッフやサービスエージェントなど、顧客と接する専門家向けに設計されており、ライブでのインタラクション中に、パーソナライズされた、コンプライアンスを遵守した、正確なコミュニケーションをリアルタイムで生成できます。
 
@@ -109,5 +106,7 @@ ht-degree: 4%
 ## 関連トピック
 
 - [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [関連付けUIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+- [アソシエート UIのバインド変数とバインドされていない変数の設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)

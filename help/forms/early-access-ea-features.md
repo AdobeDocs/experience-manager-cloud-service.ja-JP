@@ -7,10 +7,10 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 08fe79147c81c0a5b319fef3ef7733b6053b399a
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 18%
+source-wordcount: '2223'
+ht-degree: 21%
 
 ---
 
@@ -103,58 +103,62 @@ Ready to start? The following articles provides detailed instructions to use the
 
 -->
 
-### クラウドでのインタラクティブ通信
+<!--
 
-Interactive Communications on Cloudは、ビジネス通信、ドキュメント、明細書、特典、マーケティングメール、請求書、ウェルカムキットなど、データ主導のインタラクティブ通信を作成、管理、配信するための強力なソリューションです。
+### Interactive Communications on Cloud
 
-![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
+Interactive Communications on Cloud is a powerful solution for creating, managing, and delivering data-driven interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
-#### 主な機能：
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
 
-* **クラウドベースのエディター**: Windows コンピューターにのみインストールできるAEM Forms デスクトップ Designerとは異なり、Interactive Communications エディターは、インストールが不要な最新のブラウザーで実行されます。 このクラウドベースのアプローチにより、インストールの手間がなくなり、プラットフォーム間のアクセシビリティが向上し、インターネットにアクセスできるあらゆる場所からのコラボレーションが可能になります。
+#### Key Features:
 
-* **ユーザーフレンドリーなデザイン**：直感的なポイント&amp;クリック操作のインターフェイスで、技術的な知識は最小限に抑えられます。
+* **Cloud-Based Editor**: Unlike AEM Forms Desktop Designer which can only be installed on Windows machines, the Interactive Communications editor runs in any modern browser with no installation required. This cloud-based approach eliminates installation hassles, provides cross-platform accessibility, and enables collaboration from any location with internet access.
 
-* **データ統合**：動的コンテンツ生成用のスキーマ、データベース、web サービスに接続します。
+* **User-Friendly Design**: Intuitive point-and-click interface requiring minimal technical knowledge.
 
-* **リッチメディア**: テキスト、画像、インタラクティブ要素をシームレスに組み込みます。
+* **Data Integration**: Connect to schemas, databases, and web services for dynamic content generation.
 
-* **ドキュメントフラグメント**：複数のドキュメントでモジュール化されたコンテンツブロックを再利用して、一貫性と効率性を高めます。
+* **Rich Media**: Incorporate text, images, and interactive elements seamlessly.
 
-* **マルチチャネル出力**：規制への準拠を確認しながら、印刷形式とデジタル形式をまたいで統合されたエクスペリエンスを作成します。
+* **Document Fragments**: Reuse modular content blocks across multiple documents for consistency and efficiency.
 
-* **動的コンテンツ**: ビジネス ロジックとデータ バインディングを使用して、パーソナライズされたコンテンツを生成します。
+* **Multi-Channel Output**: Create unified experiences across print and digital formats with regulatory compliance.
 
-* **フォーマットの柔軟性**:PDF、HTML、PCL、PostScript®、ZPL形式に出力します。
+* **Dynamic Content**: Generate personalized content using business logic and data binding.
 
-* **ルールエディター**：直感的なポイント&amp;クリック操作のインターフェイスを使用して、データ主導の動的なアクションをドキュメント内で直接構築できます。 コードを記述することなく、条件付きロジックの定義、ワークフローの自動化、コンテンツのパーソナライズを簡単に行えます。
+* **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
 
-* **PDF Preview:** データ、ローカル JSON ファイル、またはデータモデルを使用しないインタラクティブ通信をプレビューして、柔軟なデータドリブン型テストを実行できます。
-* **カスタムフォント：**&#x200B;複数のデバイスにわたって一貫性のあるブランド化されたPDF レンダリングを確実に行うために、カスタムフォントまたは組織承認済みフォントを埋め込みます。
-* **読み込みと書き出し：** フラグメントとデータモデルとのインタラクティブ通信を、環境間でシームレスに移行および再利用します。
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
 
-* **テンプレートのロック**: テンプレート内のコンテンツとレイアウト要素をロックして、ブランドの整合性を維持し、不正な変更を防止します。
+* **PDF Preview:** Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing.
+* **Custom Fonts:** Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices.
+* **Import and Export:** Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments.
 
-* **コンテンツオーバーフロー**: フローレイアウトの「コンテンツ内でページ区切りを許可」オプションを使用すると、複数ページにわたるスムーズな編集と複雑なドキュメントのテキスト管理を改善できます。
+* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. 
 
-* **XDP ファイル編集**: Microsoft Windows デスクトップでのみ動作するForms Designerではなく、ブラウザーでXDP ファイルを編集できるようになりました。
+* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. 
 
-* **パブリッシュインスタンスでアソシエート UIを呼び出す**：アソシエート UIをパブリッシュインスタンスで直接呼び出せるようになりました。 この機能により、必要な設定、ペイロード構造、呼び出しフローが定義され、統合が簡素化され、環境間のデプロイメントが高速化されます。
+* **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
 
-##### 動的なページ番号
+* **Invoke the Associate UI on a Publish instance**: You can now invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
 
-マスターページに「ページ番号（##）」を自動的に表示し、複数ページのドキュメント間で明確で一貫性のあるページネーションを実現します。
+##### Dynamic Page Numbering 
+
+Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
 
 
 
-#### ユースケース：
+#### Use Cases:
 
-* 財務諸表を作成する金融機関
-* 給付通知を合理化する政府機関
-* 高品質で安全、かつ法的に準拠したメッセージの作成
-* データ駆動型インタラクティブ通信の作成、組み立て、および配信の管理
+* Financial institutions generating account statements
+* Government agencies streamlining benefit notices
+* Creating high-quality, secure, and legally compliant correspondence
+* Managing the creation, assembly, and delivery of data-driven interactive correspondences
 
-では、早速開始しましょう。 インタラクティブ通信エディターは、Forms as a Cloud Service デプロイメントの早期アクセスプログラムで使用できます。 アクセスをリクエストするには、組織IDとプログラムの詳細を公式アドレスから[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)に電子メールで送信します。
+Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+-->
 
 ### AEM Forms と Adobe Experience Platform（AEP）の統合
 

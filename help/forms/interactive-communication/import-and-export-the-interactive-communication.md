@@ -1,63 +1,60 @@
 ---
 title: インタラクティブ通信の読み込みと書き出し
-description: インタラクティブ通信の読み込みと書き出しを使用すると、ユーザーは、環境全体で通信をシームレスに移行、再利用、管理できます。
+description: インタラクティブ通信の読み込みと書き出しにより、ユーザーは環境をまたいで通信をシームレスに移行、再利用、管理できます。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
 # インタラクティブ通信の読み込みと書き出し
 
->[!NOTE]
->
-> インタラクティブ通信機能は、早期導入プログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
-インタラクティブ通信（IC）の読み込み/書き出し機能を使用すると、環境全体で通信をシームレスに移行、再利用、管理できます。 これにより、インタラクティブ通信（IC）を、関連するフラグメントとデータモデルと共に、ある環境から書き出して別の環境に読み込むことができるので、一貫性が確保され、デプロイメント時の作業の重複が削減されます。
+インタラクティブ通信（IC）のインポートおよびエクスポート機能を使用すると、ユーザーは環境をまたいで通信をシームレスに移行、再利用、管理できます。 これにより、ある環境からインタラクティブ通信（IC）とその関連フラグメントおよびデータモデルを書き出して別の環境に読み込むことができ、一貫性を確保し、デプロイメント時の労力の重複を減らすことができます。
 
 ## 主なメリット
 
-- 環境間での IC の移行を合理化します。
-- フラグメント、データモデルおよび依存関係を保持します。
-- プロジェクト間で IC を再作成する手間を軽減します。
+- 環境をまたいでICの移行を簡素化します。
+- フラグメント、データモデル、依存関係を保持します。
+- プロジェクトをまたいでICを再作成する労力を軽減できます。
 
 ## インタラクティブ通信の読み込みと書き出し
 
-インタラクティブ通信（IC）を 1 つの環境で作成し、次の手順に従って書き出しと読み込みを行って別の環境で再利用します。
+ある環境でインタラクティブ通信（IC）を作成し、次の手順で書き出して読み込むことで、別の環境で再利用できます。
 
 +++&#x200B;1. インタラクティブ通信の書き出し方法
 
-1.1. [&#x200B; 作成されたインタラクティブ通信 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
-1.2. 「**ダウンロード**」オプションをクリックして、ZIP ファイルとしてエクスポートします。
-1.3. ダウンロードした ZIP ファイルには、選択した **template**、**fragments**、および **data model** と共に IC が含まれています。
+1.1. [作成したインタラクティブ通信](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) （IC）を選択します。
+1.2.「**ダウンロード**」オプションをクリックして、ZIP ファイルとしてエクスポートします。
+1.3. ダウンロードされたZIP ファイルには、選択した&#x200B;**テンプレート**、**フラグメント**、**データモデル**&#x200B;と共にICが含まれています。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/downloadic.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/downloadic.png)
 +++
 
-+++&#x200B;2. インタラクティブ通信の読み込み方法
++++&#x200B;2. インタラクティブ通信のインポート方法
 
 2.1. ターゲット環境に移動します。
-2.2. **Forms/Formsとドキュメント/作成/ファイルのアップロード** に移動します。
-2.3. IC に ZIP ファイルをアップロードし **インポート** します。
+2.2. **Forms/Formsとドキュメント/作成/ファイルアップロード**&#x200B;に移動します。
+2.3. ZIP ファイルを&#x200B;**インポート**&#x200B;にICにアップロードします。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/uploadfile.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/uploadfile.png)
 
-2.4. アップロード後、IC は関連するフラグメントおよびデータモデルと共に表示されます。
+2.4. アップロード後、ICは関連するフラグメントとデータモデルとともに表示されます。
 
-![IC Docu の検索 &#x200B;](/help/forms/interactive-communication/assets/importfragment.png)
+![IC ドキュメントを検索](/help/forms/interactive-communication/assets/importfragment.png)
 +++
 
 +++&#x200B;3. フラグメントの読み込みと書き出し
 
-3.1. エクスポートするには、**Forms/Formsとドキュメント** から必要なフラグメントを選択し、「**ダウンロード**」をクリックして ZIP ファイルとしてエクスポートします。
+3.1. 書き出すには、**Forms/Formsとドキュメント**&#x200B;から必要なフラグメントを選択し、**ダウンロード**&#x200B;をクリックしてZIP ファイルとして書き出します。
 
-3.2.読み込むには、対象環境に移動し、Forms/Formsとドキュメント/作成/**ファイルのアップロード** に移動して、書き出した ZIP ファイルをアップロードします。
+3.2. 読み込むには、対象の環境に移動し、Forms/Formsとドキュメント/作成/**ファイルアップロード**&#x200B;に移動し、書き出したZIP ファイルをアップロードします。
 
-これにより、異なる環境間でフラグメントを簡単に再利用でき、設計の一貫性を確保し、作業の重複を減らすことができます。
+これにより、異なる環境でフラグメントを簡単に再利用でき、デザインの一貫性を確保し、作業の重複を減らすことができます。
 +++

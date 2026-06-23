@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d906be2812090ed7f6439b0ffafc481d29b13e1
+source-git-commit: e4a81d514422497ec3f41537e3a2e57677730af5
 workflow-type: tm+mt
-source-wordcount: '7502'
+source-wordcount: '7545'
 ht-degree: 84%
 
 ---
@@ -1058,6 +1058,10 @@ ht-degree: 84%
       + [インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + {hide-from-toc}[&#x200B; インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
+   + レビューと共同作業 {#review-collaborate}
+      + {hide-from-toc}[&#x200B; インタラクティブ通信エディターでのバージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + {hide-from-toc}[&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + {hide-from-toc}[&#x200B; インタラクティブ通信のバージョンを比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
       + [テキストボックス](/help/forms/interactive-communication/text-box.md)
       + [画像](/help/forms/interactive-communication/image.md)
@@ -1073,6 +1077,7 @@ ht-degree: 84%
       + [テーブル](/help/forms/interactive-communication//table.md)
       + [線グラフ](/help/forms/interactive-communication/line.md)
       + [バーコード](/help/forms/interactive-communication/barcode.md)
+      + [連結されていない変数](/help/forms/interactive-communication/unbound-variable.md)
    + 方法 {#howto}
       + [データバインディングの設定](/help/forms/interactive-communication/configure-data-binding.md)
       + [ルールエディターの使用](/help/forms/interactive-communication/use-the-rule-editor.md)
@@ -1083,16 +1088,19 @@ ht-degree: 84%
       + [動的なページ番号付けを実装する](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
       + [コンテンツオーバーフローの処理](/help/forms/interactive-communication/handle-content-overflow.md)
       + [XDP編集をサポート](/help/forms/interactive-communication/support-xdp-editing.md)
-      + {hide-from-toc}[&#x200B; バージョンの作成とコメントの追加](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + {hide-from-toc}[&#x200B; インタラクティブ通信のコピーと貼り付け](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [インタラクティブ通信でのワークフローの開始](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [動的テーブルを作成](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
+      + {hide-from-toc}[&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + {hide-from-toc}[&#x200B; コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + UIの関連付け {#associateui}
       + [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-   + {hide-from-toc}[よくある質問](/help/forms/interactive-communications-faq.md)
+      + {hide-from-toc}[&#x200B; アソシエイト UIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + {hide-from-toc}[&#x200B; アソシエイト UIのバインド変数とバインドされていない変数を設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+   + [よくある質問](/help/forms/interactive-communications-faq.md)
 + Forms 中心のワークフロー {#create-form-centric-workflows}
    + {hide-from-toc}[Forms中心のワークフローの概要](/help/forms/aem-forms-workflow.md)
    + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)

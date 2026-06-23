@@ -6,19 +6,16 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
+source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 5%
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
 # インタラクティブ通信エディターの概要
 
->[!NOTE]
->
-> インタラクティブ通信機能は、アーリーアダプタープログラムで利用できます。 勤務先のアドレスから `aem-forms-ea@adobe.com` にメールを送信して、アクセスをリクエストします。
 
 ## インタラクティブ通信エディターとは
 
@@ -55,7 +52,7 @@ ht-degree: 5%
 
 ## オンボーディング
 
-インタラクティブ通信（IC）機能は、早期アクセス（EA）プログラムを通じて利用できます。 アクセスをリクエストするには、お客様の環境IDと組織IDを記載した公式の電子メール IDから[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)に電子メールを送信します。 Adobeが登録を確認したら、[&#x200B; サービスへのオンボーディング &#x200B;](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
+インタラクティブ通信を開始するには、[&#x200B; サービスへのオンボーディング &#x200B;](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
 https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
