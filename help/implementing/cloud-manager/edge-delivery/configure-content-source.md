@@ -1,13 +1,13 @@
 ---
-title: コンテンツのソースの設定
-description: Edge Delivery サイト向けにコンテンツソースを設定する方法について説明します。Helix 4 アーキテクチャで「fstab.yaml」を使用するか、Helix 5 アーキテクチャで Cloud Manager（または Configuration Service API）のガイド付きウィザードを使用します。
+title: Edge Delivery Services用Content Sourceの設定
+description: Edge Delivery サイト向けにコンテンツソースを設定する方法について説明します。 Helix 4 アーキテクチャで「fstab.yaml」を使用するか、Helix 5 アーキテクチャで Cloud Manager（または Configuration Service API）のガイド付きウィザードを使用します。
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 069e94e230b856fba15c3f465c966a5bf6b0ac46
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 88%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->*Helix* は、ドキュメントベースのオーサリングを用いた AEM Sites を動作させる、基盤となるアーキテクチャの内部名です。機能名や製品名ではありません。この記事では、*Helix* とは、Edge Delivery Sites で使用されるアーキテクチャバージョンを指します。Helix 5 は基盤となるアーキテクチャの現在のバージョンです。Helix 4 は以前のバージョンです。
+>*Helix* は、ドキュメントベースのオーサリングを用いた AEM Sites を動作させる、基盤となるアーキテクチャの内部名です。 機能名や製品名ではありません。 この記事では、*Helix* とは、Edge Delivery Sites で使用されるアーキテクチャバージョンを指します。 Helix 5 は基盤となるアーキテクチャの現在のバージョンです。Helix 4 は以前のバージョンです。
 
-Adobe Experience Manager（AEM）Edge Delivery Services を使用すると、高速でグローバルに分散した Edge Network を使用して、Google Drive、SharePoint、AEM 自体などの複数のソースからコンテンツを配信できます。
+Adobe Experience Manager（AEM） Edge Delivery Servicesでは、高速でグローバルに分散されたエッジネットワークを使用して、Google Drive、SharePoint、AEMからコンテンツを配信します。
 
 コンテンツソースの設定は、次のように 2 つのバージョン間で異なります。
 
@@ -30,7 +30,7 @@ Adobe Experience Manager（AEM）Edge Delivery Services を使用すると、高
 
 **事前準備**
 
-[Cloud Manager でワンクリック Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) を使用する場合、サイトは 1 つのリポジトリを持つ Helix 5 になります。[Helix 5](#config-helix5) の手順に従い、提供された Helix 4 YAML バージョンの手順をフォールバックとして使用します。
+[Cloud Manager でワンクリック Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site) を使用する場合、サイトは 1 つのリポジトリを持つ Helix 5 になります。 [Helix 5](#config-helix5) の手順に従い、提供された Helix 4 YAML バージョンの手順をフォールバックとして使用します。
 
 **Helix のバージョンの確認**
 
@@ -41,14 +41,14 @@ Adobe Experience Manager（AEM）Edge Delivery Services を使用すると、高
 
 ## Helix 4 のコンテンツソースの設定
 
-Helix 4 では、`fstab.yaml` ファイルでサイトのコンテンツソースを定義します。GitHub リポジトリのルートにあるこのファイルは、URL パスのプレフィックス（マウントポイントと呼ばれます）を外部コンテンツソースにマッピングします。一般的な例は次のとおりです。
+Helix 4 では、`fstab.yaml` ファイルでサイトのコンテンツソースを定義します。 GitHub リポジトリのルートにあるこのファイルは、URL パスのプレフィックス（マウントポイントと呼ばれます）を外部コンテンツソースにマッピングします。 一般的な例は次のとおりです。
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-上記の例は、説明の目的でのみ使用されます。実際の URL では、Google Drive フォルダー、SharePoint ディレクトリ、AEM パスなどのコンテンツソースを指している必要があります。
+上記の例は、説明の目的でのみ使用されます。 実際のURLは、Google Drive フォルダー、SharePoint ディレクトリ、AEM パスなど、コンテンツソースを指します。
 
 **Helix 4 のコンテンツソースを設定するには：**
 
@@ -101,14 +101,14 @@ mountpoints:
 
 ## Helix 5 のコンテンツソースの設定 {#config-helix5}
 
-Helix 5 はリポジトリ構造に依存しない（「repoless」と呼ばれる）ため、`fstab.yaml` を使用せず、複数のサイトで同じディレクトリを共有します。設定は、設定サービス API または Edge Delivery Services のユーザーインターフェイスを通じて管理されます。設定は、リポジトリレベルではなく、サイトレベルで行います。
+Helix 5はリポジトリを使用せず、`fstab.yaml`は使用せず、同じディレクトリを共有する複数のサイトをサポートしています。 設定は、設定サービス API または Edge Delivery Services のユーザーインターフェイスを通じて管理されます。 設定は、リポジトリレベルではなく、サイトレベルで行います。
 
 概念的な違いは次のとおりです。
 
 | 項目 | Helix 4 | Helix 5 |
 | --- | --- | --- |
 | 設定 | `fstab.yaml` で実行します。 | YAML の代わりに API または UI を通じて実行します。 |
-| マウントポイント | `fstab.yaml` で定義されます。 | 必須ではありません。ルートは暗黙的に理解されます。 |
+| マウントポイント | `fstab.yaml` で定義されます。 | 必須ではありません。 ルートは暗黙的に理解されます。 |
 
 **Helix 5 のコンテンツソースを設定するには**
 
