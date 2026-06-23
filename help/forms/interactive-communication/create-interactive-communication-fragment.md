@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 1. インタラクティブ通信フラグメントを選択すると、タイトル、名前、説明、データモデル（バックエンドデータの構造化表現）、タグなどのキーフラグメントの詳細を定義する画面が表示されます。
 
-   詳しくは、[&#x200B; データモデル設定ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)を参照してください。
+   詳しくは、[ データモデル設定ガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)を参照してください。
 
    ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
@@ -48,5 +48,6 @@ ht-degree: 1%
 
 ## 次の手順
 
-[&#x200B; インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
-[&#x200B; インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ インタラクティブ通信の作成](/help/forms/interactive-communication/create-interactive-communication.md)
+[ インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

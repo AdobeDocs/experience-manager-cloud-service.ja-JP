@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 2%
@@ -77,3 +77,4 @@ ICのデータバインディングは、単に値を接続するだけでなく
 - **機密データの保護：** PIIまたは支払いの詳細に対するマスキング、暗号化、最小権限アクセスを適用します。
 
 データバインディングを慎重に設定することで、デザイナーはデザインとデータの間に信頼性の高い橋を築き、コミュニケーションのオーサリングを加速し、正確性を確保し、高度にパーソナライズされたエクスペリエンスを大規模に提供します。
+

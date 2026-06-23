@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%
@@ -72,3 +72,4 @@ PDFの生成中に動的に更新されます。
 - 手作業による処理を必要とせずにページ番号を自動付けできます。
 
 - マスターページにリンクされているすべてのページで一貫性を維持します。
+

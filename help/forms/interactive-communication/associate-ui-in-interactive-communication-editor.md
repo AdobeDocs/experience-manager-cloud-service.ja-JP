@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 45b33b8a5afe8ff329f76b65d7e5bd7dea0dcc17
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -98,7 +98,7 @@ ht-degree: 3%
 3. **編集可能なフィールドを設定** – 関係者が編集および検証を設定できるフィールドを有効にします。
 4. **公開して共有** — ICを公開し、関連付けを共有します。
 
-スクリーンショットと送信/ワークフローの動作（作成者は作成者、公開時はアソシエート）に関する手順については、[&#x200B; インタラクティブ通信のアソシエート UIを有効にして設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)を参照してください。 IC送信からPDFを生成するワークフローを構築するには、[&#x200B; アソシエイト UIの送信ワークフロー – IC PDF出力の生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)を参照してください。
+スクリーンショットと送信/ワークフローの動作（作成者は作成者、公開時はアソシエート）に関する手順については、[ インタラクティブ通信のアソシエート UIを有効にして設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)を参照してください。 IC送信からPDFを生成するワークフローを構築するには、[ アソシエイト UIの送信ワークフロー – IC PDF出力の生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)を参照してください。
 
 **アソシエイト UI**&#x200B;は、構造化されたコンテンツ オーサリングとリアルタイムの顧客エンゲージメントのギャップを埋めます。\
 直感的なデザイン、堅牢なバックエンド設定、厳格なコンプライアンス管理を組み合わせることで、企業は&#x200B;**迅速かつ正確でパーソナライズされたコミュニケーション**&#x200B;を大規模に提供できます。
@@ -110,3 +110,4 @@ ht-degree: 3%
 - [アソシエート UIのバインド変数とバインドされていない変数の設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
 - [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
 - [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
+

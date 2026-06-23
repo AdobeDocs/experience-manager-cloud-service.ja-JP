@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -87,12 +87,13 @@ ht-degree: 3%
 
 ## 次の手順
 
-[&#x200B; インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
-[&#x200B; インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+[ インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+[ インタラクティブ通信フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 ## 関連トピック
 
-* [&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — IC キャンバス上に配置された注釈ピンを使用して、レビュー担当者と共同作業を行います。
-* [&#x200B; インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — 2つのバージョン間のレイアウトとコンテンツの違いを並べて調べます。
-* [&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — セルの結合または分割によって柔軟なテーブル レイアウトを作成します。
-* [&#x200B; コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md) – 一貫したクロスページコンポーネントの配置を確保します。
+* [ インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md) — IC キャンバス上に配置された注釈ピンを使用して、レビュー担当者と共同作業を行います。
+* [ インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md) — 2つのバージョン間のレイアウトとコンテンツの違いを並べて調べます。
+* [ テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md) — セルの結合または分割によって柔軟なテーブル レイアウトを作成します。
+* [ コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md) – 一貫したクロスページコンポーネントの配置を確保します。
+

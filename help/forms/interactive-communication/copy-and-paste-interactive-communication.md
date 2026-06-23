@@ -8,7 +8,7 @@ hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -81,3 +81,4 @@ ht-degree: 1%
 - コピー後のデータバインディングと出力チャネルを確認して、正確性を確保します。
 
 インタラクティブ通信のコピー&amp;ペースト機能は、作成者が既存のICを複製して個別に変更できるようにすることで、再利用とカスタマイズを簡素化します。 これにより、元のインタラクティブ通信に変更を加えるリスクを回避しながら、より迅速な開発、より安全な実験、一貫したコミュニケーション配信が可能になります。
+

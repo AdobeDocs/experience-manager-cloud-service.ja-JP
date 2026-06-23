@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -57,7 +57,7 @@ ht-degree: 2%
 次の手順に従って、インタラクティブ通信（IC）テンプレートにコンテンツロックまたはレイアウトロックを適用します。
 
 1. テンプレートを開く
-テンプレートを開くか作成します。ガイド [&#x200B; インタラクティブ通信テンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)に従います
+テンプレートを開くか作成します。ガイド [ インタラクティブ通信テンプレートの作成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)に従います
 
 1. コンポーネントの選択
 制限するコンポーネント（テキストボックス、画像、サブフォーム）をクリックします。
@@ -93,3 +93,4 @@ ht-degree: 2%
 - [コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
 - [インタラクティブ通信エディターでの動的なページ番号付けの実装](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
 - [インタラクティブ通信テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)
+

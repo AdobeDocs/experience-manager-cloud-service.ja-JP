@@ -6,7 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: ea372529b504ed70b74171e75d1d54f98fef432c
+source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 4%
@@ -44,7 +44,7 @@ PDFのプレビュー機能を使用すると、データなし、ローカル J
 
 +++&#x200B;2. ローカル JSON データを使用したプレビュー
 
-2.1. 構造化JSON ファイルを準備します。 参照用に、通信に使用するJSON スキーマ [&#x200B; （FDM） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)からサンプルデータをコピーできます。
+2.1. 構造化JSON ファイルを準備します。 参照用に、通信に使用するJSON スキーマ [ （FDM） ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)からサンプルデータをコピーできます。
 
 2.2. IC エディターで、**PDF Preview** > Using Local Dataに移動します。
 
@@ -63,3 +63,4 @@ PDFのプレビュー機能を使用すると、データなし、ローカル J
 ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
+
