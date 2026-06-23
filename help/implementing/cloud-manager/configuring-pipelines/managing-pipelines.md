@@ -69,8 +69,8 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
 1. **プログラムの概要**&#x200B;ページで、![パイプラインタブ - ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「**パイプライン**」タブをクリックします。
-1. パイプラインページのパイプライン名とタイプの左側で、![お気に入りでないパイプラインのスターアウトラインアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)をクリックして、お気に入りリストに追加します。
-または、お気に入りパイプラインの![ スターアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)をクリックして、お気に入りリストからパイプラインを削除します。
+1. パイプラインページのパイプライン名とタイプの左側で、![お気に入りでないパイプラインのスターアウトラインアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)をクリックして、お気に入りリストに追加します。
+または、お気に入りパイプラインの![&#x200B; スターアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)をクリックして、お気に入りリストからパイプラインを削除します。
 
 
 ## アクティビティページ {#activity}
@@ -99,7 +99,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
+1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューから、![実行 - 再生アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PlayCircle_18_N.svg)「**実行**」をクリックします。
 
@@ -107,7 +107,7 @@ Cloud Manager の&#x200B;**プログラムの概要**&#x200B;ページにある&
 
 実行の詳細を確認するには、![省略記号 - その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をもう一度クリックし、「**[詳細を表示](#view-details)**」をクリックします。
 
-パイプラインのタイプに応じて、![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をもう一度クリックし、**キャンセル**&#x200B;をクリックして、実行をキャンセルします。
+パイプラインのタイプに応じて、![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をもう一度クリックし、**キャンセル**&#x200B;をクリックして、実行をキャンセルします。
 
 ## 複数のパイプラインの実行 {#run-multiple-pipelines}
 
@@ -118,7 +118,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 1. 左側のサイドメニューから、![ワークフローアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **パイプライン**&#x200B;をクリックします。
 1. **パイプライン** ページのテーブルで、実行するパイプラインの横にあるチェックボックスを選択します。
-必要に応じて、![ フィルターアイコン、funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター**&#x200B;をクリックして、名前、環境、デプロイされたコードタイプまたは3つすべてを組み合わせてパイプラインを並べ替えます。
+必要に応じて、![&#x200B; フィルターアイコン、funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**フィルター**&#x200B;をクリックして、名前、環境、デプロイされたコードタイプまたは3つすべてを組み合わせてパイプラインを並べ替えます。
 1. ページの右上隅付近にある「**選択されている実行（x）**」をクリックします。
 1. **選択されているパイプラインを実行（x）**&#x200B;ダイアログボックスで、「**実行（x）**」をクリックします。
 
@@ -158,7 +158,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
+1. 実行するパイプラインの横にある![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューで、「**削除**」をクリックします。
 
@@ -171,7 +171,7 @@ Cloud Manager を使用すると、複数のパイプラインを同時に実行
 
 1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
 
-1. ドロップダウンメニューから、実行するパイプラインの横にある![省略記号 – 詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
+1. ドロップダウンメニューから、実行するパイプラインの横にある![省略記号 – 詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)をクリックします。
 
 1. ドロップダウンメニューで、「**前回の実行を表示**」をクリックします。
 

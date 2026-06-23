@@ -52,7 +52,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## パイプラインの作成 {#pipeline-creation}
 
-実稼動専用およびステージ専用のパイプラインは、[実稼動用パイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)と[実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)が結合された標準のパイプラインと同様に作成されます。 詳しくは、これらの資料を参照してください。
+実稼動専用およびステージ専用のパイプラインは、[実稼動用パイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)と[実稼動以外のパイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)が結合された標準のパイプラインと同様に作成されます。 詳しくは、これらの資料を参照してください。
 
 1. **パイプライン**&#x200B;ウィンドウで、「**パイプラインを追加**」をクリックします。
 

@@ -92,7 +92,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 
 フルスタックパイプラインでは、フロントエンドコード（JavaScript／CSS）を [AEM クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)としてパッケージ化します。
 
-フルスタックパイプラインは、[web階層設定パイプライン ](#web-tier-config-pipelines)が設定されていない場合に、web階層設定をデプロイします。
+フルスタックパイプラインは、[web階層設定パイプライン &#x200B;](#web-tier-config-pipelines)が設定されていない場合に、web階層設定をデプロイします。
 
 次の制限が適用されます。
 
@@ -154,7 +154,7 @@ Cloud Manager で使用できるパイプラインとその用途を次の表に
 
 フロントエンドパイプラインを使用すると、フロントエンド開発者の作業の独立性が高まるほか、開発プロセスを速めることができます。
 
-このプロセスの可能性を最大限に引き出すために、このプロセスがどのように機能するのか、いくつかの考慮事項と共に[ フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を参照してください。
+このプロセスの可能性を最大限に引き出すために、このプロセスがどのように機能するのか、いくつかの考慮事項と共に[&#x200B; フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)を参照してください。
 
 ## Web 階層設定パイプライン {#web-tier-config-pipelines}
 
@@ -171,7 +171,7 @@ Web 階層設定パイプラインを使用すると、HTTPD／Dispatcher 設定
 * パイプラインを設定または実行するには、ユーザーが&#x200B;**デプロイメントマネージャー**&#x200B;の役割でログインする必要があります。
 * Web 階層設定パイプラインは、常に 1 つの環境に 1 つしか存在できません。
 * 対応するフルスタックパイプラインの実行中は、web 階層設定パイプラインを設定できません。
-* Web階層構造は、Cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)の[Dispatcherで定義されているフレキシブルモード構造に準拠している必要があります。
+* Web階層構造は、Cloud[&#128279;](/help/implementing/dispatcher/disp-overview.md#validation-debug)のDispatcherで定義されているフレキシブルモード構造に準拠している必要があります。
 
 さらに、web 階層設定パイプラインを導入した場合に[フルスタックパイプライン](#full-stack-pipeline)がどのように動作するかを認識しておいてください。
 

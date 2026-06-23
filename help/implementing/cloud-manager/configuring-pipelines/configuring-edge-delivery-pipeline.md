@@ -95,14 +95,14 @@ Edge Delivery パイプラインを設定し、コードをビルドして本番
 
      また、Cloud Manager でリポジトリを追加および管理する方法について詳しくは、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/managing-repositories.md)も参照してください。
 
-   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![Recycle アイコンまたはRefresh アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のコミット後にGit ブランチ ドロップダウンリストを更新します。
+   * **Git 分岐** - ドロップダウンリストを使用して、選択したリポジトリ内の特定の分岐を選択します。 必要に応じて、![Recycle アイコンまたはRefresh アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)をクリックして、最近のコミット後にGit ブランチ ドロップダウンリストを更新します。
    * **コードの場所** - パイプライン準備コードが開始するリポジトリ内のフォルダーパスを定義します（`/`はリポジトリルートに等しいです）。
 
    ![設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
 
 1. 「**保存**」をクリックします。
 
-[ パイプラインを管理](managing-pipelines.md)できるようになりました。**プログラムの概要** ページの&#x200B;**パイプライン** カードから、または&#x200B;**パイプライン** ページから管理できます。
+[&#x200B; パイプラインを管理](managing-pipelines.md)できるようになりました。**プログラムの概要** ページの&#x200B;**パイプライン** カードから、または&#x200B;**パイプライン** ページから管理できます。
 
 
 ![パイプライン名、ステータス、リポジトリー、ブランチを表示する「Edge Delivery パイプライン」ウィジェット](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
