@@ -28,7 +28,7 @@ IP 許可リストを追加するには、**Business Owner**&#x200B;または&#x
 
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)** コンソールで、プログラムを選択します。
 
-1. **プログラムの概要** ページで、左側のメニューを使用して（必要に応じて、左上隅の![ メニューアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)をクリックしてメニューを表示）、![ タスクリストアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 許可リスト**&#x200B;をクリックします。
+1. **プログラムの概要** ページで、左側のメニューを使用して（必要に応じて、左上隅の![&#x200B; メニューアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)をクリックしてメニューを表示）、![&#x200B; タスクリストアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP 許可リスト**&#x200B;をクリックします。
 
    ![左側のサイドメニューの「IP 許可リスト」オプション](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
