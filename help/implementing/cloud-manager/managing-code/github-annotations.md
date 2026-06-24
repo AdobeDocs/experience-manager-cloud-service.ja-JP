@@ -36,7 +36,7 @@ Cloud Manager プログラムに[プライベートリポジトリ](private-repo
 
 ## コード品質パイプライン {#code-quality-pipelines}
 
-[ コード品質](/help/implementing/cloud-manager/code-quality-testing.md)の結果は、Cloud Managerが自動的に&#x200B;**チェック** タブの下部にトリガーするパイプラインにも表示されます。 プルリクエストチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
+[&#x200B; コード品質](/help/implementing/cloud-manager/code-quality-testing.md)の結果は、Cloud Managerが自動的に&#x200B;**チェック** タブの下部にトリガーするパイプラインにも表示されます。 プルリクエストチェックの&#x200B;**Details**&#x200B;からもアクセスできます。
 
 ![注釈の例](assets/github-check-annotations-code-quality.png)
 
