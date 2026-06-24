@@ -23,7 +23,7 @@ Cloud Manager には、プログラムに対するすべての証明書のステ
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織を選択します。
 1. **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、プログラムを選択します。
-1. ページの左上隅にある「![ メニューアイコンを表示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」をクリックして、サイドメニューを開きます。
+1. ページの左上隅にある「![&#x200B; メニューアイコンを表示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」をクリックして、サイドメニューを開きます。
 1. **サービス**&#x200B;見出しの下にある ![鍵がかかったアイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) 「**SSL 証明書**」をクリックします。
 
 **SSL 証明書**&#x200B;ページには、SSL 証明書のステータスが表示されます。
@@ -107,7 +107,7 @@ SSL証明書の名前を変更する理由は次のとおりです。
 
 >[!NOTE]
 >
->アドビが管理する SSL 証明書のうち、1 つ以上のアクティブなドメインが関連付けられているものは削除できません。 SSL 証明書を削除する前に、関連付けられているアクティブなドメインをすべて削除する必要があります。 詳しくは、[ カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)を参照してください。
+>アドビが管理する SSL 証明書のうち、1 つ以上のアクティブなドメインが関連付けられているものは削除できません。 SSL 証明書を削除する前に、関連付けられているアクティブなドメインをすべて削除する必要があります。 詳しくは、[&#x200B; カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)を参照してください。
 
 このタスクを完了するには、ユーザーが&#x200B;**ビジネスオーナー**&#x200B;または&#x200B;**デプロイメントマネージャー**&#x200B;の役割を持つメンバーである必要があります。
 
