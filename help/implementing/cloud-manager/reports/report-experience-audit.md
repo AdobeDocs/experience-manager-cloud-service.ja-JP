@@ -5,8 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 source-git-commit: f0562cd812c89aad5af468f4839f068ed26eada1
 workflow-type: tm+mt
 source-wordcount: 1551
@@ -44,7 +46,7 @@ Googleのオープンソースツールである[Google Lighthouse](https://deve
 
 オプション環境の監査を設定する方法について詳しくは、[設定の節](#configuration)を参照してください。
 
-監査はパイプラインの一部として実行されます。 監査は、パイプライン外で[ オンデマンド ](#on-demand)実行することもできます。
+監査はパイプラインの一部として実行されます。 監査は、パイプライン外で[&#x200B; オンデマンド &#x200B;](#on-demand)実行することもできます。
 
 ## 設定 {#configuration}
 
@@ -53,7 +55,7 @@ Googleのオープンソースツールである[Google Lighthouse](https://deve
 1. 設定するパイプラインのタイプに応じて、次のいずれかの操作を行います。
 
    * 監査で評価するパスを定義するには、[実稼動パイプラインを追加します](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
-   * フロントエンドまたはフルスタックパイプラインで監査を有効にする場合は、[実稼動以外のパイプライン ](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
+   * フロントエンドまたはフルスタックパイプラインで監査を有効にする場合は、[実稼動以外のパイプライン &#x200B;](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)を追加します。
    * [既存のパイプラインを編集](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)し、既存のオプションを更新します。
 
 1. 実稼動以外のパイプラインを追加または編集する際にエクスペリエンス監査を使用するには、「**エクスペリエンス監査**」チェックボックスをオンにします。 このオプションは「**ソースコード**」タブにあります。
@@ -161,7 +163,7 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 
 ![スキャンされたページ](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-特定のページのリンクをクリックすると、[**ページスコア – トレンド** セクション ](#trend)のフィルター&#x200B;**選択**&#x200B;が更新され、ページの監査ごとにスコアが表示される&#x200B;**未加工レポート** タブが表示されます。 **Lighthouse レポート**&#x200B;列のレポート日付をクリックして、生データの JSON ファイルを取得します。
+特定のページのリンクをクリックすると、[**ページスコア – トレンド** セクション &#x200B;](#trend)のフィルター&#x200B;**選択**&#x200B;が更新され、ページの監査ごとにスコアが表示される&#x200B;**未加工レポート** タブが表示されます。 **Lighthouse レポート**&#x200B;列のレポート日付をクリックして、生データの JSON ファイルを取得します。
 
 ![生レポート](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
@@ -214,12 +216,12 @@ Cloud Manager の「**レポート**」タブが開き、**エクスペリエン
 
 >[!TIP]
 >
->ページの[未加工レポート ](#scan-results)にアクセスすると、ページが監査されなかった理由の詳細が表示されます。
+>ページの[未加工レポート &#x200B;](#scan-results)にアクセスすると、ページが監査されなかった理由の詳細が表示されます。
 
 ## エクスペリエンス監査評価の詳細 {#details}
 
 次に、エクスペリエンス監査でのサイトの評価方法に関する追加情報を示します。 これらは、機能の一般的な使用には必要ではなく、完全を期すためにここに提供されます。
 
-* 監査は、パブリッシャーの[設定されたエクスペリエンス監査ページのパス ](#configuration)からオリジン （`.com`） ドメインをスキャンして、実際のユーザーエクスペリエンスをシミュレートし、web サイトの管理と最適化について情報に基づいた意思決定を行うのに役立ちます。
+* 監査は、パブリッシャーの[設定されたエクスペリエンス監査ページのパス &#x200B;](#configuration)からオリジン （`.com`） ドメインをスキャンして、実際のユーザーエクスペリエンスをシミュレートし、web サイトの管理と最適化について情報に基づいた意思決定を行うのに役立ちます。
 * 実稼動のフルスタックパイプラインでは、ステージング環境がスキャンされます。 監査が監査中に関連する詳細を提供することを確認するために、ステージング環境のコンテンツは実稼動環境にできるだけ近いものになります。
-* [**ページスコア – トレンド** セクション ](#trend)のドロップダウン **選択**&#x200B;に表示されるページは、Experience Auditが過去にスキャンしたすべての既知のページです。
+* [**ページスコア – トレンド** セクション &#x200B;](#trend)のドロップダウン **選択**&#x200B;に表示されるページは、Experience Auditが過去にスキャンしたすべての既知のページです。
