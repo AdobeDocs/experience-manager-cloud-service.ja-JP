@@ -30,7 +30,7 @@ Cloud ManagerのGit リポジトリを使用できますが、お客様が管理
 
 このビデオシリーズでは、Gitとソース制御管理に関する基本的な知識が必要です。 Git について詳しくは、[以下のその他のリソース](#additional-resources)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/31425?captions=jpn)
 
 このビデオシリーズで説明されている手順と命名規則は、Cloud Managerでユーザーが管理するGit リポジトリを操作するためのベストプラクティスを示しています。 ここで説明されている規則とワークフローは、個々のユースケースに調整してください。
 
@@ -38,31 +38,31 @@ Cloud ManagerのGit リポジトリを使用できますが、お客様が管理
 
 このビデオでは、顧客が管理する Git リポジトリを Cloud Manager の Git リポジトリと同期するための最初の手順を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31424/?captions=jpn&quality=12)
 
 ## 基本分岐戦略 {#branching-strategy}
 
 このビデオでは、基本的な分岐戦略について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31423/?captions=jpn&quality=12)
 
 ## 機能分岐の開発 {#feature-development}
 
 機能分岐を使用して、顧客が管理する Git リポジトリ内のコード変更を分離し、Cloud Manager の Git リポジトリと同期して、コードの品質と検証テストに実稼動以外のパイプラインを使用します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31422/?captions=jpn&quality=12)
 
 ## 実稼動デプロイメント {#production-deployment}
 
 お客様が管理するGit リポジトリで実稼動リリース用のコードを準備し、Cloud ManagerのGit リポジトリと同期して、ステージング環境と実稼動環境にデプロイします。
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31421/?captions=jpn&quality=12)
 
 ## リリースタグの同期 {#sync-tags}
 
 ステージング環境と実稼動環境にデプロイされたコードを可視化するには、Cloud Manager Git リポジトリからリリースタグをお客様が管理するGit リポジトリに同期します。
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31420/?captions=jpn&quality=12)
 
 ## その他のリソース {#additional-resources}
 
