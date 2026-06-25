@@ -147,7 +147,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
    ![AI アシスタントパネルの下部にあるテキストボックス](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
-1. 新しい会話（新しいトピックまたはトピックの変更）を開始するには、![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話を開始**&#x200B;をクリックします。
+1. 新しい会話（新しいトピックまたはトピックの変更）を開始するには、![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話を開始**&#x200B;をクリックします。
 
    ![省略記号アイコンから AI アシスタントで新しい会話を開始](/help/implementing/cloud-manager/assets/ai-assistant-start-new-conversation.png)
 
@@ -159,7 +159,7 @@ AEM の AI アシスタントには、対応しているトピックやカテゴ
 
 1. AI アシスタントパネルで、「![学習アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)」をクリックして、プロンプト検出パネルをオンにします。
 
-   ![AI アシスタントのカテゴリ別にプロンプトを検索できるパネル ](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
+   ![AI アシスタントのカテゴリ別にプロンプトを検索できるパネル &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
    *AI アシスタントのプロンプトカテゴリを表示するパネル。*
 
 1. カテゴリを選択すると、関連するプロンプトのリストが表示されます。
