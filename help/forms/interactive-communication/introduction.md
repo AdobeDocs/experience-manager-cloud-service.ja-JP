@@ -53,7 +53,7 @@ ht-degree: 3%
 
 インタラクティブ通信を開始するには、[&#x200B; サービスへのオンボーディング &#x200B;](/help/forms/setup-forms-cloud-service.md)のドキュメントに従って、AEM Forms環境でインタラクティブ通信を有効にします。
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 次の手順
 
