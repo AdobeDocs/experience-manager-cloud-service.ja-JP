@@ -54,7 +54,7 @@ Cloud Manager は、企業のニーズに合わせて調整できる、柔軟な
 
 ![ワークフロー図](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-各チームのGit リポジトリは、[AEM プロジェクトアーキタイプ ](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)を使用して設定されるので、AEM プロジェクトの設定に関するベストプラクティスに従います。 唯一の例外は、上述のように共有 Git リポジトリで実行される Dispatcher 設定です。
+各チームのGit リポジトリは、[AEM プロジェクトアーキタイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/developing/archetype/overview)を使用して設定されるので、AEM プロジェクトの設定に関するベストプラクティスに従います。 唯一の例外は、上述のように共有 Git リポジトリで実行される Dispatcher 設定です。
 
 各チームは、Git フローモデルに従って、2 + N の分岐があるシンプルな Git ワークフローを使用します。
 

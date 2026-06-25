@@ -21,7 +21,7 @@ Cloud Manager でアドビが管理するリポジトリを追加する方法に
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、アドビが管理するリポジトリを追加する適切な組織とプログラムを選択します。
 
-1. **プログラムの概要** ページのサイドメニューで、![ フォルダーアイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **リポジトリ** タブをクリックします。
+1. **プログラムの概要** ページのサイドメニューで、![&#x200B; フォルダーアイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **リポジトリ** タブをクリックします。
 
 1. **リポジトリ**&#x200B;ページの右上付近にある「**リポジトリを追加**」をクリックします。
 
@@ -37,7 +37,7 @@ Cloud Manager でアドビが管理するリポジトリを追加する方法に
 
    ![リポジトリを追加ダイアログボックス](assets/add-adobe-repository.png)
 
-1. **保存**をクリックします。
+1. **保存**&#x200B;をクリックします。
 新しいリポジトリは、**リポジトリ** ページのテーブルに表示されます。
 
 これで、[CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を関連付けることや、[**リポジトリ**&#x200B;ページ](managing-repositories.md)内で管理することができます。
