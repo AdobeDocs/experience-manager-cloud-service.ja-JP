@@ -33,7 +33,7 @@ ht-degree: 25%
 [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]にアクセスするには、次の手順を実行します。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの「**[!UICONTROL アクション]**」をクリックし、ダイアログボックスの検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
-1. [!DNL Adobe Experience Manager (AEM) Assets Connector]を選択して[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。[このパネルを使用して [!DNL AEM]  アセットを [!DNL Figma]  キャンバス ](#import-aem-assets-into-figma-workflow)に読み込みます。
+1. [!DNL Adobe Experience Manager (AEM) Assets Connector]を選択して[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。[このパネルを使用して [!DNL AEM]  アセットを [!DNL Figma]  キャンバス &#x200B;](#import-aem-assets-into-figma-workflow)に読み込みます。
    ![アクション](/help/assets/assets/actions-on-figma.png)
 または、[!DNL Figma] コミュニティで利用可能な [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) にアクセスし、「**[!UICONTROL 開く...]**」をクリックし、最近使用したファイルを選択するか、新しいファイルを作成して「**[!UICONTROL 実行]** 」をクリックし、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルにアクセスします。
    ![Figma コミュニティのプラグインページ](/help/assets/assets/plugin-page-on-figma-community.png)
@@ -46,11 +46,11 @@ ht-degree: 25%
 
 [!DNL Figma] デザインインターフェイス内で [[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルにアクセス](#access-aem-assets-connector)し、次の操作を行います。
 
-1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルでアセットを検索します。 詳しくは、[ コンテンツアドバイザーの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)を参照してください。
+1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルでアセットを検索します。 詳しくは、[&#x200B; コンテンツアドバイザーの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)を参照してください。
 
 1. アセットをキャンバスにドラッグ＆ドロップするか、アセットを選択して「**[!UICONTROL 選択]**」をクリックし、アセットをキャンバス上に配置します。
 
-1. フォルダーパスの![3つのドット ](/help/assets/assets/three-dots.svg)をクリックすると、現在の階層のすべての親フォルダーと子フォルダーが表示されます。フォルダーを選択して、その場所に移動します。
+1. フォルダーパスの![3つのドット &#x200B;](/help/assets/assets/three-dots.svg)をクリックすると、現在の階層のすべての親フォルダーと子フォルダーが表示されます。フォルダーを選択して、その場所に移動します。
    ![3 つのドット](/help/assets/assets/figma-v2-plugin.png)
 
 1. [ オプション ] 「**[!UICONTROL アップデートを確認]**」をクリックします。 現在のFigma ドキュメントで使用されているアセットは、AEMに存在するアセットと比較されます。 更新はすべて別のウィンドウに表示されます。 「**[!UICONTROL 更新]**」をクリックして、更新されたアセットをAEMからFigma ドキュメントに取り込みます。
