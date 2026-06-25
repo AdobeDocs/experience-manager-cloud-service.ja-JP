@@ -4,7 +4,7 @@ description: AEM Edge Functionsを使用して、CDN レイヤーでJavaScript�
 feature: Developing, Edge Delivery Services
 role: Developer
 exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
-source-git-commit: e0a62aa70aa24c4aa85c65a3dc1dfa0432f189eb
+source-git-commit: a42d2318380061c0ce9f894145e1812d0ec1fe1f
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 2%

@@ -4,7 +4,8 @@ description: AEMのDevelopment Agentが、Cloud Managerで失敗したパイプ�
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 8495dd5cc4629dd960f6c5c31d9d50c126d6d750
+nudge: please
+source-git-commit: 4b652e866e4b009e186f1379f2ae451061182df8
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 8%
