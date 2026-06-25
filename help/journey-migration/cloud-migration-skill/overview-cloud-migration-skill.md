@@ -3,7 +3,7 @@ title: AEM AS A CLOUD SERVICEへのAIを活用したコードの移行
 description: AEM Cloud Migration SkillとMCPの概要。BPAの調査結果を読み取り、AEM 6.x コードをAEM as a Cloud Serviceに移行するAI エージェントソリューションで、パターン別に表示されます。
 feature: Migration
 role: Developer
-source-git-commit: 98298a088aa7c65826f6dbad2f4d16095e074524
+source-git-commit: 087017a7c0528f0806dfa8e8bd18a057a1763b14
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 | `htlLint` | HTL テンプレートの`data-sly-test`個の冗長な定数比較警告 |
 | OSGi設定 | `.cfg.json`変換、実行モード スコープ、Cloud Manager シークレット/env-var抽出 |
 
-このスキルは、すべてのコード変換ステップをコンパニオン `best-practices` スキルに委任します。 両方は`aem-cloud-service` スキルパッケージとして一緒に配布されます。両方を取得するには、パッケージを1回インストールしてください。
+このスキルは、すべてのコード変換ステップをコンパニオン `code-assessment` スキルに委任します。 両方は`aem-cloud-service` スキルパッケージとして一緒に配布されます。両方を取得するには、パッケージを1回インストールしてください。
 
 ### はじめに {#getting-started-skill}
 

@@ -3,9 +3,9 @@ title: AEM Cloud Migration Skillの使用
 description: OSGi設定の変換、BPA ソースオプション、セッション管理ガイダンスなど、AEM Cloud Migration Skillでサポートされている各移行パターンのリファレンスです。
 feature: Migration
 role: Developer
-source-git-commit: 5cda629090d9a9d020deca5192b8a89659ec4749
+source-git-commit: 7ea634871fc1655e5f0ec5b3fb88edbb0f317249
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. **パターンに名前を付ける**:1つのパターンを指定します（例：`scheduler`）
 2. **調査結果を提供**: BPA CSV ファイル、MCP経由のCAM、または特定のファイル パスから
-3. **エージェントが変換ルールを読み取ります**：スキルは、コードを変更する前に、関連するベストプラクティスモジュールを読み取ります
+3. **エージェントが変換ルールを読み取ります**: スキルは、コードを変更する前に、関連する変換ルールをコンパニオン `code-assessment` スキルから読み取ります
 4. **5人の最初のバッチ**: エージェントは、最大5人の調査結果を変換し、変更された内容を報告します
 5. **確認して続行**：各バッチを確認したら、`continue`に返信して次のバッチに進みます
 
