@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
+source-git-commit: 248e3db5298e96f01a683d8a69ea91ada701eef7
 workflow-type: tm+mt
-source-wordcount: '7545'
+source-wordcount: '7552'
 ht-degree: 84%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 84%
    + AEMaaCS 機能のリリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [リリースノート（2026.5.0）](/help/release-notes/release-notes-cloud/2026/2026-5-0.md)
          + [リリースノート（2026.4.0）](/help/release-notes/release-notes-cloud/2026/2026-4-0.md)
          + [リリースノート（2026.3.0）](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
          + [リリースノート（2026.2.0）](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
@@ -266,6 +267,7 @@ ht-degree: 84%
       + [ユニバーサルエディターの最新リリースノート](/help/release-notes/universal-editor/current.md)
       + [ユニバーサルエディターのリリースノートのプレビュー](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [2026.06.18 リリースノート](/help/release-notes/universal-editor/2026/2026-06-18.md)
          + [2026.06.11 リリースノート](/help/release-notes/universal-editor/2026/2026-06-11.md)
          + [2026.06.05 リリースノート](/help/release-notes/universal-editor/2026/2026-06-05.md)
          + [2026.05.28 リリースノート](/help/release-notes/universal-editor/2026/2026-05-28.md)

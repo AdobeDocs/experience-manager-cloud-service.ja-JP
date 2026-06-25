@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 803ea9a7f1581589c6ac7402b268875923f00584
+source-git-commit: b2c13eead3670f0d708fa2c9adf9ac120d0470b9
 workflow-type: tm+mt
-source-wordcount: '3149'
-ht-degree: 65%
+source-wordcount: '3165'
+ht-degree: 63%
 
 ---
 
@@ -396,15 +396,15 @@ ht-degree: 65%
 >* 「**AEM ページプロパティ**」ボタンは、コンテンツフラグメントではなく、ページでのみ機能します。
 >* ボタンは、リモートページがプロトコル [&#128279;](/help/implementing/universal-editor/component-definition.md#plugins) `aem`または`xwalk`との接続を持ち、一意のページパスを現在の編集可能な状態から解決できる場合にのみ表示されます。
 
-### Sites コンソールへのアクセス {#sites-console}
+### サイト管理者で開く {#sites-console}
 
-**AEM サイト管理拡張機能**&#x200B;を使用すると、[AEM の Sites コンソール](/help/sites-cloud/authoring/sites-console/introduction.md)内で編集中のページにすばやくアクセスでき、サイトツリーを移動することや、コンソールでページレベルのアクションを実行することができます。
+「**サイト管理で開く**」ボタンを使用すると、AEM[&#128279;](/help/sites-cloud/authoring/sites-console/introduction.md)の サイトコンソール（`/content/experience-fragments` パスの[&#x200B; エクスペリエンスフラグメントコンソール &#x200B;](/help/sites-cloud/authoring/fragments/experience-fragments.md)）にすばやくアクセスし、現在編集中のページがコンテンツ構造のどこにあるかを確認できます。 これにより、サイトツリーを移動したり、コンソールでページレベルのアクションを実行したりできます。
 
 ![サイト管理者で開くアイコン](assets/open-in-site-admin-icon.png)
 
 アイコンをタップまたはクリックすると、新しいブラウザータブで Sites コンソールが開き、現在エディターにあるページに移動します。
 
-この拡張機能を有効にする方法について詳しくは、[Extension Manager ドキュメント](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)を参照してください。
+DAM パス （`/content/dam`）の場合、このボタンは非表示になり、現在の編集可能ファイルから一意のAEM ページを決定できない場合は非表示になります。
 
 ### ページのロックとロック解除 {#locking-pages}
 
