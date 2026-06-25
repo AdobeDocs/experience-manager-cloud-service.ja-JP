@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: 784061cac8964a4f86690c84d106396994f987b7
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 84%
@@ -1117,9 +1117,9 @@ ht-degree: 84%
    + [AEM Forms API を使用した AFP 出力の生成](/help/forms/document-generation-afp-api.md)
    + {hide-from-toc}[OAuth サーバー間の認証](/help/forms/oauth-api-authetication.md)
    + {hide-from-toc}[JWT （JSON Web トークン） サーバー間の認証](/help/forms/jwt-api-authentication.md)
-   + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
-   + [Forms Designer を使用したテンプレートの作成](/help/forms/use-forms-designer.md)
-   + [Designer での Page Zero コンテンツの変更](/help/forms/changing-page-zero-content-designer.md)
+   + {hide-from-toc}[Forms Designerのインストールと設定](/help/forms/installing-configuring-designer.md)
+   + {hide-from-toc}[Forms Designerを使用してテンプレートを作成](/help/forms/use-forms-designer.md)
+   + {hide-from-toc}[DesignerのPage Zero コンテンツの変更](/help/forms/changing-page-zero-content-designer.md)
    + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
    + [PDF ドキュメントでサポートされるフォントのリスト](/help/forms/supported-out-of-the-box-fonts.md)
    + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
