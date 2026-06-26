@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e4bb698c4673df61f47bfc12827facf8fc3caccd
+source-git-commit: 0383afd23b330ccb958914444c9100cd97f03c7c
 workflow-type: tm+mt
-source-wordcount: '3341'
-ht-degree: 91%
+source-wordcount: '3379'
+ht-degree: 90%
 
 ---
 
@@ -194,6 +194,8 @@ Cloud Service と署名する順序を選択するには：
 ### Adobe Sign契約書のドキュメント有効期限の設定 {#set-document-expiration-for-an-adobe-sign-agreement}
 
 Adobe Sign契約書に有効期限を設定して、受信者が指定した日数で署名を完了するように設定できます。 フォームが送信されると、AEM Formsは設定された値を`daysUntilSigningDeadline`としてAdobe Signに渡します。
+
+<span class="preview"> Adobe Sign契約書のドキュメント有効期限の設定は、アーリーアダプタープログラムの下にあります。 公式メール IDからaem-forms-ea@adobe.comにメールを送信して、アーリーアダプタープログラムに参加し、この機能へのアクセスをリクエストできます。</span>
 
 ドキュメントの有効期限を設定するには：
 
