@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 65cac96f2d99100ffd50679c0c2b19da232efa70
 workflow-type: tm+mt
-source-wordcount: '2938'
-ht-degree: 93%
+source-wordcount: '2910'
+ht-degree: 94%
 
 ---
 
@@ -555,14 +555,6 @@ For example:
 * **テンプレート**
 
    * このオプションを使用すると、**[ビジュアライゼーション（HTML）テンプレート](#preview-with-visualization-html-templates)**&#x200B;を使用してコンテンツフラグメントをプレビューできます。
-
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >ビジュアルコンテンツフラグメントは現在、限定的でご利用いただけます。
-     >
-     >参加を希望される場合は、公式メールアドレスから[experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com)にリクエストを送信してください。
 
 ## フラグメントの公開 {#publish-content-fragment}
 

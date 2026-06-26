@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
-source-git-commit: 9ad53c41534c552f485a2d57d3c81c270180dfaf
+source-git-commit: 19931f7cc911376f5096903a2d99d6ff11f928ac
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 37%
+source-wordcount: '533'
+ht-degree: 39%
 
 ---
 
@@ -95,14 +95,6 @@ URLが定義されると、**[プレビュー](/help/sites-cloud/administering/c
 1. **アプリケーション**&#x200B;を選択して、外部アプリケーションでフラグメントを開きます（例：[&#x200B; ユニバーサルエディター](/help/implementing/universal-editor/introduction.md)）。
 
 ## ビジュアライゼーション（HTML）テンプレートを使用したプレビュー {#preview-with-visualization-html-templates}
-
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->ビジュアルコンテンツフラグメントは現在、限定的でご利用いただけます。
->
->参加を希望される場合は、公式メールアドレスから[experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com)にリクエストを送信してください。
 
 AEMでは、HTML テンプレートに基づいたビジュアルレイアウトを使用して、コンテンツフラグメントをプレビューできます。
 
