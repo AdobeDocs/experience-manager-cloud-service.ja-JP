@@ -6,10 +6,10 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 50a64c8968182ac1fb5a57082da991c9efd4dc46
 workflow-type: tm+mt
-source-wordcount: '3035'
-ht-degree: 21%
+source-wordcount: '3855'
+ht-degree: 17%
 
 ---
 
@@ -158,20 +158,67 @@ OpenAPI機能を備えたDynamic Mediaでは、ビデオアセット用のカス
 
 ### AEM Formsの新機能
 
-* Forms Managerでの&#x200B;**バージョン管理のサポート**
-Forms Managerでは、アダプティブ Forms（コアコンポーネントおよび基盤コンポーネント） [&#128279;](/help/forms/manage-form-versions-forms-manager.md)、フォームフラグメント、テーマ、XDP テンプレート、バイナリアセットのバージョン管理が サポートされるようになりました。 Formsとドキュメント コンソールから直接、バージョンを作成し、バージョン履歴を表示したり、フォームアセットの以前の状態を復元したりできます。
+#### インタラクティブなコミュニケーションのエディター
 
-* **OSGi**&#x200B;でreCAPTCHA クラウド設定を上書き 
-ソースファイルに保持するreCAPTCHA Enterprise プロジェクト ID、サイトキー、およびシークレットは、[Cloud Managerを通じてコンテクストに応じた設定の上書きとデプロイを追加した後、各Cloud Service環境で異なる値に解決できます](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi)。
+インタラクティブ通信エディターとアソシエイト UIには、新しいコラボレーション、レイアウト、アソシエイト編集機能が含まれており、作成者がより迅速にデザインし、担当者がより正確に顧客とのコミュニケーションを完了できるようになります。
 
-* **証明書ベースの認証** 
-Microsoft SharePoint リストに送信するアダプティブ Formsで、OAuth URL認証と共に[証明書ベースの認証](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication)がサポートされるようになりました。 証明書ベースのサインインの場合は、AEMおよびMicrosoft Azureで証明書エイリアスとテナントの詳細を登録します。
+インタラクティブ通信（IC）エディターがAEM Forms as a Cloud Serviceで使用できるようになりました。 これは、ビジネス通信、ドキュメント、明細書、特典、マーケティングメール、請求書、ウェルカムキットなど、データ主導のインタラクティブな通信を作成、管理、配信するためのブラウザベースのソリューションです。
 
-* **ルールエディターの機能強化**
+![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
 
-   * アダプティブ Forms ルールエディターは、すぐに使える（OOTB）トリガーおよびカスタムイベント [&#128279;](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)の ディスパッチイベントおよびトリガーイベント時のルールに関する簡略化された文法をサポートするようになりました。そのため、作成者はカスタムトリガーの文法のみに限定されません。
-   * コアコンポーネントに基づくアダプティブ Formsのルールに、ANDまたはOR ロジック [&#128279;](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)を使用する他の条件と一緒に添付ファイル コンポーネントが含まれるようになったため、添付ファイルの状態と他のチェックがすべて意図したとおりに評価された場合にのみ、ルールがアクションを実行します。
+* **クラウドベースのエディター**: Windows コンピューターにのみインストールできるAEM Forms デスクトップ Designerとは異なり、Interactive Communications エディターは、インストールが不要な最新のブラウザーで実行されます。 このクラウドベースのアプローチにより、インストールの手間がなくなり、プラットフォーム間のアクセシビリティが向上し、インターネットにアクセスできるあらゆる場所からのコラボレーションが可能になります。 詳しくは、[IC エディターの概要](/help/forms/interactive-communication/getting-started.md)を参照してください。
 
+* **コンポーネントとプロパティ**: ドラッグ&amp;ドロップ操作のコンポーネントライブラリ（テキストフィールド、テーブル、画像、バーコード、サブフォームなど）を使用してコミュニケーションを構築します。 プロパティパネルを使用して、レイアウト、タイポグラフィ、マージン、およびアピアランスを設定します。 詳しくは、[&#x200B; インタラクティブ通信エディターの概要](/help/forms/interactive-communication/introduction.md)を参照してください。
+
+* **データバインディング**：ビジュアルマッピングを使用して、コンポーネントをフォームデータモデル（FDM）に接続し、パーソナライズされたデータ主導の出力を促進します。 詳しくは、「[&#x200B; インタラクティブ通信エディターでのデータバインディング &#x200B;](/help/forms/interactive-communication/configure-data-binding.md)」を参照してください。
+
+* **ルールエディター**：直感的なポイント&amp;クリック操作のインターフェイスを使用して、データ主導の動的なアクションをドキュメント内で直接構築できます。 コードを記述することなく、条件付きロジックの定義、ワークフローの自動化、コンテンツのパーソナライズを簡単に行えます。 詳しくは、[&#x200B; インタラクティブ通信エディターでのルールの作成](/help/forms/interactive-communication/use-the-rule-editor.md)を参照してください。
+
+* **テンプレートとドキュメントフラグメント**：複数のコミュニケーションで一貫性と効率性を維持するために、再利用可能なテンプレートとモジュラー形式のコンテンツブロック（ヘッダー、フッター、免責事項）を作成します。 詳細については、[&#x200B; テンプレートの作成](/help/forms/interactive-communication/create-interactive-communication-template.md)および[&#x200B; フラグメントの作成](/help/forms/interactive-communication/create-interactive-communication-fragment.md)を参照してください。
+
+* **テンプレートのロック**: テンプレート内のコンテンツとレイアウト要素をロックして、ブランドの整合性を維持し、不正な変更を防止します。 詳しくは、[&#x200B; テンプレートロック &#x200B;](/help/forms/interactive-communication/enable-template-lock.md)を参照してください。
+
+* **PDF Preview**: データ、ローカル JSON ファイル、またはデータモデルを使用しないインタラクティブ通信をプレビューして、柔軟なデータドリブン型テストを行うことができます。 詳しくは、[PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md)を参照してください。
+
+* **カスタムフォント**：カスタムフォントまたは組織承認済みフォントを埋め込んで、デバイス間で一貫性のあるブランド化されたPDF レンダリングを確保します。 詳しくは、[&#x200B; カスタムフォントの追加](/help/forms/interactive-communication/add-custom-fonts.md)を参照してください。
+
+* **読み込みと書き出し**: フラグメントとデータモデルとのインタラクティブ通信を、環境間でシームレスに移行および再利用します。 詳しくは、[読み込みと書き出し](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)を参照してください。
+
+* **コンテンツオーバーフロー**: フローレイアウトの「コンテンツ内でページ区切りを許可」オプションを使用すると、複数ページにわたるスムーズな編集と複雑なドキュメントのテキスト管理を改善できます。 詳しくは、[&#x200B; コンテンツオーバーフロー処理](/help/forms/interactive-communication/handle-content-overflow.md)を参照してください。
+
+* **XDP ファイル編集**: Microsoft Windows デスクトップでのみ動作するForms Designerではなく、ブラウザーでXDP ファイルを編集します。 詳しくは、[&#x200B; サポート XDP編集](/help/forms/interactive-communication/support-xdp-editing.md)を参照してください。
+
+* **アソシエイト UI**：顧客向けの担当者がデータを入力し、パーソナライズされたコミュニケーションをリアルタイムで生成するための、簡素化されたランタイムインターフェイスです。 パブリッシュインスタンスでアソシエイト UIを直接呼び出して、統合を簡素化し、環境間のデプロイメントを高速化します。 詳細については、[Associate UI Overview](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)、[Associate UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)および[Integrate UI](/help/forms/interactive-communication/invoke-associate-ui.md)を参照してください。
+
+* **動的ページ番号付け**: マスターページに「ページ番号###」が自動的に表示され、複数ページのドキュメントで明確で一貫性のあるページ割り当てが可能になります。 詳しくは、[動的ページ番号付け](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)を参照してください。
+
+* **インタラクティブ通信エディターでのバージョン管理とコメント**：インタラクティブ通信エディターでバージョン管理とコメントがサポートされるようになりました。これにより、作成者は、ラベル付きバージョンの保存、レビュー担当者のフィードバックの取得、以前の状態への復帰、コンテンツライフサイクル全体での監査証跡の維持を行うことができます。 詳しくは、「[&#x200B; インタラクティブ通信エディターでのバージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)」を参照してください。
+
+* **インタラクティブ通信のレビューと注釈**：レビュー担当者は、専用の読み取り専用ビューでインタラクティブ通信に注釈を付けたり、キャンバス上の特定のコンポーネントにコメントを固定したり、デザインを編集することなくフィードバックを1か所で共有したりできるようになりました。 作成者は、エディター内で注釈を直接追跡および解決できます。 詳しくは、[&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)を参照してください。
+
+* **インタラクティブ通信のバージョンを比較**: インタラクティブ通信の2つの保存済みバージョンをPDF プレビューとして並べて比較し、公開前にレイアウトと静的コンテンツの変更を確認できるようになりました。 詳しくは、[&#x200B; インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)を参照してください。
+
+* **テーブル セルの結合と分割**: インタラクティブ通信エディターで、隣接するテーブル セルの結合と、結合されたセルの個々の列への分割がサポートされるようになりました。これにより、ヘッダー、サマリー行、およびより柔軟なテーブル レイアウトが可能になります。 詳細については、[&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)を参照してください。
+
+* **コンポーネントをマスターページに移動**: 1回の操作で、コンポーネントをデザインページからマスターページに移動できるようになりました。これにより、インタラクティブ通信のすべてのページでコンポーネントを再作成することなく、コンポーネントを一貫して表示できます。 詳しくは、[マスターページへのコンポーネントの移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md)を参照してください。
+
+* **アソシエイト UIのドロップダウンオプションの設定**：アソシエイト UIのドロップダウンフィールドで、**オプションバインディング** モデルが使用されるようになりました。 作成者は、動的オプションリストまたは手動の静的オプションに対して&#x200B;**データからバインド**&#x200B;を設定し、関連付け担当者が正しい選択肢と事前選択された値を確認できるようにします。 **データバインディング**&#x200B;は、ドロップダウンフィールドではサポートされていません。 詳細については、[&#x200B; アソシエイト UIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)を参照してください。
+
+* **アソシエイト UIのバインド変数とバインドされていない変数の設定**: **テキスト** コンポーネントのバインド変数とバインドされていない変数を、アソシエイト UIに設定できるようになりました。 作成者は、担当者がドキュメントプレビューでテキストブロック全体をインラインで編集するか、データ入力パネルに個々の変数の値を入力するかを選択します。 変数名の重複プレビュー内のすべての一致するオカレンスに値を反映します。 詳細については、[&#x200B; アソシエイト UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)のバインド変数とバインドされていない変数の設定を参照してください。
+
+## アーリーアダプター機能
+
+### AEM Sitesに埋め込まれたフォームのレコードのドキュメント
+
+作成者は、AEM Sites ページに埋め込まれたアダプティブ Forms コアコンポーネント用のレコードのドキュメント（送信PDF）を設定および生成できるようになりました。 自動生成、カスタム XDP テンプレート、ブランディングなどのDoR設定は、サイトページエディターの&#x200B;**アダプティブフォームコンテナ**&#x200B;から直接使用できます。 [詳細情報](/help/forms/generate-document-of-record-core-components.md#configure-document-of-record-for-forms-embedded-in-aem-sites)。
+
+### レコードのドキュメントのロケール固有のカスタム XDP テンプレート
+
+DoR用のカスタム XDP テンプレートを関連付ける場合、`basename.<locale>.xdp`規則（`a.xdp`や`a.fr.xdp`など）を使用して、同じフォルダー内にロケール固有のバージョンを指定できます。 AEM Formsは、送信PDFの生成時にフォームロケールに一致するテンプレートを自動的に選択し、デフォルトのテンプレートにフォールバックします。 [詳細情報](/help/forms/generate-document-of-record-core-components.md#locale-specific-custom-xdp-templates-for-document-of-record)。
+
+### Adobe Sign契約書の有効期限
+
+アダプティブフォームの&#x200B;**電子署名** セクションで&#x200B;**ドキュメント有効期限（日数）**&#x200B;を指定することで、受信者が署名を完了するまでの時間を設定できます。 値は`daysUntilSigningDeadline`としてAdobe Signに送信されます。 空のままにすると、契約書の有効期限は切れません。 [詳細情報](/help/forms/working-with-adobe-sign.md#set-document-expiration-for-an-adobe-sign-agreement)。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
