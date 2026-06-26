@@ -5,7 +5,7 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 3261003447e54a2af4304d61c56068b7cab5986c
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 77%
@@ -131,3 +131,4 @@ Cloud Manager は、品質分析プロセスの一環として、Maven ビルド
 >
 >* この最適化は、AEM にデプロイされるパッケージには影響しません。
 >* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの照合はファイル名に依存します。 複数のスキップされたパッケージが同じファイル名を共有する場合や、埋め込み中にファイル名が変更された場合、この最適化は実行できません。
+

@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
 nudge: please
-source-git-commit: 4ba5d595f4043cb559343efded11907ce55971c1
+source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 85%
@@ -1276,3 +1276,4 @@ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
 ##### Cloud Manager プラグインには、他の任意のコンテキスト名も使用します {#use-any-other-context-name-also-for-the-cloud-manager-plug-in}
 
 Cloud Manager プラグインには、使用するコンテキストを定義するためのパラメーターが用意されています。 IMS のデフォルトのコンテキスト設定は、まだサポートされていません。 これを行うには、[ローカルコンテキストの設定例](/help/implementing/developing/introduction/rapid-development-environments.md#install-the-rde-command-line-tools)を参照して、RDE プラグインを設定し、Cloud Manager プラグインに対して、すべての呼び出しで `--imsContextName=myContext` のように `myContext` を使用するように指示します。
+

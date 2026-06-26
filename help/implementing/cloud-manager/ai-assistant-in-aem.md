@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 0fdc71bad1f2c4844ad47d41f47e898eac8c2373
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 78%
@@ -237,3 +237,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
 -->
+

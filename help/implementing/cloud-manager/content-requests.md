@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 45fb44079ec9b999cc2cd82b8011b14eff3bcfe1
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 51%
@@ -164,3 +164,4 @@ trafficFilters:
 サンプル値を、ブロックする国コード、ネットワークまたはボット名に置き換えます。 その他のオプションについては、[&#x200B; トラフィックフィルタールールの構文](/help/security/traffic-filter-rules-including-waf.md#rules-syntax)および[条件構造](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)を参照してください。
 
 ある日トラフィックを持つサイトを過負荷にして、次の日に消えてしまうボットもあります。 このような機能は、特定のIP アドレスまたはユーザーエージェントをブロックする試みを複雑にする可能性があります。 一般的なアプローチの1つは、[&#x200B; レート制限ルール &#x200B;](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules)を導入することです。 [例](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples)を確認し、リクエストの速度が速い場合に許容値と一致するルールを作成します。 一般的なレート制限を許可する例外については、[条件構造](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure)構文を確認してください。
+
