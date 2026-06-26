@@ -151,7 +151,7 @@ ht-degree: 93%
 
 ### SPA設定 {#spa-configuration}
 
-* **リモートアプリ URL** - [ シングルページアプリケーションを実装する際のリモートアプリのURL](/help/implementing/developing/hybrid/introduction.md)
+* **リモートアプリ URL** - [&#x200B; シングルページアプリケーションを実装する際のリモートアプリのURL](/help/implementing/developing/hybrid/introduction.md)
 
 ### テンプレート設定 {#template-settings}
 
@@ -191,7 +191,7 @@ ht-degree: 93%
 
 * **サイトマップを生成** - 選択すると、このページとその子孫に対して `sitemap.xml` が生成されます。
 
-* **構造化データ （JSON-LD）** – ここで定義されたコンテンツは、[ ページコンポーネント ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)によって、ページヘッドの`<script type="application/ld+json">` タグ内で発行されます。
+* **構造化データ （JSON-LD）** – ここで定義されたコンテンツは、[&#x200B; ページコンポーネント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page#structured-data)によって、ページヘッドの`<script type="application/ld+json">` タグ内で発行されます。
    * 「**追加**」をクリックして、構造化データを追加します。
    * 各エントリは、[schema.org](https://schema.org)型（FAQPage、HowTo、Productなど）の1つの完全なJSON-LD オブジェクトである必要があります。
 
