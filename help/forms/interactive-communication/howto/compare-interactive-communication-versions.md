@@ -4,9 +4,9 @@ description: PDFのプレビューでインタラクティブ通信の2つのバ
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用されます。"
 exl-id: compare-interactive-communication-versions
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 現在のデザインと比較するインタラクティブ通信のバージョンが少なくとも1つ保存されていることを確認します。
 
-バージョンを作成するには、**Formsとドキュメント**&#x200B;を開き、インタラクティブ通信を選択し、左側のパネルから&#x200B;**タイムライン** パネルを開き、**バージョンとして保存**&#x200B;をクリックします。 詳しい手順については、[&#x200B; インタラクティブ通信エディターでのバージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
+バージョンを作成するには、**Formsとドキュメント**&#x200B;を開き、インタラクティブ通信を選択し、左側のパネルから&#x200B;**タイムライン** パネルを開き、**バージョンとして保存**&#x200B;をクリックします。 詳しい手順については、[ インタラクティブ通信エディターでのバージョン管理とコメント ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
 
 バージョンを保存した後、現在のデザインが保存されたバージョンと異なるように、エディターでインタラクティブ通信を更新します。 比較する前に、保存されたバージョンと変更された現在の状態の両方が必要です。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 - 申込参照番号、承認済みのローン金額、ローンの期間、EMI開始日など、ローンの詳細を更新します
 - 車両の詳細テーブルの&#x200B;**MakeおよびModel**&#x200B;の値とディーラー名を更新します
 
-![&#x200B; インタラクティブ通信を更新](/help/forms/interactive-communication/assets/compare-ic1.png)
+![ インタラクティブ通信を更新](/help/forms/interactive-communication/assets/compare-ic1.png)
 
 編集を終了したら、**保存**&#x200B;をクリックします。 現在のデザインは、保存済みのバージョンと比較する準備ができました。
 

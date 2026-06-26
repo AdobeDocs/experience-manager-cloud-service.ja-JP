@@ -4,9 +4,9 @@ description: AEM Forms Associate UIをアプリケーションと統合して、
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用されます。"
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 # アプリケーションにアソシエイト UIを統合する
 
 
-この記事では、アソシエイト UIをアプリケーションと統合し、フィールドアソシエイトやサービスエージェントなどの顧客対応の担当者が、パブリッシュインスタンスでパーソナライズされたインタラクティブ通信をリアルタイムで生成できるようにする方法について説明します。
+この記事では、アソシエイト UIをアプリケーションと統合し、フィールドアソシエイトやサービス担当者などの顧客対応の担当者が、パブリッシュインスタンスでパーソナライズされたインタラクティブ通信をリアルタイムで生成できるようにする方法について説明します。
 
 ## 前提条件
 
@@ -24,13 +24,13 @@ ht-degree: 2%
 
 - インタラクティブ通信の作成と公開
 - ポップアップのサポートが有効になっているブラウザー
-- アソシエイト [&#x200B; ユーザーはforms-associates グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)に属している必要があります
-- AEM[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/authentication)でサポートされている任意の認証メカニズム（SAML 2.0、OAuth、カスタム認証ハンドラーなど）を使用して設定された認証
+- アソシエイト [ ユーザーはforms-associates グループ ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)に属している必要があります
+- AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)でサポートされている任意の[認証メカニズム（SAML 2.0、OAuth、カスタム認証ハンドラーなど）を使用して設定された認証
 
 >[!NOTE]
 >
 >- この記事では、[Microsoft Entra ID （Azure AD）をID プロバイダー](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)として使用するSAML 2.0を使用した認証設定について説明します。
->- アソシエイト UIの場合、[SAML 2.0認証](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)記事で説明されている標準設定を超える追加のSAML設定が必要です。 詳細については、「アソシエイト UI[&#128279;](#additional-saml-configurations-for-associate-ui)の追加のSAML設定」の節を参照してください。
+>- アソシエイト UIの場合、[SAML 2.0認証](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)記事で説明されている標準設定を超える追加のSAML設定が必要です。 詳細については、「アソシエイト UI](#additional-saml-configurations-for-associate-ui)の[追加のSAML設定」の節を参照してください。
 
 ### アソシエイト UIの追加のSAML設定
 

@@ -5,15 +5,15 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 1%
 
 ---
 
-# インタラクティブ通信エディターでのバージョン管理とコメント
 
+# インタラクティブ通信エディターでのバージョン管理とコメント
 
 インタラクティブなコミュニケーションにより、データにもとづいた動的なドキュメントを作成して、顧客とのパーソナライズされたコミュニケーションを実現できます。 より優れたコラボレーション、ガバナンス、管理された公開ワークフローをサポートするために、インタラクティブ通信エディターは、バージョン管理、レビュー、コメント機能を提供します。
 
@@ -45,13 +45,13 @@ ht-degree: 1%
 
 1. アセットビューの左上隅にあるパネルの切り替えスイッチを選択し、パネルオプションから「**タイムライン**」を選択します。
 
-   ![&#x200B; バージョン 1](/help/forms/interactive-communication/assets/create-version1.png)を作成
+   ![ バージョン 1](/help/forms/interactive-communication/assets/create-version1.png)を作成
 
 1. 左側の&#x200B;**タイムライン** パネルが開き、選択したインタラクティブ通信のアクティビティ履歴（注釈と以前のバージョンを含む）が表示されます。
 
    例えば、レビューサイクルの後、タイムラインに&#x200B;**住所の更新**&#x200B;や&#x200B;**車のモデルの更新**&#x200B;などの注釈を他のアクティビティ項目と一緒に表示できます。
 
-   ![&#x200B; バージョン 2](/help/forms/interactive-communication/assets/create-version2.png)を作成
+   ![ バージョン 2](/help/forms/interactive-communication/assets/create-version2.png)を作成
 
 1. **タイムライン** パネルの下部にある「**バージョンとして保存**」をクリックします。
 
@@ -59,13 +59,13 @@ ht-degree: 1%
 
    例えば、バージョンコメントとして「**新しい銀行ロゴを含める**」と入力します。
 
-   ![&#x200B; バージョン 3](/help/forms/interactive-communication/assets/create-version3.png)を作成
+   ![ バージョン 3](/help/forms/interactive-communication/assets/create-version3.png)を作成
 
 1. 「**作成**」をクリックします。
 
    新しいバージョンエントリがタイムラインに表示され、バージョンが作成されたことを確認する成功メッセージが表示されます。
 
-   ![&#x200B; バージョン 4](/help/forms/interactive-communication/assets/create-version4.png)を作成
+   ![ バージョン 4](/help/forms/interactive-communication/assets/create-version4.png)を作成
 
 新しいバージョンエントリがバージョンリストに追加され、現在のインタラクティブ通信の状態がキャプチャされます。
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 1. 左側のパネルから&#x200B;**タイムライン** パネルを開きます。
 
-1. 「[&#x200B; インタラクティブ通信のバージョンを作成](#create-a-version-of-an-interactive-communication)」の手順に従って、現在の状態を新しいラベルとコメントで保存します。
+1. 「[ インタラクティブ通信のバージョンを作成](#create-a-version-of-an-interactive-communication)」の手順に従って、現在の状態を新しいラベルとコメントで保存します。
 
 これにより、進捗状況を追跡し、ライフサイクルの透明性を確保できます。
 
@@ -93,13 +93,13 @@ ht-degree: 1%
 
 1. タイムラインで、復元するバージョンを選択します。 例えば、コメント **新しい銀行ロゴを含む** Bank Interactive Communication V1 **を選択します**。
 
-   ![&#x200B; バージョン 1](/help/forms/interactive-communication/assets/create-version5.png)を元に戻す
+   ![ バージョン 1](/help/forms/interactive-communication/assets/create-version5.png)を元に戻す
 
 1. 「**このバージョンに戻る**」をクリックします。
 
    成功メッセージは、インタラクティブ通信が選択したバージョンに復元されたことを確認します。 タイムラインには、**ページ復元** エントリが記録されます。
 
-   ![&#x200B; バージョン 2](/help/forms/interactive-communication/assets/create-version6.png)を元に戻す
+   ![ バージョン 2](/help/forms/interactive-communication/assets/create-version6.png)を元に戻す
 
 インタラクティブ通信は選択したバージョンに復元され、作成者は不要な変更を取り消したり、エラーから回復したりできます。
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 インタラクティブ通信の任意の2つのバージョンをPDFのプレビューと並べて比較できるため、各バージョンを個別に開かずに、レイアウトと静的コンテンツの違いを簡単に見つけることができます。
 
-詳細な手順については、[&#x200B; インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)を参照してください。
+詳細な手順については、[ インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)を参照してください。
 
 ## インタラクティブ通信へのコメントの追加
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
    コメントは、注釈、バージョンエントリ、その他のアクティビティとともにタイムラインに表示されます。 例えば、レビューサイクルの後、タイムラインには、一般的なコメントとバージョン履歴の上に、**住所の更新**&#x200B;や&#x200B;**車のモデルの更新**&#x200B;などの注釈を一覧表示できます。
 
-配置されたコンポーネントレベルのレビューフィードバック（レビュー担当者がキャンバス上の特定のフィールドまたはセクションにコメントをピン留めする場合）には、代わりに注釈機能を使用します。 [&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)を参照してください。
+配置されたコンポーネントレベルのレビューフィードバック（レビュー担当者がキャンバス上の特定のフィールドまたはセクションにコメントをピン留めする場合）には、代わりに注釈機能を使用します。 [ インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)を参照してください。
 
 ## 関連トピック
 
