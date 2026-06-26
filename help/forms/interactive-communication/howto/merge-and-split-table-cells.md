@@ -30,7 +30,7 @@ ht-degree: 3%
 
 1. 選択範囲を右クリックし、**結合**&#x200B;を選択してから、**結合セル**&#x200B;を選択します。
 
-   ![ セルを結合](/help/forms/interactive-communication/assets/split-merge-table1.png)
+   ![&#x200B; セルを結合](/help/forms/interactive-communication/assets/split-merge-table1.png)
 
    選択したセルは、結合された1つのセルに結合されます。 選択範囲の最初のセルの内容と書式は保持され、後続のセルの内容は破棄されます。
 
@@ -47,13 +47,13 @@ ht-degree: 3%
 
 1. 「**分割**」を選択し、「**セルを分割**」を選択します。
 
-   ![ セルを分割](/help/forms/interactive-communication/assets/split-merge-table2.png)
+   ![&#x200B; セルを分割](/help/forms/interactive-communication/assets/split-merge-table2.png)
 
 1. **セルを分割** ダイアログで、セルを分割する列数を入力します。
 
 1. **OK**&#x200B;をクリックして適用します。
 
-   ![ セルを分割ダイアログ ](/help/forms/interactive-communication/assets/split-merge-table3.png)
+   ![&#x200B; セルを分割ダイアログ &#x200B;](/help/forms/interactive-communication/assets/split-merge-table3.png)
 
    ダイアログに表示される&#x200B;**最大列**&#x200B;の値は、分割できる最大値（最初に結合されたセルの数に等しい）を表します。 例えば、2つのセルが結合された場合、**最大列**&#x200B;は2です。
 

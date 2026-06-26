@@ -31,7 +31,7 @@ ht-degree: 2%
 
 現在のデザインと比較するインタラクティブ通信のバージョンが少なくとも1つ保存されていることを確認します。
 
-バージョンを作成するには、**Formsとドキュメント**&#x200B;を開き、インタラクティブ通信を選択し、左側のパネルから&#x200B;**タイムライン** パネルを開き、**バージョンとして保存**&#x200B;をクリックします。 詳しい手順については、[ インタラクティブ通信エディターでのバージョン管理とコメント ](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
+バージョンを作成するには、**Formsとドキュメント**&#x200B;を開き、インタラクティブ通信を選択し、左側のパネルから&#x200B;**タイムライン** パネルを開き、**バージョンとして保存**&#x200B;をクリックします。 詳しい手順については、[&#x200B; インタラクティブ通信エディターでのバージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)を参照してください。
 
 バージョンを保存した後、現在のデザインが保存されたバージョンと異なるように、エディターでインタラクティブ通信を更新します。 比較する前に、保存されたバージョンと変更された現在の状態の両方が必要です。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 - 申込参照番号、承認済みのローン金額、ローンの期間、EMI開始日など、ローンの詳細を更新します
 - 車両の詳細テーブルの&#x200B;**MakeおよびModel**&#x200B;の値とディーラー名を更新します
 
-![ インタラクティブ通信を更新](/help/forms/interactive-communication/assets/compare-ic1.png)
+![&#x200B; インタラクティブ通信を更新](/help/forms/interactive-communication/assets/compare-ic1.png)
 
 編集を終了したら、**保存**&#x200B;をクリックします。 現在のデザインは、保存済みのバージョンと比較する準備ができました。
 
