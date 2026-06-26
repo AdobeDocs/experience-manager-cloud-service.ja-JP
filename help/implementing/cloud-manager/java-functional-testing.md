@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 32e19eea5a7cf90f9de57b7d71d776b4452e70ee
+source-git-commit: fe1c1efaa00fc117ae0dc35879662dfd5ed4ecc2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 82%
+source-wordcount: '876'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->Cloud Manager が `it.tests` フォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)を使用して最新バージョンを生成することもできます。
+>Cloud Managerが`it.tests`個のフォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ &#x200B;](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)を使用して最新バージョンを生成します。
 
 `it.tests` フォルダーの内容を取得したら、独自のテストのベースとしてそれらを使用し、次の手順を実行できます。
 
@@ -35,13 +35,13 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 アドビが製品機能テストの作成に使用するのと同じツールを、カスタム機能テストの作成に使用できます。 テストの作成方法の例として、GitHub の[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
-カスタム機能テストのコードは、プロジェクトの`it.tests` フォルダー内のJava™ コードです。 すべての機能テストを含んだ 1 つの JAR が生成されます。 ビルドで複数のテスト JARが生成される場合、選択されたJARは決定論的ではありません。 テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。 サンプルテストについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
+カスタム機能テストのコードは、プロジェクトの`it.tests` フォルダー内のJava™ コードです。 すべての機能テストを含む単一のJARを生成します。 ビルドで複数のテスト JARが生成される場合、選択されたJARは決定論的ではありません。 テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。 サンプルテストについては、[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)を参照してください。
 
-テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、アドビが維持管理するテストインフラストラクチャで実行されます。 つまり、この設定では、カスタム機能テストは AEM スタック全体に対して実行されます。
+テストは、少なくとも 2 つのオーサーインスタンス、2 つのパブリッシュインスタンス、Dispatcher 設定など、アドビが維持管理するテストインフラストラクチャで実行されます。 この設定により、カスタム機能テストがAEM環境全体に対して実行されます。
 
 ### 機能テストの構造 {#functional-tests-structure}
 
-カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。 一般に、このビルドは別個の Maven モジュールになります。 結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は `jar-with-dependencies` 記述子を使用する `maven-assembly-plugin` で作成されます。
+カスタム機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。 このビルドは別のMaven モジュールです。 結果のJAR ファイルには、必要なすべての依存関係が含まれている必要があり、`jar-with-dependencies`記述子を使用して`maven-assembly-plugin`を使用して作成されます。
 
 さらに、この JAR では、`Cloud-Manager-TestType` マニフェストヘッダーが `integration-test` に設定されている必要があります。
 
@@ -81,7 +81,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 この JAR ファイル内で、実行する実際のテストのクラス名は `IT` で終わる必要があります。
 
-例えば、`com.myco.tests.aem.it.ExampleIT` という名前のクラスは実行されますが、`com.myco.tests.aem.it.ExampleTest` という名前のクラスは実行されません。
+例えば、`com.myco.tests.aem.it.ExampleIT`という名前のクラスは実行されますが、`com.myco.tests.aem.it.ExampleTest`という名前のクラスは実行されません。
 
 さらに、コードスキャンのカバレッジチェックからテストコードを除外するには、テストコードを `it` という名前のパッケージの下に置く必要があります（カバレッジ除外フィルターは `**/it/**/*.java` です）。
 
@@ -91,15 +91,15 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!TIP]
 >
->カスタム機能テストを使用して CI／CD パイプラインの信頼性を向上させる方法については、[このビデオ](https://www.youtube.com/watch?v=yJX6r3xRLHU)をご覧ください。
+>カスタム機能テストを使用してCI/CD パイプラインを改善する方法については、[このビデオ &#x200B;](https://www.youtube.com/watch?v=yJX6r3xRLHU)を参照してください。
 
 ### 前提条件 {#prerequisites}
 
-1. Cloud Manager でのテストは、技術管理者ユーザーを使用して実行されます。
+1. Cloud Managerのテストは、テクニカルアドミニストレーターユーザーを使用して実行されます。
 
 >[!NOTE]
 >
->ローカルマシンで機能テストを実行する場合は、同じ動作を保証する管理者権限を持つユーザーを作成します。
+>ローカルマシンで機能テストを実行する際に同じ動作を保証するには、管理者権限を持つユーザーを作成します。
 
 1. 次の境界により、機能テスト用にスコープ化されたコンテナ化インフラストラクチャが制限されます。
 
@@ -126,8 +126,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->この変更は、2024年4月6日（PT）より前に実行する必要があります。
->依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
+>この変更は、2024年4月6日（PT）より前に実行する必要があります。依存関係ライブラリの更新に失敗すると、「カスタム機能テスト」手順でパイプラインにエラーが発生します。
 
 ### ローカルテストの実行 {#local-test-execution}
 
