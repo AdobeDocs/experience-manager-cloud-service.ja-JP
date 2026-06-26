@@ -5,7 +5,7 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 91b880dcff55531c49229eb034348ad9cf91dca2
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 78%
@@ -76,3 +76,4 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 >[!TIP]
 >
 >Cloud Manager と CDN が Dispatcher とやり取りする方法について詳しくは、[AEM as a Cloud Service でのキャッシュ](/help/implementing/dispatcher/caching.md)を参照してください。
+

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
-source-git-commit: c75fb9425b72dea9130ed24cc2a098b56f23d13d
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 83%
@@ -200,3 +200,4 @@ Admin Console のバルクアップロード機能を使用できます。
 * [AEM の AI アシスタント](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Adobe Experience Platform のアクセス制御](https://experienceleague.adobe.com/ja/docs/experience-platform/access-control/ui/overview)
 * [Cloud Managerのカスタム権限](/help/implementing/cloud-manager/custom-permissions.md)
+

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 0fdc71bad1f2c4844ad47d41f47e898eac8c2373
+source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 78%
@@ -31,7 +31,7 @@ AEM に直接埋め込まれ、AEM Experience Hub、Cloud Manager、オーサー
 
 次の 3 分 25 秒のビデオでは、AEM の AI アシスタントの使い方を順を追って紹介しています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475359/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEM の AI アシスタントにアクセスする{#get-access}
 
@@ -123,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 -->
@@ -147,7 +147,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
    ![AI アシスタントパネルの下部にあるテキストボックス](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
-1. 新しい会話（新しいトピックまたはトピックの変更）を開始するには、![詳細アイコン &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話を開始**&#x200B;をクリックします。
+1. 新しい会話（新しいトピックまたはトピックの変更）を開始するには、![詳細アイコン ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **新しい会話を開始**&#x200B;をクリックします。
 
    ![省略記号アイコンから AI アシスタントで新しい会話を開始](/help/implementing/cloud-manager/assets/ai-assistant-start-new-conversation.png)
 
@@ -159,7 +159,7 @@ AEM の AI アシスタントには、対応しているトピックやカテゴ
 
 1. AI アシスタントパネルで、「![学習アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)」をクリックして、プロンプト検出パネルをオンにします。
 
-   ![AI アシスタントのカテゴリ別にプロンプトを検索できるパネル &#x200B;](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
+   ![AI アシスタントのカテゴリ別にプロンプトを検索できるパネル ](/help/implementing/cloud-manager/assets/ai-assistant-discover-prompts.png)
    *AI アシスタントのプロンプトカテゴリを表示するパネル。*
 
 1. カテゴリを選択すると、関連するプロンプトのリストが表示されます。
@@ -237,3 +237,4 @@ To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Ass
 
 This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
 -->
+
