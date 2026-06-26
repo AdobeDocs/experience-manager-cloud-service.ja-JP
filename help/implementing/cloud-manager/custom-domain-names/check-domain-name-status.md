@@ -39,7 +39,7 @@ Cloud Managerでドメイン名のステータスを確認する前に、[Add a 
 >
 >ドメインで&#x200B;*アドビが管理する（DV）SSL 証明書*&#x200B;を使用している場合、[カスタムドメイン名を追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)する際にドメインを検証ダイアログボックスの「**検証**」をクリックすると、Cloud Manager は自動的に検証をトリガーします。
 >
->**顧客管理（OV/EV） SSL証明書**&#x200B;を使用する予定がある場合、ドメインは&#x200B;*3}後に確認され、[OV/EV SSL証明書を追加します](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。*
+>**顧客管理（OV/EV） SSL証明書**&#x200B;を使用する予定がある場合、ドメインは&#x200B;*3&rbrace;後に確認され、[OV/EV SSL証明書を追加します](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。*
 
 
 ## 検証ステータス {#statuses}
