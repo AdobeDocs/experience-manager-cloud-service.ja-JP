@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
+source-git-commit: 1bb231d04e0b418a3b56de34c70424d06f94a4e1
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3862'
 ht-degree: 17%
 
 ---
@@ -303,7 +303,7 @@ AEM Cloud Serviceでは、Java 11、Java 17、Java 21での顧客コードのコ
 
 #### AEM Edge Functions （*パブリック Beta* プログラム） {#edge-functions}
 
-[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)は現在パブリックベータ版です。Adobeに連絡せずにセルフサービスで試して有効にすることができます。
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)は現在パブリックベータ版です。Adobeに連絡して有効にすることなく、セルフサービス方式で試すことができます。
 
 この機能により、JavaScriptをCDN レイヤーで実行し、データ処理をエンドユーザーに近づけることができます。 これにより待ち時間が短縮され、エッジでレスポンシブな動的エクスペリエンスが実現します。 AEM Sitesのお客様は、AEM Cloud Service Java スタックとEdge Delivery Services プロジェクトの両方で使用できます。
 
@@ -313,6 +313,8 @@ AEM Cloud Serviceでは、Java 11、Java 17、Java 21での顧客コードのコ
 * CDN と接触チャネルの間のミドルウェアとして機能させる
 * サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
+
+[このチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
 
 *AEM Edge Functions Betaを使用すると、まだ開発中であり、テクノロジの正しい機能やデータの可用性に頼るべきではないことを理解できます。 この機能は、そのまま提供され，
 予告なく変更される可能性があり、実稼動SLAの対象にはなりません。*
