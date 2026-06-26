@@ -124,7 +124,7 @@ AEM Assetsでは、AEMから取得したアセットを使用してAdobe Express
 
 **標準キャンペーンメタデータのWorkfront PlanningおよびGenStudio for Performance MarketingとのAEM統合**
 
-AEM Assetsを[Workfront計画およびGenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index)と統合すると、キャンペーン名、地域、チャネル、ペルソナおよび製品などのキャンペーンメタデータフィールドが、専用の読み取り専用キャンペーンタブのアセットビュープロパティパネルで使用できるようになりました。 Workfront PlanningのユーザーがAEMのアセットをAdobe GenStudio Workspaceの各オブジェクトに接続すると、特定の値（特定のキャンペーン名など）がAEM アセットのメタデータに自動的に追加されます。
+AEM Assetsを[Workfront計画およびGenStudio for Performance Marketing](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index)と統合すると、キャンペーン名、地域、チャネル、ペルソナおよび製品などのキャンペーンメタデータフィールドが、専用の読み取り専用キャンペーンタブのアセットビュープロパティパネルで使用できるようになりました。 Workfront PlanningのユーザーがAEMのアセットをAdobe GenStudio Workspaceの各オブジェクトに接続すると、特定の値（特定のキャンペーン名など）がAEM アセットのメタデータに自動的に追加されます。
 
 この統合により、ユーザーはキャンペーン属性にもとづいてアセットをすばやく発見して検索できます。 これにより、アセットの見つけやすさ向上し、コンテンツ管理ワークフローを合理化して、特定のマーケティング施策に最適なアセットをより効率的に見つけることができます。
 
