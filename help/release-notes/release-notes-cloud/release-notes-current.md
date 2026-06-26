@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 4bd1044567206bc6a97aef5b2d2e99541936b476
+source-git-commit: 64ad7ab638f71f0dcaf5384b29499e75085c778f
 workflow-type: tm+mt
 source-wordcount: '3825'
 ht-degree: 17%
@@ -158,7 +158,7 @@ OpenAPI機能を備えたDynamic Mediaでは、ビデオアセット用のカス
 
 #### インタラクティブなコミュニケーションのエディター
 
-インタラクティブ通信（IC）エディターがAEM Forms as a Cloud Serviceで使用できるようになりました。 これは、ビジネス通信、ドキュメント、明細書、特典、マーケティングメール、請求書、ウェルカムキットなど、データ主導のインタラクティブな通信を作成、管理、配信するためのブラウザベースのソリューションです。
+[Interactive Communication （IC） Editor](/help/forms/interactive-communication/introduction.md)がAEM Forms as a Cloud Serviceで利用できるようになりました。 これは、ビジネス通信、ドキュメント、明細書、特典、マーケティングメール、請求書、ウェルカムキットなど、データ主導のインタラクティブな通信を作成、管理、配信するためのブラウザベースのソリューションです。
 
 ![インタラクティブなコミュニケーションエディター](/help/forms/assets/ic-editor.png)
 
