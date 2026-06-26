@@ -23,7 +23,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!NOTE]
 >
->Cloud Managerが`it.tests`個のフォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)を使用して最新バージョンを生成します。
+>Cloud Managerが`it.tests`個のフォルダーを自動作成する前にリポジトリが作成された場合は、[AEM プロジェクトアーキタイプ &#x200B;](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)を使用して最新バージョンを生成します。
 
 `it.tests` フォルダーの内容を取得したら、独自のテストのベースとしてそれらを使用し、次の手順を実行できます。
 
@@ -91,7 +91,7 @@ Cloud Manager で新しいコードリポジトリを作成すると、サンプ
 
 >[!TIP]
 >
->カスタム機能テストを使用してCI/CD パイプラインを改善する方法については、[このビデオ ](https://www.youtube.com/watch?v=yJX6r3xRLHU)を参照してください。
+>カスタム機能テストを使用してCI/CD パイプラインを改善する方法については、[このビデオ &#x200B;](https://www.youtube.com/watch?v=yJX6r3xRLHU)を参照してください。
 
 ### 前提条件 {#prerequisites}
 
