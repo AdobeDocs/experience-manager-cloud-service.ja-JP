@@ -1,12 +1,12 @@
 ---
 title: インタラクティブ通信エディターでのUIの関連付け
-description: インタラクティブ通信エディターで、顧客向けエージェントがパーソナライズされたコンプライアンスに準拠したコミュニケーションを生成できるようにすることで、アソシエイト UIを確認します。
+description: インタラクティブ通信エディターのアソシエイト UIでは、顧客向けの担当者がパーソナライズされたコンプライアンスに準拠したコミュニケーションを生成できます。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用されます。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 # インタラクティブ通信エディターでのUIの関連付け
 
 
-**アソシエイト UI**&#x200B;は、インタラクティブ通信（IC）エディター上に構築された、専用のシンプルなインターフェイスです。 現場スタッフやサービスエージェントなど、顧客と接する専門家向けに設計されており、ライブでのインタラクション中に、パーソナライズされた、コンプライアンスを遵守した、正確なコミュニケーションをリアルタイムで生成できます。
+**アソシエイト UI**&#x200B;は、インタラクティブ通信（IC）エディター上に構築された、専用のシンプルなインターフェイスです。 これは、現場のスタッフやサービス担当者などの顧客対応プロフェッショナル向けに設計されており、ライブでのやり取りの際に、パーソナライズされた、コンプライアンスを遵守した、正確なコミュニケーションをリアルタイムで生成できます。
 
 ![IC ドキュメントを検索](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 

@@ -4,9 +4,9 @@ description: PDFのプレビューでインタラクティブ通信の2つのバ
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用されます。"
 exl-id: compare-interactive-communication-versions
-source-git-commit: b817bcb02c4ff6ac369973ef658d9fcbdce95c51
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 2%

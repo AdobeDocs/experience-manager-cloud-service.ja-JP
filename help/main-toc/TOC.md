@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 248e3db5298e96f01a683d8a69ea91ada701eef7
+source-git-commit: e06e200b372b510b093e05a767e508a89b1cb852
 workflow-type: tm+mt
 source-wordcount: '7552'
 ht-degree: 84%
@@ -1061,9 +1061,9 @@ ht-degree: 84%
       + {hide-from-toc}[&#x200B; インタラクティブ通信の概要](/help/forms/introduction-to-interactive-communication.md)
       + {hide-from-toc}[最初のインタラクティブ通信の作成](/help/forms/create-your-first-communication.md)
    + レビューと共同作業 {#review-collaborate}
-      + {hide-from-toc}[&#x200B; インタラクティブ通信エディターでのバージョン管理とコメント &#x200B;](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
-      + {hide-from-toc}[&#x200B; インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
-      + {hide-from-toc}[&#x200B; インタラクティブ通信のバージョンを比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
+      + [インタラクティブ通信エディターでのバージョン管理とコメント](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+      + [インタラクティブ通信のレビューと注釈](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+      + [インタラクティブ通信バージョンの比較](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
    + Component {#component}
       + [テキストボックス](/help/forms/interactive-communication/text-box.md)
       + [画像](/help/forms/interactive-communication/image.md)
@@ -1093,15 +1093,15 @@ ht-degree: 84%
       + {hide-from-toc}[&#x200B; インタラクティブ通信のコピーと貼り付け](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
       + [インタラクティブ通信でのワークフローの開始](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
       + [動的テーブルを作成](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
-      + {hide-from-toc}[&#x200B; テーブル セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
-      + {hide-from-toc}[&#x200B; コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
+      + [表セルの結合と分割](/help/forms/interactive-communication/howto/merge-and-split-table-cells.md)
+      + [コンポーネントをマスターページに移動](/help/forms/interactive-communication/howto/move-component-to-master-page.md)
    + UIの関連付け {#associateui}
       + [インタラクティブ通信エディターでのUIの関連付け](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
       + [インタラクティブ通信用のアソシエート UIの有効化と設定](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [アプリケーションにアソシエイト UIを統合する](/help/forms/interactive-communication/invoke-associate-ui.md)
       + [アソシエイト UIの送信ワークフロー – IC PDF出力を生成](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
-      + {hide-from-toc}[&#x200B; アソシエイト UIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
-      + {hide-from-toc}[&#x200B; アソシエイト UIのバインド変数とバインドされていない変数を設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
+      + [関連付けUIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)
+      + [アソシエート UIのバインド変数とバインドされていない変数の設定](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)
    + [よくある質問](/help/forms/interactive-communications-faq.md)
 + Forms 中心のワークフロー {#create-form-centric-workflows}
    + {hide-from-toc}[Forms中心のワークフローの概要](/help/forms/aem-forms-workflow.md)

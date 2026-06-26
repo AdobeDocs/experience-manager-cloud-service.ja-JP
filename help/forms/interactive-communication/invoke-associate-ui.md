@@ -4,9 +4,9 @@ description: AEM Forms Associate UIをアプリケーションと統合して、
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用）。"
+badgeSaas: label="AEM Forms" type="Positive" tooltip="AEM Formsに適用されます。"
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 53ff71c82d35b9ec9b20b521ef469d3f0abd79df
+source-git-commit: b11e1b28aabba9e03553dc9e9394bff111facfee
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 # アプリケーションにアソシエイト UIを統合する
 
 
-この記事では、アソシエイト UIをアプリケーションと統合し、フィールドアソシエイトやサービスエージェントなどの顧客対応の担当者が、パブリッシュインスタンスでパーソナライズされたインタラクティブ通信をリアルタイムで生成できるようにする方法について説明します。
+この記事では、アソシエイト UIをアプリケーションと統合し、フィールドアソシエイトやサービス担当者などの顧客対応の担当者が、パブリッシュインスタンスでパーソナライズされたインタラクティブ通信をリアルタイムで生成できるようにする方法について説明します。
 
 ## 前提条件
 
