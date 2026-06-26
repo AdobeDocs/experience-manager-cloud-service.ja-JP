@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2919670732d924cb1d473be59513044239a780e6
+source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
 workflow-type: tm+mt
-source-wordcount: '3402'
-ht-degree: 80%
+source-wordcount: '3451'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 80%
 >
 >* [コンテンツフラグメントモデルの管理](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 >* [コンテンツフラグメントコンソールでのアセットの表示と管理](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
->* [&#x200B; コンテンツフラグメントのローンチ &#x200B;](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+>* [ コンテンツフラグメントのローンチ ](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 [コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して、次のことができます。
 
@@ -66,8 +66,8 @@ ht-degree: 80%
    * ツリーの特定のブランチを選択できます
    * これは、ネストされたフォルダーを表示するようにサイズ変更できます
    * コンテンツフラグメントと同様に、次のことができます。
-      * [&#x200B; コンテンツフラグメントモデル &#x200B;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
-      * コンテンツフラグメントの[&#x200B; ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
+      * [ コンテンツフラグメントモデル ](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)または[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)を表示します。パネルへのリンクを圧縮または展開することもできます
+      * コンテンツフラグメントの[ ローンチを作成および管理](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 右側のメインパネル
    * 選択したツリーのブランチにあるすべてのコンテンツフラグメントのリストを表示します。
       * 選択したフォルダーのコンテンツフラグメントと、すべての子フォルダーが表示されます:
@@ -95,7 +95,7 @@ ht-degree: 80%
 コンソールのメインパネルや右パネル（テーブル表示）には、コンテンツフラグメントに関する様々な情報が表示されます。 また一部の項目には、その他のアクションや情報への直接リンクも含まれます。
 
 * **タイトル**
-   * 南京錠アイコンは、フラグメントが[&#x200B; チェックアウト &#x200B;](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
+   * 南京錠アイコンは、フラグメントが[ チェックアウト ](#check-out-and-check-in)され、1人のユーザーによってロックされていることを示します。南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
    * 情報（i） アイコンを使用すると、右側のパネルで、追加のフラグメント固有の情報と設定オプションにすばやくアクセスできます。
 * **名前**
    * エディターでフラグメントを開くためのリンクを提供します。
@@ -403,15 +403,7 @@ FolderC
 
 * コンテンツフラグメントのプレビュー：
 
-   * [&#x200B; ビジュアライゼーションテンプレート &#x200B;](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
-
-     <!-- CQDOC-23232 - remove when GA -->
-
-     >[!NOTE]
-     >
-     >ビジュアルコンテンツフラグメントは現在、限定的でご利用いただけます。
-     >
-     >参加を希望される場合は、公式メールアドレスから[experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com)にリクエストを送信してください。
+   * [ ビジュアライゼーションテンプレート ](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)を使用
 
    * [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) インスタンスで
 
@@ -419,7 +411,7 @@ FolderC
 
    * **[パブリッシュサービス](/help/headless/deployment/architecture.md)** - フル、パブリックアクセス用
 
-   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [&#x200B; プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
+   * **[プレビューサービス](/help/headless/deployment/architecture.md)** - [ プレビュー](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance)のコンテンツが完全に利用できるようになります
 
      >[!CAUTION]
      >
@@ -516,8 +508,8 @@ FolderC
 
 AEMを活用すると、次のことが可能になります。
 
-* コンテンツフラグメントを[&#x200B; チェックアウト &#x200B;](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
-* [&#x200B; チェックイン &#x200B;](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
+* コンテンツフラグメントを[ チェックアウト ](#check-out-a-content-fragment)し、他のユーザーがフラグメントを操作できないようにします
+* [ チェックイン ](#check-in-a-content-fragment)個のコンテンツフラグメント。他のユーザーがフラグメントの操作を再開できます
 
 フラグメントをチェックアウトすると、フラグメントはロックされます（`jcr:lock`）。 **タイトル**&#x200B;列の南京錠アイコンは、ロックされたフラグメントを示します。 南京錠アイコンを選択すると、フラグメントをチェックアウトしたアカウントの詳細が表示されます。
 
@@ -537,7 +529,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[&#x200B; チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
+>コンテンツフラグメントはAssetsとして内部的に保存されるため、この機能はExperience Manager DAMの[ チェックインおよびチェックアウトファイルと密接に関連しています](/help/assets/check-out-and-submit-assets.md)。
 
 ### コンテンツフラグメントのチェックアウト {#check-out-a-content-fragment}
 
@@ -568,7 +560,7 @@ AEMを活用すると、次のことが可能になります。
 
 >[!NOTE]
 >
->Assets [強制チェックイン &#x200B;](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
+>Assets [強制チェックイン ](/help/assets/check-out-and-submit-assets.md#forced-check-in)も参照してください。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -654,14 +646,37 @@ AEMを活用すると、次のことが可能になります。
 
 ## フラグメントの検索 {#searching-fragments}
 
-検索ボックスは全文検索をサポートします。 検索ボックスに検索語句を入力します。
+コンテンツフラグメントコンソールでは、次の機能をサポートしています。
 
-![コンテンツフラグメントコンソール - 検索](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-specification.png)
+* [フルテキスト検索](#full-text-search)
+* [セマンティック検索](#semantic-search)
 
-選択した結果が表示されます。
+<!-- CQDOC-23674 - activate when toggle visible -->
+<!--
 
-![コンテンツフラグメントコンソール - 検索結果](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-results.png)
+Use the toggle option to select your search method:
+
+![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
+-->
 
 また、検索ボックスでは&#x200B;**最近のコンテンツフラグメント**&#x200B;と&#x200B;**保存済みの検索結果**&#x200B;へのクイックアクセスも可能です。
 
 ![コンテンツフラグメントコンソール - 最近および保存済みフラグメント](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-search-saved.png)
+
+### フルテキスト検索 {#full-text-search}
+
+フルテキスト検索を使用すると、特定の単語またはフレーズのコンテンツフラグメントコンテンツを検索できます。 検索ボックスに検索語句を入力します。
+
+![ コンテンツフラグメントコンソール – フルテキスト検索](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-specification.png)
+
+選択した結果が表示されます。
+
+![コンテンツフラグメントコンソール - 検索結果](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
+
+### セマンティック検索 {#semantic-search}
+
+コンテンツフラグメントのセマンティック検索では、自然言語のクエリを有効にすることで、コンテンツの発見を向上させます。 完全一致のキーワードやフルテキスト一致だけに頼るのではなく、意味や意図にもとづいてフラグメントを検索できます。
+
+検索ボックスに検索クエリを入力します。例：`fruity and light roast`
+
+![ コンテンツフラグメントコンソール – セマンティック検索](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
