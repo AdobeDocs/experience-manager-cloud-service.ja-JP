@@ -75,7 +75,7 @@ ht-degree: 82%
    * **実稼動環境とステージング環境**&#x200B;を一緒に追加する場合は、実稼動環境とステージング環境の両方の名前と説明を入力する必要があります。
    * ドロップダウンから「**プライマリ地域**」を選択します。 プライマリ地域は作成後に変更できません。 また、利用可能な使用権限に応じて、[複数の地域](#multiple-regions)を設定できます。
 
-   ![環境を追加ダイアログボックス ](assets/add-environment2.png)
+   ![環境を追加ダイアログボックス &#x200B;](assets/add-environment2.png)
 
 1. 「**保存**」をクリックします。
 
@@ -108,7 +108,7 @@ ht-degree: 82%
 
 追加の地域を指定しない場合は、[環境を作成した後でも指定できます。](#edit-regions)
 
-プログラム用に[ アドバンストネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager APIを使用してパブリッシュリージョンを追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[&#x200B; アドバンストネットワーク &#x200B;](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、Cloud Manager APIを使用してパブリッシュリージョンを追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ### 複数の公開地域の編集 {#edit-regions}
 
@@ -130,7 +130,7 @@ ht-degree: 82%
 
 本番環境に対する変更は、本番環境とステージング環境の両方に適用されます。 複数の公開地域に対する変更を編集できるのは、本番環境のみです。
 
-プログラム用に[高度なネットワーク ](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、環境にパブリッシュ領域を追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
+プログラム用に[高度なネットワーク &#x200B;](/help/security/configuring-advanced-networking.md)をプロビジョニングする場合は、環境にパブリッシュ領域を追加する前に、このプロビジョニングを実行することをお勧めします。 そうしないと、追加の公開地域のトラフィックがプライマリ地域のプロキシを通過します。
 
 ## 環境の詳細の表示 {#viewing-environment}
 
@@ -298,7 +298,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 >[!TIP]
 >
->AEM as a Cloud Service チームおよび製品プロファイルが、ライセンスを取得したAdobe ソリューションへのアクセスを許可および制限する方法については、[AEM as a Cloud Service チームおよび製品プロファイル ](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
+>AEM as a Cloud Service チームおよび製品プロファイルが、ライセンスを取得したAdobe ソリューションへのアクセスを許可および制限する方法については、[AEM as a Cloud Service チームおよび製品プロファイル &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
 
 ## Developer Console へのアクセス {#accessing-developer-console}
 
