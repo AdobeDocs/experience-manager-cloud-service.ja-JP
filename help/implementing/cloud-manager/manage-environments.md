@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 6de869b0633bb372da8502e45f0956a896aef00b
+source-git-commit: 0ca2d1d71f2087c8dfbd1c14bbed0edb33bd3bf1
 workflow-type: tm+mt
-source-wordcount: '2585'
-ht-degree: 90%
+source-wordcount: '2579'
+ht-degree: 82%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 90%
 
 1. 次のいずれかの操作を行います。
 
-   「**環境を追加**」オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンス済みリソースに依存している場合があります。
+   **環境を追加** オプションがグレー表示（無効）になっている場合は、権限が不足しているか、ライセンス済みのリソースに依存している可能性があります。
 
    * **[マイプログラム](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;コンソールで、**環境**&#x200B;カードの「**環境を追加**」をクリックします。
 
@@ -69,13 +69,13 @@ ht-degree: 90%
 
 1. **環境を追加**&#x200B;ダイアログボックスで、次の操作を行います。
 
-   * 「[**環境タイプ**](#environment-types)」を選択します。 使用可能な環境または使用中の環境の数は、環境タイプ名の後ろの括弧内に表示されます。
+   * 「[**環境タイプ**](#environment-types)」を選択します。 使用可能な環境/使用されている環境の数は、環境タイプ名の後に括弧で囲んで表示されます。
    * 環境の&#x200B;**名前**&#x200B;を入力します。 環境名は、環境の作成後に変更できません。
    * 環境のオプションの&#x200B;**説明**&#x200B;を入力します。
    * **実稼動環境とステージング環境**&#x200B;を一緒に追加する場合は、実稼動環境とステージング環境の両方の名前と説明を入力する必要があります。
-   * ドロップダウンから「**プライマリ地域**」を選択します。 プライマリ地域は作成後に変更できません。 また、使用可能な権限によっては、[複数の地域](#multiple-regions)を設定できる場合があります。
+   * ドロップダウンから「**プライマリ地域**」を選択します。 プライマリ地域は作成後に変更できません。 また、利用可能な使用権限に応じて、[複数の地域](#multiple-regions)を設定できます。
 
-   ![環境を追加ダイアログ](assets/add-environment2.png)
+   ![環境を追加ダイアログボックス &#x200B;](assets/add-environment2.png)
 
 1. 「**保存**」をクリックします。
 
@@ -83,11 +83,11 @@ ht-degree: 90%
 
 ## 複数の公開地域 {#multiple-regions}
 
-**ビジネスオーナー**&#x200B;の役割を持つユーザーは、メイン地域に加えて、最大 3 つの公開地域を追加で含めるように、実稼動環境とステージング環境を設定できます。 追加の公開地域を使用すると、可用性が向上します。 詳しくは、[追加の公開地域に関するドキュメント](/help/operations/additional-publish-regions.md)を参照してください。
+プライマリ領域に加えて最大3つのパブリッシュ領域を追加するには、**ビジネスオーナー**&#x200B;の役割を持つユーザーが実稼動環境とステージング環境を設定します。 追加の公開地域を使用すると、可用性が向上します。 詳しくは、[追加の公開地域に関するドキュメント](/help/operations/additional-publish-regions.md)を参照してください。
 
 >[!TIP]
 >
->[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments?lang=ja) を使用して、使用可能な地域の現在のリストをクエリします。
+>[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments#creating-aem-cloud-service-environments) を使用して、使用可能な地域の現在のリストをクエリします。
 
 ### 新しい環境への複数の公開地域の追加 {#add-regions}
 
@@ -114,7 +114,7 @@ ht-degree: 90%
 
 最初に追加の地域を指定しなかった場合、環境が作成され、必要な権限が付与された後に指定できます。
 
-また、追加の公開地域を削除することもできます。 ただし、1 つのトランザクションで行えるのは、地域の追加または削除のいずれかのみとなります。 1 つの地域を追加し、1 つの地域を削除する必要がある場合は、まず追加して、変更を保存してから、削除します（または逆の順序）。
+また、追加の公開地域を削除することもできます。 ただし、1つのトランザクションで領域を追加または削除できます。 1つのリージョンを追加して1つのリージョンを削除する必要がある場合は、最初に追加し、変更を保存してから削除（またはその逆）します。
 
 1. プログラムのプログラム概要コンソールから、本番環境の ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックし、メニューの「**編集**」を選択します。
 
@@ -184,7 +184,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 必要な権限を持つユーザーは、プレビューサービスの URL を共有する前に、次の手順を完了して、URL に確実にアクセスできるようにする必要があります。
 
-1. 適切な IP 許可リストを作成してプレビューサービスに適用し、`Preview Default [<envId>]` 許可リストの適用を直ちに解除します。
+1. 適切なIP 許可リストを作成してプレビューサービスに適用し、一度に`Preview Default [<envId>]` プランの適用を解除します。
 
    詳しくは、[IP 許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)を参照してください。
 
@@ -221,7 +221,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
    ![「環境」タブの追加の公開地域のステータス情報](assets/additional-publish-region-status-environments-tab.png)
 
-追加のパブリッシュ領域で問題が報告された場合は、しばらくお待ちください。 Cloud Managerはリージョンの復旧を継続的に試み、いつでも再度利用可能になる可能性があります。 問題が数時間続く場合は、追加のパブリッシュリージョン（同じリージョンまたは別のリージョン）を削除して再追加し、完全なデプロイメントをトリガーします。
+追加のパブリッシュ領域で問題が報告された場合は、しばらくお待ちください。 Cloud Managerはリージョンの復旧を継続的に試み、自動的に再び利用可能になります。 問題が数時間続く場合は、追加のパブリッシュ領域（同じ領域または別の領域）を削除して再追加し、完全なデプロイメントを開始します。
 
 追加のアクションを実行する前に、システムが自動的に回復するのを待つ時間は、その地域の障害がシステムに与える影響によって異なります。
 
@@ -244,12 +244,12 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 したがって、更新プロセスは次の 2 つの手順で構成されます。
 
 1. パイプラインを最新バージョンの AEM に更新する
-1. パイプラインを実行して新しいバージョンの AEM を環境にデプロイする
+1. 新しいバージョンのAEMを環境にデプロイするには、パイプラインを実行します。
 
 ### 環境の更新 {#updating-your-environments}
 
 >[!NOTE]
-> 2024年の時点では、開発インスタンスと一部のサンドボックスプログラムは既に自動的に更新されているので、それらの更新を手動で管理する必要はありません。 この移行の結果、開発インスタンスの環境を手動で更新するオプションを、_一部_&#x200B;のプログラムで使用できない場合があります。
+> 2024年の時点では、開発インスタンスと一部のサンドボックスプログラムは既に自動的に更新されているので、それらの更新を手動で管理する必要はありません。 この移行の結果、開発インスタンスの環境を手動で更新するオプションは、プログラムの&#x200B;_一部_&#x200B;では利用できません。
 
 「**更新**」オプションは、特定の開発環境およびサンドボックス環境の&#x200B;**環境**&#x200B;カードで使用できます。 **更新**&#x200B;にアクセスするには、環境の横にある ![その他アイコン](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) をクリックします。
 
@@ -298,7 +298,7 @@ Cloud Manager は、各 AEM as a Cloud Service 環境に（追加のパブリッ
 
 >[!TIP]
 >
->AEM as a Cloud Service チームおよび製品プロファイルで、ライセンス取得済みのアドビソリューションに対するアクセスを許可および制限する方法について詳しくは、[AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
+>AEM as a Cloud Service チームおよび製品プロファイルが、ライセンスを取得したAdobe ソリューションへのアクセスを許可および制限する方法については、[AEM as a Cloud Service チームおよび製品プロファイル &#x200B;](/help/onboarding/aem-cs-team-product-profiles.md)を参照してください。
 
 ## Developer Console へのアクセス {#accessing-developer-console}
 
