@@ -3,9 +3,9 @@ title: AEM Edge Functionsでのキャッシュ
 description: CDN キャッシュとEdge関数のキャッシュの取り込み方法、キャッシュ動作の設定方法、およびキャッシュされたコンテンツを両方のレイヤー間でパージする方法について説明します。
 feature: Developing, Edge Delivery Services
 role: Developer
-source-git-commit: 4d3659aef1a180192a79b791f6ea840f576f5e63
+source-git-commit: eec07e98d235e80c423bea0d51f75e170c34d1e5
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->AEM Edge Functionsは&#x200B;**ベータ**&#x200B;機能です。 機能やドキュメントは予告なく変更される場合があります。 早期アクセスプログラムに参加してフィードバックを提供するには、[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)にメールを送信してください。
+>AEM Edge Functionsは&#x200B;**公開ベータ版**&#x200B;機能なので、Adobeに連絡して有効にすることなく、セルフサービス方式で試すことができます。 Adobeでは、[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)に電子メールを送信して、ユースケースについて説明することを推奨しています。これにより、Adobeでサポートされていることを確認し、ガイダンスを提供できます。 実稼動トラフィック用に機能をデプロイする前に、Adobeに連絡することが特に重要です。
+>
+>AEM Edge Functions Betaを使用することにより、お客様は、本ソフトウェアがまだ開発中であり、本ソフトウェアの正しい機能やデータの可用性に依存してはならないことを認めます。 この機能は現状のまま提供され、予告なく変更される可能性があり、本番環境ではカバーされません。
 
 このページでは、AEM Edge Functions内でのキャッシュの仕組みに関する詳細な技術的ガイダンスを提供します。これには、2 キャッシュアーキテクチャ、コード内のキャッシュ動作の制御方法、コンテンツが変更されたときにキャッシュエントリをパージする方法などが含まれます。
 
