@@ -50,7 +50,7 @@ return new Response(body, {
 });
 ```
 
-複数のサロゲートキーは、スペースで区切られます。 これらのサロゲート キーを使用して、[CDN キャッシュ パージ API](/help/implementing/dispatcher/cdn-cache-purge.md)を使用してCDN キャッシュをパージできます。 サロゲートキーのパージの概念は、[&#x200B; リソースのグループのキャッシュをパージ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources)で説明したものと同じです。主な違いは、ここでのCDN サロゲートキーがバックエンドではなくEdge機能コードによって設定されることです。
+複数のサロゲートキーは、スペースで区切られます。 これらのサロゲート キーを使用して、[CDN キャッシュ パージ API](/help/implementing/dispatcher/cdn-cache-purge.md)を使用してCDN キャッシュをパージできます。 サロゲートキーのパージの概念は、[&#x200B; リソースのグループのキャッシュをパージ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache#purge-the-cache-for-a-group-of-resources)で説明したものと同じです。主な違いは、ここでのCDN サロゲートキーがバックエンドではなくEdge機能コードによって設定されることです。
 
 ## Edge関数の取得キャッシュ（内部） {#fetch-cache}
 
