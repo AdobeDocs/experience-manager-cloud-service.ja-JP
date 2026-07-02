@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 17d8d0774461a893d9decc7f184cba084570a737
+source-git-commit: f26e6633bf20d49433a40e94bb03350bcb67c4d5
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 41%
+source-wordcount: '2055'
+ht-degree: 40%
 
 ---
 
@@ -32,7 +32,7 @@ Assets as a Cloud Service Ultimate は、組織のアセットニーズを効果
 
 ## Assets Ultimate の主な機能 {#capabilities-assets-ultimate}
 
-Assets as a Cloud Service Ultimate を使用すると、次のような様々な主要なデジタルアセット管理操作を実行できます。
+Assets as a Cloud Service Ultimateには、次の主要機能が搭載されています。
 
 * **アセット管理およびライブラリサービス**：ユーザーがブランドのデジタルアセットを一元化されたリポジトリに取り込み、保存、カタログ化、制御、管理、制御できるようにするツール
 
