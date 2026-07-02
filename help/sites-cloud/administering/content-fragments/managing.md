@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
+source-git-commit: 0c868761c03936b501988ec27c51577426f30bda
 workflow-type: tm+mt
 source-wordcount: '3487'
 ht-degree: 79%
@@ -672,6 +672,6 @@ AEMを活用すると、次のことが可能になります。
 
 コンテンツフラグメントのAI （セマンティック）検索は、自然言語のクエリを有効にすることで、コンテンツの発見を向上させます。 完全一致のキーワードやフルテキスト一致だけに頼るのではなく、意味や意図にもとづいてフラグメントを検索できます。
 
-検索ボックスに検索クエリを入力します。例：`fruity and light roast`
+検索ボックスに検索クエリを入力します。 例：`fruity and light roast`:
 
 ![&#x200B; コンテンツフラグメントコンソール – セマンティック検索](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-semantic-search.png)
