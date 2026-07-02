@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.06.25 リリースノート
-description: ユニバーサルエディターの2026.06.25 リリースのリリースノートです。
+title: ユニバーサルエディター2026.07.02 リリースノート
+description: ユニバーサルエディターの2026.07.02 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 152b867e74ac87763f7249fa7e50986b257736b3
+source-git-commit: 3351ce89ae2f5f3a60983a8d2d9d1a447d468b4b
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 13%
+source-wordcount: '148'
+ht-degree: 16%
 
 ---
 
 
-# ユニバーサルエディター2026.06.25 リリースノート {#release-notes}
+# ユニバーサルエディター2026.07.02 リリースノート {#release-notes}
 
-ユニバーサルエディターの2026年6月25日リリースのリリースノートです。
+2026年7月2日（PT）にリリースされたユニバーサルエディターのリリースノートです。
 
 >[!TIP]
 >
@@ -26,14 +26,10 @@ ht-degree: 13%
 
 ## 新機能 {#what-is-new}
 
-* AEM Sites コンソールにアクセスするための新しい「**サイト管理者で開く**」ボタンがツールバーに追加されました。
-   * これにより、以前の&#x200B;**AEM サイト管理拡張機能** [拡張機能](/help/implementing/universal-editor/extending.md)の機能がユニバーサルエディターにネイティブで追加されます。
-   * `/content/experience-fragments` パスの[Sites コンソール、](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)または[&#x200B; エクスペリエンスフラグメントコンソール &#x200B;](/help/sites-cloud/authoring/fragments/experience-fragments.md)で、現在のAEM ページが開きます。
-   * DAM パス （`/content/dam`）の場合、このボタンは非表示になり、現在の編集可能ファイルから一意のAEM ページを決定できない場合は非表示になります。
-* アクセシビリティテクノロジーで、1文字キーボードショートカットの動作が改善されました。
+* エディターで`preview` [ メタタグ ](/help/implementing/universal-editor/customizing.md#meta-tags)がサポートされ、エディターが[ プレビューモードで強制的に読み込まれるようになりました。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* エディターは、編集を無効にする`readonly` [ メタタグ ](/help/implementing/universal-editor/customizing.md#meta-tags)をサポートするようになりました。そのため、ユーザーは引き続き任意のコンポーネントを選択できますが、コンテンツを変更することはできません。
 
 ## その他の改善点 {#other-improvements}
 
-* 多数のボタンにアクセス可能な名前が正しく表示されるようになりました。
-* 特定のコンテンツフラグメントをピッカーで選択した後に保持する際の問題を修正しました。
-
+* 見出し階層のアクセシビリティが改善されました。
+* エディターのキーボードナビゲーションを支援するために、ロケーションバーのフォーカスを適切に維持するようにアクセシビリティが改善されました。
