@@ -26,8 +26,8 @@ ht-degree: 16%
 
 ## 新機能 {#what-is-new}
 
-* エディターで`preview` [ メタタグ ](/help/implementing/universal-editor/customizing.md#meta-tags)がサポートされ、エディターが[ プレビューモードで強制的に読み込まれるようになりました。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* エディターは、編集を無効にする`readonly` [ メタタグ ](/help/implementing/universal-editor/customizing.md#meta-tags)をサポートするようになりました。そのため、ユーザーは引き続き任意のコンポーネントを選択できますが、コンテンツを変更することはできません。
+* エディターで`preview` [&#x200B; メタタグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags)がサポートされ、エディターが[&#x200B; プレビューモードで強制的に読み込まれるようになりました。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+* エディターは、編集を無効にする`readonly` [&#x200B; メタタグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags)をサポートするようになりました。そのため、ユーザーは引き続き任意のコンポーネントを選択できますが、コンテンツを変更することはできません。
 
 ## その他の改善点 {#other-improvements}
 

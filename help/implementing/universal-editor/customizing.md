@@ -38,13 +38,13 @@ ht-degree: 53%
 
 | コンテンツの値 | 説明 |
 |---|---|
-| `publish` | [公開](/help/sites-cloud/authoring/universal-editor/publishing.md)のすべての機能（つまり、[公開ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)と[非公開ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis)）を無効にする |
+| `publish` | [公開](/help/sites-cloud/authoring/universal-editor/publishing.md)のすべての機能（つまり、[公開ボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)と[非公開ボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis)）を無効にする |
 | `publish-live` | ライブ [公開](/help/sites-cloud/authoring/universal-editor/publishing.md)を無効にする |
-| `publish-preview` | プレビューの公開を無効にします（[ プレビューサービス ](/help/sites-cloud/authoring/sites-console/previewing-content.md)が利用可能な場合） |
+| `publish-preview` | プレビューの公開を無効にします（[&#x200B; プレビューサービス &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md)が利用可能な場合） |
 | `unpublish` | [非公開ボタンを無効にする](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
-| `copy` | [ コピーと貼り付けボタン ](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)を無効にします |
-| `duplicate` | [重複ボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)を無効にします |
-| `header-open-page` | [ ページを開くボタン ](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)を無効にします |
+| `copy` | [&#x200B; コピーと貼り付けボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)を無効にします |
+| `duplicate` | [重複ボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)を無効にします |
+| `header-open-page` | [&#x200B; ページを開くボタン &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)を無効にします |
 | `aem-dev-login` | [開発者ログインボタンを無効にします](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ### エディターモードの定義 {#defining-mode}
@@ -59,8 +59,8 @@ ht-degree: 53%
 
 | コンテンツの値 | 説明 |
 |---|---|
-| `preview` | エディターが[ プレビューモードで開きます。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) **プレビュー** アイコンは非表示になっており、ユーザーは編集モードに戻すことができません。 |
-| `readonly` | エディターが読み取り専用モードで開きます。 [**プロパティ** ボタンとパネル ](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)は非表示になっています。 詳細はコンテンツツリーで確認できますが、変更は行えません。 |
+| `preview` | エディターが[&#x200B; プレビューモードで開きます。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) **プレビュー** アイコンは非表示になっており、ユーザーは編集モードに戻すことができません。 |
+| `readonly` | エディターが読み取り専用モードで開きます。 [**プロパティ** ボタンとパネル &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)は非表示になっています。 詳細はコンテンツツリーで確認できますが、変更は行えません。 |
 
 メタタグを使用してモードを定義する場合、そのモードをユーザーが上書きすることはできません。
 
