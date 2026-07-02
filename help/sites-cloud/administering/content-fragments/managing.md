@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="AEM Sitesに適用）。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 7e93b570e6b249432680308bee4de789e358f26c
+source-git-commit: f6624c3c2244fd38f0df794e3aa05680c437a806
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3487'
 ht-degree: 79%
 
 ---
@@ -103,8 +103,7 @@ ht-degree: 79%
    * 情報提供のみ。
    * [高速フィルタリング](#fast-filtering)に使用可能。
 * **フォルダー**
-   * コンソールでフォルダーを開くためのリンクを提供します。
-フォルダー名にカーソルを合わせると、JCR パスが表示されます。
+   * コンソールでフォルダーを開くためのリンクを提供します。フォルダー名にカーソルを合わせると、JCR パスが表示されます。
 * **ステータス**
    * 情報提供のみ。
    * [高速フィルタリング](#fast-filtering)に使用可能。
@@ -649,15 +648,11 @@ AEMを活用すると、次のことが可能になります。
 コンテンツフラグメントコンソールでは、次の機能をサポートしています。
 
 * [フルテキスト検索](#full-text-search)
-* [セマンティック検索](#semantic-search)
+* [AI 検索](#ai-search) （セマンティック検索）
 
-<!-- CQDOC-23674 - activate when toggle visible -->
-<!--
+切り替えオプション **AI 検索**&#x200B;を使用して、使用する検索方法を選択します。
 
-Use the toggle option to select your search method:
-
-![Content Fragments console - select search method](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
--->
+![&#x200B; コンテンツフラグメントコンソール – 検索方法を選択](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-select-search.png)
 
 また、検索ボックスでは&#x200B;**最近のコンテンツフラグメント**&#x200B;と&#x200B;**保存済みの検索結果**&#x200B;へのクイックアクセスも可能です。
 
@@ -673,9 +668,9 @@ Use the toggle option to select your search method:
 
 ![コンテンツフラグメントコンソール - 検索結果](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-full-text-search-results.png)
 
-### セマンティック検索 {#semantic-search}
+### AI 検索（セマンティック検索） {#ai-search}
 
-コンテンツフラグメントのセマンティック検索では、自然言語のクエリを有効にすることで、コンテンツの発見を向上させます。 完全一致のキーワードやフルテキスト一致だけに頼るのではなく、意味や意図にもとづいてフラグメントを検索できます。
+コンテンツフラグメントのAI （セマンティック）検索は、自然言語のクエリを有効にすることで、コンテンツの発見を向上させます。 完全一致のキーワードやフルテキスト一致だけに頼るのではなく、意味や意図にもとづいてフラグメントを検索できます。
 
 検索ボックスに検索クエリを入力します。例：`fruity and light roast`
 
