@@ -805,7 +805,7 @@ SPによるシングルログアウトが無効になっている場合、また
 マッピング形式は`jcrPropertyPath=credentialAttributeName`です。 エントリ `id_token=id_token`は、`SlingUserInfoProcessor`によって設定された暗号化されたID トークンをユーザーノードに保持し、ログアウトハンドラーがそれを読み取って`id_token_hint`を構築します。
 
 >[!IMPORTANT]
->ID トークンはユーザーノードに保持され、ログアウトリクエストを処理するパブリッシュインスタンスで使用できる必要があります。 パブリッシュ層では、[ データ同期](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization)が有効になっている場合にのみ、インスタンス間でユーザーノードが反映されます。 データ同期を有効にして、保存されたID トークンをログアウトを処理するインスタンスで利用できるようにします。そうしないと、`id_token_hint`が見つからない可能性があります。
+>ID トークンはユーザーノードに保持され、ログアウトリクエストを処理するパブリッシュインスタンスで使用できる必要があります。 パブリッシュ層では、[&#x200B; データ同期](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization)が有効になっている場合にのみ、インスタンス間でユーザーノードが反映されます。 データ同期を有効にして、保存されたID トークンをログアウトを処理するインスタンスで利用できるようにします。そうしないと、`id_token_hint`が見つからない可能性があります。
 
 >[!NOTE]
 >ID トークンが保存されていない場合（または読み取れない場合）、ログアウトは続行されます。AEMは`id_token_hint`を持たずに`end_session_endpoint`にリダイレクトします。 IdPによっては、ログアウトの確認を求めるメッセージがユーザーに表示されることがあります。
@@ -818,16 +818,16 @@ SPによるシングルログアウトが無効になっている場合、また
 /system/sling/logout?resource=/content/wknd/us/en/adventures&redirect=/content/wknd/us/en/goodbye
 ```
 
-[ ログインリダイレクト ](#custom-redirect-after-authentication)と同じセキュリティ制約が適用されます。値は&#x200B;**相対パス** （1つの`/`から始まる）である必要があり、その結果のホストは`logoutRedirectAllowedHosts`に対して検証されます。 `redirect` パラメーターが検証に失敗した場合、AEMは設定された`logoutRedirectPath`にフォールバックします。
+[&#x200B; ログインリダイレクト &#x200B;](#custom-redirect-after-authentication)と同じセキュリティ制約が適用されます。値は&#x200B;**相対パス** （1つの`/`から始まる）である必要があり、その結果のホストは`logoutRedirectAllowedHosts`に対して検証されます。 `redirect` パラメーターが検証に失敗した場合、AEMは設定された`logoutRedirectPath`にフォールバックします。
 
 ## Saml認証ハンドラーからOidc認証ハンドラーへの移行方法
 
 AEMが既にSAML Authentication Handlerで設定されており、[data synchronization](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization)が有効になっているリポジトリにユーザーが存在する場合、元のSAML ユーザーと新しいOIDC ユーザーの間で競合が発生する可能性があります。
 
 1. [OidcAuthenticationHandler](#configure-oidc-authentication-handler)を設定し、[SlingUserInfoProcessor](#configure-slinguserinfoprocessor)設定で`idpNameInPrincipals`を有効にします
-1. 外部グループ ](#configure-acl-for-external-groups)の[ACLを設定します。
+1. 外部グループ [&#128279;](#configure-acl-for-external-groups)のACLを設定します。
 1. ユーザーからログインした後、saml認証ハンドラーで作成された古いユーザーを削除できます。
 
 >[!NOTE]
->SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[ データ同期](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
+>SAML認証ハンドラーを無効にし、OIDC認証ハンドラーを有効にすると、[&#x200B; データ同期](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md#data-synchronization)が有効になっていない場合、既存のセッションは無効になります。 ユーザーは再び認証する必要があり、その結果、リポジトリ内に新しいOIDC ユーザーノードが作成されます。
 
