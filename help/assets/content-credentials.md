@@ -1,19 +1,19 @@
 ---
 title: Content Credentials の統合
-description: AEM Assets に統合され、アセットビュー内に表示される Content Credentials を使用すると、アセットの作成方法や作成に関わったユーザーなど、アセットの履歴に関するコンテキストを提供できます。デジタルコンテンツの栄養ラベルと同様に、Content Credentials は透明性を高め、オーディエンスとの信頼関係を構築するのに役立ちます。
+description: AEM Assets に統合され、アセットビュー内に表示される Content Credentials を使用すると、アセットの作成方法や作成に関わったユーザーなど、アセットの履歴に関するコンテキストを提供できます。 デジタルコンテンツの栄養ラベルと同様に、Content Credentials は透明性を高め、オーディエンスとの信頼関係を構築するのに役立ちます。
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '522'
 ht-degree: 99%
 
 ---
 
 # Content Credentials {#content-credentials}
 
-ブランドは、コンテンツの透明性、AI の開示、アセットの改ざん防止について、これまで以上に関心を寄せています。アドビのコンテンツ認証イニシアチブ（CAI）は、[Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)（C2PA）技術標準に準拠したツールを作成しています。新しい種類の暗号化された改ざん防止メタデータである Content Credentials は、閲覧者がコンテンツの系統を理解し、ブランドアセットの整合性を確保するのに役立ちます。これらには、デジタルアセットの履歴に関するインサイトを提供する様々な来歴データを含めることができます。
+ブランドは、コンテンツの透明性、AI の開示、アセットの改ざん防止について、これまで以上に関心を寄せています。 アドビのコンテンツ認証イニシアチブ（CAI）は、[Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model)（C2PA）技術標準に準拠したツールを作成しています。 新しい種類の暗号化された改ざん防止メタデータである Content Credentials は、閲覧者がコンテンツの系統を理解し、ブランドアセットの整合性を確保するのに役立ちます。 これらには、デジタルアセットの履歴に関するインサイトを提供する様々な来歴データを含めることができます。
 
 この情報には次が含まれる場合があります。
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 完全なビューを得るために、[Verify](https://contentcredentials.org/verify) ではアセット履歴に関するより包括的なインサイトを提供できます。
 
-Adobe Experience Manager Assets は Content Credentials をサポートするようになり、ユーザーは AEM のアセットビュー内で Content Credentials を直接確認できるようになりました。アセットの詳細を確認すると、Content Credentials を持つ画像（生成 AI サービスで作成されたイメージなど）では、専用のパネルにマニフェストの詳細が表示されます。アセットをダウンロード、公開、または共有した場合、Content Credentials はアセットと共にそのまま残ります。
+Adobe Experience Manager Assets は Content Credentials をサポートするようになり、ユーザーは AEM のアセットビュー内で Content Credentials を直接確認できるようになりました。 アセットの詳細を確認すると、Content Credentials を持つ画像（生成 AI サービスで作成されたイメージなど）では、専用のパネルにマニフェストの詳細が表示されます。 アセットをダウンロード、公開、または共有した場合、Content Credentials はアセットと共にそのまま残ります。
 
 ![アセット](/help/assets/assets/content-credentials.png)
 
@@ -35,11 +35,30 @@ Adobe Experience Manager Assets は Content Credentials をサポートするよ
 
 1. アセットビュー UI に移動し、左側のパネルから「**アセット**」をクリックします。
 1. フォルダーに移動して、目的のアセットを選択します。
-1. 「**詳細**」をクリックして、右端のパネルから「`Cr pin`」を選択します。「Content Credentials」タブには、アセットに関する次の情報が表示されます。
+1. 「**詳細**」をクリックして、右端のパネルから「`Cr pin`」を選択します。 「Content Credentials」タブには、アセットに関する次の情報が表示されます。
    1. **生成された画像**：Content Credentials が適用された日時。
-   1. **コンテンツの概要：**&#x200B;アセットの一部または全部が AI によって生成されたかどうか、または編集方法を示します。
+   1. **コンテンツの概要：**アセットの一部または全部が AI によって生成されたかどうか、または編集方法を示します。
       ![Content Credentials](/help/assets/assets/content-credentials1.png)
    1. **プロセス**：アセットの生成に使用されたアプリケーション、デバイス、AI ツール（Adobe Firefly など）と、その後に行われた変更について詳しく説明します。
       ![プロセス](/help/assets/assets/CR-Process.png)
-   1. **この Content Credentials について：**&#x200B;発行者の名前と発行日時。
+   1. **この Content Credentials について：**発行者の名前と発行日時。
       ![発行者](/help/assets/assets/CR-issuer.png)
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

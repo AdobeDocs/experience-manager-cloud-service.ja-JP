@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
 feature: Adobe Asset Link, Link Sharing
 role: Admin
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 99%
+source-wordcount: '461'
+ht-degree: 96%
 
 ---
 
 # アセットへのリンクの共有 {#share-links-assets}
 
-[!DNL Assets view] を使用すると、[!DNL Assets view] アプリケーションに対するアクセス権を持たない外部の関係者と、リンクを生成してアセットを共有できます。リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
+[!DNL Assets view] を使用すると、[!DNL Assets view] アプリケーションに対するアクセス権を持たない外部の関係者と、リンクを生成してアセットを共有できます。 リンクの有効期限を定義し、メールやメッセージングサービスなどの好みの通信方法を使用して、他のユーザーとリンクを共有できます。 リンクの受信者は、アセットをプレビューし、ダウンロードできます。
 
 ## アセットのリンクを生成 {#generate-link-for-assets}
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 1. アセットを含むアセット、フォルダーまたはその両方を選択し、「**[!UICONTROL リンクを共有]**」をクリックします。
 
-1. 調整したい場合は、カレンダーアイコンをクリックし、「**[!UICONTROL 有効期限]**」フィールドを使用してリンクの有効期限を定義します。 また、`yyyy-mm-dd` 形式で日付を直接指定することもできます。デフォルトでは、リンクの有効期限は共有日から 2 週間に設定されています。
+1. 調整したい場合は、カレンダーアイコンをクリックし、「**[!UICONTROL 有効期限]**」フィールドを使用してリンクの有効期限を定義します。 また、`yyyy-mm-dd` 形式で日付を直接指定することもできます。 デフォルトでは、リンクの有効期限は共有日から 2 週間に設定されています。
 
 1. 「**[!UICONTROL リンクを共有]**」フィールドからリンクをコピーします。
 
@@ -34,11 +34,11 @@ ht-degree: 99%
 
 受信者は、アセットの公開リンクを共有した後、リンクをクリックし、[!DNL Assets view] にログインしなくても web ブラウザーで共有アセットをプレビューまたはダウンロードできます。
 
-リンクをクリックし、フォルダーをクリックしてアセットに移動し、アセットをクリックしてプレビューします。リスト表示またはカード表示で共有アセットを表示するように選択できます。
+リンクをクリックし、フォルダーをクリックしてアセットに移動し、アセットをクリックしてプレビューします。 リスト表示またはカード表示で共有アセットを表示するように選択できます。
 
 共有アセットまたは共有アセットフォルダーにマウスポインターを置くと、アセットを選択するか、ダウンロードできます。
 
-複数のアセットを選択して、「**[!UICONTROL ダウンロード]**」をクリックすることもできます。[!DNL Assets view] は、選択したアセットを zip ファイルとしてダウンロードします。[!DNL Assets view] は、ダウンロードするように選択した各アセットに対し、アセットと同じ名前のサブフォルダーを親 zip ファイルに作成します。
+複数のアセットを選択して、「**[!UICONTROL ダウンロード]**」をクリックすることもできます。 [!DNL Assets view] は、選択したアセットを zip ファイルとしてダウンロードします。 [!DNL Assets view] は、ダウンロードするように選択した各アセットに対し、アセットと同じ名前のサブフォルダーを親 zip ファイルに作成します。
 
 すべてのアセットを一度にダウンロードするには、「**[!UICONTROL リスト表示]**」に切り替え、「**[!UICONTROL すべてを選択]**」をクリックしてから「**[!UICONTROL ダウンロード]**」をクリックします。
 
@@ -46,10 +46,29 @@ ht-degree: 99%
 
 ## 次の手順 {#next-steps}
 
-* [ビデオを視聴してアセットビュー内のアセットのリンクを共有する方法を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=ja)
+* [Assets ビューでアセットのリンクを共有するビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=ja)
 
-* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

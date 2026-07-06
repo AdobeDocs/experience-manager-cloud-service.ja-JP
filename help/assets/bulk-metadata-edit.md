@@ -1,18 +1,18 @@
 ---
 title: ' [!DNL Assets View] でのメタデータを一括編集'
-description: '[!DNL ! Assets View] で使用できる複数のアセットの定義済み標準メタデータフィールドセットを同時に更新する方法を説明します。'
+description: '[DNL! Assets View] で使用できる複数のアセットの定義済み標準メタデータフィールドセットを 同時に更新する方法を説明します。'
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '507'
 ht-degree: 99%
 
 ---
 
 # [!DNL Assets View] でのメタデータを一括編集{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
-[!DNL Assets View] の **[!DNL Bulk Metadata Edit]** 機能を使用すると、複数のアセットファイルに対する事前定義済みの標準メタデータフィールドセットを同時に編集できます。複数のアセットを選択し、各アセットの標準メタデータを個別に更新するのではなく、事前定義済みの標準メタデータのセットを一度に一括更新します。この機能により、大規模なアセットセット全体で標準メタデータプロパティセットの効率、一貫性および精度が維持され、アセットの検索性と整理が向上します。
+[!DNL Assets View] の **[!DNL Bulk Metadata Edit]** 機能を使用すると、複数のアセットファイルに対する事前定義済みの標準メタデータフィールドセットを同時に編集できます。 複数のアセットを選択し、各アセットの標準メタデータを個別に更新するのではなく、事前定義済みの標準メタデータのセットを一度に一括更新します。 この機能により、大規模なアセットセット全体で標準メタデータプロパティセットの効率、一貫性および精度が維持され、アセットの検索性と整理が向上します。
 
 ## アセットメタデータを一括編集 {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
@@ -26,10 +26,9 @@ ht-degree: 99%
    * **[!UICONTROL ステータス]：**&#x200B;選択したアセットのステータスを選択します。
    * **[!UICONTROL 有効期限日]：**&#x200B;アセットが有効でなくなる、または必要でなくなる日付を設定します。
    * **[!UICONTROL 作成者]：**&#x200B;作成者の名前を指定します。
-   * **[!UICONTROL キーワード]：**&#x200B;アセットに関する概要情報を提供する特定の用語またはテキスト文字列を追加して、検索性を高めます。キーワードを追加し、**Enter** キーまたは **return** キーを押して、リストに別のキーワードを追加します。
-   * **[!UICONTROL タグ]：**「![メタデータを一括編集](/help/assets/assets/tags-icon.svg)」をクリックして、使用可能なオプションからタグを選択します。タグによりアセットに関するより具体的な情報が得られ、検出性が向上します。選択したアセットに既に適用されているタグが、**[!UICONTROL プロパティ]**&#x200B;パネルに表示されます。関連するタグが見つからない場合は、作成し、選択したアセットに割り当てます。アセットへのタグの作成と割り当てについて詳しくは、[&#x200B; [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) でのタグの管理を参照してください。
-   * 「**[!UICONTROL 保存]**」をクリックして、選択したアセットに上記のメタデータの更新を適用します。保存すると、**[!UICONTROL キーワード]**&#x200B;と&#x200B;**[!UICONTROL タグ]**&#x200B;が追加され、**[!UICONTROL ステータス]**、**[!UICONTROL 有効期限日]**、**[!UICONTROL 作成者]**&#x200B;の更新された詳細が既存の詳細を上書きします。
-     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
+   * **[!UICONTROL キーワード]：**&#x200B;アセットに関する概要情報を提供する特定の用語またはテキスト文字列を追加して、検索性を高めます。 キーワードを追加し、**Enter** キーまたは **return** キーを押して、リストに別のキーワードを追加します。
+   * **[!UICONTROL タグ]：**「![メタデータを一括編集](/help/assets/assets/tags-icon.svg)」をクリックして、使用可能なオプションからタグを選択します。 タグによりアセットに関するより具体的な情報が得られ、検出性が向上します。 選択したアセットに既に適用されているタグが、**[!UICONTROL プロパティ]**&#x200B;パネルに表示されます。 関連するタグが見つからない場合は、作成し、選択したアセットに割り当てます。 アセットへのタグの作成と割り当てについて詳しくは、[ [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) でのタグの管理を参照してください。
+   * 「**[!UICONTROL 保存]**」をクリックして、選択したアセットに上記のメタデータの更新を適用します。 保存すると、**[!UICONTROL キーワード]**&#x200B;と&#x200B;**[!UICONTROL タグ]**&#x200B;が追加され、**[!UICONTROL ステータス]**、**[!UICONTROL 有効期限日]**、**[!UICONTROL 作成者]**&#x200B;の更新された詳細が既存の詳細を上書きします。     ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
      >
@@ -39,4 +38,23 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->**[!UICONTROL ステータス]**、**[!UICONTROL 有効期限日]**、**[!UICONTROL 作成者]**、**[!UICONTROL キーワード]**&#x200B;および&#x200B;**[!UICONTROL タグ]**&#x200B;は、フォルダー固有のメタデータにかかわらず、メタデータを一括編集で使用できる標準メタデータプロパティです。これらのメタデータプロパティは、アセットのフォルダーに適用されたメタデータフォームに含まれている場合にのみ、アセットの詳細ページに表示されます。これらの標準メタデータプロパティが[!UICONTROL アセットの詳細ページ]で見つからない場合は、アセットフォルダーのメタデータフォームを編集してそれらを含めます。メタデータフォームを作成または編集してフォルダーに適用する方法については、[&#x200B; [!DNL Assets View]](/help/assets/metadata-assets-view.md) でのメタデータを参照してください。
+>**[!UICONTROL ステータス]**、**[!UICONTROL 有効期限日]**、**[!UICONTROL 作成者]**、**[!UICONTROL キーワード]**&#x200B;および&#x200B;**[!UICONTROL タグ]**&#x200B;は、フォルダー固有のメタデータにかかわらず、メタデータを一括編集で使用できる標準メタデータプロパティです。 これらのメタデータプロパティは、アセットのフォルダーに適用されたメタデータフォームに含まれている場合にのみ、]アセットの詳細[!UICONTROL ページに表示されます。 これらの標準メタデータプロパティが[!UICONTROL アセットの詳細ページ]で見つからない場合は、アセットフォルダーのメタデータフォームを編集してそれらを含めます。 メタデータフォームを作成または編集してフォルダーに適用する方法については、[ [!DNL Assets View]](/help/assets/metadata-assets-view.md) でのメタデータを参照してください。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

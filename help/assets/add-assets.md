@@ -5,10 +5,10 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '3225'
-ht-degree: 95%
+source-wordcount: '3309'
+ht-degree: 96%
 
 ---
 
@@ -81,11 +81,9 @@ ht-degree: 95%
 
    複数のファイルを選択するには、ファイル選択ダイアログで、 `Ctrl` または `Command` キーを押しながらアセットを選択します。 iPad を使用している場合、一度に選択できるファイルは 1 つだけです。
 
-1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じる（`X`）をクリックします。アップロード操作をキャンセルすると、[!DNL Assets]はアセットの部分的にアップロードされた部分を削除します。
-ファイルをアップロードする前にアップロード操作をキャンセルすると、[!DNL Assets]は現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
+1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。 アップロード処理をキャンセルすると、[!DNL Assets] はアセットのアップロード済みの部分を削除します。ファイルがアップロードされる前にアップロード操作をキャンセルすると、[!DNL Assets] が現在のファイルのアップロードを停止し、コンテンツを更新します。 ただし、既にアップロードされているファイルは削除されません。
 
-1. [!DNL Assets]のアップロード進行状況ダイアログには、正常にアップロードされたファイルの数と、アップロードに失敗したファイルが表示されます。
-さらに、[!DNL Assets] ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
+1. [!DNL Assets] のアップロード進行状況ダイアログには、アップロードが成功したファイルと失敗したファイルの数が表示されます。さらに、[!DNL Assets] ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
 
 >[!NOTE]
 >
@@ -158,7 +156,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取り込みに使用する目的で管理者グループにのみ提供されます。 設定と取り込みの手順を紹介するビデオを参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/341389/?captions=jpn&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 次の図は、データストアから Experience Manager にアセットを取り込む際の様々な段階を示しています。
 
@@ -362,7 +360,7 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 [!DNL Experience Manager] では、web ブラウザーユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートしています。 Web ブラウザーを使用しなくても、これらのクライアントでアップロード操作を行うことができます。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで [!DNL Experience Manager] 内のアセットにアクセスできます。 現在開いているドキュメントは、これらのデスクトップアプリケーション内からAdobe Asset Link ユーザーインターフェイスから[!DNL Experience Manager]に直接アップロードできます。
-* [[!DNL Experience Manager]  デスクトップアプリ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)は、ファイルの種類やアセットを処理するネイティブアプリケーションに関係なく、デスクトップ上のアセットの操作を簡略化します。 ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードする際に便利です。
+* [[!DNL Experience Manager]  デスクトップアプリ ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)は、ファイルの種類やアセットを処理するネイティブアプリケーションに関係なく、デスクトップ上のアセットの操作を簡略化します。 ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードする際に便利です。
 
 ## アップロード時にアセットを処理 {#process-when-uploaded}
 
@@ -400,7 +398,7 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 
 * 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)が含まれるアセットをアップロードしないようにする必要があります。 文字は `-` 記号に置き換えられます。
 
-* ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされていません。 ネストされたフォルダー内のすべてのアセットをアップロードするには、[&#x200B; デスクトップアプリ &#x200B;](#upload-assets-desktop-clients)の使用を検討してください。
+* ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされていません。 ネストされたフォルダー内のすべてのアセットをアップロードするには、[ デスクトップアプリ ](#upload-assets-desktop-clients)の使用を検討してください。
 
 * 一括読み込みメソッドでは、フォルダー構造全体がデータソースに存在するとおりに読み込まれます。 ただし、[!DNL Experience Manager] では空でないフォルダーのみが作成されます。
 
@@ -411,23 +409,25 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
->* [&#x200B; [!DNL Adobe Asset Link] について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [ [!DNL Adobe Asset Link] について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 詳細を見る](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
 >* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload)

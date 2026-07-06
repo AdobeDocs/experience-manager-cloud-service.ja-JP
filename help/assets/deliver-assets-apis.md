@@ -4,10 +4,10 @@ description: 配信 API の使用方法について説明します。
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: fa93e2079ad5a2840b5e58c5b83cb288606bda97
+source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 43%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -72,61 +72,26 @@ headers: {
     }
 ```
 
-配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。 IMS トークンは、テクニカルアカウントから取得されます。 新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。 IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
+配信 API を呼び出すには、制限されたアセットを配信する `Authorization` の詳細に IMS トークンが必要です。 IMS トークンは、テクニカルアカウントから取得されます。 新しいテクニカルアカウントを作成する方法について詳しくは、[AEM as a Cloud Service の資格情報の取得](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。 IMS トークンを生成し、配信 API リクエストヘッダーで適切に使用する方法について詳しくは、[アクセストークンの生成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)を参照してください。
 
 
 リクエストサンプル、応答サンプルおよび応答コードを表示する方法について詳しくは、[配信 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat) を参照してください。
 
-## よくある質問 {#delivery-apis-faqs}
 
-### OpenAPI配信APIを備えたDynamic Mediaとは何ですか？それらは何を可能にしますか？ {#delivery-apis-overview}
+**関連情報**
 
-OpenAPI配信APIを備えたDynamic Mediaを使用すると、Adobe Experience Manager Assetsに保存された承認済みアセットを、配信URLを介して統合されたダウンストリームアプリケーションに配信できます。 画像配信、元のバイナリ配信、事前生成されたレンディション配信、アセットメタデータの取得、ビデオプレーヤーの埋め込み、ビデオ再生マニフェスト配信など、7つの異なるAPIを利用できます。 バージョンの更新やメタデータの変更など、DAM内の承認済みアセットに加えられた変更は、再公開や手作業の介入なしに、配信URLに自動的に反映されます。
-
-### AEM Assetsでの変更後、アセットの更新はDelivery API URLにどのくらい迅速に表示されますか？ {#delivery-api-ttl-updates}
-
-AEM Assetsで承認されたアセットの更新は、オーサリングインターフェイスと公開インターフェイスのすべてに10分以内に表示されます。 OpenAPI配信APIを備えたDynamic Mediaでは、CDNを介したアセット配信用に設定された、10分の短い「運用開始までの時間」値を使用します。 つまり、DAM内の承認済みアセットに対して行われたバージョンの更新、メタデータの変更やその他の変更は、手動でのキャッシュ無効化を必要とせずに、10分以内に配信URLに自動的に反映されます。
-
-### 画像アセットを配信するには、どの配信APIを使用すればよいですか？ {#delivery-api-image-recommendation}
-
-要求された出力形式APIでのアセットのWebに最適化されたバイナリ表現は、すべての画像形式タイプに対して推奨されるAPIです。 このAPIは、リクエストで送信されたアセット IDに基づいて、リクエストされた出力形式でアセットのwebに最適化されたバイナリ表現を返します。 幅、高さ、回転、反転、画質、切り抜き、形式、スマート切り抜きなど、様々な画像修飾子をサポートしています。 ドキュメントフォーマットの種類とSVG画像の場合は、代わりにアセット APIの元のアップロード済みバイナリを使用することをお勧めします。
-
-### Webに最適化されたバイナリ表現配信APIでは、どのような画像修飾子がサポートされていますか？ {#delivery-api-image-modifiers}
-
-Webに最適化された出力形式APIでのアセットのバイナリ表現では、幅、高さ、回転、反転、品質、切り抜き、形式、スマート切り抜きなどの画像修飾子をサポートしています。 これらの修飾子は、配信URL リクエストでパラメーターとして定義して、AEM Assetsに保存されている元のアセットを変更することなく、配信時にアセットを変換できます。
-
-### 利便性の高いWebに最適化されたバイナリ表現の配信APIは、デフォルトで何を返しますか？ {#delivery-api-defaults}
-
-利便性の高いWebに最適化されたアセット APIのバイナリ表現は、応答で返されるアセットにデフォルトが適用されます。 デフォルト値は、JPEGまたはWEBP形式、画質65、幅1024 ピクセルです。 このAPIは、特定の出力形式または修飾子制御が必要なく、標準のwebに最適化されたレンディションがダウンストリームアプリケーションに十分な場合に適しています。
-
-### ドキュメントとSVGの画像に使用する配信APIはどれですか？ {#delivery-api-documents-svg}
-
-アセット APIの元のアップロード済みバイナリは、ドキュメントフォーマットの種類とSVG イメージに推奨されるAPIです。 このAPIは、web最適化変換を適用せずに、アセットに対して最初にアップロードされたバイナリを返します。 その他のすべての画像形式タイプについては、要求された出力形式でWebに最適化されたバイナリ表現APIを使用することをお勧めします。
-
-### 配信APIを使用して、アセットの事前生成レンディションを取得するにはどうすればよいですか？ {#delivery-api-pre-generated-renditions}
-
-AEM Assets オーサリング環境APIで使用可能なアセットの事前生成レンディションは、リクエストで送信されたアセット IDとレンディション名に基づいて、特定のレンディションのビットストリームを返します。 レンディションは、このAPIを使用して取得する前に、AEM Assets オーサリング環境に既に存在している必要があります。 このAPIは、画像修飾子を使用してオンデマンドで出力を生成するweb最適化バイナリ APIとは異なります。
-
-### 配信APIを使用してビデオアセットを埋め込んで再生するにはどうすればよいですか？ {#delivery-api-video-player}
-
-ビデオアセット APIのPlayer コンテナは、ビデオアセットのPlayer コンテナを返します。このビデオアセットは、ページ内のビデオ再生を有効にするためにiframe HTML エレメントに埋め込むことができます。 アダプティブストリーミングでカスタムプレーヤーの実装を必要とするシナリオの場合、選択した出力形式APIで再生マニフェストが表示され、指定したビデオアセットの再生マニフェストファイルがHLSまたはDASH形式で返されます。 HLSまたはDASH プロトコルを介したアダプティブストリーミングが可能なカスタムプレーヤーを構築して、マニフェストファイルを使用し、ビデオを再生する必要があります。
-
-### OpenAPI Delivery APIを使用したDynamic Mediaでサポートされる最大ビデオファイルサイズとデュレーションは何ですか？ {#delivery-api-video-limits}
-
-OpenAPI配信APIを備えたDynamic Mediaは、ファイルサイズが最大50 GB、デュレーションが最大2時間の長編ビデオをサポートします。 これらの制限は、Player コンテナおよびPlayback マニフェスト配信APIを介して配信されるビデオアセットに適用されます。
-
-### 配信API エンドポイント URLはどのように構造化されますか？ {#delivery-api-endpoint-structure}
-
-要求された出力形式のwebに最適化されたバイナリ表現の配信API エンドポイント URLは、次の構造に従います：https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/{assetId}/as/{seoName}.{format}。配信ドメインは、AEM オーサー環境ドメインと同様の構造を持ちます。唯一の違いは、オーサーという用語を配信に置き換えることです。 URLでは、pXXXXはプログラム IDを表し、eYYYYYは環境IDを表します。 すべての配信APIは、HTTP GET リクエストメソッドを使用します。
-
-### OpenAPI Delivery APIでDynamic Mediaを呼び出すにはどのような認証が必要ですか？ {#delivery-api-authentication}
-
-OpenAPI配信APIを使用してDynamic Mediaを呼び出すには、制限されたアセットを配信するために、認証ヘッダーにIMS トークンが必要です。 ヘッダーには、文字列値としてIf-None-Matchと、IMS トークンを含むベアラートークンとしてAuthorizationの2つのフィールドを含める必要があります。 IMS トークンは、AEM as a Cloud Service資格情報ワークフローを使用して作成されたテクニカルアカウントから取得されます。 配信APIを呼び出す前に、テクニカルアカウントを設定し、アクセストークンを生成する必要があります。
-
-### 実験的な配信APIとは何か、どのようにアクセスすればよいですか？ {#delivery-api-experimental}
-
-実験的な配信APIでは、まだ一般的には利用できない画像修飾子をテストできます。 実験的なAPIは、修飾子と有効期限を含むURL パス形式（例：/adobe/experimental/advancemodifiers-expires-YYYMMDD/assets）を使用してアクセスします。 使用可能な実験的修飾子の完全なリストについては、Adobe Developer Consoleに記載されています。 実験APIはテスト目的で作成され、一般公開される前に変更される可能性があります。
-
-### Dynamic Media UltimateとDynamic Media Primeのお客様の間で利用できる画像修飾機能にはどのようなものがありますか？ {#delivery-api-prime-vs-ultimate-modifiers}
-
-Dynamic Media Primeのお客様は、配信APIを使用して、回転、切り抜き、反転、高さ、幅、画質などの基本的な画像修飾子を使用できます。 スマートイメージングは、Dynamic Media PrimeのスマートイメージングではAVIF形式がサポートされていない点を除いて、Dynamic Media Primeのお客様が利用できます。 Dynamic Media Ultimateをご利用のお客様は、AVIF フォーマットのサポートを含む、画像修飾子とスマートイメージング機能の全範囲にアクセスできます。
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

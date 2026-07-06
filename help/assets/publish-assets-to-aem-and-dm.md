@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 8088583ea5c970de4e71e771e34b9125fac3047e
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1097'
 ht-degree: 92%
 
 ---
 
 # [!DNL AEM and Dynamic Media] へのアセットの公開{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-[!DNL Experience Manager Assets] を使用すると、[!DNL Assets view] を使用して [!DNL Experience Manager] と [!DNL Dynamic Media] にアセットをすばやく公開できます。 これにより、 [!DNL Admin view][&#128279;](/help/assets/overview.md##persona-based-experiences) に切り替えることなく、[!DNL Assets view]  を使用してアセットを管理し、公開できるようになります。
+[!DNL Experience Manager Assets] を使用すると、[!DNL Assets view] を使用して [!DNL Experience Manager] と [!DNL Dynamic Media] にアセットをすばやく公開できます。 これにより、 [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences) に切り替えることなく、[[!DNL Assets view]  を使用してアセットを管理し、公開できるようになります。
 
 [!DNL Experience Manager Assets view] ビューでは、アセットを [!DNL AEM] や [!DNL Dynamic Media] に、またはその両方に同時に公開できる柔軟性が提供されます。 アセットのアップロード、参照および検索時に、アセットを公開できます。 アセットを公開するこれらのすべてのオプションについて詳しくは、この記事を参照してください。
 
@@ -24,8 +24,8 @@ ht-degree: 92%
 
 * [!DNL Dynamic Media] の公開オプションを表示するには、管理ビューを使用して、次の設定を行います。
 
-   * [&#x200B; [!DNL Dynamic Media] クラウド設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を作成します。
-   * フォルダーレベルで [!DNL Dynamic Media] 公開モードを設定します。 これらの設定は、[!DNL Dynamic Media] クラウド設定の作成中にも設定できます。 フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[&#x200B; [!DNL Dynamic Media]](/help/assets/dynamic-media/selective-publishing.md) のフォルダーレベルでの選択的公開の設定を参照してください。
+   * [ [!DNL Dynamic Media] クラウド設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を作成します。
+   * フォルダーレベルで [!DNL Dynamic Media] 公開モードを設定します。 これらの設定は、[!DNL Dynamic Media] クラウド設定の作成中にも設定できます。 フォルダーレベルでこれらの設定を上書きする方法について詳しくは、[ [!DNL Dynamic Media]](/help/assets/dynamic-media/selective-publishing.md) のフォルダーレベルでの選択的公開の設定を参照してください。
 
 * [!DNL AEM] の公開オプションを表示するには、環境に合わせて [!DNL AEM] パブリッシュエンドポイントを設定する必要があります。
 
@@ -56,7 +56,7 @@ ht-degree: 92%
 
    ![ファイルのアップロード画像 - 即時モード](/help/assets/assets/dynaimc-media-publish-upon-activation.png)
 
-   [!UICONTROL Dynamic Media公開モード &#x200B;]は&#x200B;**[!UICONTROL 即時]**&#x200B;であるため、**[!UICONTROL アップロード]**&#x200B;をクリックすると、アップロードされたアセットは自動的に[!DNL Dynamic Media]に公開されます。
+   [!UICONTROL Dynamic Media公開モード ]は&#x200B;**[!UICONTROL 即時]**&#x200B;であるため、**[!UICONTROL アップロード]**&#x200B;をクリックすると、アップロードされたアセットは自動的に[!DNL Dynamic Media]に公開されます。
 
 1. アップロードしたアセットを [!DNL AEM] に公開するには、「**AEM に公開**」を選択し、「**[!UICONTROL アップロード]**」をクリックします。
 
@@ -137,3 +137,22 @@ ht-degree: 92%
 * フォルダーレベルで [!DNL Dynamic Media] 同期ステータスを上書きする機能。
 * フォルダーレベルで [!DNL Dynamic Media] 公開モードを上書きする機能。
 * 公開を管理は、まだサポートされていません。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

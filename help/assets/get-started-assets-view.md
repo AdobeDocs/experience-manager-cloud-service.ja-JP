@@ -5,10 +5,10 @@ role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 98%
+source-wordcount: '430'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 * **手順 2**：アセットを[検索](/help/assets/search-assets-view.md)し[ダウンロード](/help/assets/manage-organize-assets-view.md#download)する。
 * **手順 3**：アセットを[管理および整理](/help/assets/manage-organize-assets-view.md)する。
 
-[!DNL Assets View] を使用するには、[https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) でログインします。ログイン時に、`Company or School Account` を選択します。アクセス権を受け取るには、組織の管理者に問い合わせてください。
+[!DNL Assets View] を使用するには、[https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets) でログインします。 ログイン時に、`Company or School Account` を選択します。 アクセス権を受け取るには、組織の管理者に問い合わせてください。
 
 <!--
 In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
@@ -34,7 +34,7 @@ In addition, more reference information that can be helpful is [understanding of
 
 ## [!DNL Assets View] の設定 {#configuration}
 
-環境設定を開くには、ユーザーインターフェイスの右上隅にあるアバターをクリックします。ソリューションの環境設定で、明るいテーマと暗いテーマを切り替えることができます。
+環境設定を開くには、ユーザーインターフェイスの右上隅にあるアバターをクリックします。 ソリューションの環境設定で、明るいテーマと暗いテーマを切り替えることができます。
 
 複数の異なる組織に属している場合は、組織を変更し、様々な組織のアカウントにアクセスすることもできます。
 
@@ -58,17 +58,17 @@ In addition, more reference information that can be helpful is [understanding of
 | アセットの編集 | <ul> <li>[Adobe Photoshop Express を使用したブラウザー内編集](/help/assets/edit-images-assets-view.md)</li> <li>[ソーシャルメディアプロファイルの切り抜き](/help/assets/edit-images-assets-view.md#crop-straighten-images)</li> <li>[バージョンの表示と管理](/help/assets/manage-organize-assets-view.md#view-versions)</li></ul></ul> |
 | リポジトリー内のアセットの検索 | <ul> <li>[特定のフォルダー内での検索](/help/assets/search-assets-view.md#refine-search-results)</li> <li>[保存済みの検索](/help/assets/search-assets-view.md#saved-search)</li> <li>[最近表示されたアセットの検索](/help/assets/search-assets-view.md)</li> <li>[フルテキスト検索](/help/assets/search-assets-view.md) |
 | アセットのダウンロード | <ul> <li> [アセットのプレビュー](/help/assets/navigate-assets-view.md#preview-assets) </li> <li> [アセットのダウンロード](/help/assets/manage-organize-assets-view.md#download) <li> [レンディションのダウンロード](/help/assets/add-delete-assets-view.md#renditions) </li></ul> |
-| メタデータ操作 | <ul> <li>[詳細なメタデータの表示](/help/assets/metadata-assets-view.md) </li> <li> [メタデータを更新](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [新しいメタデータフォームの作成](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
+| メタデータ操作 | <ul> <li>[詳細なメタデータの表示](/help/assets/metadata-assets-view.md) </li> <li> [メタデータの更新](/help/assets/metadata-assets-view.md#update-metadata)</li> <li> [新しいメタデータフォームの作成](/help/assets/metadata-assets-view.md#metadata-forms) </li> </ul> |
 
 ## 次の手順 {#next-steps}
 
-* [ビデオを視聴してアセットビューの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=ja)
+* [Assets Viewの概要を動画で見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html?lang=ja)
 
 * アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 <!--
@@ -101,3 +101,22 @@ To provide feedback for documentation, click [!UICONTROL Edit this page] ![edit 
 >* [Release notes and known issues](/help/assets/release-notes.md).
 >* [Supported file types](/help/assets/supported-file-formats.md).
 -->
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

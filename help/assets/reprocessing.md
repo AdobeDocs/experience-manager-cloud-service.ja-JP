@@ -6,16 +6,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '823'
 ht-degree: 99%
 
 ---
 
 # デジタルアセットの再処理 {#reprocessing-digital-assets}
 
-後で変更した既存のメタデータプロファイルが存在するフォルダー内のアセットを再処理できます。新しく編集したプリセットをフォルダー内の既存のアセットに再適用する場合は、フォルダーを再処理する必要があります。必要な数のアセットを再処理できます。
+後で変更した既存のメタデータプロファイルが存在するフォルダー内のアセットを再処理できます。 新しく編集したプリセットをフォルダー内の既存のアセットに再適用する場合は、フォルダーを再処理する必要があります。 必要な数のアセットを再処理できます。
 
 次の 2 つのシナリオのいずれかが発生した場合は、フォルダー内のアセットを再処理します。
 
@@ -26,14 +26,13 @@ ht-degree: 99%
 
 フォルダー内のアセットを再処理するには、次の手順に従います。
 
-1. [!DNL Experience Manager] で、新しく追加されたアセットまたは再処理するアセットを Assets ページから選択します。
-フォルダーを選択する場合は、次の手順に従います。
+1. [!DNL Experience Manager] で、新しく追加されたアセットまたは再処理するアセットを Assets ページから選択します。フォルダーを選択する場合は、次の手順に従います。
 
    * 選択したフォルダー内のすべてのファイルがワークフローで再帰的に考慮されます。
    * 選択したメインフォルダー内にアセットを含んだ 1 つ以上のサブフォルダーが存在する場合、ワークフローはフォルダー階層内のあらゆるアセットを再処理します。
    * ベストプラクティスとしては、1,000 個を超えるアセットを含んだフォルダー階層に対しては、このワークフローを実行しないでください。
 
-1. 「**[!UICONTROL アセットを再処理]**」を選択します。次の 2 つのオプションのどちらかを選択します。
+1. 「**[!UICONTROL アセットを再処理]**」を選択します。 次の 2 つのオプションのどちらかを選択します。
 
    ![アセット再処理オプション](assets/reprocessing-assets-options.png)
 
@@ -48,16 +47,15 @@ ht-degree: 99%
 
       * **[!UICONTROL メタデータ]：**&#x200B;選択したアセットのメタデータ情報とスマートタグを抽出する場合は、このオプションを選択します。
 
-      * **[!UICONTROL 処理プロファイル]：**&#x200B;選択したプロファイルを再処理する場合は、このオプションを選択します。「**[!UICONTROL 完全なプロセス]**」オプションを選択して、デフォルトの処理およびフォルダーレベルで割り当てられたカスタムプロファイルを含めることができます。
-        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL 処理プロファイル]：**&#x200B;選択したプロファイルを再処理する場合は、このオプションを選択します。 「**[!UICONTROL 完全なプロセス]**」オプションを選択して、デフォルトの処理およびフォルダーレベルで割り当てられたカスタムプロファイルを含めることができます。        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL 後処理ワークフロー]：**&#x200B;処理プロファイルを使用して達成できない追加のアセット処理が必要な場合は、このオプションを選択します。追加の後処理ワークフローを設定に追加できます。後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
+      * **[!UICONTROL 後処理ワークフロー]：**&#x200B;処理プロファイルを使用して達成できない追加のアセット処理が必要な場合は、このオプションを選択します。 追加の後処理ワークフローを設定に追加できます。 後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
 
 処理プロファイルと後処理プロセスワークフローについて詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
 
 ![詳細なアセット再処理オプション 2](assets/reprocessing-assets-options-advanced-2.png)
 
-適切なオプションを選択したら、「**[!UICONTROL 再処理]**」をクリックします。成功メッセージが表示されます。
+適切なオプションを選択したら、「**[!UICONTROL 再処理]**」をクリックします。 成功メッセージが表示されます。
 
 ## デジタルアセットの再処理のシナリオ {#scenarios-reprocessing}
 
@@ -65,7 +63,7 @@ ht-degree: 99%
 
 ### スマートタグ {#reprocessing-smart-tags}
 
-デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客が特定のクラスのデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、アセットを簡単に識別し、取得することができます。
+デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。 これには、基本的に、従業員、パートナーおよび顧客が特定のクラスのデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。 分類に基づく統制語彙を使用してアセットをタグ付けすると、アセットを簡単に識別し、取得することができます。
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたデジタルアセットのタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。
 
@@ -77,13 +75,13 @@ ht-degree: 99%
 
 ### メタデータ {#reprocessing-metadata}
 
-[!DNL Adobe Experience Manager Assets] では、あらゆるアセットのメタデータを保持します。したがって、アセットの分類と編成が容易にでき、特定のアセットを検索しやすくなります。メタデータ管理は、Experience Manager Assets にアップロードされるファイルからメタデータを抽出する機能と共に、クリエイティブワークフローに統合されます。アセットの任意のメタデータを保持して管理する機能によって、メタデータに基づいてアセットを自動的に編成および処理できます。
+[!DNL Adobe Experience Manager Assets] では、あらゆるアセットのメタデータを保持します。 したがって、アセットの分類と編成が容易にでき、特定のアセットを検索しやすくなります。 メタデータ管理は、Experience Manager Assets にアップロードされるファイルからメタデータを抽出する機能と共に、クリエイティブワークフローに統合されます。 アセットの任意のメタデータを保持して管理する機能によって、メタデータに基づいてアセットを自動的に編成および処理できます。
 
 詳しくは、[メタデータプロファイルの再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=ja)を参照してください。
 
 ### フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-dynamic-media}
 
-後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[フォルダー内の Dynamic Media アセットの再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja)を参照してください。
+後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。 詳しくは、[フォルダー内の Dynamic Media アセットの再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >
@@ -93,3 +91,22 @@ ht-degree: 99%
 ### ワークフロー
 
 詳しくは、[処理プロファイルと後処理ワークフロー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

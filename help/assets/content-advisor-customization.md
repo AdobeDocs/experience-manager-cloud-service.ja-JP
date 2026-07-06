@@ -4,16 +4,16 @@ description: 関数を使用して、アプリケーション内でContent Advis
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: b2034a3d7fcbb74f155299cd305d2cd3ccb1b7c7
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 85%
+source-wordcount: '1276'
+ht-degree: 86%
 
 ---
 
 # Content Advisor カスタマイズ {#content-advisor-customization}
 
-Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [&#x200B; マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
+Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [ マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
 
 * [フィルターパネルのカスタマイズ](#customize-filter-panel)
 * [モーダルビューでの情報のカスタマイズ](#customize-info-in-modal-view)
@@ -225,7 +225,6 @@ interface SelectedAsset {
 ### アセットの選択を無効にする {#disable-selection}
 
 「選択を無効にする」は、アセットやフォルダーを非表示にしたり、選択できないようにしたりするために使用します。 カードやアセットから選択チェックボックスを非表示にし、選択されないようにします。 この機能を使用するには、配列内で無効にするアセットやフォルダーの位置を宣言します。 例えば、最初の位置に表示されるフォルダーの選択を無効にする場合は、次のコードを追加できます。
-`disableSelection: [0]:folder`
 
 無効にする MIME タイプ（画像、フォルダー、ファイル、image／jpeg などの他の MIME タイプ）のリストを配列に指定できます。 宣言する MIME タイプは、アセットの `data-card-type` 属性と `data-card-mimetype` 属性にマッピングされます。
 
@@ -494,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[&#x200B; コンテンツアドバイザーのプロパティ &#x200B;](/help/assets/content-advisor-properties.md)を参照してください。
+*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[ コンテンツアドバイザーのプロパティ ](/help/assets/content-advisor-properties.md)を参照してください。
 
 ### メタデータを使用したアップロード {#upload-with-metadata}
 
@@ -665,3 +664,20 @@ dragOptions: {
          }
 ```
 
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

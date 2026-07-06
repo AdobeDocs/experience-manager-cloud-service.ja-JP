@@ -6,9 +6,9 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2365'
 ht-degree: 95%
 
 ---
@@ -81,8 +81,7 @@ For example, if a metadata form by the name `PDF` or `pdf` exists, then the uplo
 
 MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォーム
 
-例えば、`PDF` または `pdf` という名前のメタデータフォームが存在する場合、アップロードされた PDF ドキュメントには、そのフォームで定義されたメタデータフィールドが含まれています。 `PDF` または `pdf` という名前のメタデータフォームが存在しない場合、`application` という名前のメタデータフォームがあればアセットビューは照合します。 `application` という名前のメタデータフォームがある場合、アップロードされた PDF ドキュメントには、そのフォームで定義されたメタデータフィールドが含まれています。 それでも、一致するメタデータフォームが見つからない場合、アセットビューは `default` メタデータフォームを検索して、そのフォームで定義されたメタデータフィールドを、アップロードされた PDF ドキュメントに適用します。 これらの手順がいずれも機能しない場合、アセットビューは、標準フォームで定義されたメタデータフィールドを、アップロードされたすべての PDF ドキュメントに適用します。
-ただし、メタデータフォームをフォルダーに割り当てる場合は、[こちら](#assign-metadata-form-folder)をご覧ください。
+例えば、`PDF` または `pdf` という名前のメタデータフォームが存在する場合、アップロードされた PDF ドキュメントには、そのフォームで定義されたメタデータフィールドが含まれています。 `PDF` または `pdf` という名前のメタデータフォームが存在しない場合、`application` という名前のメタデータフォームがあればアセットビューは照合します。 `application` という名前のメタデータフォームがある場合、アップロードされた PDF ドキュメントには、そのフォームで定義されたメタデータフィールドが含まれています。 それでも、一致するメタデータフォームが見つからない場合、アセットビューは `default` メタデータフォームを検索して、そのフォームで定義されたメタデータフィールドを、アップロードされた PDF ドキュメントに適用します。 これらの手順がいずれも機能しない場合、アセットビューは、標準フォームで定義されたメタデータフィールドを、アップロードされたすべての PDF ドキュメントに適用します。ただし、メタデータフォームをフォルダーに割り当てる場合は、[こちら](#assign-metadata-form-folder)をご覧ください。
 
 >[!IMPORTANT]
 >
@@ -101,7 +100,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   メタデータフォーム [&#128279;](cascading-metadata-assets-view.md#build-metadata-forms)の ユーザーインターフェイスについて説明します。
+   メタデータフォーム ](cascading-metadata-assets-view.md#build-metadata-forms)の[ ユーザーインターフェイスについて説明します。
 
    <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
@@ -125,8 +124,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
 ### プロパティコンポーネント {#property-components}
 
-メタデータフォームは、次のプロパティコンポーネントのいずれかを使用してカスタマイズできます。 コンポーネントタイプを目的の場所のフォームにドラッグ＆ドロップして、コンポーネントの設定を変更します。
-各プロパティタイプの概要とその保存方法を以下に示します。
+メタデータフォームは、次のプロパティコンポーネントのいずれかを使用してカスタマイズできます。 コンポーネントタイプを目的の場所のフォームにドラッグ＆ドロップして、コンポーネントの設定を変更します。各プロパティタイプの概要とその保存方法を以下に示します。
 
 | コンポーネント名 | 説明 |
 |---|---|
@@ -277,3 +275,21 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

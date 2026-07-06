@@ -6,9 +6,9 @@ feature: Asset Management,Publishing
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '346'
 ht-degree: 98%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 98%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-[!DNL Adobe Experience Manager Assets] では、画像とビデオにデジタル透かしを追加できます。[!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
+[!DNL Adobe Experience Manager Assets] では、画像とビデオにデジタル透かしを追加できます。 [!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。 透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。 また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
 
 アセットに透かしを適用するように [!DNL Experience Manager] を設定するには：
 
-1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリにアップロードします。
+1. 透かしとして PNG ファイルが適用されます。 このファイルを DAM リポジトリにアップロードします。
 
 1. **[!UICONTROL ツール／アセット／アセット設定]**&#x200B;に移動します。
 
@@ -53,24 +53,26 @@ ht-degree: 98%
 
 ## ヒントと制限事項 {#tips-limitations-bestpractices}
 
-* 単一の設定を使用して、すべてのアセットに透かしを付けることができます。透かしに使用される画像は 1 つだけで、幅は固定されます。
+* 単一の設定を使用して、すべてのアセットに透かしを付けることができます。 透かしに使用される画像は 1 つだけで、幅は固定されます。
 * 透かしはタイルを適用せずに中央に配置できます。
 * テキストベースの透かしはサポートされていません。
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

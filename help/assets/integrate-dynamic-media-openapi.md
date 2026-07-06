@@ -4,10 +4,10 @@ description: Content Advisorを、AdobeやAdobe以外のアプリケーション
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: d5d3ff8d2bbeea8a10f950f533e4b104907ab387
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 76%
+source-wordcount: '897'
+ht-degree: 77%
 
 ---
 
@@ -37,13 +37,12 @@ OpenAPI 機能を備えた Dynamic Media では、`rootPath` プロパティと 
 aemTierType:[1: "delivery"]
 ```
 
-この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。 詳しくは、[&#x200B; コンテンツアドバイザープロパティ &#x200B;](/help/assets/content-advisor-properties.md)の下の`aemTierType` プロパティに移動します。
+この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。 詳しくは、[ コンテンツアドバイザープロパティ ](/help/assets/content-advisor-properties.md)の下の`aemTierType` プロパティに移動します。
 
 
 ### 承認済みアセットからの動的配信 URL の作成 {#create-dynamic-media-url}
 
-コンテンツアドバイザーを設定すると、オブジェクトのスキーマを使用して、選択したアセットから動的配信URLを作成します。
-例えば、アセットの選択時に受信されるオブジェクトの配列からの 1 つのオブジェクトのスキーマは次のようになります。
+コンテンツアドバイザーを設定すると、オブジェクトのスキーマを使用して、選択したアセットから動的配信URLを作成します。例えば、アセットの選択時に受信されるオブジェクトの配列からの 1 つのオブジェクトのスキーマは次のようになります。
 
 ```
 {
@@ -68,7 +67,7 @@ aemTierType:[1: "delivery"]
 #### 承認済みアセット配信 API 仕様 {#approved-assets-delivery-api-specification}
 
 URL形式：
-`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
+
 
 ここで、
 
@@ -106,8 +105,7 @@ JSON オブジェクトをトラバースする 2 つの方法を以下に示し
 
 ![動的配信 URL](assets/dynamic-delivery-url.png)
 
-* **サムネール：**&#x200B;サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。 ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。
-PDF type アセットには、次のレンディションのセットを使用できます。
+* **サムネール：**サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。 ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。PDF type アセットには、次のレンディションのセットを使用できます。
 SidekickでPDFを選択すると、選択コンテキストに次の情報が表示されます。 JSON オブジェクトをトラバースする方法を以下に示します。
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -125,8 +123,7 @@ SidekickでPDFを選択すると、選択コンテキストに次の情報が表
 
 上記のスクリーンショットでは、PDF が必要でサムネールは不要な場合は、PDF の元のレンディションの配信 URL をターゲットエクスペリエンスに組み込む必要があります。 例えば、`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf` のように指定します。
 
-* **ビデオ：**&#x200B;埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。 ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。
-  <!--![Video dynamic delivery url](image.png)-->
+* **ビデオ：**&#x200B;埋め込み iFrame を使用するビデオタイプのアセットには、ビデオプレーヤーの URL を使用できます。 ターゲットエクスペリエンスでは、次の配列レンディションを使用できます。  <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
@@ -157,3 +154,21 @@ OpenAPI機能を備えたDynamic Media用Content Advisorを使用すると、カ
 
 名前を取得するには、1 回限りのアクティビティを実行する必要があります。 アセットの検索 API 呼び出しを行って、プロパティ名（基本的にはバケット）を取得します。
 
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

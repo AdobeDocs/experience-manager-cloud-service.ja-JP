@@ -6,9 +6,9 @@ role: User
 feature: Collaboration
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '646'
 ht-degree: 99%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 99%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-[!DNL Adobe Experience Manager Assets] のユーザーインターフェイスに、自分だけが使用できるプライベートフォルダーを作成できます。このプライベートフォルダーを他のユーザーと共有して、他のユーザーに様々な権限を割り当てることができます。割り当てられる権限のレベルに応じて、ユーザーはフォルダーに対する様々なタスク（フォルダー内のアセットの表示、アセットの編集など）を実行できます。
+[!DNL Adobe Experience Manager Assets] のユーザーインターフェイスに、自分だけが使用できるプライベートフォルダーを作成できます。 このプライベートフォルダーを他のユーザーと共有して、他のユーザーに様々な権限を割り当てることができます。 割り当てられる権限のレベルに応じて、ユーザーはフォルダーに対する様々なタスク（フォルダー内のアセットの表示、アセットの編集など）を実行できます。
 
 >[!NOTE]
 >
 >プライベートフォルダーには、所有者の役割を持つメンバーが少なくとも 1 人含まれています。
 >
->プライベートフォルダーを作成するには、プライベートフォルダーを作成する親フォルダーに対する `Read` 権限と `Modify` 権限が必要です。管理者でない場合、これらの権限は `/content/dam` でデフォルトでは有効になっていません。この場合、プライベートフォルダーを作成する前に、ユーザー ID またはグループ用にそれらの権限を取得します。
+>プライベートフォルダーを作成するには、プライベートフォルダーを作成する親フォルダーに対する `Read` 権限と `Modify` 権限が必要です。 管理者でない場合、これらの権限は `/content/dam` でデフォルトでは有効になっていません。 この場合、プライベートフォルダーを作成する前に、ユーザー ID またはグループ用にそれらの権限を取得します。
 
 ## プライベートフォルダーの作成と共有  {#create-share-private-folder}
 
@@ -42,7 +42,7 @@ ht-degree: 99%
 
    ![chlimage_1-413](assets/create-private-folder.png)
 
-   プライベートフォルダーが作成されます。フォルダーに [アセットを追加](add-assets.md#upload-assets) して、他のユーザーやグループとフォルダーを共有できるようになりました。フォルダーを共有して権限を割り当てるまで、他のユーザーにはそのフォルダーが表示されません。
+   プライベートフォルダーが作成されます。 フォルダーに [アセットを追加](add-assets.md#upload-assets) して、他のユーザーやグループとフォルダーを共有できるようになりました。 フォルダーを共有して権限を割り当てるまで、他のユーザーにはそのフォルダーが表示されません。
 
 1. フォルダーを共有するには、フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 
@@ -50,13 +50,13 @@ ht-degree: 99%
 
    ![assign-user-group](assets/assign-permissions-private-folder.png)
 
-   フォルダーを共有するユーザーには、`Editor`、`Owner`、`Viewer` など、様々な役割を割り当てることができます。ユーザーに `Owner` の役割を割り当てると、そのユーザーはフォルダー対して `Editor` 権限を持ちます。さらに、フォルダーを他のユーザーと共有できるようになります。`Editor` の役割を割り当てると、ユーザーがプライベートフォルダーのアセットを編集できるようになります。閲覧者の役割を割り当てると、ユーザーがプライベートフォルダーのアセットを表示できるようになります。
+   フォルダーを共有するユーザーには、`Editor`、`Owner`、`Viewer` など、様々な役割を割り当てることができます。 ユーザーに `Owner` の役割を割り当てると、そのユーザーはフォルダー対して `Editor` 権限を持ちます。 さらに、フォルダーを他のユーザーと共有できるようになります。 `Editor` の役割を割り当てると、ユーザーがプライベートフォルダーのアセットを編集できるようになります。 閲覧者の役割を割り当てると、ユーザーがプライベートフォルダーのアセットを表示できるようになります。
 
    >[!NOTE]
    >
-   >プライベートフォルダーには、`Owner` の役割を持つメンバーが 1 人以上含まれています。したがって、管理者は所有者メンバーをプライベートフォルダーからすべて削除することはできません。 ただし、プライベートフォルダーから既存の所有者（および管理者自体）を削除するには、管理者は別のユーザーを所有者として追加する必要があります。
+   >プライベートフォルダーには、`Owner` の役割を持つメンバーが 1 人以上含まれています。 したがって、管理者は所有者メンバーをプライベートフォルダーからすべて削除することはできません。 ただし、プライベートフォルダーから既存の所有者（および管理者自体）を削除するには、管理者は別のユーザーを所有者として追加する必要があります。
 
-1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。割り当てた役割に応じて、ユーザーが [!DNL Assets] にログインしたときに、プライベートフォルダーに対する一連の権限が割り当てられます。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。 割り当てた役割に応じて、ユーザーが [!DNL Assets] にログインしたときに、プライベートフォルダーに対する一連の権限が割り当てられます。
 1. 「**[!UICONTROL OK]**」をクリックして、確認メッセージを閉じます。
 1. フォルダーを共有するユーザーは、ユーザーインターフェイスで共有通知を受け取ります。
 
@@ -84,16 +84,18 @@ ht-degree: 99%
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
