@@ -67,7 +67,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
 * エージェントは、次の2 レベルの階層を使用してページを分析します。
    * 最初に、セクションの境界（背景の変更、間隔の移動）を特定します
    * 次に、各セクション内のコンテンツシーケンスを特定します。
-* オーサリング分析は[Davidのモデル ](https://www.aem.live/docs/davidsmodel)に従います
+* オーサリング分析は[Davidのモデル &#x200B;](https://www.aem.live/docs/davidsmodel)に従います
    * コンテンツシーケンスごとに、最初に「作成者は通常の入力でこれを作成できますか？」をチェックします。
    * デフォルトのコンテンツ（見出し、段落、リスト、インライン画像）は、ブロックよりも優先されます。
 * エージェントは、新しいブロックを作成する前に、リポジトリのブロックライブラリの既存のブロックを再利用しようとします。
@@ -91,7 +91,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
 * 「https://example.comにページタイプがいくつあるか」
 * 「https://example.comのレイアウトは何ですか？」
 
-サイトカタログスキルについて詳しくは、[ サイトカタログスキル ](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)のドキュメントを参照してください。
+サイトカタログスキルについて詳しくは、[&#x200B; サイトカタログスキル &#x200B;](/help/ai-in-aem/agents/brand-experience/modernization/site-catalog.md)のドキュメントを参照してください。
 
 ### 一括読み込み {#bulk-import}
 
@@ -201,7 +201,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
    * コンテンツ/構造：見出し、段落、リンク、間違ったテーブルの行/セル数が見つかりません。パーサーの更新と再インポートによって修正されました。
    * スタイル：色、間隔、タイポグラフィ、レイアウトのCSSの違い – ブロック CSSを更新することで修正されました。
 * 修正カスケードは、次の順序で実行されます。グローバルスタイル→セクショントランスフォーマ→コンテンツ/構造パーサ→ブロック CSS。 各レイヤーは、次のレイヤーに移動する前に再インポートおよび再評価されます。
-* [ デザインの移行](#design-migration)が完了した後で、ブロックの条件を使用します。
+* [&#x200B; デザインの移行](#design-migration)が完了した後で、ブロックの条件を使用します。
 
 ### サイト批判 {#site-critique}
 
@@ -372,7 +372,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
    * PSI チェックのPR検証リンク
    * 作成者のための生きたドキュメント
    * コードファーストのアプローチが見逃すエッジケースの発見
-* エージェントは、実装する前に[ ブロックコレクション ](https://www.aem.live/developer/block-collection)および[ ブロックパーティ ](https://www.aem.live/developer/block-party/)で類似のブロックを検索し、パターンと再利用可能なコードを見つけます。
+* エージェントは、実装する前に[&#x200B; ブロックコレクション &#x200B;](https://www.aem.live/developer/block-collection)および[&#x200B; ブロックパーティ &#x200B;](https://www.aem.live/developer/block-party/)で類似のブロックを検索し、パターンと再利用可能なコードを見つけます。
 * CSSのみの微調整に対してのみCDDをスキップします（ただし、検証のためにテストコンテンツを識別します）。
 
 ### コンテンツモデリング {#content-modeling}
@@ -397,7 +397,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
 * 1行につき4つのセルの制限があります。
    * 関連要素をセルにグループ化します。
 * スタイルの違いについては、設定セルよりもブロックのバリエーションを優先します。
-* [ ポステルの法則に従う](https://en.wikipedia.org/wiki/Robustness_principle)：入力構造に柔軟に対応する。
+* [&#x200B; ポステルの法則に従う](https://en.wikipedia.org/wiki/Robustness_principle)：入力構造に柔軟に対応する。
    * ヒーローブロックは、コンテンツが1つのセル内にある場合でも、2つのセルに分割されている場合でも、別々の行にある場合でも機能します。
 * このスキルは、通常、ブロックの作成中にコンテンツ駆動開発によって自動的に呼び出されます。
 
@@ -415,7 +415,7 @@ Site Modernization Agentは、新しいEdge Delivery Services サイトを作成
 
 * [Block Collection](https://www.aem.live/developer/block-collection)は、Adobeが管理し、ベストプラクティス、優れたコンテンツモデリング、高いパフォーマンス、アクセシビリティを備えています。
    * 一般的に必要なブロックに限定されます。 ここから始めましょう。
-* [ ブロックパーティ ](https://www.aem.live/developer/block-party/)は、コミュニティ主導であり、実験的なアプローチを含む、より幅広い種類のアプローチを提供します。
+* [&#x200B; ブロックパーティ &#x200B;](https://www.aem.live/developer/block-party/)は、コミュニティ主導であり、実験的なアプローチを含む、より幅広い種類のアプローチを提供します。
    * また、Sidekick プラグイン、ビルドツール（webpack、vite、sass）や統合も含まれます。
    * ブロック コレクションに必要な機能がない場合に使用します。
 * 検索時に代替名について考えてみましょう
