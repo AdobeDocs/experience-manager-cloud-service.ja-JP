@@ -112,7 +112,7 @@ ht-degree: 61%
 
 * **スマートタグ：** [!DNL The Content Hub]は、Adobe AIのスマートコンテンツサービスを使用して、タグベースの構造に対する認識アルゴリズムを使用してアセットをトレーニングします。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。 スマートタグを使用すると、関連性の高いアセットをすばやく見つけるうえで役に立つので、プロジェクトのコンテンツベロシティ（コンテンツ創出の速度）が向上します。 スマートタグは、画像に含まれないアセット情報の例です。 デフォルトで、[!DNL Experience Manager Assets] はアセットにスマートタグを自動的に適用します。
 
-* **カラータグ：** [&#x200B; カラータグ &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)を使用すると、AdobeのAI機能を使用して、アセット内で自動的に識別されるカラーを使用してアセットを識別できます。
+* **カラータグ：** [&#x200B; カラータグ &#x200B;](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=ja)を使用すると、AdobeのAI機能を使用して、アセット内で自動的に識別されるカラーを使用してアセットを識別できます。
 
 * アップロード日
 
