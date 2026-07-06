@@ -33,7 +33,7 @@ ht-degree: 28%
 [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]にアクセスするには、次の手順を実行します。
 
 1. [!DNL Figma] ホームページで、キャンバスの下部にあるツールバーの「**[!UICONTROL アクション]**」をクリックし、ダイアログボックスの検索バーで [!DNL Adobe Experience Manager (AEM) Assets Connector] を検索します。
-1. [!DNL Adobe Experience Manager (AEM) Assets Connector] を選択して、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。 このパネルを使用して、[ [!DNL AEM]  アセットを  [!DNL Figma]  キャンバス](#import-aem-assets-into-figma-workflow)に読み込みます。   ![ アクション](/help/assets/assets/actions-on-figma.png)
+1. [!DNL Adobe Experience Manager (AEM) Assets Connector] を選択して、[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルを表示します。 このパネルを使用して、[&#x200B; [!DNL AEM]  アセットを  [!DNL Figma]  キャンバス](#import-aem-assets-into-figma-workflow)に読み込みます。   ![&#x200B; アクション](/help/assets/assets/actions-on-figma.png)
 または、[!DNL Figma] コミュニティで利用可能な[[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)にアクセスし、**[!UICONTROL で開く…]**&#x200B;をクリックし、最近のファイルを選択するか、新しいファイルを作成し、**[!UICONTROL 実行]**&#x200B;をクリックして[!DNL Adobe Experience Manager (AEM) Assets Connector] パネルにアクセスします。   ![Figma コミュニティのプラグインページ](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
@@ -44,7 +44,7 @@ ht-degree: 28%
 
 [!DNL Figma] デザインインターフェイス内で [[!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルにアクセス](#access-aem-assets-connector)し、次の操作を行います。
 
-1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルでアセットを検索します。 詳しくは、[ コンテンツアドバイザーの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)を参照してください。
+1. [!UICONTROL Adobe Experience Manager（AEM）Assets コネクタ]パネルでアセットを検索します。 詳しくは、[&#x200B; コンテンツアドバイザーの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)を参照してください。
 
 1. アセットをキャンバスにドラッグ＆ドロップするか、アセットを選択して「**[!UICONTROL 選択]**」をクリックし、アセットをキャンバス上に配置します。
 

@@ -360,7 +360,7 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 [!DNL Experience Manager] では、web ブラウザーユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートしています。 Web ブラウザーを使用しなくても、これらのクライアントでアップロード操作を行うことができます。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで [!DNL Experience Manager] 内のアセットにアクセスできます。 現在開いているドキュメントは、これらのデスクトップアプリケーション内からAdobe Asset Link ユーザーインターフェイスから[!DNL Experience Manager]に直接アップロードできます。
-* [[!DNL Experience Manager]  デスクトップアプリ ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)は、ファイルの種類やアセットを処理するネイティブアプリケーションに関係なく、デスクトップ上のアセットの操作を簡略化します。 ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードする際に便利です。
+* [[!DNL Experience Manager]  デスクトップアプリ &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)は、ファイルの種類やアセットを処理するネイティブアプリケーションに関係なく、デスクトップ上のアセットの操作を簡略化します。 ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードする際に便利です。
 
 ## アップロード時にアセットを処理 {#process-when-uploaded}
 
@@ -398,7 +398,7 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 
 * 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)が含まれるアセットをアップロードしないようにする必要があります。 文字は `-` 記号に置き換えられます。
 
-* ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされていません。 ネストされたフォルダー内のすべてのアセットをアップロードするには、[ デスクトップアプリ ](#upload-assets-desktop-clients)の使用を検討してください。
+* ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされていません。 ネストされたフォルダー内のすべてのアセットをアップロードするには、[&#x200B; デスクトップアプリ &#x200B;](#upload-assets-desktop-clients)の使用を検討してください。
 
 * 一括読み込みメソッドでは、フォルダー構造全体がデータソースに存在するとおりに読み込まれます。 ただし、[!DNL Experience Manager] では空でないフォルダーのみが作成されます。
 
@@ -428,6 +428,6 @@ Experience Manager は、ジョブ履歴を表示します。 一括読み込み
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
->* [ [!DNL Adobe Asset Link] について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [&#x200B; [!DNL Adobe Asset Link] について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 詳細を見る](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
 >* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload)

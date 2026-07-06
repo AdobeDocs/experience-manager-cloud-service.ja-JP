@@ -67,13 +67,13 @@ ht-degree: 97%
 公開用のアセットのバージョンを確定したら、アセットのステータスを「**[!UICONTROL 承認済み]**」に設定します。 次に、ページをパブリッシュ層に公開します。 ページを公開するには、次の手順を実行します。
 
 1. 上記の「[サイトプレビューページでアセットをプレビューする](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)」セクションの手順 1 に従って、アセットのステータスを 「**[!UICONTROL 承認済み]**」に変更します。
-1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 「[ページエディターからの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)」セクションの手順を実行して、ページを公開します。または、「[Sites コンソールからのページの公開 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)」セクションの手順に従って、サイトのコンソールからページを公開します。
+1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 「[ページエディターからの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)」セクションの手順を実行して、ページを公開します。または、「[Sites コンソールからのページの公開 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)」セクションの手順に従って、サイトのコンソールからページを公開します。
 
    >[!NOTE]
    >
    > パブリッシュ層では、承認済みのアセットのみを配信できます。 ページをパブリッシュ層に公開して一般公開する前に、アセットを承認します。
 
-   ![ ページが公開されました](/help/assets/assets/the-page-has-been-publushed.png)
+   ![&#x200B; ページが公開されました](/help/assets/assets/the-page-has-been-publushed.png)
 確認メッセージ **[!UICONTROL ページが公開されました]**&#x200B;は、公開後に表示されます。 パブリッシュ層で公開済みのページに移動し、更新がライブであり、コンテンツが期待どおりに表示されることを確認します。
 
 **関連情報**
