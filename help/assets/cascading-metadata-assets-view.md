@@ -5,16 +5,16 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 29%
+source-wordcount: '1235'
+ht-degree: 33%
 
 ---
 
 # メタデータのカスケーディング Assets ビュー{#cascading-metadata-assets-view}
 
-アセットのメタデータ情報を取得するときに、ユーザーは様々なフィールドに情報を指定します。他のフィールドで選択されているオプションに応じて、特定のメタデータフィールドやフィールド値を表示できます。こうした条件に応じたメタデータの表示は、カスケードメタデータと呼ばれます。つまり、特定のメタデータフィールドや値と、1 つ以上のフィールドまたはその値（あるいはその両方）との依存関係を作成できます。
+アセットのメタデータ情報を取得するときに、ユーザーは様々なフィールドに情報を指定します。 他のフィールドで選択されているオプションに応じて、特定のメタデータフィールドやフィールド値を表示できます。 こうした条件に応じたメタデータの表示は、カスケードメタデータと呼ばれます。 つまり、特定のメタデータフィールドや値と、1 つ以上のフィールドまたはその値（あるいはその両方）との依存関係を作成できます。
 
 メタデータ Formsを使用して、メタデータのカスケーディングルールを定義します。 例えば、メタデータフォームにアセットタイプフィールドが含まれている場合、ユーザーが選択したアセットのタイプに基づいて、表示する関連するフィールドセットを定義できます。
 
@@ -22,14 +22,14 @@ ht-degree: 29%
 
 * ユーザーの所在地が必要な場合に、ユーザーが選択した国および都道府県に基づいて、関連する都市名を表示します。
 * ユーザーが選択した製品カテゴリに基づいて、関連するブランド名をリストに読み込みます。
-* 別のフィールドで指定された値に基づいて、特定のフィールドの表示と非表示を切り替えます。例えば、ユーザーが別の住所への配送を希望した場合に、別の発送先住所フィールドを表示します。
+* 別のフィールドで指定された値に基づいて、特定のフィールドの表示と非表示を切り替えます。 例えば、ユーザーが別の住所への配送を希望した場合に、別の発送先住所フィールドを表示します。
 * 別のフィールドに指定された値に基づいて、特定のフィールドを必須として指定します。
 * 別のフィールドで指定された値に基づいて、特定のフィールドに表示されるオプションを変更します。
 * 別のフィールドで指定された値に基づいて、特定のフィールドにデフォルトのメタデータ値を設定します。
 
-## [!DNL Experience Manager] でのカスケードメタデータの設定  {#configure-cascading-metadata-in-aem}
+## [!DNL Experience Manager] でのカスケードメタデータの設定 {#configure-cascading-metadata-in-aem}
 
-選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。例 – 
+選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。 例 – 
 
 * ビデオの場合、形式やコーデック、長さなど、適用可能なフィールドを表示します。
 * Word 文書や PDF ドキュメントの場合は、ページ数や作成者などのフィールドを表示します。
@@ -113,7 +113,7 @@ ht-degree: 29%
 
    ![ルール](assets/image-required-rule2.png)
 
-1. **[!UICONTROL 表示]**&#x200B;で、新しいルール **[!UICONTROL に基づいて]**&#x200B;表示オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
+1. 「**[!UICONTROL 視認性]**」の下で、「**[!UICONTROL 表示可、新しいルールに基づく]**」オプションを選択します。 ![&#x200B; プラスアイコン &#x200B;](assets/do-not-localize/aem_assets_add_icon.png)をクリックして、新しいルールを追加します。
 
    >[!NOTE]
    >
@@ -135,7 +135,7 @@ ht-degree: 29%
 
 1. 同様に、[!UICONTROL Asset Type] フィールドのPDFやWordなどの他のアセットと、[!UICONTROL Page Count]や[!UICONTROL Author]などのフィールドとの間に依存関係を作成する手順を繰り返します。
 
-1. 「**[!UICONTROL 保存]**」をクリックします。メタデータフォームをフォルダーに適用します。
+1. 「**[!UICONTROL 保存]**」をクリックします。 メタデータフォームをフォルダーに適用します。
 
 1. メタデータフォームを適用したフォルダーに移動し、アセットのプロパティページを開きます。 「アセットの種類」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
 
@@ -144,10 +144,29 @@ ht-degree: 29%
 
 ## 次の手順 {#next-steps}
 
-* [ビデオを視聴してアセットビューでのメタデータフォームの管理を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ja)
+* [Assets ビューでメタデータフォームを管理するビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=ja)
 
-* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
 * [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

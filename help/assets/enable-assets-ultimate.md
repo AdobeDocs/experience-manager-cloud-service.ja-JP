@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: e8d9414c204222cbd1068530cc9329f30c7a9fbe
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2582'
 ht-degree: 55%
 
 ---
@@ -252,3 +252,22 @@ Adobe Admin ConsoleのAEM Assets Power Users製品プロファイルでは、Ado
 ### Content Hub Admin Console インスタンスの配信とcontenthub サフィックスの違いは何ですか？ {#content-hub-suffix-difference}
 
 Content HubのContent Hub インスタンスの接尾辞は、Adobe Admin Consoleがプロビジョニングされた日時によって異なります。 2024年8月14日以降にContent Hubをプロビジョニングしたお客様には、配信サフィックス付きのインスタンスがあります。 2024年8月14日（PT）より前にContent Hubをプロビジョニングしたお客様には、contenthub サフィックス付きのインスタンスがあります。 以前のプロビジョニングの場合、Content Hub製品プロファイルには、配信ではなく制限付きユーザーの後にcontenthubも表示されます。 どちらの設定も、Content Hubへのアクセスを許可するために、同じAEM Assets Limited Users製品プロファイルを提供します。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

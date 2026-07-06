@@ -6,10 +6,10 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '1013'
+ht-degree: 97%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 98%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and --> 共有されるアセットなどに関する役に立つ情報が提供されます。
+アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。 [!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。 レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and --> 共有されるアセットなどに関する役に立つ情報が提供されます。
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
-[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートのリクエストが順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリーに合わせて拡張することができます。レポートの非同期処理により、レポートの生成速度と効率が向上します。
+[!DNL Assets] のレポートフレームワークでは、[!DNL Sling] ジョブを利用して、レポートのリクエストが順序立てて非同期的に処理されます。 このフレームワークは大規模なリポジトリーに合わせて拡張することができます。 レポートの非同期処理により、レポートの生成速度と効率が向上します。
 
 レポート管理インターフェイスは直感的で、アーカイブされたレポートにアクセスし、レポートの実行ステータス（成功、失敗、待機中）を表示する、詳細なオプションとコントロールが含まれます。
 
-レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除を行うことができます。
+レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。 それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除を行うことができます。
 
 ## レポートの生成 {#generate-reports}
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 * Link Share
 -->
 
-[!DNL Adobe Experience Manager] 管理者は、これらのレポートを手軽に生成し、実装に合わせて容易にカスタマイズできます。レポートを生成するには、以下の手順に従います。
+[!DNL Adobe Experience Manager] 管理者は、これらのレポートを手軽に生成し、実装に合わせて容易にカスタマイズできます。 レポートを生成するには、以下の手順に従います。
 
 1. [!DNL Experience Manager] インターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;をクリックします。
 
@@ -68,21 +68,21 @@ ht-degree: 98%
 
    >[!NOTE]
    >
-   >**ダウンロード**&#x200B;レポートを作成するには、**AEM 管理者製品プロファイル**&#x200B;の資格を自分に付与します。AEM 管理者製品プロファイルの資格を自分に付与するには、[AEM 製品プロファイルの割り当て](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)を参照してください。
+   >**ダウンロード**&#x200B;レポートを作成するには、**AEM 管理者製品プロファイル**&#x200B;の資格を自分に付与します。 AEM 管理者製品プロファイルの資格を自分に付与するには、[AEM 製品プロファイルの割り当て](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)を参照してください。
 
    ![レポートタイプの選択](assets/choose_report.png)
 
-1. タイトル、説明、サムネール、フォルダーパスなど、レポートの詳細を設定します。デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定して、特定のフォルダーでレポートを実行できます。
+1. タイトル、説明、サムネール、フォルダーパスなど、レポートの詳細を設定します。 デフォルトでは、フォルダーパスは `/content/dam` です。 別のパスを指定して、特定のフォルダーでレポートを実行できます。
 
    ![レポートの詳細を追加するページ](assets/report_configuration.png)
 
-   レポートの日付範囲を選択します。レポートを今すぐ生成するか、将来の日時に生成するかを選択できます。
+   レポートの日付範囲を選択します。 レポートを今すぐ生成するか、将来の日時に生成するかを選択できます。
 
    >[!NOTE]
    >
-   >レポートを後で生成するようにスケジュールする場合は必ず、「日付」フィールドと「時間」フィールドで日時を指定してください。値を指定しなかった場合、レポートエンジンはそのレポートをすぐに生成するものとして取り扱います。
+   >レポートを後で生成するようにスケジュールする場合は必ず、「日付」フィールドと「時間」フィールドで日時を指定してください。 値を指定しなかった場合、レポートエンジンはそのレポートをすぐに生成するものとして取り扱います。
 
-   設定フィールドは、作成するレポートのタイプによって異なることがあります。例えば、「**[!UICONTROL ディスク使用量]**」レポートには、アセットが使用しているディスク領域を計算する際にアセットレンディションを含めるオプションが用意されています。ディスク使用量を計算する際にサブフォルダー内のアセットを含めるか除外するかを選択することもできます。
+   設定フィールドは、作成するレポートのタイプによって異なることがあります。 例えば、「**[!UICONTROL ディスク使用量]**」レポートには、アセットが使用しているディスク領域を計算する際にアセットレンディションを含めるオプションが用意されています。 ディスク使用量を計算する際にサブフォルダー内のアセットを含めるか除外するかを選択することもできます。
 
    >[!NOTE]
    >
@@ -90,11 +90,11 @@ ht-degree: 98%
 
    ![ディスク使用量レポートの詳細ページ](assets/disk_usage_configuration.png)
 
-   「**[!UICONTROL ファイル]**」レポートを作成する場合は、サブフォルダーを含めるか除外するかを選択できます。ただし、このレポートの場合、アセットレンディションを含めることはできません。
+   「**[!UICONTROL ファイル]**」レポートを作成する場合は、サブフォルダーを含めるか除外するかを選択できます。 ただし、このレポートの場合、アセットレンディションを含めることはできません。
 
    ![ファイルレポートの詳細ページ](assets/files_report.png)
 
-   「**[!UICONTROL リンク共有]**」レポートには、[!DNL Assets] 内から外部ユーザーと共有されているアセットへの URL が表示されます。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列をカスタマイズすることはできません。
+   **[!UICONTROL リンク共有]** レポートには、[!DNL Assets]内から外部ユーザーと共有されているアセットのURLが表示されます。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> 列をカスタマイズすることはできません。
 
    「**[!UICONTROL リンク共有]**」レポートでは、`/var/dam/share` に表示される共有 URL が公開されるだけです。そのため、サブフォルダーやレンディションに関するオプションは用意されていません。
 
@@ -102,16 +102,16 @@ ht-degree: 98%
 
 1. ツールバーから「**[!UICONTROL 次へ]**」をクリックします。
 
-1. **[!UICONTROL 列を構成]**&#x200B;ページでは、いくつかの列がデフォルトでレポートに表示されるように選択されています。追加の列を選択できます。列の選択をキャンセルすると、その列はレポートから除外されます。
+1. **[!UICONTROL 列を構成]**&#x200B;ページでは、いくつかの列がデフォルトでレポートに表示されるように選択されています。 追加の列を選択できます。 列の選択をキャンセルすると、その列はレポートから除外されます。
 
    ![レポート列の選択または選択のキャンセル](assets/configure_columns.png)
 
-   カスタムの列名やプロパティパスを表示するには、CRX のノード下のアセットバイナリのプロパティを設定します。`jcr:content`または、プロパティパスピッカーを使用して追加します。
+   カスタムの列名やプロパティパスを表示するには、CRX のノード下のアセットバイナリのプロパティを設定します。`jcr:content` または、プロパティパスピッカーを使用して追加します。
 
    ![レポート列の選択または選択のキャンセル](assets/custom_columns.png)
 
-1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
-1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。同じステータスが通知インボックスにも表示されます。レポートページを表示するには、レポートのリンクをクリックします。または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
+1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。 レポートの生成が開始されたことを通知するメッセージが表示されます。
+1. [!UICONTROL アセットレポート]ページのレポート生成ステータスは、レポートジョブの現在の状態（「[!UICONTROL 成功]」、「[!UICONTROL 失敗]」、「[!UICONTROL 待機中]」、「[!UICONTROL スケジュール済み]」など）に基づきます。 同じステータスが通知インボックスにも表示されます。 レポートページを表示するには、レポートのリンクをクリックします。 または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
 
    <!--![A generated report](assets/report_page.png)-->
    ![生成されたレポートのステータス](assets/report-status.JPG)
@@ -149,21 +149,21 @@ ht-degree: 98%
 1. [!DNL Manager interface] で、 **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;をクリックします 。
 1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
 
-1. **[!UICONTROL レポートを作成]**&#x200B;ページから、作成するレポートを選択します。「**[!UICONTROL 次へ]**」をクリックします。
+1. **[!UICONTROL レポートを作成]**&#x200B;ページから、作成するレポートを選択します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. タイトル、説明、サムネール、フォルダーパス、期間など、該当するレポートの詳細を設定します。「**[!UICONTROL 次へ]**」をクリックします。
+1. タイトル、説明、サムネール、フォルダーパス、期間など、該当するレポートの詳細を設定します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. **[!UICONTROL デフォルトの列]**&#x200B;のリストから、該当する情報を選択します。カスタム列を表示するには、「**[!UICONTROL カスタム列]**」で列の名前を指定します。
+1. **[!UICONTROL デフォルトの列]**&#x200B;のリストから、該当する情報を選択します。 カスタム列を表示するには、「**[!UICONTROL カスタム列]**」で列の名前を指定します。
 
    ![レポートのカスタム列の名前を指定](assets/custom_columns-1.png)
 
-1. プロパティパスピッカーを使用して、CRXDE の `jcr:content` ノード下にプロパティパスを追加します。または、プロパティパスフィールドにパスを入力します。
+1. プロパティパスピッカーを使用して、CRXDE の `jcr:content` ノード下にプロパティパスを追加します。 または、プロパティパスフィールドにパスを入力します。
 
    ![jcr:content](assets/property_picker.png)のパスからプロパティ パスをマッピングします
 
    カスタム列をさらに追加するには、「**[!UICONTROL 追加]**」をクリックし、上記の手順を繰り返します。
 
-1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
+1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。 レポートの生成が開始されたことを通知するメッセージが表示されます。
 
 <!--
  TBD: How to configure purge now? Is it using OSGi configurations?
@@ -180,7 +180,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## トラブルシューティング情報 {#tips-troubleshoot}
 
-* [!DNL Dynamic Media] を使用していて、[!UICONTROL ディスク使用量レポート]が生成されない場合は、すべてのアセットが正しく処理されていることを確認します。問題を解決するには、アセットを再処理し、レポートを再度生成します。
+* [!DNL Dynamic Media] を使用していて、[!UICONTROL ディスク使用量レポート]が生成されない場合は、すべてのアセットが正しく処理されていることを確認します。 問題を解決するには、アセットを再処理し、レポートを再度生成します。
 
 <!--
  These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
@@ -204,15 +204,19 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

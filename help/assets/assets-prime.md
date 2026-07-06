@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1162'
 ht-degree: 99%
 
 ---
@@ -36,7 +36,7 @@ Assets as a Cloud Service Prime には、次のような様々な主要機能を
 
   >[!NOTE]
   >
-  >Assets Prime では、回転、切り抜き（手動のみ - スマート切り抜きなし）、反転、高さ、幅、画質、形式、アダプティブビデオストリーミングといった基本的な画像の修飾子にアクセスできる OpenAPI 機能を備えた Dynamic Media も使用できます。詳しくは、アドビのアカウントチームにお問い合わせください。
+  >Assets Prime では、回転、切り抜き（手動のみ - スマート切り抜きなし）、反転、高さ、幅、画質、形式、アダプティブビデオストリーミングといった基本的な画像の修飾子にアクセスできる OpenAPI 機能を備えた Dynamic Media も使用できます。 詳しくは、アドビのアカウントチームにお問い合わせください。
 
 ただし、DAM のニーズが拡大し、UI 拡張機能、API 駆動型自動化、カスタムコードのデプロイメントなどのより多くの機能が必要になる場合は、[Assets Ultimate](/help/assets/assets-ultimate-overview.md) へのアップグレードを考慮する必要があります。
 
@@ -44,17 +44,17 @@ Assets as a Cloud Service Prime には、次のような様々な主要機能を
 
 ## Assets as a Cloud Service Prime の有効化{#enable-assets-prime}
 
-Cloud Manager を使用して新しいプログラムを作成する際に、Assets Prime を有効にします。次の手順を実行します。
+Cloud Manager を使用して新しいプログラムを作成する際に、Assets Prime を有効にします。 次の手順を実行します。
 
-1. システム管理者として、Cloud Manager にログオンします。ログイン時に正しい組織を選択していることを確認します。
+1. システム管理者として、Cloud Manager にログオンします。 ログイン時に正しい組織を選択していることを確認します。
 
    >[!NOTE]
    >
-   >新しいプログラムを追加するには、適切な Cloud Manager 製品プロファイルに追加されていることを確認します。詳しくは、[Cloud Manager での役割に基づく権限](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)を参照してください。
+   >新しいプログラムを追加するには、適切な Cloud Manager 製品プロファイルに追加されていることを確認します。 詳しくは、[Cloud Manager での役割に基づく権限](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)を参照してください。
 
 1. [新しいプログラムを作成します](/help/journey-onboarding/create-program.md)。
 
-   新しいプログラムの作成中に、「**[!UICONTROL ソリューションとアドオン]**」タブで「**[!UICONTROL Assets Prime]**」を選択します。また、**[!UICONTROL Assets Prime]** を展開し、「**[!UICONTROL コンテンツハブ]**」を選択して、アセット配布用の[コンテンツハブ](/help/assets/product-overview.md)を有効にすることもできます。
+   新しいプログラムの作成中に、「**[!UICONTROL ソリューションとアドオン]**」タブで「**[!UICONTROL Assets Prime]**」を選択します。 また、**[!UICONTROL Assets Prime]** を展開し、「**[!UICONTROL コンテンツハブ]**」を選択して、アセット配布用の[コンテンツハブ](/help/assets/product-overview.md)を有効にすることもできます。
 
    ![AEM Assets Ultimate](assets/aem-assets-prime.png)
 
@@ -69,7 +69,7 @@ Cloud Manager を使用して新しいプログラムを作成する際に、Ass
 
 >[!NOTE]
 >
->Assets Prime では、本番環境のみを作成できます。本番環境が正常に作成されると、環境を追加するオプションは使用できなくなります。
+>Assets Prime では、本番環境のみを作成できます。 本番環境が正常に作成されると、環境を追加するオプションは使用できなくなります。
 
 これで、Assets Prime が Experience Manager Assets as a Cloud Service で有効になります。
 
@@ -91,7 +91,7 @@ Admin Console 上の AEM as a Cloud Service インスタンスは、次の製品
 
 ![AEM Assets 製品プロファイル](assets/aem-assets-product-profiles.png)
 
-AEM Assets 共同作業者ユーザーおよび AEM Assets パワーユーザー製品プロファイルへのユーザーまたはユーザーグループの追加を開始できます。詳しくは、[AEM Assets 共同作業者ユーザーのオンボード](#onboard-collaborator-users)および[AEM Assets パワーユーザーのオンボード](#onboard-power-users)を参照してください。
+AEM Assets 共同作業者ユーザーおよび AEM Assets パワーユーザー製品プロファイルへのユーザーまたはユーザーグループの追加を開始できます。 詳しくは、[AEM Assets 共同作業者ユーザーのオンボード](#onboard-collaborator-users)および[AEM Assets パワーユーザーのオンボード](#onboard-power-users)を参照してください。
 
 Assets as a Cloud Service 用のコンテンツハブを有効にしている場合は、Admin Console の AEM Assets as a Cloud Service 内に、サフィックスとして `delivery` が付いた新しいインスタンスが作成されます。
 
@@ -133,7 +133,7 @@ AEM Assets 共同作業者ユーザーは、他のアドビ製品やアドビ以
 
 ![共同作業者ユーザー向けサービス](assets/aem-assets-collaborator-users.png)
 
-`Adobe Express` および `AEM Assets Collaborator Users` サービスは、デフォルトで有効になっています。必要に応じて、切替スイッチをオフ／オンにすることができますが、アドビでは、製品プロファイルに対して有効になっているデフォルトのサービスを使用することをお勧めします。
+`Adobe Express` および `AEM Assets Collaborator Users` サービスは、デフォルトで有効になっています。 必要に応じて、切替スイッチをオフ／オンにすることができますが、アドビでは、製品プロファイルに対して有効になっているデフォルトのサービスを使用することをお勧めします。
 
 ## AEM Assets パワーユーザーのオンボード {#onboard-power-users}
 
@@ -155,4 +155,23 @@ AEM Assets パワーユーザーは、アセット、権限、メタデータ、
 
 ![パワーユーザー向けサービス](assets/aem-assets-power-users.png)
 
-`Adobe Express` および `AEM Assets Power Users` サービスは、デフォルトで有効になっています。必要に応じて、切替スイッチをオフ／オンにすることができますが、アドビでは、製品プロファイルに対して有効になっているデフォルトのサービスを使用することをお勧めします。
+`Adobe Express` および `AEM Assets Power Users` サービスは、デフォルトで有効になっています。 必要に応じて、切替スイッチをオフ／オンにすることができますが、アドビでは、製品プロファイルに対して有効になっているデフォルトのサービスを使用することをお勧めします。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

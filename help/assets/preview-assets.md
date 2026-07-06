@@ -1,24 +1,24 @@
 ---
 title: AEM Sites ページで使用する前にアセットをプレビュー
-description: OpenAPI 機能を備えた Dynamic Media を使用すると、Adobe Experience Manager（AEM）Sites プレビューページでアセットをプレビューできます。このアセットプレビューを使用すると、オーサーページ（更新されたアセットを含む）を公開して一般公開する前に、ユーザーと関係者がアセットの更新内容を確認および検証できます。
+description: OpenAPI 機能を備えた Dynamic Media を使用すると、Adobe Experience Manager（AEM）Sites プレビューページでアセットをプレビューできます。 このアセットプレビューを使用すると、オーサーページ（更新されたアセットを含む）を公開して一般公開する前に、ユーザーと関係者がアセットの更新内容を確認および検証できます。
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 99%
+source-wordcount: '882'
+ht-degree: 97%
 
 ---
 
 
 # AEM Sites ページで使用する前にアセットをプレビュー {#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] を使用すると、[!DNL Adobe Experience Manager (AEM) Sites] オーサーページで使用可能なアセットを公開前にプレビューできます。アセットプレビューは、サイトのオーサー層とプレビュー層で使用できます。
+[!DNL Dynamic Media with OpenAPI capabilities] を使用すると、[!DNL Adobe Experience Manager (AEM) Sites] オーサーページで使用可能なアセットを公開前にプレビューできます。 アセットプレビューは、サイトのオーサー層とプレビュー層で使用できます。
 
-[AEM Sites のプレビューページでアセットをプレビュー](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)するには、プレビューするアセットを追加するか、ライブ Sites ページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。更新したオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
+[AEM Sites のプレビューページでアセットをプレビュー](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)するには、プレビューするアセットを追加するか、ライブ Sites ページで使用可能な既存のアセットを置き換えて、サイトのオーサーページを更新します。 更新したオーサーページをプレビュー層に公開して、プレビュー URL を生成します。
 
-プレビューページを関係者と共有し、更新したアセットのビジュアルの品質やコンテキストへの適合性についてフィードバックを収集します。フィードバックに基づいてアセットを絞り込みます。レビューサイクル中に、アセットの複数のバージョンを作成および管理します。
+プレビューページを関係者と共有し、更新したアセットのビジュアルの品質やコンテキストへの適合性についてフィードバックを収集します。 フィードバックに基づいてアセットを絞り込みます。 レビューサイクル中に、アセットの複数のバージョンを作成および管理します。
 
 アセットを公開用に確定したら、オーサーページでアセットを更新し、公開アクセス用にパブリッシュ層にページを公開します。
 
@@ -34,7 +34,7 @@ ht-degree: 99%
 
 ## Sites プレビューページでのアセットのプレビュー {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-新しいアセットや既に承認されているアセットをプレビューできます。承認済みアセットは、ライブ Sites ページにのみ表示されます。
+新しいアセットや既に承認されているアセットをプレビューできます。 承認済みアセットは、ライブ Sites ページにのみ表示されます。
 
 [!DNL Assets View] でアセットのステータスをプレビューに設定し、Sites オーサリングページをプレビュー層に公開して、ページのプレビュー URL を生成するには、次の手順を実行します。
 
@@ -52,26 +52,44 @@ ht-degree: 99%
    >
    > アセットセレクターには、最新のステータス更新が承認済みまたはプレビューに設定されたアセットが表示されます。
 
-1. 「**[!UICONTROL 公開を管理]**」オプションを使用して、ページをプレビュー層に公開します。[プレビューへのコンテンツの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)の節の手順を実行して、ページをプレビュー層に公開します。公開後、ページのプレビュー URL を生成します。プレビューページには、Sites ページのアセット（最新のステータス更新を含む）が表示されます。
+1. 「**[!UICONTROL 公開を管理]**」オプションを使用して、ページをプレビュー層に公開します。 [プレビューへのコンテンツの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)の節の手順を実行して、ページをプレビュー層に公開します。 公開後、ページのプレビュー URL を生成します。 プレビューページには、Sites ページのアセット（最新のステータス更新を含む）が表示されます。
 
-このプレビュー URL を関係者と共有し、レビューとフィードバックを得ます。関係者がプレビューページにアクセスできることを確認します。プレビューページへのアクセスを提供する方法について詳しくは、[プレビューサービスへのアクセス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)を参照してください。
+このプレビュー URL を関係者と共有し、レビューとフィードバックを得ます。 関係者がプレビューページにアクセスできることを確認します。 プレビューページへのアクセスを提供する方法について詳しくは、[プレビューサービスへのアクセス](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)を参照してください。
 
 >[!NOTE]
 >
->[画像 V3 コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)は、デフォルトでアセットのプレビューバージョンをサポートします。[アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントにより、プレビュー層（Sites オーサーページのプレビューバージョン）に自動的にレンダリングされます。
+>[画像 V3 コアコンポーネント](https://experienceleague.adobe.com/ja/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)は、デフォルトでアセットのプレビューバージョンをサポートします。 [アセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)パネルを使用してアセットのプレビューバージョン（プレビューステータスのアセット）を選択すると、画像 V3 コンポーネントにより、プレビュー層（Sites オーサーページのプレビューバージョン）に自動的にレンダリングされます。
 
 アセットバージョンを確定したら、[ページをパブリッシュ層に公開](#publish-your-pages-to-publish-tier)して一般公開します。
 
 ## 公開用に承認されたアセットを使用したページの公開{#publish-your-pages-to-publish-tier}
 
-公開用のアセットのバージョンを確定したら、アセットのステータスを「**[!UICONTROL 承認済み]**」に設定します。次に、ページをパブリッシュ層に公開します。ページを公開するには、次の手順を実行します。
+公開用のアセットのバージョンを確定したら、アセットのステータスを「**[!UICONTROL 承認済み]**」に設定します。 次に、ページをパブリッシュ層に公開します。 ページを公開するには、次の手順を実行します。
 
 1. 上記の「[サイトプレビューページでアセットをプレビューする](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)」セクションの手順 1 に従って、アセットのステータスを 「**[!UICONTROL 承認済み]**」に変更します。
-1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。「[ページエディターからの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)」セクションの手順を実行して、ページを公開します。または、「[Sites コンソールからのページの公開 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)」セクションの手順に従って、サイトのコンソールからページを公開します。
+1. Sites オーサーページに移動し、[!DNL Publish tier] に公開します。 「[ページエディターからの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)」セクションの手順を実行して、ページを公開します。または、「[Sites コンソールからのページの公開 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)」セクションの手順に従って、サイトのコンソールからページを公開します。
 
    >[!NOTE]
    >
-   > パブリッシュ層では、承認済みのアセットのみを配信できます。ページをパブリッシュ層に公開して一般公開する前に、アセットを承認します。
+   > パブリッシュ層では、承認済みのアセットのみを配信できます。 ページをパブリッシュ層に公開して一般公開する前に、アセットを承認します。
 
-   ![ページが公開されました](/help/assets/assets/the-page-has-been-publushed.png)
-公開に成功すると、「**[!UICONTROL ページが公開されました]**」という確認メッセージが表示されます。パブリッシュ層で公開済みのページに移動し、更新がライブであり、コンテンツが期待どおりに表示されることを確認します。
+   ![&#x200B; ページが公開されました](/help/assets/assets/the-page-has-been-publushed.png)
+確認メッセージ **[!UICONTROL ページが公開されました]**&#x200B;は、公開後に表示されます。 パブリッシュ層で公開済みのページに移動し、更新がライブであり、コンテンツが期待どおりに表示されることを確認します。
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

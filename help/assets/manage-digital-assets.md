@@ -7,9 +7,9 @@ feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f06e04efec715413306b41be82328fba24c31404
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '4541'
+source-wordcount: '4547'
 ht-degree: 93%
 
 ---
@@ -311,7 +311,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 必要に応じて「**[!UICONTROL 公開]**」オプションまたは「**[!UICONTROL 非公開]**」オプションを選択します。
 
-   ![非公開アクション](assets/unpublish_action.png)
+   !&lbrack;非公開アクション
    *図：公開および非公開のオプションとスケジュールオプション。*
 
 1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。 「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
@@ -683,16 +683,19 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

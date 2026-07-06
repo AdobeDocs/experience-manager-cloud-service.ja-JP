@@ -6,24 +6,24 @@ feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '852'
 ht-degree: 99%
 
 ---
 
 # [!DNL Adobe Creative Cloud] 統合を使用したアセットバリエーションの生成 {#content-automation}
 
-コンテンツ自動処理アドオンは、[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] API と [!DNL Adobe Creative Cloud] API を統合して、大規模なアセットをクリエイティブに処理します。[!DNL Experience Manager] では、クラウドベースの[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を利用して、[!DNL Adobe Creative Cloud] 機能を使用し、アセットの作成とメディアの処理を自動化します。
+コンテンツ自動処理アドオンは、[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] API と [!DNL Adobe Creative Cloud] API を統合して、大規模なアセットをクリエイティブに処理します。 [!DNL Experience Manager] では、クラウドベースの[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を利用して、[!DNL Adobe Creative Cloud] 機能を使用し、アセットの作成とメディアの処理を自動化します。
 
-[!DNL Adobe Photoshop] と [!DNL Adobe Lightroom] のアセットを編集する場合、[!DNL Experience Manager Assets] からアセットをダウンロードして編集して、再度アップロードする必要はありません。[!DNL Experience Manager] で処理プロファイルを作成および設定し、そのプロファイルをフォルダーに適用して、そのフォルダーにアセットをアップロードします。アップロードしたアセットは、処理プロファイルに基づいて再処理され、これらのアセットのバリエーションが得られます。一貫した手間のかからない一括処理により、手作業が不要になるのでコンテンツの作成速度が向上し、しかも優れたクリエイティブスキルを必要としません。また、開発者とパートナーは、これらの API に直接アクセスしてアセットマイクロサービスを拡張し、カスタムロジックを組み込むこともできます。
+[!DNL Adobe Photoshop] と [!DNL Adobe Lightroom] のアセットを編集する場合、[!DNL Experience Manager Assets] からアセットをダウンロードして編集して、再度アップロードする必要はありません。 [!DNL Experience Manager] で処理プロファイルを作成および設定し、そのプロファイルをフォルダーに適用して、そのフォルダーにアセットをアップロードします。 アップロードしたアセットは、処理プロファイルに基づいて再処理され、これらのアセットのバリエーションが得られます。 一貫した手間のかからない一括処理により、手作業が不要になるのでコンテンツの作成速度が向上し、しかも優れたクリエイティブスキルを必要としません。 また、開発者とパートナーは、これらの API に直接アクセスしてアセットマイクロサービスを拡張し、カスタムロジックを組み込むこともできます。
 
 ユーザーは、処理プロファイルを作成して、アセットに対する次のクリエイティブな操作を自動化できます。
 
 * **自動トーン**：人工知能を利用して画像の内容を分析し、画像の固有の属性に基づいて光と色の補正をインテリジェントに行います。
 
-* **自動アップライト**：人工知能を利用して、画像の内容を分析し画像のゆがみを修正します。例えば、平らな水平面を作成する場合などです。
+* **自動アップライト**：人工知能を利用して、画像の内容を分析し画像のゆがみを修正します。 例えば、平らな水平面を作成する場合などです。
 
   ![自動トーン](/help/assets/assets/content-automation-autotone.png)
 
@@ -87,13 +87,13 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 
    ![[!UICONTROL クリエイティブ]タブ：[!UICONTROL 処理プロファイル]](assets/creative-processing-profile.png)
 
-1. 一部の操作には、追加のパラメーター（アセット）が必要です。必要に応じて、これらの追加パラメーターの値を指定します。
+1. 一部の操作には、追加のパラメーター（アセット）が必要です。 必要に応じて、これらの追加パラメーターの値を指定します。
 
 1. 同じ処理プロファイルの一部として、さらにクリエイティブ操作を追加するか、プロファイルを保存します。
 
-1. 処理プロファイルをフォルダーに適用します。フォルダーの&#x200B;**[!UICONTROL プロパティ]**&#x200B;ページで、「**[!UICONTROL アセット処理]**」を選択し、適用する処理プロファイルを選択します。
+1. 処理プロファイルをフォルダーに適用します。 フォルダーの&#x200B;**[!UICONTROL プロパティ]**&#x200B;ページで、「**[!UICONTROL アセット処理]**」を選択し、適用する処理プロファイルを選択します。
 
-処理プロファイルを DAM フォルダーに適用すると、このフォルダーにアップロードされたアセットやこのフォルダーで更新されたすべてのアセットで、標準の処理に加えて、定義済みの操作が実行されます。サブフォルダーは、親フォルダーに適用されたプロファイルと同じプロファイルを継承します。ユーザーは、この継承をオーバーライドできます。
+処理プロファイルを DAM フォルダーに適用すると、このフォルダーにアップロードされたアセットやこのフォルダーで更新されたすべてのアセットで、標準の処理に加えて、定義済みの操作が実行されます。 サブフォルダーは、親フォルダーに適用されたプロファイルと同じプロファイルを継承します。 ユーザーは、この継承をオーバーライドできます。
 
 既存のアセットを処理するには、アセットを選択し、「**[!UICONTROL 再処理]**」オプションを選択したあと、必要な処理プロファイルを選択します。
 
@@ -106,18 +106,20 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]

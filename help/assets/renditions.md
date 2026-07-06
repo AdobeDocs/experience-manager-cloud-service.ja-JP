@@ -5,25 +5,24 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: ae834c77b2f2a12cac3dde132a2357d72353cb55
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 82%
+source-wordcount: '779'
+ht-degree: 84%
 
 ---
 
 # Experience Manager Assets でのレンディションの表示と管理{#renditions}
 
-Adobe Experience Manager（AEM）のレンディションは、最適なパフォーマンスを確保することを目的に、様々なデバイスやプラットフォーム向けに設計された、画像などのデジタルアセットのカスタマイズされたバージョンです。AEM を使用すると、これらのレンディションを簡単に作成および管理し、ユーザーエクスペリエンスを向上させることができます。サムネールの作成、web またはモバイル用の画像の最適化、透かしの追加、動的レンディションやスマート切り抜きレンディションの表示とダウンロードなどを行うことができます。
+Adobe Experience Manager（AEM）のレンディションは、最適なパフォーマンスを確保することを目的に、様々なデバイスやプラットフォーム向けに設計された、画像などのデジタルアセットのカスタマイズされたバージョンです。 AEM を使用すると、これらのレンディションを簡単に作成および管理し、ユーザーエクスペリエンスを向上させることができます。 サムネールの作成、web またはモバイル用の画像の最適化、透かしの追加、動的レンディションやスマート切り抜きレンディションの表示とダウンロードなどを行うことができます。
 
-Dynamic Media 画像プリセットおよびスマート切り抜きレンディションは、ブランド標準に準拠した体系的な画像管理を促進し、ブランドの統一性を最大限に高めます。これにより、管理者アクセス権を持たずに、必要に応じて動的画像レンディションをすばやく見つけて使用するプロセスが簡素化されます。
+Dynamic Media 画像プリセットおよびスマート切り抜きレンディションは、ブランド標準に準拠した体系的な画像管理を促進し、ブランドの統一性を最大限に高めます。 これにより、管理者アクセス権を持たずに、必要に応じて動的画像レンディションをすばやく見つけて使用するプロセスが簡素化されます。
 
 レンディションは静的と動的に分類され、各タイプには独自の機能と能力がありますが、これらについてさらに詳しく説明します。
 
 ## 静的レンディション {#static-renditions}
 
-静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。これらのレンディションは、web サムネール、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度バージョンなど、特定の目的とプラットフォーム用に最適化され、効率的で一貫したエクスペリエンスを確保します。
-詳しくは、Experience Manager Assets で[静的レンディションの表示とダウンロード](#view-and-download-static-renditions)を行う方法を参照してください。
+静的レンディションは、デジタルアセットの事前生成されたバージョンで、通常はアセットの取り込みまたは変更中に作成されます。 これらのレンディションは、web サムネール、レスポンシブデザイン用のモバイルに対応した形式、印刷用の高解像度バージョンなど、特定の目的とプラットフォーム用に最適化され、効率的で一貫したエクスペリエンスを確保します。詳しくは、Experience Manager Assets で[静的レンディションの表示とダウンロード](#view-and-download-static-renditions)を行う方法を参照してください。
 
 ### 静的レンディションの表示とダウンロード{#view-and-download-static-renditions}
 
@@ -37,8 +36,7 @@ Dynamic Media 画像プリセットおよびスマート切り抜きレンディ
 
 ## 動的レンディション {#dynamic-renditions}
 
-動的レンディションは、特定のニーズに合うようにリアルタイムで作成される、カスタマイズされたアセットバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。
-これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。Experience Manager Assets で動的レンディションを表示およびダウンロードできます。
+動的レンディションは、特定のニーズに合うようにリアルタイムで作成される、カスタマイズされたアセットバージョンです。例えば、デバイスの解像度に基づく画像のサイズ変更や、様々な縦横比に合わせた切り抜きなどです。これらのレンディションにより、組織は、様々なオーディエンスニーズに合わせて、パーソナライズされ最適化されたエクスペリエンスを提供できます。 Experience Manager Assets で動的レンディションを表示およびダウンロードできます。
 
 ## Dynamic Media レンディション {#dynamic-media-renditions}
 
@@ -50,7 +48,7 @@ Dynamic Media 画像プリセットおよびスマート切り抜きレンディ
    * [画像プリセット](/help/assets/dynamic-media/managing-image-presets.md)
 
   後で[ビューを切り替えて](/help/assets/assets-view-introduction.md#how-to-access-assets-view)、アセットビューで動的レンディションをプレビューできます。
-* アセットを Dynamic Media に公開すると、アセットビューで Dynamic Media レンディションを使用できます。詳しくは、[AEM および Dynamic Media へのアセットの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)を参照してください。
+* アセットを Dynamic Media に公開すると、アセットビューで Dynamic Media レンディションを使用できます。 詳しくは、[AEM および Dynamic Media へのアセットの公開](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)を参照してください。
 
 
 ### Dynamic Media レンディションの表示とダウンロード {#view-download-dm-renditions}
@@ -63,12 +61,12 @@ Experience Manager Assets で画像の動的レンディションを表示また
 
 1. 表示する必要があるアセットをクリックし、「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 右側のメニューで、**[!UICONTROL Dynamic Media]** アイコンをクリックします。**[!UICONTROL Dynamic Media]** パネルには、Dynamic Media レンディションとスマート切り抜きレンディションが表示されます。
+1. 右側のメニューで、**[!UICONTROL Dynamic Media]** アイコンをクリックします。 **[!UICONTROL Dynamic Media]** パネルには、Dynamic Media レンディションとスマート切り抜きレンディションが表示されます。
 
    ![動的レンディション](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
-1. プレビューするレンディションを選択し、「**URL をコピー**」をクリックして、選択したレンディションの URL をコピーします。「**レンディションをダウンロード**」をクリックして、画像アセットのレンディションをダウンロードします。
+1. プレビューするレンディションを選択し、「**URL をコピー**」をクリックして、選択したレンディションの URL をコピーします。 「**レンディションをダウンロード**」をクリックして、画像アセットのレンディションをダウンロードします。
 1. プレビューするスマート切り抜きレンディションを選択し、「**URL をコピー**」をクリックして、選択したレンディションの URL をコピーします。
 1. ![ダウンロードアイコン](assets/do-not-localize/download-icon.png) をクリックして、使用可能なすべてのスマート切り抜きレンディションを 1 つの zip ファイルとしてダウンロードします。
    ![ダウンロードアイコン](/help/assets/assets/download-op.png)
@@ -88,10 +86,27 @@ Experience Manager Assets で画像の動的レンディションを表示また
 ### OpenAPI 機能搭載 Dynamic Media レンディションの表示 {#view-download-dm-with-openapi-renditions}
 
 1. アセットを選択し、「**詳細**」をクリックします。
-1. 右側のパネルにあるDynamic Media アイコンをクリックします。 ダイナミックメディアパネルには、サポートされているアセットタイプのベースレンディション、ダイナミックレンディション、スマート切り抜きレンディションが表示されます（該当する場合）。
-   ![ダウンロードアイコン](/help/assets/assets/new-new1.png)
+1. 右側のパネルにあるDynamic Media アイコンをクリックします。 ダイナミックメディアパネルには、サポートされているアセットタイプのベースレンディション、ダイナミックレンディション、スマート切り抜きレンディションが表示されます（該当する場合）。   ![ダウンロードアイコン](/help/assets/assets/new-new1.png)
 1. 「**ベースレンディション**」を選択し、**URLをコピー**&#x200B;してアセットの配信URLをコピーするか、**レンディションをダウンロード**&#x200B;してアセットをダウンロードします。
 
 リポジトリでScene7 （Dynamic Media）とOpenAPI機能を備えたDynamic Mediaの両方が有効になっている場合、ユーザーインターフェイスで切り替えオプションを使用して、2つを切り替えることができます。 表示されるレンディションと、生成されたURLは、選択した設定に基づいて更新されます。
 
 ![&#x200B; オプションの切り替え](/help/assets/assets/new-new2.png)
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

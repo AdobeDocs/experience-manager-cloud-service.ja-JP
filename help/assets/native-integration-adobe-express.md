@@ -5,10 +5,10 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 0026550effc426691a4d63faf169ecd7b9228a57
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '4335'
-ht-degree: 11%
+source-wordcount: '4378'
+ht-degree: 12%
 
 ---
 
@@ -395,3 +395,21 @@ AEM Assets経由のAdobe Expressでは、次のファイルサイズとサイズ
 
 AEM AssetsとAdobe Expressの統合では、MP4が唯一のビデオファイルタイプとしてサポートされ、インポートとエクスポートの両方が可能です。 MP4 ビデオの読み込みでは、透明な背景（アルファチャンネル）を持つビデオはサポートされていません。 MP4 ビデオの書き出しの場合、サポートされる最大ファイルサイズは200 MBです。 書き出しファイルサイズが200 MBを超える場合は、ビデオを200 MB以下にトリミングするか、ローカルにダウンロードした後にビデオを手動でAEM Assetsの保存先フォルダーにアップロードすることをお勧めします。
 
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

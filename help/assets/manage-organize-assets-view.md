@@ -6,9 +6,9 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1730'
 ht-degree: 99%
 
 ---
@@ -47,8 +47,7 @@ ht-degree: 99%
 
 * ![移動アイコン](assets/do-not-localize/move-icon.png) 選択したアセットまたはフォルダーをリポジトリ階層内の別の場所に移動します。
 
-* ![名前変更アイコン](assets/do-not-localize/rename-icon.png) 選択したアセットまたはフォルダーの名前を変更します。 一意の名前を使用しないと、名前を変更しても警告が表示されて失敗します。 その場合は、新しい名前でもう一度やり直すことができます。
-また、アセットまたはフォルダーのタイトルをクリックして名前を変更することもできます。 「**アセット名を変更**」テキストボックスに新しいテキストを入力し、「**保存**」をクリックします。 この機能は、グリッド、ギャラリー、ウォーターフォール、リストの各表示で利用できます。
+* ![名前変更アイコン](assets/do-not-localize/rename-icon.png) 選択したアセットまたはフォルダーの名前を変更します。 一意の名前を使用しないと、名前を変更しても警告が表示されて失敗します。 その場合は、新しい名前でもう一度やり直すことができます。また、アセットまたはフォルダーのタイトルをクリックして名前を変更することもできます。 「**アセット名を変更**」テキストボックスに新しいテキストを入力し、「**保存**」をクリックします。 この機能は、グリッド、ギャラリー、ウォーターフォール、リストの各表示で利用できます。
 
 * ![ウォーターフォール表示アイコン](assets/do-not-localize/waterfall-view.png) [!UICONTROL ウォーターフォール表示]。
 
@@ -102,15 +101,15 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### アセットのバージョンの表示と比較 {#view-and-compare-versions}
 
-アセットの複製コピーや変更済みコピーをアップロードして、そのコピーのバージョンを作成します。バージョン管理により、アセットへの変更を時間の経過と共に追跡し、必要に応じて以前のバージョンに戻すことができます。
+アセットの複製コピーや変更済みコピーをアップロードして、そのコピーのバージョンを作成します。 バージョン管理により、アセットへの変更を時間の経過と共に追跡し、必要に応じて以前のバージョンに戻すことができます。
 
 バージョンを表示および比較するには：
 
 1. アセットの詳細ページに移動します。
-1. 右側のパネルで ![バージョン](/help/assets/assets/Clock.svg) をクリックし、**[!UICONTROL バージョン]**&#x200B;パネルを表示します。このパネルには、元のアセットとそのアップロードしたバージョンのサムネールが表示されます。
+1. 右側のパネルで ![バージョン](/help/assets/assets/Clock.svg) をクリックし、**[!UICONTROL バージョン]**&#x200B;パネルを表示します。 このパネルには、元のアセットとそのアップロードしたバージョンのサムネールが表示されます。
 1. パネルでバージョンを選択して、プレビュー領域でプレビューします。
 1. 最新以外のバージョンを選択し、「**[!UICONTROL 最新にする]**」をクリックして、最新バージョンとして設定します。
-1. プレビューのスライダーを左右にドラッグして、選択したバージョンの画像とその最新バージョンを 1 つのプレビューですばやく確認します。これにより、選択したバージョンの画像を最新バージョンと簡単に比較できます。
+1. プレビューのスライダーを左右にドラッグして、選択したバージョンの画像とその最新バージョンを 1 つのプレビューですばやく確認します。 これにより、選択したバージョンの画像を最新バージョンと簡単に比較できます。
 
    >[!NOTE]
    >
@@ -138,7 +137,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 **必要な権限：** `Can Edit`、`Owner` またはアセットに対する管理者権限。
 
-アセットビューでは、リポジトリで使用可能なアセットのステータスを設定できます。デジタルアセットのダウンストリーム使用をより適切に制御および管理するためのアセットステータスを設定します。
+アセットビューでは、リポジトリで使用可能なアセットのステータスを設定できます。 デジタルアセットのダウンストリーム使用をより適切に制御および管理するためのアセットステータスを設定します。
 
 アセットに対して次のステータスを設定できます。
 
@@ -154,8 +153,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
-環境用に OpenAPI 機能を備えた Dynamic Media がプロビジョニングされている場合、アセットを `Approved` としてマークするとすぐに、Experience Manager Assets によって公開 URL が生成されます。
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。 可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。環境用に OpenAPI 機能を備えた Dynamic Media がプロビジョニングされている場合、アセットを `Approved` としてマークするとすぐに、Experience Manager Assets によって公開 URL が生成されます。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
@@ -169,13 +167,13 @@ You can also create versions from the versions timeline. Select the latest versi
 
 1. アセットを選択し、ツールバーの「**[!UICONTROL 詳細]**」をクリックします。
 
-1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
+1. 「**[!UICONTROL 基本]**」タブで、**[!UICONTROL ステータス]**&#x200B;ドロップダウンリストからアセットのステータスを選択します。 可能な値は、「承認済み」、「却下」、「ステータスなし」（デフォルト）です。
 
-1. 手順 2 で「**承認済み**」を選択した場合は、承認ターゲットを選択します。可能な値には、配信とコンテンツハブが含まれます。
+1. 手順 2 で「**承認済み**」を選択した場合は、承認ターゲットを選択します。 可能な値には、配信とコンテンツハブが含まれます。
 
    * 「**配信**」は、ドロップダウンメニューで選択されるデフォルトのオプションであり、[OpenAPI を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) と[コンテンツハブ](/help/assets/product-overview.md)の両方に（Experience Manager Assets で両方が有効になっている場合）アセットを公開します。
 
-   * 「**コンテンツハブ**」を選択すると、アセットはコンテンツハブにのみ公開されます。コンテンツハブは、Experience Manager Assets で有効になっている場合にのみオプションとして表示されます。
+   * 「**コンテンツハブ**」を選択すると、アセットはコンテンツハブにのみ公開されます。 コンテンツハブは、Experience Manager Assets で有効になっている場合にのみオプションとして表示されます。
 
    * ドロップダウンリストからオプションを選択しない場合は、AEM as a Cloud Service 環境で有効になっているデフォルトのオプションがアセットに自動的に適用されます。
 
@@ -205,7 +203,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 ### アセットの有効期限を設定 {#set-asset-expiration-date}
 
-また、アセットビューでは、リポジトリで使用可能なアセットの有効期限を設定することもできます。その後、アセットの `Expired` ステータスに基づいて[検索結果をフィルタリング](search-assets-view.md#refine-search-results)できます。 また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
+また、アセットビューでは、リポジトリで使用可能なアセットの有効期限を設定することもできます。 その後、アセットの `Expired` ステータスに基づいて[検索結果をフィルタリング](search-assets-view.md#refine-search-results)できます。 また、アセットの有効期限の日付範囲を指定して、検索結果をさらにフィルタリングすることもできます。
 
 アセットの有効期限を設定するには：
 
@@ -221,7 +219,7 @@ You can also create versions from the versions timeline. Select the latest versi
 
 **必要な権限：**&#x200B;管理者
 
-アセットビューには、多数の標準メタデータフィールドがデフォルトで用意されています。組織には、追加のメタデータニーズがあり、ビジネス固有のメタデータを追加するために、さらに多くのメタデータフィールドが必要です。 メタデータフォームを使用すると、ビジネスごとにアセットの[!UICONTROL 詳細]ページにカスタムメタデータフィールドを追加できます。 ビジネス固有のメタデータにより、アセットのガバナンスと検出が向上します。
+アセットビューには、多数の標準メタデータフィールドがデフォルトで用意されています。 組織には、追加のメタデータニーズがあり、ビジネス固有のメタデータを追加するために、さらに多くのメタデータフィールドが必要です。 メタデータフォームを使用すると、ビジネスごとにアセットの[!UICONTROL 詳細]ページにカスタムメタデータフィールドを追加できます。 ビジネス固有のメタデータにより、アセットのガバナンスと検出が向上します。
 
 メタデータフォームにメタデータフィールドを追加する方法について詳しくは、[メタデータフォーム](metadata-assets-view.md#metadata-forms)を参照してください。
 
@@ -231,15 +229,32 @@ You can also create versions from the versions timeline. Select the latest versi
 
 **有効期限の日付メタデータフィールドのフォームへの追加**
 
-有効期限の日付メタデータフィールドをフォームに追加するには、左側のパネルから、**[!UICONTROL 日付]**&#x200B;コンポーネントをフォームにドラッグします。**有効期限**&#x200B;をラベル、`pur:expirationDate` をマッピングプロパティとして指定します。 フォームを保存して、変更を確定します。
+有効期限の日付メタデータフィールドをフォームに追加するには、左側のパネルから、**[!UICONTROL 日付]**&#x200B;コンポーネントをフォームにドラッグします。 **有効期限**&#x200B;をラベル、`pur:expirationDate` をマッピングプロパティとして指定します。 フォームを保存して、変更を確定します。
 
 ## 次の手順 {#next-steps}
 
-* [ビデオを視聴してアセットビューでのアセットの管理を学ぶ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets-essentials/basics/managing)
+* [Assets ビューでアセットを管理するビデオを見る](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets-essentials/basics/managing)
 
-* アセットビューのユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して製品に関するフィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
 * [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
 
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

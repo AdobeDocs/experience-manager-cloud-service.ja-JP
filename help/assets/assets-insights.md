@@ -6,9 +6,9 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '941'
 ht-degree: 99%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 99%
 | AEM 6.5 | [ここをクリックしてください](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=ja) |
 | AEM as a Cloud Service | この記事 |
 
-アセットインサイトの機能を使用すると、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡できます。これにより、画像のパフォーマンスと人気に関するインサイトが提供されます。
+アセットインサイトの機能を使用すると、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡できます。 これにより、画像のパフォーマンスと人気に関するインサイトが提供されます。
 
-アセットインサイトでは、画像の評価回数、クリック数、インプレッション数（画像が Web サイトに読み込まれた回数）など、ユーザーのアクティビティの詳細を取得します。これらの統計情報に基づいて画像にスコアを割り当てます。スコアとパフォーマンス統計を使用して、人気が高い画像を選び、カタログやマーケティングキャンペーンなどに含めることができます。このような統計に基づいて、アーカイブやライセンス更新のポリシーを策定することもできます。
+アセットインサイトでは、画像の評価回数、クリック数、インプレッション数（画像が Web サイトに読み込まれた回数）など、ユーザーのアクティビティの詳細を取得します。 これらの統計情報に基づいて画像にスコアを割り当てます。 スコアとパフォーマンス統計を使用して、人気が高い画像を選び、カタログやマーケティングキャンペーンなどに含めることができます。 このような統計に基づいて、アーカイブやライセンス更新のポリシーを策定することもできます。
 
 アセットインサイトが画像の使用状況統計を web サイトから取得するためには、画像の埋め込みコードを web サイトのコードに組み込む必要があります。
 
-アセットインサイトでアセットの使用状況統計を表示できるようにするには、最初に [!DNL Adobe Analytics] からのレポートデータをフェッチするようにこの機能を設定します。詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。この機能を使用するには、[!DNL Adobe Analytics] ライセンスを別途購入してください。
+アセットインサイトでアセットの使用状況統計を表示できるようにするには、最初に [!DNL Adobe Analytics] からのレポートデータをフェッチするようにこの機能を設定します。 詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。 この機能を使用するには、[!DNL Adobe Analytics] ライセンスを別途購入してください。
 
 >[!NOTE]
 >
@@ -38,13 +38,13 @@ ht-degree: 99%
 
 1. Assets ユーザーインターフェイスから、画像を選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 1. プロパティページで、「**[!UICONTROL インサイト]**」をクリックします。
-1. 「**[!UICONTROL インサイト]**」タブで、アセットの使用状況の詳細を確認します。「**[!UICONTROL スコア]**」セクションには、アセットの全体的な使用状況とパフォーマンスのスコアが表示されます。
+1. 「**[!UICONTROL インサイト]**」タブで、アセットの使用状況の詳細を確認します。 「**[!UICONTROL スコア]**」セクションには、アセットの全体的な使用状況とパフォーマンスのスコアが表示されます。
 
    使用状況のスコアは、アセットが様々なソリューションで使用された回数です。
 
-   「**[!UICONTROL インプレッション数]**」のスコアは、アセットが web サイトに読み込まれた回数です。「**[!UICONTROL クリック数]**」の下に表示される数値は、アセットがクリックされた回数です。
+   「**[!UICONTROL インプレッション数]**」のスコアは、アセットが web サイトに読み込まれた回数です。 「**[!UICONTROL クリック数]**」の下に表示される数値は、アセットがクリックされた回数です。
 
-1. 「**[!UICONTROL 使用状況の統計]**」セクションを見て、アセットが含まれているエンティティや最近使用されたクリエイティブソリューションを確認します。使用率が高いほど、ユーザーの間で人気のあるアセットであることを意味します。使用状況データは、次の見出しの下に表示されます。
+1. 「**[!UICONTROL 使用状況の統計]**」セクションを見て、アセットが含まれているエンティティや最近使用されたクリエイティブソリューションを確認します。 使用率が高いほど、ユーザーの間で人気のあるアセットであることを意味します。 使用状況データは、次の見出しの下に表示されます。
 
    * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数
    * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数
@@ -55,9 +55,9 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >アセットインサイト機能は、通常 [!DNL Adobe Analytics] のソリューションデータを定期的にフェッチするので、「ソリューション」セクションには最新データが表示されていない場合があります。表示されるデータが対応する期間は、アセットインサイトが Analytics のデータを取得するために実行するフェッチ操作のスケジュールによって決まります。
+   >アセットインサイト機能は、通常 [!DNL Adobe Analytics] のソリューションデータを定期的にフェッチするので、「ソリューション」セクションには最新データが表示されていない場合があります。 表示されるデータが対応する期間は、アセットインサイトが Analytics のデータを取得するために実行するフェッチ操作のスケジュールによって決まります。
 
-1. 特定の期間のアセットのパフォーマンス統計をグラフィカルに表示するには、「**[!UICONTROL パフォーマンス統計]**」セクションで期間を選択します。クリック数やインプレッション数などの詳細がグラフの傾向線として表示されます。
+1. 特定の期間のアセットのパフォーマンス統計をグラフィカルに表示するには、「**[!UICONTROL パフォーマンス統計]**」セクションで期間を選択します。 クリック数やインプレッション数などの詳細がグラフの傾向線として表示されます。
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -75,7 +75,7 @@ ht-degree: 99%
 
 1. Assets ユーザーインターフェイスで、インサイトを表示するアセットを含むフォルダーに移動します。
 1. ツールバーの「**[!UICONTROL レイアウト]**」オプションをクリックして、「**[!UICONTROL インサイト表示]**」を選択します。
-1. このページには、アセットの使用状況スコアが表示されます。様々なアセットの評価を比較し、インサイトを引き出します。
+1. このページには、アセットの使用状況スコアが表示されます。 様々なアセットの評価を比較し、インサイトを引き出します。
 
 <!--
  TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -94,7 +94,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 ## アセットインサイトの設定 {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。アセットインサイトでこのようなデータを取得して洞察を得るためには、まず、[!DNL Adobe Analytics] と連携するようにこの機能を設定します。
+[!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。 アセットインサイトでこのようなデータを取得して洞察を得るためには、まず、[!DNL Adobe Analytics] と連携するようにこの機能を設定します。
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 認証が成功すると、ドロップダウンにレポートスイートが表示されます。Assets Insights でデータを取得する場所から Adobe Analytics **[!UICONTROL レポートスイート]** を選択します。「**[!UICONTROL 追加]**」をクリックします。
+1. 認証が成功すると、ドロップダウンにレポートスイートが表示されます。 Assets Insights でデータを取得する場所から Adobe Analytics **[!UICONTROL レポートスイート]** を選択します。 「**[!UICONTROL 追加]**」をクリックします。
 
 1. [!DNL Experience Manager] でレポートスイートが設定されたら、「**[!UICONTROL 完了]**」をタップします。
 
@@ -124,7 +124,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 ### ページトラッカー {#page-tracker}
 
-Adobe Analytics アカウントを設定すると、ページトラッカーコードが生成されます。サードパーティの Web サイトで使用されている [!DNL Experience Manager] アセットをアセットインサイトで追跡できるようにするには、Web サイトコードにトラッカーコードを組み込みます。Assets のページトラッカーユーティリティを使用してページトラッカーコードを生成してください。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Adobe Analytics アカウントを設定すると、ページトラッカーコードが生成されます。 サードパーティの Web サイトで使用されている [!DNL Experience Manager] アセットをアセットインサイトで追跡できるようにするには、Web サイトコードにトラッカーコードを組み込みます。 Assets のページトラッカーユーティリティを使用してページトラッカーコードを生成してください。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. [!DNL Experience Manager] で&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL アセット]**&#x200B;をクリックします。
 
@@ -185,16 +185,19 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

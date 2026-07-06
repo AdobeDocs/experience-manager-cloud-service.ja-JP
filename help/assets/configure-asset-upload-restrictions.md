@@ -1,13 +1,13 @@
 ---
 title: アセットのアップロード制限を設定する
-description: 'Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。 '
+description: Adobe Experience Manager Assets を設定して、ユーザーがアップロードできるアセットのタイプを MIME タイプに基づいて制限します。 これにより、望ましくない形式や悪意のあるファイルが誤ってアップロードされるのを防ぐことができます。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 98%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 
 >[!IMPORTANT]
 >
->デフォルトでは、Experience Manager Assets はユーザーに対して、すべての MIME タイプのアセットのアップロードを許可します。ただし設定を構成して、ユーザーが特定の MIME タイプのファイルのみをアップロードできるように制限することができます。
+>デフォルトでは、Experience Manager Assets はユーザーに対して、すべての MIME タイプのアセットのアップロードを許可します。 ただし設定を構成して、ユーザーが特定の MIME タイプのファイルのみをアップロードできるように制限することができます。
 
 ## 前提条件 {#prerequisites-asset-upload-restrictions}
 
@@ -34,7 +34,7 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 
 1. 「**[!UICONTROL 追加]**」をクリックして、許可される MIME タイプを定義します。
 
-1. テキストボックスに MIME タイプを指定します。 「**[!UICONTROL 追加]**」をもう一度クリックして、その他の許可される MIME タイプをさらに指定することができます。また、「![アイコンを削除](assets/delete-icon.svg)」をクリックして、MIME タイプをリストから削除することもできます。
+1. テキストボックスに MIME タイプを指定します。 「**[!UICONTROL 追加]**」をもう一度クリックして、その他の許可される MIME タイプをさらに指定することができます。 また、「![アイコンを削除](assets/delete-icon.svg)」をクリックして、MIME タイプをリストから削除することもできます。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -62,16 +62,19 @@ Adobe Experience Manager Assets を設定して、ユーザーがアップロー
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

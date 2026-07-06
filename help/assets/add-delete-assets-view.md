@@ -5,10 +5,10 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 99%
+source-wordcount: '891'
+ht-degree: 98%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 99%
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
 -->
 
-上記の方法のいずれかを使用して、フォルダーの作成後にアセットをアップロードできます。空のフォルダーを作成するには、ツールバーの「**[!UICONTROL フォルダーを作成]**」をクリックします。[!DNL Assets view] は強力なフルテキスト検索機能を提供しますが、フォルダーを使用してアセットを適切に整理することもできます。
+上記の方法のいずれかを使用して、フォルダーの作成後にアセットをアップロードできます。 空のフォルダーを作成するには、ツールバーの「**[!UICONTROL フォルダーを作成]**」をクリックします。 [!DNL Assets view] は強力なフルテキスト検索機能を提供しますが、フォルダーを使用してアセットを適切に整理することもできます。
 
-ファイルを選択すると、確認ダイアログが表示され、さらにファイルを追加したり、既に選択したファイルを削除したりできます。選択した宛先にファイルを追加するには、「**[!UICONTROL ファイルを参照]**」をクリックし、「**[!UICONTROL ファイルを参照]**」または「**[!UICONTROL フォルダーを参照]**」を選択します。同じフォルダーまたは別のフォルダーから、さらにファイルまたはフォルダーを追加します。
+ファイルを選択すると、確認ダイアログが表示され、さらにファイルを追加したり、既に選択したファイルを削除したりできます。 選択した宛先にファイルを追加するには、「**[!UICONTROL ファイルを参照]**」をクリックし、「**[!UICONTROL ファイルを参照]**」または「**[!UICONTROL フォルダーを参照]**」を選択します。 同じフォルダーまたは別のフォルダーから、さらにファイルまたはフォルダーを追加します。
 
 すべてのファイルがキューに入ったら、「**[!UICONTROL アップロード]**」をクリックします。
 
@@ -38,21 +38,21 @@ ht-degree: 99%
 
 >[!TIP]
 >
->フォルダー構造をアセットビューにアップロードする場合、フォルダー構造を含んだ .ZIP ファイルを作成する必要はなく、フォルダー構造を直接アップロードできます。アセットビューにアップロードされた .ZIP ファイルは 1 つの ZIP アセットとして保存され、アップロード後に自動的には抽出されません。
+>フォルダー構造をアセットビューにアップロードする場合、フォルダー構造を含んだ .ZIP ファイルを作成する必要はなく、フォルダー構造を直接アップロードできます。 アセットビューにアップロードされた .ZIP ファイルは 1 つの ZIP アセットとして保存され、アップロード後に自動的には抽出されません。
 
 ## アップロードの進行状況とステータスの表示 {#upload-progress}
 
 多数のアセットまたはネストしたフォルダーを [!DNL Assets view] にアップロードする場合、アセットの重複やネットワークの問題など、様々な理由で一部のアセットのアップロードに失敗することがあります。
 
-アップロードの進行状況を追跡するには、ツールバーの「**[!UICONTROL アップロードの進行状況]**」オプションをクリックします。すべてのアセットのアップロードの進行状況がパネルに表示されます。
+アップロードの進行状況を追跡するには、ツールバーの「**[!UICONTROL アップロードの進行状況]**」オプションをクリックします。 すべてのアセットのアップロードの進行状況がパネルに表示されます。
 
-アップロードの進行状況またはステータスに基づいてアセットのサブセットを表示するには、**[!UICONTROL アップロードの進行状況]**&#x200B;サイドバーのフィルターを使用します。様々なフィルターがあり、それぞれ、すべてのアセット、完了したアップロード、進行中のアップロード、キューに入れられたアップロード対象アセット、一時停止したアップロード、重複したアセット、アップロードに失敗したアセットの表示に使用されます。
+アップロードの進行状況またはステータスに基づいてアセットのサブセットを表示するには、**[!UICONTROL アップロードの進行状況]**&#x200B;サイドバーのフィルターを使用します。 様々なフィルターがあり、それぞれ、すべてのアセット、完了したアップロード、進行中のアップロード、キューに入れられたアップロード対象アセット、一時停止したアップロード、重複したアセット、アップロードに失敗したアセットの表示に使用されます。
 
 ![アップロードのステータスに基づいたアップロード進行状況のフィルタリング](assets/filter-progress.png)
 
 *図：アップロードのステータスまたは進行状況に基づく、アップロードしようとしたアセットのフィルタリング*
 
-アセットがアップロードされると、[!DNL Assets view] はすぐにそれらのアセットを処理してサムネールを生成し、メタデータを処理します。アセットの数が多いと、処理に時間がかかります。サムネールが表示されず、プレースホルダーサムネールに処理メッセージが表示される場合は、数分後にフォルダーを再度確認してください。処理時に [!DNL Assets view] は特に、レンディションを生成し、スマートタグを追加して、検索用にアセット詳細のインデックスを作成します。
+アセットがアップロードされると、[!DNL Assets view] はすぐにそれらのアセットを処理してサムネールを生成し、メタデータを処理します。 アセットの数が多いと、処理に時間がかかります。 サムネールが表示されず、プレースホルダーサムネールに処理メッセージが表示される場合は、数分後にフォルダーを再度確認してください。 処理時に [!DNL Assets view] は特に、レンディションを生成し、スマートタグを追加して、検索用にアセット詳細のインデックスを作成します。
 
 ![アセットはアップロード時に処理され、タイルに処理中ステータスが表示される](assets/upload-process.png)
 
@@ -60,7 +60,7 @@ ht-degree: 99%
 
 ## アセットレンディション {#renditions}
 
-[!DNL Assets view] は、アップロードされたアセットをほぼリアルタイムで処理し、サポートされている多くのファイルタイプに対して、レンディションを生成します。画像用に作成されたレンディションは、アップロードされた画像のサイズが変更されたバージョンです。アセットだけでなく、レンディションもダウンロードして、適切なバージョンを使用できます。[アセットをプレビュー](/help/assets/navigate-assets-view.md#preview-assets)すると、アセットのすべてのレンディションを表示できます。
+[!DNL Assets view] は、アップロードされたアセットをほぼリアルタイムで処理し、サポートされている多くのファイルタイプに対して、レンディションを生成します。 画像用に作成されたレンディションは、アップロードされた画像のサイズが変更されたバージョンです。 アセットだけでなく、レンディションもダウンロードして、適切なバージョンを使用できます。 [アセットをプレビュー](/help/assets/navigate-assets-view.md#preview-assets)すると、アセットのすべてのレンディションを表示できます。
 
 ![レンディション](assets/renditions-view-download.png)
 
@@ -74,7 +74,7 @@ ht-degree: 99%
 
 *図：サポートされているファイルのアップロードが何らかの理由で失敗した場合の再試行*
 
-重複したアセットをアップロードしようとしても、アップロードを明示的に確認するまで、アセットはアップロードされません。最初、重複したアセットは、アップロードの失敗としてマークされます。これを解決するには、バージョンの作成、既存アセットの置き換えと削除、アセット名の変更による複製コピーの作成のいずれかを行うだけです。このようなエラーは、1 アセットずつ解決することも、失敗したすべての重複に対して一括で解決することもできます。
+重複したアセットをアップロードしようとしても、アップロードを明示的に確認するまで、アセットはアップロードされません。 最初、重複したアセットは、アップロードの失敗としてマークされます。 これを解決するには、バージョンの作成、既存アセットの置き換えと削除、アセット名の変更による複製コピーの作成のいずれかを行うだけです。 このようなエラーは、1 アセットずつ解決することも、失敗したすべての重複に対して一括で解決することもできます。
 
 ![重複するアセットを 1 つずつ管理](assets/duplicate-new.png)
 
@@ -94,7 +94,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## アセットまたはフォルダーの削除 {#delete-assets}
 
-不要になった個々のアセットやフォルダーを削除できます。アセットまたはフォルダーを削除するには、次のいずれかを行います。
+不要になった個々のアセットやフォルダーを削除できます。 アセットまたはフォルダーを削除するには、次のいずれかを行います。
 
 * アセットまたはフォルダーのサムネールで使用できるオプションを使用します。
 
@@ -106,10 +106,29 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 次の手順 {#next-steps}
 
-* [ビデオを視聴してアセットビューへのアセットのアップロードを学ぶ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ja)
+* [Assets ビューでのアセットのアップロードのビデオを見る](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=ja)
 
-* アセットビューユーザーインターフェイスの[!UICONTROL フィードバック]オプションを使用して製品フィードバックを提供する
+* アセットビューユーザーインターフェイスの「[!UICONTROL フィードバック]」オプションを使用して、製品に関するフィードバックを提供する
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」（![ページを編集](assets/do-not-localize/edit-page.png)）または「[!UICONTROL 問題を記録] 」（![GitHub イシューを作成](assets/do-not-localize/github-issue.png)）を使用してドキュメントに関するフィードバックを提供する
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General#support)に問い合わせる
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

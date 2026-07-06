@@ -5,10 +5,10 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: ed11b465dd7faff74fd1b740ffaef1edb7cb5a9d
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 90%
+source-wordcount: '2197'
+ht-degree: 89%
 
 ---
 
@@ -39,8 +39,7 @@ ht-degree: 90%
 ビデオベースのアセットの場合、タグ付けは[!DNL Adobe Experience Manager]で[!DNL Cloud Service]としてデフォルトで有効になっています。 画像やテキストベースのタグと同様に、新しいビデオをアップロードしたり、既存のビデオを再処理したりすると、ビデオにも自動タグが付けられます。 [!DNL Adobe AI]は、ビデオの2つのタグ セットを生成します。1つのセットはそのビデオのオブジェクト、シーン、属性に対応し、他のセットは飲酒、ランニング、ジョギングなどのアクションに関連します。 また、[ビデオのスマートタグ付けをオプトアウトする](#opt-out-video-smart-tagging)方法も確認してください。
 
 * **テキストベースのアセット**
-サポートされているアセットの場合、[!DNL Experience Manager]は既にテキストを抽出しており、その後インデックスが作成され、アセットの検索に使用されます。ただし、テキスト内のキーワードに基づくスマートタグは、専用の、構造化された、優先度の高い検索ファセットを提供します。後者は、検索インデックスと比較して、アセットの発見を向上させるのに役立ちます。
-テキストベースのアセットの場合、スマートタグの効果は、アセット内のテキスト量ではなく、アセットのテキスト内に存在する関連キーワードやエンティティによって異なります。
+サポートされているアセットの場合、[!DNL Experience Manager]は既にテキストを抽出しており、その後インデックスが作成され、アセットの検索に使用されます。 ただし、テキスト内のキーワードに基づくスマートタグには、構造化された、より優先度の高い専用の検索ファセットが用意されています。 後者は、検索インデックスと比較して、アセット検出の向上に役立ちます。テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。
 
   ![スマートタグタイプ](assets/smart-tags-types.png)
 
@@ -279,3 +278,22 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 中断する場合はいつでも[スマートタグ付けをオプトアウト](#opt-out-smart-tagging)できます。
 
 +++
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

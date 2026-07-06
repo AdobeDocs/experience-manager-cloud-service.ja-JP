@@ -1,21 +1,21 @@
 ---
 title: アセットの関連付け
-description: 一部の共通属性を共有するデジタルアセットを関連付ける方法について説明します。また、アセットの関連付けを使用して、デジタルアセット間にソースから派生した関係を作成します。
+description: 一部の共通属性を共有するデジタルアセットを関連付ける方法について説明します。 また、アセットの関連付けを使用して、デジタルアセット間にソースから派生した関係を作成します。
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '589'
 ht-degree: 99%
 
 ---
 
 # アセットの関連付け {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] では、関連するアセット機能を使用して、組織のニーズに基づいて手動でアセットを関連付けることができます。例えば、ライセンスファイルを、類似するトピックのアセットや画像／ビデオに関連付けることができます。特定の共通属性を共有するアセットを関連付けることができます。また、この機能を使用して、アセット間にソースと派生の関係を作成することもできます。例えば、INDD ファイルから生成された PDF ファイルがある場合、その PDF ファイルをそのソース INDD ファイルに関連付けることができます。
+[!DNL Adobe Experience Manager Assets] では、関連するアセット機能を使用して、組織のニーズに基づいて手動でアセットを関連付けることができます。 例えば、ライセンスファイルを、類似するトピックのアセットや画像／ビデオに関連付けることができます。 特定の共通属性を共有するアセットを関連付けることができます。 また、この機能を使用して、アセット間にソースと派生の関係を作成することもできます。 例えば、INDD ファイルから生成された PDF ファイルがある場合、その PDF ファイルをそのソース INDD ファイルに関連付けることができます。
 
 この機能を使用すると、ベンダーや代理店と低解像度の PDF ファイルや JPG ファイルを共有し、高解像度の INDD ファイルは必要な場合のみ利用できるように柔軟に指定できます。
 
@@ -32,15 +32,15 @@ ht-degree: 99%
 1. 選択したアセットに別のアセットを関連付けるには、「**[!UICONTROL アセットの関連付け]**」![アセットの関連付け](assets/do-not-localize/link-relate.png)アイコンをクリックします。
 1. 次のいずれかの操作を行います。
 
-   * アセットのソースファイルを関連付けるには、リストから「**[!UICONTROL ソースを追加]**」を選択します。ソースとして関連付けることができるアセットは 1 つだけです。
-   * 派生ファイルを関連付けるには、リストから「**[!UICONTROL 派生を追加]**」を選択します。このカテゴリには複数のアセットを関連付けることができます。
-   * アセット間に双方向の関係を作成するには、リストから「**[!UICONTROL その他を追加]**」を選択します。このカテゴリには複数のアセットを関連付けることができます。
+   * アセットのソースファイルを関連付けるには、リストから「**[!UICONTROL ソースを追加]**」を選択します。 ソースとして関連付けることができるアセットは 1 つだけです。
+   * 派生ファイルを関連付けるには、リストから「**[!UICONTROL 派生を追加]**」を選択します。 このカテゴリには複数のアセットを関連付けることができます。
+   * アセット間に双方向の関係を作成するには、リストから「**[!UICONTROL その他を追加]**」を選択します。 このカテゴリには複数のアセットを関連付けることができます。
 
-1. **[!UICONTROL アセットを選択]**&#x200B;画面から、関連付けを行うアセットの場所に移動して、選択します。アセットを 1 つずつ選択することもできますが、Shift キーを押しながらクリックして複数のアセットを選択することもできます。この場合、[アセットビューでサポートされているファイル形式](/help/assets/supported-file-formats-assets-view.md)を使用できます。
+1. **[!UICONTROL アセットを選択]**&#x200B;画面から、関連付けを行うアセットの場所に移動して、選択します。 アセットを 1 つずつ選択することもできますが、Shift キーを押しながらクリックして複数のアセットを選択することもできます。この場合、[アセットビューでサポートされているファイル形式](/help/assets/supported-file-formats-assets-view.md)を使用できます。
 
    ![関連アセットを追加](assets/add-related-asset.png)
 
-1. 「**[!UICONTROL 選択]**」をクリックします。手順 3 で選択した関係に応じて、関連付けられたアセットが「**[!UICONTROL アセットの関連付け]**」セクションの適切なカテゴリに表示されます。例えば、関連付けたアセットが現在のアセットのソースファイルの場合は、「**[!UICONTROL ソース]**」の下に表示されます。
+1. 「**[!UICONTROL 選択]**」をクリックします。 手順 3 で選択した関係に応じて、関連付けられたアセットが「**[!UICONTROL アセットの関連付け]**」セクションの適切なカテゴリに表示されます。 例えば、関連付けたアセットが現在のアセットのソースファイルの場合は、「**[!UICONTROL ソース]**」の下に表示されます。
 
    ![アセットの関連付けの例](assets/asset-relations-example.png)
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 ## 関連アセットの翻訳 {#translating-related-assets}
 
-関連アセット機能を使用してアセット間でソースと派生の関係を作成すると、翻訳ワークフローにも役立ちます。派生アセットで翻訳ワークフローを実行すると、[!DNL Experience Manager Assets] はソースファイルが参照するすべてのアセットを自動的に取得し、翻訳用に組み込みます。これにより、ソースアセットが参照するアセットが、ソースおよび派生アセットと共に翻訳されます。ソースファイルが別のアセットに関連付けられている場合、[!DNL Experience Manager Assets] は参照されているアセットを取得し、翻訳用に組み込みます。
+関連アセット機能を使用してアセット間でソースと派生の関係を作成すると、翻訳ワークフローにも役立ちます。 派生アセットで翻訳ワークフローを実行すると、[!DNL Experience Manager Assets] はソースファイルが参照するすべてのアセットを自動的に取得し、翻訳用に組み込みます。 これにより、ソースアセットが参照するアセットが、ソースおよび派生アセットと共に翻訳されます。 ソースファイルが別のアセットに関連付けられている場合、[!DNL Experience Manager Assets] は参照されているアセットを取得し、翻訳用に組み込みます。
 
 [AEM でのアセットの翻訳](/help/assets/translate-assets.md)を参照してください。
 
@@ -65,3 +65,22 @@ ht-degree: 99%
 >* [アセットのバージョンを表示](/help/assets/manage-organize-assets-view.md#view-versions)
 >* [AEM でのアセットの翻訳](/help/assets/translate-assets.md)
 >* [アセットビューでサポートされているファイル形式](/help/assets/supported-file-formats-assets-view.md)。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,16 +4,16 @@ description: ' [!DNL Experience Manager] でアセットを承認する方法に
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 96%
+source-wordcount: '1122'
+ht-degree: 94%
 
 ---
 
 # [!DNL Experience Manager] でのアセットの承認
 
-ブランドマネージャーとマーケターは、ブランドアセットを厳密に管理します。承認済みの最新バージョンのアセットのみが使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性が確保されます。
+ブランドマネージャーとマーケターは、ブランドアセットを厳密に管理します。 承認済みの最新バージョンのアセットのみが使用できるので、すべてのチャネルとアプリケーションでブランドの一貫性が確保されます。
 
 AEM Assets でアセットを承認すると、アセット管理が効率化され、アセットを処理するための制御された効率的なプロセスが確保されます。
 
@@ -23,23 +23,22 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
 ## 設定
 
-アセットを承認する前に、管理ビューで該当するメタデータスキーマを 1 回更新する必要があります。Assets ビューでは、この設定をスキップできます。メタデータスキーマを設定するには、次の手順に従います。
+アセットを承認する前に、管理ビューで該当するメタデータスキーマを 1 回更新する必要があります。 Assets ビューでは、この設定をスキップできます。 メタデータスキーマを設定するには、次の手順に従います。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
-1. 該当するメタデータスキーマを選択し、「**[!UICONTROL 編集]**」をクリックします。<br>**[!UICONTROL メタデータスキーマフォームエディター]**&#x200B;が開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
+1. 該当するメタデータスキーマを選択し、「**[!UICONTROL 編集]**」をクリックします。 <br>**[!UICONTROL メタデータスキーマフォームエディター]**&#x200B;が開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
 1. 下にスクロールして、「**[!UICONTROL レビューステータス]**」をクリックします。
 1. 右側のサイドパネルにある「**[!UICONTROL ルール]**」タブをクリックします。
-1. 「**[!UICONTROL 編集を無効にする]**」をオフにします。
-「**[!UICONTROL レビューステータス]**」フィールドのマッピング先のプロパティを表示する必要がある場合は、「**[!UICONTROL 設定]**」タブに移動し、「**[!UICONTROL プロパティにマッピング]**」フィールドで `./jcr:content/metadata/dam:status` 値を表示します。
+1. 「**[!UICONTROL 編集を無効にする]**」をオフにします。「**[!UICONTROL レビューステータス]**」フィールドのマッピング先のプロパティを表示する必要がある場合は、「**[!UICONTROL 設定]**」タブに移動し、「**[!UICONTROL プロパティにマッピング]**」フィールドで `./jcr:content/metadata/dam:status` 値を表示します。
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
-   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :activationTarget_。
+   1. **[!UICONTROL マップをプロパティ]**&#x200B;から_./jcr:content/metadata/dam :activationTarget_に更新します。
    1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]
    >
-   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
+   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。 承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -63,29 +62,28 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
 ## アセットの一括承認 {#bulk-approve-assets}
 
-複数のアセットを一度にすばやく承認して、ワークフローを効率化します。アセットを一括承認して、承認プロセスを迅速化し、時間を節約し、生産性を向上させることができます。
-<br>[!DNL Experience Manager Admin view] で一括アセットを承認するには、次の手順に従います。
+複数のアセットを一度にすばやく承認して、ワークフローを効率化します。 アセットを一括承認して、承認プロセスを迅速化し、時間を節約し、生産性を向上させることができます。<br>[!DNL Experience Manager Admin view] で一括アセットを承認するには、次の手順に従います。
 
-1. オーサー環境（https://author-pXXX-eYYY.adobeaemcloud.com）にフォルダーを作成します。_XXX_ をプログラム ID に置き換え、_YYY_ を Experience Manager の環境 ID に置き換えます。
+1. オーサー環境（https://author-pXXX-eYYY.adobeaemcloud.com）にフォルダーを作成します。 _XXX_ をプログラム ID に置き換え、_YYY_ を Experience Manager の環境 ID に置き換えます。
 1. **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータプロファイル]**&#x200B;に移動します。
 1. ページの右上にある「**[!UICONTROL 作成]**」をクリックします。
-1. プロファイルのタイトルを追加し、「**[!UICONTROL 作成]**」をクリックします。メタデータプロファイルが正常に作成されました。
-1. 新しく作成したメタデータプロファイルを選択して、「**[!UICONTROL 編集&#x200B;_（e）_]**」をクリックします。<br>**[!UICONTROL メタデータプロファイルを編集]**&#x200B;フォームが開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
+1. プロファイルのタイトルを追加し、「**[!UICONTROL 作成]**」をクリックします。 メタデータプロファイルが正常に作成されました。
+1. 新しく作成したメタデータプロファイルを選択して、「**[!UICONTROL 編集&#x200B;_（e）_]**」をクリックします。 <br>**[!UICONTROL メタデータプロファイルを編集]**&#x200B;フォームが開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから **[!UICONTROL 1 行のテキストフィールド]**&#x200B;をフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認済みアセット_」に変更します。
-   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :status_。
+   1. **[!UICONTROL マップをプロパティ]**&#x200B;から_./jcr:content/metadata/dam :status_に更新します。
    1. デフォルト値を「_承認済み_」に変更します。
 
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから「**[!UICONTROL ドロップダウン]**」フィールドをフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認ターゲット_」に変更します。
-   1. **[!UICONTROL プロパティにマッピング]** を_に更新します。/jcr:content/metadata/dam :activationTarget_。
+   1. **[!UICONTROL マップをプロパティ]**&#x200B;から_./jcr:content/metadata/dam :activationTarget_に更新します。
    1. オプション値として `contenthub` と `delivery` の選択肢を追加します。
 
    >[!NOTE]
    >
-   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
+   >アセットビューを使用して承認ターゲットをコンテンツハブとして選択すると、アセットは同じ組織に属するユーザーがコンテンツハブで使用できるようになります。 承認ターゲットを配信として選択すると、アセットはすべてのユーザーが使用できるようになります。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 1. **[!UICONTROL メタデータプロファイル]**&#x200B;ページで、新しく作成したメタデータプロファイルを選択します。
 1. 上部のアクションバーから「**[!UICONTROL フォルダーにメタ―データプロファイルを適用]**」をクリックします。
@@ -96,7 +94,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
 >[!NOTE]
 > 
->このアプローチでは、フォルダー内に新しく作成したアセットが承認されます。フォルダー内の既存のアセットについては、手動で選択して承認する必要があります。<br>または、「**[!UICONTROL 再処理]**」オプションを使用して、メタデータプロファイルの変更を以前のアセットに適用することもできます。
+>このアプローチでは、フォルダー内に新しく作成したアセットが承認されます。 フォルダー内の既存のアセットの場合は、手動で選択して承認する必要があります。<br> または、**[!UICONTROL 再処理]** オプションを使用して、メタデータプロファイルの変更を古いアセットに適用することもできます。
 
 同様に、アセットビューのフォルダー内でアセットを一括承認するには、次の手順を実行します。
 
@@ -106,7 +104,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 
    ステータスを `Approved` として選択し、Experience Manager Assets に対して [OpenAPI 機能を備えた Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) や[コンテンツハブ](/help/assets/product-overview.md)、または両方が有効になっている場合は、「**[!UICONTROL 承認ターゲット]**」フィールドで使用できる「`Delivery`」および「`Content Hub`」オプションを表示できます。
 
-   * 「**[!UICONTROL 配信]**」を選択すると、アセットが OpenAPI 機能を備えた Dynamic Media とコンテンツハブの両方で使用できるようになります。コンテンツハブが有効になっていない場合、このオプションを選択すると、アセットは OpenAPI 機能を備えた Dynamic Media でのみ使用できるようになります。
+   * 「**[!UICONTROL 配信]**」を選択すると、アセットが OpenAPI 機能を備えた Dynamic Media とコンテンツハブの両方で使用できるようになります。 コンテンツハブが有効になっていない場合、このオプションを選択すると、アセットは OpenAPI 機能を備えた Dynamic Media でのみ使用できるようになります。
    * アセットをコンテンツハブで使用できるようにするには、「**[!UICONTROL コンテンツハブ]**」を選択します。
 
    ![承認ステータス](/help/assets/assets/approval-status-delivery.png)
@@ -139,3 +137,22 @@ AEM as a Cloud Service インスタンスで [!UICONTROL OpenAPI 機能を備え
    >承認済みアセットの配信 URL をコピーするオプションは、アセットビューでのみ使用できます。
 
 Dynamic Media パネル内に表示される他のレンディションについて詳しくは、[Dynamic Media レンディションの表示とダウンロード](/help/assets/renditions.md#view-download-dm-renditions)を参照してください。
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)

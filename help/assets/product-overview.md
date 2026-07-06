@@ -3,28 +3,28 @@ title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 64%
+source-wordcount: '1490'
+ht-degree: 70%
 
 ---
 
 # コンテンツハブの概要 {#overview-content-hub}
 
-コンテンツハブは、Experience Manager Assets as a Cloud Service の一部として使用でき、組織とそのビジネスパートナーがオンブランドのコンテンツに簡単にアクセスできます。これは、大規模なアクティベーション用のアセットの配布と、マーケティングの俊敏性を向上させるオンブランドのコンテンツバリアントの作成に焦点を当てています。
+コンテンツハブは、Experience Manager Assets as a Cloud Service の一部として使用でき、組織とそのビジネスパートナーがオンブランドのコンテンツに簡単にアクセスできます。 これは、大規模なアクティベーション用のアセットの配布と、マーケティングの俊敏性を向上させるオンブランドのコンテンツバリアントの作成に焦点を当てています。
 
 ## コンテンツハブのデモ {#content-hub-demo}
 
 >[!IMPORTANT]
 >
->[Assets Ultimate](/help/assets/assets-ultimate-overview.md) および Assets as a Cloud Service には、250 人のコンテンツハブ制限付きユーザーが含まれます。[Assets Prime](/help/assets/assets-prime.md) には、50 人のコンテンツハブ制限付きユーザーが含まれます。
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) および Assets as a Cloud Service には、250 人のコンテンツハブ制限付きユーザーが含まれます。 [Assets Prime](/help/assets/assets-prime.md) には、50 人のコンテンツハブ制限付きユーザーが含まれます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
-## AEM AssetsContent Hubを選択する理由
+## AEM Assets Content Hubを選ぶ理由？
 
-AEM Assets Content Hubには、次のような主なメリットがあります。
+AEM Assets Content Hubには、次の主な利点があります。
 
 **直感的なポータルで使用可能なすべてのブランド承認済みアセットを検索して共有**
 
@@ -36,7 +36,7 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 **オンブランドを維持しながら、クリエイティブ以外のユーザーがコンテンツを編集およびリミックスできるようにする**
 
-コンテンツハブを使用すると、Adobe Express を使用して新しいコンテンツを作成できます（Adobe Express 権限がある場合）。使いやすいツールを使用して既存のコンテンツを編集し、テンプレートとブランド要素を使用してオンブランドのバリエーションを作成し、Adobe Firefly の最新の生成 AI 機能を使用して新しいコンテンツを作成できます。
+コンテンツハブを使用すると、Adobe Express を使用して新しいコンテンツを作成できます（Adobe Express 権限がある場合）。 使いやすいツールを使用して既存のコンテンツを編集し、テンプレートとブランド要素を使用してオンブランドのバリエーションを作成し、Adobe Firefly の最新の生成 AI 機能を使用して新しいコンテンツを作成できます。
 
 ## 前提条件 {#prerequisites-content-hub}
 
@@ -60,7 +60,7 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 製品関連の改善を推奨するには、コンテンツハブユーザーインターフェイスの上部にある組織名の横にある「**[!UICONTROL フィードバック]**」をクリックします。
 
-件名、推奨する内容の説明を指定し、必要に応じてファイルを添付します。「**[!UICONTROL 送信]**」をクリックして、アドビにフィードバックを送信します。
+件名、推奨する内容の説明を指定し、必要に応じてファイルを添付します。 「**[!UICONTROL 送信]**」をクリックして、アドビにフィードバックを送信します。
 
 ![コンテンツハブに関するフィードバック](assets/content-hub-feedback.png)
 
@@ -86,33 +86,33 @@ AEM Assets は信頼できる唯一の情報源として機能し、すべての
 
 ## よくある質問 {#faqs-content-hub-overview}
 
-### AEM Assets Content Hubとは {#what-is-content-hub}
+### AEM Assets Content Hubとは何ですか？ {#what-is-content-hub}
 
-AEM Assets Content Hubは、Adobe Experience Manager as a Cloud Serviceの機能であり、直感的なポータルを通じて、関連性の高い承認済みアセットを幅広いチームが簡単に見つけ、必要に応じてすばやく適応させることができます。 これにより、アセットを大規模に配布でき、オンブランドのコンテンツバリアントの作成が容易になり、マーケティングの俊敏性が向上します。
+AEM Assets Content Hubは、直観的なポータルを通じて、幅広い部門が適切な承認済みアセットを簡単に見つけ出し、各アセットのニーズに迅速に対応できるAdobe Experience Manager as a Cloud Service機能です。 これにより、アセットの大規模な配信が可能になり、ブランドに準拠したコンテンツのバリエーションの制作が促進されるため、マーケティングの俊敏性が向上します。
 
 ### AEM Assets Content Hubにアクセスするための前提条件は何ですか？ {#prerequisites-for-content-hub}
 
-Content Hubには、Experience Manager as a Cloud Service、特に 2024.6 リリース以降（最小バージョン 2024.6.16799）の実稼動オーサー環境が必要です。
+Content Hubには、Experience Manager as a Cloud Serviceの実稼動オーサー環境、特に2024.6 リリース以降（最小バージョン 2024.6.16799）が必要です。
 
-### AEM Assets Content Hubでは、ブランド承認済みアセットの検索エクスペリエンスをどのように向上させますか？ {#content-hub-improves-search-experience}
+### AEM Assets Content Hubを利用すれば、ブランド承認済みアセットの検索体験をどのように向上できますか？ {#content-hub-improves-search-experience}
 
-AEM Assets Content Hubでは、すべての承認済みアセットがフラットな階層で表示されるので、直感的なポータルを通じて、ブランドで承認済みのアセットを簡単に見つけて共有できます。 この設定により、検索プロセスが合理化され、ユーザーが必要なアセットを効率的に見つけられるようになります。
+AEM Assets Content Hubでは、あらゆる承認済みアセットがフラット階層に表示されるため、直感的なポータルを通じてブランド承認済みのアセットを簡単に見つけて共有できます。 これにより、検索プロセスが合理化され、必要なアセットを効率的に検索できるようになりました。
 
-### AEM Assets Content Hubのユーザーインターフェイスを設定できるユーザーと、どのような要素を設定できますか？ {#content-hub-configuration}
+### AEM Assets Content Hubのユーザーインターフェイスを設定できるのは誰ですか？また、設定可能な側面は何ですか？ {#content-hub-configuration}
 
-管理者は、検索用のフィルター、アセットの追加や読み込みをおこなうフィールド、アセットのプロパティ、ブランディング用のバナーコンテンツなど、AEM Assets Content Hubのユーザーインターフェイスを設定できます。 これにより、組織の要件に基づいてカスタマイズできます。
+管理者は、検索用のフィルター、アセットの追加または読み込み用のフィールド、アセットのプロパティ、ブランディング用のバナーコンテンツなど、AEM Assets Content Hubのユーザーインターフェイスを設定できます。 これにより、組織の要件にもとづいてカスタマイズできます。
 
-### AEM Assets Content Hubを使用して、クリエイティブではないユーザーがコンテンツを編集およびリミックスできるようにする方法を教えてください。 {#content-hub-edit-remix-content}
+### AEM Assets Content Hubは、クリエイター以外の担当者によるコンテンツの編集や再構成をどのように支援しますか？ {#content-hub-edit-remix-content}
 
-Content Hubを使用すると、使いやすいツール、テンプレート、ブランド要素を使用して、クリエイティブ以外のユーザーが既存のコンテンツを編集し、新しいオンブランドのバリエーションを作成できます。 Adobe Expressの使用権限があるユーザーは、Adobe Firefly GenAI 機能を活用して高度なコンテンツを作成することもできます。
+Content Hubなら、クリエイターでなくても、使いやすいツール、テンプレート、ブランド要素を使用して、既存のコンテンツを編集し、ブランドに即した新しいバリエーションを作成できます。 Adobe Expressの使用権限があれば、Adobe Firefly GenAIを活用して高度なコンテンツ制作を行うこともできます。
 
-### ユーザーはAEM Assets Content Hubにどのようにアクセスできますか？ {#content-hub-access}
+### AEM Assets Content Hubへのアクセス方法 {#content-hub-access}
 
-AEM Assets Content Hubにアクセスするには、ダイレクトリンク （https://experience.adobe.com/#/assets/contenthub）を使用するか、experience.adobe.comにログインして「クイックアクセス」セクションからExperience Manager Assets Content Hubを選択します。
+ユーザーは、ダイレクトリンク（https://experience.adobe.com/#/assets/contenthub）を介して、またはexperience.adobe.comにログインし、「クイックアクセス」セクションから「Experience Manager Assets Content Hub」を選択して、AEM Assets Content Hubにアクセスできます。
 
-### Content Hub Limited のユーザーは何人くらいAEM Assetsに含まれていますか？ {#content-hub-limited-users-with-aem-assets}
+### AEM Assetsに含まれているContent Hub制限付きユーザーの数 {#content-hub-limited-users-with-aem-assets}
 
-[Assets Ultimate](/help/assets/assets-ultimate-overview.md) およびAssets as a Cloud Serviceはそれぞれ 250 人のContent Hub Limited ユーザーを含み、[Assets Prime](/help/assets/assets-prime.md) は 50 人のContent Hub Limited ユーザーを含みます。
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md)およびAssets as a Cloud Serviceには、それぞれ250人のContent Hub限定ユーザーが含まれます。一方、[Assets Prime](/help/assets/assets-prime.md)には50人のContent Hub限定ユーザーが含まれます。
 
 
 ## 主な機能の詳細 {#key-capabilities-content-module}
@@ -124,8 +124,8 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
-      <strong>コンテンツハブユーザーインターフェイスの設定</strong>
-      </a>
+      <strong>Content Hub ユーザーインターフェイスの設定</strong>
+      
    </div>
    <p>
       <em>管理者がコンテンツハブユーザーインターフェイスを設定する方法について説明します。</em>
@@ -139,8 +139,8 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/search-assets-content-hub.md">
-      <strong>コンテンツハブでの使用可能なアセットの検索</strong>
-      </a>
+      <strong>Content Hubで利用可能なアセットを検索</strong>
+      
    </div>
    <p>
       <em>様々な機能を使用して検索結果を絞り込む方法について説明します。</em>
@@ -152,8 +152,8 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Adobe Express を使用した画像の編集</strong>
-      </a>
+      <strong>Adobe Expressを使用した画像の編集</strong>
+      
    </div>
    <p>
       <em>Adobe Expressを使用してコンテンツハブで画像のバリアントを作成する方法について説明します。</em>
@@ -167,8 +167,8 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/share-assets-content-hub.md">
-      <strong>コンテンツハブでの使用可能なアセットの共有</strong>
-      </a>
+      <strong>Content Hubで利用可能なアセットを共有</strong>
+      
    </div>
    <p>
       <em>1 つまたは複数のアセットをリンクとして共有し、アクセスする方法について説明します。</em>
@@ -180,8 +180,8 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">
-      <strong>コンテンツハブでのコレクションの管理</strong>
-      </a>
+      <strong>Content Hubでコレクションを管理</strong>
+      
    </div>
    <p>
       <em>アセットを使用してコレクションを作成し、管理する方法について説明します。</em>
@@ -193,11 +193,30 @@ AEM Assets Content Hubにアクセスするには、ダイレクトリンク （
    </a>
    <div>
       <a href="/help/assets/insights-content-hub.md">
-      <strong>コンテンツハブのアセットインサイトの表示</strong>
-      </a>
+      <strong>Content Hubでアセットインサイトを表示</strong>
+      
    </div>
    <p>
       <em>コンテンツモジュールは、アセットに関する貴重なインサイトを提供し、マーケティング関係者が頻繁に直面する一般的な課題に対処します。</em>
    </p>
 </td>
 </table>
+
+
+**関連情報**
+
+* [アセットを翻訳](/help/assets/translate-assets.md)
+* [Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
+* [アセットを検索](/help/assets/search-assets.md)
+* [接続されたアセット](/help/assets/use-assets-across-connected-assets-instances.md)
+* [アセットレポート](/help/assets/asset-reports.md)
+* [メタデータスキーマ](/help/assets/metadata-schemas.md)
+* [アセットをダウンロード](/help/assets/download-assets-from-aem.md)
+* [メタデータを管理](/help/assets/manage-metadata.md)
+* [Dynamic Media テンプレートの管理](/help/assets/dynamic-media/manage-dynamic-media-templates.md)
+* [レポートの管理](/help/assets/manage-reports-assets-view.md)
+* [検索ファセット](/help/assets/search-facets.md)
+* [コレクションを管理](/help/assets/manage-collections.md)
+* [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
+* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
