@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: c17bbdac3738ab99be6d58da26825640eedbbdc4
 workflow-type: tm+mt
 source-wordcount: '2839'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI テスト"
->abstract="カスタム UI テストは、Selenium ベースのDocker イメージを使用してアプリケーションのUI テストを作成し、自動的に実行できるオプション機能です。"
+>abstract="カスタム UI テストは、Selenium ベースの Docker イメージを使用して、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。"
 
 カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプション機能です。
 

@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 2f02b9d70e56f4aafd802e986974533197f7d7a5
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="コード品質テスト"
->abstract="コード品質テストでは、アプリケーションコードと品質ルールを比較します。 これは、すべてのパイプラインのビルドステップの後に実行される、コード品質のみのパイプラインの主な目的です。"
+>abstract="コード品質テストは、品質ルールに対するアプリケーションコードを評価します。 これは、すべてのパイプラインでビルド手順の後に実行される、コード品質のみのパイプラインの主な目的です。"
 
 ## はじめに {#introduction}
 
