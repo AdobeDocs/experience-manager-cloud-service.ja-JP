@@ -4,10 +4,10 @@ description: ' [!DNL AEM Assets]  と  [!DNL Edge Delivery Services]. This integ
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 37652ec153be900e9b99222f7a7d257c6febacc0
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 96%
+source-wordcount: '876'
+ht-degree: 94%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 96%
 * [コンテンツへのビデオの追加](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
 * [PDFやZip ファイルなど、画像やビデオ以外のアセットをコンテンツに追加できます](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-asset-references-for-pdf-zip-etc-when-authoring-content)
 
-OpenAPI 機能を備えた Dynamic Media を使用してコンテンツ内のアセットを配信する方法について詳しくは、このビデオをご覧ください。
+OpenAPI機能を備えたDynamic Mediaを使用して、コンテンツ内のアセットを配信する方法については、次のビデオを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
