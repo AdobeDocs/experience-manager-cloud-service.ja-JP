@@ -38,7 +38,7 @@ Content HubのAI アシスタントを利用すれば、管理者はメタデー
 * ブランドと地域をまたいだスケーラブルなガバナンスをサポート
 * アセット管理の強化
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475415/?captions=jpn&learn=on&enablevpops){transcript=true}
 
 ## 属性ベースのアクセス制御の有効化 {#enable-attribute-based-access-control}
 
