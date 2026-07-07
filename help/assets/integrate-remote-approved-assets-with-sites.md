@@ -44,7 +44,7 @@ OpenAPI 機能を備えた Dynamic Media を使用したリモートアセット
 
      または、次の手順に従って、AEM Sites インスタンスで AEM 6.5 の [OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=ja)を行います。
 
-   1. コンソールにログインし、**[!UICONTROL OSGi] >**または
+   1. コンソールにログインし、**[!UICONTROL OSGi] >**&#x200B;または
 ダイレクト URLを使用します。例：`https://localhost:4502/system/console/configMgr`
 
    1. **次世代の Dynamic Media 設定**（`NextGenDynamicMediaConfigImpl`）OSGi の設定を次のように行って、値をリモートアセット環境の値に置き換えます。
