@@ -6,7 +6,7 @@ feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 99%
@@ -84,3 +84,4 @@ ht-degree: 99%
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

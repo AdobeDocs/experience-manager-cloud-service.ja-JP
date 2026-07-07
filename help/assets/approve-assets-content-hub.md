@@ -3,7 +3,7 @@ title: コンテンツハブ向けアセットの承認
 description: Assets as a Cloud Service でアセットを承認して、コンテンツハブで使用できるようにする方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1807'
 ht-degree: 68%
@@ -211,3 +211,4 @@ Assets アセットの詳細ページに&#x200B;**Approval Target** フィール
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -3,7 +3,7 @@ title: ' [!DNL Assets View] でのメタデータを一括編集'
 description: '[!DNL ! Assets View] で使用できる複数のアセットの定義済み標準メタデータフィールドセットを 同時に更新する方法を説明します。'
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 99%
@@ -58,3 +58,4 @@ ht-degree: 99%
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
