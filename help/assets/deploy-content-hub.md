@@ -268,7 +268,7 @@ Experience Manager Assets ユーザーを設定するには：
 
 1. ユーザーがContent Hub ポータルにアセットを追加する必要がある場合は、それらを`AEM Users`製品プロファイルに追加します。 詳しくは、「[Content Hub ユーザーにアセットを追加する権限を付与してオンボーディングする](#onboard-content-hub-users-add-assets)」を参照してください。
 
-1. ユーザーがContent Hub Configuration User Interfaceにアクセスする必要がある場合は、それらを`AEM Administrators`製品プロファイルに追加します。 詳しくは、[Content Hub管理者のオンボード ](#onboard-content-hub-administrator)を参照してください。
+1. ユーザーがContent Hub Configuration User Interfaceにアクセスする必要がある場合は、それらを`AEM Administrators`製品プロファイルに追加します。 詳しくは、[Content Hub管理者のオンボード &#x200B;](#onboard-content-hub-administrator)を参照してください。
 
 関連する製品プロファイルにユーザーを追加しても適切な権限が付与されない場合は、Adobe担当者にお問い合わせください。
 

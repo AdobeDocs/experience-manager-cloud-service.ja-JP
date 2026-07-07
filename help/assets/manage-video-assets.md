@@ -46,8 +46,8 @@ ht-degree: 97%
 [!DNL Assets] ユーザーインターフェイスでは、サポートされているレンディションでビデオをプレビューすることができます。 ビデオアセットをプレビューするには、次の手順に従います。
 
 1. サポートされている形式のビデオアセットを [!DNL Experience Manager Assets] にアップロードします。 詳しくは、[サポートされるビデオ形式](file-format-support.md#video-formats)を参照してください。 <br>アップロードすると、ビデオアセットが処理され、プレビューレンディションが生成されます。
-1. アセットをクリックし、上部のツールバーから ![ 詳細オプション](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細]** を選択します。 ビデオアセットがビデオビューアで開きます。
-1. 動画サムネイルの ![ 再生オプション ](assets/do-not-localize/play.png) アイコンをクリックします。 <br>再生、一時停止、音量の制御、およびビデオの全画面表示を行うことができます。
+1. アセットをクリックし、上部のツールバーから ![&#x200B; 詳細オプション](assets/do-not-localize/details_icon.svg) **[!UICONTROL 詳細]** を選択します。 ビデオアセットがビデオビューアで開きます。
+1. 動画サムネイルの ![&#x200B; 再生オプション &#x200B;](assets/do-not-localize/play.png) アイコンをクリックします。 <br>再生、一時停止、音量の制御、およびビデオの全画面表示を行うことができます。
 
 [!DNL Experience Manager Assets] の既存の動画アセットの場合、動画プレビュー機能を有効にするには、[!DNL Experience Manager] のアセットを&#x200B;**[!UICONTROL 再処理]**&#x200B;する必要があります。 [!DNL Experience Manager] で[デジタルアセットを再処理](reprocessing.md)する方法を説明します。
 
@@ -58,7 +58,7 @@ ht-degree: 97%
 
 ## ビデオアセットを公開する {#publish-video-assets}
 
-公開後、ビデオアセットを URL として Web ページに含めたり、アセットを直接埋め込んだりできます。 詳しくは、[ [!DNL Dynamic Media]  アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+公開後、ビデオアセットを URL として Web ページに含めたり、アセットを直接埋め込んだりできます。 詳しくは、[&#x200B; [!DNL Dynamic Media]  アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
 ## YouTube へのビデオの公開 {#publishing-videos-to-youtube}
 
@@ -594,7 +594,7 @@ For YouTube publishing jobs, do the following:
 
 [!DNL Experience Manager] as a [!DNL Cloud Service] では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。 この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールの操作も実行できます。
 
-![ でのビデオトランスコードの処理プロファイルの作成[!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
+![&#x200B; でのビデオトランスコードの処理プロファイルの作成[!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *図：[!DNL Experience Manager] でのビデオトランスコードの処理プロファイル。*
 

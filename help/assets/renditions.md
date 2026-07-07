@@ -91,7 +91,7 @@ Experience Manager Assets で画像の動的レンディションを表示また
 
 リポジトリでScene7 （Dynamic Media）とOpenAPI機能を備えたDynamic Mediaの両方が有効になっている場合、ユーザーインターフェイスで切り替えオプションを使用して、2つを切り替えることができます。 表示されるレンディションと、生成されたURLは、選択した設定に基づいて更新されます。
 
-![ オプションの切り替え](/help/assets/assets/new-new2.png)
+![&#x200B; オプションの切り替え](/help/assets/assets/new-new2.png)
 
 **関連情報**
 

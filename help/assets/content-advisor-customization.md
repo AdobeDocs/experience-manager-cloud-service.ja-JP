@@ -13,7 +13,7 @@ ht-degree: 86%
 
 # Content Advisor カスタマイズ {#content-advisor-customization}
 
-Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [ マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
+Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [&#x200B; マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
 
 * [フィルターパネルのカスタマイズ](#customize-filter-panel)
 * [モーダルビューでの情報のカスタマイズ](#customize-info-in-modal-view)
@@ -493,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[ コンテンツアドバイザーのプロパティ ](/help/assets/content-advisor-properties.md)を参照してください。
+*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[&#x200B; コンテンツアドバイザーのプロパティ &#x200B;](/help/assets/content-advisor-properties.md)を参照してください。
 
 ### メタデータを使用したアップロード {#upload-with-metadata}
 

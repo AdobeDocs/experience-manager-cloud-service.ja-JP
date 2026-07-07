@@ -66,7 +66,7 @@ ht-degree: 99%
    }
    ```
 
-1. 詳しくは、[ [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) 内で OSGi 設定を行う方法を参照してください。
+1. 詳しくは、[&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) 内で OSGi 設定を行う方法を参照してください。
 
 以下のプロパティを使用して、スケジューラーを設定できます。
 
