@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 84%
@@ -91,7 +91,7 @@ Experience Manager Assets で画像の動的レンディションを表示また
 
 リポジトリでScene7 （Dynamic Media）とOpenAPI機能を備えたDynamic Mediaの両方が有効になっている場合、ユーザーインターフェイスで切り替えオプションを使用して、2つを切り替えることができます。 表示されるレンディションと、生成されたURLは、選択した設定に基づいて更新されます。
 
-![&#x200B; オプションの切り替え](/help/assets/assets/new-new2.png)
+![ オプションの切り替え](/help/assets/assets/new-new2.png)
 
 **関連情報**
 
@@ -110,3 +110,4 @@ Experience Manager Assets で画像の動的レンディションを表示また
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

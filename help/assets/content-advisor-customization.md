@@ -4,7 +4,7 @@ description: 関数を使用して、アプリケーション内でContent Advis
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 86%
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 # Content Advisor カスタマイズ {#content-advisor-customization}
 
-Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [&#x200B; マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
+Content Advisorでは、好み、要件、機能ニーズに応じて様々なコンポーネントをカスタマイズできます。 次のコンポーネント [ マイクロフロントエンドコンテンツアドバイザー](#overview-asset-selector.md)をカスタマイズできます。
 
 * [フィルターパネルのカスタマイズ](#customize-filter-panel)
 * [モーダルビューでの情報のカスタマイズ](#customize-info-in-modal-view)
@@ -493,7 +493,7 @@ uploadConfig: {
      }, 
 ```
 
-*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[&#x200B; コンテンツアドバイザーのプロパティ &#x200B;](/help/assets/content-advisor-properties.md)を参照してください。
+*その他のプロパティには、`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings` `onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`* が含まれます。 詳しくは、[ コンテンツアドバイザーのプロパティ ](/help/assets/content-advisor-properties.md)を参照してください。
 
 ### メタデータを使用したアップロード {#upload-with-metadata}
 
@@ -681,3 +681,4 @@ dragOptions: {
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

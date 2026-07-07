@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 95%
@@ -100,7 +100,7 @@ MIME サブタイプ／MIME タイプ／`default` フォーム／標準フォー
 
    ![左サイドバーのメタデータフォームオプション](assets/metadata-form-new.png)
 
-   メタデータフォーム [&#128279;](cascading-metadata-assets-view.md#build-metadata-forms)の ユーザーインターフェイスについて説明します。
+   メタデータフォーム ](cascading-metadata-assets-view.md#build-metadata-forms)の[ ユーザーインターフェイスについて説明します。
 
    <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
@@ -293,3 +293,4 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -5,7 +5,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 98%
@@ -108,10 +108,10 @@ ht-degree: 98%
 
 1. メタデータスキーマを適用したフォルダーに移動して、アセットのプロパティページを開きます。 「アセットの種類」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
 
-   ビデオアセットの!&lbrack; カスケーディングメタデータ
+   ビデオアセットの![ カスケーディングメタデータ
    *図：ビデオアセットのカスケードメタデータ*
 
-   !&lbrack; ドキュメントアセットのカスケーディングメタデータ
+   ![ ドキュメントアセットのカスケーディングメタデータ
    *図：ドキュメントアセットのカスケードメタデータ*
 
 **関連情報**
@@ -131,4 +131,5 @@ ht-degree: 98%
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
 

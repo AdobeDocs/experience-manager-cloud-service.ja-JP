@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 98%
@@ -137,7 +137,7 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]（XMP）は、すべてのメタデータ管理に対して [!DNL Experience Manager Assets] で使用されるオープンな標準です。 XMP は、すべてのファイル形式に埋め込むことができる、ユニバーサルメタデータエンコーディングを提供します。 アドビやその他の企業は、リッチコンテンツモデルを提供する XMP 標準をサポートしています。 XMP 標準および [!DNL Experience Manager Assets] のユーザーは、基盤となる強力なプラットフォームを持っています。 詳しくは、[XMP](https://www.adobe.com/jp/products/xmp.html) を参照してください。
+[!DNL Extensible Metadata Platform]（XMP）は、すべてのメタデータ管理に対して [!DNL Experience Manager Assets] で使用されるオープンな標準です。 XMP は、すべてのファイル形式に埋め込むことができる、ユニバーサルメタデータエンコーディングを提供します。 アドビやその他の企業は、リッチコンテンツモデルを提供する XMP 標準をサポートしています。 XMP 標準および [!DNL Experience Manager Assets] のユーザーは、基盤となる強力なプラットフォームを持っています。 詳しくは、[XMP](https://www.adobe.com/products/xmp.html) を参照してください。
 
 ### ID3 {#id}
 
@@ -308,3 +308,4 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >
 >* [XMP メタデータ](xmp-metadata.md)
 >* [メタデータの編集と追加](meta-edit.md)
+

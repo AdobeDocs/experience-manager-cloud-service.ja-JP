@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 99%
@@ -183,7 +183,7 @@ Only the selected folder content and references are published.
 
 「公開をリクエスト」オプションは、次のユーザーが使用できます。
 
-* **投稿者：**&#x200B;[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。 「`Manage publication`」ボタンが非表示になっています。 投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
+* **投稿者：**[!DNL AEM] Assets に投稿できるユーザーの場合、[!DNL AEM] Assets ワークフローへのアクセスが制限されています。 「`Manage publication`」ボタンが非表示になっています。 投稿者は、アセットを追加することによって投稿のみできますが、アセットを公開したり、ワークフローへの読み取りアクセス権を持つことはできません。
 
 * **ワークフローユーザー：**&#x200B;このユーザーはアセットを公開できませんが、ワークフローに対する読み取りアクセス権があります。 ワークフローユーザーは、次の操作を実行できます。
    * 公開をリクエスト
