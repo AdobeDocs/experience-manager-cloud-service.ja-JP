@@ -20,7 +20,7 @@ ht-degree: 7%
 
 [&#x200B; スマート切り抜き](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)は、[!DNL Dynamic Media with OpenAPI capabilities]の動的サイズ変更機能です。 [!DNL Smart Crop]は、AIを活用したコンテンツに応じた切り抜きを使用して、切り抜きバージョンの視覚的なコンテキストを維持しながら、様々な画面サイズに合わせて画像をインテリジェントに切り抜く高度な画像処理技術です。 AIは画像を分析して焦点または注目すべき点を特定し、画像を自動的に切り抜いて、切り抜かれたすべてのバージョンで焦点を維持します。 レスポンシブデザインの重要な要素である[!DNL Smart Crop]は、費用対効果が高く、時間効率の高い画像の切り抜き方法を提供します。
 
-[Dynamic Media画像プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)の記事を参照して、[!DNL Admin View]で[&#x200B; スマート切り抜きレンディション &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)を作成する方法、[それらをフォルダー](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)に適用する方法、または既に画像またはフォルダーに適用されている[&#x200B; レンディションを編集](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)する方法について説明します。 この[&#x200B; ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)の手順で[!DNL Smart Crop]を作成する方法を説明します。
+[Dynamic Media画像プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)の記事を参照して、[!DNL Admin View]で[&#x200B; スマート切り抜きレンディション &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)を作成する方法、[それらをフォルダー](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)に適用する方法、または既に画像またはフォルダーに適用されている[&#x200B; レンディションを編集](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)する方法について説明します。 この[&#x200B; ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)の手順で[!DNL Smart Crop]を作成する方法を説明します。
 
 [!DNL Smart Crop] パラメーターは、名前付きスマート切り抜きプロファイルが存在し、アセットに適用されていることを想定しています。 [!DNL Smart Crop] パラメーターと名前付き[!DNL Smart Crop] プロファイルの適用方法について詳しくは、[&#x200B; スマート切り抜きプロファイル &#x200B;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)を参照してください。
 
@@ -36,7 +36,7 @@ ht-degree: 7%
 
 [!DNL Dynamic Media with OpenAPI]配信URLを使用して、1つのプリセットを複数の画像に適用できます。 これにより、各アセットを手作業で編集することなく、アセット間で一貫性のあるフォーマットを実現できます。
 
-[画像プリセットの管理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)の記事を参照して、管理者ビュー[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)で画像プリセットを作成する[方法と、異なる画面サイズに合わせてアセットを自動的に調整するレスポンシブ画像プリセット &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)を作成する方法について学んでください。
+[画像プリセットの管理](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)の記事を参照して、管理者ビュー[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)で画像プリセットを作成する[方法と、異なる画面サイズに合わせてアセットを自動的に調整するレスポンシブ画像プリセット &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)を作成する方法について学んでください。
 
 ### 画像プリセットを使用するメリット{#benefits-of-image-presets}
 
@@ -57,7 +57,7 @@ ht-degree: 7%
 
 #### 画像配信URLでのプリセットの使用{#use-presets-in-delivery-urls}
 
-プリセットを使用すると、配信URLをより短く簡単に使用できます。  各プリセット名は、配信URLで一意の識別子として機能します。 アセットの配信URLに複数の修飾子を追加する代わりに、プリセット名を参照して、即座にレンディションを生成します。 [画像にDynamic Media画像プリセットを適用する方法を学ぶ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。次の例では、プリセットを含むURLと、プリセットを含まないURLを比較します。
+プリセットを使用すると、配信URLをより短く簡単に使用できます。  各プリセット名は、配信URLで一意の識別子として機能します。 アセットの配信URLに複数の修飾子を追加する代わりに、プリセット名を参照して、即座にレンディションを生成します。 [画像にDynamic Media画像プリセットを適用する方法を学ぶ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。次の例では、プリセットを含むURLと、プリセットを含まないURLを比較します。
 
 プリセットのない&#x200B;**URL （長いURL）**:
 
