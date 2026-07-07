@@ -6,7 +6,7 @@ feature: Collections, Collaboration
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 99%
@@ -132,3 +132,4 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

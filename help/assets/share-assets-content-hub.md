@@ -4,7 +4,7 @@ description: ' [!DNL the Content Hub] でのアセットの共有'
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 46%
@@ -15,7 +15,7 @@ ht-degree: 46%
 
 選択したアセットへのリンクを作成して、他のユーザーと簡単に共有できるようにします。 認証済みの [!DNL Content Hub] ユーザーとして、[!DNL Content Hub] 環境で使用可能な 1 つ以上のアセットを選択し、リンクを生成して、そのリンクを他のプライベートまたはパブリックのユーザーに送信します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474920/?captions=jpn&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 前提条件 {#prerequisites}
 
@@ -52,7 +52,7 @@ ht-degree: 46%
 アセットをプレビューしながら共有するには、次の手順を実行します。
 
 1. [!DNL Content Hub] ホームページに移動し、アセットのサムネールをクリックしてアセットをプレビューし、ダイアログボックスの右側のパネルにメニューオプションを表示します。
-1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**&#x200B;パネルを表示します。
+1. 「![共有](/help/assets/assets/share.svg)」を選択して&#x200B;**[!UICONTROL 共有]**パネルを表示します。
    ![プレビュー中にアセットを共有](/help/assets/assets/share-link-asset-preview.png)
 1. [アセットの共有](#share-assets)の節の手順 3～5 に従って、この&#x200B;**[!UICONTROL 共有]**&#x200B;パネルからアセットリンク（プライベートまたはパブリック）を生成して共有します。
 
@@ -63,7 +63,7 @@ ht-degree: 46%
 * 1 つ以上のアセットを選択し、「![ダウンロード](/help/assets/assets/download-icon.svg) **[!UICONTROL ダウンロード]**」をクリックして、利用可能なダウンロードオプションから **[!UICONTROL オリジナル]**、**[!UICONTROL 静的]** または両方のレンディションを選択します。
   ![](/help/assets/assets/download-shared-assets.png)
 * アセットのサムネールをクリックして、アセットのメタデータを表示します。
-* 共有アセットページ（[プライベートリンクを使用してアクセス](#share-assets)）でアセットのサムネールをクリックし、![ダウンロード](/help/assets/assets/download-icon.svg)を選択して、アセットの使用可能な動的レンディションを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]**&#x200B;パネルでそれらのレンディションを選択して表示します。
+* 共有アセットページ（[プライベートリンクを使用してアクセス](#share-assets)）でアセットのサムネールをクリックし、![ダウンロード](/help/assets/assets/download-icon.svg)を選択して、アセットの使用可能な動的レンディションを選択およびダウンロードする前に、**[!UICONTROL ダウンロード]**パネルでそれらのレンディションを選択して表示します。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 ## よくある質問 {#faqs-share-assets-content-hub}

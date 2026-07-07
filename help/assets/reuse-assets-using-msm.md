@@ -7,7 +7,7 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '3442'
 ht-degree: 99%

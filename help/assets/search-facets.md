@@ -5,7 +5,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 98%
@@ -363,3 +363,4 @@ Adobeでは、パフォーマンスの問題を回避するため、デフォル
 >[!MORELIKETHIS]
 >
 >* [デジタルアセットの検索](search-assets.md)。
+

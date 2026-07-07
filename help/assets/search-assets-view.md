@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1732'
 ht-degree: 87%
@@ -34,7 +34,7 @@ ht-degree: 87%
 
 ## 検索結果のフィルタリング {#refine-search-results}
 
-複数のフィルターを適用して、検索結果を絞り込み、関連アセットを見つけることができます。 管理者が設定したこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [検索フィルターのカスタマイズ &#x200B;](custom-search-filters.md)を参照してください。
+複数のフィルターを適用して、検索結果を絞り込み、関連アセットを見つけることができます。 管理者が設定したこれらのフィルターは、ファイル、フォルダー、コレクションに基づいています。 [検索フィルターのカスタマイズ ](custom-search-filters.md)を参照してください。
 
 ![検索フィルター](assets/filters-panel.gif)
 
@@ -396,7 +396,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 右側のサイドバーにある「[!UICONTROL このページを編集]」 ![ページを編集](assets/do-not-localize/edit-page.png) または「[!UICONTROL イシューを記録]」 ![GitHub イシューを作成](assets/do-not-localize/github-issue.png) を使用してドキュメントのフィードバックを提供する。
 
-* [カスタマーケア](https://experienceleague.adobe.com/ja?support-solution=General&lang=ja#support)に問い合わせる
+* [カスタマーケア](https://experienceleague.adobe.com/?support-solution=General&lang=ja#support)に問い合わせる
 
 
 **関連情報**

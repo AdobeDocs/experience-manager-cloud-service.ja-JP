@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 98%
@@ -63,7 +63,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## 標準設定 {#standard-config}
 
-[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。 管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。 ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。 例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。 [このビデオでは、[!UICONTROL 処理プロファイル &#x200B;]を作成および適用する方法、および作成したレンディション &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/assets/content-automation/creative-operations)にアクセスする方法について説明します。
+[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。 管理者は、追加の[!UICONTROL 処理プロファイル]を作成して、そのようなレンディションの作成を容易にできます。 ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。 例えば、追加の処理で web、モバイル、タブレット用のレンディションを生成できるとします。 [このビデオでは、[!UICONTROL 処理プロファイル ]を作成および適用する方法、および作成したレンディション ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations)にアクセスする方法について説明します。
 
 * **レンディションの幅と高さ**：レンディションの幅と高さの仕様により、生成される出力画像の最大サイズが指定されます。 アセットマイクロサービスでは、レンディションの幅と高さがそれぞれ指定の幅と高さを超えない範囲で、可能な限り大きなレンディションを生成しようとします。 縦横比は維持され、元の縦横比と同じになります。 値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
 
@@ -95,7 +95,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 The following video demonstrates the usefulness and usage of standard profile.
 
->[!VIDEO](https://video.tv.adobe.com/v/34689?captions=jpn&quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
 <!--
@@ -233,7 +233,7 @@ Asset Compute Service の統合により、Experience Manager は、「[!UICONTR
 * パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。 コロンを使用してパスとモデルを区切ります。 単純なリポジトリーパスがサポートされています。 これらを `/var` パスのワークフローモデルにマッピングします。 例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。 コロンを使用して表現とモデルを区切ります。 正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すように指定します。 例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
-OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
+OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
 
 #### ワークフローの後処理の実行を無効にする
 
@@ -314,3 +314,4 @@ OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Man
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

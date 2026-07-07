@@ -4,7 +4,7 @@ description: ' [!DNL Experience Manager] でアセットを承認する方法に
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 94%
@@ -68,7 +68,7 @@ AEM Assets as a Cloud Service へのアクセス権と、アセットの&#x200B;
 1. **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータプロファイル]**&#x200B;に移動します。
 1. ページの右上にある「**[!UICONTROL 作成]**」をクリックします。
 1. プロファイルのタイトルを追加し、「**[!UICONTROL 作成]**」をクリックします。 メタデータプロファイルが正常に作成されました。
-1. 新しく作成したメタデータプロファイルを選択して、「**[!UICONTROL 編集&#x200B;_（e）_]**」をクリックします。 <br>**[!UICONTROL メタデータプロファイルを編集]**&#x200B;フォームが開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
+1. 新しく作成したメタデータプロファイルを選択して、「**[!UICONTROL 編集&#x200B;_（e）_]**」をクリックします。 <br>**[!UICONTROL メタデータプロファイルを編集]**フォームが開き、「**[!UICONTROL 基本]**」タブがハイライト表示されます。
 1. 右側の「**[!UICONTROL フォームを作成]**」セクションから **[!UICONTROL 1 行のテキストフィールド]**&#x200B;をフォームの「メタデータ」セクションにドラッグ＆ドロップします。
 1. 新しく追加されたフィールドをクリックし、**[!UICONTROL 設定]**&#x200B;パネルで次の更新を行います。
    1. **[!UICONTROL フィールドラベル]**&#x200B;を「_承認済みアセット_」に変更します。
@@ -156,3 +156,4 @@ Dynamic Media パネル内に表示される他のレンディションについ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -5,7 +5,7 @@ feature: Smart Tags,Tagging
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 89%
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM でタグ付けなしのアセット {#smart-tag-existing-assets}
 
-DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。 手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=ja#adjusting-load)して、スマートタグを生成する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。 自動的に追加されたタグは、[!UICONTROL 基本] タブの[!UICONTROL &#x200B; スマートタグ &#x200B;] セクションに表示されます。 適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
+DAM 内の既存または古いアセットに対しては、スマートタグが自動的には付けられません。 手動でアセットを[再処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load)して、スマートタグを生成する必要があります。 プロセスが完了したら、フォルダー内の任意のアセットの[!UICONTROL プロパティ]ページに移動します。 自動的に追加されたタグは、[!UICONTROL 基本] タブの[!UICONTROL  スマートタグ ] セクションに表示されます。 適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score)の降順で並べ替えられます。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -297,3 +297,4 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
