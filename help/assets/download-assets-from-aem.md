@@ -6,7 +6,7 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 92%
@@ -151,3 +151,4 @@ downloadMaxItems = 100000
 >* [DRM で保護されたアセットのダウンロード](drm.md)
 >* [Windows／Mac OS デスクトップで Adobe Experience Manager デスクトップアプリケーションを使用したアセットのダウンロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)
 >* [サポートされている Adobe Creative Cloud アプリ内から Adobe Asset Link を使用したアセットのダウンロード](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)
+

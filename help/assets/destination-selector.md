@@ -6,7 +6,7 @@ role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 97%
@@ -300,3 +300,4 @@ interface SelectedDestination {
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

@@ -2,7 +2,7 @@
 title: コンテンツハブユーザーインターフェイスの設定
 description: コンテンツハブユーザーインターフェイスの設定
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '3115'
 ht-degree: 70%
@@ -396,3 +396,4 @@ Content Hubの管理者権限を持つユーザーのみが、Content Hub ユー
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

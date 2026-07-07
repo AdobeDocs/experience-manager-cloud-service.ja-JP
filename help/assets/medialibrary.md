@@ -6,7 +6,7 @@ feature: Asset Management, Publishing
 role: User, Developer, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 99%
@@ -123,3 +123,4 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >* [&#x200B; [!DNL Experience Manager Assets] の DAM 機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja)
 >* [[!DNL Experience Manager]  as a  [!DNL Cloud Service]  製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+

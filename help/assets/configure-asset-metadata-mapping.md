@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 99%
@@ -146,3 +146,4 @@ Experience Manager Assets の画像に移動すると、その画像に関連付
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

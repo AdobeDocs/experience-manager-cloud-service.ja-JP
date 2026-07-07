@@ -4,7 +4,7 @@ description: 配信 API の使用方法について説明します。
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 77b334434251a98d9c4f44cede9275d839f6ac40
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 98%
@@ -95,3 +95,4 @@ headers: {
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

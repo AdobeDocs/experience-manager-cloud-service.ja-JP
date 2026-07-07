@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 93%
@@ -141,4 +141,5 @@ Date24/08/2021
 >* [メタデータプロファイル](metadata-profiles.md)
 >* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)
 >* [Dynamic Media 画像プロファイル](/help/assets/dynamic-media/image-profiles.md)
+
 

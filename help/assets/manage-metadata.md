@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '2012'
 ht-degree: 98%
@@ -308,3 +308,4 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >
 >* [XMP メタデータ](xmp-metadata.md)
 >* [メタデータの編集と追加](meta-edit.md)
+

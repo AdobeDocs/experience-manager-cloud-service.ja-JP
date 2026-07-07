@@ -3,7 +3,7 @@ title: コンテンツハブの概要
 description: コンテンツハブの詳細、その主なメリット、アクセス方法、コンテンツハブで使用可能なオプションに関するフィードバックの提供方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 70%
@@ -220,3 +220,4 @@ Content Hubなら、クリエイターでなくても、使いやすいツール
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

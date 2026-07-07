@@ -2,7 +2,7 @@
 title: 配信層のカスタムドメインの設定
 description: Adobe Cloud Managerで配信層用のカスタムドメインを設定する方法について説明します。
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 80a32672ec018274b0410abfa14fdd761fdb5aba
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 49%
@@ -55,3 +55,4 @@ Cloud Managerで次の手順を実行します。
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
