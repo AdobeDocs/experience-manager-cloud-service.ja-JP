@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 84%
@@ -115,13 +115,13 @@ You can share collections with various users that are assigned different levels 
 
    * **[!DNL All]:**&#x200B;通常のコレクションとスマートコレクションの両方を表示します。
    * **[!DNL Collection]:** アセットが個別に追加される手動で作成されたコレクションを表示します。
-   * **[!DNL Smart Collection]:** [&#x200B; スマートコレクション &#x200B;](#manage-smart-collection)に保存されているアセットを自動的に含むコレクションを表示します。
+   * **[!DNL Smart Collection]:** [ スマートコレクション ](#manage-smart-collection)に保存されているアセットを自動的に含むコレクションを表示します。
 
 * **[!DNL Created Date]** ドロップダウンを使用すると、コレクションの作成日時に基づいてコレクションをフィルタリングできます。 日付範囲を指定して、最近作成したコレクションや古いコレクションを検索できます。
 
-  ![&#x200B; コレクションを検索](assets/search-collection.png)
+  ![ コレクションを検索](assets/search-collection.png)
 
-詳しくは、[検索アセット &#x200B;](search-assets-view.md)、[検索結果の絞り込み](search-assets-view.md#refine-search-results)、または[保存した検索の管理](search-assets-view.md##saved-search)を参照してください。
+詳しくは、[検索アセット ](search-assets-view.md)、[検索結果の絞り込み](search-assets-view.md#refine-search-results)、または[保存した検索の管理](search-assets-view.md##saved-search)を参照してください。
 
 ## スマートコレクションの管理 {#manage-smart-collection}
 
@@ -257,3 +257,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

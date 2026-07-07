@@ -3,7 +3,7 @@ title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 96%
@@ -44,7 +44,7 @@ OpenAPI 機能を備えた Dynamic Media を使用したリモートアセット
 
      または、次の手順に従って、AEM Sites インスタンスで AEM 6.5 の [OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=ja)を行います。
 
-   1. コンソールにログインし、**[!UICONTROL OSGi] >**&#x200B;または
+   1. コンソールにログインし、**[!UICONTROL OSGi] >**または
 ダイレクト URLを使用します。例：`https://localhost:4502/system/console/configMgr`
 
    1. **次世代の Dynamic Media 設定**（`NextGenDynamicMediaConfigImpl`）OSGi の設定を次のように行って、値をリモートアセット環境の値に置き換えます。
@@ -155,3 +155,4 @@ Microsoft Word、Google Docs またはユニバーサルエディターでのコ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

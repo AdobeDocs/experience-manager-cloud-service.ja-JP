@@ -4,7 +4,7 @@ description: Content Advisorを、AdobeやAdobe以外のアプリケーション
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 77%
@@ -37,7 +37,7 @@ OpenAPI 機能を備えた Dynamic Media では、`rootPath` プロパティと 
 aemTierType:[1: "delivery"]
 ```
 
-この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。 詳しくは、[&#x200B; コンテンツアドバイザープロパティ &#x200B;](/help/assets/content-advisor-properties.md)の下の`aemTierType` プロパティに移動します。
+この設定により、すべての承認済みアセットをフォルダーなしで表示したり、フラットな構造として表示したりできます。 詳しくは、[ コンテンツアドバイザープロパティ ](/help/assets/content-advisor-properties.md)の下の`aemTierType` プロパティに移動します。
 
 
 ### 承認済みアセットからの動的配信 URL の作成 {#create-dynamic-media-url}
@@ -105,7 +105,7 @@ JSON オブジェクトをトラバースする 2 つの方法を以下に示し
 
 ![動的配信 URL](assets/dynamic-delivery-url.png)
 
-* **サムネール：**&#x200B;サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。 ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。PDF type アセットには、次のレンディションのセットを使用できます。
+* **サムネール：**サムネールは画像にすることができ、アセットは PDF、ビデオ、画像などです。 ただし、アセットのサムネールの高さと幅の属性を動的配信レンディションとして使用できます。PDF type アセットには、次のレンディションのセットを使用できます。
 SidekickでPDFを選択すると、選択コンテキストに次の情報が表示されます。 JSON オブジェクトをトラバースする方法を以下に示します。
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
@@ -172,3 +172,4 @@ OpenAPI機能を備えたDynamic Media用Content Advisorを使用すると、カ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
