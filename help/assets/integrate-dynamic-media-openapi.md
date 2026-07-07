@@ -4,7 +4,7 @@ description: Content Advisorを、AdobeやAdobe以外のアプリケーション
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 77%
@@ -172,3 +172,4 @@ OpenAPI機能を備えたDynamic Media用Content Advisorを使用すると、カ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+

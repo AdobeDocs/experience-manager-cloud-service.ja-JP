@@ -3,7 +3,7 @@ title: リモート AEM Assets と AEM Sites の統合
 description: AEM Sites を設定し、承認済み AEM Assets に接続する方法について説明します。
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 96%
@@ -155,3 +155,4 @@ Microsoft Word、Google Docs またはユニバーサルエディターでのコ
 * [コレクションを管理](/help/assets/manage-collections.md)
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
+
