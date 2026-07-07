@@ -15,7 +15,7 @@ ht-degree: 7%
 
 効果的なキャッシュ管理は、高性能で拡張性が高く、最新のデジタルアセットを提供するために不可欠です。 オープン APIを備えたDynamic Mediaでは、キャッシュ管理により、配信パイプラインのさまざまなレイヤーをまたいでコンテンツを保存、更新、配信する方法が定義されます。 アセット配信の応答は、最適なパフォーマンスと迅速なコンテンツ配信を実現するために、複数のレイヤーでキャッシュされます。
 
-オープン APIを使用したDynamic Mediaでの長時間キャッシュは、[CDN レイヤーキャッシュ ](#cdn-layer-caching)と[外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） ](#byocdn-browser-caching)で構成されます。
+オープン APIを使用したDynamic Mediaでの長時間キャッシュは、[CDN レイヤーキャッシュ &#x200B;](#cdn-layer-caching)と[外部キャッシュ制御（BYOCDNおよびブラウザーキャッシュ） &#x200B;](#byocdn-browser-caching)で構成されます。
 
 ## CDN レイヤーキャッシュ {#cdn-layer-caching}
 
@@ -29,7 +29,7 @@ ht-degree: 7%
 
 ### キャッシュ制御ヘッダーのカスタマイズ {#customizing-cache-control-headers}
 
-デフォルトの設定を超えてキャッシュが有効になるまでの時間を長くすると、古いコンテンツを配信する可能性が高くなり、エンドユーザーエクスペリエンスにおけるコンテンツ更新の可視性が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御の動作を変更する必要がある場合は、カスタム CDN ルールを設定して応答ヘッダーを調整できます。 これにより、必要に応じて異なるキャッシュ期間を設定できます。 応答ヘッダー](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)については、[AEM カスタム CDN ルールを参照してください。
+デフォルトの設定を超えてキャッシュが有効になるまでの時間を長くすると、古いコンテンツを配信する可能性が高くなり、エンドユーザーエクスペリエンスにおけるコンテンツ更新の可視性が遅れる可能性があります。 特定のユースケースに合わせてキャッシュ制御の動作を変更する必要がある場合は、カスタム CDN ルールを設定して応答ヘッダーを調整できます。 これにより、必要に応じて異なるキャッシュ期間を設定できます。 応答ヘッダー[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)については、AEM カスタム CDN ルールを参照してください。
 
 ```
 responseTransformations:
@@ -47,7 +47,7 @@ responseTransformations:
             value: max-age=300
 ```
 
-キャッシュ管理に関する詳細なサポートや質問については、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)にお問い合わせください。
+キャッシュ管理に関する詳細なサポートや質問については、[Adobe サポート &#x200B;](https://helpx.adobe.com/jp/contact.html)にお問い合わせください。
 
 ## アクティブキャッシュの無効化 {#active-cache-invalidation}
 
@@ -105,7 +105,7 @@ The following mechanisms can be followed:
 
 +++ **自分のリポジトリの永続キャッシュをオプトアウトできますか？**
 
-長時間キャッシュをオプトアウトするには、[Adobe サポート ](https://helpx.adobe.com/jp/contact.html)に連絡し、リクエストの根拠を提供してください。
+長時間キャッシュをオプトアウトするには、[Adobe サポート &#x200B;](https://helpx.adobe.com/jp/contact.html)に連絡し、リクエストの根拠を提供してください。
 
 +++
 
