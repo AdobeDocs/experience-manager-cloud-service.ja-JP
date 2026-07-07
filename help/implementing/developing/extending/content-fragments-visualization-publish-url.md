@@ -178,7 +178,7 @@ iframe埋め込みの例：
 
 ## Edge Delivery Servicesとの統合（埋め込みブロック） {#integration-with-edge-services-embed-block}
 
-Edge Delivery Servicesでは、公開URLは&#x200B;**[埋め込みブロック ](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**&#x200B;を通じて消費され、`<iframe>`としてレンダリングされます。
+Edge Delivery Servicesでは、公開URLは&#x200B;**[埋め込みブロック &#x200B;](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**&#x200B;を通じて消費され、`<iframe>`としてレンダリングされます。
 
 1. 埋め込みブロックがプロジェクトに存在することを確認します。
 
@@ -319,9 +319,9 @@ AEM以外のweb サイトの場合は、[Customer Element + Shadow DOM](#custom-
 
 | 懸念材料 | 詳細 |
 |--- |--- |
-| CORS | コンテンツフラグメント視覚化サービスは、設定可能な許可されたオリジンを使用して、`/adobe/**` パス上のCORSを設定します。<br> インライン要素（取得+ innerHTML） ](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#inline-element-fetch-and-innerhtml) 1および[顧客要素+ シャドウ DOM](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#custom-element-and-shadow-dom-recommended)手法（`fetch()`を使用）では、ホストページの生成元を許可リストに配置する必要があります。 [<br>[iFrame](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#iframe)手法にはCORSは必要ありません。 |
+| CORS | コンテンツフラグメント視覚化サービスは、設定可能な許可されたオリジンを使用して、`/adobe/**` パス上のCORSを設定します。<br> インライン要素（取得+ innerHTML） [&#128279;](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#inline-element-fetch-and-innerhtml) 1および[顧客要素+ シャドウ DOM](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#custom-element-and-shadow-dom-recommended)手法（`fetch()`を使用）では、ホストページの生成元を許可リストに配置する必要があります。 <br>[iFrame](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#iframe)手法にはCORSは必要ありません。 |
 | CSP/X-Frame-Options | サービスは、公開されたHTMLに`Content-Security-Policy`または`X-Frame-Options`個のヘッダーを設定しません。 CDNまたはDispatcherがこれらのヘッダーを追加する場合は、ホストのオリジンからフレーム化（[iFrame](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#iframe)の場合）または`fetch()` アクセス権（インライン/シャドウ DOMの場合）を許可していることを確認します。 |
-| コンテンツの信頼 | 公開されたHTMLは、サービスによって管理される[Handlebars テンプレート ](/help/implementing/developing/extending/content-fragments-visualization-templates.md)を使用して、オーサリングされたコンテンツフラグメントデータから事前にレンダリングされます。 これには、ユーザー生成スクリプトは含まれません。 ただし、他のinnerHTML インジェクションと同様に、ソースオリジンを信頼してください。 |
+| コンテンツの信頼 | 公開されたHTMLは、サービスによって管理される[Handlebars テンプレート &#x200B;](/help/implementing/developing/extending/content-fragments-visualization-templates.md)を使用して、オーサリングされたコンテンツフラグメントデータから事前にレンダリングされます。 これには、ユーザー生成スクリプトは含まれません。 ただし、他のinnerHTML インジェクションと同様に、ソースオリジンを信頼してください。 |
 
 ### 適切な手法の選択 {#choose-the-appropriate-technique}
 
