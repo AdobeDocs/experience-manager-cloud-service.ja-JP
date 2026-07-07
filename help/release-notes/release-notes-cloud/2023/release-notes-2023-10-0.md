@@ -6,7 +6,7 @@ feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '967'
 ht-degree: 98%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.10.0）のリリース日は、2023年10月26日（PT）です。次回の機能リリース（2023.11.0）は 2023年11月30日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.10.0）のリリース日は、2023年10月26日（PT）です。 次回の機能リリース（2023.11.0）は 2023年11月30日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -43,7 +43,7 @@ ht-degree: 98%
 
 ### 新機能 {#assets-features}
 
-Adobe Express用の **AEM Assets アドオン**: Experience Manager Assetsには、Adobe Express用のアドオンが用意されるようになりました。 アドオンを使用すると、Adobe Express ユーザーインターフェイス内から Experience Manager Assets に保存されているアセットに直接アクセスできます。AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。アドオンには、次のような主なメリットがあります。
+**Adobe Express用AEM Assets アドオン**: Experience Manager Assetsは、Adobe Express用のアドオンを提供するようになりました。 アドオンを使用すると、Adobe Express ユーザーインターフェイス内から Experience Manager Assets に保存されているアセットに直接アクセスできます。 AEM Assets で管理されているコンテンツを Express キャンバスに配置し、新しいコンテンツや編集したコンテンツを AEM Assets リポジトリに保存できます。 アドオンには、次のような主なメリットがあります。
 
 * AEM での新しいアセットの編集と保存による、コンテンツ再利用の増加
 
@@ -53,15 +53,15 @@ Adobe Express用の **AEM Assets アドオン**: Experience Manager Assetsには
 
 ### アセットビューの新機能 {#assets-view-features}
 
-* **OneDrive データソースのアセットの一括読み込み**：管理者は、[多数のアセットを OneDrive から AEM Assets に読み込める](/help/assets/bulk-import-assets-view.md#onedrive-developer-application)ようになりました。一括読み込みでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
+* **OneDrive データソースのアセットの一括読み込み**：管理者は、[多数のアセットを OneDrive から AEM Assets に読み込める](/help/assets/bulk-import-assets-view.md#onedrive-developer-application)ようになりました。 一括読み込みでサポートされるデータソースの更新リストには、Azure、AWS、Google Cloud、Dropbox、OneDrive が含まれます。
 
   ![フォルダーにメタデータフォームの割り当て](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **ライブラリに対する組織間の権限付与のサポート**：Experience Manager Assets では、別の IMS 組織の Creative Cloud ライブラリへのアクセスを設定できるようになりました。これにより、Creative Cloud と Experience Manager の間の最新の製品間ワークフローに容易にアクセスできるようになり、クリエイティブの時間と労力を削減できます。
+* **ライブラリに対する組織間の権限付与のサポート**：Experience Manager Assets では、別の IMS 組織の Creative Cloud ライブラリへのアクセスを設定できるようになりました。 これにより、Creative Cloud と Experience Manager の間の最新の製品間ワークフローに容易にアクセスできるようになり、クリエイティブの時間と労力を削減できます。
 
 ### [!DNL Experience Manager Assets] で利用できるプレリリース機能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[Dynamic Media のビデオに対するマルチキャプションとマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) - プライマリビデオに複数のキャプションと複数のオーディオトラックを簡単に追加できるようになりました。この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。また、作成者は、ユーザーインターフェイスの 1 つのタブからキャプションとオーディオトラックを管理することもできます。
+* **Dynamic Media**：[Dynamic Media のビデオに対するマルチキャプションとマルチオーディオトラックのサポート](/help/assets/dynamic-media/video.md#about-msma) - プライマリビデオに複数のキャプションと複数のオーディオトラックを簡単に追加できるようになりました。 この機能により、グローバルなオーディエンスがビデオにアクセスできるようになります。 1 つの公開済みプライマリビデオを複数の言語でグローバルオーディエンスに向けてカスタマイズし、様々な地理的地域のアクセシビリティガイドラインに従うことができます。 また、作成者は、ユーザーインターフェイスの 1 つのタブからキャプションとオーディオトラックを管理することもできます。
 
   ![選択したビデオアセットのプロパティページの「キャプションとオーディオトラック」タブ。](/help/release-notes/assets/msma-aem-cs.png)*選択したビデオアセットのプロパティページの「キャプションとオーディオトラック」タブ。*
 
@@ -69,16 +69,16 @@ Adobe Express用の **AEM Assets アドオン**: Experience Manager Assetsには
 
 ### の新機能[!DNL Experience Manager Forms] {#forms-features}
 
-* **[アダプティブフォームのカスタムプロパティ](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**：カスタム属性（キーと値のペア）をフォームテンプレートまたはアダプティブフォームコンポーネントに関連付けることで、フォーム開発者がこれらのカスタム属性の値に基づいて適応する、動的なフォーム動作を提供できるようになります。例えば、開発者は、カスタム属性の値に基づいて、モバイル、デスクトップ、web プラットフォーム上にヘッドレスフォームコンポーネントの様々なレンディションを作成できるので、幅広いデバイスでのユーザーエクスペリエンスが大幅に向上します。
+* **[アダプティブフォームのカスタムプロパティ](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**：カスタム属性（キーと値のペア）をフォームテンプレートまたはアダプティブフォームコンポーネントに関連付けることで、フォーム開発者がこれらのカスタム属性の値に基づいて適応する、動的なフォーム動作を提供できるようになります。 例えば、開発者は、カスタム属性の値に基づいて、モバイル、デスクトップ、web プラットフォーム上にヘッドレスフォームコンポーネントの様々なレンディションを作成できるので、幅広いデバイスでのユーザーエクスペリエンスが大幅に向上します。
 
-* **テーマとテンプレート**：経験豊富な専門家と新しいフォーム作成者の両方を支援するように、新しいテーマとテンプレートをカスタマイズし使用して、フォーム作成プロセスを開始します。アダプティブフォームコアコンポーネントを使用してシームレスに構築され、慎重に厳選されたテーマとテンプレートを使用すると、一般的な使用例に合わせてフォームの作成を迅速に開始できます。
+* **テーマとテンプレート**：経験豊富な専門家と新しいフォーム作成者の両方を支援するように、新しいテーマとテンプレートをカスタマイズし使用して、フォーム作成プロセスを開始します。 アダプティブフォームコアコンポーネントを使用してシームレスに構築され、慎重に厳選されたテーマとテンプレートを使用すると、一般的な使用例に合わせてフォームの作成を迅速に開始できます。
 
   ![標準テンプレート](/help/forms/assets/form-templates-ootb.png)
 
 
 ### 早期導入プログラム {#forms-early-adopter}
 
-* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。 暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。 この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
@@ -86,11 +86,11 @@ Adobe Express用の **AEM Assets アドオン**: Experience Manager Assetsには
 
 ### WAF ルールを含むトラフィックフィルタールール {#traffic-filter-rules-waf}
 
-URL、IP アドレス、ユーザーエージェントなどのプロパティによって web サイトのトラフィックに一致するルールを宣言することにより、[アドビが管理する CDN でトラフィックをフィルタリング](/help/security/traffic-filter-rules-including-waf.md)したり、DoS 攻撃から保護するためにカスタムのトラフィックレート制限を設定したりできます。また、お客様は、高度な web サイトの脅威に対する追加の保護のために、一連の高度な web アプリケーションファイアウォール（WAF）ルールのライセンスを取得することもできます。
+URL、IP アドレス、ユーザーエージェントなどのプロパティによって web サイトのトラフィックに一致するルールを宣言することにより、[アドビが管理する CDN でトラフィックをフィルタリング](/help/security/traffic-filter-rules-including-waf.md)したり、DoS 攻撃から保護するためにカスタムのトラフィックレート制限を設定したりできます。 また、お客様は、高度な web サイトの脅威に対する追加の保護のために、一連の高度な web アプリケーションファイアウォール（WAF）ルールのライセンスを取得することもできます。
 
-トラフィックフィルタールールに慣れるには、[チュートリアルを試してみること](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)をお勧めします。新しい Cloud Manager 設定パイプラインの指定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順について説明します。
+トラフィックフィルタールールに慣れるには、[チュートリアルを試してみること](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=ja)をお勧めします。 新しい Cloud Manager 設定パイプラインの指定、設定ファイルでのルールの宣言、悪意のあるトラフィックの CDN ログの分析に関する手順について説明します。
 
-トラフィックフィルタールールは、現在開発環境で使用でき、11月にステージング環境と実稼動環境へ段階的に展開されます。ステージ上および実稼動環境での事前アクセスを、**aemcs-waf-adopter@adobe.com** にメールでリクエストすることができます。
+トラフィックフィルタールールは、現在開発環境で使用でき、11月にステージング環境と実稼動環境へ段階的に展開されます。 ステージ上および実稼動環境での事前アクセスを、**aemcs-waf-adopter@adobe.com** にメールでリクエストすることができます。
 
 高度な WAF トラフィックフィルタールールでは、拡張セキュリティまたは WAF-DDoS 保護製品を通じて今年後半にライセンスを取得できるようになります。
 

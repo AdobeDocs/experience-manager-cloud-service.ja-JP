@@ -8,14 +8,14 @@ keywords: フォームの公開, Edge Delivery Services, フォーム設定, COR
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '790'
+ht-degree: 98%
 
 ---
 
 # Edge Delivery Services を使用したアダプティブフォームの公開
 
-アダプティブフォームを公開すると、Edge Delivery Services でエンドユーザーがアクセスおよび送信できます。このプロセスには、フォームの公開、セキュリティ設定の指定、ライブフォームへのアクセスという 3 つの主なフェーズが含まれます。
+アダプティブフォームを公開すると、Edge Delivery Services でエンドユーザーがアクセスおよび送信できます。 このプロセスには、フォームの公開、セキュリティ設定の指定、ライブフォームへのアクセスという 3 つの主なフェーズが含まれます。
 
 **達成されること：**
 
@@ -169,7 +169,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **参照ドキュメント：**
 
-- [CORS 設定ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [CORS設定ガイド](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [リファラーフィルタードキュメント](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **参照ドキュメント：**
 
-- [Cloud Manager 経由のリファラーフィルターの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Cloud Managerを使用したリファラーフィルターの設定](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
