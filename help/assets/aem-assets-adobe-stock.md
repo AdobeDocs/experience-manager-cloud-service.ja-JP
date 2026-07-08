@@ -6,7 +6,7 @@ feature: Adobe Stock
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 99%
@@ -200,8 +200,8 @@ To configure the IMS account:
    ![health-check](assets/aem-stock-healthcheck.png)
 -->
 
-1. [&#x200B; [!DNL Developer Console] でプログラムを設定します。](#set-up-a-program-in-developer-console)
-1. [&#x200B; [!DNL AEM]  オーサーインスタンスに設定を追加します。](#add-configuration-in-the-aem-author-instance)
+1. [ [!DNL Developer Console] でプログラムを設定します。](#set-up-a-program-in-developer-console)
+1. [ [!DNL AEM]  オーサーインスタンスに設定を追加します。](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console] でのプログラムの設定 {#set-up-a-program-in-developer-console}
 
@@ -225,8 +225,8 @@ To configure the IMS account:
 
 [!DNL AEM] オーサーインスタンスに設定を追加するには、次の手順を実行します。
 
-1. [&#x200B; [!DNL AEM]  オーサーインスタンスで新しい  [!DNL Adobe Stock IMS configuration]  を設定します。](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [&#x200B; [!DNL Adobe Stock] に接続するクラウド設定を追加します。](#add-cloud-configuration-to-connect-adobe-stock)
+1. [ [!DNL AEM]  オーサーインスタンスで新しい  [!DNL Adobe Stock IMS configuration]  を設定します。](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [ [!DNL Adobe Stock] に接続するクラウド設定を追加します。](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### [!DNL AEM author] インスタンスでの新しい [!DNL Adobe Stock IMS configuration] の設定 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
@@ -543,3 +543,4 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Experience Manager Assets での Adobe Stock アセットの使用について説明するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ja)
 >* [Adobe Stock エンタープライズプランのヘルプ](https://helpx.adobe.com/jp/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock の FAQ](https://helpx.adobe.com/jp/stock/faq.html)
+

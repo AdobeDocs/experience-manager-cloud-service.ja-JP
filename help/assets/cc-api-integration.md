@@ -6,7 +6,7 @@ feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 99%
@@ -125,5 +125,6 @@ Cloud Manager の既存の AEM as a Cloud Service プログラムにコンテン
 >[!MORELIKETHIS]
 >
 >* [処理プロファイルを介したアセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)
->* [&#x200B; [!DNL Experience Manager] との統合： [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
+>* [ [!DNL Experience Manager] との統合： [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
 >* [アセットマイクロサービスを使用したアセットの取り込みと処理：概要](/help/assets/asset-microservices-overview.md)
+
