@@ -200,8 +200,8 @@ To configure the IMS account:
    ![health-check](assets/aem-stock-healthcheck.png)
 -->
 
-1. [ [!DNL Developer Console] でプログラムを設定します。](#set-up-a-program-in-developer-console)
-1. [ [!DNL AEM]  オーサーインスタンスに設定を追加します。](#add-configuration-in-the-aem-author-instance)
+1. [&#x200B; [!DNL Developer Console] でプログラムを設定します。](#set-up-a-program-in-developer-console)
+1. [&#x200B; [!DNL AEM]  オーサーインスタンスに設定を追加します。](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console] でのプログラムの設定 {#set-up-a-program-in-developer-console}
 
@@ -225,8 +225,8 @@ To configure the IMS account:
 
 [!DNL AEM] オーサーインスタンスに設定を追加するには、次の手順を実行します。
 
-1. [ [!DNL AEM]  オーサーインスタンスで新しい  [!DNL Adobe Stock IMS configuration]  を設定します。](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [ [!DNL Adobe Stock] に接続するクラウド設定を追加します。](#add-cloud-configuration-to-connect-adobe-stock)
+1. [&#x200B; [!DNL AEM]  オーサーインスタンスで新しい  [!DNL Adobe Stock IMS configuration]  を設定します。](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [&#x200B; [!DNL Adobe Stock] に接続するクラウド設定を追加します。](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### [!DNL AEM author] インスタンスでの新しい [!DNL Adobe Stock IMS configuration] の設定 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
