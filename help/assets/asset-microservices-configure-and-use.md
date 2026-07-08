@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
+source-git-commit: 4edee72db5a1514e6d2f0e25bc4bdf1d0f42b265
 workflow-type: tm+mt
-source-wordcount: '3102'
+source-wordcount: '3103'
 ht-degree: 98%
 
 ---
@@ -218,7 +218,7 @@ Asset Compute Service の統合により、Experience Manager は、「[!UICONTR
 
 #### フォルダーにワークフローモデルを適用する {#apply-workflow-model-to-folder}
 
-一般的な後処理のユースケースでは、メソッドを使用してワークフローをフォルダーに適用することを検討してください。 フォルダーの[!UICONTROL プロパティ]にワークフローモデルを適用するには、次の手順に従います。
+一般的な後処理のユースケースでは、メソッドを使用してワークフローをフォルダーに適用することを検討してください。 フォルダー[!UICONTROL &#x200B; プロパティ &#x200B;]にワークフローモデルを適用するには、次の手順に従います。
 
 1. ワークフローモデルを作成します。
 1. フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックして、「**[!UICONTROL アセット処理]**」タブをクリックします。
