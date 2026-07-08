@@ -5,7 +5,7 @@ role: Admin
 feature: Workfront Integrations and Apps
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 6a87df3fb470097432cec3b1ba762faa302e2dfc
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 99%
@@ -210,7 +210,6 @@ Experience Manager のワークフローエディターで、[!UICONTROL Workfro
 [!DNL Workfront] ドキュメントカスタムフォームで変更を購入するには、「**[!UICONTROL 詳細]**」タブで関連オプションを選択します。 これらのアップデートを購入すると、[!DNL Workfront] ドキュメントカスタムフォームの対応するフィールドが変更されたときに、マップされた [!DNL Experience Manager] メタデータフィールドがアップデートされます。
 
 ![[!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png) での Workfront ドキュメントカスタムフォームのアップデート設定
-
 
 **関連情報**
 

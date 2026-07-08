@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: 6a87df3fb470097432cec3b1ba762faa302e2dfc
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 98%
@@ -83,9 +83,7 @@ ht-degree: 98%
    埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install` に設定されます。 JCR パス `/apps/<path-to-project-install-folder>` を、`all/src/main/content/META-INF/vault/filter.xml` ファイルのフィルタールールに含める必要があります。 リポジトリーのフィルタールールは、通常、プログラム名から派生します。 フォルダーの名前を既存ルールのターゲットとして使用します。
 
 1. [Hoodoo 配布ポイントの依存関係を削除します](remove-external-dependencies.md)（存在する場合）。
-
 1. 変更をリポジトリーにプッシュします。
-
 1. パイプラインを実行して、[変更内容を Cloud Manager にデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=ja)します。
 
 
