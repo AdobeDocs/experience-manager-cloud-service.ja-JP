@@ -30,7 +30,7 @@ AEM Edge Functionsでは、JavaScriptをCDN レイヤーで実行し、データ
 
 AEM Edge Functionsは、AEM Sitesのお客様向けに、Edge Delivery ServicesとAEM as a Cloud Service Java スタックの両方と互換性があります。
 
-[このチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
+[このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
 
 CDNでコンテンツをつなぎ合わせる、AEM パブリッシュ層オリジンからコンテンツを適切に取得するなど、コード例の[このリポジトリ &#x200B;](https://github.com/adobe/aem-edge-functions-examples)も参照してください。
 
