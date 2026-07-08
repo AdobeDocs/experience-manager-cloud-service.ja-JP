@@ -6,7 +6,7 @@ feature: Asset Management, Asset Compute Microservices
 role: Developer
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 76%
@@ -42,3 +42,4 @@ ht-degree: 76%
 >* [概要と新機能](/help/assets/overview.md)
 >* [サポートされているファイル形式と MIME タイプ](file-format-support.md)
 >* [アセットマイクロサービスの概要](asset-microservices-overview.md)
+

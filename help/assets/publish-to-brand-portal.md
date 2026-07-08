@@ -6,7 +6,7 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 230ca753bd5f3d5b26b30a962a526dc0edfc9bd4
+source-git-commit: d1c9d822325b15ba89ca528d2eb7bb83c742b01d
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 97%
@@ -262,13 +262,10 @@ AEM Assets インスタンスから非公開にすることで、Brand Portal �
    Comment Type: draft
 
    <li> </li>
-   -->
-
-<!--
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
 
 **関連情報**
 
