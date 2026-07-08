@@ -6,9 +6,9 @@ feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bcdfc9bb418ab405faa82c55820a6ec6062c2b17
+source-git-commit: 07d02342ecdbb1497010baf2c4f3ab55fbfc1500
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3102'
 ht-degree: 98%
 
 ---
@@ -269,36 +269,6 @@ OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Man
 
 **関連情報**
 
-* [アセットを翻訳](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [AEM Assets as a Cloud Service でサポートされているファイル形式](file-format-support.md)
-* [アセットを検索](search-assets.md)
-* [接続されたアセット](use-assets-across-connected-assets-instances.md)
-* [アセットレポート](asset-reports.md)
-* [メタデータスキーマ](metadata-schemas.md)
-* [アセットをダウンロード](download-assets-from-aem.md)
-* [メタデータを管理](manage-metadata.md)
-* [検索ファセット](search-facets.md)
-* [コレクションを管理](manage-collections.md)
-* [メタデータの一括読み込み](metadata-import-export.md)
-* [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
-
->[!MORELIKETHIS]
->
->* [Asset Compute Service の紹介](https://experienceleague.adobe.com/ja/docs/asset-compute/using/introduction)。
->* [拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/ja/docs/asset-compute/using/extend/understand-extensibility)。
->* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/ja/docs/asset-compute/using/extend/develop-custom-application)。
->* [様々な使用例でサポートされる MIME タイプ](/help/assets/file-format-support.md)。
-
-<!--
- TBD: 
-* How/where can admins check what's already configured and provisioned.
-* How/where to request for new provisioning/purchase.
--->
-
-
-**関連情報**
-
 * [アセットを翻訳](/help/assets/translate-assets.md)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [AEM Assets as a Cloud Service でサポートされているファイル形式](/help/assets/file-format-support.md)
@@ -315,3 +285,15 @@ OSGi 設定のデプロイ方法については、[&#x200B; [!DNL Experience Man
 * [メタデータの一括読み込み](/help/assets/metadata-import-export.md)
 * [AEM および Dynamic Media へのアセットの公開](/help/assets/publish-assets-to-aem-and-dm.md)
 
+>[!MORELIKETHIS]
+>
+>* [Asset Compute Service の紹介](https://experienceleague.adobe.com/ja/docs/asset-compute/using/introduction)。
+>* [拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/ja/docs/asset-compute/using/extend/understand-extensibility)。
+>* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/ja/docs/asset-compute/using/extend/develop-custom-application)。
+>* [様々な使用例でサポートされる MIME タイプ](/help/assets/file-format-support.md)。
+
+<!--
+ TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
