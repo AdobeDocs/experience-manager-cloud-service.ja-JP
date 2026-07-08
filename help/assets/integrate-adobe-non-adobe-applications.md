@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: d37ebf94f617e8424799757c18037a73e97820b4
+source-git-commit: 002fdc34a8429345fe11ce0f0bda320e2fcb68d0
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2241'
 ht-degree: 5%
 
 ---
@@ -215,7 +215,7 @@ Content Advisorは、Adobe以外（サードパーティ）のアプリケーシ
 
 統合、プロパティおよびカスタマイズについて詳しくは、次の記事を参照してください。
 
-* [Content Advisorの統合例](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples)
+* [Content Advisorの統合例](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/main)
 
 * [Content Advisor プロパティ](/help/assets/content-advisor-properties.md)
 
