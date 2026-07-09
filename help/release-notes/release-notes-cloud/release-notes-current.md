@@ -316,7 +316,7 @@ AEM Cloud Serviceでは、Java 11、Java 17、Java 21での顧客コードのコ
 * サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
 
-[このチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
+[このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
 
 *AEM Edge Functions Betaを使用すると、まだ開発中であり、テクノロジの正しい機能やデータの可用性に頼るべきではないことを理解できます。 この機能は、そのまま提供され，
 予告なく変更される可能性があり、実稼動SLAの対象にはなりません。*
