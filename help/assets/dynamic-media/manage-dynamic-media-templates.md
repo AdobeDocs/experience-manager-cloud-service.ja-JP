@@ -1,13 +1,13 @@
 ---
-title: ' [!DNL Dynamic Media]  テンプレートを管理する方法？'
-description: WYSIWYG テンプレートエディターを使用して  [!DNL Dynamic Media]  テンプレートを作成し、複数の画像、テキストおよびシェイプレイヤーを含めてバナーやチラシをすばやく作成し、ダウンストリームアプリケーションで使用する方法について説明します。
+title: Dynamic Media テンプレート
+description: WYSIWYG テンプレートエディターを使用してDynamic Media テンプレートを作成し、複数の画像、テキスト、シェイプレイヤーを含めて、バナーやチラシをすばやく作成し、ダウンストリームアプリケーションで使用する方法を説明します。
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: e567a059fe4a41c2b33d769d267fabdc610b113f
+source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
 workflow-type: tm+mt
-source-wordcount: '3928'
-ht-degree: 85%
+source-wordcount: '3931'
+ht-degree: 84%
 
 ---
 
