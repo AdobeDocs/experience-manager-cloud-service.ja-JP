@@ -16,7 +16,7 @@ ht-degree: 85%
 
 WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、リアルタイムでカスタマイズ可能なバナーやチラシ用テンプレートを作成します。 [!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。 [!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。 テンプレートの画像とテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media]  URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451728/?captions=jpn&learn=on&enablevpops)
 
 主な機能は次のとおりです。
 
