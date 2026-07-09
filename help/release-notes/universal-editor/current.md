@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.07.02 リリースノート
-description: ユニバーサルエディターの2026.07.02 リリースのリリースノートです。
+title: ユニバーサルエディター2026.07.09 リリースノート
+description: ユニバーサルエディターの2026.07.09 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 3351ce89ae2f5f3a60983a8d2d9d1a447d468b4b
+source-git-commit: 06bb5b7e685336a5b628e6523f3ae9733a2e78e2
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 16%
+source-wordcount: '126'
+ht-degree: 18%
 
 ---
 
 
-# ユニバーサルエディター2026.07.02 リリースノート {#release-notes}
+# ユニバーサルエディター2026.07.09 リリースノート {#release-notes}
 
-2026年7月2日（PT）にリリースされたユニバーサルエディターのリリースノートです。
+2026年7月9日（PT）にリリースされたユニバーサルエディターのリリースノートです。
 
 >[!TIP]
 >
@@ -24,12 +24,9 @@ ht-degree: 16%
 >
 >Adobe Experience Manager as a Cloud Serviceの現在のリリースノートについては、[このページを参照してください。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 新機能 {#what-is-new}
-
-* エディターで`preview` [&#x200B; メタタグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags)がサポートされ、エディターが[&#x200B; プレビューモードで強制的に読み込まれるようになりました。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
-* エディターは、編集を無効にする`readonly` [&#x200B; メタタグ &#x200B;](/help/implementing/universal-editor/customizing.md#meta-tags)をサポートするようになりました。そのため、ユーザーは引き続き任意のコンポーネントを選択できますが、コンテンツを変更することはできません。
-
 ## その他の改善点 {#other-improvements}
 
-* 見出し階層のアクセシビリティが改善されました。
-* エディターのキーボードナビゲーションを支援するために、ロケーションバーのフォーカスを適切に維持するようにアクセシビリティが改善されました。
+* [取り消し/やり直し](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)操作が改善されました。
+* リッチテキストエディターでインライン編集を行う際に、[順序付きリスト ](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)が適切にレンダリングされるようになりました。
+* セクションの[ ドラッグ&amp;ドロップの並べ替え](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)が正しく機能するようになりました。
+* 特定の状況で、プロパティパネルのフィールド選択ドロップダウンがExperience Platform ナビゲーションバーで隠れなくなりました。
