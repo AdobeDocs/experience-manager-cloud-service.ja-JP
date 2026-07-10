@@ -1,54 +1,52 @@
 ---
-title: Cloud Manager 2026.6.0のリリースノート
-description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.6.0のリリースについて説明します。
+title: Cloud Manager 2026.7.0のリリースノート
+description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.7.0のリリースについて説明します。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 60e6140c4902e515d740a38bde066d8cef859674
+source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '932'
 ht-degree: 3%
 
 ---
 
-# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.6.0のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.7.0のリリースノート {#release-notes}
 
-AEM（Adobe Experience Manager）as a Cloud ServiceのCloud Manager 2026.6.0のリリースについて説明します。
+AEM（Adobe Experience Manager）as a Cloud ServiceのCloud Manager 2026.7.0のリリースについて説明します。
 
 [Adobe Experience Manager as a Cloud Service の最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)も参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud ServiceのCloud Manager 2026.6.0のリリース日は2026年6月4日木曜日です。
+AEM as a Cloud ServiceのCloud Manager 2026.7.0のリリース日は2026年7月9日木曜日です。
 
-次回のリリース予定は2026年7月9日木曜日（木）です。
+次回のリリース予定は2026年8月6日木曜日（木）です。
 
 
 ## 新機能 – Cloud Manager {#cloud-manager-whats-new}
 
-* **顧客管理キー（CMK）のセルフサービス**
-お客様は、Adobe サポートの関与を必要とせずに、Cloud Managerから直接顧客管理キーを設定できるようになりました。 新しいCMK オプションは、プログラムの作成中またはプログラムの編集中、および環境の詳細ページで使用できます。
+* **自分のGitを持ち込む（BYOG） — Git クローンのシークレットベースの認証**
 
-  [実稼動プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#create)および[&#x200B; プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)を参照してください。
+  IMS トークンに加えて、Cloud Managerが生成するbyogit シークレットを使用して、[!DNL Bring Your Own Git] リポジトリへのGit クローン リクエストを認証できるようになりました。 この機能を使用すると、[!DNL Edge Delivery Services]のお客様は、helix-adminが既にコード同期のために保存しているのと同じ資格情報を使用できます。 既存のIMS認証コピーワークフローは影響を受けません。
 
-  CMK ステータスは、マイプログラムカードおよびライセンスダッシュボードに表示され、管理者はすべての環境で暗号化設定を明確に把握できます。 このアプローチにより、独自の暗号化キーの制御が必要な組織のコンプライアンスワークフローが簡素化されます。
+  [Git クローン要求の認証](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md#authenticate-git-clone-requests)を参照してください。
 
-  ![顧客管理キーのアイコンを表示しているマイ プログラム カード &#x200B;](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
-  *自分のプログラム カード*
+* **VPN ネットワーク インフラストラクチャ — BGP ルーティングと複数の接続**\
+  Advanced Networking VPN ネットワーク インフラストラクチャ APIは、既存のスタティック ルーティングと並行してBGP （Border Gateway Protocol）ダイナミック ルーティングをサポートするようになりました。 お客様側のBGP Autonomous System Numberとピアリングアドレスを指定することで、接続ごとにBGPを設定できます。Cloud Managerは、ルートラーニングを動的に処理します。静的なプレフィックスは必要ありません。
 
-  ![実稼動用に設定ダイアログボックスに、「顧客が管理するキー」オプションが選択された「セキュリティ」タブが表示されている](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
-  実稼動用に設定ダイアログボックスの「セキュリティ」タブで&#x200B;*顧客管理キーが選択されました*
+  インフラストラクチャごとに1つのVPN接続の以前の制限も削除されました。 複数の接続が同じインフラストラクチャ内でサポートされるようになり、静的な接続とBGP接続を共存させることができます。 これにより、AEM Cloud Service環境用にVPN トポロジを設計する際に、エンタープライズネットワーキングチームがより柔軟になります。
 
-  ![&#x200B; ライセンスダッシュボードで使用可能な顧客管理キーの数を表示する](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
-  *ライセンスダッシュボードで使用可能な顧客管理キーの数を表示*
+* **モジュールのキャッシュによるビルド パフォーマンスの向上**
+新しいビルドモデルでは、モジュールレベルのキャッシュを使用して、変更されたモジュールのみを（リポジトリ全体ではなく）コンパイルし、ビルドパフォーマンスを向上させます。 本番パイプラインに適用されます。 **スマートビルド**&#x200B;を使用する実稼動パイプラインを制御します。
 
+  詳しくは、次を参照してください。
 
-* **環境変数の制限が400に増加**
-Cloud Managerでは、1つの環境につき最大400個の環境変数をサポートするようになりました。これは、以前の制限である200個から2倍になります。
+   * [実稼動パイプラインでのスマートビルドの使用について](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)および[実稼動以外のパイプラインでのスマートビルドの使用について](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
+   * [実稼動パイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)および[実稼動以外のパイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines)。
 
-  パイプライン変数の上限は200のままです。 UIは、コンテキストごとに正しい制限を適用し、許可されたしきい値を超える追加を防ぎます。
-
-  この変更は、より多くの環境固有の設定を必要とする、より複雑なデプロイメント設定を持つお客様をサポートします。<!--CMGR-76755 · CMGR-76753 -->
+* **コンテンツのコピー：プログラム間および転送フロー**\
+  Cloud Manager **Content Copy**&#x200B;では、デプロイメントなしでAEM環境間でコンテンツをコピーできます。この機能には、すべてのプログラムで利用できる2つの機能が含まれています。 プログラム間サポートを使用すると、同じプログラム内だけでなく、複数のCloud Manager プログラム間でコンテンツをコピーできます。 転送フローでは、方向制限が削除され、コンテンツを任意の環境から他の環境（下位環境を含む）にコピーできます。
 
 
 ## Beta プログラム {#private-beta-program}
@@ -57,9 +55,9 @@ Cloud Managerでは、1つの環境につき最大400個の環境変数をサポ
 
 >[!IMPORTANT]
 >
->Beta リリースには欠陥が含まれており、いかなる保証もなしに「現状のまま」提供されます。 Adobeは、ベータ版リリースの保守、修正、更新、変更、その他のサポートを行う義務を負いません。 お客様は、独自のリスクでベータリリースを使用し、ベータリリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないでください。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 ベータ版リリースの使用は、完全にお客様の責任で行います。
+>Beta リリースには欠陥が含まれており、いかなる保証もなしに「現状のまま」提供されます。 Adobeは、ベータ版リリースの保守、修正、更新、変更、その他のサポートを行う義務を負いません。 お客様は、ベータリリースを独自のリスクで使用します。ベータリリースの正しい機能やパフォーマンス、または付随するドキュメントや資料に依存しないでください。 ベータ版の機能およびAPIは、予告なく変更される場合があります。 ベータ版リリースの使用は、完全にお客様の責任で行います。
 
-[AEM Beta プログラム &#x200B;](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)も参照
+[AEM Beta プログラム ](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)も参照
 
 現在、次のベータプログラムの機会が利用可能です。
 
@@ -79,23 +77,23 @@ Edge Delivery Servicesを使用して、AEM オーサーモードで引き続き
 
 Cloud Managerでは、プログラムに公開層が必要かどうかを設定できるようになりました。 この柔軟性により、選択した配信アーキテクチャに適した環境を設定できます。
 
-詳しくは、[柔軟なパブリッシュ層（Beta） &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
+詳しくは、[柔軟なパブリッシュ層（Beta） ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)を参照してください。
 
 ベータ版に参加するには、[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
 
-### モジュールキャッシュによるビルドパフォーマンスの向上 {#quick-build-cm-pipelines}
-
-新しいビルドモデルでは、モジュールレベルのキャッシュを使用して、変更されたモジュールのみを（リポジトリ全体ではなく）コンパイルし、ビルドパフォーマンスを向上させます。 本番パイプラインに適用されます。 **スマートビルド**&#x200B;を使用する実稼動パイプラインを制御します。
-
-詳しくは、次を参照してください。
-
-* [実稼動パイプラインでのスマートビルドの使用](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)。
-* [実稼動パイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)。
-
-Betaに参加するには、[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)にAdobeの組織IDとプログラム IDをメールで送信してください。
-
 <!-- 
 OLD
+### Improved build performance with module caching {#quick-build-cm-pipelines}
+
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to improve build performance. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+
+For more information, see the following:
+
+* [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
+* [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+
+To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
+
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -118,12 +116,19 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## バグ修正 {#bug-fixes}
 
-* アクティブな操作がないので、**環境が更新中に停止しました**
-パイプラインの実行や設定の変更が進行中でない場合でも、環境が更新状態で永続的に停止する問題が解決されました。 影響を受ける環境は、Adobe サポートから手動で操作することなく、正常に管理できるようになりました。 （CMGR-77133）
-* **アドバンスド ネットワーク – 重複するソース ポートで間違ったポート転送ルールが削除されました**
-Advanced Networkingの2つのポート転送ルールが同じソースポート（portOrig）を共有している場合、一方のルールを削除すると、もう一方のルールが誤って削除されます。 Cloud Managerは、意図したルールのみを正しく識別して削除するようになりました。 （CMGR-77019）
+* 両方の実稼動グループ環境が同時にソフト削除を完了すると、コアクレジットはリリースされません。 この問題は解決されました。 同時削除が完了した順序に関係なく、クレジットが正しくリリースされるようになりました。 （CMGR-77845）
 
-<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
+* Content Hub クレジットは、環境のソフト削除後に孤立し、その後ハード削除が続きます。 関連する環境が完全に削除されたときに、Cloud ManagerがContent Hub クレジットを正しくリリースするようになりました。 （CMGR-77585）
+
+* aio cloudmanager:tail-log CLI コマンドは、再接続ではなく、ログローテーション時に切断されます。 ログのローテーションが検出されたときに、コマンドが自動的に再接続されるようになりました。 （CMGR-76557）
+
+* プログラムの概要で完全なダイアログのコンテンツをスクロールできない。 ダイアログボックスが正しくスクロールされるようになり、画面サイズに関係なくすべてのコンテンツにアクセスできるようになりました。 （CMGR-76405）
+
+* 新しく作成されたRDE環境で、カスタムドメインマッピングが失敗する。 新しい高速開発環境（RDE）を作成した後、プロビジョニング直後にカスタムドメインマッピングを追加しようとすると、「環境ステータスがドメイン設定の変更に対して無効です」というエラーが発生しました。Cloud Managerは、ドメインマッピングを試みる前に、環境の「準備完了」ステートを正しく反映するようになりました。 （CMGR-75904）
+
+* DV証明書を削除し、同じドメインに再作成すると、「既存の証明書」エラーが発生して失敗します。 お客様がドメイン検証済み（DV）証明書を削除し、同じドメインに新しい証明書を作成しようとすると、Cloud Managerで「すべてのドメインをカバーする既存の証明書があります」というエラーが返されました。 その結果、新しい証明書の発行がブロックされました。 UIでは削除は成功したように見えましたが、内部的に証明書が完全に削除されず、ドメインがロックされたままになりました。 この問題は解決されました。 （CMGR-72784）
+
+<!-- There are no significant bug fixes in the July 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
