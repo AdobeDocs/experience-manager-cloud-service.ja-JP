@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1739'
 ht-degree: 28%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 28%
 >
 >初期設定後に、[パイプライン設定を編集](managing-pipelines.md)できます。
 
-## 新しい実稼動以外のパイプラインの追加
+## 実稼動以外のパイプラインの追加
 
 プログラムを設定し、Cloud Manager UIで少なくとも1つの環境を作成したら、実稼動以外のパイプラインを追加できます。 実稼動環境にデプロイする前に、これらのパイプラインを使用してコード品質をテストします。
 
@@ -89,7 +89,7 @@ ht-degree: 28%
    * **Git Branch** - ドロップダウンリストから、パイプラインの構築に使用する選択したリポジトリ内のブランチを選択します。 デフォルトは、`main` です。 パイプラインは、選択したブランチをビルドとデプロイメントのソースとして使用します。 必要に応じて、**更新**&#x200B;をクリックして、選択したリポジトリで使用可能なブランチのリストを更新します。 最近作成したブランチがリストに表示されない場合は、このオプションを使用します。
    * **戦略の構築**
       * **完全ビルド** - リポジトリ内のすべてのモジュールを毎回作成します
-      * **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[&#x200B; スマートビルドを使用する方法について詳しく見る](#about-smart-build-non-production-pipeline)。
+      * **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[ スマートビルドを使用する方法について詳しく見る](#about-smart-build-non-production-pipeline)。
 
         >[!NOTE]
         >
@@ -99,10 +99,10 @@ ht-degree: 28%
 
 1. 「**パイプライン**」セクションでは、パイプラインがデプロイメントパイプラインの場合、テストフェーズを実行することを選択できます。 このフェーズで有効にするオプションを選択します。 どのオプションも選択していない場合、テストフェーズはパイプラインの実行中に表示されません。
 
-   * **製品機能テスト** - [製品機能テスト &#x200B;](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を開発環境に対して実行します。
-   * **カスタム機能テスト** - [&#x200B; カスタム機能テスト &#x200B;](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を開発環境に対して実行します。
-   * **カスタム UI テスト** - カスタムアプリケーションの[&#x200B; カスタム UI テスト &#x200B;](/help/implementing/cloud-manager/ui-testing.md)を実行します。
-   * **エクスペリエンス監査** - [&#x200B; エクスペリエンス監査](/help/implementing/cloud-manager/reports/report-experience-audit.md)を実行
+   * **製品機能テスト** - [製品機能テスト ](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)を開発環境に対して実行します。
+   * **カスタム機能テスト** - [ カスタム機能テスト ](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)を開発環境に対して実行します。
+   * **カスタム UI テスト** - カスタムアプリケーションの[ カスタム UI テスト ](/help/implementing/cloud-manager/ui-testing.md)を実行します。
+   * **エクスペリエンス監査** - [ エクスペリエンス監査](/help/implementing/cloud-manager/reports/report-experience-audit.md)を実行
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

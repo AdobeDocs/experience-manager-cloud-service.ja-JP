@@ -6,9 +6,9 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 54%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 54%
 >
 >初期設定後に、[パイプライン設定を編集](managing-pipelines.md)できます。
 
-## 新しい実稼動パイプラインの追加 {#adding-production-pipeline}
+## 実稼動パイプラインの追加 {#adding-production-pipeline}
 
 プログラムを設定し、[!UICONTROL Cloud Manager] UIを使用して少なくとも1つの環境を設定したら、次の手順に従って実稼動パイプラインを追加する準備が整います。
 
@@ -97,7 +97,7 @@ ht-degree: 54%
    * **Git Branch** - ドロップダウンリストから、パイプラインの構築に使用する選択したリポジトリ内のブランチを選択します。 デフォルトは、`main` です。 パイプラインは、選択したブランチをビルドとデプロイメントのソースとして使用します。 必要に応じて、**更新**&#x200B;をクリックして、選択したリポジトリで使用可能なブランチのリストを更新します。 最近作成したブランチがリストに表示されない場合は、このオプションを使用します。
    * **戦略の構築**
       * **完全ビルド** - リポジトリ内のすべてのモジュールを毎回作成します
-      * **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[&#x200B; スマートビルドを使用する方法について詳しく見る](#about-smart-build-non-production-pipeline)。
+      * **スマートビルド** – 前回のコミット以降に変更されたモジュールのみをビルドします。<br>実稼動以外のパイプラインで[ スマートビルドを使用する方法について詳しく見る](#about-smart-build-non-production-pipeline)。
    * **Web 階層設定を無視** - オンにすると、パイプラインは web 階層設定をデプロイしなくなります。
    * **実稼動へのデプロイ前に一時停止** - 実稼動環境にデプロイする前にパイプラインを一時停止します。
    * **スケジュール設定** - ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
