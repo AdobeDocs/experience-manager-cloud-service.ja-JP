@@ -4,7 +4,7 @@ description: WYSIWYG テンプレートエディターを使用してDynamic Med
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="AEM Assetsに適用）。"
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 48109a25fc5ad825887fc461be38652b8ab80149
+source-git-commit: 625eb59b08391a0a67f2cffb4e026418c49bc2f2
 workflow-type: tm+mt
 source-wordcount: '3931'
 ht-degree: 84%
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 WYSIWYG テンプレートエディターである [!DNL Dynamic Media] テンプレートを使用して、リアルタイムでカスタマイズ可能なバナーやチラシ用テンプレートを作成します。 [!DNL Dynamic Media] テンプレートを公開し、ダウンストリームアプリケーションで使用します。 [!DNL Dynamic Media] テンプレートには、画像レイヤーとテキストレイヤーが含まれます。 テンプレートの画像とテキストレイヤーにパラメーターを追加し、[[!DNL Dynamic Media]  URL](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) を使用してレイヤーの位置とサイズを変更し、コンテンツをリアルタイムで更新します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3451728/?captions=jpn&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451728/?captions=jpn&learn=on&enablevpops){transcript=true}
 
 主な機能は次のとおりです。
 
