@@ -439,7 +439,7 @@ GitHub のコード
 
 * **名前**：`jcr:title`
 * **名前**：`status`
-   * ``**型**：`String`
+   * &grave;&grave;**型**：`String`
    * **値**：`draft`、`enabled` または `disabled`
 
 ### 構造 {#structure}
