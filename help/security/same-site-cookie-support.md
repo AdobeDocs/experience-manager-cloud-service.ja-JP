@@ -5,17 +5,17 @@ exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 feature: Security
 role: Admin
 source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '280'
+workflow-type: tm+mt
+source-wordcount: '288'
 ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service に対する SameSite cookie のサポート {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-バージョン 80 以降、Chrome およびそれ以降の Safari では、cookie セキュリティの新しいモデルが導入されました。このモードは、`SameSite` と呼ばれる設定を通じて、cookie の利用に関するセキュリティ制御をサードパーティサイトに導入するように設計されています。詳しくは、[web.dev - SameSite cookie の説明](https://web.dev/articles/samesite-cookies-explained)を参照してください。
+バージョン 80 以降、Chrome およびそれ以降の Safari では、cookie セキュリティの新しいモデルが導入されました。 このモードは、`SameSite` と呼ばれる設定を通じて、cookie の利用に関するセキュリティ制御をサードパーティサイトに導入するように設計されています。 詳しくは、[web.dev - SameSite cookie の説明](https://web.dev/articles/samesite-cookies-explained)を参照してください。
 
-この設定のデフォルト値（`SameSite=Lax`）により、AEM インスタンスまたはサービス間の認証が機能しないことがあります。これは、これらのサービスのドメインや URL 構造が、この cookie ポリシーの制約に該当しない可能性があるためです。
+この設定のデフォルト値（`SameSite=Lax`）により、AEM インスタンスまたはサービス間の認証が機能しないことがあります。 これは、これらのサービスのドメインや URL 構造が、この cookie ポリシーの制約に該当しない可能性があるためです。
 
 これを回避するには、ログイントークンの SameSite cookie 属性を `None` に設定します。
 
