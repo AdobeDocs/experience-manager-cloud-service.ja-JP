@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 5fcbb483fc6a298b2dccfcf79467ecd39562cb66
+source-git-commit: 617af08792034232efd5ce0a44407ce23871aea7
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4208'
 ht-degree: 70%
 
 ---
@@ -468,7 +468,7 @@ Mongo client API をプロジェクトに追加します。
 
 ### `com.google.common*` の削除 {#com.google.common}
 
-Google Guava コアライブラリの使用を中止するか、プロジェクトに適切なバージョンを含めます。 多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。 置き換えるバージョンが見つからない場合は、プロジェクトに最新バージョンの Google Guave コアライブラリを含めます。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
+Google Guava コアライブラリの使用を削除するか、プロジェクトに適切なバージョンを含めます。 多くの場合、このライブラリの使用方法は、JDK のコレクションクラスまたは Apache Commons Collections4 に置き換えることができます。 代替品が見つからない場合は、最新バージョンのGoogle Guava コアライブラリをプロジェクトに含めてください。 古いバージョンの [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) を使用している場合は、最新バージョンに更新する必要があります。
 
 アクションリスト：
 
