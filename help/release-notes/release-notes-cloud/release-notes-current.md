@@ -124,7 +124,7 @@ AEM Assetsでは、AEMから取得したアセットを使用してAdobe Express
 
 **標準キャンペーンメタデータのWorkfront PlanningおよびGenStudio for Performance MarketingとのAEM統合**
 
-AEM Assetsを[Workfront計画およびGenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index)と統合すると、キャンペーン名、地域、チャネル、ペルソナおよび製品などのキャンペーンメタデータフィールドが、専用の読み取り専用キャンペーンタブのアセットビュープロパティパネルで使用できるようになりました。 Workfront PlanningのユーザーがAEMのアセットをAdobe GenStudio Workspaceの各オブジェクトに接続すると、特定の値（特定のキャンペーン名など）がAEM アセットのメタデータに自動的に追加されます。
+AEM Assetsを[Workfront計画およびGenStudio for Performance Marketing](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-planning/planning-and-genstudio-integration/planning-and-genstudio-integration-article-index)と統合すると、キャンペーン名、地域、チャネル、ペルソナおよび製品などのキャンペーンメタデータフィールドが、専用の読み取り専用キャンペーンタブのアセットビュープロパティパネルで使用できるようになりました。 Workfront PlanningのユーザーがAEMのアセットをAdobe GenStudio Workspaceの各オブジェクトに接続すると、特定の値（特定のキャンペーン名など）がAEM アセットのメタデータに自動的に追加されます。
 
 この統合により、ユーザーはキャンペーン属性にもとづいてアセットをすばやく発見して検索できます。 これにより、アセットの見つけやすさ向上し、コンテンツ管理ワークフローを合理化して、特定のマーケティング施策に最適なアセットをより効率的に見つけることができます。
 
@@ -331,7 +331,7 @@ AEM Cloud Serviceでは、Java 11、Java 17、Java 21での顧客コードのコ
 * サードパーティの API からの応答をブラウザーに配信する前に再フォーマットする（および複数の API 応答を集計する）
 * 様々なバックエンドからステッチされたコンテンツを使用し、サーバーレンダリングされた HTML をエッジで作成および提供
 
-[このチュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
+[このチュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/edge-functions/overview)に従って、Edge Delivery ServicesとAEM as a Cloud Serviceの両方のJava スタックのバリエーションを具体的に説明します。
 
 *AEM Edge Functions Betaを使用すると、まだ開発中であり、テクノロジの正しい機能やデータの可用性に頼るべきではないことを理解できます。 この機能は、そのまま提供され，
 予告なく変更される可能性があり、実稼動SLAの対象にはなりません。*
