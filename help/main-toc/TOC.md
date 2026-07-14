@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dea8a3df29876df1c97454a97602045eb50121ad
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '7565'
-ht-degree: 84%
+source-wordcount: '7571'
+ht-degree: 83%
 
 ---
 
@@ -936,8 +936,8 @@ ht-degree: 84%
             + [リダイレクトページまたはお礼メッセージの設定](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [繰り返し可能なセクションを使用したフォームの作成](/help/forms/create-forms-repeatable-sections.md)
             + [アダプティブフォームでの Google reCAPTCHA の使用](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [アダプティブフォームコアコンポーネントでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [アダプティブフォームコアコンポーネントでの Turnstile Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [コアコンポーネントのアダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [コアコンポーネントのアダプティブフォームでのターンスタイルの使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [アダプティブフォームにカスタムエラーハンドラーの追加](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [コアコンポーネントに基づくアダプティブフォームのロケールの追加](/help/forms/supporting-new-language-localization-core-components.md)
             + [アダプティブフォームの JSON スキーマのデザイン（コアコンポーネント）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -987,8 +987,8 @@ ht-degree: 84%
             + {hide-from-toc}[&#x200B; フォームとドキュメントの公開と非公開](/help/forms/publishing-unpublishing-forms.md)
          + アダプティブフォームへのコンポーネントの追加 {#add-components-to-an-adaptive-form}
             + [アダプティブフォームでの CAPTCHA の使用](/help/forms/captcha-adaptive-forms.md)
-            + [アダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [アダプティブフォームでの Turnstile Captcha の使用](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [基盤コンポーネントのアダプティブフォームでの hCaptcha の使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [基礎コンポーネントのアダプティブフォームでのターンスタイルの使用](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [コアコンポーネントの使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
             + [手書き署名の適用](/help/forms/signing-forms-using-scribble.md)
             + [アダプティブフォームへのテーブルの追加](/help/forms/adaptive-forms-tables.md)

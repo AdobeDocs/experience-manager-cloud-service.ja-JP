@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: 72bacdb87edd7dd6f73a7966b01665b52cea57eb
+source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4356'
 ht-degree: 16%
 
 ---
@@ -204,6 +204,13 @@ OpenAPI機能を備えたDynamic Mediaでは、ビデオアセット用のカス
 * **アソシエイト UIのドロップダウンオプションの設定**：アソシエイト UIのドロップダウンフィールドで、**オプションバインディング** モデルが使用されるようになりました。 作成者は、動的オプションリストまたは手動の静的オプションに対して&#x200B;**データからバインド**&#x200B;を設定し、関連付け担当者が正しい選択肢と事前選択された値を確認できるようにします。 **データバインディング**&#x200B;は、ドロップダウンフィールドではサポートされていません。 詳細については、[&#x200B; アソシエイト UIのドロップダウンオプションの設定](/help/forms/interactive-communication/associateui/configure-dropdown-options-binding.md)を参照してください。
 
 * **アソシエイト UIのバインド変数とバインドされていない変数の設定**: **テキスト** コンポーネントのバインド変数とバインドされていない変数を、アソシエイト UIに設定できるようになりました。 作成者は、担当者がドキュメントプレビューでテキストブロック全体をインラインで編集するか、データ入力パネルに個々の変数の値を入力するかを選択します。 変数名の重複プレビュー内のすべての一致するオカレンスに値を反映します。 詳細については、[&#x200B; アソシエイト UI](/help/forms/interactive-communication/associateui/configure-bound-unbound-variables-associate-ui.md)のバインド変数とバインドされていない変数の設定を参照してください。
+
+#### ボット保護のための追加のCAPTCHA オプション
+
+AEM Formsでは、既に利用可能なGoogle reCAPTCHAに加えて、アダプティブ Formsをボットやスパム送信から保護するための2つのCAPTCHA ソリューションがサポートされるようになりました。 これにより、フォームのセキュリティを柔軟に確保し、より多くの選択肢を提供できます。
+
+* **Cloudflare Turnstile**：明示的な操作を必要とせずに簡単なチャレンジを通じてユーザーを確認し、ユーザーエクスペリエンスを向上させるスムーズなCAPTCHA。 詳しくは、「[&#x200B; コアコンポーネントのアダプティブフォームでのターンスタイルの使用](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)」および「[基盤コンポーネントのアダプティブフォームでのターンスタイルの使用](/help/forms/integrate-adaptive-forms-turnstile.md)」を参照してください。
+* **Captcha**: データプライバシー、セキュリティ、ユーザーエクスペリエンスのバランスを重視した、使いやすい代替手段を提供するプライバシー重視のCAPTCHAです。 詳しくは、「[&#x200B; コアコンポーネントのアダプティブフォームでのhCaptchaの使用](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)」および「[基盤コンポーネントのアダプティブフォームでのhCaptchaの使用](/help/forms/integrate-adaptive-forms-hcaptcha.md)」を参照してください。
 
 ### アーリーアダプター機能
 
