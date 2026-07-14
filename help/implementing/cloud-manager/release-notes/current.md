@@ -4,9 +4,9 @@ description: Adobe Experience Manager as a Cloud ServiceのCloud Manager 2026.7.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: d1b28c7cfb323042f038a070bf0cb4ccfa27d9a1
+source-git-commit: c8eb49a463fffa144e2c91e4b82ea219ade7feb6
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ AEM as a Cloud ServiceのCloud Manager 2026.7.0のリリース日は2026年7月9
    * [実稼動パイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md##adding-production-pipeline)および[実稼動以外のパイプラインを追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines)。
 
 * **コンテンツのコピー：プログラム間および転送フロー**\
-  Cloud Manager **Content Copy**&#x200B;では、デプロイメントなしでAEM環境間でコンテンツをコピーできます。この機能には、すべてのプログラムで利用できる2つの機能が含まれています。 プログラム間サポートを使用すると、同じプログラム内だけでなく、複数のCloud Manager プログラム間でコンテンツをコピーできます。 転送フローでは、方向制限が削除され、コンテンツを任意の環境から他の環境（下位環境を含む）にコピーできます。
+  Cloud Manager **Content Copy**&#x200B;では、デプロイメントなしでAEM環境間でコンテンツをコピーできます。この機能には、すべてのプログラムで利用できる2つの機能が含まれています。 プログラム間のサポートにより、同じプログラム内だけでなく、複数のCloud Manager プログラム間でコンテンツをコピーできます。 転送フローでは、方向制限が削除され、コンテンツを任意の環境から他の環境（下位環境を含む）にコピーできます。
+
+  詳しくは、[&#x200B; コンテンツコピーツール &#x200B;](/help/implementing/developing/tools/content-copy.md)を参照してください。
 
 
 ## Beta プログラム {#private-beta-program}
