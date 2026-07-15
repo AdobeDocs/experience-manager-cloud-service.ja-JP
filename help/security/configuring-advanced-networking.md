@@ -123,7 +123,7 @@ AEM as a Cloud Service では、次の高度なネットワークオプション
 
 サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しに、新しいレコードが表示されます。 これには、インフラストラクチャのタイプ、ステータス、地域、有効な環境が含まれます。
 
-![ ネットワークインフラストラクチャの下の新しいエントリ ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; ネットワークインフラストラクチャの下の新しいエントリ &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ AEM as a Cloud Service では、次の高度なネットワークオプション
 
 プログラムごとに1回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターと地域に`flexiblePortEgress`の値を渡します。 エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。
 
-一度呼び出されると、ネットワークインフラストラクチャがプロビジョニングされるまでに約15分かかります。 Cloud Managerの[ ネットワークインフラストラクチャ GET エンドポイント ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure)への呼び出しは、**ready**&#x200B;のステータスを示します。
+一度呼び出されると、ネットワークインフラストラクチャがプロビジョニングされるまでに約15分かかります。 Cloud Managerの[&#x200B; ネットワークインフラストラクチャ GET エンドポイント &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure)への呼び出しは、**ready**&#x200B;のステータスを示します。
 
 >[!TIP]
 >
@@ -285,7 +285,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 サイドパネルの&#x200B;**ネットワークインフラストラクチャ**&#x200B;見出しの下に新しいレコードが表示されます。 これには、インフラストラクチャのタイプ、ステータス、地域、有効な環境が含まれます。
 
-![ ネットワークインフラストラクチャの下の新しいエントリ ](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![&#x200B; ネットワークインフラストラクチャの下の新しいエントリ &#x200B;](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -295,7 +295,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 プログラムごとに1回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターと地域に`dedicatedEgressIp`の値を渡します。 エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。
 
-一度呼び出されると、ネットワークインフラストラクチャがプロビジョニングされるまでに約15分かかります。 Cloud Managerの[ ネットワークインフラストラクチャ GET エンドポイント ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure)への呼び出しは、**ready**&#x200B;のステータスを示します。
+一度呼び出されると、ネットワークインフラストラクチャがプロビジョニングされるまでに約15分かかります。 Cloud Managerの[&#x200B; ネットワークインフラストラクチャ GET エンドポイント &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/getNetworkInfrastructure)への呼び出しは、**ready**&#x200B;のステータスを示します。
 
 >[!TIP]
 >
