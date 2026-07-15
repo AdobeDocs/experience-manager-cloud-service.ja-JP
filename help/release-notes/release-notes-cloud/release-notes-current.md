@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 nudge: please
-source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4455'
 ht-degree: 16%
 
 ---
@@ -131,6 +131,14 @@ AEM Assetsを[Workfront計画およびGenStudio for Performance Marketing](https
 >[!IMPORTANT]
 >
 >この機能は、限定利用可能機能として利用でき、Workfront PlanningとGenStudio for Performance Marketingのライセンスが必要です。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
+
+**AIを活用したコンテンツのオンボーディングとコンテンツのsupply chain オートメーション**
+
+AIを活用したエージェントを使用して、コンテンツの移行や、サポートされているコンテンツリポジトリ間の定期的な同期を設定および自動化できます。 エージェントは、コンテンツを転送する前に、接続の設定、メタデータマッピング、ドライランによる検証をガイドします。 手作業によるプロセスとカスタム統合を排除することで、オンボーディングを迅速化し、継続的な同期を簡素化し、システムをまたいでアセットとメタデータの一貫性を維持するのに役立ちます。
+
+>[!IMPORTANT]
+>
+>この機能は、制限付き可用性機能として利用できます。 [アドビカスタマーサポートケースを作成および送信](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)し、デプロイメントで有効にすることができます。
 
 
 ### OpenAPI機能を備えたDynamic Mediaの新機能 {#new-features-dynamic-media-openapi}

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager as a Cloud Service の仕組みと、本ソフトウェアの機能を説明します。
 breadcrumb-title: ユーザーガイド
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f5d4707fdc5a920f11edbd1f1784f1f7cc6d082a
+source-git-commit: 8ff6fbf02654325933844d43563bf69521bebbdc
 workflow-type: tm+mt
-source-wordcount: '7571'
+source-wordcount: '7580'
 ht-degree: 83%
 
 ---
@@ -676,6 +676,7 @@ ht-degree: 83%
       + [AEM MediaLibrary の機能](/help/assets/medialibrary.md)
       + [アセットメタデータの読み込みと書き出し](/help/assets/metadata-import-export.md)
       + [アセットのアップロード制限の設定](/help/assets/configure-asset-upload-restrictions.md)
+      + [AIを活用したコンテンツオンボーディングとコンテンツsupply chainの自動化](/help/assets/ai-powered-content-onboarding-content-supply-chain-automation.md)
    + アセットの共有と配布 {#brand-portal}
       + [&#x200B; [!DNL Assets]  での [!DNL Brand Portal]の設定](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [&#x200B; [!DNL Brand Portal] へのアセットの公開](/help/assets/publish-to-brand-portal.md)
