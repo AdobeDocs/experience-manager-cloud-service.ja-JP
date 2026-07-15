@@ -107,7 +107,7 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
-最近リリースされた[ トラフィックフィルタールール ](/help/security/traffic-filter-rules-including-waf.md)に加えて、オプションでライセンス可能なWeb Application Firewall （WAF）ルールが含まれていますが、Configuration Pipelineを使用して他の種類のCDN設定を宣言およびデプロイする機会があります。 以下のようなユースケースについてお話を伺います。
+最近リリースされた[&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)に加えて、オプションでライセンス可能なWeb Application Firewall （WAF）ルールが含まれていますが、Configuration Pipelineを使用して他の種類のCDN設定を宣言およびデプロイする機会があります。 以下のようなユースケースについてお話を伺います。
 
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理

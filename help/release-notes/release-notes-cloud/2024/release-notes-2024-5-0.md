@@ -61,7 +61,7 @@ ht-degree: 94%
 
 #### 運用用遠隔測定サービス {#real-use-monitoring}
 
-* **[Operational Telemetry ServiceがGA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**になり、AEM as a Cloud Serviceのクライアント側でのデータ収集が可能になりました。
+* **[Operational Telemetry ServiceがGA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;になり、AEM as a Cloud Serviceのクライアント側でのデータ収集が可能になりました。
 クライアントサイドのコレクションである実際の使用のモニタリングサービスは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントを信頼性の高い方法で測定できるようにします。 これにより、お客様はページのトラフィックとパフォーマンスに関する高度なインサイトを取得できます。 ページのパフォーマンスについて詳しく知り、改善するためのインサイトを得る絶好の機会です。
 
 #### Edge Delivery Services 用の AEM オーサリング {#edge-enhancements}

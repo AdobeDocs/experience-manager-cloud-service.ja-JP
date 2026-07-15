@@ -144,7 +144,7 @@ ht-degree: 94%
 
 - 有効にすると、フォームコンポーネントを選択した際に、ルールエディターアイコン ![ルールを編集](/help/forms/assets/edit-rules-icon.svg) が表示されます
 
-![ ユニバーサルエディタールールエディター](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+![&#x200B; ユニバーサルエディタールールエディター](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 図：フォームコンポーネントを選択すると、ルールエディターアイコンが表示される
 
 ルールエディターを開くには：
@@ -153,7 +153,7 @@ ht-degree: 94%
 2. ルールエディターアイコンをクリックします。
 3. ルールエディターがサイドパネルで開きます。
 
-![ ルールエディターのユーザーインターフェイス](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+![&#x200B; ルールエディターのユーザーインターフェイス](/help/edge/docs/forms/assets/rule-editor-for-field.png)
 図：コンポーネントルールを編集するためのルールエディターインターフェイス
 
 >[!NOTE]
@@ -162,7 +162,7 @@ ht-degree: 94%
 
 ## ルールエディターインターフェイスの概要
 
-![ ルールエディターのユーザーインターフェイス](/help/edge/docs/forms/assets/rule-editor-interface.png)
+![&#x200B; ルールエディターのユーザーインターフェイス](/help/edge/docs/forms/assets/rule-editor-interface.png)
 図：番号付きコンポーネントを含むルールエディターのインターフェイス
 
 1. **コンポーネントのタイトルとルールタイプ**：選択したコンポーネントとアクティブなルールタイプを確認します。
@@ -256,7 +256,7 @@ ht-degree: 94%
 
 この例では、条件付き表示と自動計算を示します。
 
-フォームフィールドの表示に対するWhen-Then ロジックを使用した条件付きルールの作成を示すルールエディターインターフェイスの![ スクリーンショット](/help/edge/docs/forms/assets/rule-editor-1.png)
+フォームフィールドの表示に対するWhen-Then ロジックを使用した条件付きルールの作成を示すルールエディターインターフェイスの![&#x200B; スクリーンショット](/help/edge/docs/forms/assets/rule-editor-1.png)
 図：インテリジェントな条件付きフィールドを含む税計算フォーム
 
 次の機能を備えたフォームを作成します。
@@ -401,7 +401,7 @@ ht-degree: 94%
    - 課税所得 = `55000`（60000 - 5000）であることを検証します
    - 支払税 = `5500`（55000 × 10%）であることを検証します
 
-![ フォームのプレビュー](/help/edge/docs/forms/assets/rule-editor-form.png)
+![&#x200B; フォームのプレビュー](/help/edge/docs/forms/assets/rule-editor-form.png)
 図：条件付きフィールドと自動計算を含む完了した税金計算ツール
 
 **成功条件**：フォームは、ユーザーの入力に応じてフィールドを動的に表示／非表示にし、値をリアルタイムで計算する必要があります。
@@ -503,7 +503,7 @@ function days(endDate, startDate) {
 export { getFullName, days };
 ```
 
-![ カスタム関数の追加](/help/edge/docs/forms/assets/create-custom-function.png)
+![&#x200B; カスタム関数の追加](/help/edge/docs/forms/assets/create-custom-function.png)
 図：functions.js ファイルへのカスタム関数の追加
 
 +++
@@ -532,7 +532,7 @@ export { getFullName, days };
    - エッジケースを含む様々な入力の組み合わせでテストします
    - フォームの読み込みとインタラクションに対するパフォーマンスへの影響を検証します
 
-ルールエディターの![ カスタム関数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+ルールエディターの![&#x200B; カスタム関数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 図：ルールエディターインターフェイスでのカスタム関数の選択と設定
 
 >[!NOTE]
