@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 72%
+source-wordcount: '866'
+ht-degree: 73%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 72%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）の公開日は 2023年12月14日（PT）です。次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新の機能リリース（2023.12.0）の公開日は 2023年12月14日（PT）です。 次回の機能リリース（2024.1.0）は 2023年1月25日（PT）に予定されています。
 
 ## メンテナンスリリースノート {#maintenance}
 
@@ -47,11 +47,11 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期導入プログラム {#sites-early-adopter}
 
-**運用上のテレメトリサービス [&#x200B; を利用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にすることもできます](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**。
+**[Operational Telemetry Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;を活用して、AEM as a Cloud Serviceのクライアントサイド収集を有効にできます。
 
-運用上のテレメトリデータサービスは、ユーザーのインタラクションをより正確に反映し、web サイトエンゲージメントの信頼性の高い測定を保証します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
+Operational Telemetry Data Serviceは、ユーザーインタラクションをより正確に反映し、web サイトのエンゲージメントを確実に測定します。 ページのパフォーマンスに関する高度なインサイトを取得する絶好の機会です。 これは、アドビが管理する CDN やアドビ以外が管理する CDN を使用するお客様にとって有益です。 さらに、アドビ以外が管理する CDN を使用しているお客様は、自動トラフィックレポートを有効にできるようになり、アドビとトラフィックレポートを共有する必要がなくなります。
 
-この新機能のテストやフィードバックの送信に関心がある場合は、Adobe IDに関連付けられたメールアドレスから、実稼動、ステージ、開発環境のドメイン名と共に `aemcs-rum-adopter@adobe.com` にメールを送信してください。 Adobeの製品チームが、運用上のテレメトリデータサービスを有効にします。
+この新機能のテストとフィードバックの共有に興味がある場合は、Adobe IDに関連付けられているメールアドレスから、実稼動環境、ステージ環境、開発環境のドメイン名を記載したメールを`aemcs-rum-adopter@adobe.com`に送信してください。 その後、AdobeのプロダクトチームがOperational Telemetry Data Serviceを有効にします。
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -81,9 +81,9 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Experience Manager Forms] の新機能 {#forms-features}
+### [!DNL Experience Manager Forms]の新機能 {#forms-features}
 
-* **[アダプティブFormsとMicrosoftの接続® SharePoint リスト](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**:AEM Formsでは、SharePointのリスト機能を使用できるフォームデータをSharePoint リストに直接送信する OOTB 統合が提供されます。 Microsoft SharePoint リストをフォームデータモデルのデータソースとして設定し、**フォームデータモデルを使用して送信** 送信アクションを使用して、アダプティブフォームをSharePoint リストに接続できます。
+* **[アダプティブ FormsとMicrosoft®SharePoint List](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**&#x200B;を連携：AEM Formsでは、SharePointのリスト機能を使用して、フォームデータをSharePoint Listに直接送信するためのOOTB統合機能を提供しています。 フォームデータモデルのデータソースとしてMicrosoft SharePoint Listを設定し、「**フォームデータモデルを使用して送信**&#x200B;送信」アクションを使用して、アダプティブフォームをSharePoint Listに接続できます。
 
 <!-- 
 
@@ -93,21 +93,21 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 
 ### 早期導入プログラム {#forms-early-adopter}
 
-* **[Adobe Workfront Fusion シナリオへのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront に簡単に接続するための標準オプションが用意されています。これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
+* **[Adobe Workfront Fusion シナリオへのアダプティブフォームの送信](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Forms as a Cloud Service には、アダプティブフォームを Adobe Workfront に簡単に接続するための標準オプションが用意されています。 これにより、Adobe Workfront シナリオにアダプティブフォームを送信するプロセスが簡単になり、アダプティブフォームの送信時に Workfront Fusion シナリオをトリガーできます。
 
-* **[右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)**：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。RTL 言語は、世界中で 20 億人以上の人々が話しています。RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
+* **[右横書き言語のサポート](/help/forms/supporting-new-language-localization-core-components.md)**：コアコンポーネントに基づいて作成されたアダプティブフォームを、アラビア語、ペルシア語、ウルドゥー語などの右横書き（RTL）言語で表示できるようになりました。 RTL 言語は、世界中で 20 億人以上の人々が話しています。 RTL 言語のフォームを使用すると、アダプティブフォームのリーチを拡大して、これらの多様なオーディエンスに対応し、RTL マーケットを選択できます。 また、特定の地域では、現地の言語でフォームを提供することは法的義務として定められています。 現地の言語に対応することで、より幅広いオーディエンスに扉を開くだけでなく、関連する法律や規制を確実に遵守できます。
 
   ![右横書き言語のサポート](/help/forms/assets/right-to-left-language-support.png)
 
-* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
+* **[DocAssurance API（通信 API の一部）を使用したドキュメントの保護](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API を使用すると、ドキュメントに署名および暗号化して、機密情報を保護できます。 暗号化により、ドキュメントのコンテンツは読み取り不可能な形式に変換され、許可されたユーザーのみがアクセスできるようになります。 この強化された保護層は、貴重なデータを信頼できない環境にさらすことなく、安心感ももたらします。 Signature API を使用すると、組織は配布および受信する Adobe PDF ドキュメントのセキュリティとプライバシーを保護できます。 このサービスでは、デジタル署名と証明書を使用して、意図された受信者のみがドキュメントを変更できるようにします。
 
   公式メール ID から `aem-forms-ea@adobe.com` に送信して早期導入プログラムに参加し、機能へのアクセスをリクエストできます。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] の基盤 {#foundation}
 
-### ドメインマッピング早期導入プログラム {#cdn-config-early-adopter}
+### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
-オプションでライセンス利用可能な Web Application Firewall （WAF）ルールを含む、最近リリースされた [&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md) に加えて、設定パイプラインを使用して、他のタイプの CDN 設定を宣言およびデプロイすることもできます。 次のようなユースケースについてお聞かせください。
+最近リリースされた[&#x200B; トラフィックフィルタールール &#x200B;](/help/security/traffic-filter-rules-including-waf.md)に加えて、オプションでライセンス可能なWeb Application Firewall （WAF）ルールが含まれていますが、Configuration Pipelineを使用して他の種類のCDN設定を宣言およびデプロイする機会があります。 以下のようなユースケースについてお話を伺います。
 
 * 301/302 クライアントサイドのリダイレクト
 * 任意の接触チャネルに対するエッジでのリクエストのプロキシ処理
@@ -115,9 +115,9 @@ Adobe Firefly のテキストから画像生成機能を統合して、検索ク
 * リクエストヘッダーまたは応答ヘッダーの設定または変更
 * CDN が AEM に到達できない場合のカスタムエラーページ
 * ユーザー名/パスワードによる認証
-* その他の便利な CDN 設定
+* その他の便利なCDN設定
 
-公式メール ID からフィードバックを記載したメールを **0&rbrace;aemcs-cdn-config-adopter@adobe.com&rbrace; に送信します。**
+フィードバックを含む公式メール IDから&#x200B;**aemcs-cdn-config-adopter@adobe.com**&#x200B;にメールを送信します。
 
 ## Cloud Manager {#cloud-manager}
 
