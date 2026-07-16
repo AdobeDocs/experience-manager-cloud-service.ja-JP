@@ -22,9 +22,9 @@ ht-degree: 0%
 
 この節では、**手動設定**&#x200B;のアプローチについて説明します。このアプローチでは、1つ以上のAEM MCP サーバーをカスタムアプリまたはコネクタとしてChatGPTに追加します。
 
-* MCP接続またはツールが設定されている領域に、1つ以上のAEM MCP サーバーURLを追加します。
-* リダイレクトされたら、接続をトリガーし、Adobe IDでログインします。
-* チャットでは、プロンプトで設定されたAEM ツールを参照します。次に例を示します。
+&#x200B;* MCP接続またはツールが設定されている領域に、1つ以上のAEM MCP サーバーURLを追加します。
+&#x200B;* リダイレクトされたら、接続をトリガーし、Adobe IDでログインします。
+&#x200B;* チャットでは、プロンプトで設定されたAEM ツールを参照します。次に例を示します。
 
   ```
   "Using the configured AEM MCP tools, list all sites in the author environment."
@@ -40,11 +40,11 @@ ht-degree: 0%
 
 1. **アプリとコネクタ**&#x200B;で、**詳細設定**&#x200B;を開いて、コネクタとMCP関連のオプションを管理します。
 
-   ![ChatGPTのアプリとコネクタの詳細設定パネル ](assets/chatgpt-2.png)
+   ![ChatGPTのアプリとコネクタの詳細設定パネル &#x200B;](assets/chatgpt-2.png)
 
 1. **アプリとコネクタ**&#x200B;で&#x200B;**開発者モード**&#x200B;を有効にして、カスタムプラグインを追加および設定できるようにします。
 
-   ![ アプリとコネクタ セクションで開発者モードを有効にしています。](assets/chatgpt-3.png)
+   ![&#x200B; アプリとコネクタ セクションで開発者モードを有効にしています。](assets/chatgpt-3.png)
 
 1. **新しいアプリを作成** （または同等のコントロール）を開始して、AEM MCP サーバーのアプリエントリを追加します。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 1. **アプリとコネクタ**&#x200B;に&#x200B;**AEM Content MCP Service** （または設定済みのアプリ）が表示されていることを確認して、ChatGPTで使用できるようにします。
 
-   ![ アプリとコネクタにリストされているAEM Content MCP サービス。](assets/chatgpt-6.png)
+   ![&#x200B; アプリとコネクタにリストされているAEM Content MCP サービス。](assets/chatgpt-6.png)
 
 1. チャットで、設定された&#x200B;**AEM ツール**&#x200B;を使用するようにChatGPTに指示するプロンプトを書きます（例えば、作成者のコンテンツやサイトを照会します）。
 
@@ -76,7 +76,7 @@ Adobe Experience Manager プラグインには、次の2つの方法がありま
 
 [https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d](https://chatgpt.com/plugins/plugin_asdk_app_6a35d3c1258081919c084a1fd22cd02d)に移動し、**プラグインのインストール**&#x200B;を選択します。
 
-![ プラグインのインストール ボタンが表示されているAdobe Experience Manager プラグイン ページ。](assets/chatgpt-plugin-install.png)
+![&#x200B; プラグインのインストール ボタンが表示されているAdobe Experience Manager プラグイン ページ。](assets/chatgpt-plugin-install.png)
 
 **オプション 2: マーケットプレイスでプラグインを検索する**
 
@@ -86,7 +86,7 @@ Adobe Experience Manager プラグインには、次の2つの方法がありま
 
 1. **Adobe Experience Manager**&#x200B;を検索し、選択します。
 
-   ![ プラグインマーケットプレイスでAdobe Experience Manager プラグインを検索しています。](assets/chatgpt-plugin-2.png)
+   ![&#x200B; プラグインマーケットプレイスでAdobe Experience Manager プラグインを検索しています。](assets/chatgpt-plugin-2.png)
 
 **ログインして確認**
 
