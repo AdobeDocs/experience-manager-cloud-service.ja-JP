@@ -1,20 +1,20 @@
 ---
-title: ユニバーサルエディター2026.07.09 リリースノート
-description: ユニバーサルエディターの2026.07.09 リリースのリリースノートです。
+title: ユニバーサルエディター2026.07.16 リリースノート
+description: ユニバーサルエディターの2026.07.16 リリースのリリースノートです。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 06bb5b7e685336a5b628e6523f3ae9733a2e78e2
+source-git-commit: 863939466578c684b854f2e6d4f67a12b29ea7e3
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 18%
+source-wordcount: '129'
+ht-degree: 17%
 
 ---
 
 
-# ユニバーサルエディター2026.07.09 リリースノート {#release-notes}
+# ユニバーサルエディター2026.07.16 リリースノート {#release-notes}
 
-2026年7月9日（PT）にリリースされたユニバーサルエディターのリリースノートです。
+これらは、ユニバーサルエディターの2026年7月16日リリースのリリースノートです。
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ ht-degree: 18%
 
 ## その他の改善点 {#other-improvements}
 
-* [取り消し/やり直し](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)操作が改善されました。
-* リッチテキストエディターでインライン編集を行う際に、[順序付きリスト &#x200B;](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)が適切にレンダリングされるようになりました。
-* セクションの[&#x200B; ドラッグ&amp;ドロップの並べ替え](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)が正しく機能するようになりました。
-* 特定の状況で、プロパティパネルのフィールド選択ドロップダウンがExperience Platform ナビゲーションバーで隠れなくなりました。
+* エディターの[&#x200B; レスポンシブモード &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)を選択するためのラジオボタンに、アクセシブルなラベルが追加されました。
+* チェックボックスの「すべてをクリア」オプションを使用すると、デフォルトセットがある場合でも、すべてのフィールドが適切にクリアされるようになりました。
+* ドロップダウンを選択すると、適切にレンダリングされるようになりました。
+* 拡張ボタンとサブメニューのラベルとアイコンが正しく配置されるようになりました。
