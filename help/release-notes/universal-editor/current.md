@@ -26,7 +26,7 @@ ht-degree: 17%
 
 ## その他の改善点 {#other-improvements}
 
-* エディターの[ レスポンシブモード ](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)を選択するためのラジオボタンに、アクセシブルなラベルが追加されました。
+* エディターの[&#x200B; レスポンシブモード &#x200B;](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)を選択するためのラジオボタンに、アクセシブルなラベルが追加されました。
 * チェックボックスの「すべてをクリア」オプションを使用すると、デフォルトセットがある場合でも、すべてのフィールドが適切にクリアされるようになりました。
 * ドロップダウンを選択すると、適切にレンダリングされるようになりました。
 * 拡張ボタンとサブメニューのラベルとアイコンが正しく配置されるようになりました。
